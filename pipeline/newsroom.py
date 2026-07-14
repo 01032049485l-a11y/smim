@@ -4,15 +4,50 @@
 SMIM의 뉴스룸은 각 기사에 대해 "그래서 어느 종목에, 왜 중요한가"를 붙인다.
 그게 이 사이트에 머무를 이유다.
 
-저작권: 기사 제목·링크·발행일만 저장한다. 본문은 절대 저장·재배포하지 않는다.
-        해석 문장은 AI가 제목과 공개 정보를 근거로 직접 쓴 것이다.
+저작권 (2026-07-15 사용자 승인으로 완화, CLAUDE.md 참고): 스냅샷·사이트에는
+기사 제목·링크·발행일과 AI가 쓴 해설 문장만 저장한다. "AI 해설"을 만들 때
+원문 기사를 그 순간 가져와 참고는 하지만, 가져온 원문 텍스트 자체는 요약
+생성 직후 버리고 어디에도 저장하지 않는다.
 """
 import json
 import re
+import concurrent.futures as cf
+
+import requests
+from bs4 import BeautifulSoup
 
 import config
 from pipeline.agents import _call, _parse_json, AIFailure
 from pipeline.sources import news, us_news, prices
+
+_ARTICLE_HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
+
+
+def _fetch_article_text(url: str, max_chars: int = 1500) -> str:
+    """"AI 해설"을 위해 원문을 그 자리에서 잠깐 읽어온다 — 반환값은 요약에만 쓰이고
+    호출한 쪽에서 저장하지 않는다(newsroom.py 상단 저작권 메모 참고)."""
+    try:
+        r = requests.get(url, headers=_ARTICLE_HEADERS, timeout=8)
+        r.raise_for_status()
+    except Exception:
+        return ""
+    try:
+        soup = BeautifulSoup(r.text, "html.parser")
+        for tag in soup(["script", "style", "nav", "header", "footer", "aside", "form"]):
+            tag.decompose()
+        paras = [p.get_text(" ", strip=True) for p in soup.find_all("p")]
+        paras = [p for p in paras if len(p) > 30]  # 짧은 문구(광고·안내 문구)는 배제
+        return " ".join(paras)[:max_chars]
+    except Exception:
+        return ""
+
+
+def _fetch_bodies(items: list[dict]) -> None:
+    """기사 본문을 병렬로 가져와 각 항목에 임시로 붙인다(제자리 수정)."""
+    def _one(it):
+        it["_body"] = _fetch_article_text(it["url"])
+    with cf.ThreadPoolExecutor(max_workers=10) as ex:
+        list(ex.map(_one, items))
 
 TOPICS = [
     ("증시", "코스피 코스닥 증시"),
@@ -45,22 +80,22 @@ TAGGER_SYS = """너는 국내·미국 증시 뉴스 데스크의 에디터다.
         (제목에 등장하는 상장사·업종에 미치는 방향과 강도. 실적 서프라이즈·대규모 계약·
         규제 리스크 확정처럼 방향과 크기가 둘 다 뚜렷할 때만 strong_*을 쓰고, 애매하면
         positive/negative/neutral로 보수적으로 판단한다)
-- why: 이 뉴스가 투자자에게 왜 중요한지 한 문장. 제목에서 확인되는 사실만 근거로 쓴다.
+- why: 이 뉴스가 투자자에게 왜 중요한지 한 문장. 본문에서 확인되는 사실만 근거로 쓴다.
         추측이나 확인되지 않은 숫자를 절대 만들어내지 마라. 불확실하면 "확인이 필요합니다"라고
         써라. "~습니다/입니다"체로 끝낸다.
-- insight: "AI 해설" 버튼을 눌렀을 때 펼쳐지는 2~4문장짜리 해설. why를 좀 더 풀어서,
-        투자자가 이 뉴스를 보고 무엇을 더 확인해봐야 하는지·어떤 리스크나 반론이 있는지까지
-        짚어준다. 절대 기사 본문을 읽고 요약한 것처럼 쓰지 마라 — 너에게는 제목과 공개된
-        사실만 주어졌다. 제목에서 합리적으로 유추 가능한 범위를 벗어나지 말고, 숫자나
-        사실을 지어내지 마라. 유추일 뿐인 부분은 "~일 가능성이 있습니다"처럼 표현한다.
-        문장은 반드시 "~습니다/입니다"체의 정중한 존댓말로 끝낸다. "~다"로 끝나는
-        반말체(개조식)는 절대 쓰지 마라.
-- tickers: 제목에 "실제 거래소에 상장된 종목"으로 명시적으로 등장하는 이름만 배열로.
+- insight: "AI 해설" 버튼을 눌렀을 때 펼쳐지는 3~5문장짜리 해설. 각 기사에는 본문 일부가
+        같이 주어진다 — 그 본문을 실제로 읽고 핵심 내용을 네 말로 요약한 뒤, 투자자 관점에서
+        왜 중요한지·무엇을 더 확인해야 하는지를 덧붙인다. 본문에 없는 숫자·사실을 절대
+        지어내지 마라. 본문이 비어있거나 너무 짧아 판단이 어려우면 제목과 공개 정보만으로
+        판단하되 과장하지 마라. 문장은 반드시 "~습니다/입니다"체의 정중한 존댓말로 끝낸다.
+        "~다"로 끝나는 반말체(개조식)는 절대 쓰지 마라.
+- tickers: "실제 거래소에 상장된 종목"으로 명시적으로 등장하는 이름만 배열로.
         투자자문사·자산운용사·사모펀드·행동주의 펀드(예: 얼라인파트너스 같은 곳)·
         정부기관·애널리스트·증권사처럼 뉴스에 등장은 하지만 그 자체가 매매 가능한
         상장 종목이 아닌 이름은 절대 넣지 마라. 없으면 빈 배열.
 
-기사 본문은 주어지지 않았다. 제목만 보고 판단하되, 과장하지 마라.
+각 기사에는 제목과 함께 원문 일부(크롤링된 본문, 잘려있거나 광고 문구가 섞여있을 수 있음)가
+주어진다. 본문이 비어있는 기사는 제목만 보고 판단하라. 과장하지 마라.
 
 반드시 아래 JSON만 출력한다. 입력 순서와 동일한 개수로.
 {"items":[{"i":0,"sector":"...","impact":"strong_positive|positive|neutral|negative|strong_negative","why":"...","insight":"...","tickers":["..."]}]}"""
@@ -96,18 +131,26 @@ def collect(market_group: str = "KR") -> list[dict]:
 
 
 def tag(items: list[dict]) -> list[dict]:
-    """AI 1회 호출로 전체 기사에 맥락을 붙인다. 실패해도 기사 목록은 살아남는다."""
+    """AI 1회 호출로 전체 기사에 맥락을 붙인다. 실패해도 기사 목록은 살아남는다.
+
+    "AI 해설"용으로 원문을 그 자리에서 잠깐 읽어와 프롬프트에 넣지만, 원문 텍스트
+    자체(_body)는 이 함수가 끝나기 전에 지워 스냅샷에 절대 남지 않게 한다."""
     if not items:
         return []
-    listing = "\n".join(f"{i}. {it['title']}" for i, it in enumerate(items))
+    _fetch_bodies(items)
+    listing = "\n\n".join(
+        f"{i}. 제목: {it['title']}\n본문 일부: {it.get('_body') or '(가져오지 못함)'}"
+        for i, it in enumerate(items)
+    )
     try:
         res = _parse_json(_call(TAGGER_SYS, listing, config.NEWSTAG_MODEL, max_tokens=16000))
     except (AIFailure, json.JSONDecodeError, ValueError) as e:
         print(f"[newsroom] 태깅 실패({e}) — 원문 링크만 발행")
-        return items
+        res = {}
 
     by_i = {int(x["i"]): x for x in res.get("items", []) if "i" in x}
     for i, it in enumerate(items):
+        it.pop("_body", None)  # 원문은 프롬프트에만 쓰고 절대 저장하지 않는다
         t = by_i.get(i)
         if not t:
             continue

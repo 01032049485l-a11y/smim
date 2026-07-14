@@ -2,5 +2,6 @@ finance-datareader>=0.9.96
 pandas>=2.2
 numpy>=1.26
 requests>=2.32
+beautifulsoup4>=4.12
 anthropic>=0.40
 Jinja2>=3.1
