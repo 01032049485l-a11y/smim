@@ -48,14 +48,16 @@ async function quote(sym) {
 }
 
 // 종목추천(판정·논거)은 스냅샷 그대로 하루 단위지만, 가격·수익률은 장중 실시간으로 보여준다.
-// 코드(6자리) + 시장구분으로 야후 파이낸스 티커를 만든다: 코스피 .KS / 코스닥 .KQ
-function krTicker(code, market) {
-  const suffix = market === "KOSDAQ" ? ".KQ" : ".KS";
-  return `${code}${suffix}`;
+// 한국은 코드(6자리)에 시장별 접미사를 붙여 야후 티커를 만들고(코스피 .KS / 코스닥 .KQ),
+// 미국(NASDAQ/NYSE)은 티커 자체가 이미 야후 심볼이라 그대로 쓴다.
+function yahooStockSymbol(code, market) {
+  if (market === "KOSDAQ") return `${code}.KQ`;
+  if (market === "KOSPI") return `${code}.KS`;
+  return code;
 }
 
 async function quoteStock(code, market) {
-  const q = await quoteSymbol(krTicker(code, market));
+  const q = await quoteSymbol(yahooStockSymbol(code, market));
   if (!q) return null;
   return {
     ticker: code,
@@ -66,7 +68,7 @@ async function quoteStock(code, market) {
   };
 }
 
-const MAX_STOCK_CODES = 30; // 워치리스트 상한(12)+여유. 남용·지연 방지.
+const MAX_STOCK_CODES = 60; // 워치리스트(한국+미국, 최대 24) + 뉴스룸 언급 종목까지 여유있게.
 
 export async function onRequest({ request }) {
   const url = new URL(request.url);
@@ -79,7 +81,8 @@ export async function onRequest({ request }) {
       const [code, market] = s.split(":");
       return { code, market };
     })
-    .filter((p) => /^\d{6}$/.test(p.code));
+    // 한국: 6자리 숫자 코드 / 미국: 알파벳(+.) 티커 1~6자
+    .filter((p) => /^\d{6}$/.test(p.code) || /^[A-Za-z][A-Za-z.]{0,5}$/.test(p.code));
 
   const [indices, stocks] = await Promise.all([
     Promise.all(SYMBOLS.map((s) => quote(s).catch(() => null))),

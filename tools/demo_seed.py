@@ -120,8 +120,10 @@ NEWS=[("코스피, 외국인 순매수 유입에 이틀째 상승","증시일반
 newsroom=[]
 for i,(t,sc,im,why,tk) in enumerate(NEWS):
     newsroom.append({"title":t,"url":"https://finance.naver.com","published":f"{TODAY-dt.timedelta(days=i%2)} {14-i:02d}:{(i*7)%60:02d}",
-      "topic":sc,"sector":sc,"impact":im,"why":why,"tickers":tk,"watchlist_hits":[]})
+      "topic":sc,"sector":sc,"impact":im,"why":why,"tickers":tk,"watchlist_hits":[],"ticker_prices":[]})
 newsroom[1]["watchlist_hits"]=[{"name":"다온전자","code":"900002"}]
+newsroom[1]["ticker_prices"]=[{"name":"다온전자","code":"900002","market":"KOSDAQ","change_pct":3.1}]
+newsroom[2]["ticker_prices"]=[{"name":"현진테크","code":"900099","market":"KOSPI","change_pct":-2.4}]
 
 snap_kr={"date":str(TODAY),"market_group":"KR","report_id":f"SMIM-KR-{TODAY.strftime('%Y-%m%d')}","issue_no":37,
  "published_at":f"{TODAY}T07:12:04+09:00","models":MODELS,"market":MARKET_CTX,

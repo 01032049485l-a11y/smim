@@ -350,6 +350,17 @@ svg.fico{width:15px;height:auto;vertical-align:-2px;margin-right:4px;border-radi
 .imp.im-strong_negative{background:var(--fall);color:#fff}
 .tkr{display:inline-block;margin-left:7px;font-size:12px;font-weight:700;color:var(--mut);
   background:var(--panel2);padding:1px 7px;border-radius:5px}
+
+/* 뉴스 제목 바로 아래 관련 종목 + 전일대비 등락률 — live.js가 실시간으로 다시 갱신한다 */
+.nstocks{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.nsq{display:inline-flex;align-items:center;gap:5px;font-size:12.5px;font-weight:700;
+  padding:3px 9px;border-radius:6px;background:var(--panel2);border:1px solid var(--line)}
+.nsq a,.nsq .nm{color:var(--ink);text-decoration:none}
+.nsq a:hover{color:var(--rise)}
+.nsq .ch{font:700 12px var(--mono);font-variant-numeric:tabular-nums}
+.nsq .ch.rise{color:var(--rise)}
+.nsq .ch.fall{color:var(--fall)}
+.nsq .ch.flat{color:var(--mut)}
 .nmeta time{font-size:10.5px;color:var(--mut)}
 .nwhy{font-size:13.5px;color:var(--ink2);margin-top:7px;line-height:1.7;
   padding-left:11px;border-left:2px solid var(--line)}

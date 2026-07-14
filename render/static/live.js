@@ -59,17 +59,21 @@
   function paintStock(q) {
     const meta = stockMeta[q.ticker];
     if (!meta) return;
-    const retPct = meta.entry ? ((q.value / meta.entry) - 1) * 100 : null;
-    const sign = retPct === null ? "flat" : retPct > 0 ? "rise" : retPct < 0 ? "fall" : "flat";
     const old = prev[q.ticker];
 
     document.querySelectorAll(`[data-live-stock][data-code="${q.ticker}"]`).forEach((el) => {
+      // 워치리스트 행(기본)은 편입가 대비 수익률을, 뉴스룸의 종목 언급(data-mode="quote")은
+      // "편입"이라는 개념이 없는 종목이라 전일 대비 등락률(day change)을 그대로 보여준다.
+      const isQuote = el.dataset.mode === "quote";
+      const retPct = isQuote ? q.change_pct : (meta.entry ? ((q.value / meta.entry) - 1) * 100 : null);
+      const sign = (retPct === null || retPct === undefined) ? "flat" : retPct > 0 ? "rise" : retPct < 0 ? "fall" : "flat";
+
       const priceEl = el.querySelector('[data-field="price"]');
       const retEl = el.querySelector('[data-field="return"]');
       const tileEl = el.querySelector(".mono-tile");
 
       if (priceEl) priceEl.textContent = fmtWon(q.value);
-      if (retEl && retPct !== null) {
+      if (retEl && retPct !== null && retPct !== undefined) {
         // 일부 마크업은 <td data-field="return"><b>텍스트</b></td> 구조라
         // 안쪽 <b>만 바꿔야 굵은 글씨가 유지된다. <b>가 없으면 자기 자신을 쓴다.
         (retEl.querySelector("b") || retEl).textContent = fmtPct(retPct);

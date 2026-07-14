@@ -12,7 +12,7 @@ import re
 
 import config
 from pipeline.agents import _call, _parse_json, AIFailure
-from pipeline.sources import news, us_news
+from pipeline.sources import news, us_news, prices
 
 TOPICS = [
     ("증시", "코스피 코스닥 증시"),
@@ -107,8 +107,85 @@ def tag(items: list[dict]) -> list[dict]:
     return items
 
 
+_SUFFIX_RE = re.compile(
+    r"\b(incorporated|corporation|holdings?|group|company|limited|adr|"
+    r"inc|corp|co|ltd|plc|class [ab])\b\.?", re.IGNORECASE)
+
+# 뉴스 제목에서 흔히 쓰는 약칭·별칭이 상장사 공식명과 아예 다른 대표 사례.
+# (예: "TSMC" 기사 제목에는 자주 나오지만 공식 상장명은 "Taiwan Semiconductor...")
+_ALIASES = {
+    "tsmc": "taiwan semiconductor manufacturing",
+    "google": "alphabet",
+    "facebook": "meta platforms",
+    "ibm": "international business machines",
+    "gm": "general motors",
+    "amd": "advanced micro devices",
+}
+
+
+def _norm(name: str) -> str:
+    n = _SUFFIX_RE.sub("", name.lower().strip())
+    n = re.sub(r"[^a-z0-9가-힣 ]", "", n)
+    n = re.sub(r"\s+", " ", n).strip()
+    return _ALIASES.get(n, n)
+
+
+def _match_name(name: str, norm_index: dict) -> dict | None:
+    """정확히 일치 → 별칭·접미사 제거 후 일치 → 부분 문자열 순으로 완화하며 찾는다.
+    뉴스 제목의 회사명 표기가 거래소 공식 상장명과 정확히 같지 않은 경우가 많아서
+    (예: "TSMC" vs "Taiwan Semiconductor Manufacturing Co Ltd ADR") 단계적으로 느슨하게 본다."""
+    key = _norm(name)
+    if not key or len(key) < 2:
+        return None
+    if key in norm_index:
+        return norm_index[key]
+    if len(key) >= 4:  # 너무 짧은 이름은 부분일치 시 오탐이 잦아 제외
+        for k, v in norm_index.items():
+            if key in k or k in key:
+                return v
+    return None
+
+
+def resolve_tickers(items: list[dict], market_group: str) -> list[dict]:
+    """AI가 제목에서 뽑은 회사명을 실제 종목코드 + 전일 대비 등락률에 매칭한다.
+    "반도체 뉴스 떴는데 이게 어느 종목 얘기지?"를 숫자로 바로 보여주기 위함.
+    유니버스에 없는 이름(비상장·해외 대형주 등)은 이름만 남고 등락률은 비운다.
+    여기서 붙는 change_pct는 발행 시점 값이고, 화면에서는 live.js가 실시간으로 다시 갱신한다."""
+    try:
+        uni = prices.load_universe(market_group)
+        norm_index = {_norm(r["Name"]): {"code": r["Code"], "market": r["Market"]} for _, r in uni.iterrows()}
+    except Exception as e:
+        print(f"[newsroom] 종목 매칭용 유니버스 로드 실패({e}) — 이름만 표시")
+        norm_index = {}
+
+    price_cache: dict[str, dict | None] = {}
+
+    def _change(code: str) -> dict | None:
+        if code not in price_cache:
+            df = prices.ohlcv(code, days=10, fast=True)
+            if df is not None and len(df) >= 2:
+                last, prev = float(df["Close"].iloc[-1]), float(df["Close"].iloc[-2])
+                price_cache[code] = {"price": last, "change_pct": round((last / prev - 1) * 100, 2)} if prev else None
+            else:
+                price_cache[code] = None
+        return price_cache[code]
+
+    for it in items:
+        resolved = []
+        for name in (it.get("tickers") or []):
+            row = _match_name(name, norm_index)
+            if not row:
+                resolved.append({"name": name, "code": None, "market": None, "change_pct": None})
+                continue
+            chg = _change(row["code"])
+            resolved.append({"name": name, "code": row["code"], "market": row["market"],
+                              "change_pct": (chg or {}).get("change_pct")})
+        it["ticker_prices"] = resolved
+    return items
+
+
 def build(market_group: str = "KR") -> list[dict]:
-    return tag(collect(market_group))
+    return resolve_tickers(tag(collect(market_group)), market_group)
 
 
 def link_to_watchlist(items: list[dict], watchlist: list[dict]) -> list[dict]:
