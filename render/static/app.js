@@ -109,6 +109,17 @@
     nl.insertAdjacentElement("afterend", btn);
   });
 
+  /* "AI 해설" 펼치기/접기 — 제목 기반 해설이라 클릭 전엔 숨겨둔다 */
+  document.querySelectorAll("[data-ai-explain]").forEach((btn) => {
+    const body = btn.nextElementSibling;
+    if (!body || !body.classList.contains("ai-explain-body")) return;
+    btn.addEventListener("click", () => {
+      const open = btn.getAttribute("aria-expanded") === "true";
+      btn.setAttribute("aria-expanded", String(!open));
+      body.hidden = open;
+    });
+  });
+
   /* 스크롤 리빌 */
   if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
     const io = new IntersectionObserver((es) => es.forEach((e) => {

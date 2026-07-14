@@ -47,12 +47,17 @@ TAGGER_SYS = """너는 국내·미국 증시 뉴스 데스크의 에디터다.
         positive/negative/neutral로 보수적으로 판단한다)
 - why: 이 뉴스가 투자자에게 왜 중요한지 한 문장. 제목에서 확인되는 사실만 근거로 쓴다.
         추측이나 확인되지 않은 숫자를 절대 만들어내지 마라. 불확실하면 "확인 필요"라고 써라.
+- insight: "AI 해설" 버튼을 눌렀을 때 펼쳐지는 2~4문장짜리 해설. why를 좀 더 풀어서,
+        투자자가 이 뉴스를 보고 무엇을 더 확인해봐야 하는지·어떤 리스크나 반론이 있는지까지
+        짚어준다. 절대 기사 본문을 읽고 요약한 것처럼 쓰지 마라 — 너에게는 제목과 공개된
+        사실만 주어졌다. 제목에서 합리적으로 유추 가능한 범위를 벗어나지 말고, 숫자나
+        사실을 지어내지 마라. 유추일 뿐인 부분은 "~일 가능성이 있다"처럼 표현한다.
 - tickers: 제목에 명시적으로 등장하는 상장사 이름만 배열로. 없으면 빈 배열.
 
 기사 본문은 주어지지 않았다. 제목만 보고 판단하되, 과장하지 마라.
 
 반드시 아래 JSON만 출력한다. 입력 순서와 동일한 개수로.
-{"items":[{"i":0,"sector":"...","impact":"strong_positive|positive|neutral|negative|strong_negative","why":"...","tickers":["..."]}]}"""
+{"items":[{"i":0,"sector":"...","impact":"strong_positive|positive|neutral|negative|strong_negative","why":"...","insight":"...","tickers":["..."]}]}"""
 
 
 def collect_kr() -> list[dict]:
@@ -90,7 +95,7 @@ def tag(items: list[dict]) -> list[dict]:
         return []
     listing = "\n".join(f"{i}. {it['title']}" for i, it in enumerate(items))
     try:
-        res = _parse_json(_call(TAGGER_SYS, listing, config.NEWSTAG_MODEL, max_tokens=4000))
+        res = _parse_json(_call(TAGGER_SYS, listing, config.NEWSTAG_MODEL, max_tokens=8000))
     except (AIFailure, json.JSONDecodeError, ValueError) as e:
         print(f"[newsroom] 태깅 실패({e}) — 원문 링크만 발행")
         return items
@@ -103,6 +108,7 @@ def tag(items: list[dict]) -> list[dict]:
         it["sector"] = t.get("sector")
         it["impact"] = t.get("impact", "neutral")
         it["why"] = t.get("why")
+        it["insight"] = t.get("insight")
         it["tickers"] = [x for x in (t.get("tickers") or []) if isinstance(x, str)][:4]
     return items
 

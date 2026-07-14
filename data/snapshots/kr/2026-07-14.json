@@ -262,306 +262,608 @@
  ],
  "newsroom": [
   {
-   "title": "\"6800 무너지면 6000도 가능\"…골드만삭스의 코스피 경고",
-   "url": "http://www.newsian.co.kr/news/articleView.html?idxno=92244",
-   "published": "2026-07-14",
+   "title": "코스피 하루 531포인트 출렁, 개미들 심장 철렁",
+   "url": "https://www.donga.com/news/Economy/article/all/20260714/134299008/2",
+   "published": "2026-07-15 00:31",
    "topic": "증시",
    "sector": "증시일반",
-   "impact": "negative",
-   "why": "골드만삭스가 코스피 6800선 붕괴 시 6000까지 하락 가능성을 경고하며 투자자 심리 악화",
+   "impact": "neutral",
+   "why": "코스피의 일중 변동성이 크다는 사실만 전달하며, 방향성이 명확하지 않음.",
+   "insight": "531포인트의 등락은 시장의 불안정성을 반영하지만, 제목만으로는 마감 방향이나 구체적 원인을 알 수 없다. 이후 기사들과 함께 봐야 전체 맥락이 파악될 것으로 보인다.",
    "tickers": [],
-   "watchlist_hits": [],
-   "ticker_prices": []
+   "ticker_prices": [],
+   "watchlist_hits": []
   },
   {
-   "title": "화장품 동전주 5곳 남았다…상장폐지 제도 개편에 투자자 '촉각'",
-   "url": "https://www.thebk.co.kr/news/articleView.html?idxno=310563",
-   "published": "2026-07-14",
-   "topic": "증시",
-   "sector": "소비재",
-   "impact": "negative",
-   "why": "화장품 동전주가 5개로 축소되면서 상장폐지 제도 개편에 따른 구조조정 가속화",
+   "title": "7월 3주 주요 제조업 전망",
+   "url": "https://www.laborplus.co.kr/news/articleView.html?idxno=41134",
+   "published": "2026-07-15 00:27",
+   "topic": "반도체",
+   "sector": "제조업",
+   "impact": "neutral",
+   "why": "7월 3주 제조업 전망에 대한 예고성 기사로, 구체적 내용이 제목에 없음.",
+   "insight": "향후 발표될 실제 전망 내용에 따라 평가가 달라질 것으로 보인다. 현 시점에서는 정보가 불충분하다.",
    "tickers": [],
-   "watchlist_hits": [],
-   "ticker_prices": []
+   "ticker_prices": [],
+   "watchlist_hits": []
   },
   {
-   "title": "'검은 월요일' 떨쳐낸 코스피…6,800선 회복",
-   "url": "http://www.yonhapnewstv.co.kr/news/MYH20260714192254V6d",
-   "published": "2026-07-14",
-   "topic": "증시",
-   "sector": "증시일반",
-   "impact": "positive",
-   "why": "코스피가 낙폭을 회복하며 6800선을 되찾음",
-   "tickers": [],
-   "watchlist_hits": [],
-   "ticker_prices": []
-  },
-  {
-   "title": "[앵커리포트] 롤러코스터 장세 속 상승 마감…코스피 6,800선 회복",
-   "url": "http://www.yonhapnewstv.co.kr/news/MYH20260714192056rJK",
-   "published": "2026-07-14",
-   "topic": "증시",
-   "sector": "증시일반",
-   "impact": "positive",
-   "why": "변동성 속에서도 코스피가 상승 마감하며 6800선 회복",
-   "tickers": [],
-   "watchlist_hits": [],
-   "ticker_prices": []
-  },
-  {
-   "title": "'수출업체 달러 매도' 원·달러 환율, 10원 넘게 하락 마감...장중 1480원...",
-   "url": "https://www.betanews.net/article/view/beta202607140067",
-   "published": "2026-07-14",
-   "topic": "증시",
+   "title": "3% 경제성장, 4강 수출대국, 5만달러 소득",
+   "url": "https://www.joongang.co.kr/article/25445143",
+   "published": "2026-07-15 00:26",
+   "topic": "환율·거시",
    "sector": "거시·환율",
    "impact": "positive",
-   "why": "수출업체의 달러 매도로 원달러 환율이 10원 이상 하락하며 수출 환경 개선",
+   "why": "3% 경제성장, 4강 수출대국, 5만달러 소득이라는 국가 경제 목표·성과를 제시하는 긍정적 메시지.",
+   "insight": "이는 정책 발표나 비전 제시로 보이며, 국내 기업 전반에 긍정적 심리를 줄 수 있다. 다만 제목만으로는 이것이 확정된 성과인지 목표인지 불명확하다.",
    "tickers": [],
-   "watchlist_hits": [],
-   "ticker_prices": []
+   "ticker_prices": [],
+   "watchlist_hits": []
   },
   {
-   "title": "신저가인데 하루 12조 거래…‘초단타 놀이터’ 된 단일종목 레버리지,...",
-   "url": "https://biz.heraldcorp.com/article/10808501?ref=naver",
-   "published": "2026-07-14",
-   "topic": "증시",
-   "sector": "증시일반",
-   "impact": "negative",
-   "why": "단일종목 레버리지가 신저가에도 12조 거래량을 기록하며 투기 심화",
-   "tickers": [],
-   "watchlist_hits": [],
-   "ticker_prices": []
-  },
-  {
-   "title": "코스피 소폭 반등, 삼전닉스 하락분 만회",
-   "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=850301",
-   "published": "2026-07-14",
-   "topic": "증시",
+   "title": "SK 하이닉스 ADR 레버리지, 뉴욕 증시에 대거 상장",
+   "url": "https://www.ytn.co.kr/_ln/0104_202607150023556368",
+   "published": "2026-07-15 00:23",
+   "topic": "반도체",
    "sector": "반도체",
-   "impact": "neutral",
-   "why": "코스피 소폭 반등 중 삼성전자와 SK하이닉스의 하락분이 부분 만회됨",
+   "impact": "positive",
+   "why": "SK하이닉스 ADR 레버리지 상품이 뉴욕 증시에 상장되어 투자 수단이 확대됨.",
+   "insight": "ADR 레버리지 상품은 개인 투자자의 접근성을 높이지만, 레버리지 특성상 위험도 동시에 증가한다. 실제 기초자산 가격 변동과 수급에 더 민감할 수 있다.",
    "tickers": [
-    "삼성전자",
     "SK하이닉스"
    ],
-   "watchlist_hits": [],
    "ticker_prices": [
     {
-     "name": "삼성전자",
-     "code": "005930",
+     "name": "SK하이닉스",
+     "code": "000660",
      "market": "KOSPI",
-     "change_pct": 3.34
+     "change_pct": 3.69
+    }
+   ],
+   "watchlist_hits": []
+  },
+  {
+   "title": "SK하이닉스 ADR 12% 상승…170.7달러",
+   "url": "https://www.tokenpost.kr/news/breaking/377745",
+   "published": "2026-07-15 00:12",
+   "topic": "반도체",
+   "sector": "반도체",
+   "impact": "strong_positive",
+   "why": "SK하이닉스 ADR이 12% 상승하며 170.7달러에 도달, 미국 상장 후 강한 상승세.",
+   "insight": "12%의 상승률은 시장의 긍정적 반응을 보여준다. 다만 미국 시장에서의 수급 상황과 국내 주가와의 연계 관계를 함께 확인할 필요가 있다.",
+   "tickers": [
+    "SK하이닉스"
+   ],
+   "ticker_prices": [
+    {
+     "name": "SK하이닉스",
+     "code": "000660",
+     "market": "KOSPI",
+     "change_pct": 3.69
+    }
+   ],
+   "watchlist_hits": []
+  },
+  {
+   "title": "미 상장 뒤 장중 160만 원대까지...하이닉스 날개 잃었나",
+   "url": "https://www.ytn.co.kr/_ln/0102_202607150011207560",
+   "published": "2026-07-15 00:11",
+   "topic": "반도체",
+   "sector": "반도체",
+   "impact": "negative",
+   "why": "미 상장 후 하이닉스 주가가 160만원대까지 하락, '날개를 잃었나'는 우려 반영.",
+   "insight": "ADR 상장 직후 급락은 국내외 가격 괴리나 수급 조정을 시사한다. 160만원대 수준이 지지선인지, 추가 하락 가능성이 있는지 확인이 필요하다.",
+   "tickers": [
+    "SK하이닉스"
+   ],
+   "ticker_prices": [
+    {
+     "name": "SK하이닉스",
+     "code": "000660",
+     "market": "KOSPI",
+     "change_pct": 3.69
+    }
+   ],
+   "watchlist_hits": []
+  },
+  {
+   "title": "美 물가 '깜짝 하락'…IBM 실적이 확인한 반도체 슈퍼사이클 [빈난새의...",
+   "url": "https://www.hankyung.com/article/202607145419i",
+   "published": "2026-07-15 00:09",
+   "topic": "반도체",
+   "sector": "반도체",
+   "impact": "positive",
+   "why": "미국 물가 하락과 IBM 실적이 반도체 슈퍼사이클의 긍정 신호를 확인.",
+   "insight": "물가 둔화는 금리 인하 가능성으로 이어지며, IBM 같은 고객사의 실적 호조는 반도체 수요 회복을 시사한다. 다만 '슈퍼사이클' 같은 강한 표현이 현 시점의 실체와 맞는지 검증 필요.",
+   "tickers": [],
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "SK하이닉스 ADR 옵션 거래 개시…초기 단기 계약 쏠림",
+   "url": "https://www.newspim.com/news/view/20260715000001",
+   "published": "2026-07-15 00:09",
+   "topic": "반도체",
+   "sector": "반도체",
+   "impact": "neutral",
+   "why": "SK하이닉스 ADR 옵션 거래 개시로 투자 수단 다양화, 초기 단기 쏠림 현상 관찰.",
+   "insight": "옵션 거래는 헤징 및 투기 수단이 되며, 초기 쏠림은 기초자산의 변동성 확대 가능성을 시사한다. 장기적 영향은 추가 관찰이 필요하다.",
+   "tickers": [
+    "SK하이닉스"
+   ],
+   "ticker_prices": [
+    {
+     "name": "SK하이닉스",
+     "code": "000660",
+     "market": "KOSPI",
+     "change_pct": 3.69
+    }
+   ],
+   "watchlist_hits": []
+  },
+  {
+   "title": "두산에너빌리티 주가 7만빌리티는 지켰다…장세는 혼조, 코스피 반등 속...",
+   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=589116",
+   "published": "2026-07-15 00:06",
+   "topic": "증시",
+   "sector": "에너지",
+   "impact": "neutral",
+   "why": "두산에너빌리티가 7만원대를 지키며 혼조 장세 속 반등을 보임.",
+   "insight": "7만원대 유지는 저항선 사수로 해석될 수 있으나, 전체 시장이 혼조일 때의 상대적 강세인지 절대적 강세인지 불명확하다.",
+   "tickers": [
+    "두산에너빌리티"
+   ],
+   "ticker_prices": [
+    {
+     "name": "두산에너빌리티",
+     "code": "034020",
+     "market": "KOSPI",
+     "change_pct": -3.14
+    }
+   ],
+   "watchlist_hits": []
+  },
+  {
+   "title": "오늘 금시세 추이는?…대외 불확실성 속 금값 이목",
+   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=589096",
+   "published": "2026-07-15 00:06",
+   "topic": "증시",
+   "sector": "에너지",
+   "impact": "neutral",
+   "why": "금시세 추이를 전망하는 기사로, 대외 불확실성 속 금값에 주목.",
+   "insight": "금은 불확실성 높은 시기의 안전자산으로 작용하지만, 제목만으로는 금값이 상승할지 하락할지 불명확하다.",
+   "tickers": [],
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "\"반도체 급락, 성급한 비관은 금물\"…전문가 \"이번 주 TSMC·ASML 실적 주...",
+   "url": "https://www.newsis.com/view/NISX20260714_0003708991",
+   "published": "2026-07-15 00:05",
+   "topic": "반도체",
+   "sector": "반도체",
+   "impact": "positive",
+   "why": "전문가들이 반도체 급락에 대해 '성급한 비관은 금물'이라 조언, 이번 주 TSMC·ASML 실적이 중요.",
+   "insight": "성급한 비관 경고는 기술적 반등 가능성을 시사하나, 아직 확실하지 않다. TSMC와 ASML의 실적 발표가 방향을 결정할 가능성이 높으므로 그때까지 지켜봐야 한다.",
+   "tickers": [],
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "‘오만과 편견’에 지배 당한 증시…삼전닉스와 스페이스X는 왜 다를까...",
+   "url": "https://biz.heraldcorp.com/article/10808953?ref=naver",
+   "published": "2026-07-15 00:04",
+   "topic": "증시",
+   "sector": "증시일반",
+   "impact": "neutral",
+   "why": "삼성·하이닉스와 스페이스X 등 대형 기업들의 시장 평가 차이를 분석, 시장 심리의 '오만과 편견' 지적.",
+   "insight": "이는 투자자 심리의 일관성 부족을 비판하는 칼럼으로, 구체적 투자 영향보다는 시장 현상 분석에 가깝다. 구체적 이유나 근거가 제목에 부족하다.",
+   "tickers": [],
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[증시 프리즘] 수급 공방속 요동친 증시…코스피·코스닥 시장 주체별 ...",
+   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=82171",
+   "published": "2026-07-15 00:00",
+   "topic": "증시",
+   "sector": "증시일반",
+   "impact": "neutral",
+   "why": "코스피·코스닥의 수급 공방과 시장 주체별 거래 동향을 분석.",
+   "insight": "수급 공방은 시장 변동성을 설명하지만, 제목만으로는 어느 주체가 우위인지, 향후 방향이 어떨지 불명확하다.",
+   "tickers": [],
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[심층분석] 장중 패닉셀 주도한 외국인 창구와 연기금의 구원 등판…막...",
+   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=82173",
+   "published": "2026-07-15 00:00",
+   "topic": "증시",
+   "sector": "증시일반",
+   "impact": "neutral",
+   "why": "장중 패닉셀 주도 세력과 연기금의 구원 등판이 시장을 움직였음을 분석.",
+   "insight": "외국인 이탈과 국내 기관의 매수가 대항하는 구조를 보여주나, 제목만으로는 현재 균형점이 어디인지, 지속성이 있는지 판단 불가.",
+   "tickers": [],
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "미 달러화 급락…예상보다 크게 하락한 美 소비자물가",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4424976",
+   "published": "2026-07-15 00:00",
+   "topic": "환율·거시",
+   "sector": "거시·환율",
+   "impact": "positive",
+   "why": "미 달러화가 예상보다 크게 하락하여 달러 약세 가능성 시사.",
+   "insight": "달러 약세는 원화 강세, 신흥국 자산 유입 호조 등으로 이어질 수 있다. 다만 이것이 일시적 조정인지 추세 전환인지는 확인이 필요하다.",
+   "tickers": [],
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[주요공시] 나라스페이스테크놀로지, 씨메스로보틱스, 셀트리온, 한미반...",
+   "url": "https://www.kdpress.co.kr/news/articleView.html?idxno=206927",
+   "published": "2026-07-14 23:56",
+   "topic": "증시",
+   "sector": "IT·플랫폼",
+   "impact": "neutral",
+   "why": "나라스페이스테크놀로지, 씨메스로보틱스, 셀트리온, 한미반도체 등 여러 기업의 주요공시.",
+   "insight": "제목에 기업명만 있고 공시 내용이 없어 평가 불가. 각 공시 내용을 확인해야 한다.",
+   "tickers": [
+    "나라스페이스테크놀로지",
+    "씨메스로보틱스",
+    "셀트리온",
+    "한미반도체"
+   ],
+   "ticker_prices": [
+    {
+     "name": "나라스페이스테크놀로지",
+     "code": null,
+     "market": null,
+     "change_pct": null
     },
     {
-     "name": "SK하이닉스",
-     "code": "000660",
-     "market": "KOSPI",
-     "change_pct": 3.69
-    }
-   ]
-  },
-  {
-   "title": "증권업계 \"단일종목 레버리지, 자본시장 선진화 기여…거래대금 아닌 리...",
-   "url": "https://www.asiatime.co.kr/article/20260714500437",
-   "published": "2026-07-14",
-   "topic": "증시",
-   "sector": "증시일반",
-   "impact": "neutral",
-   "why": "증권업계가 단일종목 레버리지의 자본시장 기여도를 주장하고 거래대금 규제 필요성 언급",
-   "tickers": [],
-   "watchlist_hits": [],
-   "ticker_prices": []
-  },
-  {
-   "title": "\"하루 만에 돌아온 매수세\"… 닛케이지수, 반도체·AI주 반등 힘입어 6만...",
-   "url": "https://www.g-enews.com/view.php?ud=202607141920547936e7e8286d56_1",
-   "published": "2026-07-14",
-   "topic": "반도체",
-   "sector": "증시일반",
-   "impact": "positive",
-   "why": "반도체와 AI주 반등으로 닛케이지수가 하루 만에 6만선 회복",
-   "tickers": [],
-   "watchlist_hits": [],
-   "ticker_prices": []
-  },
-  {
-   "title": "[더벨][thebell's view] [영상] 나스닥 가는 SK하이닉스…40조 ADR에 담긴...",
-   "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202607141551091200101375",
-   "published": "2026-07-14",
-   "topic": "반도체",
-   "sector": "반도체",
-   "impact": "neutral",
-   "why": "SK하이닉스의 40조 규모 ADR 상장이 나스닥 진출을 의미",
-   "tickers": [
-    "SK하이닉스"
-   ],
-   "watchlist_hits": [],
-   "ticker_prices": [
+     "name": "씨메스로보틱스",
+     "code": "475400",
+     "market": "KOSDAQ",
+     "change_pct": -3.24
+    },
     {
-     "name": "SK하이닉스",
-     "code": "000660",
+     "name": "셀트리온",
+     "code": "068270",
      "market": "KOSPI",
-     "change_pct": 3.69
-    }
-   ]
-  },
-  {
-   "title": "'160만원대 추락' SK하이닉스, 300만원 진입 조건 나왔다?⋯\"강한 감동 ...",
-   "url": "http://www.inews24.com/view/1985539",
-   "published": "2026-07-14",
-   "topic": "반도체",
-   "sector": "반도체",
-   "impact": "positive",
-   "why": "SK하이닉스가 160만원대에서 하락했으나 300만원 진입 조건이 나왔다는 긍정 신호",
-   "tickers": [
-    "SK하이닉스"
-   ],
-   "watchlist_hits": [],
-   "ticker_prices": [
+     "change_pct": -1.31
+    },
     {
-     "name": "SK하이닉스",
-     "code": "000660",
+     "name": "한미반도체",
+     "code": "042700",
      "market": "KOSPI",
-     "change_pct": 3.69
+     "change_pct": 0.97
     }
-   ]
+   ],
+   "watchlist_hits": []
   },
   {
-   "title": "[亞증시-종합] 日·中·홍콩 장 중 상승 전환…대만 홀로 약세",
-   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4424966",
-   "published": "2026-07-14",
-   "topic": "반도체",
+   "title": "[시사천국] 반도체 호황이 만든 초과세수…어디에 어떻게 쓸까",
+   "url": "https://news.cpbc.co.kr/article/1174363?division=NAVER",
+   "published": "2026-07-14 23:10",
+   "topic": "환율·거시",
    "sector": "거시·환율",
    "impact": "neutral",
-   "why": "아시아 증시 중 일본·중국·홍콩은 상승 전환, 대만만 약세를 보임",
+   "why": "반도체 호황으로 발생한 초과세수 활용 방안에 대한 논의.",
+   "insight": "초과세수는 정부 정책 공간을 확대하나, 어디에 쓸지는 정치적·경제적 판단의 문제다. 구체 방향이 정해지기 전까지는 투자 영향 판단이 어렵다.",
    "tickers": [],
-   "watchlist_hits": [],
-   "ticker_prices": []
+   "ticker_prices": [],
+   "watchlist_hits": []
   },
   {
-   "title": "[이슈분석] 사면초가에 빠진 삼성전자의 호남 반도체 400조 투자",
-   "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=273038",
-   "published": "2026-07-14",
-   "topic": "반도체",
+   "title": "국내 증시, 반도체 주식 급락에 시가총액 6천조 원대 추락",
+   "url": "https://www.tokenpost.kr/news/market/377720",
+   "published": "2026-07-14 23:04",
+   "topic": "증시",
    "sector": "반도체",
-   "impact": "negative",
-   "why": "삼성전자의 호남 반도체 400조 투자가 어려운 상황에 봉착함",
-   "tickers": [
-    "삼성전자"
-   ],
-   "watchlist_hits": [],
-   "ticker_prices": [
-    {
-     "name": "삼성전자",
-     "code": "005930",
-     "market": "KOSPI",
-     "change_pct": 3.34
-    }
-   ]
+   "impact": "strong_negative",
+   "why": "반도체 주식 급락으로 국내 증시 시가총액이 6천조원대로 추락.",
+   "insight": "시가총액 하락은 국내 주식시장 전체의 가치 평가 하락을 의미한다. 반도체가 코스피 시가총액의 상당 부분을 차지하고 있음을 고려하면 시장 심리 악화가 심각할 수 있다.",
+   "tickers": [],
+   "ticker_prices": [],
+   "watchlist_hits": []
   },
   {
-   "title": "배터리 3사 LFP 장전에 웃는 EG…고급 산화철 세계 1위 몸값 뛴다",
-   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=468311",
-   "published": "2026-07-14",
-   "topic": "2차전지",
-   "sector": "2차전지",
+   "title": "미국증시 CPI 둔화에 반등…유가 급등 속 엔비디아·테슬라 상승",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16134435",
+   "published": "2026-07-14 22:54",
+   "topic": "환율·거시",
+   "sector": "IT·플랫폼",
    "impact": "positive",
-   "why": "배터리 3사의 LFP 장전에 따라 고급 산화철 생산업체의 가치 상승",
+   "why": "미국 CPI 둔화 속 엔비디아·테슬라 등 주요 기술주가 상승.",
+   "insight": "물가 둔화는 금리 인하 기대로 이어지며, 이는 고배수 기술주에 긍정적이다. 다만 유가 급등이 인플레이션 위험을 다시 부추길 수 있으므로 양날의 검이다.",
    "tickers": [],
-   "watchlist_hits": [],
-   "ticker_prices": []
+   "ticker_prices": [],
+   "watchlist_hits": []
   },
   {
-   "title": "[하반기 증시 관전 포인트] 코스피 피크아웃 공포 vs 코스닥 순환매",
-   "url": "https://www.mhns.co.kr/news/articleView.html?idxno=753312",
-   "published": "2026-07-14",
-   "topic": "2차전지",
-   "sector": "증시일般",
-   "impact": "neutral",
-   "why": "코스피 피크아웃 우려와 코스닥 순환매라는 상반된 장세 관전 포인트 제시",
-   "tickers": [],
-   "watchlist_hits": [],
-   "ticker_prices": []
-  },
-  {
-   "title": "엔에이치투자증권, 엘앤에프 목표주가 16만원으로 하향…리튬 가격 하락...",
-   "url": "https://www.tokenpost.kr/news/market/377471",
-   "published": "2026-07-14",
-   "topic": "2차전지",
-   "sector": "2차전지",
-   "impact": "negative",
-   "why": "엘앤에프의 목표주가가 리튬 가격 하락에 따라 16만원으로 하향 조정됨",
-   "tickers": [
-    "엘앤에프"
-   ],
-   "watchlist_hits": [],
-   "ticker_prices": [
-    {
-     "name": "엘앤에프",
-     "code": "066970",
-     "market": "KOSPI",
-     "change_pct": -10.37
-    }
-   ]
-  },
-  {
-   "title": "[1% 초고수의 개장선택] 반도체 차익실현…2차전지·바이오 저가매수로...",
-   "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1716259",
-   "published": "2026-07-14",
-   "topic": "2차전지",
+   "title": "코스피, 500포인트 급등락 끝 반등 마감... 투자 심리 여전히 불안",
+   "url": "https://www.tokenpost.kr/news/market/377710",
+   "published": "2026-07-14 22:24",
+   "topic": "환율·거시",
    "sector": "증시일반",
    "impact": "neutral",
-   "why": "반도체 차익실현 후 2차전지와 바이오 저가매수 전략 제시",
+   "why": "코스피가 500포인트 급등락 끝 반등 마감했으나, 투자 심리는 여전히 불안.",
+   "insight": "기술적 반등에도 심리가 회복되지 않았다는 것은 구조적 약세 요인이 남아있음을 시사한다. 추가 하락 가능성에 대비할 필요가 있다.",
    "tickers": [],
-   "watchlist_hits": [],
-   "ticker_prices": []
+   "ticker_prices": [],
+   "watchlist_hits": []
   },
   {
-   "title": "기술주 싹쓸이한 메리츠, 전통 명가 하나…베스트 애널리스트 격돌 [202...",
-   "url": "https://magazine.hankyung.com/business/article/202607093962b",
-   "published": "2026-07-14",
-   "topic": "2차전지",
+   "title": "얼라인파트너스, JB·BNK금융지주 합병 제안…\"지방은행 생존 해법\"",
+   "url": "https://www.ppss.kr/news/articleView.html?idxno=302042",
+   "published": "2026-07-14 22:16",
+   "topic": "금융",
    "sector": "금융",
-   "impact": "neutral",
-   "why": "메리츠와 전통 명가 기업의 베스트 애널리스트 격돌 소식",
+   "impact": "positive",
+   "why": "얼라인파트너스가 JB·BNK금융지주 합병을 제안, 지방은행 생존 해법 제시.",
+   "insight": "합병은 지방은행의 경영 효율화와 경쟁력 강화를 목표로 하는 긍정적 신호다. 다만 규제 승인과 실행 과정이 순탄할지는 별개의 문제로 확인이 필요하다.",
    "tickers": [
-    "메리츠"
+    "얼라인파트너스",
+    "JB금융지주",
+    "BNK금융지주"
    ],
-   "watchlist_hits": [],
    "ticker_prices": [
     {
-     "name": "메리츠",
+     "name": "얼라인파트너스",
+     "code": null,
+     "market": null,
+     "change_pct": null
+    },
+    {
+     "name": "JB금융지주",
+     "code": "175330",
+     "market": "KOSPI",
+     "change_pct": -3.75
+    },
+    {
+     "name": "BNK금융지주",
+     "code": "138930",
+     "market": "KOSPI",
+     "change_pct": -0.77
+    }
+   ],
+   "watchlist_hits": []
+  },
+  {
+   "title": "6월 미국 CPI 발표일·발표 시간에 쏠리는 시선...왜?",
+   "url": "https://www.gukjenews.com/news/articleView.html?idxno=3635991",
+   "published": "2026-07-14 21:08",
+   "topic": "금융",
+   "sector": "거시·환율",
+   "impact": "neutral",
+   "why": "6월 미국 CPI 발표일·시간에 시선이 쏠려, 시장 변동성 기준점 확인.",
+   "insight": "CPI는 금리 정책 방향을 결정하는 핵심 지표다. 발표 결과에 따라 글로벌 주식·환율·채권이 동시에 움직일 수 있으므로 관심이 높다.",
+   "tickers": [],
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "차입 29조 롯데…TPG에 팔고 숨통 트일까?",
+   "url": "https://www.mk.co.kr/article/12095449",
+   "published": "2026-07-14 21:01",
+   "topic": "금융",
+   "sector": "소비재",
+   "impact": "neutral",
+   "why": "차입이 많은 롯데가 TPG에 자산 매각 검토, 부채 상황 개선 가능성 시사.",
+   "insight": "자산 매각은 현금 유동성 개선에 긍정적이나, 핵심 자산 이탈이 향후 경영 자율성을 제약할 수 있다. 구체 거래 규모와 조건 확인이 필요하다.",
+   "tickers": [
+    "롯데"
+   ],
+   "ticker_prices": [
+    {
+     "name": "롯데",
      "code": null,
      "market": null,
      "change_pct": null
     }
-   ]
+   ],
+   "watchlist_hits": []
+  },
+  {
+   "title": "뉴욕증시 개장 전 특징주, 반도체주·골드만삭스↑ VS IBM·애플·JP모간...",
+   "url": "https://www.newspim.com/news/view/20260714001204",
+   "published": "2026-07-14 21:00",
+   "topic": "금융",
+   "sector": "IT·플랫폼",
+   "impact": "mixed",
+   "why": "뉴욕증시 개장 전 특징주로 반도체주·골드만삭스 상승 vs IBM·애플·JP모건 약세.",
+   "insight": "기술주 내에서도 성장성 평가가 엇갈리고 있으며, 금융주도 일관되지 않은 모습을 보인다. CPI 발표 임박 시점의 변동성이 높은 상황으로 보인다.",
+   "tickers": [],
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[미리보는 이데일리 신문]반도체 발판 대도약…'3·4·5 비전' 제시",
+   "url": "https://www.edaily.co.kr/news/newspath.asp?newsid=05877766645514520",
+   "published": "2026-07-14 20:32",
+   "topic": "금융",
+   "sector": "거시·환율",
+   "impact": "positive",
+   "why": "반도체 산업을 발판으로 한 '3·4·5 비전'(3% 성장·4강 수출·5만달러 소득) 제시.",
+   "insight": "이는 정부의 중기 경제 목표로, 국내 산업 전체에 긍정적 신호를 주려는 의도로 보인다. 다만 실현 가능성과 구체 이행 방안 확인이 필요하다.",
+   "tickers": [],
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "뉴욕증시 프리뷰, 美 선물 혼조…CPI·은행 실적 대기 속 반도체주 반등",
+   "url": "https://www.newspim.com/news/view/20260714001199",
+   "published": "2026-07-14 20:31",
+   "topic": "금융",
+   "sector": "IT·플랫폼",
+   "impact": "neutral",
+   "why": "뉴욕증시 선물이 혼조이며, CPI·은행 실적 대기 속 반도체주 반등 관찰.",
+   "insight": "주요 경제 지표와 실적 발표 전 시장이 '관망' 모드에 있는 상황이다. 방향 전환은 이번 주 주요 데이터에 달려있을 가능성이 높다.",
+   "tickers": [],
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[공시] 앱튼·한성기업 '거래정지 예고', 포커스에이아이 '투자주의' 등...",
+   "url": "https://www.newstnt.com/news/articleView.html?idxno=710238",
+   "published": "2026-07-14 20:20",
+   "topic": "바이오",
+   "sector": "IT·플랫폼",
+   "impact": "neutral",
+   "why": "앱튼·한성기업 거래정지 예고, 포커스에이아이 투자주의 지정 등 규제 동향.",
+   "insight": "거래정지와 투자주의는 기업 신용도 악화를 의미하므로 개별 종목 투자자에게 부정적이다. 각 기업의 구체 사유 확인이 필수다.",
+   "tickers": [
+    "앱튼",
+    "한성기업",
+    "포커스에이아이"
+   ],
+   "ticker_prices": [
+    {
+     "name": "앱튼",
+     "code": null,
+     "market": null,
+     "change_pct": null
+    },
+    {
+     "name": "한성기업",
+     "code": null,
+     "market": null,
+     "change_pct": null
+    },
+    {
+     "name": "포커스에이아이",
+     "code": null,
+     "market": null,
+     "change_pct": null
+    }
+   ],
+   "watchlist_hits": []
+  },
+  {
+   "title": "한국타이어, 전기차 올웨더 타이어 '아이온 플렉스 클라이밋' 출시",
+   "url": "http://www.biztribune.co.kr/news/articleView.html?idxno=355954",
+   "published": "2026-07-14 20:08",
+   "topic": "자동차",
+   "sector": "자동차",
+   "impact": "positive",
+   "why": "한국타이어가 전기차 올웨더 타이어 '아이온 플렉스 클라이밋' 출시, 신제품 공급 확대.",
+   "insight": "전기차 시장 성장에 맞춘 맞춤형 제품 출시로 한국타이어의 시장 기회를 확대한다. 다만 경쟁사 제품과의 성능·가격 경쟁력 비교가 필요하다.",
+   "tickers": [
+    "한국타이어"
+   ],
+   "ticker_prices": [
+    {
+     "name": "한국타이어",
+     "code": "161390",
+     "market": "KOSPI",
+     "change_pct": -1.72
+    }
+   ],
+   "watchlist_hits": []
+  },
+  {
+   "title": "“호르무즈 재봉쇄”에 국제유가 10% 가까이 급등…美국채금리도 치솟아",
+   "url": "https://www.donga.com/news/Economy/article/all/20260714/134296899/1",
+   "published": "2026-07-14 20:00",
+   "topic": "환율·거시",
+   "sector": "에너지",
+   "impact": "strong_negative",
+   "why": "호르무즈 해협 재봉쇄 우려로 국제유가가 10% 가까이 급등, 미국채금리도 상승.",
+   "insight": "호르무즈 재봉쇄는 지정학적 리스크로, 유가 급등은 전 세계 인플레이션 압력으로 작용한다. 금리 인상 가능성도 높아져 금융시장 전반에 부정적이다.",
+   "tickers": [],
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "얼라인 ‘BNK·JB금융 합병’ 돌발제안…지역성 훼손 논란(종합)",
+   "url": "http://www.kookje.co.kr/news2011/asp/newsbody.asp?code=0200&key=20260715.22008004265",
+   "published": "2026-07-14 19:55",
+   "topic": "금융",
+   "sector": "금융",
+   "impact": "negative",
+   "why": "얼라인의 'BNK·JB금융 합병' 돌발제안이 지역성 훼손 논란을 낳음.",
+   "insight": "합병 제안이 긍정적으로만 받아들여지지 않고 있으며, 지역성 훼손 우려는 규제·정치적 반발로 이어질 수 있다. 실현 가능성이 낮아질 수 있다.",
+   "tickers": [
+    "얼라인파트너스",
+    "BNK금융지주",
+    "JB금융지주"
+   ],
+   "ticker_prices": [
+    {
+     "name": "얼라인파트너스",
+     "code": null,
+     "market": null,
+     "change_pct": null
+    },
+    {
+     "name": "BNK금융지주",
+     "code": "138930",
+     "market": "KOSPI",
+     "change_pct": -0.77
+    },
+    {
+     "name": "JB금융지주",
+     "code": "175330",
+     "market": "KOSPI",
+     "change_pct": -3.75
+    }
+   ],
+   "watchlist_hits": []
   },
   {
    "title": "국민연금 5% 이상 국내주식 462조…IT전기전자 비중 62%",
    "url": "http://www.4th.kr/news/articleView.html?idxno=2114762",
-   "published": "2026-07-14",
+   "published": "2026-07-14 19:06",
    "topic": "바이오",
-   "sector": "증시일般",
-   "impact": "neutral",
-   "why": "국민연금의 국내주식 462조 중 IT전기전자 비중이 62%로 높은 집중도",
+   "sector": "IT·플랫폼",
+   "impact": "positive",
+   "why": "국민연금이 국내주식 462조 중 IT·전기전자 비중 62%로 편중, 성장성 자산 선호 의사 표현.",
+   "insight": "국민연금의 대규모 투자는 시장에 큰 영향을 미친다. IT·전기전자 비중 62%는 기술주 강세 지속을 암시하나, 동시에 세부 종목별 쏠림 현상으로 변동성 확대 위험도 있다.",
    "tickers": [],
-   "watchlist_hits": [],
-   "ticker_prices": []
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[분석기사⑥] 2026년 외교관후보자 경제학, 왜 지난해보다 어려웠나",
+   "url": "http://www.lec.co.kr/news/articleView.html?idxno=752396",
+   "published": "2026-07-14 18:30",
+   "topic": "환율·거시",
+   "sector": "거시·환율",
+   "impact": "neutral",
+   "why": "외교관후보자 경제학 시험이 지난해보다 어려워진 현상 분석.",
+   "insight": "이는 정책 담당자 선발 기준의 변화를 반영하나, 투자 시장에 직접적 영향은 미미하다. 간접적으로 정책 역량 평가를 위한 배경 정보 정도다.",
+   "tickers": [],
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[이슈] 한은, 이번 주 금리 올린다…더 단단해진 긴축 명분",
+   "url": "http://www.paxetv.com/news/articleView.html?idxno=277150",
+   "published": "2026-07-14 18:04",
+   "topic": "환율·거시",
+   "sector": "거시·환율",
+   "impact": "negative",
+   "why": "한은이 이번 주 금리를 올릴 것으로 예상되며, 긴축 근거가 더 단단해짐.",
+   "insight": "금리 인상은 차입비용 증가, 주식 이익률 할인율 상승으로 작용하며 주식시장에 부정적이다. 물가 안정이 확실하지 않은 한 긴축 기조가 지속될 가능성이 높다.",
+   "tickers": [],
+   "ticker_prices": [],
+   "watchlist_hits": []
   },
   {
    "title": "[제약소식]GC녹십자웰빙 라이넥주, 출시 20년 만에 1억 앰플 돌파 外 유...",
    "url": "https://www.getnews.co.kr/news/articleView.html?idxno=875082",
-   "published": "2026-07-14",
+   "published": "2026-07-14 18:02",
    "topic": "바이오",
    "sector": "바이오",
    "impact": "positive",
-   "why": "GC녹십자웰빙 라이넥주가 출시 20년 만에 1억 앰플 판매 돌파",
+   "why": "GC녹십자웰빙의 라이넥주가 출시 20년 만에 누적 1억 앰플 돌파, 장기 안정적 실적 창출.",
+   "insight": "20년 이상의 신뢰와 실적을 보여주는 초장기 베스트셀러 제품이다. 지속적 수요는 회사의 안정적 현금흐름 원천을 의미하며, 포트폴리오 다양화의 견인역으로 작용할 수 있다.",
    "tickers": [
     "GC녹십자웰빙"
    ],
-   "watchlist_hits": [],
    "ticker_prices": [
     {
      "name": "GC녹십자웰빙",
@@ -569,45 +871,83 @@
      "market": "KOSPI",
      "change_pct": -0.91
     }
-   ]
+   ],
+   "watchlist_hits": []
+  },
+  {
+   "title": "캘리포니아, 2억7000만달러 규모 전기차 구매 보조금 시행…자동차 업체...",
+   "url": "https://www.livebiz.today/news/articleView.html?idxno=203336",
+   "published": "2026-07-14 18:02",
+   "topic": "자동차",
+   "sector": "자동차",
+   "impact": "positive",
+   "why": "캘리포니아가 2억7000만달러 규모 전기차 구매 보조금 시행, 전기차 수요 촉진.",
+   "insight": "정부 보조금 확대는 전기차 판매 촉진으로 이어지며, 글로벌 자동차·배터리 기업들의 수익성을 개선한다. 한국 자동차·배터리 회사도 수혜 대상이 될 가능성이 있다.",
+   "tickers": [],
+   "ticker_prices": [],
+   "watchlist_hits": []
   },
   {
    "title": "[26.7.14 증시 인싸잇] 코스피, 롤러코스터 장세 끝 6850선 회복… 반도...",
    "url": "https://www.mediawatch.kr/news/article.html?no=260373",
-   "published": "2026-07-14",
+   "published": "2026-07-14 17:56",
    "topic": "바이오",
    "sector": "증시일반",
    "impact": "positive",
-   "why": "코스피가 롤러코스터 장세 끝에 6850선 회복하며 반도체주 활황",
+   "why": "코스피가 롤러코스터 장세 끝 6850선을 회복, 반도체주 강세 견인.",
+   "insight": "6850선 회복은 기술적 저항선 돌파로 해석될 수 있으며, 반도체주의 강세가 시장 심리 개선의 주요 동력이다. 지속성 확인이 필요하다.",
    "tickers": [],
-   "watchlist_hits": [],
-   "ticker_prices": []
+   "ticker_prices": [],
+   "watchlist_hits": []
   },
   {
    "title": "(제약보국 후계자들)③상속세로 갈라진 한미 가족경영, 6년 분쟁 낳았다",
    "url": "http://www.newstomato.com/ReadNews.aspx?no=1307182&inflow=N",
-   "published": "2026-07-14",
+   "published": "2026-07-14 17:40",
    "topic": "바이오",
    "sector": "바이오",
-   "impact": "negative",
-   "why": "제약사 가족경영의 상속세 분쟁으로 6년간 분쟁 지속",
+   "impact": "neutral",
+   "why": "제약사 후계자 가족경영 중 한미약품 사례를 다루며, 상속세로 인한 6년 분쟁 사례 제시.",
+   "insight": "이는 대형 제약사 가족경영의 구조적 리스크를 드러낸다. 경영권 분쟁이 회사 가치에 미치는 영향과 법적 불확실성이 투자자 입장에서는 부정적 요소다.",
+   "tickers": [
+    "한미약품"
+   ],
+   "ticker_prices": [
+    {
+     "name": "한미약품",
+     "code": "128940",
+     "market": "KOSPI",
+     "change_pct": -6.55
+    }
+   ],
+   "watchlist_hits": []
+  },
+  {
+   "title": "깊이가 다른 글로벌 투자 정보 GAM - 맛보기편 (7/14)",
+   "url": "https://www.newspim.com/news/view/20260714000747",
+   "published": "2026-07-14 16:57",
+   "topic": "자동차",
+   "sector": "IT·플랫폼",
+   "impact": "neutral",
+   "why": "GAM의 글로벌 투자 정보 맛보기 제공, 투자 교육 콘텐츠.",
+   "insight": "이는 투자 정보 제공 성격의 기사로, 특정 투자 신호를 담고 있지 않다. 참고 정보 수준이다.",
    "tickers": [],
-   "watchlist_hits": [],
-   "ticker_prices": []
+   "ticker_prices": [],
+   "watchlist_hits": []
   },
   {
    "title": "[바이오 공시 추적기] 펩트론·삼천당…흔들린 신뢰, 엇갈린 대응",
    "url": "https://daily.hankooki.com/news/articleView.html?idxno=1385791",
-   "published": "2026-07-14",
+   "published": "2026-07-14 16:56",
    "topic": "바이오",
    "sector": "바이오",
    "impact": "negative",
-   "why": "펩트론과 삼천당이 공시 과정에서 투자자 신뢰 상실 우려",
+   "why": "펩트론·삼천당 등 바이오 기업들의 신뢰 흔들림과 엇갈린 대응, 공시 이슈 추적.",
+   "insight": "신뢰 훼손은 기업 평판과 주가에 장기적 악영향을 미친다. 각 기업의 구체 이슈 확인과 투자 심사 강화가 필요하다.",
    "tickers": [
     "펩트론",
     "삼천당"
    ],
-   "watchlist_hits": [],
    "ticker_prices": [
     {
      "name": "펩트론",
@@ -621,20 +961,21 @@
      "market": null,
      "change_pct": null
     }
-   ]
+   ],
+   "watchlist_hits": []
   },
   {
    "title": "[TG-C 블록버스터 도전] ⑥코오롱티슈진 운명의 7월...DMOAD에 주가 최대...",
    "url": "https://www.smarttoday.co.kr/ko-kr/articles/109486",
-   "published": "2026-07-14",
+   "published": "2026-07-14 16:42",
    "topic": "바이오",
    "sector": "바이오",
    "impact": "neutral",
-   "why": "코오롱티슈진의 DMOAD 진행 결과가 7월 주가에 최대 영향을 미칠 예정",
+   "why": "코오롱티슈진의 'TG-C 블록버스터 도전'에서 7월이 운명의 달로, DMOAD 임상이 주가 변동 핵심.",
+   "insight": "DMOAD 임상 결과는 블록버스터급 신약 가능성을 판가름하는 중요 이벤트다. 성공 시 회사 가치가 크게 상승할 수 있으나, 실패 위험도 동시에 존재하므로 고위험·고수익 기업이다.",
    "tickers": [
     "코오롱티슈진"
    ],
-   "watchlist_hits": [],
    "ticker_prices": [
     {
      "name": "코오롱티슈진",
@@ -642,238 +983,8 @@
      "market": "KOSDAQ",
      "change_pct": -4.83
     }
-   ]
-  },
-  {
-   "title": "코스닥 '뚝'...주성엔지니어링·피에스케이·테스는 '껑충'",
-   "url": "http://www.choicenews.co.kr/news/articleView.html?idxno=168179",
-   "published": "2026-07-14",
-   "topic": "바이오",
-   "sector": "증시일반",
-   "impact": "neutral",
-   "why": "코스닥이 하락했으나 주성엔지니어링, 피에스케이, 테스는 상승",
-   "tickers": [
-    "주성엔지니어링",
-    "피에스케이",
-    "테스"
    ],
-   "watchlist_hits": [],
-   "ticker_prices": [
-    {
-     "name": "주성엔지니어링",
-     "code": null,
-     "market": null,
-     "change_pct": null
-    },
-    {
-     "name": "피에스케이",
-     "code": "319660",
-     "market": "KOSDAQ",
-     "change_pct": 10.24
-    },
-    {
-     "name": "테스",
-     "code": null,
-     "market": null,
-     "change_pct": null
-    }
-   ]
-  },
-  {
-   "title": "중동 이슈 딛고, 코스피 '상승'...반도체주 '활짝' vs 車 주가 '뚝'",
-   "url": "http://www.choicenews.co.kr/news/articleView.html?idxno=168178",
-   "published": "2026-07-14",
-   "topic": "바이오",
-   "sector": "증시일般",
-   "impact": "positive",
-   "why": "중동 이슈 속 코스피 상승, 반도체주는 활황이나 자동차주는 약세",
-   "tickers": [],
-   "watchlist_hits": [],
-   "ticker_prices": []
-  },
-  {
-   "title": "캘리포니아, 2억7000만달러 규모 전기차 구매 보조금 시행…자동차 업체...",
-   "url": "https://www.livebiz.today/news/articleView.html?idxno=203336",
-   "published": "2026-07-14",
-   "topic": "자동차",
-   "sector": "자동차",
-   "impact": "positive",
-   "why": "캘리포니아의 2억7000만달러 규모 전기차 구매 보조금이 자동차 업체에 긍정적 영향",
-   "tickers": [],
-   "watchlist_hits": [],
-   "ticker_prices": []
-  },
-  {
-   "title": "깊이가 다른 글로벌 투자 정보 GAM - 맛보기편 (7/14)",
-   "url": "https://www.newspim.com/news/view/20260714000747",
-   "published": "2026-07-14",
-   "topic": "자동차",
-   "sector": "증시일general",
-   "impact": "neutral",
-   "why": "글로벌 투자 정보 제공 콘텐츠",
-   "tickers": [],
-   "watchlist_hits": [],
-   "ticker_prices": []
-  },
-  {
-   "title": "美 캘리포니아주 전기차 보조금 준다..트럼프에 맞대응",
-   "url": "http://www.4th.kr/news/articleView.html?idxno=2114752",
-   "published": "2026-07-14",
-   "topic": "자동차",
-   "sector": "자동차",
-   "impact": "positive",
-   "why": "캘리포니아의 전기차 보조금 시행으로 트럼프 정책에 대응",
-   "tickers": [],
-   "watchlist_hits": [],
-   "ticker_prices": []
-  },
-  {
-   "title": "캘리포니아주, 전기차 구매 보조금 시행...반 트럼프",
-   "url": "https://www.ytn.co.kr/_ln/0104_202607141612432684",
-   "published": "2026-07-14",
-   "topic": "자동차",
-   "sector": "자동차",
-   "impact": "positive",
-   "why": "캘리포니아의 전기차 구매 보조금 시행으로 전기차 수요 촉진",
-   "tickers": [],
-   "watchlist_hits": [],
-   "ticker_prices": []
-  },
-  {
-   "title": "[거래소 기관] 삼성전자·SK하이닉스 쌍끌이 매수…반도체 대형주 집중",
-   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=468371",
-   "published": "2026-07-14",
-   "topic": "자동차",
-   "sector": "반도체",
-   "impact": "positive",
-   "why": "거래소 기관이 삼성전자와 SK하이닉스를 쌍으로 집중 매수",
-   "tickers": [
-    "삼성전자",
-    "SK하이닉스"
-   ],
-   "watchlist_hits": [],
-   "ticker_prices": [
-    {
-     "name": "삼성전자",
-     "code": "005930",
-     "market": "KOSPI",
-     "change_pct": 3.34
-    },
-    {
-     "name": "SK하이닉스",
-     "code": "000660",
-     "market": "KOSPI",
-     "change_pct": 3.69
-    }
-   ]
-  },
-  {
-   "title": "캘리포니아, 전기차 구매 보조금 시행...'생애 첫 전기차 구매자' 대상",
-   "url": "https://www.moneystorm.kr/news/articleView.html?idxno=5079",
-   "published": "2026-07-14",
-   "topic": "자동차",
-   "sector": "자동차",
-   "impact": "positive",
-   "why": "캘리포니아의 전기차 구매 보조금이 생애 첫 구매자 대상으로 시행되며 신규 수요 창출",
-   "tickers": [],
-   "watchlist_hits": [],
-   "ticker_prices": []
-  },
-  {
-   "title": "캘리포니아, 전기차 구매 보조금 시행…뉴섬 주지사 反트럼프 정책",
-   "url": "https://biz.sbs.co.kr/article_hub/20000322456?division=NAVER",
-   "published": "2026-07-14",
-   "topic": "자동차",
-   "sector": "자동차",
-   "impact": "positive",
-   "why": "캘리포니아 뉴섬 주지사의 반트럼프 정책으로 전기차 보조금 시행",
-   "tickers": [],
-   "watchlist_hits": [],
-   "ticker_prices": []
-  },
-  {
-   "title": "캘리포니아, 전기차 구매 보조금 시행…反트럼프",
-   "url": "https://www.yna.co.kr/view/AKR20260714123000009?input=1195m",
-   "published": "2026-07-14",
-   "topic": "자동차",
-   "sector": "자동차",
-   "impact": "positive",
-   "why": "캘리포니아의 반트럼프 전기차 보조금 정책 시행",
-   "tickers": [],
-   "watchlist_hits": [],
-   "ticker_prices": []
-  },
-  {
-   "title": "\"공급 늘린다며 대출 조이는 정부, 앞뒤 안 맞아\"…부동산 첫 토론회 성...",
-   "url": "https://view.asiae.co.kr/article/2026071417594580903",
-   "published": "2026-07-14",
-   "topic": "금융",
-   "sector": "건설·기계",
-   "impact": "negative",
-   "why": "부동산 첫 토론회에서 공급 정책과 대출 규제의 모순에 대한 지적",
-   "tickers": [],
-   "watchlist_hits": [],
-   "ticker_prices": []
-  },
-  {
-   "title": "[채권-마감] 日 국채 금리 급락에도 팽배한 금통위 경계",
-   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4424963",
-   "published": "2026-07-14",
-   "topic": "금융",
-   "sector": "거시·환율",
-   "impact": "neutral",
-   "why": "일본 국채 금리 급락에도 금융통화위원회의 경계감이 팽배함",
-   "tickers": [],
-   "watchlist_hits": [],
-   "ticker_prices": []
-  },
-  {
-   "title": "[집중진단] \"그동안 번 돈 다 날아갔다, 더 못 버텨”…소폭 반등하자 ...",
-   "url": "https://biz.sbs.co.kr/article_hub/20000322420?division=NAVER",
-   "published": "2026-07-14",
-   "topic": "금융",
-   "sector": "거시·환율",
-   "impact": "negative",
-   "why": "시장 참여자들이 그간 수익이 손실로 전환되며 심리 악화",
-   "tickers": [],
-   "watchlist_hits": [],
-   "ticker_prices": []
-  },
-  {
-   "title": "[이슈] 한은, 이번 주 금리 올린다…더 단단해진 긴축 명분",
-   "url": "http://www.paxetv.com/news/articleView.html?idxno=277150",
-   "published": "2026-07-14",
-   "topic": "금융",
-   "sector": "거시·환율",
-   "impact": "negative",
-   "why": "한은의 금리 인상 가능성으로 긴축 기조가 더욱 강화될 전망",
-   "tickers": [],
-   "watchlist_hits": [],
-   "ticker_prices": []
-  },
-  {
-   "title": "\"신축도 매입도 이주도 LTV 0%\"…공급 사슬 곳곳서 대출 규제 완화 요구",
-   "url": "http://www.wikileaks-kr.org/news/articleView.html?idxno=189761",
-   "published": "2026-07-14",
-   "topic": "금융",
-   "sector": "건설·기계",
-   "impact": "negative",
-   "why": "부동산 정책에서 신축·매입·이주 등 곳곳에서 LTV 0% 규제로 인한 대출 완화 요구",
-   "tickers": [],
-   "watchlist_hits": [],
-   "ticker_prices": []
-  },
-  {
-   "title": "불어난 '마통'에 좌불안석···정치권 눈치 보는 은행권",
-   "url": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2448747",
-   "published": "2026-07-14",
-   "topic": "금융",
-   "sector": "금융",
-   "impact": "negative",
-   "why": "마진통화 증가로 인한 불안감으로 은행권이 정치권 눈치를 보는 상황",
-   "tickers": [],
-   "watchlist_hits": [],
-   "ticker_prices": []
+   "watchlist_hits": []
   }
  ],
  "ledger": {

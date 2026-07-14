@@ -367,6 +367,16 @@ svg.fico{width:15px;height:auto;vertical-align:-2px;margin-right:4px;border-radi
 .nlink{margin-top:8px;font-size:12px;color:var(--mut)}
 .nlink a{display:inline-block;margin-left:7px;font-weight:700;color:var(--ink);
   border-bottom:1.5px solid var(--rise);text-decoration:none}
+
+/* AI 해설 펼치기 — 제목·공개정보 기반 해설일 뿐, 기사 본문 요약이 아니다 */
+.ai-explain{display:inline-flex;align-items:center;gap:5px;margin-top:9px;
+  font:700 12px var(--sans);color:var(--mut);background:none;border:1px solid var(--line);
+  border-radius:6px;padding:5px 10px;cursor:pointer;transition:.15s}
+.ai-explain svg{width:13px;height:13px;flex-shrink:0}
+.ai-explain:hover{color:var(--rise);border-color:rgba(224,43,32,.3)}
+.ai-explain[aria-expanded="true"]{color:var(--rise);border-color:rgba(224,43,32,.3);background:var(--riseL)}
+.ai-explain-body{font-size:13.5px;color:var(--ink2);margin-top:8px;line-height:1.75;
+  padding:11px 13px;background:var(--panel2);border-radius:8px}
 .nlist.big .ni{padding:18px 0}
 .nlist.big .nt{font-size:16px}
 .live-ni{animation:newsIn .5s ease}

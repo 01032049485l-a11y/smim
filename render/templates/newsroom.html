@@ -25,6 +25,13 @@
     <time>{{ n.published }}</time>
   </div>
   {% if n.why %}<p class="nwhy">{{ n.why }}</p>{% endif %}
+  {% if n.insight %}
+  <button class="ai-explain" type="button" aria-expanded="false" data-ai-explain>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v3M12 18v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M3 12h3M18 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+    AI 해설
+  </button>
+  <p class="ai-explain-body" hidden>{{ n.insight }}</p>
+  {% endif %}
 </li>
 {% endmacro %}
 
@@ -68,7 +75,7 @@
 {% block rail %}
 <div class="rc">
   <h4>읽는 법</h4>
-  <p>각 기사의 <b>섹터</b>·<b>영향</b>·<b>의미</b>는 AI가 기사 제목과 공개 정보를 근거로 부여한 것입니다. 기사 본문을 요약하거나 재배포하지 않으며, 판단은 원문을 직접 확인한 뒤 내리시기 바랍니다. 실시간으로 새로 올라오는 기사는 다음 정기 발행 때 섹터·영향이 채워집니다.</p>
+  <p>각 기사의 <b>섹터</b>·<b>영향</b>·<b>의미</b>와 "AI 해설"은 모두 AI가 기사 <b>제목과 공개 정보만</b> 근거로 작성한 것입니다. 기사 본문은 저장·요약·재배포하지 않으며, 해설은 어디까지나 제목에서 합리적으로 유추한 내용입니다 — 판단은 원문을 직접 확인한 뒤 내리시기 바랍니다. 실시간으로 새로 올라오는 기사는 다음 정기 발행 때 섹터·영향·해설이 채워집니다.</p>
 </div>
 <div class="rc">
   <h4>Watchlist</h4>
