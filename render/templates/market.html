@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% block title %}Market — SMIM{% endblock %}
+{% block content %}
+<section class="dateline">
+  <div class="dl-l">
+    <p class="eyebrow"><span class="rid">MARKET · {{ s.date }}</span></p>
+    <h1>Market</h1>
+    <p class="lead">추천 종목이 아니더라도, 오늘 시장이 어디로 가고 있는지는 알고 시작해야 합니다.</p>
+  </div>
+</section>
+
+<section class="block">
+  <h2 class="sec"><span>Indices</span><em>주요 지수</em></h2>
+  <div class="idx">
+    {% for i in indices %}
+    <div class="idxc {{ i.change_pct|sign }}">
+      <p class="il">{{ i.label }}<span class="tk">{{ i.ticker }}</span></p>
+      <p class="iv">{{ "{:,.2f}".format(i.value) }}</p>
+      <p class="ic {{ i.change_pct|sign }}">
+        {{ '▲' if i.change_pct>0 else '▼' if i.change_pct<0 else '–' }}{{ "{:,.2f}".format(i.change|abs) }}
+        <span>({{ '%.2f'|format(i.change_pct|abs) }}%)</span>
+      </p>
+      <div class="isp">{{ chart_spark(i.series, 200, 40) }}</div>
+      <p class="it t-{{ i.trend }}">{{ i.trend_label }} <small>최근 5거래일 기준</small></p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% if breadth and breadth.up %}
+<section class="block">
+  <h2 class="sec"><span>Breadth</span><em>시장 폭</em></h2>
+  <div class="brd-box">
+    <div class="brd-bar">
+      <span class="up" style="width:{{ breadth.up_ratio }}%"></span>
+      <span class="dn" style="width:{{ 100 - breadth.up_ratio }}%"></span>
+    </div>
+    <div class="brd-legend">
+      <span class="rise">상승 {{ breadth.up }}종목</span>
+      <span class="mut">보합 {{ breadth.flat }}</span>
+      <span class="fall">하락 {{ breadth.down }}종목</span>
+      <span class="mood">시장 심리 · <b>{{ breadth.mood }}</b></span>
+    </div>
+    <p class="note-sm">지수는 대형주에 좌우됩니다. 실제 체감은 상승·하락 종목 수가 더 정직하게 보여줍니다.</p>
+  </div>
+</section>
+{% endif %}
+
+{% if breadth and breadth.sectors %}
+<section class="block">
+  <h2 class="sec"><span>Sector Flow</span><em>업종별 평균 등락률</em></h2>
+  <ul class="secbar">
+    {% for x in breadth.sectors %}
+    <li>
+      <span class="sn">{{ x.name }}</span>
+      <span class="sb"><i class="{{ x.change_pct|sign }}" style="width:{{ [ (x.change_pct|abs) * 18, 100 ]|min }}%"></i></span>
+      <b class="{{ x.change_pct|sign }}">{{ x.change_pct|pct }}</b>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+{% endblock %}
+
+{% block rail %}
+<div class="rc">
+  <h4>Newsroom</h4>
+  <ul class="rnews">
+    {% for n in s.newsroom[:8] %}
+    <li><a href="{{ n.url }}" target="_blank" rel="noopener noreferrer">{{ n.title }}</a>{% if n.sector %}<span class="chipx">{{ n.sector }}</span>{% endif %}</li>
+    {% endfor %}
+  </ul>
+  <a class="rlink" href="/newsroom/">뉴스룸 전체 →</a>
+</div>
+{% endblock %}

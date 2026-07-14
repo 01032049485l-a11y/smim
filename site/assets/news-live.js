@@ -1,0 +1,111 @@
+/* SMIM — 실시간 뉴스.
+   F5 없이 새 기사가 계속 올라오고, "n분 전 → 방금" 표시도 계속 갱신된다.
+   AI 태깅 없이 원문 제목만 즉시 반영한다 — 정식 섹터·의미 해설은 다음 정기 발행 때 채워진다.
+   워치리스트 종목 연관 표시는 AI 호출 없이 문자열 매칭만으로 그 자리에서 붙인다. */
+(function () {
+  "use strict";
+  const list = document.querySelector("[data-newslist]");
+  if (!list) return;
+
+  const seen = new Set();
+  list.querySelectorAll("li[data-url]").forEach((li) => seen.add(li.dataset.url));
+
+  const watchNames = {};
+  document.querySelectorAll("[data-watch-name]").forEach((el) => {
+    watchNames[el.dataset.watchName] = el.dataset.watchCode;
+  });
+
+  // 이모지 국기는 OS·폰트에 따라 깨지므로 고정 SVG를 직접 그린다 (외부 데이터 아님 — innerHTML 안전).
+  const FLAG_SVG = {
+    KR: '<svg class="fico" viewBox="0 0 24 16"><rect width="24" height="16" rx="2" fill="#fff"/><path d="M12 3.8a4.2 4.2 0 0 1 0 8.4 2.1 2.1 0 0 1 0-4.2 2.1 2.1 0 0 0 0-4.2z" fill="#cd2e3a"/><path d="M12 12.2a4.2 4.2 0 0 1 0-8.4 2.1 2.1 0 0 1 0 4.2 2.1 2.1 0 0 0 0 4.2z" fill="#0047a0"/></svg>',
+    US: '<svg class="fico" viewBox="0 0 24 16"><rect width="24" height="16" rx="2" fill="#fff"/><g fill="#B22234"><rect y="0" width="24" height="1.23"/><rect y="2.46" width="24" height="1.23"/><rect y="4.92" width="24" height="1.23"/><rect y="7.38" width="24" height="1.23"/><rect y="9.84" width="24" height="1.23"/><rect y="12.3" width="24" height="1.23"/><rect y="14.76" width="24" height="1.23"/></g><rect width="10" height="8.6" fill="#3C3B6E"/></svg>',
+  };
+
+  function relTime(iso) {
+    const d = new Date(iso);
+    if (isNaN(d)) return "";
+    const sec = Math.max(0, (Date.now() - d.getTime()) / 1000);
+    if (sec < 60) return "방금";
+    if (sec < 3600) return `${Math.floor(sec / 60)}분 전`;
+    if (sec < 86400) return `${Math.floor(sec / 3600)}시간 전`;
+    return `${Math.floor(sec / 86400)}일 전`;
+  }
+
+  function related(title) {
+    for (const name in watchNames) {
+      if (name && title.includes(name)) return { name, code: watchNames[name] };
+    }
+    return null;
+  }
+
+  // 뉴스 제목·링크는 외부 API(네이버·Yahoo)에서 온 신뢰할 수 없는 문자열이라
+  // innerHTML로 합치지 않고 DOM을 직접 만든다 (XSS 방지).
+  function renderItem(n) {
+    const li = document.createElement("li");
+    li.className = "ni live-ni";
+    li.dataset.url = n.url;
+
+    const a = document.createElement("a");
+    a.className = "nt";
+    a.href = n.url;
+    a.target = "_blank";
+    a.rel = "noopener noreferrer";
+    a.textContent = n.title;
+    const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    svg.setAttribute("class", "ext");
+    svg.setAttribute("viewBox", "0 0 12 12");
+    svg.setAttribute("aria-hidden", "true");
+    svg.innerHTML = '<path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/>';
+    a.appendChild(svg);
+    li.appendChild(a);
+
+    const meta = document.createElement("div");
+    meta.className = "nmeta";
+    const badge = document.createElement("span");
+    badge.className = "chipx live";
+    badge.innerHTML = FLAG_SVG[n.market === "US" ? "US" : "KR"];
+    badge.append(" 실시간");
+    const time = document.createElement("time");
+    time.className = "rt";
+    time.dataset.published = n.published;
+    time.textContent = relTime(n.published);
+    meta.append(badge, time);
+    li.appendChild(meta);
+
+    const rel = related(n.title);
+    if (rel) {
+      const p = document.createElement("p");
+      p.className = "nlink";
+      p.append("Watchlist 연관");
+      const link = document.createElement("a");
+      link.href = `/stock/${rel.code}/`;
+      link.textContent = rel.name;
+      p.appendChild(link);
+      li.appendChild(p);
+    }
+    return li;
+  }
+
+  async function poll() {
+    try {
+      const r = await fetch("/api/live-news", { cache: "no-store" });
+      if (!r.ok) return;
+      const j = await r.json();
+      const fresh = (j.items || []).filter((n) => n.url && n.title && !seen.has(n.url));
+      fresh.reverse().forEach((n) => {
+        seen.add(n.url);
+        list.insertBefore(renderItem(n), list.firstChild);
+      });
+    } catch (e) { /* 실패해도 화면에 있는 기사는 그대로 유지 */ }
+  }
+
+  function tickClocks() {
+    document.querySelectorAll("time.rt[data-published]").forEach((t) => {
+      t.textContent = relTime(t.dataset.published);
+    });
+  }
+
+  poll();
+  setInterval(poll, 60000);
+  setInterval(tickClocks, 30000);
+})();

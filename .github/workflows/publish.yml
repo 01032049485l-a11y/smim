@@ -1,0 +1,101 @@
+name: SMIM Daily Publish
+
+on:
+  schedule:
+    # KST = UTC+9. 한국장 개장 전 3단 트리거 (GitHub 스케줄 지연·누락 대비).
+    - cron: '37 21 * * 0-4'   # KST 06:37 (월~금)
+    - cron: '7 22 * * 0-4'    # KST 07:07 백업
+    - cron: '37 22 * * 0-4'   # KST 07:37 백업
+    # 미국장 개장(09:30 ET) 전 3단 트리거. UTC 11:00~12:00은 서머타임(EDT, UTC-4)·
+    # 표준시(EST, UTC-5) 어느 쪽이든 항상 개장 2~3시간 전이라 DST 전환에 안전하다.
+    - cron: '0 11 * * 1-5'    # 개장 전(서머타임 기준 07:00 ET)
+    - cron: '30 11 * * 1-5'   # 백업
+    - cron: '0 12 * * 1-5'    # 백업
+  workflow_dispatch:          # 폰에서 버튼으로 수동 실행
+    inputs:
+      market:
+        description: '수동 실행 시 발행할 시장'
+        required: false
+        default: 'kr'
+        type: choice
+        options: [kr, us]
+
+concurrency:
+  group: smim-publish
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  publish-kr:
+    if: >
+      (github.event_name == 'schedule' &&
+       contains(fromJSON('["37 21 * * 0-4","7 22 * * 0-4","37 22 * * 0-4"]'), github.event.schedule)) ||
+      (github.event_name == 'workflow_dispatch' && github.event.inputs.market == 'kr')
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Run pipeline (KR)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          SITE_URL: https://smim.kr
+        run: python run_daily.py --market kr
+
+      - name: Commit snapshot & site
+        run: |
+          git config user.name  "smim-bot"
+          git config user.email "bot@smim.kr"
+          git add data site
+          git diff --staged --quiet || git commit -m "SMIM KR $(TZ=Asia/Seoul date +%Y-%m-%d) 발행"
+          git pull --rebase --autostash
+          git push
+
+  publish-us:
+    if: >
+      (github.event_name == 'schedule' &&
+       contains(fromJSON('["0 11 * * 1-5","30 11 * * 1-5","0 12 * * 1-5"]'), github.event.schedule)) ||
+      (github.event_name == 'workflow_dispatch' && github.event.inputs.market == 'us')
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Run pipeline (US)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # SEC EDGAR는 키가 없다 — User-Agent만 요구(config.py 기본값 사용).
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          SITE_URL: https://smim.kr
+        run: python run_daily.py --market us
+
+      - name: Commit snapshot & site
+        run: |
+          git config user.name  "smim-bot"
+          git config user.email "bot@smim.kr"
+          git add data site
+          git diff --staged --quiet || git commit -m "SMIM US $(TZ=America/New_York date +%Y-%m-%d) 발행"
+          git pull --rebase --autostash
+          git push

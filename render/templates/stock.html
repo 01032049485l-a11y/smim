@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m %}
+{% block title %}{{ name }} ({{ code }}) — SMIM{% endblock %}
+
+{% block content %}
+<section class="dateline">
+  <div class="dl-l">
+    <p class="eyebrow"><span class="rid">{{ code }} · {{ cur.market }}</span></p>
+    <h1>{{ name }}</h1>
+    <p class="lead">
+      SMIM이 이 종목에 대해 내린 모든 판단이 시간순으로 남아 있습니다. 수정하거나 삭제하지 않습니다.
+    </p>
+  </div>
+  <dl class="dl-r" data-live-stock data-code="{{ code }}" data-market="{{ cur.market }}" data-entry="{{ cur.entry_price }}">
+    <div><dt>현재 상태</dt><dd>{{ status_ko(cur.status) }}</dd></div>
+    <div><dt>편입가</dt><dd>{{ cur.entry_price|moneycur(cur.market_group) }}</dd></div>
+    <div><dt>현재가</dt><dd>{{ '$' if cur.market_group == 'US' }}<span data-field="price">{{ cur.current_price|money }}</span>{{ '원' if cur.market_group != 'US' }}</dd></div>
+    <div><dt>수익률</dt><dd class="{{ cur.return_pct|sign }}" data-field="return">{{ cur.return_pct|pct }}</dd></div>
+  </dl>
+</section>
+
+<section class="block">
+  <h2 class="sec"><span>Chart</span><em>{{ rows[0].date }} 기준 90일 + 실시간</em></h2>
+  <div class="chart-tabs" data-tabs>
+    <div class="tabbar">
+      <button class="tb on" data-tab="static">일봉 90일</button>
+      <button class="tb" data-tab="live">실시간 차트</button>
+      <span class="src">출처 · FinanceDataReader / TradingView</span>
+    </div>
+    <div class="tp on" data-panel="static">
+      {% if cur.series and cur.series.close %}
+        {{ chart_svg(cur.series, cur.entry_price, cur.entry_date) }}
+        {{ chart_legend() }}
+      {% else %}
+        <p class="empty">차트 데이터가 없습니다.</p>
+      {% endif %}
+    </div>
+    <div class="tp" data-panel="live">{{ m.tvchart(code, true) }}</div>
+  </div>
+  <p class="note-sm">실시간 탭은 TradingView 제공이며 거래소·계정에 따라 지연 시세가 표시될 수 있습니다. 실존하지 않는 심볼(데모 데이터 등)은 실시간 차트가 뜨지 않을 수 있어, 이 경우 일봉 90일 탭으로 확인하세요.</p>
+</section>
+
+{% if cur.thesis %}
+<section class="block">
+  <h2 class="sec"><span>Current Thesis</span><em>{{ rows[0].date }} 기준</em></h2>
+  <div class="pick">
+    <div class="split">
+      <div class="sg-box">
+        <h4 class="mini">Signal</h4>
+        {{ m.grid(cur.scorecard) }}
+      </div>
+      <dl class="facts">
+        <div><dt>판정</dt><dd>{{ verdict_ko(cur.verdict) }}</dd></div>
+        <div><dt>AI 확신도</dt><dd>{{ cur.confidence }}/100</dd></div>
+        <div><dt>목표 수익률</dt><dd class="rise">+{{ cur.target_return_pct }}%</dd></div>
+        <div><dt>보유 경과</dt><dd>{{ cur.days_held }}거래일</dd></div>
+      </dl>
+    </div>
+    <div class="thesis"><h4>Investment Thesis</h4><p>{{ cur.thesis }}</p></div>
+    <div class="twocol">
+      <div class="col bull"><h4>상승 논거</h4><ul>{% for p in cur.bull_points %}<li>{{ p }}</li>{% endfor %}</ul></div>
+      <div class="col bear"><h4>리스크 요인</h4><ul>{% for p in cur.bear_points %}<li>{{ p }}</li>{% endfor %}</ul></div>
+    </div>
+    {% if cur.invalidation %}<p class="inval"><span>논리 훼손 조건</span>{{ cur.invalidation }}</p>{% endif %}
+  </div>
+</section>
+{% endif %}
+
+{% if cur.news %}
+<section class="block">
+  <h2 class="sec"><span>Related News</span><em>원문 매체로 이동</em></h2>
+  <ul class="nlist">{% for n in cur.news %}{{ m.newsitem(n) }}{% endfor %}</ul>
+</section>
+{% endif %}
+
+<section class="block">
+  <h2 class="sec"><span>Judgement History</span><em>{{ rows|length }}건</em></h2>
+  <ol class="timeline">
+  {% for r in rows %}
+    <li>
+      <div class="when">
+        <a href="/reports/{{ (r.market_group or 'KR')|lower }}/{{ r.date }}/">{{ r.date }}</a>
+        <span class="status s-{{ r.item.status }}">{{ status_ko(r.item.status) }}</span>
+        {% if r.item.confidence %}<span class="cf">확신도 {{ r.item.confidence }}</span>{% endif %}
+      </div>
+      <p class="line">
+        <span>편입 {{ r.item.entry_price|moneycur(r.market_group) }}</span>
+        <span>당시 {{ r.item.current_price|moneycur(r.market_group) }}</span>
+        <span class="{{ r.item.return_pct|sign }}"><b>{{ r.item.return_pct|pct }}</b></span>
+      </p>
+    </li>
+  {% endfor %}
+  </ol>
+</section>
+{% endblock %}
+
+{% block rail %}
+<div class="rc">
+  <h4>Snapshot</h4>
+  <ul class="kv">
+    <li><span>종목코드</span><b>{{ code }}</b></li>
+    <li><span>시장</span><b>{{ cur.market }}</b></li>
+    <li><span>편입일</span><b>{{ cur.entry_date }}</b></li>
+    <li><span>RSI(14)</span><b>{{ cur.tech.rsi14 if cur.tech else '—' }}</b></li>
+    <li><span>52주 위치</span><b>{{ cur.tech.pos_in_52w_range_pct if cur.tech else '—' }}%</b></li>
+  </ul>
+</div>
+{% if cur.filings %}
+<div class="rc">
+  <h4>Recent Filings</h4>
+  <ul class="rnews">
+    {% for f in cur.filings %}
+    <li><a href="{{ f.url }}" target="_blank" rel="noopener noreferrer">{{ f.title }}</a><span class="chipx">{{ f.date }}</span></li>
+    {% endfor %}
+  </ul>
+  <p class="rempty">출처 · DART 전자공시</p>
+</div>
+{% endif %}
+{% if closed %}
+<div class="rc">
+  <h4>Closed Positions</h4>
+  <ul class="kv">
+    {% for b in closed %}
+    <li><span>{{ b.entry_date }} → {{ b.exit_date }}</span><b class="{{ b.return_pct|sign }}">{{ b.return_pct|pct }}</b></li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
+{% endblock %}

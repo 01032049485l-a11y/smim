@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Archive — SMIM</title>
+<meta name="description" content="국내 증시 데이터·공시·뉴스를 종합 분석해 매 거래일 아침 발행하는 리서치 저널.">
+<meta property="og:site_name" content="SMIM">
+<meta property="og:title" content="Archive — SMIM">
+<meta property="og:description" content="국내 증시 데이터·공시·뉴스를 종합 분석해 매 거래일 아침 발행하는 리서치 저널.">
+<link rel="alternate" type="application/rss+xml" title="SMIM" href="/feed.xml">
+<link rel="icon" href="/assets/mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/ibm-plex-mono@5.0.13/index.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">본문 바로가기</a>
+
+<!-- ── 라이브 티커 ─────────────────────────── -->
+<div class="tape" id="tape">
+  <div class="tape-in">
+    <span class="live"><i></i>LIVE</span>
+    <div class="quotes" id="quotes">
+      
+      <a class="q" href="/market/" data-t="KOSPI">
+        <em>코스피</em>
+        <b class="v">6,856.83</b>
+        <i class="c rise">+0.73%</i>
+      </a>
+      
+      <a class="q" href="/market/" data-t="KOSDAQ">
+        <em>코스닥</em>
+        <b class="v">783.98</b>
+        <i class="c fall">-1.92%</i>
+      </a>
+      
+      <a class="q" href="/market/" data-t="USDKRW">
+        <em>원/달러</em>
+        <b class="v">1,495.88</b>
+        <i class="c fall">-0.17%</i>
+      </a>
+      
+      <a class="q" href="/market/" data-t="SPX">
+        <em>S&amp;P 500</em>
+        <b class="v">7,515.34</b>
+        <i class="c fall">-0.79%</i>
+      </a>
+      
+      <a class="q" href="/market/" data-t="NASDAQ">
+        <em>나스닥</em>
+        <b class="v">25,873.18</b>
+        <i class="c fall">-1.55%</i>
+      </a>
+      
+    </div>
+    <span class="tstamp" id="tstamp"> 종가 기준</span>
+  </div>
+</div>
+
+<!-- ── 마스트헤드 ─────────────────────────── -->
+<header class="mast">
+  <div class="mast-in">
+    <a class="brand" href="/">
+      <span class="logo">
+        <svg viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M4 23 L11 13 L16 18 L21 7 L28 12" fill="none" stroke="#E02B20" stroke-width="2.6" stroke-linecap="square" stroke-linejoin="round"/>
+          <circle cx="28" cy="12" r="2.8" fill="#E02B20"/>
+        </svg>
+      </span>
+      <span class="lock">
+        <span class="wm">SMIM</span>
+        <span class="xp">In the stock market, <em>information</em> matters</span>
+      </span>
+    </a>
+    <nav class="nav">
+      <a href="/">Report</a>
+      <a href="/market/">Market</a>
+      <a href="/newsroom/">Newsroom</a>
+      <a href="/watchlist/">Watchlist</a>
+      <a href="/performance/">Track Record</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="메뉴 열기">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ── 우측 드로어 ─────────────────────────── -->
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" aria-hidden="true">
+  <div class="dr-top">
+    <span class="wm sm">SMIM</span>
+    <button class="dr-x" id="drClose" aria-label="메뉴 닫기">&times;</button>
+  </div>
+  <nav class="dr-nav">
+    <a href="/"><b>Daily Report</b><span>오늘의 리포트</span><i>01</i></a>
+    <a href="/market/"><b>Market</b><span>지수 · 업종 · 시장 폭</span><i>02</i></a>
+    <a href="/newsroom/"><b>Newsroom</b><span>증시 뉴스 · 관련 종목</span><i>03</i></a>
+    <a href="/watchlist/"><b>Watchlist</b><span>추적 중인 종목</span><i>04</i></a>
+    <a href="/performance/"><b>Track Record</b><span>누적 성과 · 손실 포함</span><i>05</i></a>
+    <a href="/archive/" class=on><b>Archive</b><span>지난 리포트 전체</span><i>06</i></a>
+    <a href="/methodology/"><b>Methodology</b><span>분석 방법론 · 한계</span><i>07</i></a>
+  </nav>
+  <div class="dr-foot">
+    <p class="dt">주식은 정보다</p>
+    <p class="df">투자 권유가 아닙니다. 판단과 책임은 투자자 본인에게 있습니다.</p>
+    <p class="dc">Founder &amp; Developer · 이태웅</p>
+  </div>
+</aside>
+
+<div class="shell solo">
+  <main id="main">
+<section class="dateline">
+  <div class="dl-l">
+    <p class="eyebrow"><span class="rid">ARCHIVE</span></p>
+    <h1>Archive</h1>
+    <p class="lead">발행된 리포트는 수정하거나 삭제하지 않습니다. 원본 데이터는 JSON으로 그대로 공개됩니다.</p>
+  </div>
+</section>
+<section class="block">
+  <div class="tblw">
+  <table class="tbl">
+    <thead><tr><th>시장</th><th>날짜</th><th>Issue</th><th class="r">신규</th><th class="r">관찰</th><th class="r">편출</th><th class="r">원본</th></tr></thead>
+    <tbody>
+    
+      <tr>
+        <td><svg class="fico" viewBox="0 0 24 16" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="16" rx="2" fill="#fff"/><path d="M12 3.8a4.2 4.2 0 0 1 0 8.4 2.1 2.1 0 0 1 0-4.2 2.1 2.1 0 0 0 0-4.2z" fill="#cd2e3a"/><path d="M12 12.2a4.2 4.2 0 0 1 0-8.4 2.1 2.1 0 0 1 0 4.2 2.1 2.1 0 0 0 0 4.2z" fill="#0047a0"/></svg> 한국</td>
+        <td class="nm"><a href="/reports/kr/2026-07-14/">2026-07-14</a></td>
+        <td><code>SMIM-2026-0714</code></td>
+        <td class="num r">0</td>
+        <td class="num r">0</td>
+        <td class="num r">0</td>
+        <td class="num r"><a href="/data/kr-2026-07-14.json">JSON</a></td>
+      </tr>
+    
+    </tbody>
+  </table>
+  </div>
+</section>
+</main>
+  
+</div>
+
+<footer>
+  <div class="f-grid">
+    <div class="f-brand">
+      <span class="wm">SMIM</span>
+      <p class="ft">주식은 정보다</p>
+      <p class="fc">Founder &amp; Developer · <b>이태웅</b></p>
+    </div>
+    <div class="f-col"><h5>Research</h5>
+      <a href="/">Daily Report</a><a href="/watchlist/">Watchlist</a>
+      <a href="/performance/">Track Record</a><a href="/archive/">Archive</a></div>
+    <div class="f-col"><h5>Market</h5>
+      <a href="/market/">지수 · 업종</a><a href="/newsroom/">Newsroom</a><a href="/feed.xml">RSS</a></div>
+    <div class="f-col"><h5>Transparency</h5>
+      <a href="/methodology/">분석 방법론</a><a href="/methodology/#limits">알려진 한계</a>
+      <a href="/archive/">원본 데이터 (JSON)</a></div>
+    <div class="f-col"><h5>Data</h5>
+      <a href="https://opendart.fss.or.kr" target="_blank" rel="noopener">DART 전자공시</a>
+      <span>시세 · FinanceDataReader</span><span>차트 · TradingView</span>
+      <span>뉴스 · 네이버 뉴스 API</span></div>
+  </div>
+  <div class="disc">
+    <h4>중요 고지</h4>
+    <p>SMIM이 제공하는 모든 정보는 AI가 공개 데이터를 분석해 생성한 참고자료이며, 특정 종목의 매수·매도를 권유하는 투자 권유가 아닙니다. SMIM은 자본시장법상 금융투자업자가 아니며, 어떠한 수익도 보장하지 않습니다. AI가 올려준 종목을 보고 매수할지 판단하는 것은 오롯이 투자자 본인의 몫이며, 투자 결과에 대한 책임은 전적으로 투자자 본인에게 있습니다.</p>
+    <p class="fine">SMIM은 무료로 운영되며 종목 추천의 대가로 어떠한 금전도 받지 않습니다. 선행매매를 하지 않고, 수익을 보장하지 않습니다. 발행된 판단은 수정·삭제 없이 보존되며, 손실 사례까지 자동 채점되어 공개됩니다. 기사 본문은 저장·재배포하지 않으며 제목과 원문 링크만 제공합니다.</p>
+  </div>
+  <div class="colo">
+    <span>© 2026 SMIM</span>
+    <span>Built &amp; maintained by <b>이태웅</b></span>
+    <span>종목 분석은 자동화된 언어모델이 수행합니다</span>
+  </div>
+</footer>
+
+<script src="/assets/app.js" defer></script>
+<script src="/assets/live.js" defer></script>
+<script src="/assets/news-live.js" defer></script>
+<script src="/assets/market-status.js" defer></script>
+</body>
+</html>

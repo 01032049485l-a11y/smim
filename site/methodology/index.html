@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Methodology — SMIM</title>
+<meta name="description" content="국내 증시 데이터·공시·뉴스를 종합 분석해 매 거래일 아침 발행하는 리서치 저널.">
+<meta property="og:site_name" content="SMIM">
+<meta property="og:title" content="Methodology — SMIM">
+<meta property="og:description" content="국내 증시 데이터·공시·뉴스를 종합 분석해 매 거래일 아침 발행하는 리서치 저널.">
+<link rel="alternate" type="application/rss+xml" title="SMIM" href="/feed.xml">
+<link rel="icon" href="/assets/mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/ibm-plex-mono@5.0.13/index.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">본문 바로가기</a>
+
+<!-- ── 라이브 티커 ─────────────────────────── -->
+<div class="tape" id="tape">
+  <div class="tape-in">
+    <span class="live"><i></i>LIVE</span>
+    <div class="quotes" id="quotes">
+      
+      <a class="q" href="/market/" data-t="KOSPI">
+        <em>코스피</em>
+        <b class="v">6,856.83</b>
+        <i class="c rise">+0.73%</i>
+      </a>
+      
+      <a class="q" href="/market/" data-t="KOSDAQ">
+        <em>코스닥</em>
+        <b class="v">783.98</b>
+        <i class="c fall">-1.92%</i>
+      </a>
+      
+      <a class="q" href="/market/" data-t="USDKRW">
+        <em>원/달러</em>
+        <b class="v">1,495.88</b>
+        <i class="c fall">-0.17%</i>
+      </a>
+      
+      <a class="q" href="/market/" data-t="SPX">
+        <em>S&amp;P 500</em>
+        <b class="v">7,515.34</b>
+        <i class="c fall">-0.79%</i>
+      </a>
+      
+      <a class="q" href="/market/" data-t="NASDAQ">
+        <em>나스닥</em>
+        <b class="v">25,873.18</b>
+        <i class="c fall">-1.55%</i>
+      </a>
+      
+    </div>
+    <span class="tstamp" id="tstamp"> 종가 기준</span>
+  </div>
+</div>
+
+<!-- ── 마스트헤드 ─────────────────────────── -->
+<header class="mast">
+  <div class="mast-in">
+    <a class="brand" href="/">
+      <span class="logo">
+        <svg viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M4 23 L11 13 L16 18 L21 7 L28 12" fill="none" stroke="#E02B20" stroke-width="2.6" stroke-linecap="square" stroke-linejoin="round"/>
+          <circle cx="28" cy="12" r="2.8" fill="#E02B20"/>
+        </svg>
+      </span>
+      <span class="lock">
+        <span class="wm">SMIM</span>
+        <span class="xp">In the stock market, <em>information</em> matters</span>
+      </span>
+    </a>
+    <nav class="nav">
+      <a href="/">Report</a>
+      <a href="/market/">Market</a>
+      <a href="/newsroom/">Newsroom</a>
+      <a href="/watchlist/">Watchlist</a>
+      <a href="/performance/">Track Record</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="메뉴 열기">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ── 우측 드로어 ─────────────────────────── -->
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" aria-hidden="true">
+  <div class="dr-top">
+    <span class="wm sm">SMIM</span>
+    <button class="dr-x" id="drClose" aria-label="메뉴 닫기">&times;</button>
+  </div>
+  <nav class="dr-nav">
+    <a href="/"><b>Daily Report</b><span>오늘의 리포트</span><i>01</i></a>
+    <a href="/market/"><b>Market</b><span>지수 · 업종 · 시장 폭</span><i>02</i></a>
+    <a href="/newsroom/"><b>Newsroom</b><span>증시 뉴스 · 관련 종목</span><i>03</i></a>
+    <a href="/watchlist/"><b>Watchlist</b><span>추적 중인 종목</span><i>04</i></a>
+    <a href="/performance/"><b>Track Record</b><span>누적 성과 · 손실 포함</span><i>05</i></a>
+    <a href="/archive/"><b>Archive</b><span>지난 리포트 전체</span><i>06</i></a>
+    <a href="/methodology/" class=on><b>Methodology</b><span>분석 방법론 · 한계</span><i>07</i></a>
+  </nav>
+  <div class="dr-foot">
+    <p class="dt">주식은 정보다</p>
+    <p class="df">투자 권유가 아닙니다. 판단과 책임은 투자자 본인에게 있습니다.</p>
+    <p class="dc">Founder &amp; Developer · 이태웅</p>
+  </div>
+</aside>
+
+<div class="shell solo">
+  <main id="main">
+<section class="dateline">
+  <div class="dl-l">
+    <p class="eyebrow"><span class="rid">METHODOLOGY</span></p>
+    <h1>Methodology</h1>
+    <p class="lead">SMIM이 어떤 데이터를 쓰고, 어떤 절차로 판단하며, 무엇을 못 하는지 전부 공개합니다.</p>
+  </div>
+</section>
+
+<section class="block prose">
+  <h2 class="sec"><span>Pipeline</span><em>매 거래일 아침 자동 실행</em></h2>
+  <ol class="steps">
+    <li><b>Universe</b><p>한국은 코스피·코스닥 전 종목에서 스팩·우선주·ETF·리츠를 제외하고 시가총액 1500억원 이상 · 20일 평균 거래대금 30억원 이상만 남깁니다. 미국은 나스닥·NYSE에서 ETF·펀드를 제외하고 20일 평균 거래대금 $2백만 이상만 남깁니다(미국 리스팅엔 시가총액 데이터가 없어 유동성 기준만 적용). 사고팔 수 없는 종목은 아무리 좋아도 의미가 없습니다.</p></li>
+    <li><b>Rule Screen</b><p>60일선 위, 20일선 위 또는 골든크로스, RSI 78 미만, 20일 급등 35% 미만(한국은 전일 상한가도 제외). AI를 부르기 전에 명백히 아닌 것을 규칙으로 먼저 떨어뜨립니다.</p></li>
+    <li><b>Risk Gate</b><p>한국은 DART 전자공시, 미국은 SEC EDGAR를 조회해 유상증자·전환사채(미국은 S-1/S-3 등 희석성 공시)·관리종목·상장폐지·감사의견 관련 공시가 최근 45일 내 있으면 <b>무조건 제외</b>합니다.</p></li>
+    <li><b>Three-Agent Review</b><p>같은 데이터를 놓고 <b>매수측</b>이 살 이유만, <b>리스크측</b>이 사지 말 이유만 논증합니다. 그 뒤 <b>심사역</b>이 양측 주장을 모두 읽고 최종 판정합니다. AI에게 한 번만 물으면 반드시 후한 답이 나오기 때문입니다.</p></li>
+    <li><b>Numeric Verification</b><p>심사역이 쓴 모든 숫자를 원본 데이터와 대조합니다. 출처가 확인되지 않는 수치가 하나라도 있으면 그 종목은 발행에서 통째로 제외됩니다.</p></li>
+    <li><b>Calibration Loop</b><p>과거 확신도 구간별 실제 승률을 매번 심사역에게 제공합니다. 확신도가 결과보다 높았다면 스스로 낮추도록 강제합니다.</p></li>
+  </ol>
+</section>
+
+<section class="block prose">
+  <h2 class="sec"><span>Signal</span><em>5축 판정</em></h2>
+  <p>모든 종목은 <b>가격 · 재무 · 수급 · 뉴스 · 밸류에이션</b> 5개 축에서 각각 긍정 / 중립 / 부정으로 판정됩니다. 5개 축이 모두 긍정인 종목은 거의 없습니다. 부정 축이 보인다면 그건 실수가 아니라, 그 종목의 실제 약점입니다.</p>
+  <p>최종 판정은 <b>강력 매수 추천 · 매수 추천 · 관찰 대상</b> 세 단계입니다. AI 확신도 70 미만은 워치리스트에 편입되지 않습니다.</p>
+</section>
+
+<section class="block prose">
+  <h2 class="sec"><span>Data</span><em>출처</em></h2>
+  <ul class="rules">
+    <li><b>시세 · 지표</b><span>FinanceDataReader (일봉 종가 기준, 한국·미국 공통)</span></li>
+    <li><b>재무 · 공시 (한국)</b><span>금융감독원 DART 전자공시시스템 Open API</span></li>
+    <li><b>재무 · 공시 (미국)</b><span>SEC EDGAR Open API (company facts / submissions)</span></li>
+    <li><b>뉴스 (한국)</b><span>네이버 뉴스 검색 API — 제목·발행일·원문 링크만 사용하며 본문은 저장·재배포하지 않습니다</span></li>
+    <li><b>뉴스 (미국)</b><span>Yahoo Finance 뉴스 RSS — 마찬가지로 제목·발행일·원문 링크만 사용합니다</span></li>
+    <li><b>실시간 차트</b><span>TradingView 임베드 위젯</span></li>
+    <li><b>분석</b><span>Anthropic Claude — Bull/Bear · claude-haiku-4-5-20251001 · Judge · claude-sonnet-5 · 뉴스 태깅 · claude-haiku-4-5-20251001</span></li>
+  </ul>
+</section>
+
+<section class="block prose" id="limits">
+  <h2 class="sec"><span>Known Limits</span><em>알려진 한계</em></h2>
+  <ul class="rules warn">
+    <li><b>AI는 틀립니다</b><span>이 사이트의 모든 분석은 언어모델이 생성했습니다. 확신도가 높다고 해서 맞는다는 뜻이 아닙니다. 그래서 성적표를 숨기지 않고 공개합니다.</span></li>
+    <li><b>일봉 종가 기준</b><span>장중 급변, 시간외 거래, 호가 흐름은 반영되지 않습니다.</span></li>
+    <li><b>수급 데이터 제한</b><span>기관·외국인 순매매는 아직 연동되지 않았습니다. 수급 축은 현재 거래량 기반 추정치입니다.</span></li>
+    <li><b>관리종목 플래그</b><span>DART 공시 키워드로 간접 탐지 중이며, 실시간 시장경보와는 시차가 있을 수 있습니다.</span></li>
+    <li><b>거래 비용 미반영</b><span>성적표의 수익률에는 수수료·세금·슬리피지가 반영되지 않았습니다.</span></li>
+  </ul>
+</section>
+
+<section class="block prose">
+  <h2 class="sec"><span>Independence</span><em>운영 원칙</em></h2>
+  <ul class="rules">
+    <li><b>무료</b><span>종목 추천의 대가로 어떠한 금전도 받지 않습니다.</span></li>
+    <li><b>선행매매 금지</b><span>발행 전 해당 종목을 매매하지 않습니다.</span></li>
+    <li><b>기록 불변</b><span>한 번 발행된 판단은 수정하거나 삭제하지 않습니다.</span></li>
+    <li><b>수익 미보장</b><span>SMIM은 금융투자업자가 아니며, 어떠한 수익도 보장하지 않습니다.</span></li>
+  </ul>
+</section>
+</main>
+  
+</div>
+
+<footer>
+  <div class="f-grid">
+    <div class="f-brand">
+      <span class="wm">SMIM</span>
+      <p class="ft">주식은 정보다</p>
+      <p class="fc">Founder &amp; Developer · <b>이태웅</b></p>
+    </div>
+    <div class="f-col"><h5>Research</h5>
+      <a href="/">Daily Report</a><a href="/watchlist/">Watchlist</a>
+      <a href="/performance/">Track Record</a><a href="/archive/">Archive</a></div>
+    <div class="f-col"><h5>Market</h5>
+      <a href="/market/">지수 · 업종</a><a href="/newsroom/">Newsroom</a><a href="/feed.xml">RSS</a></div>
+    <div class="f-col"><h5>Transparency</h5>
+      <a href="/methodology/">분석 방법론</a><a href="/methodology/#limits">알려진 한계</a>
+      <a href="/archive/">원본 데이터 (JSON)</a></div>
+    <div class="f-col"><h5>Data</h5>
+      <a href="https://opendart.fss.or.kr" target="_blank" rel="noopener">DART 전자공시</a>
+      <span>시세 · FinanceDataReader</span><span>차트 · TradingView</span>
+      <span>뉴스 · 네이버 뉴스 API</span></div>
+  </div>
+  <div class="disc">
+    <h4>중요 고지</h4>
+    <p>SMIM이 제공하는 모든 정보는 AI가 공개 데이터를 분석해 생성한 참고자료이며, 특정 종목의 매수·매도를 권유하는 투자 권유가 아닙니다. SMIM은 자본시장법상 금융투자업자가 아니며, 어떠한 수익도 보장하지 않습니다. AI가 올려준 종목을 보고 매수할지 판단하는 것은 오롯이 투자자 본인의 몫이며, 투자 결과에 대한 책임은 전적으로 투자자 본인에게 있습니다.</p>
+    <p class="fine">SMIM은 무료로 운영되며 종목 추천의 대가로 어떠한 금전도 받지 않습니다. 선행매매를 하지 않고, 수익을 보장하지 않습니다. 발행된 판단은 수정·삭제 없이 보존되며, 손실 사례까지 자동 채점되어 공개됩니다. 기사 본문은 저장·재배포하지 않으며 제목과 원문 링크만 제공합니다.</p>
+  </div>
+  <div class="colo">
+    <span>© 2026 SMIM</span>
+    <span>Built &amp; maintained by <b>이태웅</b></span>
+    <span>종목 분석은 자동화된 언어모델이 수행합니다</span>
+  </div>
+</footer>
+
+<script src="/assets/app.js" defer></script>
+<script src="/assets/live.js" defer></script>
+<script src="/assets/news-live.js" defer></script>
+<script src="/assets/market-status.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+{% macro grid(sc, compact=false) %}
+<div class="signal-grid{% if compact %} sm{% endif %}">
+  {% for key, label in [('price','가격'),('fundamental','재무'),('supply','수급'),('news','뉴스'),('valuation','밸류')] %}
+  {% set v = sc.get(key,'neutral') if sc else 'neutral' %}
+  <div class="cell {{ v }}"><span>{{ label }}</span><b>{{ sig_ko(v) }}</b></div>
+  {% endfor %}
+</div>
+{% endmacro %}
+
+{% macro tile(h, small=false) %}
+{% set logo = stock_logo(h) %}
+<span class="mono-tile{{ ' sm' if small }} {{ 'up' if h.return_pct and h.return_pct>0 else 'dn' if h.return_pct and h.return_pct<0 else '' }}">
+  <span class="mt-inner">
+    <b class="mn">{{ mono1(h.name) }}</b>
+    {% if logo %}<img class="lg" src="{{ logo }}" alt="" loading="lazy" decoding="async" onerror="this.remove()">{% endif %}
+  </span>
+  <i class="flag" aria-hidden="true">{{ flag_svg(h.market) }}</i>
+</span>
+{% endmacro %}
+
+{% macro tvchart(code, tall=false) %}
+<div class="tv" data-tv="{{ code }}" data-tall="{{ '1' if tall else '0' }}">
+  <div class="tv-load"><span></span>실시간 차트 불러오는 중</div>
+</div>
+{% endmacro %}
+
+{% macro newsitem(n) %}
+<li class="ni{% if n.impact %} im-{{ n.impact }}{% endif %}">
+  <a class="nt" href="{{ n.url }}" target="_blank" rel="noopener noreferrer">
+    {{ n.title }}<svg class="ext" viewBox="0 0 12 12" aria-hidden="true"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+  </a>
+  <div class="nmeta">
+    {% if n.sector %}<span class="chipx">{{ n.sector }}</span>{% endif %}
+    {% if n.impact %}<span class="imp im-{{ n.impact }}">{{ {'positive':'긍정','negative':'부정','neutral':'중립'}.get(n.impact) }}</span>{% endif %}
+    <time>{{ n.published }}</time>
+  </div>
+  {% if n.why %}<p class="nwhy">{{ n.why }}</p>{% endif %}
+  {% if n.watchlist_hits %}
+  <p class="nlink">Watchlist 연관{% for w in n.watchlist_hits %}<a href="/stock/{{ w.code }}/">{{ w.name }}</a>{% endfor %}</p>
+  {% endif %}
+</li>
+{% endmacro %}

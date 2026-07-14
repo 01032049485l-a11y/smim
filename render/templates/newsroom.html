@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m %}
+{% block title %}Newsroom — SMIM{% endblock %}
+{% block content %}
+<section class="dateline">
+  <div class="dl-l">
+    <p class="eyebrow"><span class="rid">NEWSROOM · {{ s.date }}</span></p>
+    <h1>Newsroom</h1>
+    <p class="lead">국내 증시 뉴스를 섹터·영향·의미로 정리했습니다. 제목을 누르면 원문 매체로 이동합니다.</p>
+  </div>
+</section>
+
+{% set sectors = s.newsroom|map(attribute='sector')|reject('none')|unique|list %}
+{% if sectors %}
+<div class="filters" data-filters>
+  <button class="fb on" data-f="all">전체</button>
+  {% for sc in sectors %}<button class="fb" data-f="{{ sc }}">{{ sc }}</button>{% endfor %}
+</div>
+{% endif %}
+
+<section class="block">
+  <ul class="nlist big" data-newslist>
+    {% for n in s.newsroom %}
+    <li class="ni{% if n.impact %} im-{{ n.impact }}{% endif %}" data-sector="{{ n.sector or '기타' }}" data-url="{{ n.url }}">
+      <a class="nt" href="{{ n.url }}" target="_blank" rel="noopener noreferrer">
+        {{ n.title }}<svg class="ext" viewBox="0 0 12 12"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      </a>
+      <div class="nmeta">
+        {% if n.sector %}<span class="chipx">{{ n.sector }}</span>{% endif %}
+        {% if n.impact %}<span class="imp im-{{ n.impact }}">{{ {'positive':'긍정','negative':'부정','neutral':'중립'}.get(n.impact) }}</span>{% endif %}
+        <time>{{ n.published }}</time>
+      </div>
+      {% if n.why %}<p class="nwhy">{{ n.why }}</p>{% endif %}
+      {% if n.watchlist_hits %}
+      <p class="nlink">Watchlist 연관{% for w in n.watchlist_hits %}<a href="/stock/{{ w.code }}/">{{ w.name }}</a>{% endfor %}</p>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+  {% if not s.newsroom %}<p class="empty">수집된 뉴스가 없습니다.</p>{% endif %}
+</section>
+{% endblock %}
+
+{% block rail %}
+<div class="rc">
+  <h4>읽는 법</h4>
+  <p>각 기사의 <b>섹터</b>·<b>영향</b>·<b>의미</b>는 AI가 기사 제목과 공개 정보를 근거로 부여한 것입니다. 기사 본문을 요약하거나 재배포하지 않으며, 판단은 원문을 직접 확인한 뒤 내리시기 바랍니다.</p>
+</div>
+<div class="rc">
+  <h4>Watchlist</h4>
+  <ul class="kv">
+    {% for h in s.new_entries + s.holdings %}
+    <li data-watch-name="{{ h.name }}" data-watch-code="{{ h.code }}"><a href="/stock/{{ h.code }}/"><span>{{ h.name }}</span></a><b class="{{ h.return_pct|sign }}">{{ h.return_pct|pct }}</b></li>
+    {% endfor %}
+    {% if s_other %}{% for h in s_other.new_entries + s_other.holdings %}
+    <li data-watch-name="{{ h.name }}" data-watch-code="{{ h.code }}" hidden><a href="/stock/{{ h.code }}/"><span>{{ h.name }}</span></a><b class="{{ h.return_pct|sign }}">{{ h.return_pct|pct }}</b></li>
+    {% endfor %}{% endif %}
+  </ul>
+  <a class="rlink" href="/watchlist/">Watchlist 전체 →</a>
+</div>
+{% endblock %}

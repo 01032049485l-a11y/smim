@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2026-07-14 Daily Report — SMIM</title>
+<meta name="description" content="국내 증시 데이터·공시·뉴스를 종합 분석해 매 거래일 아침 발행하는 리서치 저널.">
+<meta property="og:site_name" content="SMIM">
+<meta property="og:title" content="2026-07-14 Daily Report — SMIM">
+<meta property="og:description" content="국내 증시 데이터·공시·뉴스를 종합 분석해 매 거래일 아침 발행하는 리서치 저널.">
+<link rel="alternate" type="application/rss+xml" title="SMIM" href="/feed.xml">
+<link rel="icon" href="/assets/mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/ibm-plex-mono@5.0.13/index.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">본문 바로가기</a>
+
+<!-- ── 라이브 티커 ─────────────────────────── -->
+<div class="tape" id="tape">
+  <div class="tape-in">
+    <span class="live"><i></i>LIVE</span>
+    <div class="quotes" id="quotes">
+      
+      <a class="q" href="/market/" data-t="KOSPI">
+        <em>코스피</em>
+        <b class="v">6,856.83</b>
+        <i class="c rise">+0.73%</i>
+      </a>
+      
+      <a class="q" href="/market/" data-t="KOSDAQ">
+        <em>코스닥</em>
+        <b class="v">783.98</b>
+        <i class="c fall">-1.92%</i>
+      </a>
+      
+      <a class="q" href="/market/" data-t="USDKRW">
+        <em>원/달러</em>
+        <b class="v">1,495.88</b>
+        <i class="c fall">-0.17%</i>
+      </a>
+      
+      <a class="q" href="/market/" data-t="SPX">
+        <em>S&amp;P 500</em>
+        <b class="v">7,515.34</b>
+        <i class="c fall">-0.79%</i>
+      </a>
+      
+      <a class="q" href="/market/" data-t="NASDAQ">
+        <em>나스닥</em>
+        <b class="v">25,873.18</b>
+        <i class="c fall">-1.55%</i>
+      </a>
+      
+    </div>
+    <span class="tstamp" id="tstamp">2026-07-14 종가 기준</span>
+  </div>
+</div>
+
+<!-- ── 마스트헤드 ─────────────────────────── -->
+<header class="mast">
+  <div class="mast-in">
+    <a class="brand" href="/">
+      <span class="logo">
+        <svg viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M4 23 L11 13 L16 18 L21 7 L28 12" fill="none" stroke="#E02B20" stroke-width="2.6" stroke-linecap="square" stroke-linejoin="round"/>
+          <circle cx="28" cy="12" r="2.8" fill="#E02B20"/>
+        </svg>
+      </span>
+      <span class="lock">
+        <span class="wm">SMIM</span>
+        <span class="xp">In the stock market, <em>information</em> matters</span>
+      </span>
+    </a>
+    <nav class="nav">
+      <a href="/" class=on>Report</a>
+      <a href="/market/">Market</a>
+      <a href="/newsroom/">Newsroom</a>
+      <a href="/watchlist/">Watchlist</a>
+      <a href="/performance/">Track Record</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="메뉴 열기">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ── 우측 드로어 ─────────────────────────── -->
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" aria-hidden="true">
+  <div class="dr-top">
+    <span class="wm sm">SMIM</span>
+    <button class="dr-x" id="drClose" aria-label="메뉴 닫기">&times;</button>
+  </div>
+  <nav class="dr-nav">
+    <a href="/" class=on><b>Daily Report</b><span>오늘의 리포트</span><i>01</i></a>
+    <a href="/market/"><b>Market</b><span>지수 · 업종 · 시장 폭</span><i>02</i></a>
+    <a href="/newsroom/"><b>Newsroom</b><span>증시 뉴스 · 관련 종목</span><i>03</i></a>
+    <a href="/watchlist/"><b>Watchlist</b><span>추적 중인 종목</span><i>04</i></a>
+    <a href="/performance/"><b>Track Record</b><span>누적 성과 · 손실 포함</span><i>05</i></a>
+    <a href="/archive/"><b>Archive</b><span>지난 리포트 전체</span><i>06</i></a>
+    <a href="/methodology/"><b>Methodology</b><span>분석 방법론 · 한계</span><i>07</i></a>
+  </nav>
+  <div class="dr-foot">
+    <p class="dt">주식은 정보다</p>
+    <p class="df">투자 권유가 아닙니다. 판단과 책임은 투자자 본인에게 있습니다.</p>
+    <p class="dc">Founder &amp; Developer · 이태웅</p>
+  </div>
+</aside>
+
+<div class="shell">
+  <main id="main">
+
+<div class="market-tabs" data-tabs>
+  <div class="tabbar mtabbar">
+    <button class="tb on" data-tab="kr"><svg class="fico" viewBox="0 0 24 16" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="16" rx="2" fill="#fff"/><path d="M12 3.8a4.2 4.2 0 0 1 0 8.4 2.1 2.1 0 0 1 0-4.2 2.1 2.1 0 0 0 0-4.2z" fill="#cd2e3a"/><path d="M12 12.2a4.2 4.2 0 0 1 0-8.4 2.1 2.1 0 0 1 0 4.2 2.1 2.1 0 0 0 0 4.2z" fill="#0047a0"/></svg> 한국</button>
+    <button class="tb" data-tab="us"><svg class="fico" viewBox="0 0 24 16" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="16" rx="2" fill="#fff"/><g fill="#B22234"><rect y="0" width="24" height="1.23"/><rect y="2.46" width="24" height="1.23"/><rect y="4.92" width="24" height="1.23"/><rect y="7.38" width="24" height="1.23"/><rect y="9.84" width="24" height="1.23"/><rect y="12.3" width="24" height="1.23"/><rect y="14.76" width="24" height="1.23"/></g><rect width="10" height="8.6" fill="#3C3B6E"/></svg> 미국</button>
+  </div>
+  <div class="tp on" data-panel="kr">
+    
+
+<section class="hero">
+  
+  <div class="hero-art" aria-hidden="true"><svg class="spark" viewBox="0 0 640 260" preserveAspectRatio="none"><path d="M0.0,36.7 L22.1,54.7 L44.1,107.8 L66.2,182.8 L88.3,114.9 L110.3,155.5 L132.4,151.8 L154.5,111.9 L176.6,65.1 L198.6,45.0 L220.7,29.8 L242.8,7.6 L264.8,8.9 L286.9,2.0 L309.0,103.0 L331.0,73.4 L353.1,22.4 L375.2,80.0 L397.2,81.9 L419.3,72.8 L441.4,92.0 L463.4,164.7 L485.5,115.8 L507.6,120.0 L529.7,163.8 L551.7,209.2 L573.8,204.2 L595.9,183.8 L617.9,258.0 L640.0,252.5" fill="none" stroke="#1E4FB8" stroke-width="1.4"/></svg></div>
+  
+  
+  <div class="hero-pulse rise">
+    <span class="hp-l">코스피</span>
+    <b class="hp-v">6856.83</b>
+    <span class="hp-c">+0.73%</span>
+    <span class="hp-m">시장심리 · 위험회피</span>
+  </div>
+  
+  <div class="kick">
+    <span class="pulse"></span>
+    <span class="iss">ISSUE 2</span>
+    <span class="rid">SMIM-2026-0714</span>
+  </div>
+  <h1>Daily Report<span class="ko">오늘의 <span class="it">AI 추천</span> 0종목</span></h1>
+  <p class="lead">8개 종목을 정량 선별하고, 상승 논거와 반대 논거를 각각 세운 뒤 최종 판정했습니다. 근거 없이 이름만 던지지 않습니다.</p>
+  <div class="hstat">
+    <div class="hs"><b data-n="8">0</b><span>Scanned</span></div>
+    <div class="hs"><b data-n="0">0</b><span>New</span></div>
+    <div class="hs"><b data-n="0">0</b><span>Holdings</span></div>
+    <div class="hs"><b>—</b><span>Win Rate</span></div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<section class="block">
+  <h2 class="sec"><span>Screened Out</span><em>제외된 종목</em></h2>
+  <ul class="rej"><li><b>코웨이</b><span>WATCH (확신도 52)</span></li><li><b>뉴파워프라즈마</b><span>WATCH (확신도 38)</span></li><li><b>한국콜마</b><span>WATCH (확신도 42)</span></li><li><b>지엔씨에너지</b><span>WATCH (확신도 42)</span></li><li><b>DB손해보험</b><span>WATCH (확신도 42)</span></li><li><b>피에스케이홀딩스</b><span>WATCH (확신도 45)</span></li><li><b>마녀공장</b><span>WATCH (확신도 38)</span></li><li><b>SK디스커버리</b><span>WATCH (확신도 38)</span></li></ul>
+</section>
+
+
+
+
+  </div>
+  <div class="tp" data-panel="us">
+    <p class="empty">아직 발행된 미국 리포트가 없습니다.</p>
+  </div>
+</div>
+
+
+
+</main>
+  <aside class="rail">
+<div class="rc">
+  <h4>Track Record</h4>
+  
+  <p class="rempty">마감된 포지션이 아직 없습니다.</p>
+  
+</div>
+
+
+
+
+<div class="rc">
+  <h4>Newsroom</h4>
+  <ul class="rnews">
+    
+    <li><a href="http://www.newsian.co.kr/news/articleView.html?idxno=92244" target="_blank" rel="noopener noreferrer">&#34;6800 무너지면 6000도 가능&#34;…골드만삭스의 코스피 경고</a>
+      <span class="chipx">증시일반</span></li>
+    
+    <li><a href="https://www.thebk.co.kr/news/articleView.html?idxno=310563" target="_blank" rel="noopener noreferrer">화장품 동전주 5곳 남았다…상장폐지 제도 개편에 투자자 &#39;촉각&#39;</a>
+      <span class="chipx">소비재</span></li>
+    
+    <li><a href="http://www.yonhapnewstv.co.kr/news/MYH20260714192254V6d" target="_blank" rel="noopener noreferrer">&#39;검은 월요일&#39; 떨쳐낸 코스피…6,800선 회복</a>
+      <span class="chipx">증시일반</span></li>
+    
+    <li><a href="http://www.yonhapnewstv.co.kr/news/MYH20260714192056rJK" target="_blank" rel="noopener noreferrer">[앵커리포트] 롤러코스터 장세 속 상승 마감…코스피 6,800선 회복</a>
+      <span class="chipx">증시일반</span></li>
+    
+    <li><a href="https://www.betanews.net/article/view/beta202607140067" target="_blank" rel="noopener noreferrer">&#39;수출업체 달러 매도&#39; 원·달러 환율, 10원 넘게 하락 마감...장중 1480원...</a>
+      <span class="chipx">거시·환율</span></li>
+    
+    <li><a href="https://biz.heraldcorp.com/article/10808501?ref=naver" target="_blank" rel="noopener noreferrer">신저가인데 하루 12조 거래…‘초단타 놀이터’ 된 단일종목 레버리지,...</a>
+      <span class="chipx">증시일반</span></li>
+    
+  </ul>
+  <a class="rlink" href="/newsroom/">뉴스룸 전체 →</a>
+</div>
+
+
+<div class="rc quiet">
+  <h4>Notice</h4>
+  <p>SMIM은 종목을 대신 매수해주지 않습니다. 여기 실린 모든 분석은 판단의 재료이며, 최종 결정과 그 결과는 투자자 본인의 몫입니다.</p>
+  <a class="rlink" href="/methodology/">분석 방법론 →</a>
+</div>
+</aside>
+</div>
+
+<footer>
+  <div class="f-grid">
+    <div class="f-brand">
+      <span class="wm">SMIM</span>
+      <p class="ft">주식은 정보다</p>
+      <p class="fc">Founder &amp; Developer · <b>이태웅</b></p>
+    </div>
+    <div class="f-col"><h5>Research</h5>
+      <a href="/">Daily Report</a><a href="/watchlist/">Watchlist</a>
+      <a href="/performance/">Track Record</a><a href="/archive/">Archive</a></div>
+    <div class="f-col"><h5>Market</h5>
+      <a href="/market/">지수 · 업종</a><a href="/newsroom/">Newsroom</a><a href="/feed.xml">RSS</a></div>
+    <div class="f-col"><h5>Transparency</h5>
+      <a href="/methodology/">분석 방법론</a><a href="/methodology/#limits">알려진 한계</a>
+      <a href="/archive/">원본 데이터 (JSON)</a></div>
+    <div class="f-col"><h5>Data</h5>
+      <a href="https://opendart.fss.or.kr" target="_blank" rel="noopener">DART 전자공시</a>
+      <span>시세 · FinanceDataReader</span><span>차트 · TradingView</span>
+      <span>뉴스 · 네이버 뉴스 API</span></div>
+  </div>
+  <div class="disc">
+    <h4>중요 고지</h4>
+    <p>SMIM이 제공하는 모든 정보는 AI가 공개 데이터를 분석해 생성한 참고자료이며, 특정 종목의 매수·매도를 권유하는 투자 권유가 아닙니다. SMIM은 자본시장법상 금융투자업자가 아니며, 어떠한 수익도 보장하지 않습니다. AI가 올려준 종목을 보고 매수할지 판단하는 것은 오롯이 투자자 본인의 몫이며, 투자 결과에 대한 책임은 전적으로 투자자 본인에게 있습니다.</p>
+    <p class="fine">SMIM은 무료로 운영되며 종목 추천의 대가로 어떠한 금전도 받지 않습니다. 선행매매를 하지 않고, 수익을 보장하지 않습니다. 발행된 판단은 수정·삭제 없이 보존되며, 손실 사례까지 자동 채점되어 공개됩니다. 기사 본문은 저장·재배포하지 않으며 제목과 원문 링크만 제공합니다.</p>
+  </div>
+  <div class="colo">
+    <span>© 2026 SMIM</span>
+    <span>Built &amp; maintained by <b>이태웅</b></span>
+    <span>종목 분석은 자동화된 언어모델이 수행합니다</span>
+  </div>
+</footer>
+
+<script src="/assets/app.js" defer></script>
+<script src="/assets/live.js" defer></script>
+<script src="/assets/news-live.js" defer></script>
+<script src="/assets/market-status.js" defer></script>
+</body>
+</html>

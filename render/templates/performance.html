@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block title %}Track Record — SMIM{% endblock %}
+{% block content %}
+<section class="dateline">
+  <div class="dl-l">
+    <p class="eyebrow"><span class="rid">TRACK RECORD</span></p>
+    <h1>Track Record</h1>
+    <p class="lead">편입했던 모든 종목의 마감 결과입니다. 손실 사례를 포함한 전체 기록이며, 자동 채점됩니다.</p>
+  </div>
+</section>
+
+<section class="block">
+  {% if stats.total %}
+  <div class="scorecards big">
+    <div><b>{{ stats.total }}</b><span>마감 포지션</span></div>
+    <div><b>{{ stats.win_rate }}%</b><span>승률</span></div>
+    <div><b class="{{ stats.avg_return|sign }}">{{ stats.avg_return|pct }}</b><span>평균 수익률</span></div>
+    <div><b class="{{ stats.median_return|sign }}">{{ stats.median_return|pct }}</b><span>중간값</span></div>
+    <div><b>{{ stats.avg_days }}일</b><span>평균 보유</span></div>
+  </div>
+  <p class="note-sm">수익률은 편입일 종가 대비 편출일 종가 기준이며, 거래 비용과 세금은 반영되지 않았습니다. 과거 성과가 미래 수익을 보장하지 않습니다.</p>
+  {% else %}
+  <p class="empty">아직 마감된 포지션이 없습니다.</p>
+  {% endif %}
+</section>
+
+{% if book %}
+<section class="block">
+  <h2 class="sec"><span>Closed Positions</span><em>{{ book|length }}</em></h2>
+  <div class="tblw">
+  <table class="tbl">
+    <thead><tr><th>종목</th><th>편입</th><th>편출</th><th class="r">편입가</th><th class="r">편출가</th><th class="r">수익률</th><th>사유</th><th class="r">당시 확신도</th></tr></thead>
+    <tbody>
+    {% for b in book %}
+      <tr>
+        <td class="nm"><a href="/stock/{{ b.code }}/">{{ b.name }}</a><code>{{ b.code }}</code></td>
+        <td class="num">{{ b.entry_date }}</td>
+        <td class="num">{{ b.exit_date }}</td>
+        <td class="num r">{{ b.entry_price|money }}</td>
+        <td class="num r">{{ b.exit_price|money }}</td>
+        <td class="num r {{ b.return_pct|sign }}"><b>{{ b.return_pct|pct }}</b></td>
+        <td><span class="why s-{{ b.status }}">{{ status_ko(b.status) }}</span></td>
+        <td class="num r">{{ b.confidence }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  </div>
+</section>
+{% endif %}
+{% endblock %}

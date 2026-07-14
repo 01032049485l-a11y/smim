@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m %}
+{% block title %}Watchlist — SMIM{% endblock %}
+
+{% macro watch_body(s, market_group) %}
+{% set max_holdings = cfg.MAX_HOLDINGS_US if market_group == 'US' else cfg.MAX_HOLDINGS_KR %}
+<section class="dateline">
+  <div class="dl-l">
+    <p class="eyebrow"><span class="rid">WATCHLIST · {{ s.date }}</span></p>
+    <h1>Watchlist</h1>
+    <p class="lead">현재 추적 중인 종목과, 편입 이후의 실제 경과입니다. 최대 {{ max_holdings }}종목을 유지합니다.</p>
+  </div>
+  <dl class="dl-r">
+    <div><dt>추적 중</dt><dd>{{ (s.new_entries + s.holdings)|length }} / {{ max_holdings }}</dd></div>
+    <div><dt>손익선</dt><dd class="rise">+{{ cfg.TAKE_PROFIT_RANGE[0]|int }}~{{ cfg.TAKE_PROFIT_RANGE[1]|int }}%</dd></div>
+    <div><dt>손절선</dt><dd class="fall">{{ cfg.STOP_LOSS_RANGE[1]|int }}% ~ {{ cfg.STOP_LOSS_RANGE[0]|int }}%</dd></div>
+  </dl>
+</section>
+
+<section class="block">
+  <div class="tblw">
+  <table class="tbl">
+    <thead><tr><th>종목</th><th>90일 추이</th><th>신호</th><th>판정</th><th class="r">편입가</th><th class="r">현재가</th><th class="r">수익률</th><th class="r">경과</th></tr></thead>
+    <tbody>
+    {% for h in s.new_entries + s.holdings %}
+      <tr data-live-stock data-code="{{ h.code }}" data-market="{{ h.market }}" data-entry="{{ h.entry_price }}">
+        <td><div class="nm">{{ m.tile(h, true) }}<div><a href="/stock/{{ h.code }}/">{{ h.name }}</a><code>{{ h.code }}</code></div></div></td>
+        <td class="sp">{{ chart_spark(h.series.close if h.series else [], 120, 32) }}</td>
+        <td>{{ m.grid(h.scorecard, true) }}</td>
+        <td><span class="vtag v-{{ h.verdict }}">{{ verdict_ko(h.verdict) }}</span></td>
+        <td class="num r">{{ h.entry_price|money }}</td>
+        <td class="num r" data-field="price">{{ h.current_price|money }}</td>
+        <td class="num r {{ h.return_pct|sign }}" data-field="return"><b>{{ h.return_pct|pct }}</b></td>
+        <td class="num r">{{ h.days_held }}일</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  </div>
+  {% if not (s.new_entries or s.holdings) %}<p class="empty">추적 중인 종목이 없습니다.</p>{% endif %}
+</section>
+
+<section class="block">
+  <h2 class="sec"><span>Exit Rules</span><em>편출 규칙</em></h2>
+  <ul class="rules">
+    <li><b>목표 도달</b><span>편입가 대비 +{{ cfg.TAKE_PROFIT_RANGE[0]|int }}~{{ cfg.TAKE_PROFIT_RANGE[1]|int }}% 도달 시 편출 — 종목별 목표치는 AI가 변동성을 보고 그 안에서 직접 정합니다</span></li>
+    <li><b>손절 도달</b><span>편입가 대비 {{ cfg.STOP_LOSS_RANGE[1]|int }}% ~ {{ cfg.STOP_LOSS_RANGE[0]|int }}% 하회 시 편출 — 마찬가지로 종목별로 AI가 정합니다</span></li>
+    <li><b>보유기간 만료</b><span>{{ cfg.MAX_HOLD_DAYS }}거래일 경과 시 편출 (중기 시계 유지)</span></li>
+  </ul>
+  <p class="note-sm">편출은 SMIM의 추적 종료를 의미할 뿐, 매도 권유가 아닙니다. 모든 편출 결과는 <a href="/performance/">Track Record</a>에 자동 기록됩니다.</p>
+</section>
+{% endmacro %}
+
+{% block content %}
+<div class="market-tabs" data-tabs>
+  <div class="tabbar mtabbar">
+    <button class="tb on" data-tab="kr">{{ flag_svg('KR') }} 한국</button>
+    <button class="tb" data-tab="us">{{ flag_svg('US') }} 미국</button>
+  </div>
+  <div class="tp on" data-panel="kr">
+    {% if s_kr %}{{ watch_body(s_kr, 'KR') }}{% else %}<p class="empty">아직 발행된 한국 워치리스트가 없습니다.</p>{% endif %}
+  </div>
+  <div class="tp" data-panel="us">
+    {% if s_us %}{{ watch_body(s_us, 'US') }}{% else %}<p class="empty">아직 발행된 미국 워치리스트가 없습니다.</p>{% endif %}
+  </div>
+</div>
+{% endblock %}
+
+{% block rail %}
+<div class="rc">
+  <h4>Track Record</h4>
+  {% if stats.total %}
+  <div class="rstats">
+    <div><b>{{ stats.total }}</b><span>마감</span></div>
+    <div><b>{{ stats.win_rate }}%</b><span>승률</span></div>
+    <div><b class="{{ stats.avg_return|sign }}">{{ stats.avg_return|pct }}</b><span>평균</span></div>
+  </div>
+  <a class="rlink" href="/performance/">전체 기록 →</a>
+  {% else %}<p class="rempty">마감된 포지션 없음</p>{% endif %}
+</div>
+{% endblock %}

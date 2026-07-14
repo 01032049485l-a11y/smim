@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Newsroom — SMIM</title>
+<meta name="description" content="국내 증시 데이터·공시·뉴스를 종합 분석해 매 거래일 아침 발행하는 리서치 저널.">
+<meta property="og:site_name" content="SMIM">
+<meta property="og:title" content="Newsroom — SMIM">
+<meta property="og:description" content="국내 증시 데이터·공시·뉴스를 종합 분석해 매 거래일 아침 발행하는 리서치 저널.">
+<link rel="alternate" type="application/rss+xml" title="SMIM" href="/feed.xml">
+<link rel="icon" href="/assets/mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/ibm-plex-mono@5.0.13/index.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">본문 바로가기</a>
+
+<!-- ── 라이브 티커 ─────────────────────────── -->
+<div class="tape" id="tape">
+  <div class="tape-in">
+    <span class="live"><i></i>LIVE</span>
+    <div class="quotes" id="quotes">
+      
+      <a class="q" href="/market/" data-t="KOSPI">
+        <em>코스피</em>
+        <b class="v">6,856.83</b>
+        <i class="c rise">+0.73%</i>
+      </a>
+      
+      <a class="q" href="/market/" data-t="KOSDAQ">
+        <em>코스닥</em>
+        <b class="v">783.98</b>
+        <i class="c fall">-1.92%</i>
+      </a>
+      
+      <a class="q" href="/market/" data-t="USDKRW">
+        <em>원/달러</em>
+        <b class="v">1,495.88</b>
+        <i class="c fall">-0.17%</i>
+      </a>
+      
+      <a class="q" href="/market/" data-t="SPX">
+        <em>S&amp;P 500</em>
+        <b class="v">7,515.34</b>
+        <i class="c fall">-0.79%</i>
+      </a>
+      
+      <a class="q" href="/market/" data-t="NASDAQ">
+        <em>나스닥</em>
+        <b class="v">25,873.18</b>
+        <i class="c fall">-1.55%</i>
+      </a>
+      
+    </div>
+    <span class="tstamp" id="tstamp">2026-07-14 종가 기준</span>
+  </div>
+</div>
+
+<!-- ── 마스트헤드 ─────────────────────────── -->
+<header class="mast">
+  <div class="mast-in">
+    <a class="brand" href="/">
+      <span class="logo">
+        <svg viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M4 23 L11 13 L16 18 L21 7 L28 12" fill="none" stroke="#E02B20" stroke-width="2.6" stroke-linecap="square" stroke-linejoin="round"/>
+          <circle cx="28" cy="12" r="2.8" fill="#E02B20"/>
+        </svg>
+      </span>
+      <span class="lock">
+        <span class="wm">SMIM</span>
+        <span class="xp">In the stock market, <em>information</em> matters</span>
+      </span>
+    </a>
+    <nav class="nav">
+      <a href="/">Report</a>
+      <a href="/market/">Market</a>
+      <a href="/newsroom/" class=on>Newsroom</a>
+      <a href="/watchlist/">Watchlist</a>
+      <a href="/performance/">Track Record</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="메뉴 열기">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ── 우측 드로어 ─────────────────────────── -->
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" aria-hidden="true">
+  <div class="dr-top">
+    <span class="wm sm">SMIM</span>
+    <button class="dr-x" id="drClose" aria-label="메뉴 닫기">&times;</button>
+  </div>
+  <nav class="dr-nav">
+    <a href="/"><b>Daily Report</b><span>오늘의 리포트</span><i>01</i></a>
+    <a href="/market/"><b>Market</b><span>지수 · 업종 · 시장 폭</span><i>02</i></a>
+    <a href="/newsroom/" class=on><b>Newsroom</b><span>증시 뉴스 · 관련 종목</span><i>03</i></a>
+    <a href="/watchlist/"><b>Watchlist</b><span>추적 중인 종목</span><i>04</i></a>
+    <a href="/performance/"><b>Track Record</b><span>누적 성과 · 손실 포함</span><i>05</i></a>
+    <a href="/archive/"><b>Archive</b><span>지난 리포트 전체</span><i>06</i></a>
+    <a href="/methodology/"><b>Methodology</b><span>분석 방법론 · 한계</span><i>07</i></a>
+  </nav>
+  <div class="dr-foot">
+    <p class="dt">주식은 정보다</p>
+    <p class="df">투자 권유가 아닙니다. 판단과 책임은 투자자 본인에게 있습니다.</p>
+    <p class="dc">Founder &amp; Developer · 이태웅</p>
+  </div>
+</aside>
+
+<div class="shell">
+  <main id="main">
+<section class="dateline">
+  <div class="dl-l">
+    <p class="eyebrow"><span class="rid">NEWSROOM · 2026-07-14</span></p>
+    <h1>Newsroom</h1>
+    <p class="lead">국내 증시 뉴스를 섹터·영향·의미로 정리했습니다. 제목을 누르면 원문 매체로 이동합니다.</p>
+  </div>
+</section>
+
+
+
+<div class="filters" data-filters>
+  <button class="fb on" data-f="all">전체</button>
+  <button class="fb" data-f="증시일반">증시일반</button><button class="fb" data-f="소비재">소비재</button><button class="fb" data-f="거시·환율">거시·환율</button><button class="fb" data-f="반도체">반도체</button><button class="fb" data-f="2차전지">2차전지</button><button class="fb" data-f="증시일般">증시일般</button><button class="fb" data-f="금융">금융</button><button class="fb" data-f="바이오">바이오</button><button class="fb" data-f="자동차">자동차</button><button class="fb" data-f="증시일general">증시일general</button><button class="fb" data-f="건설·기계">건설·기계</button>
+</div>
+
+
+<section class="block">
+  <ul class="nlist big" data-newslist>
+    
+    <li class="ni im-negative" data-sector="증시일반" data-url="http://www.newsian.co.kr/news/articleView.html?idxno=92244">
+      <a class="nt" href="http://www.newsian.co.kr/news/articleView.html?idxno=92244" target="_blank" rel="noopener noreferrer">
+        &#34;6800 무너지면 6000도 가능&#34;…골드만삭스의 코스피 경고<svg class="ext" viewBox="0 0 12 12"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      </a>
+      <div class="nmeta">
+        <span class="chipx">증시일반</span>
+        <span class="imp im-negative">부정</span>
+        <time>2026-07-14</time>
+      </div>
+      <p class="nwhy">골드만삭스가 코스피 6800선 붕괴 시 6000까지 하락 가능성을 경고하며 투자자 심리 악화</p>
+      
+    </li>
+    
+    <li class="ni im-negative" data-sector="소비재" data-url="https://www.thebk.co.kr/news/articleView.html?idxno=310563">
+      <a class="nt" href="https://www.thebk.co.kr/news/articleView.html?idxno=310563" target="_blank" rel="noopener noreferrer">
+        화장품 동전주 5곳 남았다…상장폐지 제도 개편에 투자자 &#39;촉각&#39;<svg class="ext" viewBox="0 0 12 12"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      </a>
+      <div class="nmeta">
+        <span class="chipx">소비재</span>
+        <span class="imp im-negative">부정</span>
+        <time>2026-07-14</time>
+      </div>
+      <p class="nwhy">화장품 동전주가 5개로 축소되면서 상장폐지 제도 개편에 따른 구조조정 가속화</p>
+      
+    </li>
+    
+    <li class="ni im-positive" data-sector="증시일반" data-url="http://www.yonhapnewstv.co.kr/news/MYH20260714192254V6d">
+      <a class="nt" href="http://www.yonhapnewstv.co.kr/news/MYH20260714192254V6d" target="_blank" rel="noopener noreferrer">
+        &#39;검은 월요일&#39; 떨쳐낸 코스피…6,800선 회복<svg class="ext" viewBox="0 0 12 12"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      </a>
+      <div class="nmeta">
+        <span class="chipx">증시일반</span>
+        <span class="imp im-positive">긍정</span>
+        <time>2026-07-14</time>
+      </div>
+      <p class="nwhy">코스피가 낙폭을 회복하며 6800선을 되찾음</p>
+      
+    </li>
+    
+    <li class="ni im-positive" data-sector="증시일반" data-url="http://www.yonhapnewstv.co.kr/news/MYH20260714192056rJK">
+      <a class="nt" href="http://www.yonhapnewstv.co.kr/news/MYH20260714192056rJK" target="_blank" rel="noopener noreferrer">
+        [앵커리포트] 롤러코스터 장세 속 상승 마감…코스피 6,800선 회복<svg class="ext" viewBox="0 0 12 12"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      </a>
+      <div class="nmeta">
+        <span class="chipx">증시일반</span>
+        <span class="imp im-positive">긍정</span>
+        <time>2026-07-14</time>
+      </div>
+      <p class="nwhy">변동성 속에서도 코스피가 상승 마감하며 6800선 회복</p>
+      
+    </li>
+    
+    <li class="ni im-positive" data-sector="거시·환율" data-url="https://www.betanews.net/article/view/beta202607140067">
+      <a class="nt" href="https://www.betanews.net/article/view/beta202607140067" target="_blank" rel="noopener noreferrer">
+        &#39;수출업체 달러 매도&#39; 원·달러 환율, 10원 넘게 하락 마감...장중 1480원...<svg class="ext" viewBox="0 0 12 12"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      </a>
+      <div class="nmeta">
+        <span class="chipx">거시·환율</span>
+        <span class="imp im-positive">긍정</span>
+        <time>2026-07-14</time>
+      </div>
+      <p class="nwhy">수출업체의 달러 매도로 원달러 환율이 10원 이상 하락하며 수출 환경 개선</p>
+      
+    </li>
+    
+    <li class="ni im-negative" data-sector="증시일반" data-url="https://biz.heraldcorp.com/article/10808501?ref=naver">
+      <a class="nt" href="https://biz.heraldcorp.com/article/10808501?ref=naver" target="_blank" rel="noopener noreferrer">
+        신저가인데 하루 12조 거래…‘초단타 놀이터’ 된 단일종목 레버리지,...<svg class="ext" viewBox="0 0 12 12"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      </a>
+      <div class="nmeta">
+        <span class="chipx">증시일반</span>
+        <span class="imp im-negative">부정</span>
+        <time>2026-07-14</time>
+      </div>
+      <p class="nwhy">단일종목 레버리지가 신저가에도 12조 거래량을 기록하며 투기 심화</p>
+      
+    </li>
+    
+    <li class="ni im-neutral" data-sector="반도체" data-url="http://www.hansbiz.co.kr/news/articleView.html?idxno=850301">
+      <a class="nt" href="http://www.hansbiz.co.kr/news/articleView.html?idxno=850301" target="_blank" rel="noopener noreferrer">
+        코스피 소폭 반등, 삼전닉스 하락분 만회<svg class="ext" viewBox="0 0 12 12"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      </a>
+      <div class="nmeta">
+        <span class="chipx">반도체</span>
+        <span class="imp im-neutral">중립</span>
+        <time>2026-07-14</time>
+      </div>
+      <p class="nwhy">코스피 소폭 반등 중 삼성전자와 SK하이닉스의 하락분이 부분 만회됨</p>
+      
+    </li>
+    
+    <li class="ni im-neutral" data-sector="증시일반" data-url="https://www.asiatime.co.kr/article/20260714500437">
+      <a class="nt" href="https://www.asiatime.co.kr/article/20260714500437" target="_blank" rel="noopener noreferrer">
+        증권업계 &#34;단일종목 레버리지, 자본시장 선진화 기여…거래대금 아닌 리...<svg class="ext" viewBox="0 0 12 12"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      </a>
+      <div class="nmeta">
+        <span class="chipx">증시일반</span>
+        <span class="imp im-neutral">중립</span>
+        <time>2026-07-14</time>
+      </div>
+      <p class="nwhy">증권업계가 단일종목 레버리지의 자본시장 기여도를 주장하고 거래대금 규제 필요성 언급</p>
+      
+    </li>
+    
+    <li class="ni im-positive" data-sector="증시일반" data-url="https://www.g-enews.com/view.php?ud=202607141920547936e7e8286d56_1">
+      <a class="nt" href="https://www.g-enews.com/view.php?ud=202607141920547936e7e8286d56_1" target="_blank" rel="noopener noreferrer">
+        &#34;하루 만에 돌아온 매수세&#34;… 닛케이지수, 반도체·AI주 반등 힘입어 6만...<svg class="ext" viewBox="0 0 12 12"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      </a>
+      <div class="nmeta">
+        <span class="chipx">증시일반</span>
+        <span class="imp im-positive">긍정</span>
+        <time>2026-07-14</time>
+      </div>
+      <p class="nwhy">반도체와 AI주 반등으로 닛케이지수가 하루 만에 6만선 회복</p>
+      
+    </li>
+    
+    <li class="ni im-neutral" data-sector="반도체" data-url="https://www.thebell.co.kr/free/content/ArticleView.asp?key=202607141551091200101375">
+      <a class="nt" href="https://www.thebell.co.kr/free/content/ArticleView.asp?key=202607141551091200101375" target="_blank" rel="noopener noreferrer">
+        [더벨][thebell&#39;s view] [영상] 나스닥 가는 SK하이닉스…40조 ADR에 담긴...<svg class="ext" viewBox="0 0 12 12"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      </a>
+      <div class="nmeta">
+        <span class="chipx">반도체</span>
+        <span class="imp im-neutral">중립</span>
+        <time>2026-07-14</time>
+      </div>
+      <p class="nwhy">SK하이닉스의 40조 규모 ADR 상장이 나스닥 진출을 의미</p>
+      
+    </li>
+    
+    <li class="ni im-positive" data-sector="반도체" data-url="http://www.inews24.com/view/1985539">
+      <a class="nt" href="http://www.inews24.com/view/1985539" target="_blank" rel="noopener noreferrer">
+        &#39;160만원대 추락&#39; SK하이닉스, 300만원 진입 조건 나왔다?⋯&#34;강한 감동 ...<svg class="ext" viewBox="0 0 12 12"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      </a>
+      <div class="nmeta">
+        <span class="chipx">반도체</span>
+        <span class="imp im-positive">긍정</span>
+        <time>2026-07-14</time>
+      </div>
+      <p class="nwhy">SK하이닉스가 160만원대에서 하락했으나 300만원 진입 조건이 나왔다는 긍정 신호</p>
+      
+    </li>
+    
+    <li class="ni im-neutral" data-sector="거시·환율" data-url="https://news.einfomax.co.kr/news/articleView.html?idxno=4424966">
+      <a class="nt" href="https://news.einfomax.co.kr/news/articleView.html?idxno=4424966" target="_blank" rel="noopener noreferrer">
+        [亞증시-종합] 日·中·홍콩 장 중 상승 전환…대만 홀로 약세<svg class="ext" viewBox="0 0 12 12"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      </a>
+      <div class="nmeta">
+        <span class="chipx">거시·환율</span>
+        <span class="imp im-neutral">중립</span>
+        <time>2026-07-14</time>
+      </div>
+      <p class="nwhy">아시아 증시 중 일본·중국·홍콩은 상승 전환, 대만만 약세를 보임</p>
+      
+    </li>
+    
+    <li class="ni im-negative" data-sector="반도체" data-url="https://www.businesskorea.co.kr/news/articleView.html?idxno=273038">
+      <a class="nt" href="https://www.businesskorea.co.kr/news/articleView.html?idxno=273038" target="_blank" rel="noopener noreferrer">
+        [이슈분석] 사면초가에 빠진 삼성전자의 호남 반도체 400조 투자<svg class="ext" viewBox="0 0 12 12"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      </a>
+      <div class="nmeta">
+        <span class="chipx">반도체</span>
+        <span class="imp im-negative">부정</span>
+        <time>2026-07-14</time>
+      </div>
+      <p class="nwhy">삼성전자의 호남 반도체 400조 투자가 어려운 상황에 봉착함</p>
+      
+    </li>
+    
+    <li class="ni im-positive" data-sector="2차전지" data-url="https://www.pinpointnews.co.kr/news/articleView.html?idxno=468311">
+      <a class="nt" href="https://www.pinpointnews.co.kr/news/articleView.html?idxno=468311" target="_blank" rel="noopener noreferrer">
+        배터리 3사 LFP 장전에 웃는 EG…고급 산화철 세계 1위 몸값 뛴다<svg class="ext" viewBox="0 0 12 12"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      </a>
+      <div class="nmeta">
+        <span class="chipx">2차전지</span>
+        <span class="imp im-positive">긍정</span>
+        <time>2026-07-14</time>
+      </div>
+      <p class="nwhy">배터리 3사의 LFP 장전에 따라 고급 산화철 생산업체의 가치 상승</p>
+      
+    </li>
+    
+    <li class="ni im-neutral" data-sector="증시일般" data-url="https://www.mhns.co.kr/news/articleView.html?idxno=753312">
+      <a class="nt" href="https://www.mhns.co.kr/news/articleView.html?idxno=753312" target="_blank" rel="noopener noreferrer">
+        [하반기 증시 관전 포인트] 코스피 피크아웃 공포 vs 코스닥 순환매<svg class="ext" viewBox="0 0 12 12"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      </a>
+      <div class="nmeta">
+        <span class="chipx">증시일般</span>
+        <span class="imp im-neutral">중립</span>
+        <time>2026-07-14</time>
+      </div>
+      <p class="nwhy">코스피 피크아웃 우려와 코스닥 순환매라는 상반된 장세 관전 포인트 제시</p>
+      
+    </li>
+    
+    <li class="ni im-negative" data-sector="2차전지" data-url="https://www.tokenpost.kr/news/market/377471">
+      <a class="nt" href="https://www.tokenpost.kr/news/market/377471" target="_blank" rel="noopener noreferrer">
+        엔에이치투자증권, 엘앤에프 목표주가 16만원으로 하향…리튬 가격 하락...<svg class="ext" viewBox="0 0 12 12"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      </a>
+      <div class="nmeta">
+        <span class="chipx">2차전지</span>
+        <span class="imp im-negative">부정</span>
+        <time>2026-07-14</time>
+      </div>
+      <p class="nwhy">엘앤에프의 목표주가가 리튬 가격 하락에 따라 16만원으로 하향 조정됨</p>
+      
+    </li>
+    
+    <li class="ni im-neutral" data-sector="증시일반" data-url="https://www.ebn.co.kr/news/articleView.html?idxno=1716259">
+      <a class="nt" href="https://www.ebn.co.kr/news/articleView.html?idxno=1716259" target="_blank" rel="noopener noreferrer">
+        [1% 초고수의 개장선택] 반도체 차익실현…2차전지·바이오 저가매수로...<svg class="ext" viewBox="0 0 12 12"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      </a>
+      <div class="nmeta">
+        <span class="chipx">증시일반</span>
+        <span class="imp im-neutral">중립</span>
+        <time>2026-07-14</time>
+      </div>
+      <p class="nwhy">반도체 차익실현 후 2차전지와 바이오 저가매수 전략 제시</p>
+      
+    </li>
+    
+    <li class="ni im-neutral" data-sector="금융" data-url="https://magazine.hankyung.com/business/article/202607093962b">
+      <a class="nt" href="https://magazine.hankyung.com/business/article/202607093962b" target="_blank" rel="noopener noreferrer">
+        기술주 싹쓸이한 메리츠, 전통 명가 하나…베스트 애널리스트 격돌 [202...<svg class="ext" viewBox="0 0 12 12"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      </a>
+      <div class="nmeta">
+        <span class="chipx">금융</span>
+        <span class="imp im-neutral">중립</span>
+        <time>2026-07-14</time>
+      </div>
+      <p class="nwhy">메리츠와 전통 명가 기업의 베스트 애널리스트 격돌 소식</p>
+      
+    </li>
+    
+    <li class="ni im-neutral" data-sector="증시일般" data-url="http://www.4th.kr/news/articleView.html?idxno=2114762">
+      <a class="nt" href="http://www.4th.kr/news/articleView.html?idxno=2114762" target="_blank" rel="noopener noreferrer">
+        국민연금 5% 이상 국내주식 462조…IT전기전자 비중 62%<svg class="ext" viewBox="0 0 12 12"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      </a>
+      <div class="nmeta">
+        <span class="chipx">증시일般</span>
+        <span class="imp im-neutral">중립</span>
+        <time>2026-07-14</time>
+      </div>
+      <p class="nwhy">국민연금의 국내주식 462조 중 IT전기전자 비중이 62%로 높은 집중도</p>
+      
+    </li>
+    
+    <li class="ni im-positive" data-sector="바이오" data-url="https://www.getnews.co.kr/news/articleView.html?idxno=875082">
+      <a class="nt" href="https://www.getnews.co.kr/news/articleView.html?idxno=875082" target="_blank" rel="noopener noreferrer">
+        [제약소식]GC녹십자웰빙 라이넥주, 출시 20년 만에 1억 앰플 돌파 外 유...<svg class="ext" viewBox="0 0 12 12"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      </a>
+      <div class="nmeta">
+        <span class="chipx">바이오</span>
+        <span class="imp im-positive">긍정</span>
+        <time>2026-07-14</time>
+      </div>
+      <p class="nwhy">GC녹십자웰빙 라이넥주가 출시 20년 만에 1억 앰플 판매 돌파</p>
+      
+    </li>
+    
+    <li class="ni im-positive" data-sector="증시일반" data-url="https://www.mediawatch.kr/news/article.html?no=260373">
+      <a class="nt" href="https://www.mediawatch.kr/news/article.html?no=260373" target="_blank" rel="noopener noreferrer">
+        [26.7.14 증시 인싸잇] 코스피, 롤러코스터 장세 끝 6850선 회복… 반도...<svg class="ext" viewBox="0 0 12 12"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      </a>
+      <div class="nmeta">
+        <span class="chipx">증시일반</span>
+        <span class="imp im-positive">긍정</span>
+        <time>2026-07-14</time>
+      </div>
+      <p class="nwhy">코스피가 롤러코스터 장세 끝에 6850선 회복하며 반도체주 활황</p>
+      
+    </li>
+    
+    <li class="ni im-negative" data-sector="바이오" data-url="http://www.newstomato.com/ReadNews.aspx?no=1307182&amp;inflow=N">
+      <a class="nt" href="http://www.newstomato.com/ReadNews.aspx?no=1307182&amp;inflow=N" target="_blank" rel="noopener noreferrer">
+        (제약보국 후계자들)③상속세로 갈라진 한미 가족경영, 6년 분쟁 낳았다<svg class="ext" viewBox="0 0 12 12"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      </a>
+      <div class="nmeta">
+        <span class="chipx">바이오</span>
+        <span class="imp im-negative">부정</span>
+        <time>2026-07-14</time>
+      </div>
+      <p class="nwhy">제약사 가족경영의 상속세 분쟁으로 6년간 분쟁 지속</p>
+      
+    </li>
+    
+    <li class="ni im-negative" data-sector="바이오" data-url="https://daily.hankooki.com/news/articleView.html?idxno=1385791">
+      <a class="nt" href="https://daily.hankooki.com/news/articleView.html?idxno=1385791" target="_blank" rel="noopener noreferrer">
+        [바이오 공시 추적기] 펩트론·삼천당…흔들린 신뢰, 엇갈린 대응<svg class="ext" viewBox="0 0 12 12"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      </a>
+      <div class="nmeta">
+        <span class="chipx">바이오</span>
+        <span class="imp im-negative">부정</span>
+        <time>2026-07-14</time>
+      </div>
+      <p class="nwhy">펩트론과 삼천당이 공시 과정에서 투자자 신뢰 상실 우려</p>
+      
+    </li>
+    
+    <li class="ni im-neutral" data-sector="바이오" data-url="https://www.smarttoday.co.kr/ko-kr/articles/109486">
+      <a class="nt" href="https://www.smarttoday.co.kr/ko-kr/articles/109486" target="_blank" rel="noopener noreferrer">
+        [TG-C 블록버스터 도전] ⑥코오롱티슈진 운명의 7월...DMOAD에 주가 최대...<svg class="ext" viewBox="0 0 12 12"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      </a>
+      <div class="nmeta">
+        <span class="chipx">바이오</span>
+        <span class="imp im-neutral">중립</span>
+        <time>2026-07-14</time>
+      </div>
+      <p class="nwhy">코오롱티슈진의 DMOAD 진행 결과가 7월 주가에 최대 영향을 미칠 예정</p>
+      
+    </li>
+    
+    <li class="ni im-neutral" data-sector="증시일반" data-url="http://www.choicenews.co.kr/news/articleView.html?idxno=168179">
+      <a class="nt" href="http://www.choicenews.co.kr/news/articleView.html?idxno=168179" target="_blank" rel="noopener noreferrer">
+        코스닥 &#39;뚝&#39;...주성엔지니어링·피에스케이·테스는 &#39;껑충&#39;<svg class="ext" viewBox="0 0 12 12"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      </a>
+      <div class="nmeta">
+        <span class="chipx">증시일반</span>
+        <span class="imp im-neutral">중립</span>
+        <time>2026-07-14</time>
+      </div>
+      <p class="nwhy">코스닥이 하락했으나 주성엔지니어링, 피에스케이, 테스는 상승</p>
+      
+    </li>
+    
+    <li class="ni im-positive" data-sector="증시일般" data-url="http://www.choicenews.co.kr/news/articleView.html?idxno=168178">
+      <a class="nt" href="http://www.choicenews.co.kr/news/articleView.html?idxno=168178" target="_blank" rel="noopener noreferrer">
+        중동 이슈 딛고, 코스피 &#39;상승&#39;...반도체주 &#39;활짝&#39; vs 車 주가 &#39;뚝&#39;<svg class="ext" viewBox="0 0 12 12"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      </a>
+      <div class="nmeta">
+        <span class="chipx">증시일般</span>
+        <span class="imp im-positive">긍정</span>
+        <time>2026-07-14</time>
+      </div>
+      <p class="nwhy">중동 이슈 속 코스피 상승, 반도체주는 활황이나 자동차주는 약세</p>
+      
+    </li>
+    
+    <li class="ni im-positive" data-sector="자동차" data-url="https://www.livebiz.today/news/articleView.html?idxno=203336">
+      <a class="nt" href="https://www.livebiz.today/news/articleView.html?idxno=203336" target="_blank" rel="noopener noreferrer">
+        캘리포니아, 2억7000만달러 규모 전기차 구매 보조금 시행…자동차 업체...<svg class="ext" viewBox="0 0 12 12"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      </a>
+      <div class="nmeta">
+        <span class="chipx">자동차</span>
+        <span class="imp im-positive">긍정</span>
+        <time>2026-07-14</time>
+      </div>
+      <p class="nwhy">캘리포니아의 2억7000만달러 규모 전기차 구매 보조금이 자동차 업체에 긍정적 영향</p>
+      
+    </li>
+    
+    <li class="ni im-neutral" data-sector="증시일general" data-url="https://www.newspim.com/news/view/20260714000747">
+      <a class="nt" href="https://www.newspim.com/news/view/20260714000747" target="_blank" rel="noopener noreferrer">
+        깊이가 다른 글로벌 투자 정보 GAM - 맛보기편 (7/14)<svg class="ext" viewBox="0 0 12 12"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      </a>
+      <div class="nmeta">
+        <span class="chipx">증시일general</span>
+        <span class="imp im-neutral">중립</span>
+        <time>2026-07-14</time>
+      </div>
+      <p class="nwhy">글로벌 투자 정보 제공 콘텐츠</p>
+      
+    </li>
+    
+    <li class="ni im-positive" data-sector="자동차" data-url="http://www.4th.kr/news/articleView.html?idxno=2114752">
+      <a class="nt" href="http://www.4th.kr/news/articleView.html?idxno=2114752" target="_blank" rel="noopener noreferrer">
+        美 캘리포니아주 전기차 보조금 준다..트럼프에 맞대응<svg class="ext" viewBox="0 0 12 12"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      </a>
+      <div class="nmeta">
+        <span class="chipx">자동차</span>
+        <span class="imp im-positive">긍정</span>
+        <time>2026-07-14</time>
+      </div>
+      <p class="nwhy">캘리포니아의 전기차 보조금 시행으로 트럼프 정책에 대응</p>
+      
+    </li>
+    
+    <li class="ni im-positive" data-sector="자동차" data-url="https://www.ytn.co.kr/_ln/0104_202607141612432684">
+      <a class="nt" href="https://www.ytn.co.kr/_ln/0104_202607141612432684" target="_blank" rel="noopener noreferrer">
+        캘리포니아주, 전기차 구매 보조금 시행...반 트럼프<svg class="ext" viewBox="0 0 12 12"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      </a>
+      <div class="nmeta">
+        <span class="chipx">자동차</span>
+        <span class="imp im-positive">긍정</span>
+        <time>2026-07-14</time>
+      </div>
+      <p class="nwhy">캘리포니아의 전기차 구매 보조금 시행으로 전기차 수요 촉진</p>
+      
+    </li>
+    
+    <li class="ni im-positive" data-sector="반도체" data-url="https://www.pinpointnews.co.kr/news/articleView.html?idxno=468371">
+      <a class="nt" href="https://www.pinpointnews.co.kr/news/articleView.html?idxno=468371" target="_blank" rel="noopener noreferrer">
+        [거래소 기관] 삼성전자·SK하이닉스 쌍끌이 매수…반도체 대형주 집중<svg class="ext" viewBox="0 0 12 12"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      </a>
+      <div class="nmeta">
+        <span class="chipx">반도체</span>
+        <span class="imp im-positive">긍정</span>
+        <time>2026-07-14</time>
+      </div>
+      <p class="nwhy">거래소 기관이 삼성전자와 SK하이닉스를 쌍으로 집중 매수</p>
+      
+    </li>
+    
+    <li class="ni im-positive" data-sector="자동차" data-url="https://www.moneystorm.kr/news/articleView.html?idxno=5079">
+      <a class="nt" href="https://www.moneystorm.kr/news/articleView.html?idxno=5079" target="_blank" rel="noopener noreferrer">
+        캘리포니아, 전기차 구매 보조금 시행...&#39;생애 첫 전기차 구매자&#39; 대상<svg class="ext" viewBox="0 0 12 12"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      </a>
+      <div class="nmeta">
+        <span class="chipx">자동차</span>
+        <span class="imp im-positive">긍정</span>
+        <time>2026-07-14</time>
+      </div>
+      <p class="nwhy">캘리포니아의 전기차 구매 보조금이 생애 첫 구매자 대상으로 시행되며 신규 수요 창출</p>
+      
+    </li>
+    
+    <li class="ni im-positive" data-sector="자동차" data-url="https://biz.sbs.co.kr/article_hub/20000322456?division=NAVER">
+      <a class="nt" href="https://biz.sbs.co.kr/article_hub/20000322456?division=NAVER" target="_blank" rel="noopener noreferrer">
+        캘리포니아, 전기차 구매 보조금 시행…뉴섬 주지사 反트럼프 정책<svg class="ext" viewBox="0 0 12 12"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      </a>
+      <div class="nmeta">
+        <span class="chipx">자동차</span>
+        <span class="imp im-positive">긍정</span>
+        <time>2026-07-14</time>
+      </div>
+      <p class="nwhy">캘리포니아 뉴섬 주지사의 반트럼프 정책으로 전기차 보조금 시행</p>
+      
+    </li>
+    
+    <li class="ni im-positive" data-sector="자동차" data-url="https://www.yna.co.kr/view/AKR20260714123000009?input=1195m">
+      <a class="nt" href="https://www.yna.co.kr/view/AKR20260714123000009?input=1195m" target="_blank" rel="noopener noreferrer">
+        캘리포니아, 전기차 구매 보조금 시행…反트럼프<svg class="ext" viewBox="0 0 12 12"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      </a>
+      <div class="nmeta">
+        <span class="chipx">자동차</span>
+        <span class="imp im-positive">긍정</span>
+        <time>2026-07-14</time>
+      </div>
+      <p class="nwhy">캘리포니아의 반트럼프 전기차 보조금 정책 시행</p>
+      
+    </li>
+    
+    <li class="ni im-negative" data-sector="건설·기계" data-url="https://view.asiae.co.kr/article/2026071417594580903">
+      <a class="nt" href="https://view.asiae.co.kr/article/2026071417594580903" target="_blank" rel="noopener noreferrer">
+        &#34;공급 늘린다며 대출 조이는 정부, 앞뒤 안 맞아&#34;…부동산 첫 토론회 성...<svg class="ext" viewBox="0 0 12 12"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      </a>
+      <div class="nmeta">
+        <span class="chipx">건설·기계</span>
+        <span class="imp im-negative">부정</span>
+        <time>2026-07-14</time>
+      </div>
+      <p class="nwhy">부동산 첫 토론회에서 공급 정책과 대출 규제의 모순에 대한 지적</p>
+      
+    </li>
+    
+    <li class="ni im-neutral" data-sector="거시·환율" data-url="https://news.einfomax.co.kr/news/articleView.html?idxno=4424963">
+      <a class="nt" href="https://news.einfomax.co.kr/news/articleView.html?idxno=4424963" target="_blank" rel="noopener noreferrer">
+        [채권-마감] 日 국채 금리 급락에도 팽배한 금통위 경계<svg class="ext" viewBox="0 0 12 12"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      </a>
+      <div class="nmeta">
+        <span class="chipx">거시·환율</span>
+        <span class="imp im-neutral">중립</span>
+        <time>2026-07-14</time>
+      </div>
+      <p class="nwhy">일본 국채 금리 급락에도 금융통화위원회의 경계감이 팽배함</p>
+      
+    </li>
+    
+    <li class="ni im-negative" data-sector="거시·환율" data-url="https://biz.sbs.co.kr/article_hub/20000322420?division=NAVER">
+      <a class="nt" href="https://biz.sbs.co.kr/article_hub/20000322420?division=NAVER" target="_blank" rel="noopener noreferrer">
+        [집중진단] &#34;그동안 번 돈 다 날아갔다, 더 못 버텨”…소폭 반등하자 ...<svg class="ext" viewBox="0 0 12 12"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      </a>
+      <div class="nmeta">
+        <span class="chipx">거시·환율</span>
+        <span class="imp im-negative">부정</span>
+        <time>2026-07-14</time>
+      </div>
+      <p class="nwhy">시장 참여자들이 그간 수익이 손실로 전환되며 심리 악화</p>
+      
+    </li>
+    
+    <li class="ni im-negative" data-sector="거시·환율" data-url="http://www.paxetv.com/news/articleView.html?idxno=277150">
+      <a class="nt" href="http://www.paxetv.com/news/articleView.html?idxno=277150" target="_blank" rel="noopener noreferrer">
+        [이슈] 한은, 이번 주 금리 올린다…더 단단해진 긴축 명분<svg class="ext" viewBox="0 0 12 12"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      </a>
+      <div class="nmeta">
+        <span class="chipx">거시·환율</span>
+        <span class="imp im-negative">부정</span>
+        <time>2026-07-14</time>
+      </div>
+      <p class="nwhy">한은의 금리 인상 가능성으로 긴축 기조가 더욱 강화될 전망</p>
+      
+    </li>
+    
+    <li class="ni im-negative" data-sector="건설·기계" data-url="http://www.wikileaks-kr.org/news/articleView.html?idxno=189761">
+      <a class="nt" href="http://www.wikileaks-kr.org/news/articleView.html?idxno=189761" target="_blank" rel="noopener noreferrer">
+        &#34;신축도 매입도 이주도 LTV 0%&#34;…공급 사슬 곳곳서 대출 규제 완화 요구<svg class="ext" viewBox="0 0 12 12"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      </a>
+      <div class="nmeta">
+        <span class="chipx">건설·기계</span>
+        <span class="imp im-negative">부정</span>
+        <time>2026-07-14</time>
+      </div>
+      <p class="nwhy">부동산 정책에서 신축·매입·이주 등 곳곳에서 LTV 0% 규제로 인한 대출 완화 요구</p>
+      
+    </li>
+    
+    <li class="ni im-negative" data-sector="금융" data-url="http://www.enewstoday.co.kr/news/articleView.html?idxno=2448747">
+      <a class="nt" href="http://www.enewstoday.co.kr/news/articleView.html?idxno=2448747" target="_blank" rel="noopener noreferrer">
+        불어난 &#39;마통&#39;에 좌불안석···정치권 눈치 보는 은행권<svg class="ext" viewBox="0 0 12 12"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      </a>
+      <div class="nmeta">
+        <span class="chipx">금융</span>
+        <span class="imp im-negative">부정</span>
+        <time>2026-07-14</time>
+      </div>
+      <p class="nwhy">마진통화 증가로 인한 불안감으로 은행권이 정치권 눈치를 보는 상황</p>
+      
+    </li>
+    
+  </ul>
+  
+</section>
+</main>
+  <aside class="rail">
+<div class="rc">
+  <h4>읽는 법</h4>
+  <p>각 기사의 <b>섹터</b>·<b>영향</b>·<b>의미</b>는 AI가 기사 제목과 공개 정보를 근거로 부여한 것입니다. 기사 본문을 요약하거나 재배포하지 않으며, 판단은 원문을 직접 확인한 뒤 내리시기 바랍니다.</p>
+</div>
+<div class="rc">
+  <h4>Watchlist</h4>
+  <ul class="kv">
+    
+    
+  </ul>
+  <a class="rlink" href="/watchlist/">Watchlist 전체 →</a>
+</div>
+</aside>
+</div>
+
+<footer>
+  <div class="f-grid">
+    <div class="f-brand">
+      <span class="wm">SMIM</span>
+      <p class="ft">주식은 정보다</p>
+      <p class="fc">Founder &amp; Developer · <b>이태웅</b></p>
+    </div>
+    <div class="f-col"><h5>Research</h5>
+      <a href="/">Daily Report</a><a href="/watchlist/">Watchlist</a>
+      <a href="/performance/">Track Record</a><a href="/archive/">Archive</a></div>
+    <div class="f-col"><h5>Market</h5>
+      <a href="/market/">지수 · 업종</a><a href="/newsroom/">Newsroom</a><a href="/feed.xml">RSS</a></div>
+    <div class="f-col"><h5>Transparency</h5>
+      <a href="/methodology/">분석 방법론</a><a href="/methodology/#limits">알려진 한계</a>
+      <a href="/archive/">원본 데이터 (JSON)</a></div>
+    <div class="f-col"><h5>Data</h5>
+      <a href="https://opendart.fss.or.kr" target="_blank" rel="noopener">DART 전자공시</a>
+      <span>시세 · FinanceDataReader</span><span>차트 · TradingView</span>
+      <span>뉴스 · 네이버 뉴스 API</span></div>
+  </div>
+  <div class="disc">
+    <h4>중요 고지</h4>
+    <p>SMIM이 제공하는 모든 정보는 AI가 공개 데이터를 분석해 생성한 참고자료이며, 특정 종목의 매수·매도를 권유하는 투자 권유가 아닙니다. SMIM은 자본시장법상 금융투자업자가 아니며, 어떠한 수익도 보장하지 않습니다. AI가 올려준 종목을 보고 매수할지 판단하는 것은 오롯이 투자자 본인의 몫이며, 투자 결과에 대한 책임은 전적으로 투자자 본인에게 있습니다.</p>
+    <p class="fine">SMIM은 무료로 운영되며 종목 추천의 대가로 어떠한 금전도 받지 않습니다. 선행매매를 하지 않고, 수익을 보장하지 않습니다. 발행된 판단은 수정·삭제 없이 보존되며, 손실 사례까지 자동 채점되어 공개됩니다. 기사 본문은 저장·재배포하지 않으며 제목과 원문 링크만 제공합니다.</p>
+  </div>
+  <div class="colo">
+    <span>© 2026 SMIM</span>
+    <span>Built &amp; maintained by <b>이태웅</b></span>
+    <span>종목 분석은 자동화된 언어모델이 수행합니다</span>
+  </div>
+</footer>
+
+<script src="/assets/app.js" defer></script>
+<script src="/assets/live.js" defer></script>
+<script src="/assets/news-live.js" defer></script>
+<script src="/assets/market-status.js" defer></script>
+</body>
+</html>

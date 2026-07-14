@@ -1,0 +1,250 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m %}
+{% block title %}{{ s.date }} Daily Report — SMIM{% endblock %}
+
+{% macro market_body(s, market_group) %}
+{% set primary = s.market.indices[3 if market_group == 'US' else 0] if s.market and s.market.indices and s.market.indices|length > 3 else (s.market.indices[0] if s.market and s.market.indices else none) %}
+<section class="hero">
+  {% if primary and primary.series %}
+  <div class="hero-art" aria-hidden="true">{{ chart_spark(primary.series, 640, 260) }}</div>
+  {% endif %}
+  {% if primary %}
+  <div class="hero-pulse {{ primary.change_pct|sign }}">
+    <span class="hp-l">{{ primary.label }}</span>
+    <b class="hp-v">{{ '%.2f'|format(primary.value) }}</b>
+    <span class="hp-c">{{ '+' if primary.change_pct>0 }}{{ '%.2f'|format(primary.change_pct) }}%</span>
+    {% if s.market and s.market.mood %}<span class="hp-m">시장심리 · {{ s.market.mood }}</span>{% endif %}
+  </div>
+  {% endif %}
+  <div class="kick">
+    <span class="pulse"></span>
+    <span class="iss">ISSUE {{ s.issue_no or 1 }}</span>
+    <span class="rid">{{ s.report_id }}</span>
+  </div>
+  <h1>Daily Report<span class="ko">오늘의 <span class="it">AI 추천</span> {{ s.new_entries|length }}종목</span></h1>
+  <p class="lead">{{ s.universe_scanned or '전' }}개 종목을 정량 선별하고, 상승 논거와 반대 논거를 각각 세운 뒤 최종 판정했습니다. 근거 없이 이름만 던지지 않습니다.</p>
+  <div class="hstat">
+    <div class="hs"><b data-n="{{ s.universe_scanned or 0 }}">0</b><span>Scanned</span></div>
+    <div class="hs"><b data-n="{{ s.new_entries|length }}">0</b><span>New</span></div>
+    <div class="hs"><b data-n="{{ s.holdings|length }}">0</b><span>Holdings</span></div>
+    <div class="hs"><b>{{ stats.win_rate if stats.total else '—' }}{{ '%' if stats.total }}</b><span>Win Rate</span></div>
+  </div>
+</section>
+
+{% if s.new_entries or s.holdings %}
+<section class="strip">
+  {% for h in s.new_entries + s.holdings %}
+  <a class="chip {{ h.return_pct|sign }}" href="/stock/{{ h.code }}/"
+     data-live-stock data-code="{{ h.code }}" data-market="{{ h.market }}" data-entry="{{ h.entry_price }}">
+    {{ m.tile(h, true) }}
+    <span class="cn">{{ h.name }}</span>
+    <span class="cs">{{ chart_spark(h.series.close if h.series else [], 72, 22) }}</span>
+    <span class="cr" data-field="return">{{ h.return_pct|pct }}</span>
+  </a>
+  {% endfor %}
+</section>
+{% endif %}
+
+{% if s.new_entries %}
+<section class="block">
+  <h2 class="sec"><span>New Entries</span><em>{{ s.new_entries|length }}</em></h2>
+
+  {% for h in s.new_entries %}
+  <article class="pick" id="p-{{ h.code }}" data-rv>
+    <header>
+      <div class="pid">
+        {{ m.tile(h) }}
+        <div>
+          <h3><a href="/stock/{{ h.code }}/">{{ h.name }}</a></h3>
+          <div class="tags"><span class="tg mn">{{ h.code }}</span><span class="tg">{{ h.market }}</span><span class="tg">중기 {{ h.horizon_days }}거래일</span><span class="tg mn">편입 {{ h.entry_price|moneycur(h.market_group) }}</span></div>
+        </div>
+      </div>
+      <div class="verdict v-{{ h.verdict }}">
+        <span class="v">{{ verdict_ko(h.verdict) }}</span>
+        <span class="c">AI 확신도<b>{{ h.confidence }}</b>%</span>
+        <span class="cfbar"><i style="width:{{ h.confidence }}%"></i></span>
+      </div>
+    </header>
+
+    <div class="chart-tabs" data-tabs>
+      <div class="tabbar">
+        <button class="tb on" data-tab="static">일봉 90일</button>
+        <button class="tb" data-tab="live">실시간 차트</button>
+        <span class="src">출처 · FinanceDataReader / TradingView</span>
+      </div>
+      <div class="tp on" data-panel="static">
+        {% if h.series and h.series.close %}
+          {{ chart_svg(h.series, h.entry_price, h.entry_date) }}
+          {{ chart_legend() }}
+        {% endif %}
+      </div>
+      <div class="tp" data-panel="live">{{ m.tvchart(h.code) }}</div>
+    </div>
+
+    {{ m.grid(h.scorecard) }}
+    <dl class="facts">
+        <div><dt>편입가</dt><dd>{{ h.entry_price|moneycur(h.market_group) }}</dd></div>
+        <div><dt>목표 수익률</dt><dd class="rise">+{{ h.target_return_pct }}<small>%</small></dd></div>
+        <div><dt>손절선</dt><dd class="fall">{{ h.stop_loss_pct }}<small>%</small></dd></div>
+        <div><dt>RSI(14)</dt><dd>{{ h.tech.rsi14 }}</dd></div>
+        <div><dt>20일 등락</dt><dd class="{{ h.tech.change_20d_pct|sign }}">{{ h.tech.change_20d_pct|pct }}</dd></div>
+        <div><dt>52주 위치</dt><dd>{{ h.tech.pos_in_52w_range_pct }}<small>%</small></dd></div>
+      <div><dt>거래대금(20D)</dt><dd>{{ h.tech.avg_trading_value_20d|eok(h.market_group) }}</dd></div>
+    </dl>
+
+    <div class="thesis">
+      <h4>Investment Thesis</h4>
+      <p>{{ h.thesis }}</p>
+    </div>
+
+    <div class="twocol">
+      <div class="col bull"><h4>상승 논거</h4><ul>{% for p in h.bull_points %}<li>{{ p }}</li>{% endfor %}</ul></div>
+      <div class="col bear"><h4>리스크 요인</h4><ul>{% for p in h.bear_points %}<li>{{ p }}</li>{% endfor %}</ul></div>
+    </div>
+
+    <p class="inval"><span>논리 훼손 조건</span>{{ h.invalidation }}</p>
+
+    {% if h.financials and h.financials.fiscal_year %}
+    <div class="fin">
+      <h4 class="mini">Financials <small>{{ h.financials.fiscal_year }} 연결 · {{ 'SEC EDGAR' if market_group == 'US' else 'DART' }}</small></h4>
+      <div class="finrow">
+        {% if h.financials.revenue %}<div><dt>매출액</dt><dd>{{ h.financials.revenue|eok(market_group) }}{% if h.financials.revenue_yoy_pct %}<i class="{{ h.financials.revenue_yoy_pct|sign }}">{{ h.financials.revenue_yoy_pct|pct }}</i>{% endif %}</dd></div>{% endif %}
+        {% if h.financials.operating_profit %}<div><dt>영업이익</dt><dd>{{ h.financials.operating_profit|eok(market_group) }}{% if h.financials.operating_profit_yoy_pct %}<i class="{{ h.financials.operating_profit_yoy_pct|sign }}">{{ h.financials.operating_profit_yoy_pct|pct }}</i>{% endif %}</dd></div>{% endif %}
+        {% if h.financials.net_income %}<div><dt>순이익</dt><dd>{{ h.financials.net_income|eok(market_group) }}</dd></div>{% endif %}
+        {% if h.financials.debt_ratio_pct %}<div><dt>부채비율</dt><dd>{{ h.financials.debt_ratio_pct }}%</dd></div>{% endif %}
+      </div>
+    </div>
+    {% endif %}
+
+    {% if h.news %}
+    <div class="pnews">
+      <h4 class="mini">관련 뉴스 <small>클릭 시 원문 매체로 이동</small></h4>
+      <ul class="nlist">{% for n in h.news[:5] %}{{ m.newsitem(n) }}{% endfor %}</ul>
+    </div>
+    {% endif %}
+
+    <p class="more"><a href="/stock/{{ h.code }}/">{{ h.name }} 종목 페이지 →</a></p>
+  </article>
+  {% endfor %}
+</section>
+{% endif %}
+
+{% if s.holdings %}
+<section class="block">
+  <h2 class="sec"><span>Holdings</span><em>{{ s.holdings|length }}</em></h2>
+  <div class="tblw">
+  <table class="tbl">
+    <thead><tr><th>종목</th><th>90일 추이</th><th>신호</th><th class="r">편입가</th><th class="r">현재가</th><th class="r">수익률</th><th class="r">경과</th></tr></thead>
+    <tbody>
+    {% for h in s.holdings %}
+      <tr data-live-stock data-code="{{ h.code }}" data-market="{{ h.market }}" data-entry="{{ h.entry_price }}">
+        <td><div class="nm">{{ m.tile(h, true) }}<div><a href="/stock/{{ h.code }}/">{{ h.name }}</a><code>{{ h.code }}</code></div></div></td>
+        <td class="sp">{{ chart_spark(h.series.close if h.series else [], 120, 32) }}</td>
+        <td>{{ m.grid(h.scorecard, true) }}</td>
+        <td class="num r">{{ h.entry_price|money }}</td>
+        <td class="num r" data-field="price">{{ h.current_price|money }}</td>
+        <td class="num r {{ h.return_pct|sign }}" data-field="return"><b>{{ h.return_pct|pct }}</b></td>
+        <td class="num r">{{ h.days_held }}일</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  </div>
+</section>
+{% endif %}
+
+{% if s.exits %}
+<section class="block">
+  <h2 class="sec"><span>Exits</span><em>{{ s.exits|length }}</em></h2>
+  <ul class="exits">
+    {% for e in s.exits %}
+    <li class="{{ e.return_pct|sign }}">
+      <a class="b" href="/stock/{{ e.code }}/">{{ e.name }}</a>
+      <span class="why s-{{ e.status }}">{{ status_ko(e.status) }}</span>
+      <span class="d">{{ e.entry_price|money }} → {{ e.exit_price|money }} · {{ e.days_held }}거래일</span>
+      <span class="r">{{ e.return_pct|pct }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+{% if s.rejected %}
+<section class="block">
+  <h2 class="sec"><span>Screened Out</span><em>제외된 종목</em></h2>
+  <ul class="rej">{% for r in s.rejected %}<li><b>{{ r.name }}</b><span>{{ r.reason }}</span></li>{% endfor %}</ul>
+</section>
+{% endif %}
+
+{% if not s.new_entries and not s.holdings and not s.exits and not s.rejected %}
+<p class="empty">아직 발행된 리포트가 없습니다.</p>
+{% endif %}
+{% endmacro %}
+
+{% block content %}
+{% if is_latest %}
+<div class="market-tabs" data-tabs>
+  <div class="tabbar mtabbar">
+    <button class="tb on" data-tab="kr">{{ flag_svg('KR') }} 한국</button>
+    <button class="tb" data-tab="us">{{ flag_svg('US') }} 미국</button>
+  </div>
+  <div class="tp on" data-panel="kr">
+    {% if s_kr %}{{ market_body(s_kr, 'KR') }}{% else %}<p class="empty">아직 발행된 한국 리포트가 없습니다.</p>{% endif %}
+  </div>
+  <div class="tp" data-panel="us">
+    {% if s_us %}{{ market_body(s_us, 'US') }}{% else %}<p class="empty">아직 발행된 미국 리포트가 없습니다.</p>{% endif %}
+  </div>
+</div>
+{% else %}
+{{ market_body(s, market_group) }}
+{% endif %}
+
+{% if not is_latest %}<p class="backlink"><a href="/">← 최신 리포트</a></p>{% endif %}
+{% endblock %}
+
+{% block rail %}
+<div class="rc">
+  <h4>Track Record</h4>
+  {% if stats.total %}
+  <div class="rstats">
+    <div><b>{{ stats.total }}</b><span>마감</span></div>
+    <div><b>{{ stats.win_rate }}%</b><span>승률</span></div>
+    <div><b class="{{ stats.avg_return|sign }}">{{ stats.avg_return|pct }}</b><span>평균 수익률</span></div>
+  </div>
+  <a class="rlink" href="/performance/">손실 사례 포함 전체 기록 →</a>
+  {% else %}
+  <p class="rempty">마감된 포지션이 아직 없습니다.</p>
+  {% endif %}
+</div>
+
+{% if breadth and breadth.sectors %}
+<div class="rc">
+  <h4>Sector Flow</h4>
+  <ul class="sect">
+    {% for x in breadth.sectors[:8] %}
+    <li><span>{{ x.name }}</span><b class="{{ x.change_pct|sign }}">{{ x.change_pct|pct }}</b></li>
+    {% endfor %}
+  </ul>
+  <a class="rlink" href="/market/">Market 전체 보기 →</a>
+</div>
+{% endif %}
+
+{% if latest and latest.newsroom %}
+<div class="rc">
+  <h4>Newsroom</h4>
+  <ul class="rnews">
+    {% for n in latest.newsroom[:6] %}
+    <li><a href="{{ n.url }}" target="_blank" rel="noopener noreferrer">{{ n.title }}</a>
+      {% if n.sector %}<span class="chipx">{{ n.sector }}</span>{% endif %}</li>
+    {% endfor %}
+  </ul>
+  <a class="rlink" href="/newsroom/">뉴스룸 전체 →</a>
+</div>
+{% endif %}
+
+<div class="rc quiet">
+  <h4>Notice</h4>
+  <p>SMIM은 종목을 대신 매수해주지 않습니다. 여기 실린 모든 분석은 판단의 재료이며, 최종 결정과 그 결과는 투자자 본인의 몫입니다.</p>
+  <a class="rlink" href="/methodology/">분석 방법론 →</a>
+</div>
+{% endblock %}

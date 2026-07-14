@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Archive — SMIM{% endblock %}
+{% block content %}
+<section class="dateline">
+  <div class="dl-l">
+    <p class="eyebrow"><span class="rid">ARCHIVE</span></p>
+    <h1>Archive</h1>
+    <p class="lead">발행된 리포트는 수정하거나 삭제하지 않습니다. 원본 데이터는 JSON으로 그대로 공개됩니다.</p>
+  </div>
+</section>
+<section class="block">
+  <div class="tblw">
+  <table class="tbl">
+    <thead><tr><th>시장</th><th>날짜</th><th>Issue</th><th class="r">신규</th><th class="r">관찰</th><th class="r">편출</th><th class="r">원본</th></tr></thead>
+    <tbody>
+    {% for a in archive %}
+      <tr>
+        <td>{{ flag_svg('US' if a.market_group == 'US' else 'KR') }} {{ '미국' if a.market_group == 'US' else '한국' }}</td>
+        <td class="nm"><a href="/reports/{{ (a.market_group or 'KR')|lower }}/{{ a.date }}/">{{ a.date }}</a></td>
+        <td><code>{{ a.report_id }}</code></td>
+        <td class="num r">{{ a.new_entries|length }}</td>
+        <td class="num r">{{ a.holdings|length }}</td>
+        <td class="num r">{{ a.exits|length }}</td>
+        <td class="num r"><a href="/data/{{ (a.market_group or 'KR')|lower }}-{{ a.date }}.json">JSON</a></td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  </div>
+</section>
+{% endblock %}
