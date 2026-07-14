@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% import "_macros.html" as m %}
 {% block title %}Market — SMIM{% endblock %}
 {% block content %}
 <section class="dateline">
@@ -8,6 +9,25 @@
     <p class="lead">추천 종목이 아니더라도, 오늘 시장이 어디로 가고 있는지는 알고 시작해야 합니다.</p>
   </div>
 </section>
+
+{% set picks = (s.new_entries + s.holdings) if s is defined else [] %}
+{% if picks %}
+<section class="block">
+  <h2 class="sec"><span>Recommended Picks</span><em>현재 추천 종목 추이</em></h2>
+  <div class="mkpicks">
+    {% for h in picks %}
+    <a class="mkpick" href="/stock/{{ h.code }}/">
+      {{ m.tile(h, true) }}
+      <div class="mkp-info">
+        <b>{{ h.name }}</b>
+        <span class="mkp-ret {{ h.return_pct|sign }}">{{ h.return_pct|pct }}</span>
+      </div>
+      <div class="mkp-spark">{{ chart_spark(h.series.close if h.series else [], 140, 36) }}</div>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
 
 <section class="block">
   <h2 class="sec"><span>Indices</span><em>주요 지수</em></h2>
