@@ -3,7 +3,7 @@
 AI 호출은 비싸고 느리다. 그리고 AI는 후하다.
 그래서 "명백히 아닌 것"은 규칙으로 먼저 떨어뜨린다.
 """
-import time
+import concurrent.futures as cf
 
 import config
 from pipeline import indicators
@@ -11,53 +11,63 @@ from pipeline.sources import prices, dart, us_filings
 
 
 def prescreen(market_group: str = "KR", limit: int = None) -> list[dict]:
-    """전 종목 스캔 → 중기 상승 구조를 갖춘 후보만 남긴다. market_group: 'KR' | 'US'."""
+    """전 종목 스캔 → 중기 상승 구조를 갖춘 후보만 남긴다. market_group: 'KR' | 'US'.
+
+    종목당 OHLCV 조회가 네트워크 호출이라 순차 실행하면 미국(6천여 종목) 기준
+    30분 넘게 걸린다 — I/O 대기가 대부분이라 스레드풀로 병렬화한다."""
     is_us = market_group == "US"
     uni = prices.load_universe(market_group)
     if limit:
         uni = uni.head(limit)
-    print(f"[universe] 스캔 대상({market_group}) {len(uni)}종목")
+    rows = uni.to_dict("records")
+    print(f"[universe] 스캔 대상({market_group}) {len(rows)}종목")
 
     min_trading_value = config.MIN_AVG_TRADING_VALUE_US if is_us else config.MIN_AVG_TRADING_VALUE_KR
     max_candidates = config.MAX_CANDIDATES_TO_AI_US if is_us else config.MAX_CANDIDATES_TO_AI_KR
 
-    candidates = []
-    for i, row in uni.iterrows():
+    def _screen_one(row) -> dict | None:
         code, name = row["Code"], row["Name"]
-        df = prices.ohlcv(code)
+        df = prices.ohlcv(code, fast=True)
         tech = indicators.compute(df)
         if not tech:
-            continue
+            return None
 
         # 유동성: 못 사고 못 파는 종목은 아무리 좋아도 무의미
         if (tech["avg_trading_value_20d"] or 0) < min_trading_value:
-            continue
+            return None
         # 어제 상한가 → 추격매수 유도 금지 (미국은 상하한가 제도가 없어 KR에만 적용)
         if not is_us and tech["limit_up_yesterday"]:
-            continue
+            return None
         # 중기 상승 구조 최소 요건
         if not tech["above_ma60"]:
-            continue
+            return None
         if not (tech["above_ma20"] or tech["golden_cross_20_60"]):
-            continue
+            return None
         # 과열 배제 (중기 관점에서 RSI 78 넘는 건 늦었다)
         if tech["rsi14"] >= 78:
-            continue
+            return None
         # 이미 52주 고점 근처 100% + 20일 30% 급등 = 상투 위험
         if (tech["change_20d_pct"] or 0) > 35:
-            continue
+            return None
 
-        score = _rule_score(tech)
-        candidates.append({
+        return {
             "code": code, "name": name, "market": row["Market"],
             "market_group": market_group,
             "market_cap": int(row["Marcap"]) if "Marcap" in row and not is_us else None,
-            "tech": tech, "rule_score": score,
-        })
+            "tech": tech, "rule_score": _rule_score(tech),
+        }
 
-        if i % 100 == 0:
-            print(f"[universe] {i}/{len(uni)} … 후보 {len(candidates)}")
-        time.sleep(0.05)
+    candidates = []
+    done = 0
+    with cf.ThreadPoolExecutor(max_workers=16) as ex:
+        futures = [ex.submit(_screen_one, row) for row in rows]
+        for fut in cf.as_completed(futures):
+            done += 1
+            r = fut.result()
+            if r:
+                candidates.append(r)
+            if done % 300 == 0:
+                print(f"[universe] {done}/{len(rows)} … 후보 {len(candidates)}")
 
     candidates.sort(key=lambda c: c["rule_score"], reverse=True)
     top = candidates[:max_candidates]

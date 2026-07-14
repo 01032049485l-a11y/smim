@@ -83,16 +83,21 @@ def load_universe(market_group: str = "KR") -> pd.DataFrame:
     return _load_universe_kr()
 
 
-def ohlcv(code: str, days: int = 400) -> pd.DataFrame | None:
+def ohlcv(code: str, days: int = 400, fast: bool = False) -> pd.DataFrame | None:
+    """fast=True: 1차 스크리닝(수천 종목 병렬 스캔)용 — 실패해도 재시도 없이 바로 넘어간다.
+    하루 스크리닝에서 종목 하나 놓치는 건 치명적이지 않다. 최종 후보에 오른 뒤엔
+    fast=False(기본, 3회 재시도)로 다시 불러 신뢰도를 높인다."""
     start = (dt.date.today() - dt.timedelta(days=days)).isoformat()
-    for attempt in range(3):
+    attempts = 1 if fast else 3
+    for attempt in range(attempts):
         try:
             df = fdr.DataReader(code, start)
             if df is None or df.empty:
                 return None
             return df
         except Exception:
-            time.sleep(1.2 * (attempt + 1))
+            if not fast:
+                time.sleep(1.2 * (attempt + 1))
     return None
 
 
