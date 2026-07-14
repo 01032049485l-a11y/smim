@@ -9,6 +9,8 @@ import xml.etree.ElementTree as ET
 
 import requests
 
+import config
+
 RSS_URL = "https://feeds.finance.yahoo.com/rss/2.0/headline"
 _HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
 
@@ -27,7 +29,7 @@ def _parse_rss(xml_text: str) -> list[dict]:
             continue
         try:
             pub = email.utils.parsedate_to_datetime(pub_raw)
-            published = pub.date().isoformat()
+            published = pub.astimezone(config.KST).strftime("%Y-%m-%d %H:%M")
         except (TypeError, ValueError):
             continue
         out.append({"title": html.unescape(title), "url": link, "published": published})

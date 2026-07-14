@@ -48,7 +48,7 @@ def search(query: str, display: int = 10, days: int = 14) -> list[dict]:
         out.append({
             "title": _clean(it["title"]),
             "url": it.get("originallink") or it.get("link"),
-            "published": pub.astimezone(config.KST).strftime("%Y-%m-%d"),
+            "published": pub.astimezone(config.KST).strftime("%Y-%m-%d %H:%M"),
         })
     return out
 

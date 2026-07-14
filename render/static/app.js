@@ -1,6 +1,25 @@
-/* SMIM — 드로어(우측), 차트 탭, TradingView 지연 로딩, 뉴스 필터, 스크롤 리빌, 카운트업 */
+/* SMIM — 드로어(우측), 차트 탭, TradingView 지연 로딩, 뉴스 필터, 스크롤 리빌, 카운트업, 실시간 시계 */
 (function () {
   "use strict";
+
+  /* 상단 티커의 한국/미국 실시간 시계 — 서버 배치 없이 방문자 브라우저에서 매초 갱신 */
+  const clocks = document.querySelectorAll("[data-clock]");
+  if (clocks.length) {
+    const fmt = {
+      kr: new Intl.DateTimeFormat("ko-KR", { timeZone: "Asia/Seoul", hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: false }),
+      us: new Intl.DateTimeFormat("en-US", { timeZone: "America/New_York", hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: false }),
+    };
+    const tickClock = () => {
+      const now = new Date();
+      clocks.forEach((el) => {
+        const key = el.dataset.clock;
+        const b = el.querySelector(".ct");
+        if (b && fmt[key]) b.textContent = (key === "us" ? "ET " : "KST ") + fmt[key].format(now);
+      });
+    };
+    tickClock();
+    setInterval(tickClock, 1000);
+  }
 
   /* 우측 드로어 */
   const dr = document.getElementById("drawer");
@@ -70,6 +89,25 @@
       }));
     });
   }
+
+  /* 뉴스 목록 기본 노출 개수 제한 — 모바일에서 한쪽(주로 한국) 목록이 너무 길어
+     반대쪽 목록을 보려면 한참 스크롤해야 하던 문제를 막는다. 필터를 누르면
+     걸려있던 제한은 자동으로 풀린다(위 필터 로직이 hidden을 다시 계산하므로). */
+  const NEWS_CAP = 6;
+  nls.forEach((nl) => {
+    const items = Array.from(nl.querySelectorAll("li"));
+    if (items.length <= NEWS_CAP) return;
+    items.slice(NEWS_CAP).forEach((li) => { li.hidden = true; });
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "more-news";
+    btn.textContent = `전체보기 (총 ${items.length}건)`;
+    btn.addEventListener("click", () => {
+      items.forEach((li) => { li.hidden = false; });
+      btn.remove();
+    });
+    nl.insertAdjacentElement("afterend", btn);
+  });
 
   /* 스크롤 리빌 */
   if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) {

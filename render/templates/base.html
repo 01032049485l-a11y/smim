@@ -33,6 +33,10 @@
       </a>
       {% endfor %}
     </div>
+    <div class="clocks" id="clocks">
+      <span data-clock="kr">{{ flag_svg('KR') }}<b class="ct">--:--:--</b></span>
+      <span data-clock="us">{{ flag_svg('US') }}<b class="ct">--:--:--</b></span>
+    </div>
     <span class="tstamp" id="tstamp">{{ s.date if s is defined else '' }} 종가 기준</span>
   </div>
 </div>

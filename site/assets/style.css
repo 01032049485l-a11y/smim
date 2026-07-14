@@ -50,6 +50,10 @@ code{font-family:var(--mono);font-size:.8em;color:var(--mut)}
 @keyframes tkU{0%{background:rgba(224,43,32,.42)}100%{background:transparent}}
 @keyframes tkD{0%{background:rgba(27,95,224,.42)}100%{background:transparent}}
 .tstamp{flex-shrink:0;font:500 10.5px var(--mono);color:#5C6673}
+.clocks{display:flex;gap:14px;flex-shrink:0;align-items:center}
+.clocks span{display:flex;align-items:center;gap:5px}
+.clocks svg.fico{width:13px;margin-right:0}
+.clocks .ct{font:600 12px var(--mono);color:#D7DCE3;font-variant-numeric:tabular-nums;letter-spacing:.01em}
 
 /* ── 마스트헤드 ───────────────────────────── */
 .mast{background:rgba(242,244,247,.86);backdrop-filter:blur(14px);
@@ -342,6 +346,10 @@ svg.fico{width:15px;height:auto;vertical-align:-2px;margin-right:4px;border-radi
 .imp.im-positive{background:var(--riseL);color:var(--rise)}
 .imp.im-negative{background:var(--fallL);color:var(--fall)}
 .imp.im-neutral{background:var(--panel2);color:var(--mut)}
+.imp.im-strong_positive{background:var(--rise);color:#fff}
+.imp.im-strong_negative{background:var(--fall);color:#fff}
+.tkr{display:inline-block;margin-left:7px;font-size:12px;font-weight:700;color:var(--mut);
+  background:var(--panel2);padding:1px 7px;border-radius:5px}
 .nmeta time{font-size:10.5px;color:var(--mut)}
 .nwhy{font-size:13.5px;color:var(--ink2);margin-top:7px;line-height:1.7;
   padding-left:11px;border-left:2px solid var(--line)}
@@ -366,6 +374,10 @@ svg.fico{width:15px;height:auto;vertical-align:-2px;margin-right:4px;border-radi
 .news-cols .ncol .sec span{display:inline-flex;align-items:center}
 .news-cols .ncol .sec svg.fico{margin-right:6px}
 @media (max-width:860px){.news-cols{grid-template-columns:1fr;gap:8px}}
+.more-news{display:block;width:100%;margin:2px 0 14px;padding:11px;font:700 12.5px var(--sans);
+  border:1px dashed var(--line2);border-radius:8px;background:var(--panel2);color:var(--ink2);
+  cursor:pointer;transition:.15s}
+.more-news:hover{border-color:var(--rise);color:var(--rise)}
 
 /* ── 표 ──────────────────────────────────── */
 .tblw{overflow-x:auto;border:1px solid var(--line);background:var(--panel);border-radius:10px}

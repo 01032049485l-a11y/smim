@@ -3,5 +3,6 @@ __pycache__/
 .DS_Store
 .env
 .claude/settings.local.json
+.claude/scheduled_tasks.lock
 data/cache/
 data/demo/

@@ -41,7 +41,10 @@ TAGGER_SYS = """너는 국내·미국 증시 뉴스 데스크의 에디터다.
 아래는 오늘 수집된 기사 제목 목록이다. 각 기사에 대해 다음을 판단한다.
 
 - sector: 반도체 / 2차전지 / 바이오 / 자동차 / 금융 / 조선·방산 / IT·플랫폼 / 소비재 / 건설·기계 / 에너지 / 거시·환율 / 증시일반 중 하나
-- impact: positive / negative / neutral (시장 또는 해당 업종에 미치는 방향)
+- impact: strong_positive / positive / neutral / negative / strong_negative 중 하나
+        (제목에 등장하는 상장사·업종에 미치는 방향과 강도. 실적 서프라이즈·대규모 계약·
+        규제 리스크 확정처럼 방향과 크기가 둘 다 뚜렷할 때만 strong_*을 쓰고, 애매하면
+        positive/negative/neutral로 보수적으로 판단한다)
 - why: 이 뉴스가 투자자에게 왜 중요한지 한 문장. 제목에서 확인되는 사실만 근거로 쓴다.
         추측이나 확인되지 않은 숫자를 절대 만들어내지 마라. 불확실하면 "확인 필요"라고 써라.
 - tickers: 제목에 명시적으로 등장하는 상장사 이름만 배열로. 없으면 빈 배열.
@@ -49,7 +52,7 @@ TAGGER_SYS = """너는 국내·미국 증시 뉴스 데스크의 에디터다.
 기사 본문은 주어지지 않았다. 제목만 보고 판단하되, 과장하지 마라.
 
 반드시 아래 JSON만 출력한다. 입력 순서와 동일한 개수로.
-{"items":[{"i":0,"sector":"...","impact":"positive|negative|neutral","why":"...","tickers":["..."]}]}"""
+{"items":[{"i":0,"sector":"...","impact":"strong_positive|positive|neutral|negative|strong_negative","why":"...","tickers":["..."]}]}"""
 
 
 def collect_kr() -> list[dict]:

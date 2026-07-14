@@ -109,18 +109,18 @@ exits_kr = [
 for e in exits_kr:
     e["exit_date"]=str(TODAY); e["exit_price"]=e["current_price"]
 
-NEWS=[("코스피, 외국인 순매수 유입에 이틀째 상승","증시일반","positive","외국인 수급이 이어지면 대형주 중심의 지수 상승 탄력이 유지될 수 있다."),
- ("반도체 업황 개선 신호…메모리 가격 반등","반도체","positive","메모리 가격 반등은 관련 소재·장비주의 실적 개선으로 이어지는 경우가 많다."),
- ("2차전지, 전기차 수요 둔화 우려에 약세","2차전지","negative","전방 수요 둔화는 배터리 셀·소재 업체의 가동률과 마진을 동시에 압박한다."),
- ("원/달러 환율 소폭 하락 마감","거시·환율","neutral","환율 하락은 수입 원가에 유리하나 수출주에는 부담이 될 수 있다."),
- ("바이오, 임상 결과 발표 앞두고 관망세","바이오","neutral","이벤트 전 관망 구간으로, 결과에 따라 변동성이 크게 확대될 수 있다."),
- ("조선주, 수주 잔고 확대에 강세","조선·방산","positive","수주 잔고 확대는 향후 수년간의 매출 가시성을 높인다."),
- ("금리 동결 전망 우세…은행주 혼조","금융","neutral","금리 동결은 순이자마진에 중립적이며, 대출 성장률이 관건이다."),
- ("건설, 미분양 지표 개선 조짐","건설·기계","positive","미분양 축소는 건설사의 운전자본 부담을 완화한다.")]
+NEWS=[("코스피, 외국인 순매수 유입에 이틀째 상승","증시일반","positive","외국인 수급이 이어지면 대형주 중심의 지수 상승 탄력이 유지될 수 있다.",[]),
+ ("반도체 업황 개선 신호…메모리 가격 반등, 다온전자 실적 서프라이즈","반도체","strong_positive","메모리 가격 반등은 관련 소재·장비주의 실적 개선으로 이어지는 경우가 많다.",["다온전자"]),
+ ("2차전지, 전기차 수요 둔화 우려에 약세…현진테크 감산 검토","2차전지","strong_negative","전방 수요 둔화는 배터리 셀·소재 업체의 가동률과 마진을 동시에 압박한다.",["현진테크"]),
+ ("원/달러 환율 소폭 하락 마감","거시·환율","neutral","환율 하락은 수입 원가에 유리하나 수출주에는 부담이 될 수 있다.",[]),
+ ("바이오, 임상 결과 발표 앞두고 관망세","바이오","neutral","이벤트 전 관망 구간으로, 결과에 따라 변동성이 크게 확대될 수 있다.",[]),
+ ("조선주, 수주 잔고 확대에 강세","조선·방산","positive","수주 잔고 확대는 향후 수년간의 매출 가시성을 높인다.",[]),
+ ("금리 동결 전망 우세…은행주 혼조","금융","neutral","금리 동결은 순이자마진에 중립적이며, 대출 성장률이 관건이다.",[]),
+ ("건설, 미분양 지표 개선 조짐","건설·기계","positive","미분양 축소는 건설사의 운전자본 부담을 완화한다.",[])]
 newsroom=[]
-for i,(t,sc,im,why) in enumerate(NEWS):
-    newsroom.append({"title":t,"url":"https://finance.naver.com","published":str(TODAY-dt.timedelta(days=i%2)),
-      "topic":sc,"sector":sc,"impact":im,"why":why,"tickers":[],"watchlist_hits":[]})
+for i,(t,sc,im,why,tk) in enumerate(NEWS):
+    newsroom.append({"title":t,"url":"https://finance.naver.com","published":f"{TODAY-dt.timedelta(days=i%2)} {14-i:02d}:{(i*7)%60:02d}",
+      "topic":sc,"sector":sc,"impact":im,"why":why,"tickers":tk,"watchlist_hits":[]})
 newsroom[1]["watchlist_hits"]=[{"name":"다온전자","code":"900002"}]
 
 snap_kr={"date":str(TODAY),"market_group":"KR","report_id":f"SMIM-KR-{TODAY.strftime('%Y-%m%d')}","issue_no":37,
@@ -142,9 +142,9 @@ hold_us = [
  mk("QTRX","퀀트릭스","NASDAQ",88.40,93.10,"holding","BUY",73,P("positive","neutral","positive","neutral","positive"),str(TODAY-dt.timedelta(days=9)),6,"US"),
 ]
 newsroom_us=[]
-for i,(t,sc,im,why) in enumerate(NEWS[:5]):
-    newsroom_us.append({"title":t,"url":"https://finance.yahoo.com","published":str(TODAY-dt.timedelta(days=i%2)),
-      "topic":sc,"sector":sc,"impact":im,"why":why,"tickers":[],"watchlist_hits":[]})
+for i,(t,sc,im,why,tk) in enumerate(NEWS[:5]):
+    newsroom_us.append({"title":t,"url":"https://finance.yahoo.com","published":f"{TODAY-dt.timedelta(days=i%2)} {13-i:02d}:{(i*11)%60:02d}",
+      "topic":sc,"sector":sc,"impact":im,"why":why,"tickers":tk,"watchlist_hits":[]})
 
 snap_us={"date":str(TODAY),"market_group":"US","report_id":f"SMIM-US-{TODAY.strftime('%Y-%m%d')}","issue_no":5,
  "published_at":f"{TODAY}T20:12:04+09:00","models":MODELS,"market":MARKET_CTX,

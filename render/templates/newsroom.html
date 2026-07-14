@@ -2,6 +2,7 @@
 {% import "_macros.html" as m %}
 {% block title %}Newsroom — SMIM{% endblock %}
 
+{% set IMPACT_KO = {'strong_positive':'매우 긍정','positive':'긍정','neutral':'중립','negative':'부정','strong_negative':'매우 부정'} %}
 {% macro news_li(n) %}
 <li class="ni{% if n.impact %} im-{{ n.impact }}{% endif %}" data-sector="{{ n.sector or '기타' }}" data-url="{{ n.url }}">
   <a class="nt" href="{{ n.url }}" target="_blank" rel="noopener noreferrer">
@@ -9,12 +10,17 @@
   </a>
   <div class="nmeta">
     {% if n.sector %}<span class="chipx">{{ n.sector }}</span>{% endif %}
-    {% if n.impact %}<span class="imp im-{{ n.impact }}">{{ {'positive':'긍정','negative':'부정','neutral':'중립'}.get(n.impact) }}</span>{% endif %}
+    {% if n.impact %}<span class="imp im-{{ n.impact }}">{{ IMPACT_KO.get(n.impact, '중립') }}</span>{% endif %}
     <time>{{ n.published }}</time>
   </div>
   {% if n.why %}<p class="nwhy">{{ n.why }}</p>{% endif %}
-  {% if n.watchlist_hits %}
-  <p class="nlink">Watchlist 연관{% for w in n.watchlist_hits %}<a href="/stock/{{ w.code }}/">{{ w.name }}</a>{% endfor %}</p>
+  {% if n.tickers %}
+  <p class="nlink">관련 종목
+    {% for t in n.tickers %}
+      {% set hit = (n.watchlist_hits or [])|selectattr('name', 'equalto', t)|first %}
+      {% if hit %}<a href="/stock/{{ hit.code }}/">{{ t }}</a>{% else %}<span class="tkr">{{ t }}</span>{% endif %}
+    {% endfor %}
+  </p>
   {% endif %}
 </li>
 {% endmacro %}
