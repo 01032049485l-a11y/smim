@@ -257,7 +257,15 @@
    "tickers": [
     "TSMC"
    ],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": [
+    {
+     "name": "TSMC",
+     "code": "TSM",
+     "market": "NYSE",
+     "change_pct": 0.28
+    }
+   ]
   },
   {
    "title": "IBM stock plummets more than 25% on Q2 earnings warning",
@@ -270,7 +278,15 @@
    "tickers": [
     "IBM"
    ],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": [
+    {
+     "name": "IBM",
+     "code": "IBM",
+     "market": "NYSE",
+     "change_pct": -25.97
+    }
+   ]
   },
   {
    "title": "3 Reasons Nvidia Stock Could Keep Soaring Through 2026",
@@ -283,7 +299,15 @@
    "tickers": [
     "NVIDIA"
    ],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": [
+    {
+     "name": "NVIDIA",
+     "code": "NVDA",
+     "market": "NASDAQ",
+     "change_pct": 2.65
+    }
+   ]
   },
   {
    "title": "Why Micron Technology Stock Rallied on Tuesday",
@@ -296,7 +320,15 @@
    "tickers": [
     "Micron"
    ],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": [
+    {
+     "name": "Micron",
+     "code": "MU",
+     "market": "NASDAQ",
+     "change_pct": 4.77
+    }
+   ]
   },
   {
    "title": "The Goldman Sachs Group Q2 Earnings Call Highlights",
@@ -307,7 +339,8 @@
    "impact": "neutral",
    "why": "Kalshi의 신규 상품 출시로 AI 경제 거래소 포지션 강화, 직접적 영향을 받는 상장사 미확인.",
    "tickers": [],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": []
   },
   {
    "title": "Kalshi Announces Compute Forward Curves, Becoming the Exchange for the AI Economy",
@@ -321,7 +354,21 @@
     "Microsoft",
     "Oracle"
    ],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": [
+    {
+     "name": "Microsoft",
+     "code": "MSFT",
+     "market": "NASDAQ",
+     "change_pct": -1.32
+    },
+    {
+     "name": "Oracle",
+     "code": "ORCL",
+     "market": "NYSE",
+     "change_pct": -1.46
+    }
+   ]
   },
   {
    "title": "Microsoft vs Oracle: One Thriving, One Burning Cash",
@@ -334,7 +381,15 @@
    "tickers": [
     "Meta"
    ],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": [
+    {
+     "name": "Meta",
+     "code": "META",
+     "market": "NASDAQ",
+     "change_pct": 0.08
+    }
+   ]
   },
   {
    "title": "Meta expands Louisiana data center to 5GW in new AI push",
@@ -347,7 +402,15 @@
    "tickers": [
     "Citigroup"
    ],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": [
+    {
+     "name": "Citigroup",
+     "code": "C",
+     "market": "NYSE",
+     "change_pct": -4.24
+    }
+   ]
   },
   {
    "title": "Citigroup Second-Quarter Results Top Estimates Amid Double-Digit Revenue Growth Across Most Segments",
@@ -358,7 +421,8 @@
    "impact": "positive",
    "why": "AI 칩 수요를 나타내는 $75 Billion 규모 시장에 대한 분석으로 반도체 업종 긍정 신호.",
    "tickers": [],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": []
   },
   {
    "title": "The 1 Number That Sets the Record Straight on AI Chip Demand: $75 Billion",
@@ -371,7 +435,15 @@
    "tickers": [
     "Intel"
    ],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": [
+    {
+     "name": "Intel",
+     "code": "INTC",
+     "market": "NASDAQ",
+     "change_pct": 3.49
+    }
+   ]
   },
   {
    "title": "What Intel Stock's Data Center Was Saying Before The Surge",
@@ -384,7 +456,15 @@
    "tickers": [
     "Tesla"
    ],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": [
+    {
+     "name": "Tesla",
+     "code": "TSLA",
+     "market": "NASDAQ",
+     "change_pct": 0.94
+    }
+   ]
   },
   {
    "title": "Tesla's Strong Auto, Energy Deliveries Position it for Solid Q2, Morgan Stanley Says",
@@ -397,7 +477,15 @@
    "tickers": [
     "Pfizer"
    ],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": [
+    {
+     "name": "Pfizer",
+     "code": "PFE",
+     "market": "NYSE",
+     "change_pct": -1.16
+    }
+   ]
   },
   {
    "title": "Pfizer Has the Highest-Yielding Dividend in the S&P 500. Should Investors Be Worried?",
@@ -410,7 +498,15 @@
    "tickers": [
     "JPMorgan"
    ],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": [
+    {
+     "name": "JPMorgan",
+     "code": "JPM",
+     "market": "NYSE",
+     "change_pct": 1.95
+    }
+   ]
   },
   {
    "title": "5 Stocks Most Impacted by JPMorgan’s Earnings",
@@ -423,7 +519,15 @@
    "tickers": [
     "AMD"
    ],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": [
+    {
+     "name": "AMD",
+     "code": "AMD",
+     "market": "NASDAQ",
+     "change_pct": 5.82
+    }
+   ]
   },
   {
    "title": "Silo Pharma’s QwikAgents Joins AMD AI Developer Program to Advance AI Agent Platform",
@@ -436,7 +540,15 @@
    "tickers": [
     "Wells Fargo"
    ],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": [
+    {
+     "name": "Wells Fargo",
+     "code": "WFC",
+     "market": "NYSE",
+     "change_pct": -2.26
+    }
+   ]
   },
   {
    "title": "Wells Fargo Beats Second-Quarter Estimates Amid Broad-Based Revenue Growth",
@@ -447,7 +559,8 @@
    "impact": "positive",
    "why": "5개 은행 실적이 미국 경제 약세 전망을 반박하는 긍정적 신호.",
    "tickers": [],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": []
   },
   {
    "title": "These 5 Bank Earnings May Have Just Crushed the Bear Case for the U.S. Economy",
@@ -460,7 +573,15 @@
    "tickers": [
     "Meta"
    ],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": [
+    {
+     "name": "Meta",
+     "code": "META",
+     "market": "NASDAQ",
+     "change_pct": 0.08
+    }
+   ]
   },
   {
    "title": "Should Nebius and CoreWeave Investors Be Scared by Meta's Latest Plans?",
@@ -473,7 +594,15 @@
    "tickers": [
     "Goldman Sachs"
    ],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": [
+    {
+     "name": "Goldman Sachs",
+     "code": "GS",
+     "market": "NYSE",
+     "change_pct": 7.07
+    }
+   ]
   },
   {
    "title": "Goldman Shares Eye Record Close Following Blowout Earnings",
@@ -487,7 +616,21 @@
     "NVIDIA",
     "ZTE"
    ],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": [
+    {
+     "name": "NVIDIA",
+     "code": "NVDA",
+     "market": "NASDAQ",
+     "change_pct": 2.65
+    },
+    {
+     "name": "ZTE",
+     "code": null,
+     "market": null,
+     "change_pct": null
+    }
+   ]
   },
   {
    "title": "Exclusive-ZTE among Chinese firms licensed to purchase Nvidia's H200 chips, documents show",
@@ -498,7 +641,8 @@
    "impact": "neutral",
    "why": "2026년 나스닥 인컴 ETF 추천으로 수익 전략 제시, 광범위한 영향.",
    "tickers": [],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": []
   },
   {
    "title": "4 Nasdaq Income ETFs to Buy in 2026: Why GPIQ’s 0.29% Fee Changes Everything",
@@ -511,7 +655,15 @@
    "tickers": [
     "SK Hynix"
    ],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": [
+    {
+     "name": "SK Hynix",
+     "code": "SKHY",
+     "market": "NASDAQ",
+     "change_pct": 17.58
+    }
+   ]
   },
   {
    "title": "SK Hynix Early ADR Options Trading Leans to Short-Term Contracts",
@@ -524,7 +676,15 @@
    "tickers": [
     "Meta"
    ],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": [
+    {
+     "name": "Meta",
+     "code": "META",
+     "market": "NASDAQ",
+     "change_pct": 0.08
+    }
+   ]
   },
   {
    "title": "Is Meta's recent rally sustainable?",
@@ -535,7 +695,8 @@
    "impact": "positive",
    "why": "인플레이션 호조가 다우지수를 견인했으나, 개별 주식 영향은 제목만으로 불명확.",
    "tickers": [],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": []
   },
   {
    "title": "Stock Market Today: Dow Positive After Surprise Inflation Data; IBM Tanks, Banks Rise On Earnings (Live Coverage)",
@@ -546,7 +707,8 @@
    "impact": "neutral",
    "why": "IBM, Goldman Sachs, SK Hynix 등 여러 주식의 시장 영향에 대한 종합 분석.",
    "tickers": [],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": []
   },
   {
    "title": "IBM, Goldman Sachs, SK Hynix, Micron, AMD, Apple, and More Stocks That Explain Today’s Market",
@@ -559,7 +721,15 @@
    "tickers": [
     "Bank of America"
    ],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": [
+    {
+     "name": "Bank of America",
+     "code": "BAC",
+     "market": "NYSE",
+     "change_pct": 2.03
+    }
+   ]
   },
   {
    "title": "Bank of America second quarter earnings top estimates on broad-based revenue growth",
@@ -570,7 +740,8 @@
    "impact": "neutral",
    "why": "북유럽 데이터센터 시장 전망 분석으로 인프라 수요 증가 예상, 직접 상장사 미확인.",
    "tickers": [],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": []
   },
   {
    "title": "Nordic Data Center Construction Market Outlook & Forecast 2026-2031 | Surging Digitalization Fuels Demand for Third-Party Data Centers in Nordic Region",
@@ -583,7 +754,15 @@
    "tickers": [
     "Berkshire Hathaway"
    ],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": [
+    {
+     "name": "Berkshire Hathaway",
+     "code": "BRK.A",
+     "market": "NYSE",
+     "change_pct": null
+    }
+   ]
   },
   {
    "title": "Greg Abel Tied 30% of Berkshire's $348 Billion Portfolio to 2 AI Stocks",
@@ -596,7 +775,15 @@
    "tickers": [
     "Tesla"
    ],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": [
+    {
+     "name": "Tesla",
+     "code": "TSLA",
+     "market": "NASDAQ",
+     "change_pct": 0.94
+    }
+   ]
   },
   {
    "title": "Three Price Target Boosts Can’t Help Tesla Stock",
@@ -610,7 +797,21 @@
     "AMAT",
     "TSMC"
    ],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": [
+    {
+     "name": "AMAT",
+     "code": "AMAL",
+     "market": "NASDAQ",
+     "change_pct": 0.52
+    },
+    {
+     "name": "TSMC",
+     "code": "TSM",
+     "market": "NYSE",
+     "change_pct": 0.28
+    }
+   ]
   },
   {
    "title": "Applied Materials (AMAT) Lands 10 Year TSMC AI Packaging Partnership",
@@ -624,7 +825,21 @@
     "Meta",
     "Palantir"
    ],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": [
+    {
+     "name": "Meta",
+     "code": "META",
+     "market": "NASDAQ",
+     "change_pct": 0.08
+    },
+    {
+     "name": "Palantir",
+     "code": "PLTR",
+     "market": "NASDAQ",
+     "change_pct": 1.32
+    }
+   ]
   },
   {
    "title": "Meta Vs. Palantir: Meta Platforms’ Deep Value Moats Crush Palantir’s Hyper-Inflatated Multiple",
@@ -637,7 +852,15 @@
    "tickers": [
     "Apple"
    ],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": [
+    {
+     "name": "Apple",
+     "code": "AAPL",
+     "market": "NASDAQ",
+     "change_pct": -0.96
+    }
+   ]
   },
   {
    "title": "Apple Stock Downgraded—iPhone Weakness and 2 Other Reasons",
@@ -648,7 +871,8 @@
    "impact": "neutral",
    "why": "월간 배당 ETF 비교 분석으로 시장 악화 시 성과 평가, 광범위한 영향.",
    "tickers": [],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": []
   },
   {
    "title": "SPYI vs. JEPI: Which Monthly ‘Paycheck’ ETF Actually Wins When the Market Gets Ugly?",
@@ -659,7 +883,8 @@
    "impact": "neutral",
    "why": "Mark Cuban의 AI 회사 경영에 대한 경고성 발언, 직접적 영향은 불명확.",
    "tickers": [],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": []
   },
   {
    "title": "‘Being Hated Is Not Good for Business’: Mark Cuban’s $130 Billion Warning for AI Companies",
@@ -672,7 +897,15 @@
    "tickers": [
     "JNJ"
    ],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": [
+    {
+     "name": "JNJ",
+     "code": null,
+     "market": null,
+     "change_pct": null
+    }
+   ]
   },
   {
    "title": "Healthcare ETFs to Buy as JNJ Beats the Market With a 25% YTD Surge",
@@ -685,7 +918,15 @@
    "tickers": [
     "BMY"
    ],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": [
+    {
+     "name": "BMY",
+     "code": null,
+     "market": null,
+     "change_pct": null
+    }
+   ]
   },
   {
    "title": "Can BMY's CELMoD Program Advancements Strengthen Its Oncology Portfolio?",
@@ -698,7 +939,15 @@
    "tickers": [
     "Apple"
    ],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": [
+    {
+     "name": "Apple",
+     "code": "AAPL",
+     "market": "NASDAQ",
+     "change_pct": -0.96
+    }
+   ]
   },
   {
    "title": "Apple Stock Downgraded To Sell. Here's Why.",
@@ -709,7 +958,8 @@
    "impact": "neutral",
    "why": "중동 긴장으로 시장 변동성 우려 속 4개 가치주 매수 권유.",
    "tickers": [],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": []
   },
   {
    "title": "This chipmaker \"remains a core AI winner and a close #2 behind NVDA\": MS",
@@ -720,7 +970,8 @@
    "impact": "positive",
    "why": "엔비디아 다음 2위 AI 칩메이커로 평가받는 반도체 업체의 긍정적 전망.",
    "tickers": [],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": []
   },
   {
    "title": "Buy These 4 Value Stocks as Middle East Tensions Rattle Markets Again",
@@ -734,14 +985,29 @@
     "AMD",
     "Intel"
    ],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": [
+    {
+     "name": "AMD",
+     "code": "AMD",
+     "market": "NASDAQ",
+     "change_pct": 5.82
+    },
+    {
+     "name": "Intel",
+     "code": "INTC",
+     "market": "NASDAQ",
+     "change_pct": 3.49
+    }
+   ]
   },
   {
    "title": "AMD Rallies 5%, Intel Rises 4% as Cooling Inflation Sparks a Chip Rebound",
    "url": "https://247wallst.com/investing/2026/07/14/amd-rallies-5-intel-rises-4-as-cooling-inflation-sparks-a-chip-rebound/?.tsrc=rss",
    "published": "2026-07-14 22:42",
    "topic": "반도체",
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": []
   }
  ],
  "ledger": {

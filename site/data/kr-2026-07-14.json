@@ -270,7 +270,8 @@
    "impact": "negative",
    "why": "골드만삭스가 코스피 6800선 붕괴 시 6000까지 하락 가능성을 경고하며 투자자 심리 악화",
    "tickers": [],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": []
   },
   {
    "title": "화장품 동전주 5곳 남았다…상장폐지 제도 개편에 투자자 '촉각'",
@@ -281,7 +282,8 @@
    "impact": "negative",
    "why": "화장품 동전주가 5개로 축소되면서 상장폐지 제도 개편에 따른 구조조정 가속화",
    "tickers": [],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": []
   },
   {
    "title": "'검은 월요일' 떨쳐낸 코스피…6,800선 회복",
@@ -292,7 +294,8 @@
    "impact": "positive",
    "why": "코스피가 낙폭을 회복하며 6800선을 되찾음",
    "tickers": [],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": []
   },
   {
    "title": "[앵커리포트] 롤러코스터 장세 속 상승 마감…코스피 6,800선 회복",
@@ -303,7 +306,8 @@
    "impact": "positive",
    "why": "변동성 속에서도 코스피가 상승 마감하며 6800선 회복",
    "tickers": [],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": []
   },
   {
    "title": "'수출업체 달러 매도' 원·달러 환율, 10원 넘게 하락 마감...장중 1480원...",
@@ -314,7 +318,8 @@
    "impact": "positive",
    "why": "수출업체의 달러 매도로 원달러 환율이 10원 이상 하락하며 수출 환경 개선",
    "tickers": [],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": []
   },
   {
    "title": "신저가인데 하루 12조 거래…‘초단타 놀이터’ 된 단일종목 레버리지,...",
@@ -325,7 +330,8 @@
    "impact": "negative",
    "why": "단일종목 레버리지가 신저가에도 12조 거래량을 기록하며 투기 심화",
    "tickers": [],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": []
   },
   {
    "title": "코스피 소폭 반등, 삼전닉스 하락분 만회",
@@ -339,7 +345,21 @@
     "삼성전자",
     "SK하이닉스"
    ],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": [
+    {
+     "name": "삼성전자",
+     "code": "005930",
+     "market": "KOSPI",
+     "change_pct": 3.34
+    },
+    {
+     "name": "SK하이닉스",
+     "code": "000660",
+     "market": "KOSPI",
+     "change_pct": 3.69
+    }
+   ]
   },
   {
    "title": "증권업계 \"단일종목 레버리지, 자본시장 선진화 기여…거래대금 아닌 리...",
@@ -350,7 +370,8 @@
    "impact": "neutral",
    "why": "증권업계가 단일종목 레버리지의 자본시장 기여도를 주장하고 거래대금 규제 필요성 언급",
    "tickers": [],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": []
   },
   {
    "title": "\"하루 만에 돌아온 매수세\"… 닛케이지수, 반도체·AI주 반등 힘입어 6만...",
@@ -361,7 +382,8 @@
    "impact": "positive",
    "why": "반도체와 AI주 반등으로 닛케이지수가 하루 만에 6만선 회복",
    "tickers": [],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": []
   },
   {
    "title": "[더벨][thebell's view] [영상] 나스닥 가는 SK하이닉스…40조 ADR에 담긴...",
@@ -374,7 +396,15 @@
    "tickers": [
     "SK하이닉스"
    ],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": [
+    {
+     "name": "SK하이닉스",
+     "code": "000660",
+     "market": "KOSPI",
+     "change_pct": 3.69
+    }
+   ]
   },
   {
    "title": "'160만원대 추락' SK하이닉스, 300만원 진입 조건 나왔다?⋯\"강한 감동 ...",
@@ -387,7 +417,15 @@
    "tickers": [
     "SK하이닉스"
    ],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": [
+    {
+     "name": "SK하이닉스",
+     "code": "000660",
+     "market": "KOSPI",
+     "change_pct": 3.69
+    }
+   ]
   },
   {
    "title": "[亞증시-종합] 日·中·홍콩 장 중 상승 전환…대만 홀로 약세",
@@ -398,7 +436,8 @@
    "impact": "neutral",
    "why": "아시아 증시 중 일본·중국·홍콩은 상승 전환, 대만만 약세를 보임",
    "tickers": [],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": []
   },
   {
    "title": "[이슈분석] 사면초가에 빠진 삼성전자의 호남 반도체 400조 투자",
@@ -411,7 +450,15 @@
    "tickers": [
     "삼성전자"
    ],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": [
+    {
+     "name": "삼성전자",
+     "code": "005930",
+     "market": "KOSPI",
+     "change_pct": 3.34
+    }
+   ]
   },
   {
    "title": "배터리 3사 LFP 장전에 웃는 EG…고급 산화철 세계 1위 몸값 뛴다",
@@ -422,7 +469,8 @@
    "impact": "positive",
    "why": "배터리 3사의 LFP 장전에 따라 고급 산화철 생산업체의 가치 상승",
    "tickers": [],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": []
   },
   {
    "title": "[하반기 증시 관전 포인트] 코스피 피크아웃 공포 vs 코스닥 순환매",
@@ -433,7 +481,8 @@
    "impact": "neutral",
    "why": "코스피 피크아웃 우려와 코스닥 순환매라는 상반된 장세 관전 포인트 제시",
    "tickers": [],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": []
   },
   {
    "title": "엔에이치투자증권, 엘앤에프 목표주가 16만원으로 하향…리튬 가격 하락...",
@@ -446,7 +495,15 @@
    "tickers": [
     "엘앤에프"
    ],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": [
+    {
+     "name": "엘앤에프",
+     "code": "066970",
+     "market": "KOSPI",
+     "change_pct": -10.37
+    }
+   ]
   },
   {
    "title": "[1% 초고수의 개장선택] 반도체 차익실현…2차전지·바이오 저가매수로...",
@@ -457,7 +514,8 @@
    "impact": "neutral",
    "why": "반도체 차익실현 후 2차전지와 바이오 저가매수 전략 제시",
    "tickers": [],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": []
   },
   {
    "title": "기술주 싹쓸이한 메리츠, 전통 명가 하나…베스트 애널리스트 격돌 [202...",
@@ -470,7 +528,15 @@
    "tickers": [
     "메리츠"
    ],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": [
+    {
+     "name": "메리츠",
+     "code": null,
+     "market": null,
+     "change_pct": null
+    }
+   ]
   },
   {
    "title": "국민연금 5% 이상 국내주식 462조…IT전기전자 비중 62%",
@@ -481,7 +547,8 @@
    "impact": "neutral",
    "why": "국민연금의 국내주식 462조 중 IT전기전자 비중이 62%로 높은 집중도",
    "tickers": [],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": []
   },
   {
    "title": "[제약소식]GC녹십자웰빙 라이넥주, 출시 20년 만에 1억 앰플 돌파 外 유...",
@@ -494,7 +561,15 @@
    "tickers": [
     "GC녹십자웰빙"
    ],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": [
+    {
+     "name": "GC녹십자웰빙",
+     "code": "006280",
+     "market": "KOSPI",
+     "change_pct": -0.91
+    }
+   ]
   },
   {
    "title": "[26.7.14 증시 인싸잇] 코스피, 롤러코스터 장세 끝 6850선 회복… 반도...",
@@ -505,7 +580,8 @@
    "impact": "positive",
    "why": "코스피가 롤러코스터 장세 끝에 6850선 회복하며 반도체주 활황",
    "tickers": [],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": []
   },
   {
    "title": "(제약보국 후계자들)③상속세로 갈라진 한미 가족경영, 6년 분쟁 낳았다",
@@ -516,7 +592,8 @@
    "impact": "negative",
    "why": "제약사 가족경영의 상속세 분쟁으로 6년간 분쟁 지속",
    "tickers": [],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": []
   },
   {
    "title": "[바이오 공시 추적기] 펩트론·삼천당…흔들린 신뢰, 엇갈린 대응",
@@ -530,7 +607,21 @@
     "펩트론",
     "삼천당"
    ],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": [
+    {
+     "name": "펩트론",
+     "code": "087010",
+     "market": "KOSDAQ",
+     "change_pct": 1.66
+    },
+    {
+     "name": "삼천당",
+     "code": null,
+     "market": null,
+     "change_pct": null
+    }
+   ]
   },
   {
    "title": "[TG-C 블록버스터 도전] ⑥코오롱티슈진 운명의 7월...DMOAD에 주가 최대...",
@@ -543,7 +634,15 @@
    "tickers": [
     "코오롱티슈진"
    ],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": [
+    {
+     "name": "코오롱티슈진",
+     "code": "950160",
+     "market": "KOSDAQ",
+     "change_pct": -4.83
+    }
+   ]
   },
   {
    "title": "코스닥 '뚝'...주성엔지니어링·피에스케이·테스는 '껑충'",
@@ -558,7 +657,27 @@
     "피에스케이",
     "테스"
    ],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": [
+    {
+     "name": "주성엔지니어링",
+     "code": null,
+     "market": null,
+     "change_pct": null
+    },
+    {
+     "name": "피에스케이",
+     "code": "319660",
+     "market": "KOSDAQ",
+     "change_pct": 10.24
+    },
+    {
+     "name": "테스",
+     "code": null,
+     "market": null,
+     "change_pct": null
+    }
+   ]
   },
   {
    "title": "중동 이슈 딛고, 코스피 '상승'...반도체주 '활짝' vs 車 주가 '뚝'",
@@ -569,7 +688,8 @@
    "impact": "positive",
    "why": "중동 이슈 속 코스피 상승, 반도체주는 활황이나 자동차주는 약세",
    "tickers": [],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": []
   },
   {
    "title": "캘리포니아, 2억7000만달러 규모 전기차 구매 보조금 시행…자동차 업체...",
@@ -580,7 +700,8 @@
    "impact": "positive",
    "why": "캘리포니아의 2억7000만달러 규모 전기차 구매 보조금이 자동차 업체에 긍정적 영향",
    "tickers": [],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": []
   },
   {
    "title": "깊이가 다른 글로벌 투자 정보 GAM - 맛보기편 (7/14)",
@@ -591,7 +712,8 @@
    "impact": "neutral",
    "why": "글로벌 투자 정보 제공 콘텐츠",
    "tickers": [],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": []
   },
   {
    "title": "美 캘리포니아주 전기차 보조금 준다..트럼프에 맞대응",
@@ -602,7 +724,8 @@
    "impact": "positive",
    "why": "캘리포니아의 전기차 보조금 시행으로 트럼프 정책에 대응",
    "tickers": [],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": []
   },
   {
    "title": "캘리포니아주, 전기차 구매 보조금 시행...반 트럼프",
@@ -613,7 +736,8 @@
    "impact": "positive",
    "why": "캘리포니아의 전기차 구매 보조금 시행으로 전기차 수요 촉진",
    "tickers": [],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": []
   },
   {
    "title": "[거래소 기관] 삼성전자·SK하이닉스 쌍끌이 매수…반도체 대형주 집중",
@@ -627,7 +751,21 @@
     "삼성전자",
     "SK하이닉스"
    ],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": [
+    {
+     "name": "삼성전자",
+     "code": "005930",
+     "market": "KOSPI",
+     "change_pct": 3.34
+    },
+    {
+     "name": "SK하이닉스",
+     "code": "000660",
+     "market": "KOSPI",
+     "change_pct": 3.69
+    }
+   ]
   },
   {
    "title": "캘리포니아, 전기차 구매 보조금 시행...'생애 첫 전기차 구매자' 대상",
@@ -638,7 +776,8 @@
    "impact": "positive",
    "why": "캘리포니아의 전기차 구매 보조금이 생애 첫 구매자 대상으로 시행되며 신규 수요 창출",
    "tickers": [],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": []
   },
   {
    "title": "캘리포니아, 전기차 구매 보조금 시행…뉴섬 주지사 反트럼프 정책",
@@ -649,7 +788,8 @@
    "impact": "positive",
    "why": "캘리포니아 뉴섬 주지사의 반트럼프 정책으로 전기차 보조금 시행",
    "tickers": [],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": []
   },
   {
    "title": "캘리포니아, 전기차 구매 보조금 시행…反트럼프",
@@ -660,7 +800,8 @@
    "impact": "positive",
    "why": "캘리포니아의 반트럼프 전기차 보조금 정책 시행",
    "tickers": [],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": []
   },
   {
    "title": "\"공급 늘린다며 대출 조이는 정부, 앞뒤 안 맞아\"…부동산 첫 토론회 성...",
@@ -671,7 +812,8 @@
    "impact": "negative",
    "why": "부동산 첫 토론회에서 공급 정책과 대출 규제의 모순에 대한 지적",
    "tickers": [],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": []
   },
   {
    "title": "[채권-마감] 日 국채 금리 급락에도 팽배한 금통위 경계",
@@ -682,7 +824,8 @@
    "impact": "neutral",
    "why": "일본 국채 금리 급락에도 금융통화위원회의 경계감이 팽배함",
    "tickers": [],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": []
   },
   {
    "title": "[집중진단] \"그동안 번 돈 다 날아갔다, 더 못 버텨”…소폭 반등하자 ...",
@@ -693,7 +836,8 @@
    "impact": "negative",
    "why": "시장 참여자들이 그간 수익이 손실로 전환되며 심리 악화",
    "tickers": [],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": []
   },
   {
    "title": "[이슈] 한은, 이번 주 금리 올린다…더 단단해진 긴축 명분",
@@ -704,7 +848,8 @@
    "impact": "negative",
    "why": "한은의 금리 인상 가능성으로 긴축 기조가 더욱 강화될 전망",
    "tickers": [],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": []
   },
   {
    "title": "\"신축도 매입도 이주도 LTV 0%\"…공급 사슬 곳곳서 대출 규제 완화 요구",
@@ -715,7 +860,8 @@
    "impact": "negative",
    "why": "부동산 정책에서 신축·매입·이주 등 곳곳에서 LTV 0% 규제로 인한 대출 완화 요구",
    "tickers": [],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": []
   },
   {
    "title": "불어난 '마통'에 좌불안석···정치권 눈치 보는 은행권",
@@ -726,7 +872,8 @@
    "impact": "negative",
    "why": "마진통화 증가로 인한 불안감으로 은행권이 정치권 눈치를 보는 상황",
    "tickers": [],
-   "watchlist_hits": []
+   "watchlist_hits": [],
+   "ticker_prices": []
   }
  ],
  "ledger": {
