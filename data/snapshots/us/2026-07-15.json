@@ -1,0 +1,770 @@
+{
+ "date": "2026-07-15",
+ "market_group": "US",
+ "report_id": "SMIM-US-2026-0715",
+ "issue_no": 1,
+ "published_at": "2026-07-15T00:22:30+09:00",
+ "models": {
+  "bull": "claude-haiku-4-5-20251001",
+  "bear": "claude-haiku-4-5-20251001",
+  "judge": "claude-sonnet-5",
+  "news": "claude-haiku-4-5-20251001"
+ },
+ "market": {
+  "indices": [
+   {
+    "label": "코스피",
+    "ticker": "KOSPI",
+    "value": 6856.83,
+    "change": 49.9,
+    "change_pct": 0.73,
+    "trend": "down",
+    "trend_label": "하락세",
+    "series": [
+     8801.49,
+     8639.41,
+     8160.59,
+     7484.41,
+     8096.93,
+     7730.82,
+     7763.95,
+     8123.62,
+     8545.98,
+     8726.6,
+     8864.24,
+     9063.84,
+     9052.42,
+     9114.55,
+     8203.84,
+     8471.02,
+     8930.3,
+     8411.21,
+     8394.65,
+     8476.48,
+     8303.41,
+     7648.09,
+     8088.34,
+     8051.33,
+     7656.31,
+     7246.79,
+     7291.91,
+     7475.94,
+     6806.93,
+     6856.83
+    ]
+   },
+   {
+    "label": "코스닥",
+    "ticker": "KOSDAQ",
+    "value": 783.98,
+    "change": -15.38,
+    "change_pct": -1.92,
+    "trend": "down",
+    "trend_label": "하락세",
+    "series": [
+     1026.03,
+     1049.73,
+     1002.44,
+     911.39,
+     967.81,
+     951.63,
+     996.93,
+     1029.05,
+     1034.03,
+     1018.68,
+     1031.96,
+     1000.93,
+     966.59,
+     968.4,
+     891.52,
+     909.31,
+     887.81,
+     851.37,
+     920.57,
+     916.18,
+     929.35,
+     866.72,
+     868.41,
+     847.07,
+     831.23,
+     785.0,
+     794.0,
+     837.43,
+     799.36,
+     783.98
+    ]
+   },
+   {
+    "label": "원/달러",
+    "ticker": "USDKRW",
+    "value": 1488.19,
+    "change": -10.29,
+    "change_pct": -0.69,
+    "trend": "down",
+    "trend_label": "하락세",
+    "series": [
+     1530.11,
+     1533.07,
+     1554.48,
+     1528.88,
+     1525.81,
+     1525.05,
+     1517.38,
+     1509.5,
+     1513.31,
+     1510.96,
+     1525.42,
+     1537.56,
+     1531.33,
+     1539.05,
+     1535.25,
+     1542.76,
+     1546.48,
+     1535.24,
+     1541.73,
+     1548.61,
+     1551.81,
+     1542.13,
+     1531.0,
+     1528.76,
+     1519.86,
+     1503.35,
+     1505.91,
+     1498.48,
+     1488.19
+    ]
+   },
+   {
+    "label": "S&P 500",
+    "ticker": "SPX",
+    "value": 7547.97,
+    "change": 32.63,
+    "change_pct": 0.43,
+    "trend": "flat",
+    "trend_label": "보합권",
+    "series": [
+     7599.96,
+     7609.78,
+     7553.68,
+     7584.31,
+     7383.74,
+     7405.73,
+     7386.65,
+     7266.99,
+     7394.3,
+     7431.46,
+     7554.29,
+     7511.35,
+     7420.1,
+     7500.58,
+     7472.79,
+     7365.46,
+     7358.22,
+     7357.49,
+     7354.02,
+     7440.43,
+     7499.36,
+     7483.23,
+     7483.24,
+     7537.43,
+     7503.85,
+     7482.71,
+     7543.64,
+     7575.39,
+     7515.34,
+     7547.97
+    ]
+   },
+   {
+    "label": "나스닥",
+    "ticker": "NASDAQ",
+    "value": 26138.1,
+    "change": 264.92,
+    "change_pct": 1.02,
+    "trend": "up",
+    "trend_label": "상승세",
+    "series": [
+     27086.81,
+     27093.9,
+     26853.98,
+     26830.96,
+     25709.43,
+     25929.66,
+     25678.82,
+     25169.5,
+     25809.66,
+     25888.84,
+     26683.94,
+     26376.34,
+     26021.66,
+     26517.93,
+     26166.6,
+     25587.04,
+     25476.64,
+     25358.6,
+     25297.62,
+     25820.14,
+     26213.72,
+     26040.03,
+     25832.67,
+     26121.16,
+     25818.69,
+     25870.65,
+     26206.89,
+     26281.61,
+     25873.18,
+     26138.1
+    ]
+   }
+  ],
+  "up": 655,
+  "down": 1834,
+  "flat": 227,
+  "up_ratio": 24.1,
+  "mood": "위험회피",
+  "sectors": []
+ },
+ "new_entries": [],
+ "holdings": [],
+ "exits": [],
+ "rejected": [
+  {
+   "name": "CSW Industrials Inc",
+   "reason": "PASS (확신도 42)"
+  },
+  {
+   "name": "CarGurus Inc",
+   "reason": "PASS (확신도 32)"
+  },
+  {
+   "name": "Corvus Pharmaceuticals Inc",
+   "reason": "WATCH (확신도 38)"
+  },
+  {
+   "name": "Kaspi.kz AO ADR",
+   "reason": "PASS (확신도 38)"
+  }
+ ],
+ "newsroom": [
+  {
+   "title": "Buying TSMC Stock Before July 16 Just Became a No-Brainer Due to This Massive News",
+   "url": "https://www.fool.com/investing/2026/07/14/buying-tsmc-stock-before-july-16-just-became-a-no/?.tsrc=rss",
+   "published": "2026-07-15 00:06",
+   "topic": "반도체",
+   "sector": "반도체",
+   "impact": "positive",
+   "why": "TSMC 주식 매수에 긍정적 뉴스가 나왔으나, 제목만으로는 구체적 내용이 불명확함.",
+   "tickers": [
+    "TSMC"
+   ],
+   "watchlist_hits": []
+  },
+  {
+   "title": "IBM stock plummets more than 25% on Q2 earnings warning",
+   "url": "https://finance.yahoo.com/news/ibm-stock-plummets-more-than-25-on-q2-earnings-warning-150605880.html?.tsrc=rss",
+   "published": "2026-07-15 00:06",
+   "topic": "IT·플랫폼",
+   "sector": "IT·플랫폼",
+   "impact": "strong_negative",
+   "why": "IBM이 2분기 어닝 워닝으로 주가가 25% 이상 급락하는 실적 악화 신호.",
+   "tickers": [
+    "IBM"
+   ],
+   "watchlist_hits": []
+  },
+  {
+   "title": "3 Reasons Nvidia Stock Could Keep Soaring Through 2026",
+   "url": "https://www.fool.com/investing/2026/07/14/3-reasons-nvidia-stock-could-keep-soaring-through/?.tsrc=rss",
+   "published": "2026-07-15 00:05",
+   "topic": "반도체",
+   "sector": "반도체",
+   "impact": "positive",
+   "why": "엔비디아 주가가 2026년까지 상승 지속 가능성에 대한 긍정적 분석.",
+   "tickers": [
+    "NVIDIA"
+   ],
+   "watchlist_hits": []
+  },
+  {
+   "title": "Why Micron Technology Stock Rallied on Tuesday",
+   "url": "https://www.fool.com/investing/2026/07/14/why-micron-technology-stock-rallied-on-tuesday/?.tsrc=rss",
+   "published": "2026-07-15 00:04",
+   "topic": "반도체",
+   "sector": "반도체",
+   "impact": "positive",
+   "why": "마이크론 테크놀로지 주가가 화요일에 랠리했으나, 구체적 원인은 제목만으로 불명확.",
+   "tickers": [
+    "Micron"
+   ],
+   "watchlist_hits": []
+  },
+  {
+   "title": "The Goldman Sachs Group Q2 Earnings Call Highlights",
+   "url": "https://www.marketbeat.com/instant-alerts/the-goldman-sachs-group-q2-earnings-call-highlights-2026-07-14/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
+   "published": "2026-07-15 00:02",
+   "topic": "금융",
+   "sector": "IT·플랫폼",
+   "impact": "neutral",
+   "why": "Kalshi의 신규 상품 출시로 AI 경제 거래소 포지션 강화, 직접적 영향을 받는 상장사 미확인.",
+   "tickers": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "Kalshi Announces Compute Forward Curves, Becoming the Exchange for the AI Economy",
+   "url": "https://finance.yahoo.com/technology/ai/articles/kalshi-announces-compute-forward-curves-150000255.html?.tsrc=rss",
+   "published": "2026-07-15 00:00",
+   "topic": "반도체",
+   "sector": "IT·플랫폼",
+   "impact": "neutral",
+   "why": "마이크로소프트와 오라클의 사업 상황 비교 분석이나, 구체적 뉴스 이벤트 미확인.",
+   "tickers": [
+    "Microsoft",
+    "Oracle"
+   ],
+   "watchlist_hits": []
+  },
+  {
+   "title": "Microsoft vs Oracle: One Thriving, One Burning Cash",
+   "url": "https://247wallst.com/investing/2026/07/14/microsoft-vs-oracle-one-thriving-one-burning-cash/?.tsrc=rss",
+   "published": "2026-07-15 00:00",
+   "topic": "IT·플랫폼",
+   "sector": "IT·플랫폼",
+   "impact": "positive",
+   "why": "메타가 AI 진출을 위해 루이지애나 데이터센터를 5GW로 확장하는 대규모 투자.",
+   "tickers": [
+    "Meta"
+   ],
+   "watchlist_hits": []
+  },
+  {
+   "title": "Meta expands Louisiana data center to 5GW in new AI push",
+   "url": "https://finance.yahoo.com/video/meta-expands-louisiana-data-center-to-5gw-in-new-ai-push-150033147.html?.tsrc=rss",
+   "published": "2026-07-15 00:00",
+   "topic": "IT·플랫폼",
+   "sector": "금융",
+   "impact": "positive",
+   "why": "시티그룹 2분기 실적이 예상치를 상회하고 광범위한 부문에서 이중 자릿수 매출 성장.",
+   "tickers": [
+    "Citigroup"
+   ],
+   "watchlist_hits": []
+  },
+  {
+   "title": "Citigroup Second-Quarter Results Top Estimates Amid Double-Digit Revenue Growth Across Most Segments",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/citigroup-second-quarter-results-top-145717065.html?.tsrc=rss",
+   "published": "2026-07-14 23:57",
+   "topic": "금융",
+   "sector": "반도체",
+   "impact": "positive",
+   "why": "AI 칩 수요를 나타내는 $75 Billion 규모 시장에 대한 분석으로 반도체 업종 긍정 신호.",
+   "tickers": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "The 1 Number That Sets the Record Straight on AI Chip Demand: $75 Billion",
+   "url": "https://247wallst.com/investing/2026/07/14/the-1-number-that-sets-the-record-straight-on-ai-chip-demand-75-billion/?.tsrc=rss",
+   "published": "2026-07-14 23:52",
+   "topic": "반도체",
+   "sector": "반도체",
+   "impact": "positive",
+   "why": "인텔 데이터센터 사업의 랠리 전 상황에 대한 분석으로 향후 전망 긍정적.",
+   "tickers": [
+    "Intel"
+   ],
+   "watchlist_hits": []
+  },
+  {
+   "title": "What Intel Stock's Data Center Was Saying Before The Surge",
+   "url": "https://www.trefis.com/articles/607031/what-intel-stocks-data-center-was-saying-before-the-surge/2026-07-14?.tsrc=rss",
+   "published": "2026-07-14 23:49",
+   "topic": "반도체",
+   "sector": "자동차",
+   "impact": "positive",
+   "why": "테슬라의 강한 자동차·에너지 딜리버리가 2분기 실적을 뒷받침할 것으로 예상.",
+   "tickers": [
+    "Tesla"
+   ],
+   "watchlist_hits": []
+  },
+  {
+   "title": "Tesla's Strong Auto, Energy Deliveries Position it for Solid Q2, Morgan Stanley Says",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-apos-strong-auto-energy-144744091.html?.tsrc=rss",
+   "published": "2026-07-14 23:47",
+   "topic": "2차전지",
+   "sector": "바이오",
+   "impact": "neutral",
+   "why": "화이자의 높은 배당수익률이 투자자 주의 필요, 리스크 가능성 암시.",
+   "tickers": [
+    "Pfizer"
+   ],
+   "watchlist_hits": []
+  },
+  {
+   "title": "Pfizer Has the Highest-Yielding Dividend in the S&P 500. Should Investors Be Worried?",
+   "url": "https://www.fool.com/investing/2026/07/14/pfizer-has-the-highest-yielding-dividend-in-the-sp/?.tsrc=rss",
+   "published": "2026-07-14 23:44",
+   "topic": "바이오",
+   "sector": "금융",
+   "impact": "neutral",
+   "why": "JPMorgan 실적이 5개 주식에 미친 영향에 대한 분석, 구체 내용은 불명확.",
+   "tickers": [
+    "JPMorgan"
+   ],
+   "watchlist_hits": []
+  },
+  {
+   "title": "5 Stocks Most Impacted by JPMorgan’s Earnings",
+   "url": "https://247wallst.com/investing/2026/07/14/5-stocks-most-impacted-by-jpmorgans-earnings/?.tsrc=rss",
+   "published": "2026-07-14 23:43",
+   "topic": "금융",
+   "sector": "반도체",
+   "impact": "positive",
+   "why": "Silo Pharma가 AMD AI 개발자 프로그램에 참여하며 AI 플랫폼 발전 추진.",
+   "tickers": [
+    "AMD"
+   ],
+   "watchlist_hits": []
+  },
+  {
+   "title": "Silo Pharma’s QwikAgents Joins AMD AI Developer Program to Advance AI Agent Platform",
+   "url": "https://investorshub.advfn.com/market-news/article/31863/silo-pharmas-qwikagents-joins-amd-ai-developer-program-to-advance-ai-agent-platform?.tsrc=rss",
+   "published": "2026-07-14 23:42",
+   "topic": "반도체",
+   "sector": "금융",
+   "impact": "positive",
+   "why": "Wells Fargo가 2분기 예상치를 상회하고 광범위한 부문에서 매출 성장 달성.",
+   "tickers": [
+    "Wells Fargo"
+   ],
+   "watchlist_hits": []
+  },
+  {
+   "title": "Wells Fargo Beats Second-Quarter Estimates Amid Broad-Based Revenue Growth",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/wells-fargo-beats-second-quarter-144257780.html?.tsrc=rss",
+   "published": "2026-07-14 23:42",
+   "topic": "금융",
+   "sector": "금융",
+   "impact": "positive",
+   "why": "5개 은행 실적이 미국 경제 약세 전망을 반박하는 긍정적 신호.",
+   "tickers": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "These 5 Bank Earnings May Have Just Crushed the Bear Case for the U.S. Economy",
+   "url": "https://247wallst.com/investing/2026/07/14/these-5-bank-earnings-may-have-just-crushed-the-bear-case-for-the-u-s-economy/?.tsrc=rss",
+   "published": "2026-07-14 23:40",
+   "topic": "금융",
+   "sector": "IT·플랫폼",
+   "impact": "negative",
+   "why": "메타의 최근 계획이 Nebius와 CoreWeave 투자자들에게 우려를 야기할 수 있음.",
+   "tickers": [
+    "Meta"
+   ],
+   "watchlist_hits": []
+  },
+  {
+   "title": "Should Nebius and CoreWeave Investors Be Scared by Meta's Latest Plans?",
+   "url": "https://www.fool.com/investing/2026/07/14/should-nebius-and-coreweave-investors-be-scared-by/?.tsrc=rss",
+   "published": "2026-07-14 23:40",
+   "topic": "IT·플랫폼",
+   "sector": "금융",
+   "impact": "positive",
+   "why": "골드만삭스가 실적 부진 이후 주가가 사상 최고가 근처로 상승 예상.",
+   "tickers": [
+    "Goldman Sachs"
+   ],
+   "watchlist_hits": []
+  },
+  {
+   "title": "Goldman Shares Eye Record Close Following Blowout Earnings",
+   "url": "https://finance.yahoo.com/m/df30fc70-c965-3d34-995e-527be3e7e995/goldman-shares-eye-record.html?.tsrc=rss",
+   "published": "2026-07-14 23:36",
+   "topic": "금융",
+   "sector": "반도체",
+   "impact": "positive",
+   "why": "ZTE가 엔비디아 H200 칩 구매 허가를 받아 AI 기술 접근 확보.",
+   "tickers": [
+    "NVIDIA",
+    "ZTE"
+   ],
+   "watchlist_hits": []
+  },
+  {
+   "title": "Exclusive-ZTE among Chinese firms licensed to purchase Nvidia's H200 chips, documents show",
+   "url": "https://finance.yahoo.com/technology/ai/articles/exclusive-zte-among-chinese-firms-143239633.html?.tsrc=rss",
+   "published": "2026-07-14 23:32",
+   "topic": "반도체",
+   "sector": "증시일반",
+   "impact": "neutral",
+   "why": "2026년 나스닥 인컴 ETF 추천으로 수익 전략 제시, 광범위한 영향.",
+   "tickers": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "4 Nasdaq Income ETFs to Buy in 2026: Why GPIQ’s 0.29% Fee Changes Everything",
+   "url": "https://247wallst.com/investing/2026/07/14/4-nasdaq-income-etfs-to-buy-in-2026-why-gpiqs-0-29-fee-changes-everything/?.tsrc=rss",
+   "published": "2026-07-14 23:31",
+   "topic": "증시",
+   "sector": "반도체",
+   "impact": "neutral",
+   "why": "SK Hynix ADR 옵션 거래가 단기 계약으로 쏠려있으나, 구체적 의미는 불명확.",
+   "tickers": [
+    "SK Hynix"
+   ],
+   "watchlist_hits": []
+  },
+  {
+   "title": "SK Hynix Early ADR Options Trading Leans to Short-Term Contracts",
+   "url": "https://finance.yahoo.com/markets/options/articles/sk-hynix-early-adr-options-143131025.html?.tsrc=rss",
+   "published": "2026-07-14 23:31",
+   "topic": "반도체",
+   "sector": "IT·플랫폼",
+   "impact": "neutral",
+   "why": "메타의 최근 랠리가 지속 가능한지에 대한 의문 제기, 결론 불명확.",
+   "tickers": [
+    "Meta"
+   ],
+   "watchlist_hits": []
+  },
+  {
+   "title": "Is Meta's recent rally sustainable?",
+   "url": "https://finance.yahoo.com/video/is-metas-recent-rally-sustainable-143140725.html?.tsrc=rss",
+   "published": "2026-07-14 23:31",
+   "topic": "IT·플랫폼",
+   "sector": "거시·환율",
+   "impact": "positive",
+   "why": "인플레이션 호조가 다우지수를 견인했으나, 개별 주식 영향은 제목만으로 불명확.",
+   "tickers": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "Stock Market Today: Dow Positive After Surprise Inflation Data; IBM Tanks, Banks Rise On Earnings (Live Coverage)",
+   "url": "https://finance.yahoo.com/m/5d020334-7a7d-3075-adc2-c428ddde2504/stock-market-today%3A-dow.html?.tsrc=rss",
+   "published": "2026-07-14 23:27",
+   "topic": "증시",
+   "sector": "증시일반",
+   "impact": "neutral",
+   "why": "IBM, Goldman Sachs, SK Hynix 등 여러 주식의 시장 영향에 대한 종합 분석.",
+   "tickers": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "IBM, Goldman Sachs, SK Hynix, Micron, AMD, Apple, and More Stocks That Explain Today’s Market",
+   "url": "https://finance.yahoo.com/m/3fe415be-3d97-3645-91bb-0790bcf31237/ibm%2C-goldman-sachs%2C-sk-hynix%2C.html?.tsrc=rss",
+   "published": "2026-07-14 23:26",
+   "topic": "반도체",
+   "sector": "금융",
+   "impact": "positive",
+   "why": "Bank of America 2분기 실적이 예상치를 상회하고 광범위한 부문에서 매출 성장.",
+   "tickers": [
+    "Bank of America"
+   ],
+   "watchlist_hits": []
+  },
+  {
+   "title": "Bank of America second quarter earnings top estimates on broad-based revenue growth",
+   "url": "https://www.proactiveinvestors.com/companies/news/1095423/bank-of-america-second-quarter-earnings-top-estimates-on-broad-based-revenue-growth-1095423.html?.tsrc=rss",
+   "published": "2026-07-14 23:26",
+   "topic": "금융",
+   "sector": "건설·기계",
+   "impact": "neutral",
+   "why": "북유럽 데이터센터 시장 전망 분석으로 인프라 수요 증가 예상, 직접 상장사 미확인.",
+   "tickers": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "Nordic Data Center Construction Market Outlook & Forecast 2026-2031 | Surging Digitalization Fuels Demand for Third-Party Data Centers in Nordic Region",
+   "url": "https://finance.yahoo.com/technology/articles/nordic-data-center-construction-market-142300129.html?.tsrc=rss",
+   "published": "2026-07-14 23:23",
+   "topic": "IT·플랫폼",
+   "sector": "반도체",
+   "impact": "positive",
+   "why": "버크셔 해서웨이의 Greg Abel이 AI 관련 2개 주식에 포트폴리오의 30%를 집중.",
+   "tickers": [
+    "Berkshire Hathaway"
+   ],
+   "watchlist_hits": []
+  },
+  {
+   "title": "Greg Abel Tied 30% of Berkshire's $348 Billion Portfolio to 2 AI Stocks",
+   "url": "https://www.fool.com/investing/2026/07/14/greg-abel-tied-30-of-berkshires-portfolio-to-2/?.tsrc=rss",
+   "published": "2026-07-14 23:20",
+   "topic": "IT·플랫폼",
+   "sector": "자동차",
+   "impact": "neutral",
+   "why": "테슬라 주가 목표가 인상이 주가 상승을 이끌지 못하는 상황.",
+   "tickers": [
+    "Tesla"
+   ],
+   "watchlist_hits": []
+  },
+  {
+   "title": "Three Price Target Boosts Can’t Help Tesla Stock",
+   "url": "https://finance.yahoo.com/m/9c2b0e75-10d6-32b9-992d-13682f26706a/three-price-target-boosts.html?.tsrc=rss",
+   "published": "2026-07-14 23:17",
+   "topic": "2차전지",
+   "sector": "반도체",
+   "impact": "strong_positive",
+   "why": "Applied Materials가 TSMC와 10년 AI 패키징 파트너십을 체결하는 대규모 계약 확보.",
+   "tickers": [
+    "AMAT",
+    "TSMC"
+   ],
+   "watchlist_hits": []
+  },
+  {
+   "title": "Applied Materials (AMAT) Lands 10 Year TSMC AI Packaging Partnership",
+   "url": "https://finance.yahoo.com/technology/ai/articles/applied-materials-amat-lands-10-141358870.html?.tsrc=rss",
+   "published": "2026-07-14 23:13",
+   "topic": "반도체",
+   "sector": "IT·플랫폼",
+   "impact": "positive",
+   "why": "메타의 깊은 가치 해자가 Palantir의 높은 밸류에이션을 압도하는 상대 비교 분석.",
+   "tickers": [
+    "Meta",
+    "Palantir"
+   ],
+   "watchlist_hits": []
+  },
+  {
+   "title": "Meta Vs. Palantir: Meta Platforms’ Deep Value Moats Crush Palantir’s Hyper-Inflatated Multiple",
+   "url": "https://247wallst.com/investing/2026/07/14/meta-vs-palantir-meta-platforms-deep-value-moats-crush-palantirs-hyper-inflatated-multiple/?.tsrc=rss",
+   "published": "2026-07-14 23:10",
+   "topic": "IT·플랫폼",
+   "sector": "IT·플랫폼",
+   "impact": "negative",
+   "why": "애플 주가가 아이폰 약세 등 3가지 이유로 하향 등급 대상.",
+   "tickers": [
+    "Apple"
+   ],
+   "watchlist_hits": []
+  },
+  {
+   "title": "Apple Stock Downgraded—iPhone Weakness and 2 Other Reasons",
+   "url": "https://finance.yahoo.com/m/cec753b5-2885-3768-b6e7-2afadbc6f435/apple-stock-downgraded%E2%80%94iphone.html?.tsrc=rss",
+   "published": "2026-07-14 23:04",
+   "topic": "IT·플랫폼",
+   "sector": "증시일반",
+   "impact": "neutral",
+   "why": "월간 배당 ETF 비교 분석으로 시장 악화 시 성과 평가, 광범위한 영향.",
+   "tickers": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "SPYI vs. JEPI: Which Monthly ‘Paycheck’ ETF Actually Wins When the Market Gets Ugly?",
+   "url": "https://247wallst.com/investing/etf/2026/07/14/spyi-vs-jepi-which-monthly-paycheck-etf-actually-wins-when-the-market-gets-ugly/?.tsrc=rss",
+   "published": "2026-07-14 23:00",
+   "topic": "증시",
+   "sector": "IT·플랫폼",
+   "impact": "neutral",
+   "why": "Mark Cuban의 AI 회사 경영에 대한 경고성 발언, 직접적 영향은 불명확.",
+   "tickers": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "‘Being Hated Is Not Good for Business’: Mark Cuban’s $130 Billion Warning for AI Companies",
+   "url": "https://247wallst.com/investing/2026/07/14/being-hated-is-not-good-for-business-mark-cubans-130-billion-warning-for-ai-companies/?.tsrc=rss",
+   "published": "2026-07-14 22:57",
+   "topic": "IT·플랫폼",
+   "sector": "바이오",
+   "impact": "positive",
+   "why": "JNJ의 25% YTD 상승으로 헬스케어 ETF 매수 권유.",
+   "tickers": [
+    "JNJ"
+   ],
+   "watchlist_hits": []
+  },
+  {
+   "title": "Healthcare ETFs to Buy as JNJ Beats the Market With a 25% YTD Surge",
+   "url": "https://finance.yahoo.com/healthcare/articles/healthcare-etfs-buy-jnj-beats-135400002.html?.tsrc=rss",
+   "published": "2026-07-14 22:54",
+   "topic": "바이오",
+   "sector": "바이오",
+   "impact": "neutral",
+   "why": "BMY의 CELMoD 프로그램 진전이 암 치료 포트폴리오 강화 가능성 검토.",
+   "tickers": [
+    "BMY"
+   ],
+   "watchlist_hits": []
+  },
+  {
+   "title": "Can BMY's CELMoD Program Advancements Strengthen Its Oncology Portfolio?",
+   "url": "https://finance.yahoo.com/healthcare/articles/bmys-celmod-program-advancements-strengthen-135300090.html?.tsrc=rss",
+   "published": "2026-07-14 22:53",
+   "topic": "바이오",
+   "sector": "IT·플랫폼",
+   "impact": "negative",
+   "why": "애플 주가가 '매도' 등급으로 하향 조정되는 부정적 평가.",
+   "tickers": [
+    "Apple"
+   ],
+   "watchlist_hits": []
+  },
+  {
+   "title": "Apple Stock Downgraded To Sell. Here's Why.",
+   "url": "https://finance.yahoo.com/m/5f58f9dc-c313-35b7-9917-b18fc176f6d6/apple-stock-downgraded-to.html?.tsrc=rss",
+   "published": "2026-07-14 22:50",
+   "topic": "IT·플랫폼",
+   "sector": "증시일반",
+   "impact": "neutral",
+   "why": "중동 긴장으로 시장 변동성 우려 속 4개 가치주 매수 권유.",
+   "tickers": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "This chipmaker \"remains a core AI winner and a close #2 behind NVDA\": MS",
+   "url": "https://finance.yahoo.com/technology/ai/articles/chipmaker-remains-core-ai-winner-134820194.html?.tsrc=rss",
+   "published": "2026-07-14 22:48",
+   "topic": "반도체",
+   "sector": "반도체",
+   "impact": "positive",
+   "why": "엔비디아 다음 2위 AI 칩메이커로 평가받는 반도체 업체의 긍정적 전망.",
+   "tickers": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "Buy These 4 Value Stocks as Middle East Tensions Rattle Markets Again",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/buy-4-value-stocks-middle-134500662.html?.tsrc=rss",
+   "published": "2026-07-14 22:45",
+   "topic": "자동차",
+   "sector": "반도체",
+   "impact": "positive",
+   "why": "인플레이션 냉각으로 AMD 5%, Intel 4% 상승하며 칩 산업 반등 신호.",
+   "tickers": [
+    "AMD",
+    "Intel"
+   ],
+   "watchlist_hits": []
+  },
+  {
+   "title": "AMD Rallies 5%, Intel Rises 4% as Cooling Inflation Sparks a Chip Rebound",
+   "url": "https://247wallst.com/investing/2026/07/14/amd-rallies-5-intel-rises-4-as-cooling-inflation-sparks-a-chip-rebound/?.tsrc=rss",
+   "published": "2026-07-14 22:42",
+   "topic": "반도체",
+   "watchlist_hits": []
+  }
+ ],
+ "ledger": {
+  "total": 0,
+  "win_rate": null,
+  "avg_return": null,
+  "best": null,
+  "worst": null,
+  "avg_days": null
+ },
+ "universe_scanned": 4,
+ "ai_calls": 12,
+ "ai_usage": {
+  "by_model": {
+   "claude-haiku-4-5-20251001": {
+    "input_tokens": 9231,
+    "output_tokens": 11568
+   },
+   "claude-sonnet-5": {
+    "input_tokens": 16638,
+    "output_tokens": 7091
+   }
+  },
+  "estimated_cost_usd": 0.1713
+ }
+}
