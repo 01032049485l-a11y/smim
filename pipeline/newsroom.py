@@ -46,13 +46,19 @@ TAGGER_SYS = """너는 국내·미국 증시 뉴스 데스크의 에디터다.
         규제 리스크 확정처럼 방향과 크기가 둘 다 뚜렷할 때만 strong_*을 쓰고, 애매하면
         positive/negative/neutral로 보수적으로 판단한다)
 - why: 이 뉴스가 투자자에게 왜 중요한지 한 문장. 제목에서 확인되는 사실만 근거로 쓴다.
-        추측이나 확인되지 않은 숫자를 절대 만들어내지 마라. 불확실하면 "확인 필요"라고 써라.
+        추측이나 확인되지 않은 숫자를 절대 만들어내지 마라. 불확실하면 "확인이 필요합니다"라고
+        써라. "~습니다/입니다"체로 끝낸다.
 - insight: "AI 해설" 버튼을 눌렀을 때 펼쳐지는 2~4문장짜리 해설. why를 좀 더 풀어서,
         투자자가 이 뉴스를 보고 무엇을 더 확인해봐야 하는지·어떤 리스크나 반론이 있는지까지
         짚어준다. 절대 기사 본문을 읽고 요약한 것처럼 쓰지 마라 — 너에게는 제목과 공개된
         사실만 주어졌다. 제목에서 합리적으로 유추 가능한 범위를 벗어나지 말고, 숫자나
-        사실을 지어내지 마라. 유추일 뿐인 부분은 "~일 가능성이 있다"처럼 표현한다.
-- tickers: 제목에 명시적으로 등장하는 상장사 이름만 배열로. 없으면 빈 배열.
+        사실을 지어내지 마라. 유추일 뿐인 부분은 "~일 가능성이 있습니다"처럼 표현한다.
+        문장은 반드시 "~습니다/입니다"체의 정중한 존댓말로 끝낸다. "~다"로 끝나는
+        반말체(개조식)는 절대 쓰지 마라.
+- tickers: 제목에 "실제 거래소에 상장된 종목"으로 명시적으로 등장하는 이름만 배열로.
+        투자자문사·자산운용사·사모펀드·행동주의 펀드(예: 얼라인파트너스 같은 곳)·
+        정부기관·애널리스트·증권사처럼 뉴스에 등장은 하지만 그 자체가 매매 가능한
+        상장 종목이 아닌 이름은 절대 넣지 마라. 없으면 빈 배열.
 
 기사 본문은 주어지지 않았다. 제목만 보고 판단하되, 과장하지 마라.
 
@@ -95,7 +101,7 @@ def tag(items: list[dict]) -> list[dict]:
         return []
     listing = "\n".join(f"{i}. {it['title']}" for i, it in enumerate(items))
     try:
-        res = _parse_json(_call(TAGGER_SYS, listing, config.NEWSTAG_MODEL, max_tokens=8000))
+        res = _parse_json(_call(TAGGER_SYS, listing, config.NEWSTAG_MODEL, max_tokens=16000))
     except (AIFailure, json.JSONDecodeError, ValueError) as e:
         print(f"[newsroom] 태깅 실패({e}) — 원문 링크만 발행")
         return items
@@ -159,7 +165,8 @@ def resolve_tickers(items: list[dict], market_group: str) -> list[dict]:
     여기서 붙는 change_pct는 발행 시점 값이고, 화면에서는 live.js가 실시간으로 다시 갱신한다."""
     try:
         uni = prices.load_universe(market_group)
-        norm_index = {_norm(r["Name"]): {"code": r["Code"], "market": r["Market"]} for _, r in uni.iterrows()}
+        norm_index = {_norm(r["Name"]): {"code": r["Code"], "market": r["Market"], "name": r["Name"]}
+                      for _, r in uni.iterrows()}
     except Exception as e:
         print(f"[newsroom] 종목 매칭용 유니버스 로드 실패({e}) — 이름만 표시")
         norm_index = {}
@@ -184,7 +191,8 @@ def resolve_tickers(items: list[dict], market_group: str) -> list[dict]:
                 resolved.append({"name": name, "code": None, "market": None, "change_pct": None})
                 continue
             chg = _change(row["code"])
-            resolved.append({"name": name, "code": row["code"], "market": row["market"],
+            # 화면엔 AI가 뽑은 약칭(예: "한국타이어") 대신 실제 상장명("한국타이어앤테크놀로지")을 보여준다.
+            resolved.append({"name": row["name"], "code": row["code"], "market": row["market"],
                               "change_pct": (chg or {}).get("change_pct")})
         it["ticker_prices"] = resolved
     return items

@@ -14,7 +14,11 @@
       {% set hit = (n.watchlist_hits or [])|selectattr('name', 'equalto', tp.name)|first %}
       <span class="nsq"{% if tp.code %} data-live-stock data-mode="quote" data-code="{{ tp.code }}" data-market="{{ tp.market }}"{% endif %}>
         {% if hit %}<a href="/stock/{{ hit.code }}/">{{ tp.name }}</a>{% else %}<b class="nm">{{ tp.name }}</b>{% endif %}
-        {% if tp.change_pct is not none %}<b class="ch {{ tp.change_pct|sign }}" data-field="return">{{ tp.change_pct|pct }}</b>{% endif %}
+        {% if tp.change_pct is not none %}
+        <span class="ch {{ tp.change_pct|sign }}" data-field="return" title="전일 종가 대비 등락률">
+          <i class="arrow" aria-hidden="true"></i><b>{{ tp.change_pct|pct }}</b>
+        </span>
+        {% endif %}
       </span>
     {% endfor %}
   </p>
