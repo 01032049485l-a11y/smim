@@ -142,8 +142,8 @@ code{font-family:var(--mono);font-size:.8em;color:var(--mut)}
   letter-spacing:-.055em;line-height:.96}
 .hero h1 .ko{display:block;font-family:var(--sans);font-weight:900;letter-spacing:-.05em;
   font-size:.62em;margin-top:8px}
-.hero h1 .it{position:relative;display:inline-block;font-family:var(--acc);font-style:italic;
-  font-weight:400;color:var(--rise);letter-spacing:-.01em;font-size:1.18em;padding:0 .04em}
+.hero h1 .it{position:relative;display:inline-block;font-family:var(--sans);font-style:normal;
+  font-weight:800;color:var(--rise);letter-spacing:-.02em;font-size:1em;padding:0 .04em}
 .hero h1 .it:after{content:"";position:absolute;left:-2%;right:-2%;bottom:.05em;height:.34em;
   background:var(--riseG);z-index:-1;border-radius:2px}
 .hero .lead{margin-top:20px;max-width:580px;color:var(--ink2);font-size:15.5px;line-height:1.78}
