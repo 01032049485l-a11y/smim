@@ -360,6 +360,13 @@ svg.fico{width:15px;height:auto;vertical-align:-2px;margin-right:4px;border-radi
 .fb:hover{border-color:var(--line2)}
 .fb.on{background:var(--ink);color:#fff;border-color:var(--ink)}
 
+/* 뉴스룸 한국/미국 2열 — 같은 섹터 필터를 눌러 양쪽을 나란히 비교한다 */
+.news-cols{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start}
+.news-cols .ncol{margin-bottom:0}
+.news-cols .ncol .sec span{display:inline-flex;align-items:center}
+.news-cols .ncol .sec svg.fico{margin-right:6px}
+@media (max-width:860px){.news-cols{grid-template-columns:1fr;gap:8px}}
+
 /* ── 표 ──────────────────────────────────── */
 .tblw{overflow-x:auto;border:1px solid var(--line);background:var(--panel);border-radius:10px}
 .tbl{width:100%;border-collapse:collapse;min-width:760px}

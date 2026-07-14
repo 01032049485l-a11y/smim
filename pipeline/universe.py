@@ -74,7 +74,7 @@ def _rule_score(t: dict) -> float:
     s += min(15, (t["volume_ratio_vs_20d"] or 1) * 5)
     s += min(15, max(0, (t["change_20d_pct"] or 0)) * 0.6)
     s += 10 if 40 <= (t["pos_in_52w_range_pct"] or 0) <= 85 else 0
-    s -= min(10, t["volatility_20d_pct"])            # 과도한 변동성은 감점
+    s -= min(10, t["volatility_20d_pct"] or 0)        # 과도한 변동성은 감점
     return round(s, 1)
 
 

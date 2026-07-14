@@ -4,11 +4,16 @@
    워치리스트 종목 연관 표시는 AI 호출 없이 문자열 매칭만으로 그 자리에서 붙인다. */
 (function () {
   "use strict";
-  const list = document.querySelector("[data-newslist]");
-  if (!list) return;
+  const lists = {};
+  document.querySelectorAll("[data-newslist]").forEach((el) => {
+    lists[el.dataset.newslist === "us" ? "US" : "KR"] = el;
+  });
+  if (!Object.keys(lists).length) return;
 
   const seen = new Set();
-  list.querySelectorAll("li[data-url]").forEach((li) => seen.add(li.dataset.url));
+  Object.values(lists).forEach((list) => {
+    list.querySelectorAll("li[data-url]").forEach((li) => seen.add(li.dataset.url));
+  });
 
   const watchNames = {};
   document.querySelectorAll("[data-watch-name]").forEach((el) => {
@@ -44,6 +49,7 @@
     const li = document.createElement("li");
     li.className = "ni live-ni";
     li.dataset.url = n.url;
+    li.dataset.sector = "기타"; // 실시간 항목은 다음 정기 발행 전까지 AI 섹터 분류가 없다
 
     const a = document.createElement("a");
     a.className = "nt";
@@ -93,6 +99,8 @@
       const j = await r.json();
       const fresh = (j.items || []).filter((n) => n.url && n.title && !seen.has(n.url));
       fresh.reverse().forEach((n) => {
+        const list = lists[n.market === "US" ? "US" : "KR"];
+        if (!list) return; // 이 페이지에 해당 시장 목록이 없으면(다른 페이지) 무시
         seen.add(n.url);
         list.insertBefore(renderItem(n), list.firstChild);
       });

@@ -12,7 +12,7 @@ import re
 
 import config
 from pipeline.agents import _call, _parse_json, AIFailure
-from pipeline.sources import news
+from pipeline.sources import news, us_news
 
 TOPICS = [
     ("증시", "코스피 코스닥 증시"),
@@ -24,7 +24,20 @@ TOPICS = [
     ("환율·거시", "환율 금리 물가"),
 ]
 
-TAGGER_SYS = """너는 국내 증시 뉴스 데스크의 에디터다.
+# 미국은 네이버 같은 키워드 검색 API가 없어 Yahoo Finance의 종목별 RSS를
+# 섹터 대표 종목으로 묶어 대체한다 — KR의 TOPICS와 같은 섹터 이름을 그대로 써서
+# 화면에서 같은 필터 버튼으로 한국/미국 뉴스를 동시에 걸러낼 수 있게 한다.
+US_TOPICS = [
+    ("증시", ["SPY", "QQQ"]),
+    ("반도체", ["NVDA", "AVGO", "AMD", "TSM"]),
+    ("2차전지", ["TSLA", "ALB", "ENPH"]),
+    ("바이오", ["PFE", "MRNA", "LLY"]),
+    ("자동차", ["GM", "F", "TM"]),
+    ("금융", ["JPM", "BAC", "GS"]),
+    ("IT·플랫폼", ["AAPL", "MSFT", "GOOGL", "META"]),
+]
+
+TAGGER_SYS = """너는 국내·미국 증시 뉴스 데스크의 에디터다.
 아래는 오늘 수집된 기사 제목 목록이다. 각 기사에 대해 다음을 판단한다.
 
 - sector: 반도체 / 2차전지 / 바이오 / 자동차 / 금융 / 조선·방산 / IT·플랫폼 / 소비재 / 건설·기계 / 에너지 / 거시·환율 / 증시일반 중 하나
@@ -39,7 +52,7 @@ TAGGER_SYS = """너는 국내 증시 뉴스 데스크의 에디터다.
 {"items":[{"i":0,"sector":"...","impact":"positive|negative|neutral","why":"...","tickers":["..."]}]}"""
 
 
-def collect() -> list[dict]:
+def collect_kr() -> list[dict]:
     seen, items = set(), []
     for topic, query in TOPICS:
         for n in news.search(query, display=8, days=2):
@@ -49,6 +62,23 @@ def collect() -> list[dict]:
             items.append({**n, "topic": topic})
     items.sort(key=lambda x: x["published"], reverse=True)
     return items[:40]
+
+
+def collect_us() -> list[dict]:
+    seen, items = set(), []
+    for topic, tickers in US_TOPICS:
+        for ticker in tickers:
+            for n in us_news.for_stock(ticker, display=4):
+                if n["url"] in seen:
+                    continue
+                seen.add(n["url"])
+                items.append({**n, "topic": topic})
+    items.sort(key=lambda x: x["published"], reverse=True)
+    return items[:40]
+
+
+def collect(market_group: str = "KR") -> list[dict]:
+    return collect_us() if market_group == "US" else collect_kr()
 
 
 def tag(items: list[dict]) -> list[dict]:
@@ -74,8 +104,8 @@ def tag(items: list[dict]) -> list[dict]:
     return items
 
 
-def build() -> list[dict]:
-    return tag(collect())
+def build(market_group: str = "KR") -> list[dict]:
+    return tag(collect(market_group))
 
 
 def link_to_watchlist(items: list[dict], watchlist: list[dict]) -> list[dict]:

@@ -199,8 +199,8 @@ def build_site():
                is_latest=False, page="report", indices=smk.get("indices", []), breadth=smk)
 
     render("market.html", "market/index.html", s=latest, page="market")
-    render("newsroom.html", "newsroom/index.html", s=latest,
-           s_other=(latest_us if latest is latest_kr else latest_kr), page="news")
+    render("newsroom.html", "newsroom/index.html", s=latest, s_kr=latest_kr, s_us=latest_us,
+           page="news")
     render("watchlist.html", "watchlist/index.html", s_kr=latest_kr, s_us=latest_us, page="watchlist")
     render("archive.html", "archive/index.html", page="archive")
     render("performance.html", "performance/index.html", book=book, page="track")

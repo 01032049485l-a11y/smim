@@ -57,15 +57,17 @@
     : null;
   document.querySelectorAll('[data-tv][data-tall="1"]').forEach((el) => io0 ? io0.observe(el) : mountTV(el));
 
-  /* 뉴스 섹터 필터 */
+  /* 뉴스 섹터 필터 — 한국/미국 두 목록에 동시에 적용된다 */
   const fb = document.querySelector("[data-filters]");
-  const nl = document.querySelector("[data-newslist]");
-  if (fb && nl) {
+  const nls = document.querySelectorAll("[data-newslist]");
+  if (fb && nls.length) {
     fb.addEventListener("click", (e) => {
       const b = e.target.closest(".fb");
       if (!b) return;
       fb.querySelectorAll(".fb").forEach((x) => x.classList.toggle("on", x === b));
-      nl.querySelectorAll("li").forEach((li) => { li.hidden = !(b.dataset.f === "all" || li.dataset.sector === b.dataset.f); });
+      nls.forEach((nl) => nl.querySelectorAll("li").forEach((li) => {
+        li.hidden = !(b.dataset.f === "all" || li.dataset.sector === b.dataset.f);
+      }));
     });
   }
 

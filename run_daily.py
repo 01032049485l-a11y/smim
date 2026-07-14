@@ -155,7 +155,7 @@ def main() -> int:
         "holdings": [h for h in new_state if h["status"] != "new"],
         "exits": closed,
         "rejected": rejected[:12],
-        "newsroom": newsroom.link_to_watchlist(newsroom.build(), new_state),
+        "newsroom": newsroom.link_to_watchlist(newsroom.build(market_group), new_state),
         "ledger": ledger.stats(),
         "universe_scanned": scanned,
         "ai_calls": ai_calls,
