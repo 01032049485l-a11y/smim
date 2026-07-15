@@ -28,6 +28,11 @@ on:
         default: 'kr'
         type: choice
         options: [kr, us]
+      force:
+        description: '이미 발행된 날도 강제로 다시 발행'
+        required: false
+        default: false
+        type: boolean
 
 concurrency:
   group: smim-publish
@@ -63,7 +68,7 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           SITE_URL: https://smim.kr
-        run: python run_daily.py --market kr
+        run: python run_daily.py --market kr ${{ github.event.inputs.force == 'true' && '--force' || '' }}
 
       - name: Commit snapshot & site
         run: |
@@ -98,7 +103,7 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           SITE_URL: https://smim.kr
-        run: python run_daily.py --market us
+        run: python run_daily.py --market us ${{ github.event.inputs.force == 'true' && '--force' || '' }}
 
       - name: Commit snapshot & site
         run: |
