@@ -91,9 +91,25 @@ MARKET_FLAG = {"KOSPI": "KR", "KOSDAQ": "KR", "NASDAQ": "US", "NYSE": "US", "KR"
 # 이모지 국기는 OS·폰트에 따라 깨지거나(윈도우 다수 환경에서 "KR"/"US" 문자로만 보임)
 # 아예 안 나올 수 있어, 어떤 환경에서도 동일하게 보이도록 SVG를 직접 그린다.
 _FLAG_SVG = {
+    # 4괘(건곤감리)까지 갖춘 정식 태극기. 좌상 건(乾,모두 실선)·우상 감(坎,가운데만 실선)·
+    # 좌하 리(離,가운데만 끊김)·우하 곤(坤,모두 끊김) — 실제 태극기와 같은 배치.
     "KR": (
         '<svg class="fico" viewBox="0 0 24 16" xmlns="http://www.w3.org/2000/svg">'
         '<rect width="24" height="16" rx="2" fill="#fff"/>'
+        '<g fill="#000">'
+        '<rect x="1.8" y="1.4" width="5.4" height="0.8"/>'
+        '<rect x="1.8" y="2.8" width="5.4" height="0.8"/>'
+        '<rect x="1.8" y="4.2" width="5.4" height="0.8"/>'
+        '<rect x="16.8" y="1.4" width="2.05" height="0.8"/><rect x="18.15" y="1.4" width="2.05" height="0.8"/>'
+        '<rect x="16.8" y="2.8" width="5.4" height="0.8"/>'
+        '<rect x="16.8" y="4.2" width="2.05" height="0.8"/><rect x="18.15" y="4.2" width="2.05" height="0.8"/>'
+        '<rect x="1.8" y="11.0" width="5.4" height="0.8"/>'
+        '<rect x="1.8" y="12.4" width="2.05" height="0.8"/><rect x="3.15" y="12.4" width="2.05" height="0.8"/>'
+        '<rect x="1.8" y="13.8" width="5.4" height="0.8"/>'
+        '<rect x="16.8" y="11.0" width="2.05" height="0.8"/><rect x="18.15" y="11.0" width="2.05" height="0.8"/>'
+        '<rect x="16.8" y="12.4" width="2.05" height="0.8"/><rect x="18.15" y="12.4" width="2.05" height="0.8"/>'
+        '<rect x="16.8" y="13.8" width="2.05" height="0.8"/><rect x="18.15" y="13.8" width="2.05" height="0.8"/>'
+        '</g>'
         '<path d="M12 3.8a4.2 4.2 0 0 1 0 8.4 2.1 2.1 0 0 1 0-4.2 2.1 2.1 0 0 0 0-4.2z" fill="#0047a0"/>'
         '<path d="M12 12.2a4.2 4.2 0 0 1 0-8.4 2.1 2.1 0 0 1 0 4.2 2.1 2.1 0 0 0 0 4.2z" fill="#cd2e3a"/>'
         '</svg>'
