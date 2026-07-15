@@ -76,60 +76,66 @@
     : null;
   document.querySelectorAll('[data-tv][data-tall="1"]').forEach((el) => io0 ? io0.observe(el) : mountTV(el));
 
-  /* 뉴스 섹터 필터 — 한국/미국 두 목록에 동시에 적용된다 */
+  /* 뉴스 섹터 필터 + 노출 개수 제한을 하나의 로직으로 합친다.
+     예전엔 필터 클릭과 "노출개수 캡"이 각자 따로 li.hidden을 건드려서 —
+     특정 카테고리를 고르면 그 카테고리에 안 맞는 실시간 유입 기사까지
+     "전체보기"를 누르면 죄다 다시 보이는 버그가 있었다. 이제 필터·캡·
+     실시간 유입(MutationObserver) 전부 recompute() 한 곳에서 계산한다. */
   const fb = document.querySelector("[data-filters]");
   const nls = document.querySelectorAll("[data-newslist]");
+  const NEWS_CAP = 8;
+  let activeFilter = "all";
+  const capOn = new Map();   // nl -> 아직 캡이 걸려있는지
+  const moreBtn = new Map(); // nl -> "전체보기" 버튼 엘리먼트
+
+  function matches(li) {
+    return activeFilter === "all" || li.dataset.sector === activeFilter;
+  }
+
+  function recompute(nl) {
+    const items = Array.from(nl.children);
+    const total = items.filter(matches).length;
+    const capped = capOn.get(nl);
+    let shown = 0;
+    items.forEach((li) => {
+      if (!matches(li)) { li.hidden = true; return; }
+      if (capped && shown >= NEWS_CAP) { li.hidden = true; return; }
+      li.hidden = false;
+      shown++;
+    });
+
+    let btn = moreBtn.get(nl);
+    if (capped && total > NEWS_CAP) {
+      if (!btn) {
+        btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "more-news";
+        btn.addEventListener("click", () => { capOn.set(nl, false); recompute(nl); });
+        nl.insertAdjacentElement("afterend", btn);
+        moreBtn.set(nl, btn);
+      }
+      btn.textContent = `전체보기 (총 ${total}건)`;
+    } else if (btn) {
+      btn.remove();
+      moreBtn.delete(nl);
+    }
+  }
+
+  nls.forEach((nl) => {
+    capOn.set(nl, true);
+    new MutationObserver(() => recompute(nl)).observe(nl, { childList: true });
+    recompute(nl);
+  });
+
   if (fb && nls.length) {
     fb.addEventListener("click", (e) => {
       const b = e.target.closest(".fb");
       if (!b) return;
       fb.querySelectorAll(".fb").forEach((x) => x.classList.toggle("on", x === b));
-      nls.forEach((nl) => nl.querySelectorAll("li").forEach((li) => {
-        li.hidden = !(b.dataset.f === "all" || li.dataset.sector === b.dataset.f);
-      }));
+      activeFilter = b.dataset.f;
+      nls.forEach(recompute);
     });
   }
-
-  /* 뉴스 목록 기본 노출 개수 제한 — 배치 기사든 실시간으로 새로 들어온 기사든
-     합쳐서 항상 최신 N개만 보이게 유지한다. news-live.js가 새 기사를 맨 앞에
-     끼워넣을 때마다(MutationObserver) 다시 계산해서, 실시간 유입으로 계속
-     늘어나 캡이 무의미해지는 문제를 막는다. 필터를 누르면 자동으로 풀린다
-     (필터 로직이 hidden을 다시 계산하므로 — 그때는 관찰을 끊는다). */
-  const NEWS_CAP = 8;
-  nls.forEach((nl) => {
-    let btn = null;
-    let capped = true;
-    const applyCap = () => {
-      if (!capped) return;
-      const items = Array.from(nl.children);
-      items.forEach((li, i) => { li.hidden = i >= NEWS_CAP; });
-      if (items.length > NEWS_CAP) {
-        if (!btn) {
-          btn = document.createElement("button");
-          btn.type = "button";
-          btn.className = "more-news";
-          btn.addEventListener("click", () => {
-            capped = false;
-            observer.disconnect();
-            Array.from(nl.children).forEach((li) => { li.hidden = false; });
-            btn.remove();
-            btn = null;
-          });
-          nl.insertAdjacentElement("afterend", btn);
-        }
-        btn.textContent = `전체보기 (총 ${items.length}건)`;
-      } else if (btn) {
-        btn.remove();
-        btn = null;
-      }
-    };
-    const observer = new MutationObserver(applyCap);
-    observer.observe(nl, { childList: true });
-    applyCap();
-
-    // 필터 버튼을 쓰면 그 로직이 hidden을 직접 계산하므로 캡은 손을 뗀다.
-    if (fb) fb.addEventListener("click", () => { capped = false; observer.disconnect(); }, { once: true });
-  });
 
   /* "AI 해설" 펼치기/접기 — 제목 기반 해설이라 클릭 전엔 숨겨둔다 */
   document.querySelectorAll("[data-ai-explain]").forEach((btn) => {
