@@ -48,8 +48,8 @@
   </div>
 </section>
 
-{% set sectors_kr = s_kr.newsroom|map(attribute='sector')|reject('none')|list if s_kr else [] %}
-{% set sectors_us = s_us.newsroom|map(attribute='sector')|reject('none')|list if s_us else [] %}
+{% set sectors_kr = s_kr.newsroom|selectattr('sector')|map(attribute='sector')|list if s_kr else [] %}
+{% set sectors_us = s_us.newsroom|selectattr('sector')|map(attribute='sector')|list if s_us else [] %}
 {% set sectors = (sectors_kr + sectors_us)|unique|list %}
 {% if sectors %}
 <div class="filters" data-filters>
