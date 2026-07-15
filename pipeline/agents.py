@@ -14,7 +14,7 @@ import anthropic
 
 import config
 
-_client = anthropic.Anthropic(api_key=config.ANTHROPIC_API_KEY, timeout=60.0)
+_client = anthropic.Anthropic(api_key=config.ANTHROPIC_API_KEY, timeout=60.0, max_retries=1)
 
 # 이날 실제로 쓴 토큰 기록 — run_daily.py가 끝날 때 비용을 계산해 보여준다.
 _usage_log: list[dict] = []
@@ -70,10 +70,12 @@ def _parse_json(raw: str) -> dict:
     return json.loads(m.group(0))
 
 
-def _call_json(system: str, user: str, model: str, max_tokens: int = 1600, retries: int = 2) -> dict:
+def _call_json(system: str, user: str, model: str, max_tokens: int = 1600, retries: int = 1) -> dict:
     """호출+JSON 파싱을 묶어서, 파싱 실패도 API 실패와 똑같이 재시도한다.
     AI가 한국어 문장 안에 따옴표를 잘못 이스케이프해 JSON이 깨지는 경우가 실제로 있었다
-    (2026-07-15 실서비스 크래시) — 같은 질문을 다시 하면 대개 정상적인 JSON이 나온다."""
+    (2026-07-15 실서비스 크래시) — 같은 질문을 다시 하면 대개 정상적인 JSON이 나온다.
+    retries=1(기본): _client 자체에도 max_retries=1이 걸려있어(agents.py 상단) 두 겹
+    재시도가 곱해지면 최악의 경우 대기가 너무 길어진다 — 여기서는 낮게 유지한다."""
     last_err: Exception | None = None
     for attempt in range(retries + 1):
         raw = _call(system, user, model, max_tokens=max_tokens)
