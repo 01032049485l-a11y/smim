@@ -18,8 +18,8 @@ DEVELOPER_ROLE = "Founder & Developer"
 # 한국/미국은 완전히 독립된 파이프라인이라 상한도 마켓별로 따로 관리한다.
 MAX_HOLDINGS_KR = 12          # 한국 동시 관찰 최대 종목 수
 MAX_HOLDINGS_US = 12          # 미국 동시 관찰 최대 종목 수
-MAX_NEW_PER_DAY_KR = 2        # 한국 하루 신규 편입 상한 (비용 통제)
-MAX_NEW_PER_DAY_US = 2        # 미국 하루 신규 편입 상한 (비용 통제)
+MAX_NEW_PER_DAY_KR = 4        # 한국 하루 신규 편입 상한 (2026-07-15: 2→4)
+MAX_NEW_PER_DAY_US = 4        # 미국 하루 신규 편입 상한 (2026-07-15: 2→4)
 MIN_CONVICTION = 60        # Judge confidence 이 값 이상만 신규 편입 (2026-07-15 완화: 70→60)
 MAX_HOLD_DAYS = 25         # 이 거래일 넘기면 자동 편출(중기 시계 유지)
 
