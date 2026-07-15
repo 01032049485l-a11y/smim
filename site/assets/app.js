@@ -93,7 +93,7 @@
   /* 뉴스 목록 기본 노출 개수 제한 — 모바일에서 한쪽(주로 한국) 목록이 너무 길어
      반대쪽 목록을 보려면 한참 스크롤해야 하던 문제를 막는다. 필터를 누르면
      걸려있던 제한은 자동으로 풀린다(위 필터 로직이 hidden을 다시 계산하므로). */
-  const NEWS_CAP = 6;
+  const NEWS_CAP = 5;
   nls.forEach((nl) => {
     const items = Array.from(nl.querySelectorAll("li"));
     if (items.length <= NEWS_CAP) return;

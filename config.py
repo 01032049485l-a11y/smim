@@ -20,7 +20,7 @@ MAX_HOLDINGS_KR = 12          # 한국 동시 관찰 최대 종목 수
 MAX_HOLDINGS_US = 12          # 미국 동시 관찰 최대 종목 수
 MAX_NEW_PER_DAY_KR = 2        # 한국 하루 신규 편입 상한 (비용 통제)
 MAX_NEW_PER_DAY_US = 2        # 미국 하루 신규 편입 상한 (비용 통제)
-MIN_CONVICTION = 70        # Judge confidence 이 값 이상만 신규 편입
+MIN_CONVICTION = 60        # Judge confidence 이 값 이상만 신규 편입 (2026-07-15 완화: 70→60)
 MAX_HOLD_DAYS = 25         # 이 거래일 넘기면 자동 편출(중기 시계 유지)
 
 # 목표수익률·손절선은 전 종목에 같은 숫자를 박아두지 않는다 — 종목마다 변동성·기술적
