@@ -1,6 +1,8 @@
 /* SMIM — 실시간 뉴스.
    F5 없이 새 기사가 계속 올라오고, "n분 전 → 방금" 표시도 계속 갱신된다.
-   AI 태깅 없이 원문 제목만 즉시 반영한다 — 정식 섹터·의미 해설은 다음 정기 발행 때 채워진다.
+   /api/live-news가 이제 제목 기반 섹터·영향·짧은 이유를 붙여서 보내준다(45초 엣지 캐시
+   덕분에 방문자 수와 무관하게 태깅 호출은 45초에 한 번뿐 — live-news.js 상단 주석 참고).
+   본문을 읽는 깊은 "AI 해설"은 여전히 다음 정기 발행 때 채워진다.
    워치리스트 종목 연관 표시는 AI 호출 없이 문자열 매칭만으로 그 자리에서 붙인다. */
 (function () {
   "use strict";
@@ -22,9 +24,11 @@
 
   // 이모지 국기는 OS·폰트에 따라 깨지므로 고정 SVG를 직접 그린다 (외부 데이터 아님 — innerHTML 안전).
   const FLAG_SVG = {
-    KR: '<svg class="fico" viewBox="0 0 24 16"><rect width="24" height="16" rx="2" fill="#fff"/><path d="M12 3.8a4.2 4.2 0 0 1 0 8.4 2.1 2.1 0 0 1 0-4.2 2.1 2.1 0 0 0 0-4.2z" fill="#cd2e3a"/><path d="M12 12.2a4.2 4.2 0 0 1 0-8.4 2.1 2.1 0 0 1 0 4.2 2.1 2.1 0 0 0 0 4.2z" fill="#0047a0"/></svg>',
+    KR: '<svg class="fico" viewBox="0 0 24 16"><rect width="24" height="16" rx="2" fill="#fff"/><path d="M12 3.8a4.2 4.2 0 0 1 0 8.4 2.1 2.1 0 0 1 0-4.2 2.1 2.1 0 0 0 0-4.2z" fill="#0047a0"/><path d="M12 12.2a4.2 4.2 0 0 1 0-8.4 2.1 2.1 0 0 1 0 4.2 2.1 2.1 0 0 0 0 4.2z" fill="#cd2e3a"/></svg>',
     US: '<svg class="fico" viewBox="0 0 24 16"><rect width="24" height="16" rx="2" fill="#fff"/><g fill="#B22234"><rect y="0" width="24" height="1.23"/><rect y="2.46" width="24" height="1.23"/><rect y="4.92" width="24" height="1.23"/><rect y="7.38" width="24" height="1.23"/><rect y="9.84" width="24" height="1.23"/><rect y="12.3" width="24" height="1.23"/><rect y="14.76" width="24" height="1.23"/></g><rect width="10" height="8.6" fill="#3C3B6E"/></svg>',
   };
+
+  const IMPACT_KO = { strong_positive: "매우 긍정", positive: "긍정", neutral: "중립", negative: "부정", strong_negative: "매우 부정" };
 
   function relTime(iso) {
     const d = new Date(iso);
@@ -47,9 +51,9 @@
   // innerHTML로 합치지 않고 DOM을 직접 만든다 (XSS 방지).
   function renderItem(n) {
     const li = document.createElement("li");
-    li.className = "ni live-ni";
+    li.className = "ni live-ni" + (n.impact ? ` im-${n.impact}` : "");
     li.dataset.url = n.url;
-    li.dataset.sector = "기타"; // 실시간 항목은 다음 정기 발행 전까지 AI 섹터 분류가 없다
+    li.dataset.sector = n.sector || "기타"; // AI 태깅 실패 시(키 미설정 등) 폴백
 
     const a = document.createElement("a");
     a.className = "nt";
@@ -67,6 +71,18 @@
 
     const meta = document.createElement("div");
     meta.className = "nmeta";
+    if (n.sector) {
+      const sectorChip = document.createElement("span");
+      sectorChip.className = "chipx";
+      sectorChip.textContent = n.sector;
+      meta.appendChild(sectorChip);
+    }
+    if (n.impact) {
+      const impChip = document.createElement("span");
+      impChip.className = `imp im-${n.impact}`;
+      impChip.textContent = IMPACT_KO[n.impact] || "중립";
+      meta.appendChild(impChip);
+    }
     const badge = document.createElement("span");
     badge.className = "chipx live";
     badge.innerHTML = FLAG_SVG[n.market === "US" ? "US" : "KR"];
@@ -77,6 +93,13 @@
     time.textContent = relTime(n.published);
     meta.append(badge, time);
     li.appendChild(meta);
+
+    if (n.why) {
+      const why = document.createElement("p");
+      why.className = "nwhy";
+      why.textContent = n.why;
+      li.appendChild(why);
+    }
 
     const rel = related(n.title);
     if (rel) {

@@ -90,23 +90,45 @@
     });
   }
 
-  /* 뉴스 목록 기본 노출 개수 제한 — 모바일에서 한쪽(주로 한국) 목록이 너무 길어
-     반대쪽 목록을 보려면 한참 스크롤해야 하던 문제를 막는다. 필터를 누르면
-     걸려있던 제한은 자동으로 풀린다(위 필터 로직이 hidden을 다시 계산하므로). */
-  const NEWS_CAP = 5;
+  /* 뉴스 목록 기본 노출 개수 제한 — 배치 기사든 실시간으로 새로 들어온 기사든
+     합쳐서 항상 최신 N개만 보이게 유지한다. news-live.js가 새 기사를 맨 앞에
+     끼워넣을 때마다(MutationObserver) 다시 계산해서, 실시간 유입으로 계속
+     늘어나 캡이 무의미해지는 문제를 막는다. 필터를 누르면 자동으로 풀린다
+     (필터 로직이 hidden을 다시 계산하므로 — 그때는 관찰을 끊는다). */
+  const NEWS_CAP = 8;
   nls.forEach((nl) => {
-    const items = Array.from(nl.querySelectorAll("li"));
-    if (items.length <= NEWS_CAP) return;
-    items.slice(NEWS_CAP).forEach((li) => { li.hidden = true; });
-    const btn = document.createElement("button");
-    btn.type = "button";
-    btn.className = "more-news";
-    btn.textContent = `전체보기 (총 ${items.length}건)`;
-    btn.addEventListener("click", () => {
-      items.forEach((li) => { li.hidden = false; });
-      btn.remove();
-    });
-    nl.insertAdjacentElement("afterend", btn);
+    let btn = null;
+    let capped = true;
+    const applyCap = () => {
+      if (!capped) return;
+      const items = Array.from(nl.children);
+      items.forEach((li, i) => { li.hidden = i >= NEWS_CAP; });
+      if (items.length > NEWS_CAP) {
+        if (!btn) {
+          btn = document.createElement("button");
+          btn.type = "button";
+          btn.className = "more-news";
+          btn.addEventListener("click", () => {
+            capped = false;
+            observer.disconnect();
+            Array.from(nl.children).forEach((li) => { li.hidden = false; });
+            btn.remove();
+            btn = null;
+          });
+          nl.insertAdjacentElement("afterend", btn);
+        }
+        btn.textContent = `전체보기 (총 ${items.length}건)`;
+      } else if (btn) {
+        btn.remove();
+        btn = null;
+      }
+    };
+    const observer = new MutationObserver(applyCap);
+    observer.observe(nl, { childList: true });
+    applyCap();
+
+    // 필터 버튼을 쓰면 그 로직이 hidden을 직접 계산하므로 캡은 손을 뗀다.
+    if (fb) fb.addEventListener("click", () => { capped = false; observer.disconnect(); }, { once: true });
   });
 
   /* "AI 해설" 펼치기/접기 — 제목 기반 해설이라 클릭 전엔 숨겨둔다 */
