@@ -4,5 +4,13 @@ __pycache__/
 .env
 .claude/settings.local.json
 .claude/scheduled_tasks.lock
-data/cache/
+# 종목 리스트 캐시는 저장소에 커밋해둔다 — 외부 조회(fdr.StockListing)가
+# CI에서 타임아웃 나도 이 캐시로 폴백해 파이프라인이 죽지 않는다.
+# (2026-07-15 US 발행이 캐시 부재로 전체 중단됐던 원인)
+data/cache/*
+!data/cache/.gitkeep
+!data/cache/universe.csv
+!data/cache/universe_us.csv
+!data/cache/corp_codes.json
+!data/cache/sec_ticker_cik.json
 data/demo/

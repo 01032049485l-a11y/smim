@@ -67,7 +67,9 @@ def _load_universe_us() -> pd.DataFrame:
     try:
         parts = []
         for exch in ("NASDAQ", "NYSE"):
-            d = _with_timeout(30, fdr.StockListing, exch)
+            # NASDAQ만 약 3,900종목이라 30초로는 늘 타임아웃 났다(2026-07-15).
+            # 90초로 늘려 정상 갱신되게 하고, 그래도 실패하면 아래 except가 캐시로 폴백한다.
+            d = _with_timeout(90, fdr.StockListing, exch)
             need = {"Symbol", "Name"}
             if not need.issubset(d.columns):
                 raise ValueError(f"예상 컬럼 없음({exch}): {list(d.columns)}")
