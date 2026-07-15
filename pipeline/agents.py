@@ -14,7 +14,7 @@ import anthropic
 
 import config
 
-_client = anthropic.Anthropic(api_key=config.ANTHROPIC_API_KEY)
+_client = anthropic.Anthropic(api_key=config.ANTHROPIC_API_KEY, timeout=60.0)
 
 # 이날 실제로 쓴 토큰 기록 — run_daily.py가 끝날 때 비용을 계산해 보여준다.
 _usage_log: list[dict] = []
@@ -68,6 +68,20 @@ def _parse_json(raw: str) -> dict:
     if not m:
         raise AIFailure("JSON 파싱 실패")
     return json.loads(m.group(0))
+
+
+def _call_json(system: str, user: str, model: str, max_tokens: int = 1600, retries: int = 2) -> dict:
+    """호출+JSON 파싱을 묶어서, 파싱 실패도 API 실패와 똑같이 재시도한다.
+    AI가 한국어 문장 안에 따옴표를 잘못 이스케이프해 JSON이 깨지는 경우가 실제로 있었다
+    (2026-07-15 실서비스 크래시) — 같은 질문을 다시 하면 대개 정상적인 JSON이 나온다."""
+    last_err: Exception | None = None
+    for attempt in range(retries + 1):
+        raw = _call(system, user, model, max_tokens=max_tokens)
+        try:
+            return _parse_json(raw)
+        except (json.JSONDecodeError, AIFailure) as e:
+            last_err = e
+    raise AIFailure(f"JSON 파싱 반복 실패: {last_err}")
 
 
 # ── 팩트시트 ────────────────────────────────────────────────
@@ -162,8 +176,8 @@ def analyze(cand: dict, fin: dict, news: list[dict], filings: list[dict],
             calibration: str) -> dict:
     fs = build_factsheet(cand, fin, news, filings)
 
-    bull = _parse_json(_call(BULL_SYS, fs, config.BULL_MODEL))
-    bear = _parse_json(_call(BEAR_SYS, fs, config.BEAR_MODEL))
+    bull = _call_json(BULL_SYS, fs, config.BULL_MODEL)
+    bear = _call_json(BEAR_SYS, fs, config.BEAR_MODEL)
 
     judge_input = (
         f"{fs}\n\n"
@@ -171,7 +185,7 @@ def analyze(cand: dict, fin: dict, news: list[dict], filings: list[dict],
         f"[리스크측 주장]\n{json.dumps(bear, ensure_ascii=False, indent=1)}\n\n"
         f"[캘리브레이션 기록 — 과거 네 판정의 실제 성적]\n{calibration}"
     )
-    judge = _parse_json(_call(JUDGE_SYS, judge_input, config.JUDGE_MODEL, max_tokens=2200))
+    judge = _call_json(JUDGE_SYS, judge_input, config.JUDGE_MODEL, max_tokens=2200)
 
     judge["_bull"] = bull
     judge["_bear"] = bear

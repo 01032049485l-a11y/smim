@@ -6,11 +6,25 @@
 import os
 import time
 import datetime as dt
+import concurrent.futures as cf
 
 import pandas as pd
 import FinanceDataReader as fdr
 
 import config
+
+
+def _with_timeout(timeout, fn, *args, **kwargs):
+    """fdr.DataReader는 timeout 인자가 없어 네트워크가 응답 없이 멈추면 영원히 걸린다
+    (2026-07-15 실제로 발행 파이프라인 전체가 멈춘 원인). 별도 스레드에서 실행하고
+    시간 초과 시 포기한다 — 그 스레드는 못 죽이지만(파이썬 한계), shutdown(wait=False)로
+    기다리지 않고 바로 넘어가 최소한 우리 쪽은 멈추지 않는다."""
+    ex = cf.ThreadPoolExecutor(max_workers=1)
+    fut = ex.submit(fn, *args, **kwargs)
+    try:
+        return fut.result(timeout=timeout)
+    finally:
+        ex.shutdown(wait=False)
 
 UNIVERSE_CACHE_KR = os.path.join(config.CACHE_DIR, "universe.csv")
 UNIVERSE_CACHE_US = os.path.join(config.CACHE_DIR, "universe_us.csv")
@@ -27,7 +41,7 @@ def _is_excluded_us(name: str) -> bool:
 def _load_universe_kr() -> pd.DataFrame:
     os.makedirs(config.CACHE_DIR, exist_ok=True)
     try:
-        df = fdr.StockListing("KRX")
+        df = _with_timeout(30, fdr.StockListing, "KRX")
         df = df[df["Market"].isin(["KOSPI", "KOSDAQ"])].copy()
         need = {"Code", "Name", "Market", "Marcap"}
         if not need.issubset(df.columns):
@@ -53,7 +67,7 @@ def _load_universe_us() -> pd.DataFrame:
     try:
         parts = []
         for exch in ("NASDAQ", "NYSE"):
-            d = fdr.StockListing(exch)
+            d = _with_timeout(30, fdr.StockListing, exch)
             need = {"Symbol", "Name"}
             if not need.issubset(d.columns):
                 raise ValueError(f"예상 컬럼 없음({exch}): {list(d.columns)}")
@@ -89,9 +103,10 @@ def ohlcv(code: str, days: int = 400, fast: bool = False) -> pd.DataFrame | None
     fast=False(기본, 3회 재시도)로 다시 불러 신뢰도를 높인다."""
     start = (dt.date.today() - dt.timedelta(days=days)).isoformat()
     attempts = 1 if fast else 3
+    timeout = 10 if fast else 20
     for attempt in range(attempts):
         try:
-            df = fdr.DataReader(code, start)
+            df = _with_timeout(timeout, fdr.DataReader, code, start)
             if df is None or df.empty:
                 return None
             return df
@@ -124,6 +139,6 @@ def series(code: str, n: int = 90) -> dict:
 def kospi_series(days: int = 400) -> pd.DataFrame | None:
     try:
         start = (dt.date.today() - dt.timedelta(days=days)).isoformat()
-        return fdr.DataReader("KS11", start)
+        return _with_timeout(15, fdr.DataReader, "KS11", start)
     except Exception:
         return None

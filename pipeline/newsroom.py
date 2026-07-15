@@ -17,7 +17,7 @@ import requests
 from bs4 import BeautifulSoup
 
 import config
-from pipeline.agents import _call, _parse_json, AIFailure
+from pipeline.agents import _call_json, AIFailure
 from pipeline.sources import news, us_news, prices
 
 _ARTICLE_HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
@@ -143,7 +143,7 @@ def tag(items: list[dict]) -> list[dict]:
         for i, it in enumerate(items)
     )
     try:
-        res = _parse_json(_call(TAGGER_SYS, listing, config.NEWSTAG_MODEL, max_tokens=16000))
+        res = _call_json(TAGGER_SYS, listing, config.NEWSTAG_MODEL, max_tokens=16000)
     except (AIFailure, json.JSONDecodeError, ValueError) as e:
         print(f"[newsroom] 태깅 실패({e}) — 원문 링크만 발행")
         res = {}
@@ -214,26 +214,39 @@ def resolve_tickers(items: list[dict], market_group: str) -> list[dict]:
         print(f"[newsroom] 종목 매칭용 유니버스 로드 실패({e}) — 이름만 표시")
         norm_index = {}
 
+    # 먼저 이름 -> 매칭 결과만 전부 계산해둔다(가격 조회는 아직 안 함).
+    name_matches: dict[str, dict | None] = {}
+    for it in items:
+        for name in (it.get("tickers") or []):
+            if name not in name_matches:
+                name_matches[name] = _match_name(name, norm_index)
+
+    # 실제 가격 조회가 필요한 종목코드만 모아서 병렬로 한 번에 가져온다 —
+    # 종목마다 순차로 조회하면(뉴스에 언급된 종목이 많을 때) 그만큼 쌓여서 느려진다
+    # (2026-07-15 실서비스에서 순차 조회가 병목이었던 것으로 추정).
+    codes = sorted({m["code"] for m in name_matches.values() if m})
     price_cache: dict[str, dict | None] = {}
 
     def _change(code: str) -> dict | None:
-        if code not in price_cache:
-            df = prices.ohlcv(code, days=10, fast=True)
-            if df is not None and len(df) >= 2:
-                last, prev = float(df["Close"].iloc[-1]), float(df["Close"].iloc[-2])
-                price_cache[code] = {"price": last, "change_pct": round((last / prev - 1) * 100, 2)} if prev else None
-            else:
-                price_cache[code] = None
-        return price_cache[code]
+        df = prices.ohlcv(code, days=10, fast=True)
+        if df is not None and len(df) >= 2:
+            last, prev = float(df["Close"].iloc[-1]), float(df["Close"].iloc[-2])
+            return {"price": last, "change_pct": round((last / prev - 1) * 100, 2)} if prev else None
+        return None
+
+    if codes:
+        with cf.ThreadPoolExecutor(max_workers=10) as ex:
+            for code, chg in zip(codes, ex.map(_change, codes)):
+                price_cache[code] = chg
 
     for it in items:
         resolved = []
         for name in (it.get("tickers") or []):
-            row = _match_name(name, norm_index)
+            row = name_matches.get(name)
             if not row:
                 resolved.append({"name": name, "code": None, "market": None, "change_pct": None})
                 continue
-            chg = _change(row["code"])
+            chg = price_cache.get(row["code"])
             # 화면엔 AI가 뽑은 약칭(예: "한국타이어") 대신 실제 상장명("한국타이어앤테크놀로지")을 보여준다.
             resolved.append({"name": row["name"], "code": row["code"], "market": row["market"],
                               "change_pct": (chg or {}).get("change_pct")})

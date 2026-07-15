@@ -2,15 +2,24 @@ name: SMIM Daily Publish
 
 on:
   schedule:
-    # KST = UTC+9. 한국장 개장 전 3단 트리거 (GitHub 스케줄 지연·누락 대비).
-    - cron: '37 21 * * 0-4'   # KST 06:37 (월~금)
-    - cron: '7 22 * * 0-4'    # KST 07:07 백업
-    - cron: '37 22 * * 0-4'   # KST 07:37 백업
-    # 미국장 개장(09:30 ET) 전 3단 트리거. UTC 11:00~12:00은 서머타임(EDT, UTC-4)·
-    # 표준시(EST, UTC-5) 어느 쪽이든 항상 개장 2~3시간 전이라 DST 전환에 안전하다.
-    - cron: '0 11 * * 1-5'    # 개장 전(서머타임 기준 07:00 ET)
-    - cron: '30 11 * * 1-5'   # 백업
-    - cron: '0 12 * * 1-5'    # 백업
+    # KST = UTC+9. 한국장 개장(09:00 KST)까지 여유를 크게 두고 05:03부터 07:33까지
+    # 30분 간격 6단 트리거. GitHub Actions 스케줄은 정시(:00/:30) 근처에 몰릴 때
+    # 지연이 심해진다는 게 GitHub 공식 안내라(2026-07-15 실제로 2시간 넘게 밀린 적 있음)
+    # 분 단위를 :03/:33처럼 정시에서 살짝 비켜뒀다.
+    - cron: '3 20 * * 0-4'    # KST 05:03 (월~금)
+    - cron: '33 20 * * 0-4'   # KST 05:33 백업
+    - cron: '3 21 * * 0-4'    # KST 06:03 백업
+    - cron: '33 21 * * 0-4'   # KST 06:33 백업
+    - cron: '3 22 * * 0-4'    # KST 07:03 백업
+    - cron: '33 22 * * 0-4'   # KST 07:33 백업
+    # 미국장 개장(09:30 ET) 전 6단 트리거. UTC 9:03~11:33은 서머타임(EDT, UTC-4)·
+    # 표준시(EST, UTC-5) 어느 쪽이든 항상 개장 2시간 이상 전이라 DST 전환에 안전하다.
+    - cron: '3 9 * * 1-5'     # 개장 전(서머타임 기준 05:03 ET)
+    - cron: '33 9 * * 1-5'    # 백업
+    - cron: '3 10 * * 1-5'    # 백업
+    - cron: '33 10 * * 1-5'   # 백업
+    - cron: '3 11 * * 1-5'    # 백업
+    - cron: '33 11 * * 1-5'   # 백업
   workflow_dispatch:          # 폰에서 버튼으로 수동 실행
     inputs:
       market:
@@ -31,7 +40,7 @@ jobs:
   publish-kr:
     if: >
       (github.event_name == 'schedule' &&
-       contains(fromJSON('["37 21 * * 0-4","7 22 * * 0-4","37 22 * * 0-4"]'), github.event.schedule)) ||
+       contains(fromJSON('["3 20 * * 0-4","33 20 * * 0-4","3 21 * * 0-4","33 21 * * 0-4","3 22 * * 0-4","33 22 * * 0-4"]'), github.event.schedule)) ||
       (github.event_name == 'workflow_dispatch' && github.event.inputs.market == 'kr')
     runs-on: ubuntu-latest
     timeout-minutes: 50
@@ -68,7 +77,7 @@ jobs:
   publish-us:
     if: >
       (github.event_name == 'schedule' &&
-       contains(fromJSON('["0 11 * * 1-5","30 11 * * 1-5","0 12 * * 1-5"]'), github.event.schedule)) ||
+       contains(fromJSON('["3 9 * * 1-5","33 9 * * 1-5","3 10 * * 1-5","33 10 * * 1-5","3 11 * * 1-5","33 11 * * 1-5"]'), github.event.schedule)) ||
       (github.event_name == 'workflow_dispatch' && github.event.inputs.market == 'us')
     runs-on: ubuntu-latest
     timeout-minutes: 50

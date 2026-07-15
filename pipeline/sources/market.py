@@ -7,6 +7,8 @@ import math
 
 import FinanceDataReader as fdr
 
+from pipeline.sources.prices import _with_timeout
+
 INDICES = [
     ("KS11", "코스피", "KOSPI"),
     ("KQ11", "코스닥", "KOSDAQ"),
@@ -34,7 +36,7 @@ TREND_LABEL = {"up": "상승세", "down": "하락세", "flat": "보합권"}
 def _quote(symbol: str, label: str, ticker: str) -> dict | None:
     try:
         start = (dt.date.today() - dt.timedelta(days=45)).isoformat()
-        df = fdr.DataReader(symbol, start)
+        df = _with_timeout(15, fdr.DataReader, symbol, start)
         if df is None or len(df) < 2:
             return None
         # 휴장일 등으로 결측치가 섞이면 NaN이 그대로 JSON에 박혀 브라우저에서 파싱이 깨진다.
@@ -62,7 +64,7 @@ def overview() -> list[dict]:
 def breadth_and_sectors() -> dict:
     """등락 종목 수 + 업종별 평균 등락률. 지수보다 정직한 체감 지표."""
     try:
-        df = fdr.StockListing("KRX")
+        df = _with_timeout(20, fdr.StockListing, "KRX")
         df = df[df["Market"].isin(["KOSPI", "KOSDAQ"])].copy()
         col = "ChagesRatio" if "ChagesRatio" in df.columns else None
         if not col:

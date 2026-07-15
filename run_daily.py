@@ -9,6 +9,7 @@ import json
 import argparse
 import traceback
 import datetime as dt
+import concurrent.futures as cf
 
 import requests
 
@@ -35,6 +36,21 @@ def alert(text: str) -> None:
         )
     except Exception as e:
         print(f"[alert] 전송 실패: {e}")
+
+
+def _build_newsroom_safe(market_group: str, watchlist_state: list[dict]) -> list[dict]:
+    """뉴스룸(본문 수집·AI 해설)은 핵심 기능(종목 추천)이 아니다 — 여기서 오래 걸리거나
+    멈춰서 발행 전체를 막으면 안 된다. 시간 제한을 넘기면 빈 뉴스룸으로 그냥 발행한다."""
+    ex = cf.ThreadPoolExecutor(max_workers=1)
+    fut = ex.submit(newsroom.build, market_group)
+    try:
+        items = fut.result(timeout=180)
+    except Exception as e:
+        print(f"[run] 뉴스룸 수집 시간 초과/실패({e}) — 뉴스룸 비우고 발행 계속")
+        return []
+    finally:
+        ex.shutdown(wait=False)
+    return newsroom.link_to_watchlist(items, watchlist_state)
 
 
 def _snapshot_dir(market_group: str) -> str:
@@ -89,6 +105,7 @@ def main() -> int:
             if len(picks) >= max_new:
                 break
 
+            print(f"[run] 후보 분석 시작: {cand['name']} ({cand['code']})")
             ok, flags, filings = universe.risk_gate(cand["code"], corp_map, market_group)
             if not ok:
                 rejected.append({"name": cand["name"], "reason": f"리스크 공시: {', '.join(flags)}"})
@@ -103,10 +120,12 @@ def main() -> int:
                 fin = dart.key_financials(key)
                 homepage = dart.company_profile(key).get("homepage", "")
                 arts = news.for_stock(cand["name"])
+            print(f"[run] 재무·뉴스 수집 완료, AI 분석 시작: {cand['name']}")
 
             try:
                 judge = agents.analyze(cand, fin, arts, filings, calib)
                 ai_calls += 3
+                print(f"[run] AI 분석 완료: {cand['name']} → {judge.get('verdict')} (확신도 {judge.get('confidence')})")
             except agents.AIFailure as e:
                 alert(f"⚠️ SMIM({market_group}): AI 판단 실패 ({cand['name']})\n{e}")
                 return 1  # AI가 죽었으면 아무것도 발행하지 않는다
@@ -155,7 +174,7 @@ def main() -> int:
         "holdings": [h for h in new_state if h["status"] != "new"],
         "exits": closed,
         "rejected": rejected[:12],
-        "newsroom": newsroom.link_to_watchlist(newsroom.build(market_group), new_state),
+        "newsroom": _build_newsroom_safe(market_group, new_state),
         "ledger": ledger.stats(),
         "universe_scanned": scanned,
         "ai_calls": ai_calls,
