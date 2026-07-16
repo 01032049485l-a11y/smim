@@ -7,7 +7,7 @@ import concurrent.futures as cf
 
 import config
 from pipeline import indicators
-from pipeline.sources import prices, dart, us_filings
+from pipeline.sources import prices, dart
 
 
 def prescreen(market_group: str = "KR", limit: int = None) -> list[dict]:
@@ -15,15 +15,14 @@ def prescreen(market_group: str = "KR", limit: int = None) -> list[dict]:
 
     종목당 OHLCV 조회가 네트워크 호출이라 순차 실행하면 미국(6천여 종목) 기준
     30분 넘게 걸린다 — I/O 대기가 대부분이라 스레드풀로 병렬화한다."""
-    is_us = market_group == "US"
     uni = prices.load_universe(market_group)
     if limit:
         uni = uni.head(limit)
     rows = uni.to_dict("records")
     print(f"[universe] 스캔 대상({market_group}) {len(rows)}종목")
 
-    min_trading_value = config.MIN_AVG_TRADING_VALUE_US if is_us else config.MIN_AVG_TRADING_VALUE_KR
-    max_candidates = config.MAX_CANDIDATES_TO_AI_US if is_us else config.MAX_CANDIDATES_TO_AI_KR
+    min_trading_value = config.MIN_AVG_TRADING_VALUE_KR
+    max_candidates = config.MAX_CANDIDATES_TO_AI_KR
 
     def _screen_one(row) -> dict | None:
         code, name = row["Code"], row["Name"]
@@ -35,8 +34,8 @@ def prescreen(market_group: str = "KR", limit: int = None) -> list[dict]:
         # 유동성: 못 사고 못 파는 종목은 아무리 좋아도 무의미
         if (tech["avg_trading_value_20d"] or 0) < min_trading_value:
             return None
-        # 어제 상한가 → 추격매수 유도 금지 (미국은 상하한가 제도가 없어 KR에만 적용)
-        if not is_us and tech["limit_up_yesterday"]:
+        # 어제 상한가 → 추격매수 유도 금지
+        if tech["limit_up_yesterday"]:
             return None
         # 중기 상승 구조 최소 요건
         if not tech["above_ma60"]:
@@ -53,7 +52,7 @@ def prescreen(market_group: str = "KR", limit: int = None) -> list[dict]:
         return {
             "code": code, "name": name, "market": row["Market"],
             "market_group": market_group,
-            "market_cap": int(row["Marcap"]) if "Marcap" in row and not is_us else None,
+            "market_cap": int(row["Marcap"]) if "Marcap" in row else None,
             "tech": tech, "rule_score": _rule_score(tech),
         }
 
@@ -95,10 +94,6 @@ def risk_gate(code: str, corp_map: dict, market_group: str = "KR") -> tuple[bool
     KR은 DART corp_code, US는 SEC CIK를 corp_map에서 찾는다.
     """
     key = corp_map.get(code, "")
-    if market_group == "US":
-        filings = us_filings.recent_filings(key, days=45)
-        flags = us_filings.risk_flags(filings)
-    else:
-        filings = dart.recent_filings(key, days=45)
-        flags = dart.risk_flags(filings)
+    filings = dart.recent_filings(key, days=45)
+    flags = dart.risk_flags(filings)
     return (len(flags) == 0), flags, filings[:5]

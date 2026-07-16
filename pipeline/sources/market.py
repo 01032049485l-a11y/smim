@@ -13,8 +13,6 @@ INDICES = [
     ("KS11", "코스피", "KOSPI"),
     ("KQ11", "코스닥", "KOSDAQ"),
     ("USD/KRW", "원/달러", "USDKRW"),
-    ("US500", "S&P 500", "SPX"),
-    ("IXIC", "나스닥", "NASDAQ"),
 ]
 
 

@@ -10,7 +10,5 @@ __pycache__/
 data/cache/*
 !data/cache/.gitkeep
 !data/cache/universe.csv
-!data/cache/universe_us.csv
 !data/cache/corp_codes.json
-!data/cache/sec_ticker_cik.json
 data/demo/

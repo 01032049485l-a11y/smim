@@ -15,7 +15,7 @@ import requests
 
 import config
 from pipeline import universe, agents, watchlist, ledger, newsroom
-from pipeline.sources import dart, news, market, prices, us_filings, us_news
+from pipeline.sources import dart, news, market, prices
 from render import build
 
 # Windows 콘솔(cp949)은 이모지를 인코딩 못 해 print()가 죽는다.
@@ -121,12 +121,11 @@ def already_published(today: dt.date, market_group: str) -> bool:
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--market", default="kr", choices=["kr", "us"],
-                         help="어느 시장을 발행할지. 한국/미국은 완전히 독립된 실행이다.")
+    parser.add_argument("--market", default="kr", choices=["kr"],
+                         help="발행 시장. 현재는 한국(kr) 전용 — 미국 파이프라인은 제거됨.")
     parser.add_argument("--force", action="store_true")
     args, _ = parser.parse_known_args()
-    market_group = args.market.upper()
-    is_us = market_group == "US"
+    market_group = "KR"
 
     today = dt.datetime.now(config.KST).date()
 
@@ -149,11 +148,11 @@ def main() -> int:
     scanned, ai_calls = 0, 0
     ai_attempts, ai_failures = 0, 0
     ai_error_kind, ai_last_error = "", ""
-    max_holdings = config.MAX_HOLDINGS_US if is_us else config.MAX_HOLDINGS_KR
-    max_new = config.MAX_NEW_PER_DAY_US if is_us else config.MAX_NEW_PER_DAY_KR
+    max_holdings = config.MAX_HOLDINGS_KR
+    max_new = config.MAX_NEW_PER_DAY_KR
     room = max_holdings - len(active)
     if room > 0:
-        corp_map = us_filings.load_ticker_cik_map() if is_us else dart.load_corp_codes()
+        corp_map = dart.load_corp_codes()
         calib = ledger.calibration_note()
         held = {h["code"] for h in active}
 
@@ -172,14 +171,9 @@ def main() -> int:
                 continue
 
             key = corp_map.get(cand["code"], "")
-            if is_us:
-                fin = us_filings.key_financials(key)
-                homepage = ""  # SEC 데이터엔 홈페이지 필드가 없음 — 로고는 모노그램으로 대체
-                arts = us_news.for_stock(cand["code"])
-            else:
-                fin = dart.key_financials(key)
-                homepage = dart.company_profile(key).get("homepage", "")
-                arts = news.for_stock(cand["name"])
+            fin = dart.key_financials(key)
+            homepage = dart.company_profile(key).get("homepage", "")
+            arts = news.for_stock(cand["name"])
             print(f"[run] 재무·뉴스 수집 완료, AI 분석 시작: {cand['name']}")
 
             ai_attempts += 1

@@ -12,9 +12,9 @@
 <section class="block prose">
   <h2 class="sec"><span>Pipeline</span><em>매 거래일 아침 자동 실행</em></h2>
   <ol class="steps">
-    <li><b>Universe</b><p>한국은 코스피·코스닥 전 종목에서 스팩·우선주·ETF·리츠를 제외하고 시가총액 {{ (cfg.MIN_MARKET_CAP/100000000)|int }}억원 이상 · 20일 평균 거래대금 {{ (cfg.MIN_AVG_TRADING_VALUE_KR/100000000)|int }}억원 이상만 남깁니다. 미국은 나스닥·NYSE에서 ETF·펀드를 제외하고 20일 평균 거래대금 ${{ (cfg.MIN_AVG_TRADING_VALUE_US/1000000)|int }}백만 이상만 남깁니다(미국 리스팅엔 시가총액 데이터가 없어 유동성 기준만 적용). 사고팔 수 없는 종목은 아무리 좋아도 의미가 없습니다.</p></li>
-    <li><b>Rule Screen</b><p>60일선 위, 20일선 위 또는 골든크로스, RSI 78 미만, 20일 급등 35% 미만(한국은 전일 상한가도 제외). AI를 부르기 전에 명백히 아닌 것을 규칙으로 먼저 떨어뜨립니다.</p></li>
-    <li><b>Risk Gate</b><p>한국은 DART 전자공시, 미국은 SEC EDGAR를 조회해 유상증자·전환사채(미국은 S-1/S-3 등 희석성 공시)·관리종목·상장폐지·감사의견 관련 공시가 최근 45일 내 있으면 <b>무조건 제외</b>합니다.</p></li>
+    <li><b>Universe</b><p>코스피·코스닥 전 종목에서 스팩·우선주·ETF·리츠를 제외하고 시가총액 {{ (cfg.MIN_MARKET_CAP/100000000)|int }}억원 이상 · 20일 평균 거래대금 {{ (cfg.MIN_AVG_TRADING_VALUE_KR/100000000)|int }}억원 이상만 남깁니다. 사고팔 수 없는 종목은 아무리 좋아도 의미가 없습니다.</p></li>
+    <li><b>Rule Screen</b><p>60일선 위, 20일선 위 또는 골든크로스, RSI 78 미만, 20일 급등 35% 미만, 전일 상한가 제외. AI를 부르기 전에 명백히 아닌 것을 규칙으로 먼저 떨어뜨립니다.</p></li>
+    <li><b>Risk Gate</b><p>DART 전자공시를 조회해 유상증자·전환사채·관리종목·상장폐지·감사의견 관련 공시가 최근 45일 내 있으면 <b>무조건 제외</b>합니다.</p></li>
     <li><b>Three-Agent Review</b><p>같은 데이터를 놓고 <b>매수측</b>이 살 이유만, <b>리스크측</b>이 사지 말 이유만 논증합니다. 그 뒤 <b>심사역</b>이 양측 주장을 모두 읽고 최종 판정합니다. AI에게 한 번만 물으면 반드시 후한 답이 나오기 때문입니다.</p></li>
     <li><b>Numeric Verification</b><p>심사역이 쓴 모든 숫자를 원본 데이터와 대조합니다. 출처가 확인되지 않는 수치가 하나라도 있으면 그 종목은 발행에서 통째로 제외됩니다.</p></li>
     <li><b>Calibration Loop</b><p>과거 확신도 구간별 실제 승률을 매번 심사역에게 제공합니다. 확신도가 결과보다 높았다면 스스로 낮추도록 강제합니다.</p></li>
@@ -30,11 +30,9 @@
 <section class="block prose">
   <h2 class="sec"><span>Data</span><em>출처</em></h2>
   <ul class="rules">
-    <li><b>시세 · 지표</b><span>FinanceDataReader (일봉 종가 기준, 한국·미국 공통)</span></li>
-    <li><b>재무 · 공시 (한국)</b><span>금융감독원 DART 전자공시시스템 Open API</span></li>
-    <li><b>재무 · 공시 (미국)</b><span>SEC EDGAR Open API (company facts / submissions)</span></li>
-    <li><b>뉴스 (한국)</b><span>네이버 뉴스 검색 API — 제목·발행일·원문 링크만 사용하며 본문은 저장·재배포하지 않습니다</span></li>
-    <li><b>뉴스 (미국)</b><span>Yahoo Finance 뉴스 RSS — 마찬가지로 제목·발행일·원문 링크만 사용합니다</span></li>
+    <li><b>시세 · 지표</b><span>FinanceDataReader (일봉 종가 기준)</span></li>
+    <li><b>재무 · 공시</b><span>금융감독원 DART 전자공시시스템 Open API</span></li>
+    <li><b>뉴스</b><span>네이버 뉴스 검색 API — 제목·발행일·원문 링크만 사용하며 본문은 저장·재배포하지 않습니다</span></li>
     <li><b>실시간 차트</b><span>TradingView 임베드 위젯</span></li>
     <li><b>분석</b><span>Anthropic Claude — Bull/Bear · {{ latest.models.bull if latest.models else '—' }} · Judge · {{ latest.models.judge if latest.models else '—' }} · 뉴스 태깅 · {{ latest.models.news if latest.models else '—' }}</span></li>
   </ul>

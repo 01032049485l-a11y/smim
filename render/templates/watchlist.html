@@ -52,18 +52,7 @@
 {% endmacro %}
 
 {% block content %}
-<div class="market-tabs" data-tabs>
-  <div class="tabbar mtabbar">
-    <button class="tb on" data-tab="kr">{{ flag_svg('KR') }} 한국</button>
-    <button class="tb" data-tab="us">{{ flag_svg('US') }} 미국</button>
-  </div>
-  <div class="tp on" data-panel="kr">
-    {% if s_kr %}{{ watch_body(s_kr, 'KR') }}{% else %}<p class="empty">아직 발행된 한국 워치리스트가 없습니다.</p>{% endif %}
-  </div>
-  <div class="tp" data-panel="us">
-    {% if s_us %}{{ watch_body(s_us, 'US') }}{% else %}<p class="empty">아직 발행된 미국 워치리스트가 없습니다.</p>{% endif %}
-  </div>
-</div>
+{% if s_kr %}{{ watch_body(s_kr, 'KR') }}{% else %}<p class="empty">아직 발행된 워치리스트가 없습니다.</p>{% endif %}
 {% endblock %}
 
 {% block rail %}

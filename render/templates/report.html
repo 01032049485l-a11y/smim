@@ -196,18 +196,7 @@
 
 {% block content %}
 {% if is_latest %}
-<div class="market-tabs" data-tabs>
-  <div class="tabbar mtabbar">
-    <button class="tb on" data-tab="kr">{{ flag_svg('KR') }} 한국</button>
-    <button class="tb" data-tab="us">{{ flag_svg('US') }} 미국</button>
-  </div>
-  <div class="tp on" data-panel="kr">
-    {% if s_kr %}{{ market_body(s_kr, 'KR') }}{% else %}<p class="empty">아직 발행된 한국 리포트가 없습니다.</p>{% endif %}
-  </div>
-  <div class="tp" data-panel="us">
-    {% if s_us %}{{ market_body(s_us, 'US') }}{% else %}<p class="empty">아직 발행된 미국 리포트가 없습니다.</p>{% endif %}
-  </div>
-</div>
+  {% if s_kr %}{{ market_body(s_kr, 'KR') }}{% else %}<p class="empty">아직 발행된 리포트가 없습니다.</p>{% endif %}
 {% else %}
 {{ market_body(s, market_group) }}
 {% endif %}

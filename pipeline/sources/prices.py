@@ -27,15 +27,10 @@ def _with_timeout(timeout, fn, *args, **kwargs):
         ex.shutdown(wait=False)
 
 UNIVERSE_CACHE_KR = os.path.join(config.CACHE_DIR, "universe.csv")
-UNIVERSE_CACHE_US = os.path.join(config.CACHE_DIR, "universe_us.csv")
 
 
 def _is_excluded_kr(name: str) -> bool:
     return any(p in name for p in config.EXCLUDE_NAME_PATTERNS) or name.endswith("우")
-
-
-def _is_excluded_us(name: str) -> bool:
-    return any(p in name for p in config.EXCLUDE_NAME_PATTERNS_US)
 
 
 def _load_universe_kr() -> pd.DataFrame:
@@ -61,41 +56,8 @@ def _load_universe_kr() -> pd.DataFrame:
     return df.reset_index(drop=True)
 
 
-def _load_universe_us() -> pd.DataFrame:
-    """나스닥+뉴욕증권거래소. 이 리스팅엔 시가총액 컬럼이 없어 1차 필터에서 시총 조건은 적용하지 않는다."""
-    os.makedirs(config.CACHE_DIR, exist_ok=True)
-    try:
-        parts = []
-        for exch in ("NASDAQ", "NYSE"):
-            # NASDAQ만 약 3,900종목이라 30초로는 늘 타임아웃 났다(2026-07-15).
-            # 90초로 늘려 정상 갱신되게 하고, 그래도 실패하면 아래 except가 캐시로 폴백한다.
-            d = _with_timeout(90, fdr.StockListing, exch)
-            need = {"Symbol", "Name"}
-            if not need.issubset(d.columns):
-                raise ValueError(f"예상 컬럼 없음({exch}): {list(d.columns)}")
-            d = d[["Symbol", "Name", "Industry"]].copy() if "Industry" in d.columns else d[["Symbol", "Name"]].copy()
-            d["Market"] = exch
-            parts.append(d)
-        df = pd.concat(parts, ignore_index=True).drop_duplicates(subset=["Symbol"])
-        if "Industry" in df.columns:
-            df = df.dropna(subset=["Industry"])  # 산업분류 없는 행은 ETF·펀드일 가능성이 높음
-        df = df.rename(columns={"Symbol": "Code"})[["Code", "Name", "Market"]].dropna()
-        df.to_csv(UNIVERSE_CACHE_US, index=False)
-        print(f"[prices] 유니버스 갱신(US): {len(df)}종목")
-    except Exception as e:
-        print(f"[prices] 유니버스 조회 실패(US, {e}) → 캐시 사용")
-        if not os.path.exists(UNIVERSE_CACHE_US):
-            raise RuntimeError("US 유니버스 캐시도 없음. 파이프라인 중단.")
-        df = pd.read_csv(UNIVERSE_CACHE_US, dtype={"Code": str})
-
-    df = df[~df["Name"].apply(_is_excluded_us)]
-    return df.reset_index(drop=True)
-
-
 def load_universe(market_group: str = "KR") -> pd.DataFrame:
-    """market_group: 'KR'(코스피+코스닥) | 'US'(나스닥+NYSE). 실패 시 커밋된 캐시로 폴백."""
-    if market_group == "US":
-        return _load_universe_us()
+    """코스피+코스닥. 실패 시 저장소에 커밋된 캐시로 폴백. (미국 유니버스는 제거됨)"""
     return _load_universe_kr()
 
 
