@@ -120,6 +120,7 @@ def admit(active: list[dict], picks: list[dict], today: dt.date, market_group: s
             "status": "new",
             "verdict": p["judge"]["verdict"],
             "confidence": p["judge"]["confidence"],
+            "sector": p["judge"].get("sector"),
             "target_return_pct": _clamp(p["judge"].get("target_return_pct"),
                                          *config.TAKE_PROFIT_RANGE, config.TAKE_PROFIT_RANGE[0]),
             "stop_loss_pct": _clamp(p["judge"].get("stop_loss_pct"),

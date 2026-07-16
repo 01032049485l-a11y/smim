@@ -17,9 +17,9 @@
     list.querySelectorAll("li[data-url]").forEach((li) => seen.add(li.dataset.url));
   });
 
-  const watchNames = {};
+  const watchStocks = [];
   document.querySelectorAll("[data-watch-name]").forEach((el) => {
-    watchNames[el.dataset.watchName] = el.dataset.watchCode;
+    watchStocks.push({ name: el.dataset.watchName, code: el.dataset.watchCode, sector: el.dataset.watchSector || "" });
   });
 
   // 이모지 국기는 OS·폰트에 따라 깨지므로 고정 SVG를 직접 그린다 (외부 데이터 아님 — innerHTML 안전).
@@ -40,11 +40,14 @@
     return `${Math.floor(sec / 86400)}일 전`;
   }
 
-  function related(title) {
-    for (const name in watchNames) {
-      if (name && title.includes(name)) return { name, code: watchNames[name] };
-    }
-    return null;
+  // 기사 제목에 워치리스트 종목명이 그대로 나오면 그게 가장 확실한 연관 종목이고,
+  // 그게 없으면 AI가 붙인 뉴스 섹터와 같은 섹터의 워치리스트 종목들을 대신 보여준다
+  // (테마 매칭 — 추가 AI 호출 없이 이미 있는 sector 태그로만 계산).
+  function related(n) {
+    const byName = watchStocks.find((s) => s.name && n.title.includes(s.name));
+    if (byName) return [byName];
+    if (!n.sector) return [];
+    return watchStocks.filter((s) => s.sector && s.sector === n.sector).slice(0, 4);
   }
 
   // 뉴스 제목·링크는 외부 API(네이버·Yahoo)에서 온 신뢰할 수 없는 문자열이라
@@ -101,15 +104,17 @@
       li.appendChild(why);
     }
 
-    const rel = related(n.title);
-    if (rel) {
+    const rel = related(n);
+    if (rel.length) {
       const p = document.createElement("p");
       p.className = "nlink";
       p.append("Watchlist 연관");
-      const link = document.createElement("a");
-      link.href = `/stock/${rel.code}/`;
-      link.textContent = rel.name;
-      p.appendChild(link);
+      rel.forEach((r) => {
+        const link = document.createElement("a");
+        link.href = `/stock/${r.code}/`;
+        link.textContent = r.name;
+        p.appendChild(link);
+      });
       li.appendChild(p);
     }
     return li;

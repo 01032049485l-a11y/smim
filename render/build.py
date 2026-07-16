@@ -190,9 +190,10 @@ def build_site():
 
     os.makedirs(config.SITE_DIR, exist_ok=True)
     static_dst = os.path.join(config.SITE_DIR, "assets")
-    if os.path.isdir(static_dst):
-        shutil.rmtree(static_dst)
-    shutil.copytree(os.path.join(HERE, "static"), static_dst)
+    # rmtree + copytree는 OneDrive가 site/assets를 동기화하려고 핸들을 쥐고 있을 때
+    # 디렉터리 삭제(rmdir) 단계에서 PermissionError로 죽는다(2026-07-15 로컬 빌드 실패 원인).
+    # dirs_exist_ok로 디렉터리를 지우지 않고 파일만 덮어쓰면 그 락을 건드리지 않는다.
+    shutil.copytree(os.path.join(HERE, "static"), static_dst, dirs_exist_ok=True)
 
     latest = snaps[0] if snaps else None
     mk = (latest or {}).get("market", {}) or {}

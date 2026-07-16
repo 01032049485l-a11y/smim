@@ -39,42 +39,18 @@
   sc && sc.addEventListener("click", () => setDrawer(false));
   document.addEventListener("keydown", (e) => e.key === "Escape" && setDrawer(false));
 
-  /* 차트 탭 */
+  /* 차트 탭 (실시간 탭은 TradingView 무료 임베드가 국내 개별종목 실시간 데이터를
+     제한해 애플 등 엉뚱한 심볼로 대체 표시되는 문제가 있어, 인라인 위젯 대신
+     TradingView 페이지로 바로 연결하는 링크로 대체했다 — mountTV()는 더 이상 없음) */
   document.querySelectorAll("[data-tabs]").forEach((box) => {
     box.querySelectorAll(".tb").forEach((btn) => {
       btn.addEventListener("click", () => {
         const t = btn.dataset.tab;
         box.querySelectorAll(".tb").forEach((b) => b.classList.toggle("on", b === btn));
         box.querySelectorAll(".tp").forEach((p) => p.classList.toggle("on", p.dataset.panel === t));
-        if (t === "live") mountTV(box.querySelector("[data-tv]"));
       });
     });
   });
-
-  function mountTV(el) {
-    if (!el || el.dataset.mounted) return;
-    el.dataset.mounted = "1";
-    const tall = el.dataset.tall === "1";
-    el.innerHTML = "";
-    const h = document.createElement("div");
-    h.className = "tv-widget";
-    h.style.height = tall ? "560px" : "400px";
-    el.appendChild(h);
-    const s = document.createElement("script");
-    s.src = "https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js";
-    s.async = true;
-    s.innerHTML = JSON.stringify({
-      symbol: "KRX:" + el.dataset.tv, interval: "D", timezone: "Asia/Seoul",
-      theme: "light", style: "1", locale: "kr", hide_side_toolbar: !tall,
-      allow_symbol_change: false, withdateranges: true, autosize: true,
-      studies: tall ? ["MASimple@tv-basicstudies", "RSI@tv-basicstudies"] : ["MASimple@tv-basicstudies"],
-    });
-    h.appendChild(s);
-  }
-  const io0 = "IntersectionObserver" in window
-    ? new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { mountTV(e.target); io0.unobserve(e.target); } }), { rootMargin: "300px" })
-    : null;
-  document.querySelectorAll('[data-tv][data-tall="1"]').forEach((el) => io0 ? io0.observe(el) : mountTV(el));
 
   /* 뉴스 섹터 필터 + 노출 개수 제한을 하나의 로직으로 합친다.
      예전엔 필터 클릭과 "노출개수 캡"이 각자 따로 li.hidden을 건드려서 —

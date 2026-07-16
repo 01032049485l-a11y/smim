@@ -76,7 +76,7 @@
   <h4>Watchlist</h4>
   <ul class="kv">
     {% for h in (s_kr.new_entries + s_kr.holdings if s_kr else []) %}
-    <li data-watch-name="{{ h.name }}" data-watch-code="{{ h.code }}"><a href="/stock/{{ h.code }}/"><span>{{ h.name }}</span></a><b class="{{ h.return_pct|sign }}">{{ h.return_pct|pct }}</b></li>
+    <li data-watch-name="{{ h.name }}" data-watch-code="{{ h.code }}" data-watch-sector="{{ h.sector or '' }}"><a href="/stock/{{ h.code }}/"><span>{{ h.name }}</span></a><b class="{{ h.return_pct|sign }}">{{ h.return_pct|pct }}</b></li>
     {% endfor %}
   </ul>
   <a class="rlink" href="/watchlist/">Watchlist 전체 →</a>
