@@ -22,7 +22,10 @@ async function tagWithAI(env, items) {
   // 태깅이 느려지면(오늘 실제로 배치 태깅에서 몇 분씩 걸리는 걸 겪었다) 이 엔드포인트
   // 응답 전체가 느려져서 "실시간"이라는 이름이 무색해진다. 4초 안에 안 끝나면
   // 그냥 포기하고 원문 제목만 즉시 내보낸다 — 다음 폴링(60초 뒤)에서 다시 시도된다.
-  if (!env.ANTHROPIC_API_KEY || !items.length) return items;
+  // _debug: 2026-07-16 실시간 태깅이 계속 비어 나오는 원인 추적용 임시 필드. 원인 확인되면 제거.
+  if (!env.ANTHROPIC_API_KEY || !items.length) {
+    return { items, _debug: { hasKey: !!env.ANTHROPIC_API_KEY, itemCount: items.length, stage: "skip_no_key_or_items" } };
+  }
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), 4000);
   try {
@@ -42,20 +45,24 @@ async function tagWithAI(env, items) {
       }),
       signal: controller.signal,
     });
-    if (!r.ok) return items;
+    if (!r.ok) {
+      const bodyText = await r.text().catch(() => "");
+      return { items, _debug: { stage: "anthropic_not_ok", status: r.status, body: bodyText.slice(0, 500) } };
+    }
     const data = await r.json();
     const text = (data.content || []).map((b) => b.text || "").join("");
     const m = text.match(/\{[\s\S]*\}/);
-    if (!m) return items;
+    if (!m) return { items, _debug: { stage: "no_json_in_response", raw: text.slice(0, 500) } };
     const parsed = JSON.parse(m[0]);
     const byI = {};
     for (const x of parsed.items || []) byI[x.i] = x;
-    return items.map((it, i) => {
+    const tagged = items.map((it, i) => {
       const t = byI[i];
       return t ? { ...it, sector: t.sector, impact: t.impact, why: t.why } : it;
     });
+    return { items: tagged, _debug: { stage: "ok" } };
   } catch (e) {
-    return items; // 타임아웃/실패해도 원문 제목·링크는 그대로 즉시 내보낸다
+    return { items, _debug: { stage: "exception", message: String(e && e.message || e) } };
   } finally {
     clearTimeout(timer);
   }
@@ -120,9 +127,9 @@ async function yahooNews() {
 export async function onRequest({ env }) {
   const [kr, us] = await Promise.all([naverNews(env).catch(() => []), yahooNews().catch(() => [])]);
   const items = [...kr, ...us].sort((a, b) => new Date(b.published) - new Date(a.published)).slice(0, 20);
-  const tagged = await tagWithAI(env, items);
+  const { items: tagged, _debug } = await tagWithAI(env, items);
   return new Response(
-    JSON.stringify({ ts: Date.now(), items: tagged }),
+    JSON.stringify({ ts: Date.now(), items: tagged, _debug }),
     {
       headers: {
         "content-type": "application/json; charset=utf-8",
