@@ -119,9 +119,8 @@ def _call_json(system: str, user: str, model: str, max_tokens: int = 1600, retri
 # ── 팩트시트 ────────────────────────────────────────────────
 def build_factsheet(cand: dict, fin: dict, news: list[dict], filings: list[dict]) -> str:
     t = cand["tech"]
-    is_us = cand.get("market_group") == "US"
-    money = (lambda v: f"${v:,.0f}") if is_us else (lambda v: f"{v:,.0f}원")
-    filing_source = "SEC EDGAR" if is_us else "DART"
+    money = lambda v: f"{v:,.0f}원"
+    filing_source = "DART"
     cap = money(cand["market_cap"]) if cand.get("market_cap") is not None else "정보 없음"
     lines = [
         f"종목: {cand['name']} ({cand['code']}, {cand['market']})",

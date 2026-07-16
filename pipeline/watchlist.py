@@ -93,8 +93,8 @@ def refresh(today: dt.date, market_group: str = "KR") -> tuple[list[dict], list[
 def admit(active: list[dict], picks: list[dict], today: dt.date, market_group: str = "KR") -> list[dict]:
     """빈 자리만큼 신규 편입. 이미 들고 있는 종목은 중복 편입하지 않는다."""
     held = {h["code"] for h in active}
-    max_holdings = config.MAX_HOLDINGS_US if market_group == "US" else config.MAX_HOLDINGS_KR
-    max_new = config.MAX_NEW_PER_DAY_US if market_group == "US" else config.MAX_NEW_PER_DAY_KR
+    max_holdings = config.MAX_HOLDINGS_KR
+    max_new = config.MAX_NEW_PER_DAY_KR
     room = min(max_holdings - len(active), max_new)
     added = []
     for p in picks:
