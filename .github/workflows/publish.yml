@@ -70,7 +70,10 @@ jobs:
           SITE_URL: https://smim.kr
         run: python run_daily.py --market kr ${{ github.event.inputs.force == 'true' && '--force' || '' }}
 
+      # AI 전면 실패 시 파이프라인은 exit 1(빨간불 → GitHub 실패 메일)로 끝나지만,
+      # '분석 실패' 배너가 담긴 스냅샷·사이트는 반드시 커밋돼야 하므로 always()로 실행한다.
       - name: Commit snapshot & site
+        if: always()
         run: |
           git config user.name  "smim-bot"
           git config user.email "bot@smim.kr"
@@ -105,7 +108,10 @@ jobs:
           SITE_URL: https://smim.kr
         run: python run_daily.py --market us ${{ github.event.inputs.force == 'true' && '--force' || '' }}
 
+      # AI 전면 실패 시 파이프라인은 exit 1(빨간불 → GitHub 실패 메일)로 끝나지만,
+      # '분석 실패' 배너가 담긴 스냅샷·사이트는 반드시 커밋돼야 하므로 always()로 실행한다.
       - name: Commit snapshot & site
+        if: always()
         run: |
           git config user.name  "smim-bot"
           git config user.email "bot@smim.kr"

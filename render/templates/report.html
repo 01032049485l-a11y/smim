@@ -4,6 +4,19 @@
 
 {% macro market_body(s, market_group) %}
 {% set primary = s.market.indices[3 if market_group == 'US' else 0] if s.market and s.market.indices and s.market.indices|length > 3 else (s.market.indices[0] if s.market and s.market.indices else none) %}
+{% if s and s.status == 'ai_failure' %}
+{% set d = s.status_detail or {} %}
+<div class="ai-fail" role="alert" style="margin:16px 0;padding:18px 20px;border:2px solid #cd2e3a;border-radius:12px;background:rgba(205,46,58,.08);line-height:1.55;">
+  <strong style="display:block;font-size:1.15rem;color:#cd2e3a;margin-bottom:6px;">
+    ⚠️ 오늘은 업데이트 없음 — AI 분석 실패{% if d.consecutive_failure_days and d.consecutive_failure_days >= 2 %} · {{ d.consecutive_failure_days }}일째 연속{% endif %}
+  </strong>
+  <span>
+    오늘 AI 분석이 {{ d.ai_failures or 0 }}/{{ d.ai_attempts or 0 }}건 실패해 추천을 발행하지 못했습니다.
+    이건 <b>“추천할 종목이 없는 날”이 아니라 시스템 오류</b>입니다{% if d.ai_error_kind == 'billing' %}(AI 결제/크레딧 상태 확인 필요){% elif d.ai_error_kind == 'auth' %}(AI API 키 확인 필요){% endif %}.
+    문제가 복구되면 자동으로 다시 발행됩니다.
+  </span>
+</div>
+{% endif %}
 <section class="hero">
   {% if primary and primary.series %}
   <div class="hero-art" aria-hidden="true">{{ chart_spark(primary.series, 640, 260) }}</div>
@@ -176,7 +189,7 @@
 </section>
 {% endif %}
 
-{% if not s.new_entries and not s.holdings and not s.exits and not s.rejected %}
+{% if not s.new_entries and not s.holdings and not s.exits and not s.rejected and s.status != 'ai_failure' %}
 <p class="empty">아직 발행된 리포트가 없습니다.</p>
 {% endif %}
 {% endmacro %}

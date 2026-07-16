@@ -38,6 +38,54 @@ def alert(text: str) -> None:
         print(f"[alert] 전송 실패: {e}")
 
 
+def _health_path() -> str:
+    return os.path.join(config.DATA_DIR, "ai_health.json")
+
+
+def load_health() -> dict:
+    try:
+        with open(_health_path(), encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return {}
+
+
+def save_health(h: dict) -> None:
+    try:
+        with open(_health_path(), "w", encoding="utf-8") as f:
+            json.dump(h, f, ensure_ascii=False, indent=1)
+    except Exception as e:
+        print(f"[run] ai_health 저장 실패: {e}")
+
+
+def print_big_summary(title: str, lines: list[str]) -> None:
+    """스크립트 맨 끝에, 로그를 대충 훑어도 눈에 띄게 큰 배너로 요약을 찍는다.
+    (한글은 폭 계산이 어긋나 정렬 대신 굵은 구분선으로 시각적 무게를 준다.)"""
+    bar = "═" * 64
+    print("\n" + bar)
+    print(f"  {title}")
+    print(bar)
+    for ln in lines:
+        print(f"  {ln}")
+    print(bar + "\n")
+
+
+def write_step_summary(title: str, lines: list[str]) -> None:
+    """GitHub Actions 실행 페이지 상단에 뜨는 요약($GITHUB_STEP_SUMMARY).
+    로그를 파고들지 않아도 실행 화면에서 바로 결과를 볼 수 있다."""
+    p = os.environ.get("GITHUB_STEP_SUMMARY")
+    if not p:
+        return
+    try:
+        with open(p, "a", encoding="utf-8") as f:
+            f.write(f"## {title}\n\n")
+            for ln in lines:
+                f.write(f"- {ln}\n")
+            f.write("\n")
+    except Exception:
+        pass
+
+
 def _build_newsroom_safe(market_group: str, watchlist_state: list[dict]) -> list[dict]:
     """뉴스룸(본문 수집·AI 해설)은 핵심 기능(종목 추천)이 아니다 — 여기서 오래 걸리거나
     멈춰서 발행 전체를 막으면 안 된다. 시간 제한을 넘기면 빈 뉴스룸으로 그냥 발행한다."""
@@ -58,7 +106,17 @@ def _snapshot_dir(market_group: str) -> str:
 
 
 def already_published(today: dt.date, market_group: str) -> bool:
-    return os.path.exists(os.path.join(_snapshot_dir(market_group), f"{today.isoformat()}.json"))
+    """오늘 스냅샷이 이미 있으면 중복 실행을 막는다. 단, 'ai_failure'로 찍힌 스냅샷은
+    진짜 발행이 아니라 실패 표식이므로 아직 발행 안 된 것으로 취급한다 —
+    크레딧 복구 후 다음 실행(백업 크론 등)이 자동으로 다시 분석해 진짜 리포트로 덮어쓴다."""
+    path = os.path.join(_snapshot_dir(market_group), f"{today.isoformat()}.json")
+    if not os.path.exists(path):
+        return False
+    try:
+        with open(path, encoding="utf-8") as f:
+            return json.load(f).get("status") != "ai_failure"
+    except Exception:
+        return True
 
 
 def main() -> int:
@@ -89,6 +147,8 @@ def main() -> int:
     # 2) 자리가 있을 때만 신규 후보 탐색 (AI 비용 절약)
     picks, rejected = [], []
     scanned, ai_calls = 0, 0
+    ai_attempts, ai_failures = 0, 0
+    ai_error_kind, ai_last_error = "", ""
     max_holdings = config.MAX_HOLDINGS_US if is_us else config.MAX_HOLDINGS_KR
     max_new = config.MAX_NEW_PER_DAY_US if is_us else config.MAX_NEW_PER_DAY_KR
     room = max_holdings - len(active)
@@ -122,13 +182,22 @@ def main() -> int:
                 arts = news.for_stock(cand["name"])
             print(f"[run] 재무·뉴스 수집 완료, AI 분석 시작: {cand['name']}")
 
+            ai_attempts += 1
             try:
                 judge = agents.analyze(cand, fin, arts, filings, calib)
                 ai_calls += 3
                 print(f"[run] AI 분석 완료: {cand['name']} → {judge.get('verdict')} (확신도 {judge.get('confidence')})")
             except agents.AIFailure as e:
-                alert(f"⚠️ SMIM({market_group}): AI 판단 실패 ({cand['name']})\n{e}")
-                return 1  # AI가 죽었으면 아무것도 발행하지 않는다
+                ai_failures += 1
+                ai_last_error = str(e)
+                ai_error_kind = getattr(e, "kind", "unknown")
+                print(f"[run] ⚠️ AI 분석 실패: {cand['name']} ({ai_error_kind}) — {e}")
+                # 결제·인증 오류는 모든 종목에서 똑같이 실패한다 — 남은 후보를 태우지 말고 즉시 중단.
+                # (예전엔 첫 실패에서 바로 return 1 해서 실패율/원인 집계도 못 하고 조용히 묻혔다)
+                if ai_error_kind in ("billing", "auth"):
+                    print(f"[run] ⚠️ 시스템성 오류({ai_error_kind}) — 남은 후보 분석 중단")
+                    break
+                continue
 
             if judge["unverified_numbers"]:
                 rejected.append({"name": cand["name"],
@@ -145,7 +214,30 @@ def main() -> int:
     else:
         print(f"[run] 워치리스트 만석({market_group}) — 신규 편입 없음")
 
-    # 3) 편입 & 저장
+    # 2.5) AI 분석이 (거의) 전부 실패했는지 판정 — 크레딧 소진 같은 시스템성 오류가
+    #      "후보 0개"로 조용히 묻히지 않게 하는 게 이 블록의 핵심.
+    ai_fail_rate = (ai_failures / ai_attempts) if ai_attempts else 0.0
+    ai_total_failure = ai_attempts > 0 and ai_fail_rate >= config.AI_FAILURE_ABORT_RATE
+
+    # 연속 실패일 집계 (같은 날 백업 크론 재실행은 카운트 유지, 날짜가 바뀌면 +1, 성공하면 리셋)
+    health = load_health()
+    if ai_total_failure:
+        prev = health.get(market_group, {})
+        streak = prev.get("consecutive_failures", 0)
+        if prev.get("last_failure_date") != today.isoformat():
+            streak += 1
+        health[market_group] = {"consecutive_failures": streak,
+                                 "last_failure_date": today.isoformat(),
+                                 "last_kind": ai_error_kind or "unknown"}
+    else:
+        streak = 0
+        health[market_group] = {"consecutive_failures": 0,
+                                 "last_success_date": today.isoformat(),
+                                 **({"last_failure_date": health.get(market_group, {}).get("last_failure_date")}
+                                    if health.get(market_group, {}).get("last_failure_date") else {})}
+    save_health(health)
+
+    # 3) 편입 & 저장 (분석 전면 실패면 picks는 비어 있어 신규 편입도 0)
     added = watchlist.admit(active, picks, today, market_group)
     new_state = active + added
     watchlist.save(new_state, market_group)
@@ -163,6 +255,12 @@ def main() -> int:
         "report_id": f"SMIM-{market_group}-{today.strftime('%Y-%m%d')}",
         "issue_no": len(os.listdir(snap_dir)) + 1,
         "published_at": dt.datetime.now(config.KST).isoformat(timespec="seconds"),
+        "status": "ai_failure" if ai_total_failure else "ok",
+        "status_detail": ({
+            "ai_attempts": ai_attempts, "ai_failures": ai_failures,
+            "ai_fail_rate": round(ai_fail_rate, 2), "ai_error_kind": ai_error_kind,
+            "ai_last_error": ai_last_error[:300], "consecutive_failure_days": streak,
+        } if (ai_failures or ai_total_failure) else None),
         "models": {
             "bull": config.BULL_MODEL,
             "bear": config.BEAR_MODEL,
@@ -185,14 +283,49 @@ def main() -> int:
         json.dump(snapshot, f, ensure_ascii=False, indent=1)
     print(f"[run] 스냅샷 저장: {path}")
 
-    # 비용 보고는 빌드보다 먼저 — 빌드가 실패해도(예: 파일 잠금) 이미 쓴 비용은 반드시 알려야 한다.
     usage = snapshot["ai_usage"]
     print(f"[run] 토큰 사용: {usage['by_model']} · 예상 비용 ${usage['estimated_cost_usd']}")
-    alert(f"✅ SMIM {market_group} {today} 발행 완료\n신규 {len(added)} · 관찰 {len(active)} · 편출 {len(closed)}\n"
-          f"토큰 비용 ${usage['estimated_cost_usd']}")
 
-    # 6) 사이트 빌드 (한국·미국 스냅샷을 모두 모아 다시 렌더)
+    # 6) 사이트 빌드 (실패 상태여도 빌드해서 '분석 실패' 배너가 사이트에 뜨게 한다)
     build.build_site()
+
+    # 7) 결과 요약 — 로그 맨 끝 큰 배너 + GitHub 실행 요약 + 별도 알림(텔레그램).
+    #    전면 실패면 런을 실패(exit 1)로 끝내 GitHub가 실패 메일을 자동 발송하게 한다.
+    if ai_total_failure:
+        kind_ko = {"billing": "결제/크레딧", "auth": "API 키/권한",
+                   "rate_limit": "레이트리밋", "overloaded": "서버 과부하"}.get(ai_error_kind, ai_error_kind)
+        streak_tag = f" · {streak}일째 연속" if streak >= 2 else ""
+        head = f"⚠️ AI 분석 {ai_failures}/{ai_attempts}건 전부 실패 — 오늘 발행 없음{streak_tag}"
+        lines = [
+            f"시장: {market_group} / 날짜: {today}",
+            f"추정 원인: {kind_ko} ({ai_error_kind})",
+            f"마지막 오류: {ai_last_error[:200]}",
+            "→ '후보가 없는 날'이 아니라 시스템 오류입니다. Anthropic 결제 상태를 확인하세요.",
+            "→ 복구되면 다음 실행(백업 크론)이 자동으로 다시 분석해 발행합니다.",
+        ]
+        if streak >= 2:
+            lines.insert(0, f"🚨 {market_group} 시장 {streak}일째 연속 완전 실패 — 즉시 확인 필요")
+        print_big_summary(head, lines)
+        write_step_summary(head, lines)
+        alert(f"🚨 SMIM {market_group} {today}\n{head}\n원인: {kind_ko}\n{ai_last_error[:200]}\n"
+              f"Anthropic 결제 상태를 확인하세요.")
+        print(f"=== 발행 실패 처리 완료 ({market_group}) — exit 1 ===")
+        return 1
+
+    warn = ""
+    if ai_failures:
+        warn = f" · ⚠️ AI 부분 실패 {ai_failures}/{ai_attempts}건({ai_error_kind})"
+    head = f"✅ SMIM {market_group} {today} 발행 완료 — 신규 {len(added)}·관찰 {len(active)}·편출 {len(closed)}{warn}"
+    lines = [
+        f"신규 편입 {len(added)} / 관찰 {len(active)} / 편출 {len(closed)} / AI후보 {scanned}",
+        f"AI 분석 {ai_attempts - ai_failures}/{ai_attempts} 성공 · 토큰 비용 ${usage['estimated_cost_usd']}",
+    ]
+    if ai_failures:
+        lines.append(f"⚠️ 일부 AI 호출 실패 {ai_failures}건({ai_error_kind}) — 발행은 정상 진행")
+    print_big_summary(head, lines)
+    write_step_summary(head, lines)
+    alert(head + f"\n토큰 비용 ${usage['estimated_cost_usd']}"
+          + (f"\n⚠️ AI 부분 실패 {ai_failures}/{ai_attempts}건" if ai_failures else ""))
 
     print(f"=== 발행 완료 ({market_group}) ===")
     return 0

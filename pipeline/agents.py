@@ -21,7 +21,26 @@ _usage_log: list[dict] = []
 
 
 class AIFailure(Exception):
-    pass
+    """kind: 'billing'(크레딧/결제) | 'auth'(키/권한) | 'rate_limit' | 'overloaded' | 'parse' | 'unknown'.
+    billing·auth는 모든 종목에서 똑같이 실패하는 '시스템성' 오류라 run_daily가 즉시 중단·경보한다."""
+    def __init__(self, message, kind: str = "unknown"):
+        super().__init__(message)
+        self.kind = kind
+
+
+def classify_ai_error(exc) -> str:
+    """오류 원인 분류 — 운영자가 로그를 안 열어봐도 대응 방향(결제/키/일시적)을 알 수 있게."""
+    s = str(exc).lower()
+    if any(k in s for k in ("credit balance", "billing", "payment", "insufficient", "quota exceeded")):
+        return "billing"
+    if any(k in s for k in ("authentication", "invalid x-api-key", "api key", "api_key",
+                            "unauthorized", "401", "permission")):
+        return "auth"
+    if ("rate" in s and "limit" in s) or "429" in s:
+        return "rate_limit"
+    if "overloaded" in s or "529" in s:
+        return "overloaded"
+    return "unknown"
 
 
 def _call(system: str, user: str, model: str, max_tokens: int = 1600) -> str:
@@ -40,8 +59,10 @@ def _call(system: str, user: str, model: str, max_tokens: int = 1600) -> str:
             })
             return "".join(b.text for b in msg.content if b.type == "text")
         except Exception as e:
-            if attempt == 2:
-                raise AIFailure(f"Anthropic 호출 실패: {e}")
+            kind = classify_ai_error(e)
+            # 결제·인증 오류는 재시도해도 무조건 또 실패한다 — 즉시 포기해 시간·비용 낭비를 막는다.
+            if kind in ("billing", "auth") or attempt == 2:
+                raise AIFailure(f"Anthropic 호출 실패: {e}", kind=kind)
     raise AIFailure("unreachable")
 
 
@@ -78,12 +99,21 @@ def _call_json(system: str, user: str, model: str, max_tokens: int = 1600, retri
     재시도가 곱해지면 최악의 경우 대기가 너무 길어진다 — 여기서는 낮게 유지한다."""
     last_err: Exception | None = None
     for attempt in range(retries + 1):
-        raw = _call(system, user, model, max_tokens=max_tokens)
+        try:
+            raw = _call(system, user, model, max_tokens=max_tokens)
+        except AIFailure as e:
+            # 결제·인증 등 시스템성 오류는 파싱 재시도로 가릴 게 아니라 원인 그대로 위로 올린다.
+            if e.kind in ("billing", "auth"):
+                raise
+            last_err = e
+            continue
         try:
             return _parse_json(raw)
         except (json.JSONDecodeError, AIFailure) as e:
             last_err = e
-    raise AIFailure(f"JSON 파싱 반복 실패: {last_err}")
+    if isinstance(last_err, AIFailure):
+        raise last_err
+    raise AIFailure(f"JSON 파싱 반복 실패: {last_err}", kind="parse")
 
 
 # ── 팩트시트 ────────────────────────────────────────────────
