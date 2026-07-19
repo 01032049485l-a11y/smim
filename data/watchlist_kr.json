@@ -9,7 +9,7 @@
   "entry_price": 124500.0,
   "current_price": 121400,
   "return_pct": -2.49,
-  "days_held": 0,
+  "days_held": 2,
   "status": "holding",
   "verdict": "BUY",
   "confidence": 64,
@@ -142,7 +142,7 @@
    "revenue_yoy_pct": 8.1,
    "debt_ratio_pct": 473.2
   },
-  "updated": "2026-07-17"
+  "updated": "2026-07-20"
  },
  {
   "code": "420770",
@@ -154,7 +154,7 @@
   "entry_price": 164400.0,
   "current_price": 162800,
   "return_pct": -0.97,
-  "days_held": 0,
+  "days_held": 2,
   "status": "holding",
   "verdict": "BUY",
   "confidence": 58,
@@ -283,7 +283,7 @@
    "liabilities_yoy_pct": 17.9,
    "debt_ratio_pct": 27.6
   },
-  "updated": "2026-07-17"
+  "updated": "2026-07-20"
  },
  {
   "code": "439090",
@@ -293,10 +293,10 @@
   "homepage": "www.manyo.co.kr",
   "entry_date": "2026-07-17",
   "entry_price": 17290.0,
-  "current_price": 17290.0,
+  "current_price": 17290,
   "return_pct": 0.0,
-  "days_held": 0,
-  "status": "new",
+  "days_held": 2,
+  "status": "holding",
   "verdict": "BUY",
   "confidence": 55,
   "sector": "소비재",
@@ -427,7 +427,7 @@
    "revenue_yoy_pct": -11.7,
    "debt_ratio_pct": 611.4
   },
-  "updated": "2026-07-17"
+  "updated": "2026-07-20"
  },
  {
   "code": "021240",
@@ -437,10 +437,10 @@
   "homepage": "company.coway.com",
   "entry_date": "2026-07-17",
   "entry_price": 96700.0,
-  "current_price": 96700.0,
+  "current_price": 96700,
   "return_pct": 0.0,
-  "days_held": 0,
-  "status": "new",
+  "days_held": 2,
+  "status": "holding",
   "verdict": "BUY",
   "confidence": 58,
   "sector": "소비재",
@@ -572,6 +572,6 @@
    "revenue": 4963566073111,
    "revenue_yoy_pct": 15.2
   },
-  "updated": "2026-07-17"
+  "updated": "2026-07-20"
  }
 ]
