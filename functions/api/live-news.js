@@ -23,10 +23,12 @@ async function tagWithAI(env, items) {
   // 응답 전체가 느려져서 "실시간"이라는 이름이 무색해진다. 정해진 시간 안에 안 끝나면
   // 그냥 포기하고 원문 제목만 즉시 내보낸다 — 다음 폴링(60초 뒤)에서 다시 시도된다.
   // (2026-07-16: Cloudflare Workers → Anthropic 콜드 커넥션 + 20개 기사 태깅이 4초
-  //  예산으로는 매번 타임아웃됐다. 9초로 완화 후 정상 동작 확인.)
+  //  예산으로는 매번 타임아웃됐다. 9초로 완화해도 콜드 커넥션일 때는 여전히 간간이
+  //  타임아웃돼 15초로 다시 완화 — 이 함수 자체가 45초 엣지 캐시 뒤에 있어 방문자
+  //  입장에선 어차피 캐시 미스일 때만 드물게 느려진다.)
   if (!env.ANTHROPIC_API_KEY || !items.length) return items;
   const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), 9000);
+  const timer = setTimeout(() => controller.abort(), 15000);
   try {
     const listing = items.map((it, i) => `${i}. ${it.title}`).join("\n");
     const r = await fetch("https://api.anthropic.com/v1/messages", {
