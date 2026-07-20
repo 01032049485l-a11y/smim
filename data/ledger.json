@@ -1,0 +1,16 @@
+[
+ {
+  "market_group": "KR",
+  "code": "420770",
+  "name": "기가비스",
+  "entry_date": "2026-07-16",
+  "entry_price": 164400.0,
+  "exit_date": "2026-07-21",
+  "exit_price": 143000,
+  "return_pct": -13.02,
+  "days_held": 3,
+  "status": "stopped",
+  "verdict": "BUY",
+  "confidence": 58
+ }
+]
