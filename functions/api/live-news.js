@@ -22,11 +22,9 @@ async function tagWithAI(env, items) {
   // 태깅이 느려지면(오늘 실제로 배치 태깅에서 몇 분씩 걸리는 걸 겪었다) 이 엔드포인트
   // 응답 전체가 느려져서 "실시간"이라는 이름이 무색해진다. 정해진 시간 안에 안 끝나면
   // 그냥 포기하고 원문 제목만 즉시 내보낸다 — 다음 폴링(60초 뒤)에서 다시 시도된다.
-  // (2026-07-16 확인: Cloudflare Workers → Anthropic 콜드 커넥션 + 20개 기사 태깅이
-  //  4초 예산으로는 매번 타임아웃됐다 — _debug로 "exception: aborted"를 직접 확인. 9초로 완화.)
-  if (!env.ANTHROPIC_API_KEY || !items.length) {
-    return { items, _debug: { hasKey: !!env.ANTHROPIC_API_KEY, itemCount: items.length, stage: "skip_no_key_or_items" } };
-  }
+  // (2026-07-16: Cloudflare Workers → Anthropic 콜드 커넥션 + 20개 기사 태깅이 4초
+  //  예산으로는 매번 타임아웃됐다. 9초로 완화 후 정상 동작 확인.)
+  if (!env.ANTHROPIC_API_KEY || !items.length) return items;
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), 9000);
   try {
@@ -46,24 +44,20 @@ async function tagWithAI(env, items) {
       }),
       signal: controller.signal,
     });
-    if (!r.ok) {
-      const bodyText = await r.text().catch(() => "");
-      return { items, _debug: { stage: "anthropic_not_ok", status: r.status, body: bodyText.slice(0, 500) } };
-    }
+    if (!r.ok) return items;
     const data = await r.json();
     const text = (data.content || []).map((b) => b.text || "").join("");
     const m = text.match(/\{[\s\S]*\}/);
-    if (!m) return { items, _debug: { stage: "no_json_in_response", raw: text.slice(0, 500) } };
+    if (!m) return items;
     const parsed = JSON.parse(m[0]);
     const byI = {};
     for (const x of parsed.items || []) byI[x.i] = x;
-    const tagged = items.map((it, i) => {
+    return items.map((it, i) => {
       const t = byI[i];
       return t ? { ...it, sector: t.sector, impact: t.impact, why: t.why } : it;
     });
-    return { items: tagged, _debug: { stage: "ok" } };
   } catch (e) {
-    return { items, _debug: { stage: "exception", message: String(e && e.message || e) } };
+    return items; // 타임아웃/실패해도 원문 제목·링크는 그대로 즉시 내보낸다
   } finally {
     clearTimeout(timer);
   }
@@ -128,9 +122,9 @@ async function yahooNews() {
 export async function onRequest({ env }) {
   const [kr, us] = await Promise.all([naverNews(env).catch(() => []), yahooNews().catch(() => [])]);
   const items = [...kr, ...us].sort((a, b) => new Date(b.published) - new Date(a.published)).slice(0, 20);
-  const { items: tagged, _debug } = await tagWithAI(env, items);
+  const tagged = await tagWithAI(env, items);
   return new Response(
-    JSON.stringify({ ts: Date.now(), items: tagged, _debug }),
+    JSON.stringify({ ts: Date.now(), items: tagged }),
     {
       headers: {
         "content-type": "application/json; charset=utf-8",
