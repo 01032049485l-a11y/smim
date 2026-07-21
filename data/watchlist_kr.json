@@ -7,9 +7,9 @@
   "homepage": "www.SKinnovation.com",
   "entry_date": "2026-07-16",
   "entry_price": 124500.0,
-  "current_price": 116900,
-  "return_pct": -6.1,
-  "days_held": 3,
+  "current_price": 116300,
+  "return_pct": -6.59,
+  "days_held": 4,
   "status": "holding",
   "verdict": "BUY",
   "confidence": 64,
@@ -142,7 +142,7 @@
    "revenue_yoy_pct": 8.1,
    "debt_ratio_pct": 473.2
   },
-  "updated": "2026-07-21"
+  "updated": "2026-07-22"
  },
  {
   "code": "439090",
@@ -152,9 +152,9 @@
   "homepage": "www.manyo.co.kr",
   "entry_date": "2026-07-17",
   "entry_price": 17290.0,
-  "current_price": 16310,
-  "return_pct": -5.67,
-  "days_held": 2,
+  "current_price": 16670,
+  "return_pct": -3.59,
+  "days_held": 3,
   "status": "holding",
   "verdict": "BUY",
   "confidence": 55,
@@ -286,7 +286,7 @@
    "revenue_yoy_pct": -11.7,
    "debt_ratio_pct": 611.4
   },
-  "updated": "2026-07-21"
+  "updated": "2026-07-22"
  },
  {
   "code": "021240",
@@ -296,9 +296,9 @@
   "homepage": "company.coway.com",
   "entry_date": "2026-07-17",
   "entry_price": 96700.0,
-  "current_price": 92400,
-  "return_pct": -4.45,
-  "days_held": 2,
+  "current_price": 93500,
+  "return_pct": -3.31,
+  "days_held": 3,
   "status": "holding",
   "verdict": "BUY",
   "confidence": 58,
@@ -431,6 +431,137 @@
    "revenue": 4963566073111,
    "revenue_yoy_pct": 15.2
   },
-  "updated": "2026-07-21"
+  "updated": "2026-07-22"
+ },
+ {
+  "code": "144960",
+  "name": "뉴파워프라즈마",
+  "market": "KOSDAQ",
+  "market_group": "KR",
+  "homepage": "newpower.co.kr",
+  "entry_date": "2026-07-22",
+  "entry_price": 10000.0,
+  "current_price": 10000.0,
+  "return_pct": 0.0,
+  "days_held": 0,
+  "status": "new",
+  "verdict": "BUY",
+  "confidence": 57,
+  "sector": "반도체",
+  "target_return_pct": 12.0,
+  "stop_loss_pct": -8.5,
+  "horizon_days": 18,
+  "invalidation": "20일선(9,766원)을 종가 기준으로 이탈하고 거래량 감소가 동반되면 상승 논리 무효화",
+  "thesis": "뉴파워프라즈마는 20일선과 60일선을 모두 상회하며 최근 20일간 17.65% 상승하는 등 기술적 상승 추세가 뚜렷하고, 반도체 장비 업황 회복 기대와 방산 확장 스토리가 겹치며 시장의 관심을 받고 있다. 2025년 매출과 영업이익이 각각 11.2%, 9.7% 성장하며 외형 성장은 유지되고 있으나, 부채비율 1076%라는 극단적 레버리지는 금리·업황 변동에 취약한 구조적 약점이다. 골든크로스 미형성과 MACD 상승전환 미확인은 추세 지속력에 대한 확신을 약화시키며, 최근 기관 매수세가 원익IPS·테스 등 경쟁 장비주에 쏠려있어 수급 모멘텀이 분산된 점도 부담이다. 다만 52주 고점(11,630원) 대비 아직 여유가 있고 거래량이 늘며 단기 추세는 살아있어, 기술적 반등 시나리오에 무게를 둔 제한적 매수가 합리적이다. 재무 리스크를 감안해 타이트하지 않은 손절선과 보수적인 목표수익률로 접근해야 한다.",
+  "scorecard": {
+   "price": "positive",
+   "fundamental": "negative",
+   "supply": "neutral",
+   "news": "neutral",
+   "valuation": "negative"
+  },
+  "bull_points": [
+   "20일선·60일선을 모두 상회하며 상승추세가 유지되고 있다",
+   "거래량이 20일 평균 대비 1.41배로 증가하며 매수세가 살아있다",
+   "2025년 매출 11.2%, 영업이익 9.7% 성장으로 외형 성장이 지속되고 있다",
+   "반도체 장비 업황 회복과 방산 확장 스토리가 재평가 모멘텀으로 작용할 수 있다",
+   "52주 고점까지 약 14% 여유가 있어 추가 상승 여력이 존재한다"
+  ],
+  "bear_points": [
+   "부채비율 1076%로 재무 레버리지가 극단적으로 높아 금리·업황 변동에 취약하다",
+   "20-60일 골든크로스 미형성과 MACD 상승전환 미확인으로 기술적 모멘텀 신뢰도가 낮다",
+   "최근 기관 매수세가 원익IPS·테스 등 경쟁 장비주에 집중되며 수급이 분산되고 있다",
+   "높은 부채비율로 인해 이익 대비 밸류에이션 정당성 판단이 어렵다"
+  ],
+  "news": [
+   {
+    "title": "코스피, 기관·외국인 쌍끌이 매수에 6740선 회복...삼성전자·SK하이닉...",
+    "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=470200",
+    "published": "2026-07-21 15:58"
+   },
+   {
+    "title": "[코스닥 기관] 반도체 장비 갈아타기…샘씨엔에스 사고 주성엔지니어링...",
+    "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=469805",
+    "published": "2026-07-20 16:00"
+   },
+   {
+    "title": "스페이스프로- KIST, 우주항공 신소재 개발",
+    "url": "http://www.knnews.co.kr/news/articleView.php?idxno=1546698",
+    "published": "2026-07-20 10:00"
+   },
+   {
+    "title": "스페이스프로, KIST와 '복합소재' 개발",
+    "url": "http://www.gnmaeil.com/news/articleView.html?idxno=590922",
+    "published": "2026-07-19 21:42"
+   },
+   {
+    "title": "한국과학기술연구원(KIST) - 스페이스프로우주시대 핵심 '첨단 복합소재...",
+    "url": "https://www.newsgn.com/news/articleView.html?idxno=562766",
+    "published": "2026-07-19 16:22"
+   },
+   {
+    "title": "반도체 넘어 방산까지…뉴파워프라즈마 성장 스토리 주목을",
+    "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=469249",
+    "published": "2026-07-17 12:12"
+   },
+   {
+    "title": "[주간 코스닥 기관] 원익IPS 피에스케이 테스 브이엠 파두 ISC '폭풍 매수...",
+    "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=469217",
+    "published": "2026-07-17 07:40"
+   },
+   {
+    "title": "[코스닥 기관] 반도체 장비주 집중 매수…원익IPS·테스·피에스케이 담...",
+    "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=468766",
+    "published": "2026-07-15 16:10"
+   }
+  ],
+  "filings": [
+   {
+    "date": "20260710",
+    "title": "주식등의대량보유상황보고서(약식)",
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260710000711"
+   },
+   {
+    "date": "20260703",
+    "title": "주식등의대량보유상황보고서(일반)",
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260703000119"
+   }
+  ],
+  "tech": {
+   "close": 10000.0,
+   "change_1d_pct": 7.3,
+   "change_5d_pct": 7.41,
+   "change_20d_pct": 17.65,
+   "ma5": 9766.0,
+   "ma20": 8452.0,
+   "ma60": 8555.0,
+   "ma120": 7177.0,
+   "above_ma20": true,
+   "above_ma60": true,
+   "golden_cross_20_60": false,
+   "rsi14": 58.6,
+   "macd_hist": 182.95,
+   "macd_turning_up": false,
+   "volume_ratio_vs_20d": 1.41,
+   "avg_trading_value_20d": 9856828826.0,
+   "pos_in_52w_range_pct": 76.3,
+   "high_52w": 11630.0,
+   "low_52w": 4760.0,
+   "volatility_20d_pct": 8.46,
+   "limit_up_yesterday": false
+  },
+  "financials": {
+   "fiscal_year": 2025,
+   "equity": 52090936026,
+   "equity_yoy_pct": 0.0,
+   "liabilities": 560644149281,
+   "liabilities_yoy_pct": -0.3,
+   "operating_profit": 28669170685,
+   "operating_profit_yoy_pct": 9.7,
+   "revenue": 577990393724,
+   "revenue_yoy_pct": 11.2,
+   "debt_ratio_pct": 1076.3
+  },
+  "updated": "2026-07-22"
  }
 ]

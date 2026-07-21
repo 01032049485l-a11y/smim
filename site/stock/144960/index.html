@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>뉴파워프라즈마 (144960) — SMIM</title>
+<meta name="description" content="국내 증시 데이터·공시·뉴스를 종합 분석해 매 거래일 아침 발행하는 리서치 저널.">
+<meta property="og:site_name" content="SMIM">
+<meta property="og:title" content="뉴파워프라즈마 (144960) — SMIM">
+<meta property="og:description" content="국내 증시 데이터·공시·뉴스를 종합 분석해 매 거래일 아침 발행하는 리서치 저널.">
+<link rel="alternate" type="application/rss+xml" title="SMIM" href="/feed.xml">
+<link rel="icon" href="/assets/mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/ibm-plex-mono@5.0.13/index.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">본문 바로가기</a>
+
+<!-- ── 라이브 티커 ─────────────────────────── -->
+<div class="tape" id="tape">
+  <div class="tape-in">
+    <span class="live"><i></i>LIVE</span>
+    <div class="quotes" id="quotes">
+      
+      <a class="q" href="/market/" data-t="KOSPI">
+        <em>코스피</em>
+        <b class="v">6,747.95</b>
+        <i class="c rise">+3.56%</i>
+      </a>
+      
+      <a class="q" href="/market/" data-t="KOSDAQ">
+        <em>코스닥</em>
+        <b class="v">753.34</b>
+        <i class="c rise">+0.49%</i>
+      </a>
+      
+      <a class="q" href="/market/" data-t="USDKRW">
+        <em>원/달러</em>
+        <b class="v">1,480.37</b>
+        <i class="c rise">+0.36%</i>
+      </a>
+      
+    </div>
+    <div class="clocks" id="clocks">
+      <span data-clock="kr"><svg class="fico" viewBox="0 0 24 16" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="16" rx="2" fill="#fff"/><g fill="#000"><g transform="rotate(-57.4 4.5 3.2)"><rect x="1.8" y="1.4" width="5.4" height="0.8"/><rect x="1.8" y="2.8" width="5.4" height="0.8"/><rect x="1.8" y="4.2" width="5.4" height="0.8"/></g><g transform="rotate(57.4 19.5 3.2)"><rect x="16.8" y="1.4" width="2.05" height="0.8"/><rect x="20.15" y="1.4" width="2.05" height="0.8"/><rect x="16.8" y="2.8" width="5.4" height="0.8"/><rect x="16.8" y="4.2" width="2.05" height="0.8"/><rect x="20.15" y="4.2" width="2.05" height="0.8"/></g><g transform="rotate(57.4 4.5 12.8)"><rect x="1.8" y="11.0" width="5.4" height="0.8"/><rect x="1.8" y="12.4" width="2.05" height="0.8"/><rect x="5.15" y="12.4" width="2.05" height="0.8"/><rect x="1.8" y="13.8" width="5.4" height="0.8"/></g><g transform="rotate(-57.4 19.5 12.8)"><rect x="16.8" y="11.0" width="2.05" height="0.8"/><rect x="20.15" y="11.0" width="2.05" height="0.8"/><rect x="16.8" y="12.4" width="2.05" height="0.8"/><rect x="20.15" y="12.4" width="2.05" height="0.8"/><rect x="16.8" y="13.8" width="2.05" height="0.8"/><rect x="20.15" y="13.8" width="2.05" height="0.8"/></g></g><g transform="rotate(90 12 8)"><path d="M12 3.8a4.2 4.2 0 0 1 0 8.4 2.1 2.1 0 0 1 0-4.2 2.1 2.1 0 0 0 0-4.2z" fill="#0047a0"/><path d="M12 12.2a4.2 4.2 0 0 1 0-8.4 2.1 2.1 0 0 1 0 4.2 2.1 2.1 0 0 0 0 4.2z" fill="#cd2e3a"/></g></svg><b class="ct">--:--:--</b></span>
+    </div>
+    <span class="tstamp" id="tstamp"> 종가 기준</span>
+  </div>
+</div>
+
+<!-- ── 마스트헤드 ─────────────────────────── -->
+<header class="mast">
+  <div class="mast-in">
+    <a class="brand" href="/">
+      <span class="logo">
+        <svg viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M4 23 L11 13 L16 18 L21 7 L28 12" fill="none" stroke="#E02B20" stroke-width="2.6" stroke-linecap="square" stroke-linejoin="round"/>
+          <circle cx="28" cy="12" r="2.8" fill="#E02B20"/>
+        </svg>
+      </span>
+      <span class="lock">
+        <span class="wm">SMIM</span>
+        <span class="xp">In the stock market, <em>information</em> matters</span>
+      </span>
+    </a>
+    <nav class="nav">
+      <a href="/">Report</a>
+      <a href="/market/">Market</a>
+      <a href="/newsroom/">Newsroom</a>
+      <a href="/watchlist/">Watchlist</a>
+      <a href="/performance/">Track Record</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="메뉴 열기">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ── 우측 드로어 ─────────────────────────── -->
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" aria-hidden="true">
+  <div class="dr-top">
+    <span class="wm sm">SMIM</span>
+    <button class="dr-x" id="drClose" aria-label="메뉴 닫기">&times;</button>
+  </div>
+  <nav class="dr-nav">
+    <a href="/"><b>Daily Report</b><span>오늘의 리포트</span><i>01</i></a>
+    <a href="/market/"><b>Market</b><span>지수 · 업종 · 시장 폭</span><i>02</i></a>
+    <a href="/newsroom/"><b>Newsroom</b><span>증시 뉴스 · 관련 종목</span><i>03</i></a>
+    <a href="/watchlist/"><b>Watchlist</b><span>추적 중인 종목</span><i>04</i></a>
+    <a href="/performance/"><b>Track Record</b><span>누적 성과 · 손실 포함</span><i>05</i></a>
+    <a href="/archive/"><b>Archive</b><span>지난 리포트 전체</span><i>06</i></a>
+    <a href="/methodology/"><b>Methodology</b><span>분석 방법론 · 한계</span><i>07</i></a>
+  </nav>
+  <div class="dr-foot">
+    <p class="dt">주식은 정보다</p>
+    <p class="df">투자 권유가 아닙니다. 판단과 책임은 투자자 본인에게 있습니다.</p>
+    <p class="dc">Founder &amp; Developer · 이태웅</p>
+  </div>
+</aside>
+
+<div class="shell">
+  <main id="main">
+<section class="dateline">
+  <div class="dl-l">
+    <p class="eyebrow"><span class="rid">144960 · KOSDAQ</span></p>
+    <h1>뉴파워프라즈마</h1>
+    <p class="lead">
+      SMIM이 이 종목에 대해 내린 모든 판단이 시간순으로 남아 있습니다. 수정하거나 삭제하지 않습니다.
+    </p>
+  </div>
+  <dl class="dl-r" data-live-stock data-code="144960" data-market="KOSDAQ" data-entry="10000.0">
+    <div><dt>현재 상태</dt><dd>신규 편입</dd></div>
+    <div><dt>편입가</dt><dd>10,000원</dd></div>
+    <div><dt>현재가</dt><dd><span data-field="price">10,000</span>원</dd></div>
+    <div><dt>수익률</dt><dd class="flat" data-field="return">+0.00%</dd></div>
+  </dl>
+</section>
+
+<section class="block">
+  <h2 class="sec"><span>Chart</span><em>2026-07-22 기준 90일 + 실시간</em></h2>
+  <div class="chart-tabs" data-tabs>
+    <div class="tabbar">
+      <button class="tb on" data-tab="static">일봉 90일</button>
+      <button class="tb" data-tab="live">실시간 차트</button>
+      <span class="src">출처 · FinanceDataReader / TradingView</span>
+    </div>
+    <div class="tp on" data-panel="static">
+      
+        <svg class="chart" viewBox="0 0 720 240" preserveAspectRatio="none" role="img"
+ aria-label="최근 90거래일 주가 추이">
+<defs>
+ <linearGradient id="gRise" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#C0392F" stop-opacity=".16"/><stop offset="1" stop-color="#C0392F" stop-opacity="0"/>
+ </linearGradient>
+ <linearGradient id="gFall" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#1E4FB8" stop-opacity=".16"/><stop offset="1" stop-color="#1E4FB8" stop-opacity="0"/>
+ </linearGradient>
+</defs>
+<line x1="8" y1="23.3" x2="668" y2="23.3" stroke="#D7DBE0" stroke-width=".7" stroke-dasharray="2 3"/><text x="674" y="26.8" class="ax">11,630</text><line x1="8" y1="164.7" x2="668" y2="164.7" stroke="#D7DBE0" stroke-width=".7" stroke-dasharray="2 3"/><text x="674" y="168.2" class="ax">4,995</text><circle cx="668.0" cy="58.0" r="3.2" fill="#C0392F"/><rect x="670" y="49.0" width="48" height="18" rx="2" fill="#C0392F"/><text x="694" y="61.5" class="axv" text-anchor="middle">10,000</text>
+<path d="M8.0,148.2 L15.4,150.7 L22.8,150.9 L30.2,151.2 L37.7,150.5 L45.1,148.6 L52.5,150.7 L59.9,149.7 L67.3,157.3 L74.7,155.6 L82.2,150.9 L89.6,155.2 L97.0,156.5 L104.4,162.5 L111.8,164.7 L119.2,156.9 L126.7,163.7 L134.1,162.5 L141.5,160.3 L148.9,162.7 L156.3,153.3 L163.7,157.6 L171.1,154.8 L178.6,152.7 L186.0,148.8 L193.4,137.1 L200.8,137.1 L208.2,136.5 L215.6,133.9 L223.1,131.8 L230.5,129.6 L237.9,130.5 L245.3,125.2 L252.7,128.6 L260.1,130.9 L267.6,130.7 L275.0,127.1 L282.4,120.5 L289.8,103.9 L297.2,110.9 L304.6,114.5 L312.0,112.8 L319.5,88.3 L326.9,33.5 L334.3,23.3 L341.7,42.1 L349.1,43.1 L356.5,58.5 L364.0,69.8 L371.4,68.3 L378.8,62.5 L386.2,48.5 L393.6,59.7 L401.0,69.5 L408.4,92.1 L415.9,72.7 L423.3,83.4 L430.7,85.5 L438.1,90.6 L445.5,104.7 L452.9,96.8 L460.4,102.2 L467.8,93.6 L475.2,57.0 L482.6,73.4 L490.0,80.2 L497.4,80.0 L504.9,83.6 L512.3,91.3 L519.7,90.0 L527.1,113.2 L534.5,116.6 L541.9,119.4 L549.3,120.5 L556.8,113.4 L564.2,97.5 L571.6,98.1 L579.0,119.0 L586.4,90.9 L593.8,83.6 L601.3,91.7 L608.7,106.4 L616.1,94.9 L623.5,67.4 L630.9,72.7 L638.3,61.7 L645.8,51.0 L653.2,71.9 L660.6,72.5 L668.0,58.0 L668.0,176.0 L8.0,176.0 Z" fill="url(#gRise)"/>
+<path d="M445.5,120.2 L452.9,119.4 L460.4,118.6 L467.8,117.6 L475.2,116.0 L482.6,114.8 L490.0,113.6 L497.4,112.4 L504.9,111.3 L512.3,110.2 L519.7,109.1 L527.1,108.5 L534.5,107.9 L541.9,107.3 L549.3,106.6 L556.8,105.7 L564.2,104.7 L571.6,103.6 L579.0,102.9 L586.4,101.7 L593.8,100.4 L601.3,99.4 L608.7,98.5 L616.1,97.5 L623.5,96.1 L630.9,94.9 L638.3,93.6 L645.8,92.2 L653.2,91.1 L660.6,90.1 L668.0,88.8" fill="none" stroke="#9AA2AC" stroke-width="1" stroke-dasharray="4 3"/>
+<path d="M148.9,155.5 L156.3,155.7 L163.7,156.1 L171.1,156.3 L178.6,156.3 L186.0,156.2 L193.4,155.7 L200.8,155.0 L208.2,154.3 L215.6,153.2 L223.1,152.0 L230.5,150.9 L237.9,149.7 L245.3,148.1 L252.7,146.4 L260.1,144.7 L267.6,143.4 L275.0,141.6 L282.4,139.5 L289.8,136.6 L297.2,134.1 L304.6,132.1 L312.0,129.9 L319.5,126.6 L326.9,120.6 L334.3,114.3 L341.7,109.6 L349.1,104.9 L356.5,101.0 L364.0,97.8 L371.4,94.6 L378.8,91.2 L386.2,87.1 L393.6,83.9 L401.0,80.9 L408.4,79.0 L415.9,76.1 L423.3,73.9 L430.7,72.1 L438.1,71.5 L445.5,71.2 L452.9,70.3 L460.4,69.8 L467.8,70.0 L475.2,71.2 L482.6,73.7 L490.0,75.6 L497.4,77.5 L504.9,78.7 L512.3,79.8 L519.7,80.9 L527.1,83.4 L534.5,86.8 L541.9,89.8 L549.3,92.3 L556.8,93.4 L564.2,94.6 L571.6,95.4 L579.0,97.1 L586.4,97.1 L593.8,96.0 L601.3,95.8 L608.7,96.0 L616.1,96.0 L623.5,96.6 L630.9,96.5 L638.3,95.6 L645.8,94.1 L653.2,93.6 L660.6,92.6 L668.0,91.0" fill="none" stroke="#5B6570" stroke-width="1.1"/>
+<path d="M8.0,148.2 L15.4,150.7 L22.8,150.9 L30.2,151.2 L37.7,150.5 L45.1,148.6 L52.5,150.7 L59.9,149.7 L67.3,157.3 L74.7,155.6 L82.2,150.9 L89.6,155.2 L97.0,156.5 L104.4,162.5 L111.8,164.7 L119.2,156.9 L126.7,163.7 L134.1,162.5 L141.5,160.3 L148.9,162.7 L156.3,153.3 L163.7,157.6 L171.1,154.8 L178.6,152.7 L186.0,148.8 L193.4,137.1 L200.8,137.1 L208.2,136.5 L215.6,133.9 L223.1,131.8 L230.5,129.6 L237.9,130.5 L245.3,125.2 L252.7,128.6 L260.1,130.9 L267.6,130.7 L275.0,127.1 L282.4,120.5 L289.8,103.9 L297.2,110.9 L304.6,114.5 L312.0,112.8 L319.5,88.3 L326.9,33.5 L334.3,23.3 L341.7,42.1 L349.1,43.1 L356.5,58.5 L364.0,69.8 L371.4,68.3 L378.8,62.5 L386.2,48.5 L393.6,59.7 L401.0,69.5 L408.4,92.1 L415.9,72.7 L423.3,83.4 L430.7,85.5 L438.1,90.6 L445.5,104.7 L452.9,96.8 L460.4,102.2 L467.8,93.6 L475.2,57.0 L482.6,73.4 L490.0,80.2 L497.4,80.0 L504.9,83.6 L512.3,91.3 L519.7,90.0 L527.1,113.2 L534.5,116.6 L541.9,119.4 L549.3,120.5 L556.8,113.4 L564.2,97.5 L571.6,98.1 L579.0,119.0 L586.4,90.9 L593.8,83.6 L601.3,91.7 L608.7,106.4 L616.1,94.9 L623.5,67.4 L630.9,72.7 L638.3,61.7 L645.8,51.0 L653.2,71.9 L660.6,72.5 L668.0,58.0" fill="none" stroke="#C0392F" stroke-width="1.9" stroke-linejoin="round"/>
+<rect x="5.7" y="234.6" width="4.5" height="1.4" fill="#C0392F" opacity=".26"/><rect x="13.1" y="235.3" width="4.5" height="0.7" fill="#1E4FB8" opacity=".26"/><rect x="20.6" y="235.7" width="4.5" height="0.6" fill="#1E4FB8" opacity=".26"/><rect x="28.0" y="235.6" width="4.5" height="0.6" fill="#1E4FB8" opacity=".26"/><rect x="35.4" y="235.5" width="4.5" height="0.6" fill="#C0392F" opacity=".26"/><rect x="42.8" y="235.3" width="4.5" height="0.7" fill="#C0392F" opacity=".26"/><rect x="50.2" y="235.5" width="4.5" height="0.6" fill="#1E4FB8" opacity=".26"/><rect x="57.6" y="235.5" width="4.5" height="0.6" fill="#C0392F" opacity=".26"/><rect x="65.1" y="235.0" width="4.5" height="1.0" fill="#1E4FB8" opacity=".26"/><rect x="72.5" y="235.3" width="4.5" height="0.7" fill="#C0392F" opacity=".26"/><rect x="79.9" y="235.1" width="4.5" height="0.9" fill="#C0392F" opacity=".26"/><rect x="87.3" y="235.3" width="4.5" height="0.7" fill="#1E4FB8" opacity=".26"/><rect x="94.7" y="235.4" width="4.5" height="0.6" fill="#1E4FB8" opacity=".26"/><rect x="102.1" y="235.2" width="4.5" height="0.8" fill="#1E4FB8" opacity=".26"/><rect x="109.5" y="235.2" width="4.5" height="0.8" fill="#1E4FB8" opacity=".26"/><rect x="117.0" y="235.1" width="4.5" height="0.9" fill="#C0392F" opacity=".26"/><rect x="124.4" y="235.0" width="4.5" height="1.0" fill="#1E4FB8" opacity=".26"/><rect x="131.8" y="235.3" width="4.5" height="0.7" fill="#C0392F" opacity=".26"/><rect x="139.2" y="235.4" width="4.5" height="0.6" fill="#C0392F" opacity=".26"/><rect x="146.6" y="235.5" width="4.5" height="0.6" fill="#1E4FB8" opacity=".26"/><rect x="154.0" y="235.1" width="4.5" height="0.9" fill="#C0392F" opacity=".26"/><rect x="161.5" y="235.5" width="4.5" height="0.6" fill="#1E4FB8" opacity=".26"/><rect x="168.9" y="235.5" width="4.5" height="0.6" fill="#C0392F" opacity=".26"/><rect x="176.3" y="235.2" width="4.5" height="0.8" fill="#C0392F" opacity=".26"/><rect x="183.7" y="234.0" width="4.5" height="2.0" fill="#C0392F" opacity=".26"/><rect x="191.1" y="232.3" width="4.5" height="3.7" fill="#C0392F" opacity=".26"/><rect x="198.5" y="234.6" width="4.5" height="1.4" fill="#C0392F" opacity=".26"/><rect x="206.0" y="235.0" width="4.5" height="1.0" fill="#C0392F" opacity=".26"/><rect x="213.4" y="233.7" width="4.5" height="2.3" fill="#C0392F" opacity=".26"/><rect x="220.8" y="234.1" width="4.5" height="1.9" fill="#C0392F" opacity=".26"/><rect x="228.2" y="233.2" width="4.5" height="2.8" fill="#C0392F" opacity=".26"/><rect x="235.6" y="234.2" width="4.5" height="1.8" fill="#1E4FB8" opacity=".26"/><rect x="243.0" y="233.9" width="4.5" height="2.1" fill="#C0392F" opacity=".26"/><rect x="250.4" y="233.8" width="4.5" height="2.2" fill="#1E4FB8" opacity=".26"/><rect x="257.9" y="234.9" width="4.5" height="1.1" fill="#1E4FB8" opacity=".26"/><rect x="265.3" y="234.9" width="4.5" height="1.1" fill="#C0392F" opacity=".26"/><rect x="272.7" y="234.3" width="4.5" height="1.7" fill="#C0392F" opacity=".26"/><rect x="280.1" y="232.1" width="4.5" height="3.9" fill="#C0392F" opacity=".26"/><rect x="287.5" y="230.1" width="4.5" height="5.9" fill="#C0392F" opacity=".26"/><rect x="294.9" y="233.3" width="4.5" height="2.7" fill="#1E4FB8" opacity=".26"/><rect x="302.4" y="234.3" width="4.5" height="1.7" fill="#1E4FB8" opacity=".26"/><rect x="309.8" y="233.7" width="4.5" height="2.3" fill="#C0392F" opacity=".26"/><rect x="317.2" y="212.2" width="4.5" height="23.8" fill="#C0392F" opacity=".26"/><rect x="324.6" y="194.0" width="4.5" height="42.0" fill="#C0392F" opacity=".26"/><rect x="332.0" y="203.8" width="4.5" height="32.2" fill="#C0392F" opacity=".26"/><rect x="339.4" y="232.0" width="4.5" height="4.0" fill="#1E4FB8" opacity=".26"/><rect x="346.9" y="232.0" width="4.5" height="4.0" fill="#1E4FB8" opacity=".26"/><rect x="354.3" y="233.3" width="4.5" height="2.7" fill="#1E4FB8" opacity=".26"/><rect x="361.7" y="226.3" width="4.5" height="9.7" fill="#1E4FB8" opacity=".26"/><rect x="369.1" y="231.0" width="4.5" height="5.0" fill="#C0392F" opacity=".26"/><rect x="376.5" y="231.8" width="4.5" height="4.2" fill="#C0392F" opacity=".26"/><rect x="383.9" y="230.0" width="4.5" height="6.0" fill="#C0392F" opacity=".26"/><rect x="391.3" y="229.8" width="4.5" height="6.2" fill="#1E4FB8" opacity=".26"/><rect x="398.8" y="232.3" width="4.5" height="3.7" fill="#1E4FB8" opacity=".26"/><rect x="406.2" y="225.2" width="4.5" height="10.8" fill="#1E4FB8" opacity=".26"/><rect x="413.6" y="227.3" width="4.5" height="8.7" fill="#C0392F" opacity=".26"/><rect x="421.0" y="229.6" width="4.5" height="6.4" fill="#1E4FB8" opacity=".26"/><rect x="428.4" y="230.1" width="4.5" height="5.9" fill="#1E4FB8" opacity=".26"/><rect x="435.8" y="233.5" width="4.5" height="2.5" fill="#1E4FB8" opacity=".26"/><rect x="443.3" y="231.2" width="4.5" height="4.8" fill="#1E4FB8" opacity=".26"/><rect x="450.7" y="232.6" width="4.5" height="3.4" fill="#C0392F" opacity=".26"/><rect x="458.1" y="234.2" width="4.5" height="1.8" fill="#1E4FB8" opacity=".26"/><rect x="465.5" y="234.0" width="4.5" height="2.0" fill="#C0392F" opacity=".26"/><rect x="472.9" y="228.5" width="4.5" height="7.5" fill="#C0392F" opacity=".26"/><rect x="480.3" y="231.9" width="4.5" height="4.1" fill="#1E4FB8" opacity=".26"/><rect x="487.7" y="233.4" width="4.5" height="2.6" fill="#1E4FB8" opacity=".26"/><rect x="495.2" y="233.9" width="4.5" height="2.1" fill="#C0392F" opacity=".26"/><rect x="502.6" y="233.7" width="4.5" height="2.3" fill="#1E4FB8" opacity=".26"/><rect x="510.0" y="233.7" width="4.5" height="2.3" fill="#1E4FB8" opacity=".26"/><rect x="517.4" y="234.3" width="4.5" height="1.7" fill="#C0392F" opacity=".26"/><rect x="524.8" y="232.9" width="4.5" height="3.1" fill="#1E4FB8" opacity=".26"/><rect x="532.2" y="233.8" width="4.5" height="2.2" fill="#1E4FB8" opacity=".26"/><rect x="539.7" y="233.9" width="4.5" height="2.1" fill="#1E4FB8" opacity=".26"/><rect x="547.1" y="232.8" width="4.5" height="3.2" fill="#1E4FB8" opacity=".26"/><rect x="554.5" y="234.3" width="4.5" height="1.7" fill="#C0392F" opacity=".26"/><rect x="561.9" y="232.2" width="4.5" height="3.8" fill="#C0392F" opacity=".26"/><rect x="569.3" y="233.4" width="4.5" height="2.6" fill="#1E4FB8" opacity=".26"/><rect x="576.7" y="233.9" width="4.5" height="2.1" fill="#1E4FB8" opacity=".26"/><rect x="584.2" y="226.1" width="4.5" height="9.9" fill="#C0392F" opacity=".26"/><rect x="591.6" y="227.5" width="4.5" height="8.5" fill="#C0392F" opacity=".26"/><rect x="599.0" y="232.0" width="4.5" height="4.0" fill="#1E4FB8" opacity=".26"/><rect x="606.4" y="232.9" width="4.5" height="3.1" fill="#1E4FB8" opacity=".26"/><rect x="613.8" y="231.2" width="4.5" height="4.8" fill="#C0392F" opacity=".26"/><rect x="621.2" y="227.5" width="4.5" height="8.5" fill="#C0392F" opacity=".26"/><rect x="628.6" y="230.4" width="4.5" height="5.6" fill="#1E4FB8" opacity=".26"/><rect x="636.1" y="227.6" width="4.5" height="8.4" fill="#C0392F" opacity=".26"/><rect x="643.5" y="227.5" width="4.5" height="8.5" fill="#C0392F" opacity=".26"/><rect x="650.9" y="232.3" width="4.5" height="3.7" fill="#1E4FB8" opacity=".26"/><rect x="658.3" y="231.8" width="4.5" height="4.2" fill="#1E4FB8" opacity=".26"/><rect x="665.7" y="229.2" width="4.5" height="6.8" fill="#C0392F" opacity=".26"/>
+<line x1="8" y1="58.0" x2="668" y2="58.0" stroke="#0F1620" stroke-width="1" stroke-dasharray="3 2" opacity=".55"/><text x="12" y="53.0" class="mk">편입가 10,000</text>
+<text x="8.0" y="236" class="ax" text-anchor="start">03-11</text><text x="341.7" y="236" class="ax" text-anchor="middle">05-15</text><text x="668.0" y="236" class="ax" text-anchor="end">07-21</text>
+</svg>
+        <ul class="chart-legend"><li><i class="k-price"></i>종가</li><li><i class="k-ma20"></i>20일선</li><li><i class="k-ma60"></i>60일선</li><li><i class="k-vol"></i>거래량</li></ul>
+      
+    </div>
+    <div class="tp" data-panel="live">
+<a class="tv-out" href="https://www.tradingview.com/symbols/KRX-144960/" target="_blank" rel="noopener noreferrer" style="min-height:560px">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 15l5-6 4 4 7-9M20 4h-6m6 0v6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <b>TradingView에서 실시간 차트 보기</b>
+  <span>새 탭에서 열립니다<svg class="ext" viewBox="0 0 12 12" aria-hidden="true"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></span>
+</a>
+</div>
+  </div>
+  <p class="note-sm">실시간 차트는 TradingView 사이트로 이동해 확인할 수 있습니다.</p>
+</section>
+
+
+<section class="block">
+  <h2 class="sec"><span>Current Thesis</span><em>2026-07-22 기준</em></h2>
+  <div class="pick">
+    <div class="split">
+      <div class="sg-box">
+        <h4 class="mini">Signal</h4>
+        
+<div class="signal-grid">
+  
+  
+  <div class="cell positive"><span>가격</span><b>긍정</b></div>
+  
+  
+  <div class="cell negative"><span>재무</span><b>부정</b></div>
+  
+  
+  <div class="cell neutral"><span>수급</span><b>중립</b></div>
+  
+  
+  <div class="cell neutral"><span>뉴스</span><b>중립</b></div>
+  
+  
+  <div class="cell negative"><span>밸류</span><b>부정</b></div>
+  
+</div>
+
+      </div>
+      <dl class="facts">
+        <div><dt>판정</dt><dd>매수 추천</dd></div>
+        <div><dt>AI 확신도</dt><dd>57/100</dd></div>
+        <div><dt>목표 수익률</dt><dd class="rise">+12.0%</dd></div>
+        <div><dt>보유 경과</dt><dd>0거래일</dd></div>
+      </dl>
+    </div>
+    <div class="thesis"><h4>Investment Thesis</h4><p>뉴파워프라즈마는 20일선과 60일선을 모두 상회하며 최근 20일간 17.65% 상승하는 등 기술적 상승 추세가 뚜렷하고, 반도체 장비 업황 회복 기대와 방산 확장 스토리가 겹치며 시장의 관심을 받고 있다. 2025년 매출과 영업이익이 각각 11.2%, 9.7% 성장하며 외형 성장은 유지되고 있으나, 부채비율 1076%라는 극단적 레버리지는 금리·업황 변동에 취약한 구조적 약점이다. 골든크로스 미형성과 MACD 상승전환 미확인은 추세 지속력에 대한 확신을 약화시키며, 최근 기관 매수세가 원익IPS·테스 등 경쟁 장비주에 쏠려있어 수급 모멘텀이 분산된 점도 부담이다. 다만 52주 고점(11,630원) 대비 아직 여유가 있고 거래량이 늘며 단기 추세는 살아있어, 기술적 반등 시나리오에 무게를 둔 제한적 매수가 합리적이다. 재무 리스크를 감안해 타이트하지 않은 손절선과 보수적인 목표수익률로 접근해야 한다.</p></div>
+    <div class="twocol">
+      <div class="col bull"><h4>상승 논거</h4><ul><li>20일선·60일선을 모두 상회하며 상승추세가 유지되고 있다</li><li>거래량이 20일 평균 대비 1.41배로 증가하며 매수세가 살아있다</li><li>2025년 매출 11.2%, 영업이익 9.7% 성장으로 외형 성장이 지속되고 있다</li><li>반도체 장비 업황 회복과 방산 확장 스토리가 재평가 모멘텀으로 작용할 수 있다</li><li>52주 고점까지 약 14% 여유가 있어 추가 상승 여력이 존재한다</li></ul></div>
+      <div class="col bear"><h4>리스크 요인</h4><ul><li>부채비율 1076%로 재무 레버리지가 극단적으로 높아 금리·업황 변동에 취약하다</li><li>20-60일 골든크로스 미형성과 MACD 상승전환 미확인으로 기술적 모멘텀 신뢰도가 낮다</li><li>최근 기관 매수세가 원익IPS·테스 등 경쟁 장비주에 집중되며 수급이 분산되고 있다</li><li>높은 부채비율로 인해 이익 대비 밸류에이션 정당성 판단이 어렵다</li></ul></div>
+    </div>
+    <p class="inval"><span>논리 훼손 조건</span>20일선(9,766원)을 종가 기준으로 이탈하고 거래량 감소가 동반되면 상승 논리 무효화</p>
+  </div>
+</section>
+
+
+
+<section class="block">
+  <h2 class="sec"><span>Related News</span><em>원문 매체로 이동</em></h2>
+  <ul class="nlist">
+<li class="ni">
+  <a class="nt" href="https://www.pinpointnews.co.kr/news/articleView.html?idxno=470200" target="_blank" rel="noopener noreferrer">
+    코스피, 기관·외국인 쌍끌이 매수에 6740선 회복...삼성전자·SK하이닉...<svg class="ext" viewBox="0 0 12 12" aria-hidden="true"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+  </a>
+  <div class="nmeta">
+    
+    
+    <time>2026-07-21 15:58</time>
+  </div>
+  
+  
+</li>
+
+<li class="ni">
+  <a class="nt" href="https://www.pinpointnews.co.kr/news/articleView.html?idxno=469805" target="_blank" rel="noopener noreferrer">
+    [코스닥 기관] 반도체 장비 갈아타기…샘씨엔에스 사고 주성엔지니어링...<svg class="ext" viewBox="0 0 12 12" aria-hidden="true"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+  </a>
+  <div class="nmeta">
+    
+    
+    <time>2026-07-20 16:00</time>
+  </div>
+  
+  
+</li>
+
+<li class="ni">
+  <a class="nt" href="http://www.knnews.co.kr/news/articleView.php?idxno=1546698" target="_blank" rel="noopener noreferrer">
+    스페이스프로- KIST, 우주항공 신소재 개발<svg class="ext" viewBox="0 0 12 12" aria-hidden="true"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+  </a>
+  <div class="nmeta">
+    
+    
+    <time>2026-07-20 10:00</time>
+  </div>
+  
+  
+</li>
+
+<li class="ni">
+  <a class="nt" href="http://www.gnmaeil.com/news/articleView.html?idxno=590922" target="_blank" rel="noopener noreferrer">
+    스페이스프로, KIST와 &#39;복합소재&#39; 개발<svg class="ext" viewBox="0 0 12 12" aria-hidden="true"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+  </a>
+  <div class="nmeta">
+    
+    
+    <time>2026-07-19 21:42</time>
+  </div>
+  
+  
+</li>
+
+<li class="ni">
+  <a class="nt" href="https://www.newsgn.com/news/articleView.html?idxno=562766" target="_blank" rel="noopener noreferrer">
+    한국과학기술연구원(KIST) - 스페이스프로우주시대 핵심 &#39;첨단 복합소재...<svg class="ext" viewBox="0 0 12 12" aria-hidden="true"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+  </a>
+  <div class="nmeta">
+    
+    
+    <time>2026-07-19 16:22</time>
+  </div>
+  
+  
+</li>
+
+<li class="ni">
+  <a class="nt" href="https://www.pinpointnews.co.kr/news/articleView.html?idxno=469249" target="_blank" rel="noopener noreferrer">
+    반도체 넘어 방산까지…뉴파워프라즈마 성장 스토리 주목을<svg class="ext" viewBox="0 0 12 12" aria-hidden="true"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+  </a>
+  <div class="nmeta">
+    
+    
+    <time>2026-07-17 12:12</time>
+  </div>
+  
+  
+</li>
+
+<li class="ni">
+  <a class="nt" href="https://www.pinpointnews.co.kr/news/articleView.html?idxno=469217" target="_blank" rel="noopener noreferrer">
+    [주간 코스닥 기관] 원익IPS 피에스케이 테스 브이엠 파두 ISC &#39;폭풍 매수...<svg class="ext" viewBox="0 0 12 12" aria-hidden="true"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+  </a>
+  <div class="nmeta">
+    
+    
+    <time>2026-07-17 07:40</time>
+  </div>
+  
+  
+</li>
+
+<li class="ni">
+  <a class="nt" href="https://www.pinpointnews.co.kr/news/articleView.html?idxno=468766" target="_blank" rel="noopener noreferrer">
+    [코스닥 기관] 반도체 장비주 집중 매수…원익IPS·테스·피에스케이 담...<svg class="ext" viewBox="0 0 12 12" aria-hidden="true"><path d="M4 2h6v6M10 2L3 9" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+  </a>
+  <div class="nmeta">
+    
+    
+    <time>2026-07-15 16:10</time>
+  </div>
+  
+  
+</li>
+</ul>
+</section>
+
+
+<section class="block">
+  <h2 class="sec"><span>Judgement History</span><em>1건</em></h2>
+  <ol class="timeline">
+  
+    <li>
+      <div class="when">
+        <a href="/reports/kr/2026-07-22/">2026-07-22</a>
+        <span class="status s-new">신규 편입</span>
+        <span class="cf">확신도 57</span>
+      </div>
+      <p class="line">
+        <span>편입 10,000원</span>
+        <span>당시 10,000원</span>
+        <span class="flat"><b>+0.00%</b></span>
+      </p>
+    </li>
+  
+  </ol>
+</section>
+</main>
+  <aside class="rail">
+<div class="rc">
+  <h4>Snapshot</h4>
+  <ul class="kv">
+    <li><span>종목코드</span><b>144960</b></li>
+    <li><span>시장</span><b>KOSDAQ</b></li>
+    <li><span>편입일</span><b>2026-07-22</b></li>
+    <li><span>RSI(14)</span><b>58.6</b></li>
+    <li><span>52주 위치</span><b>76.3%</b></li>
+  </ul>
+</div>
+
+<div class="rc">
+  <h4>Recent Filings</h4>
+  <ul class="rnews">
+    
+    <li><a href="https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260710000711" target="_blank" rel="noopener noreferrer">주식등의대량보유상황보고서(약식)</a><span class="chipx">20260710</span></li>
+    
+    <li><a href="https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260703000119" target="_blank" rel="noopener noreferrer">주식등의대량보유상황보고서(일반)</a><span class="chipx">20260703</span></li>
+    
+  </ul>
+  <p class="rempty">출처 · DART 전자공시</p>
+</div>
+
+
+</aside>
+</div>
+
+<footer>
+  <div class="f-grid">
+    <div class="f-brand">
+      <span class="wm">SMIM</span>
+      <p class="ft">주식은 정보다</p>
+      <p class="fc">Founder &amp; Developer · <b>이태웅</b></p>
+    </div>
+    <div class="f-col"><h5>Research</h5>
+      <a href="/">Daily Report</a><a href="/watchlist/">Watchlist</a>
+      <a href="/performance/">Track Record</a><a href="/archive/">Archive</a></div>
+    <div class="f-col"><h5>Market</h5>
+      <a href="/market/">지수 · 업종</a><a href="/newsroom/">Newsroom</a><a href="/feed.xml">RSS</a></div>
+    <div class="f-col"><h5>Transparency</h5>
+      <a href="/methodology/">분석 방법론</a><a href="/methodology/#limits">알려진 한계</a>
+      <a href="/archive/">원본 데이터 (JSON)</a></div>
+    <div class="f-col"><h5>Data</h5>
+      <a href="https://opendart.fss.or.kr" target="_blank" rel="noopener">DART 전자공시</a>
+      <span>시세 · FinanceDataReader</span><span>차트 · TradingView</span>
+      <span>뉴스 · 네이버 뉴스 API</span></div>
+  </div>
+  <div class="disc">
+    <h4>중요 고지</h4>
+    <p>SMIM이 제공하는 모든 정보는 AI가 공개 데이터를 분석해 생성한 참고자료이며, 특정 종목의 매수·매도를 권유하는 투자 권유가 아닙니다. SMIM은 자본시장법상 금융투자업자가 아니며, 어떠한 수익도 보장하지 않습니다. AI가 올려준 종목을 보고 매수할지 판단하는 것은 오롯이 투자자 본인의 몫이며, 투자 결과에 대한 책임은 전적으로 투자자 본인에게 있습니다.</p>
+    <p class="fine">SMIM은 무료로 운영되며 종목 추천의 대가로 어떠한 금전도 받지 않습니다. 선행매매를 하지 않고, 수익을 보장하지 않습니다. 발행된 판단은 수정·삭제 없이 보존되며, 손실 사례까지 자동 채점되어 공개됩니다. 기사 본문은 저장·재배포하지 않으며 제목과 원문 링크만 제공합니다.</p>
+  </div>
+  <div class="colo">
+    <span>© 2026 SMIM</span>
+    <span>Built &amp; maintained by <b>이태웅</b></span>
+    <span>종목 분석은 자동화된 언어모델이 수행합니다</span>
+  </div>
+</footer>
+
+<script src="/assets/app.js" defer></script>
+<script src="/assets/live.js" defer></script>
+<script src="/assets/news-live.js" defer></script>
+<script src="/assets/market-status.js" defer></script>
+</body>
+</html>
