@@ -7,9 +7,9 @@
   "homepage": "www.SKinnovation.com",
   "entry_date": "2026-07-16",
   "entry_price": 124500.0,
-  "current_price": 116300,
-  "return_pct": -6.59,
-  "days_held": 4,
+  "current_price": 118400,
+  "return_pct": -4.9,
+  "days_held": 5,
   "status": "holding",
   "verdict": "BUY",
   "confidence": 64,
@@ -142,7 +142,7 @@
    "revenue_yoy_pct": 8.1,
    "debt_ratio_pct": 473.2
   },
-  "updated": "2026-07-22"
+  "updated": "2026-07-23"
  },
  {
   "code": "439090",
@@ -152,9 +152,9 @@
   "homepage": "www.manyo.co.kr",
   "entry_date": "2026-07-17",
   "entry_price": 17290.0,
-  "current_price": 16670,
-  "return_pct": -3.59,
-  "days_held": 3,
+  "current_price": 16430,
+  "return_pct": -4.97,
+  "days_held": 4,
   "status": "holding",
   "verdict": "BUY",
   "confidence": 55,
@@ -286,7 +286,7 @@
    "revenue_yoy_pct": -11.7,
    "debt_ratio_pct": 611.4
   },
-  "updated": "2026-07-22"
+  "updated": "2026-07-23"
  },
  {
   "code": "021240",
@@ -296,9 +296,9 @@
   "homepage": "company.coway.com",
   "entry_date": "2026-07-17",
   "entry_price": 96700.0,
-  "current_price": 93500,
-  "return_pct": -3.31,
-  "days_held": 3,
+  "current_price": 91800,
+  "return_pct": -5.07,
+  "days_held": 4,
   "status": "holding",
   "verdict": "BUY",
   "confidence": 58,
@@ -431,7 +431,7 @@
    "revenue": 4963566073111,
    "revenue_yoy_pct": 15.2
   },
-  "updated": "2026-07-22"
+  "updated": "2026-07-23"
  },
  {
   "code": "144960",
@@ -441,10 +441,10 @@
   "homepage": "newpower.co.kr",
   "entry_date": "2026-07-22",
   "entry_price": 10000.0,
-  "current_price": 10000.0,
-  "return_pct": 0.0,
+  "current_price": 10050,
+  "return_pct": 0.5,
   "days_held": 0,
-  "status": "new",
+  "status": "holding",
   "verdict": "BUY",
   "confidence": 57,
   "sector": "반도체",
@@ -562,6 +562,6 @@
    "revenue_yoy_pct": 11.2,
    "debt_ratio_pct": 1076.3
   },
-  "updated": "2026-07-22"
+  "updated": "2026-07-23"
  }
 ]
