@@ -7,8 +7,8 @@
   "homepage": "www.SKinnovation.com",
   "entry_date": "2026-07-16",
   "entry_price": 124500.0,
-  "current_price": 118400,
-  "return_pct": -4.9,
+  "current_price": 132200,
+  "return_pct": 6.18,
   "days_held": 5,
   "status": "holding",
   "verdict": "BUY",
@@ -142,7 +142,7 @@
    "revenue_yoy_pct": 8.1,
    "debt_ratio_pct": 473.2
   },
-  "updated": "2026-07-23"
+  "updated": "2026-07-24"
  },
  {
   "code": "439090",
@@ -152,9 +152,9 @@
   "homepage": "www.manyo.co.kr",
   "entry_date": "2026-07-17",
   "entry_price": 17290.0,
-  "current_price": 16430,
-  "return_pct": -4.97,
-  "days_held": 4,
+  "current_price": 16340,
+  "return_pct": -5.49,
+  "days_held": 5,
   "status": "holding",
   "verdict": "BUY",
   "confidence": 55,
@@ -286,152 +286,7 @@
    "revenue_yoy_pct": -11.7,
    "debt_ratio_pct": 611.4
   },
-  "updated": "2026-07-23"
- },
- {
-  "code": "021240",
-  "name": "코웨이",
-  "market": "KOSPI",
-  "market_group": "KR",
-  "homepage": "company.coway.com",
-  "entry_date": "2026-07-17",
-  "entry_price": 96700.0,
-  "current_price": 91800,
-  "return_pct": -5.07,
-  "days_held": 4,
-  "status": "holding",
-  "verdict": "BUY",
-  "confidence": 58,
-  "sector": "소비재",
-  "target_return_pct": 9.0,
-  "stop_loss_pct": -6.0,
-  "horizon_days": 15,
-  "invalidation": "20일선(91,160원) 종가 이탈 시 상승 추세 논리 무효화",
-  "thesis": "코웨이는 2025년 매출 15.2%, 영업이익 10.5% 증가로 실적 모멘텀을 유지하고 있으며, 롯데렌탈과의 멤버스 클럽 제휴 확대 등 플랫폼 확장 뉴스가 우호적이다. 주가는 20일선과 60일선을 모두 상회하고 MACD가 상승 전환되었으나, 최근 5일간 13.76% 급등한 뒤라 단기 과열 부담이 있고 20-60일 골든크로스는 아직 형성되지 않았다. 매출 대비 순이익 증가율이 낮아 수익성 압박 신호도 존재해 상승 여력은 있으나 속도는 조절될 가능성이 높다. 52주 고점까지 약 17% 여력이 남아있어 중기적으로 추가 상승 시도는 가능하나, 단기적으로는 20일선(91,160원) 부근에서의 눌림 리스크를 감안한 접근이 필요하다.",
-  "scorecard": {
-   "price": "positive",
-   "fundamental": "neutral",
-   "supply": "neutral",
-   "news": "positive",
-   "valuation": "neutral"
-  },
-  "bull_points": [
-   "MACD 히스토그램 상승전환과 RSI 58.2의 건강한 모멘텀 지표",
-   "20일선·60일선 동반 상회로 중기 추세 유지",
-   "거래량 20일평균 대비 1.31배 증가로 수급 신뢰도 개선",
-   "2025년 매출 15.2%, 영업이익 10.5% 증가의 실적 성장세",
-   "롯데렌탈 제휴 확대 등 플랫폼 전환 스토리의 뉴스 모멘텀"
-  ],
-  "bear_points": [
-   "매출 대비 순이익 증가율 둔화(15.2%→9.2%)로 수익성 압박 우려",
-   "5일간 13.76% 급등에 따른 단기 과열 및 조정 가능성",
-   "20-60일 골든크로스 미형성으로 중기 추세 확신 부족",
-   "최대주주·임원 거래계획 공시 집중에 따른 수급 불확실성"
-  ],
-  "news": [
-   {
-    "title": "“620㎜ 소파 테이블이 900㎜ 조리대로”…‘움직이는 가구’ 경쟁",
-    "url": "https://www.segye.com/newsView/20260717503818?OutUrl=naver",
-    "published": "2026-07-17 07:13"
-   },
-   {
-    "title": "장동하號 교원…실적으로 증명한 토털 라이프케어 플랫폼 전환",
-    "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1716627",
-    "published": "2026-07-17 06:00"
-   },
-   {
-    "title": "‘월가의 야만인’은 왜 한국에서 길을 잃었나",
-    "url": "https://magazine.hankyung.com/business/article/202607168098b",
-    "published": "2026-07-17 05:05"
-   },
-   {
-    "title": "코웨이, 롯데렌탈과 손잡고 ‘멤버스 클럽’ 제휴사업 확대",
-    "url": "https://www.news2day.co.kr/article/20260716500231",
-    "published": "2026-07-16 20:20"
-   },
-   {
-    "title": "코웨이, 롯데렌탈과 손잡고 '멤버스 클럽' 제휴 확대",
-    "url": "https://www.thepublic.kr/news/articleView.html?idxno=311654",
-    "published": "2026-07-16 19:26"
-   },
-   {
-    "title": "코웨이, 롯데렌탈과 제휴…장기렌터카·차량 관리 혜택 확대",
-    "url": "https://www.todayeconomic.com/news/article.html?no=31341",
-    "published": "2026-07-16 18:28"
-   },
-   {
-    "title": "[코스피 지수선물 옵션] \"1조원대 매물 쏟아졌다\"… 삼성전자·SK하이닉...",
-    "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=469155",
-    "published": "2026-07-16 16:38"
-   },
-   {
-    "title": "코웨이, 3개월간 16% 상승…증권가 \"2분기 실적 기대감 유효\"",
-    "url": "https://www.onews.tv/news/articleView.html?idxno=283207",
-    "published": "2026-07-16 16:18"
-   }
-  ],
-  "filings": [
-   {
-    "date": "20260710",
-    "title": "임원ㆍ주요주주특정증권등거래계획보고서",
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260710000480"
-   },
-   {
-    "date": "20260707",
-    "title": "주식등의대량보유상황보고서(일반)",
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260707000434"
-   },
-   {
-    "date": "20260707",
-    "title": "기업설명회(IR)개최(안내공시)              ",
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260707800719"
-   },
-   {
-    "date": "20260630",
-    "title": "지속가능경영보고서등관련사항(자율공시)              ",
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260630800241"
-   },
-   {
-    "date": "20260626",
-    "title": "최대주주등소유주식변동신고서              ",
-    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260626800804"
-   }
-  ],
-  "tech": {
-   "close": 96700.0,
-   "change_1d_pct": 1.04,
-   "change_5d_pct": 13.76,
-   "change_20d_pct": 6.26,
-   "ma5": 93640.0,
-   "ma20": 91160.0,
-   "ma60": 90180.0,
-   "ma120": 84309.0,
-   "above_ma20": true,
-   "above_ma60": true,
-   "golden_cross_20_60": false,
-   "rsi14": 58.2,
-   "macd_hist": 400.54,
-   "macd_turning_up": true,
-   "volume_ratio_vs_20d": 1.31,
-   "avg_trading_value_20d": 20826649890.0,
-   "pos_in_52w_range_pct": 61.0,
-   "high_52w": 113200.0,
-   "low_52w": 70900.0,
-   "volatility_20d_pct": 3.44,
-   "limit_up_yesterday": false
-  },
-  "financials": {
-   "fiscal_year": 2025,
-   "liabilities": 3386394640587,
-   "liabilities_yoy_pct": 32.0,
-   "operating_profit": 878651769382,
-   "operating_profit_yoy_pct": 10.5,
-   "net_income": 617510076654,
-   "net_income_yoy_pct": 9.2,
-   "revenue": 4963566073111,
-   "revenue_yoy_pct": 15.2
-  },
-  "updated": "2026-07-23"
+  "updated": "2026-07-24"
  },
  {
   "code": "144960",
@@ -441,9 +296,9 @@
   "homepage": "newpower.co.kr",
   "entry_date": "2026-07-22",
   "entry_price": 10000.0,
-  "current_price": 10050,
-  "return_pct": 0.5,
-  "days_held": 0,
+  "current_price": 10020,
+  "return_pct": 0.2,
+  "days_held": 1,
   "status": "holding",
   "verdict": "BUY",
   "confidence": 57,
@@ -562,6 +417,6 @@
    "revenue_yoy_pct": 11.2,
    "debt_ratio_pct": 1076.3
   },
-  "updated": "2026-07-23"
+  "updated": "2026-07-24"
  }
 ]

@@ -12,5 +12,19 @@
   "status": "stopped",
   "verdict": "BUY",
   "confidence": 58
+ },
+ {
+  "market_group": "KR",
+  "code": "021240",
+  "name": "코웨이",
+  "entry_date": "2026-07-17",
+  "entry_price": 96700.0,
+  "exit_date": "2026-07-24",
+  "exit_price": 90700,
+  "return_pct": -6.2,
+  "days_held": 5,
+  "status": "stopped",
+  "verdict": "BUY",
+  "confidence": 58
  }
 ]
