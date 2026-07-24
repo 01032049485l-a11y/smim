@@ -26,5 +26,19 @@
   "status": "stopped",
   "verdict": "BUY",
   "confidence": 58
+ },
+ {
+  "market_group": "KR",
+  "code": "439090",
+  "name": "마녀공장",
+  "entry_date": "2026-07-17",
+  "entry_price": 17290.0,
+  "exit_date": "2026-07-24",
+  "exit_price": 15050,
+  "return_pct": -12.96,
+  "days_held": 5,
+  "status": "stopped",
+  "verdict": "BUY",
+  "confidence": 55
  }
 ]
