@@ -2,15 +2,15 @@
  "date": "2026-07-27",
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-0727",
- "issue_no": 10,
- "published_at": "2026-07-27T08:38:17+09:00",
+ "issue_no": 11,
+ "published_at": "2026-07-27T08:47:44+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdRYqVyVapo3z2yV87uwk'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdRZZJqCGMjCniNHRt26v'}",
   "consecutive_failure_days": 2
  },
  "models": {
@@ -991,6 +991,70 @@
  "rejected": [],
  "newsroom": [
   {
+   "title": "변정규 본부장 \"고환율 끝난 것 아니다…달러 강세 재개 가능성 대비해...",
+   "url": "https://www.edaily.co.kr/news/newspath.asp?newsid=02204166645518784",
+   "published": "2026-07-27 08:44",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "SK㈜, 31일 이사회…SK실트론 매각 '백지화 vs 재평가' 분수령",
+   "url": "https://www.sentv.co.kr/article/view/sentv202607270008",
+   "published": "2026-07-27 08:42",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "‘7개월 표류’ SK실트론 매각…이번주 결론 날까",
+   "url": "https://biz.heraldcorp.com/article/10820838?ref=naver",
+   "published": "2026-07-27 08:41",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "이엠앤아이, 인도 중수 수출허가 확보…밸류파인더 \"하반기 흑자전환 기...",
+   "url": "https://daily.hankooki.com/news/articleView.html?idxno=1389477",
+   "published": "2026-07-27 08:40",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[마켓 프리뷰] 빅테크 실적 앞둔 코스피…반등 계기 마련할까",
+   "url": "https://www.ajunews.com/view/20260727083158487",
+   "published": "2026-07-27 08:38",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "WSJ \"SK하이닉스 ADR 프리미엄, AI 투자 과열 신호\"",
+   "url": "https://www.dailian.co.kr/news/view/1671035/?sc=Naver",
+   "published": "2026-07-27 08:38",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "기아, 역대 최대 매출에도 웃지 못했다…증권가 목표가 줄하향",
+   "url": "http://www.joseilbo.com/news/news_read.php?uid=572644&class=17&grp=",
+   "published": "2026-07-27 08:38",
+   "topic": "자동차",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "iM증권 \"하이퍼스케일러 신용 리스크, 과도한 수준 아냐\"",
+   "url": "https://www.yna.co.kr/view/AKR20260727022600008?input=1195m",
+   "published": "2026-07-27 08:38",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
    "title": "[증시 포인트] 코스피 반등 전망...반도체 업종 주목",
    "url": "http://www.opinionnews.co.kr/news/articleView.html?idxno=142072",
    "published": "2026-07-27 08:36",
@@ -1015,32 +1079,16 @@
    "watchlist_hits": []
   },
   {
-   "title": "유가 5% 급락에 나스닥 선물 1%↑…뉴욕증시 '안도 랠리' 예고",
-   "url": "https://www.news1.kr/world/international-economy/6239538",
-   "published": "2026-07-27 08:34",
-   "topic": "반도체",
+   "title": "[모닝 리포트] \"신한지주, 계열사 전반 실적 개선\"…목표가 13만원 유지",
+   "url": "https://www.newspim.com/news/view/20260727000071",
+   "published": "2026-07-27 08:33",
+   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "KB증권 “반도체, 주가 흔들려도 성장 궤적 선명…추세 상향 안 변해”...",
-   "url": "https://www.sedaily.com/article/20072114?ref=naver",
-   "published": "2026-07-27 08:34",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "‘美 반도체 한파’ 뚫은 삼전닉스…프리마켓 3%대 강세",
-   "url": "https://www.dt.co.kr/article/12074860?ref=naver",
-   "published": "2026-07-27 08:32",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "우리금융지주, 비은행 포트폴리오 효과 '본격화'…수익성 개선 기대",
-   "url": "http://www.newsprime.co.kr/news/article.html?no=741573",
+   "title": "[국제금융 브리핑] 미국·이란 공격 일시 중단...브렌트유 9.85% 급등·美...",
+   "url": "https://www.tokenpost.kr/news/economy/381483",
    "published": "2026-07-27 08:32",
    "topic": "금융",
    "ticker_prices": [],
@@ -1055,8 +1103,8 @@
    "watchlist_hits": []
   },
   {
-   "title": "[국제금융 브리핑] 미국·이란 공격 일시 중단...브렌트유 9.85% 급등·美...",
-   "url": "https://www.tokenpost.kr/news/economy/381483",
+   "title": "우리금융지주, 비은행 포트폴리오 효과 '본격화'…수익성 개선 기대",
+   "url": "http://www.newsprime.co.kr/news/article.html?no=741573",
    "published": "2026-07-27 08:32",
    "topic": "금융",
    "ticker_prices": [],
@@ -1071,23 +1119,7 @@
    "watchlist_hits": []
   },
   {
-   "title": "\"한화, 인적분할 요인 최근 주가에 선반영…지배구조 개선 예상 '매수' ...",
-   "url": "https://www.mt.co.kr/stock/2026/07/27/2026072708273364075",
-   "published": "2026-07-27 08:31",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "낸드가 끌어내린 반도체주, D램이 버틸까…레버리지 투자도 요동",
-   "url": "http://www.joseilbo.com/news/news_read.php?uid=572642&class=1&grp=",
-   "published": "2026-07-27 08:31",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "\"한 달새 28% 밀린 코스피, V자 반등 어려워\"-유진",
+   "title": "\"코스피, 한 달새 28% 밀렸는데\"…개미들 증권가 전망에 '한숨' [분석+]",
    "url": "https://www.hankyung.com/article/2026072770916",
    "published": "2026-07-27 08:30",
    "topic": "금융",
@@ -1115,14 +1147,6 @@
    "url": "https://www.newsis.com/view/NISX20260727_0003723934",
    "published": "2026-07-27 08:24",
    "topic": "자동차",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "코스피, 상승분 감안해도 이례적 급락…\"V자 반등 어렵다\"",
-   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4426913",
-   "published": "2026-07-27 08:24",
-   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -1159,25 +1183,9 @@
    "watchlist_hits": []
   },
   {
-   "title": "“코스피, V자 반등은 어렵다…회복에 최소 한달 소요”",
-   "url": "https://www.edaily.co.kr/news/newspath.asp?newsid=02053286645518784",
-   "published": "2026-07-27 08:12",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "[오늘의 투자전략] 코스피, 슈퍼위크 거치며 반등 시도 전망⋯FOMCㆍ빅테...",
    "url": "https://www.etoday.co.kr/news/view/2607566",
    "published": "2026-07-27 08:04",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[AI MY 증시전망] 美 FOMC 앞두고, 코스피 7000선 회복 시도",
-   "url": "https://www.newspim.com/news/view/20260727000025",
-   "published": "2026-07-27 08:01",
    "topic": "증시",
    "ticker_prices": [],
    "watchlist_hits": []
@@ -1233,14 +1241,6 @@
   {
    "title": "[천지일보 이슈종합] 오세훈 대권가도 흔들·李대통령·전국 휩쓴 폭염...",
    "url": "https://www.newscj.com/news/articleView.html?idxno=3420031",
-   "published": "2026-07-27 07:02",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "트럼프, 고금리·강달러 직접 잡는다 | 닉슨 환율 조작 쇼크? 韓 증시, ...",
-   "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202607270037&t=NN",
    "published": "2026-07-27 07:02",
    "topic": "환율·거시",
    "ticker_prices": [],
