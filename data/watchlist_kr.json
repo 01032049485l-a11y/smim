@@ -9,7 +9,7 @@
   "entry_price": 124500.0,
   "current_price": 116700,
   "return_pct": -6.27,
-  "days_held": 7,
+  "days_held": 8,
   "status": "holding",
   "verdict": "BUY",
   "confidence": 64,
@@ -142,7 +142,7 @@
    "revenue_yoy_pct": 8.1,
    "debt_ratio_pct": 473.2
   },
-  "updated": "2026-07-27"
+  "updated": "2026-07-28"
  },
  {
   "code": "144960",
@@ -154,7 +154,7 @@
   "entry_price": 10000.0,
   "current_price": 10520,
   "return_pct": 5.2,
-  "days_held": 3,
+  "days_held": 4,
   "status": "holding",
   "verdict": "BUY",
   "confidence": 57,
@@ -273,6 +273,6 @@
    "revenue_yoy_pct": 11.2,
    "debt_ratio_pct": 1076.3
   },
-  "updated": "2026-07-27"
+  "updated": "2026-07-28"
  }
 ]

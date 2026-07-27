@@ -1,7 +1,7 @@
 {
  "KR": {
-  "consecutive_failures": 2,
-  "last_failure_date": "2026-07-27",
+  "consecutive_failures": 3,
+  "last_failure_date": "2026-07-28",
   "last_kind": "billing"
  }
 }
