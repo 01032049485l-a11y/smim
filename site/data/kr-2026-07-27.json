@@ -3,14 +3,14 @@
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-0727",
  "issue_no": 11,
- "published_at": "2026-07-27T19:53:46+09:00",
+ "published_at": "2026-07-27T19:57:33+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdSSM5gXJdDNADyFTfpAD'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdSSdoXecpqN7jMoiUY6p'}",
   "consecutive_failure_days": 2
  },
  "models": {
@@ -106,9 +106,9 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1468.74,
-    "change": -5.3,
-    "change_pct": -0.36,
+    "value": 1468.88,
+    "change": -5.16,
+    "change_pct": -0.35,
     "trend": "down",
     "trend_label": "하락세",
     "series": [
@@ -141,7 +141,7 @@
      1479.72,
      1475.63,
      1474.04,
-     1468.74
+     1468.88
     ]
    }
   ],
@@ -991,6 +991,14 @@
  "rejected": [],
  "newsroom": [
   {
+   "title": "역대 최다 발동에 실효성 의심 받는 ‘증시 안전망’",
+   "url": "https://www.segye.com/newsView/20260727514379?OutUrl=naver",
+   "published": "2026-07-27 19:55",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
    "title": "원화 강세·엔화 약세… 이례적 ‘탈동조화’ 언제까지",
    "url": "https://www.segye.com/newsView/20260727514378?OutUrl=naver",
    "published": "2026-07-27 19:51",
@@ -1207,14 +1215,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "샌프란 훈풍?…'널뛰기' 코스피 6700선 탈환",
-   "url": "https://biz.sbs.co.kr/article_hub/20000324905?division=NAVER",
-   "published": "2026-07-27 18:17",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "[신간] 김대종 2027 머니트렌드...부자 되는 3가지 전략 제시",
    "url": "https://zdnet.co.kr/view/?no=20260727181449",
    "published": "2026-07-27 18:15",
@@ -1231,16 +1231,16 @@
    "watchlist_hits": []
   },
   {
-   "title": "마이다스에셋, 바이오헬스케어 액티브 ETF 상장",
-   "url": "https://www.newspim.com/news/view/20260727001321",
+   "title": "[HIT알공] 유바이오로직스, RSV 백신 '유알에스브이' 1상 결과 '청신호'",
+   "url": "https://www.hitnews.co.kr/news/articleView.html?idxno=77973",
    "published": "2026-07-27 18:06",
    "topic": "바이오",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "[HIT알공] 유바이오로직스, RSV 백신 '유알에스브이' 1상 결과 '청신호'",
-   "url": "https://www.hitnews.co.kr/news/articleView.html?idxno=77973",
+   "title": "마이다스에셋, 바이오헬스케어 액티브 ETF 상장",
+   "url": "https://www.newspim.com/news/view/20260727001321",
    "published": "2026-07-27 18:06",
    "topic": "바이오",
    "ticker_prices": [],
@@ -1287,8 +1287,8 @@
    "watchlist_hits": []
   },
   {
-   "title": "[마감 시황] 코스피, 장중 2% 급락 충격 딛고 6,755선 반등… 원-달러 환...",
-   "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=273665",
+   "title": "美 호재에 오르고 中 악재에 내리고… ‘롤러코스터’ 탄 코스피[마감시...",
+   "url": "https://www.ekn.kr/web/view.php?key=20260727021446533",
    "published": "2026-07-27 16:26",
    "topic": "바이오",
    "ticker_prices": [],
