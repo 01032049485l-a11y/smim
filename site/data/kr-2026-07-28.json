@@ -3,14 +3,14 @@
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-0728",
  "issue_no": 12,
- "published_at": "2026-07-28T09:11:10+09:00",
+ "published_at": "2026-07-28T09:15:40+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdTV9qtcFtX81xGWq4fuV'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdTVVk5uzh9Kn9i7652oS'}",
   "consecutive_failure_days": 3
  },
  "models": {
@@ -106,9 +106,9 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1470.15,
-    "change": 12.14,
-    "change_pct": 0.83,
+    "value": 1470.38,
+    "change": 12.37,
+    "change_pct": 0.85,
     "trend": "flat",
     "trend_label": "보합권",
     "series": [
@@ -140,7 +140,7 @@
      1475.63,
      1474.04,
      1458.01,
-     1470.15
+     1470.38
     ]
    }
   ],
@@ -161,8 +161,8 @@
    "homepage": "www.SKinnovation.com",
    "entry_date": "2026-07-16",
    "entry_price": 124500.0,
-   "current_price": 117700,
-   "return_pct": -5.46,
+   "current_price": 116100,
+   "return_pct": -6.75,
    "days_held": 8,
    "status": "holding",
    "verdict": "BUY",
@@ -480,7 +480,7 @@
      132200.0,
      130100.0,
      116700.0,
-     116700.0
+     117100.0
     ],
     "volume": [
      394221.0,
@@ -572,7 +572,7 @@
      1686912.0,
      1413273.0,
      845081.0,
-     48813.0
+     64127.0
     ]
    }
   },
@@ -584,8 +584,8 @@
    "homepage": "newpower.co.kr",
    "entry_date": "2026-07-22",
    "entry_price": 10000.0,
-   "current_price": 9540,
-   "return_pct": -4.6,
+   "current_price": 9500,
+   "return_pct": -5.0,
    "days_held": 4,
    "status": "holding",
    "verdict": "BUY",
@@ -889,7 +889,7 @@
      10020.0,
      9860.0,
      10520.0,
-     9500.0
+     9470.0
     ],
     "volume": [
      164803.0,
@@ -981,7 +981,7 @@
      1942321.0,
      1550236.0,
      1451756.0,
-     230628.0
+     293705.0
     ]
    }
   }
@@ -989,6 +989,102 @@
  "exits": [],
  "rejected": [],
  "newsroom": [
+  {
+   "title": "美·中 반도체 쇼크...코스피·코스닥 '급락 출발'",
+   "url": "http://www.choicenews.co.kr/news/articleView.html?idxno=168860",
+   "published": "2026-07-28 09:14",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[주식시황]반도체 충격에 증시 흔들…코스피 5%대 급락 출발",
+   "url": "https://www.namdonews.com/news/articleView.html?idxno=918210",
+   "published": "2026-07-28 09:14",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "한화오션 주가 털썩…간밤 반도체주 약세에 미국증시 혼조",
+   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=592405",
+   "published": "2026-07-28 09:14",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "소비자 심리 3개월 연속 개선...주택가격전망 4년10개월 만에 최고",
+   "url": "https://www.newsinside.kr/news/articleView.html?idxno=4870061",
+   "published": "2026-07-28 09:14",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "AI 시대 핵심으로 떠오른 정보보안…차별화 장세속 '불기둥'",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=472084",
+   "published": "2026-07-28 09:14",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "하나증권 \"글로벌 헬스케어시장 업황 개선, 관련주 삼성바이오로직스 셀...",
+   "url": "https://www.businesspost.co.kr/BP?command=article_view&num=443278",
+   "published": "2026-07-28 09:14",
+   "topic": "바이오",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "신한은행, 연금 고객에 최고 연 3.5%…신협, 독도 적금 최고 연 7% [금융...",
+   "url": "https://www.newspost.kr/news/articleView.html?idxno=224475",
+   "published": "2026-07-28 09:14",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "李대통령ㆍ룰라 정상회담⋯SK하이닉스 ADR 7.5% 급락 外 [오늘의 주요뉴...",
+   "url": "https://www.etoday.co.kr/news/view/2608103",
+   "published": "2026-07-28 09:12",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "4066달러 금·58달러 은… 통화정책·전쟁 리스크에 방향성 '안갯속' 금...",
+   "url": "https://www.tokenpost.kr/news/economy/381986",
+   "published": "2026-07-28 09:12",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "7월에만 21번 울린 사이드카… 변동성 못 잡는 ‘고장 난 경보기’",
+   "url": "https://biz.chosun.com/stock/stock_general/2026/07/28/KVAJVVKFXRBFBL3S6QHYVVPXQI/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+   "published": "2026-07-28 09:11",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[서울데이터랩]개장 직후 인기 검색 종목 20選",
+   "url": "https://www.seoul.co.kr/news/economy/securities/2026/07/28/20260728500022?wlog_tag3=naver",
+   "published": "2026-07-28 09:11",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[속보] '중국발 반도체 상장'에 코스피 5%대 급락… 매도 사이드카 발동",
+   "url": "https://www.kyeonggi.com/article/20260728580040",
+   "published": "2026-07-28 09:10",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
   {
    "title": "CXMT 상장에 이어 DUV 국산화까지...매서운 중국 반도체 굴기",
    "url": "https://www.ajunews.com/view/20260728090438469",
@@ -1014,14 +1110,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "[속보] 코스피 사이드카 '패닉'… 5% 급락해 6300선으로",
-   "url": "https://www.hankookilbo.com/news/article/A2026072808540000434?did=NA",
-   "published": "2026-07-28 09:08",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "[개장시황] 코스피, 355.48포인트 내린 6400.27 출발",
    "url": "https://www.lcnews.co.kr/news/articleView.html?idxno=205599",
    "published": "2026-07-28 09:08",
@@ -1030,40 +1118,16 @@
    "watchlist_hits": []
   },
   {
-   "title": "중국, 심자외선 노광장비 양산 돌입... ASML 주가 충격",
-   "url": "https://www.tokenpost.kr/news/tech/381985",
+   "title": "[속보] 코스피 사이드카 '패닉'… 5% 급락해 6300선으로",
+   "url": "https://www.hankookilbo.com/news/article/A2026072808540000434?did=NA",
    "published": "2026-07-28 09:08",
-   "topic": "반도체",
+   "topic": "증시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "창문형 에어컨 독주 속에 난방 가전까지… 파세코, 사계절 실적 모멘텀...",
-   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=472072",
-   "published": "2026-07-28 09:08",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "SK하이닉스 ADR 해외주식 순매수 1위…세금 더 내는데 왜?",
-   "url": "https://www.chosun.com/economy/stock-finance/2026/07/28/GZFETBR5BZHOXEI3AESLGT5YHA/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
-   "published": "2026-07-28 09:07",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "日증시, 美기술주 급락에 하락 출발…닛케이 0.60%↓",
-   "url": "https://www.newsis.com/view/NISX20260728_0003725761",
-   "published": "2026-07-28 09:05",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "“코스피, 하락 출발 할것…중국산 DUV 개발 소식에 반도체 약세\"<키움證...",
-   "url": "https://www.news2day.co.kr/article/20260728500023",
+   "title": "미국發 찬바람에 코스피, 5%대 급락 출발…매도 사이드카도 발동",
+   "url": "https://biz.chosun.com/stock/stock_general/2026/07/28/A64WKJ3L6JAA3OLRVQLDVQUFHU/?utm_source=naver&utm_medium=original&utm_campaign=biz",
    "published": "2026-07-28 09:04",
    "topic": "증시",
    "ticker_prices": [],
@@ -1082,14 +1146,6 @@
    "url": "https://www.hankyung.com/article/202607278666i",
    "published": "2026-07-28 09:01",
    "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[팀장칼럼] 코스피 '안부'를 묻는 시대",
-   "url": "https://www.fetv.co.kr/news/articleView.html?idxno=307167",
-   "published": "2026-07-28 09:00",
-   "topic": "증시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -1134,26 +1190,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "문은 열렸는데 투자자는 없다…코넥스 ‘개점휴업’",
-   "url": "https://www.dailian.co.kr/news/view/1671340/?sc=Naver",
-   "published": "2026-07-28 08:42",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "상반기 4대 카드사 순익 1조 육박…\"연체율 개선에도 하반기 녹록지 않...",
    "url": "http://www.newsroad.co.kr/news/articleView.html?idxno=62085",
    "published": "2026-07-28 08:40",
    "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "SK하이닉스 실적 발표 앞두고 반도체 업종 불확실성 증가에 따른 코스피...",
-   "url": "https://www.tokenpost.kr/news/market/381968",
-   "published": "2026-07-28 08:38",
-   "topic": "증시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -1177,7 +1217,7 @@
    "title": "[어제장 오늘장] 中, CXMT 뜨거운 감자…외국인 수급 어디로 향하나?",
    "url": "https://biz.sbs.co.kr/article_hub/20000324989?division=NAVER",
    "published": "2026-07-28 08:33",
-   "topic": "증시",
+   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -1185,14 +1225,6 @@
    "title": "[국제금융 브리핑] 트럼프 “이란 협상 실패 시 군사행동”...브렌트유...",
    "url": "https://www.tokenpost.kr/news/economy/381966",
    "published": "2026-07-28 08:32",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[오늘의 주요일정] 정치·경제·금융·사회·법조 28일(화)",
-   "url": "https://www.newscj.com/news/articleView.html?idxno=3420420",
-   "published": "2026-07-28 08:30",
    "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
@@ -1238,14 +1270,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "주택가격전망CSI 한달새 7p 급등 ... 4년 10개월 만에 최고",
-   "url": "http://www.queen.co.kr/news/articleView.html?idxno=460886",
-   "published": "2026-07-28 07:36",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "[마켓 프리뷰] 상승 출발한 코스피, 장중 등락 끝 겨우 강보합 마감",
    "url": "https://biz.sbs.co.kr/article_hub/20000324971?division=NAVER",
    "published": "2026-07-28 07:28",
@@ -1282,30 +1306,6 @@
    "url": "https://www.viva100.com/article/20260727501072",
    "published": "2026-07-28 06:42",
    "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "공포 휩싸인 개미들…\"지금 '보물' 찾아라\" 매력 높아진 종목 [한경우의...",
-   "url": "https://www.hankyung.com/article/2026072780786",
-   "published": "2026-07-28 06:31",
-   "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "메트로신문 7월28일자 한줄뉴스",
-   "url": "http://www.metroseoul.co.kr/article/20260727500564",
-   "published": "2026-07-28 06:02",
-   "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "삼전닉스 대신 이것, 지금 사도 안 늦는 하반기 주도주",
-   "url": "https://www.chosun.com/economy/money/2026/07/28/3E4232NIDRANTGLMS7ZOHNJLVE/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
-   "published": "2026-07-28 05:31",
-   "topic": "2차전지",
    "ticker_prices": [],
    "watchlist_hits": []
   }
