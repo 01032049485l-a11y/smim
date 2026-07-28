@@ -40,5 +40,33 @@
   "status": "stopped",
   "verdict": "BUY",
   "confidence": 55
+ },
+ {
+  "market_group": "KR",
+  "code": "096770",
+  "name": "SK이노베이션",
+  "entry_date": "2026-07-16",
+  "entry_price": 124500.0,
+  "exit_date": "2026-07-28",
+  "exit_price": 112700,
+  "return_pct": -9.48,
+  "days_held": 8,
+  "status": "stopped",
+  "verdict": "BUY",
+  "confidence": 64
+ },
+ {
+  "market_group": "KR",
+  "code": "144960",
+  "name": "뉴파워프라즈마",
+  "entry_date": "2026-07-22",
+  "entry_price": 10000.0,
+  "exit_date": "2026-07-28",
+  "exit_price": 8350,
+  "return_pct": -16.5,
+  "days_held": 4,
+  "status": "stopped",
+  "verdict": "BUY",
+  "confidence": 57
  }
 ]
