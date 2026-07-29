@@ -3,14 +3,14 @@
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-0729",
  "issue_no": 13,
- "published_at": "2026-07-29T17:06:30+09:00",
+ "published_at": "2026-07-29T17:10:26+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdW1DJkiaHvakJY7NULVv'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdW1WgyugK1zpY12SmSJf'}",
   "consecutive_failure_days": 4
  },
  "models": {
@@ -106,9 +106,9 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1448.34,
-    "change": -16.1,
-    "change_pct": -1.1,
+    "value": 1449.25,
+    "change": -15.19,
+    "change_pct": -1.04,
     "trend": "down",
     "trend_label": "하락세",
     "series": [
@@ -140,7 +140,7 @@
      1474.04,
      1458.01,
      1464.44,
-     1448.34
+     1449.25
     ]
    }
   ],
@@ -156,6 +156,86 @@
  "exits": [],
  "rejected": [],
  "newsroom": [
+  {
+   "title": "하이닉스 실적 날았지만… 코스피 끝모를 추락",
+   "url": "https://www.segye.com/newsView/20260729516298?OutUrl=naver",
+   "published": "2026-07-29 17:09",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "정부, 주가 이틀 연속 급락에 F4 긴급회의",
+   "url": "https://biz.chosun.com/policy/policy_sub/2026/07/29/EJZ6LG4DZRCAFKH3FBXDXCKEB4/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+   "published": "2026-07-29 17:09",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "코스피 5.9%↓ '6천피' 밑으로…이틀간 1천 포인트 이상 빠졌다",
+   "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008681143&plink=ORI&cooper=NAVER",
+   "published": "2026-07-29 17:08",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "\"증시 불 끄고 사퇴하라\" 국회 난타에…고개 떨군 이억원·이찬진(종합...",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4427595",
+   "published": "2026-07-29 17:08",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "메리츠금융, 1500억 회사채 수요예측서 4800억 모집",
+   "url": "https://www.mediapen.com/news/view/1113101",
+   "published": "2026-07-29 17:08",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "진짜 바닥은 어디? 공포가 지배한 증시…역대급 연이틀 '블랙데이'(종합...",
+   "url": "https://www.yna.co.kr/view/AKR20260729100251008?input=1195m",
+   "published": "2026-07-29 17:07",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "“韓 개미, 레버리지 ETF 투자로 56조원 손실”…월가 IB의 진단",
+   "url": "https://www.mk.co.kr/article/12110657",
+   "published": "2026-07-29 17:07",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "오늘 'F4' 회의 긴급 소집…'사상 초유' 이틀 연속 서킷 대응 논의",
+   "url": "https://www.news1.kr/finance/general-stock/6243113",
+   "published": "2026-07-29 17:06",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "한미약품, 북경한미 매출채권 논란에 \"전액 손실 아니다\"…채권 관리 강...",
+   "url": "http://www.dailypop.kr/news/articleView.html?idxno=101032",
+   "published": "2026-07-29 17:06",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "'6천피' 도 무너졌다…코스피 이틀 새 16% 폭락",
+   "url": "https://www.koreareport.co.kr/news/articleView.html?idxno=51798",
+   "published": "2026-07-29 17:06",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
   {
    "title": "사상 초유 ‘2일 연속 서킷 브레이커’…하이닉스 실적 실망감에 코스피...",
    "url": "https://www.ekn.kr/web/view.php?key=20260729021087486",
@@ -181,90 +261,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "3000조 증발한 국장…외국인·레버리지 ETF가 키운 ‘투매 악순환’",
-   "url": "https://biz.chosun.com/stock/stock_general/2026/07/29/3YKHX4JSJNFHDCGK7U4IFB4OGI/?utm_source=naver&utm_medium=original&utm_campaign=biz",
-   "published": "2026-07-29 17:03",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[29일 오!정말] 국힘 정점식 \"우리 증시에 이런 롤러코스피 있었나\"",
-   "url": "https://www.businesspost.co.kr/BP?command=article_view&num=443463",
-   "published": "2026-07-29 17:02",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "구마모토 강진 사망자 13명...피해 관련 가짜뉴스도 기승 [짤e몽땅]",
-   "url": "http://mbn.mk.co.kr/pages/news/newsView.php?category=mbn00009&news_seq_no=5208993",
-   "published": "2026-07-29 17:02",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "결국 ‘육천피’ 붕괴…코스피·코스닥 이틀 연속 서킷브레이커 [투자3...",
-   "url": "https://biz.heraldcorp.com/article/10824711?ref=naver",
-   "published": "2026-07-29 17:02",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "코스닥시장 제약지수 8000선 붕괴",
    "url": "http://www.newsmp.com/news/articleView.html?idxno=256883",
    "published": "2026-07-29 17:02",
    "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "의구심 키운 'K메모리'…IMF보다 더 큰 충격의 코스피",
-   "url": "https://www.edaily.co.kr/news/newspath.asp?newsid=05726886645519440",
-   "published": "2026-07-29 17:01",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "폭락, 또 폭락…\"공포에 던졌다\" 반도체 쇼크에 코스피 연일 패닉",
-   "url": "https://www.hankookilbo.com/news/article/A2026072915060003113?did=NA",
-   "published": "2026-07-29 17:01",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[투자 노하우] 구마모토 강진에 日반도체 산업 긴장…TSMC 차질 우려",
-   "url": "https://biz.sbs.co.kr/article_hub/20000325413?division=NAVER",
-   "published": "2026-07-29 17:01",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "\"패닉 셀링의 본질은 수급\"…흔들리지 않는 건 기업가치",
-   "url": "https://www.mt.co.kr/stock/2026/07/29/2026072916172599761",
-   "published": "2026-07-29 17:01",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[해설]SK하이닉스 “빅테크 메모리 수요 견조”…10개사와 LTA 계약",
-   "url": "https://www.etnews.com/20260729000249",
-   "published": "2026-07-29 17:01",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "삼전닉스 급락에도...한은 “반도체 펀더멘털 양호, 추가 하락 막을 것...",
-   "url": "https://www.ddaily.co.kr/page/view/2026072916583930843",
-   "published": "2026-07-29 17:01",
-   "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -325,16 +325,16 @@
    "watchlist_hits": []
   },
   {
-   "title": "증시 패닉 따라 강세장 보이는 채권…주가와 따로 노는 원화",
-   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4427589",
+   "title": "日증시 두 달 만에 최저..반도체주 '반토막' 속출",
+   "url": "http://www.fnnews.com/news/202607291617569248",
    "published": "2026-07-29 16:40",
    "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "日증시 두 달 만에 최저..반도체주 '반토막' 속출",
-   "url": "http://www.fnnews.com/news/202607291617569248",
+   "title": "증시 패닉 따라 강세장 보이는 채권…주가와 따로 노는 원화",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4427589",
    "published": "2026-07-29 16:40",
    "topic": "금융",
    "ticker_prices": [],
@@ -357,7 +357,7 @@
    "watchlist_hits": []
   },
   {
-   "title": "'검은 월·화요일' 코스피 5600 '털썩'…사상 첫 이틀 연속 서킷브레이커...",
+   "title": "'검은 화·수요일' 코스피 5600 '털썩'…사상 첫 이틀 연속 서킷브레이커...",
    "url": "https://www.news1.kr/finance/market-exr/6243024",
    "published": "2026-07-29 16:35",
    "topic": "바이오",
@@ -376,14 +376,6 @@
    "title": "메리츠금융 회사채 수요예측서 4천800억 몰려…예정액 3배",
    "url": "https://www.yna.co.kr/view/AKR20260729146500008?input=1195m",
    "published": "2026-07-29 16:25",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[中 증시 마감] \"전날 하락 과도했다\" 저가매수 유입에 반등",
-   "url": "https://www.ajunews.com/view/20260729161923650",
-   "published": "2026-07-29 16:24",
    "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
@@ -472,6 +464,14 @@
    "title": "현대차, 아틀라스 미국 공장부지 실사 돌입",
    "url": "http://www.globalepic.co.kr/view.php?ud=20260729112410121348439a4874_29",
    "published": "2026-07-29 11:26",
+   "topic": "자동차",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "포드, 2Q 매출 감소에도…연간 전망치 상향에 주가 한때 7%↑",
+   "url": "https://www.newsis.com/view/NISX20260729_0003727542",
+   "published": "2026-07-29 10:52",
    "topic": "자동차",
    "ticker_prices": [],
    "watchlist_hits": []
