@@ -2,15 +2,15 @@
  "date": "2026-07-30",
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-0730",
- "issue_no": 13,
- "published_at": "2026-07-30T08:40:49+09:00",
+ "issue_no": 14,
+ "published_at": "2026-07-30T08:48:55+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdXETaFnDbkaCFSLgMDnq'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdXF5Qp1Gi84hctKy1qAX'}",
   "consecutive_failure_days": 5
  },
  "models": {
@@ -106,9 +106,9 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1444.16,
-    "change": -9.0,
-    "change_pct": -0.62,
+    "value": 1443.93,
+    "change": -9.23,
+    "change_pct": -0.64,
     "trend": "down",
     "trend_label": "하락세",
     "series": [
@@ -141,16 +141,10 @@
      1458.01,
      1464.44,
      1453.16,
-     1444.16
+     1443.93
     ]
    }
-  ],
-  "up": 230,
-  "down": 2311,
-  "flat": 173,
-  "up_ratio": 8.5,
-  "mood": "위험회피",
-  "sectors": []
+  ]
  },
  "new_entries": [],
  "holdings": [],
@@ -158,26 +152,130 @@
  "rejected": [],
  "newsroom": [
   {
-   "title": "“수출 사상 최대인데” 반도체 주가 폭락 이유",
-   "url": "https://magazine.hankyung.com/business/article/202607304603b",
-   "published": "2026-07-30 08:39",
+   "title": "급락장에 음식료로 눈 돌린다…롯데웰푸드, 실적까지 받쳐주네",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4427675",
+   "published": "2026-07-30 08:48",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "[애널리포트] 한국투자증권, SK하이닉스 목표가 470만원…‘매수’ 유지",
-   "url": "http://www.segyebiz.com/newsView/20260730503285?OutUrl=naver",
-   "published": "2026-07-30 08:38",
+   "title": "美 연준 금리 ‘매파적 동결’…한은 금리 추가 인상 가능성 커지나",
+   "url": "https://www.kmib.co.kr/article/view.asp?arcid=0030182146&code=61141111&cp=nv",
+   "published": "2026-07-30 08:48",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "미 연준 '매파 동결'에…한은 8월 연속 인상하나",
+   "url": "http://www.yonhapnewstv.co.kr/news/AKR20260730084622q75",
+   "published": "2026-07-30 08:47",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "국회 정무위, 증시 폭락 사태 질타... 금융당국 \"무거운 책임 느낀다\" 사...",
+   "url": "https://www.insight.co.kr/news/565445",
+   "published": "2026-07-30 08:46",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "실적 발표 후 MS는 방긋 vs 메타는 울상 [뉴욕증시 무버]",
+   "url": "https://www.etoday.co.kr/news/view/2609032",
+   "published": "2026-07-30 08:46",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "젠슨 황 이어 저커버그도 '美, 中 AI 차단' 반대...왜?",
-   "url": "http://www.choicenews.co.kr/news/articleView.html?idxno=168993",
-   "published": "2026-07-30 08:38",
+   "title": "뉴욕증시, 연준 금리 동결에 장기 국채 금리 급등·주가 하락",
+   "url": "https://biz.sbs.co.kr/article_hub/20000325527?division=NAVER",
+   "published": "2026-07-30 08:45",
    "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "‘이틀새 16% 폭락’ 코스피, 반등이냐 추가 추락이냐…운명의 하루",
+   "url": "https://www.kbmaeil.com/article/20260730500034",
+   "published": "2026-07-30 08:44",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[브라질증시] 연준 금리 동결 여파에 1.52% 하락...헤알 강세",
+   "url": "https://www.newspim.com/news/view/20260730000140",
+   "published": "2026-07-30 08:44",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "美 기준금리 동결…'매파 균열'에 국내 은행 대출금리 상승 압력 커지나",
+   "url": "https://www.the-today.com/news/articleView.html?idxno=87988",
+   "published": "2026-07-30 08:44",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[원자재 시황] 금리동결에도 시장 '출렁'…금·유가 상승",
+   "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1718330",
+   "published": "2026-07-30 08:42",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[속보] 삼성전기, 장전 NXT서 주가 100만원선 이하로…약세 출발",
+   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=593112",
+   "published": "2026-07-30 08:42",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[윤영숙의 시선] '계속 갖고 있으라'던 회장님, 어디 계세요?",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4427667",
+   "published": "2026-07-30 08:42",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "\"한국 어떡하나\" 외신도 걱정…\"낙관론 붕괴에 투자자 절망 확산\"",
+   "url": "https://view.asiae.co.kr/article/2026073008400465871",
+   "published": "2026-07-30 08:41",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "유안타증권 \"단일종목 레버리지 ETF 규제, 코스닥 반등 계기될것\"",
+   "url": "https://www.yna.co.kr/view/AKR20260730034600008?input=1195m",
+   "published": "2026-07-30 08:41",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[주식시황]6천선 무너진 코스피, 공포 끝일까…오늘 시장이 분수령",
+   "url": "https://www.namdonews.com/news/articleView.html?idxno=918504",
+   "published": "2026-07-30 08:40",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "국민의힘 장동혁·정점식, “연임 개헌 중단·경제라인 교체 촉구”",
+   "url": "http://www.breaknews.com/1225491",
+   "published": "2026-07-30 08:40",
+   "topic": "증시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -186,46 +284,6 @@
    "url": "https://www.tokenpost.kr/news/economy/382806",
    "published": "2026-07-30 08:38",
    "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[증시 포인트] 장 초반 변동성 클 듯...이후 반등 시도 기대",
-   "url": "http://www.opinionnews.co.kr/news/articleView.html?idxno=142274",
-   "published": "2026-07-30 08:36",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "팹리스 글로벌테크 IPO 하지만…성호전자 이미 물렸다",
-   "url": "https://dealsite.co.kr/articles/166113",
-   "published": "2026-07-30 08:36",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "금투업계, 단일종목 레버리지 자율 안정화…리밸런싱 분산·LP 거래 축소",
-   "url": "http://www.fnnews.com/news/202607300825549508",
-   "published": "2026-07-30 08:36",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "퀄컴, 칩 가격 두자릿수 인상... \"메모리발 부담 심각\"",
-   "url": "https://www.getnews.co.kr/news/articleView.html?idxno=876506",
-   "published": "2026-07-30 08:36",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "\"삼전닉스 아직 끝나지 않았다…내년 상반기까지 신고가 재시도 가능\"",
-   "url": "https://www.hankyung.com/article/2026073045986",
-   "published": "2026-07-30 08:36",
-   "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -302,26 +360,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "\"오늘 아반떼 한 대 날렸다\"…급락장에 개미들 '통곡의 바다'",
-   "url": "https://www.newsis.com/view/NISX20260730_0003729072",
-   "published": "2026-07-30 08:20",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "안철수 \"레버리지 '노답 3형제' 김용범·이억원·이찬진 즉각 경질해야...",
-   "url": "https://www.mt.co.kr/politics/2026/07/30/2026073008024054722",
-   "published": "2026-07-30 08:19",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "'1만2000 간다'더니 6000선도 붕괴..급등락 뒤쫓는 증권가 전망",
    "url": "https://kpenews.com/View.aspx?No=4167602",
    "published": "2026-07-30 08:18",
-   "topic": "증시",
+   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -329,30 +371,6 @@
    "title": "연준 금리 동결에 달러 약세⋯\"1430원대까지 내려갈수도\" [환율전망]",
    "url": "https://www.etoday.co.kr/news/view/2609016",
    "published": "2026-07-30 08:16",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "‘IMF보다 더한 폭락장’...당국 “단일종목 레버리지, 개인별 투자한도...",
-   "url": "https://www.dt.co.kr/article/12075585?ref=naver",
-   "published": "2026-07-30 08:15",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[모닝 리포트] 연준 동결에도 美 30년물 5.2% 돌파…\"재정·국채 공급 부...",
-   "url": "https://www.newspim.com/news/view/20260730000061",
-   "published": "2026-07-30 08:15",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[글로벌 마켓 리포트 7월 30일]",
-   "url": "https://www.newspim.com/news/view/20260730000060",
-   "published": "2026-07-30 08:15",
    "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
@@ -370,22 +388,6 @@
    "url": "https://www.hankyung.com/article/202607304546i",
    "published": "2026-07-30 08:11",
    "topic": "자동차",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "미 연준 매파적 동결…한은, 기준금리 인상 속도 내나",
-   "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008681846&plink=ORI&cooper=NAVER",
-   "published": "2026-07-30 08:10",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "미국 연준 '매파적 동결'에 한국은행 추가 기준금리 인상 무게…8월 연...",
-   "url": "https://www.lecturernews.com/news/articleView.html?idxno=207407",
-   "published": "2026-07-30 08:08",
-   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -414,16 +416,16 @@
    "watchlist_hits": []
   },
   {
-   "title": "메트로신문 7월30일자 한줄뉴스",
-   "url": "http://www.metroseoul.co.kr/article/20260729500486",
+   "title": "상반기 훈풍 어디로…‘겹악재’에 얼어붙는 K-바이오 투자 시장",
+   "url": "https://www.kukinews.com/article/view/kuk202607290194",
    "published": "2026-07-30 06:02",
    "topic": "바이오",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "상반기 훈풍 어디로…‘겹악재’에 얼어붙는 K-바이오 투자 시장",
-   "url": "https://www.kukinews.com/article/view/kuk202607290194",
+   "title": "메트로신문 7월30일자 한줄뉴스",
+   "url": "http://www.metroseoul.co.kr/article/20260729500486",
    "published": "2026-07-30 06:02",
    "topic": "바이오",
    "ticker_prices": [],
@@ -465,14 +467,6 @@
    "title": "아틀라스에 환호했지만…현대차 현재 & 미래",
    "url": "https://www.mk.co.kr/article/12106456",
    "published": "2026-07-29 21:01",
-   "topic": "자동차",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "포드(F), 전기차 56% 급감에도 선방...\"픽업트럭이 살렸다\"",
-   "url": "http://coinreaders.com/250169",
-   "published": "2026-07-29 19:42",
    "topic": "자동차",
    "ticker_prices": [],
    "watchlist_hits": []
