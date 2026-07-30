@@ -3,14 +3,14 @@
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-0730",
  "issue_no": 14,
- "published_at": "2026-07-30T16:43:07+09:00",
+ "published_at": "2026-07-30T16:45:39+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdXsEkBXL9LJYA3JoNRCk'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdXsRzdEq8kpYKotqco3H'}",
   "consecutive_failure_days": 5
  },
  "models": {
@@ -106,9 +106,9 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1438.18,
-    "change": -14.98,
-    "change_pct": -1.03,
+    "value": 1438.29,
+    "change": -14.87,
+    "change_pct": -1.02,
     "trend": "down",
     "trend_label": "하락세",
     "series": [
@@ -140,7 +140,7 @@
      1458.01,
      1464.44,
      1453.16,
-     1438.18
+     1438.29
     ]
    }
   ],
@@ -156,6 +156,22 @@
  "exits": [],
  "rejected": [],
  "newsroom": [
+  {
+   "title": "반등 실패한 코스피, 장중 5% 급등했다 상승분 반납... 사흘 연속 하락",
+   "url": "https://vop.co.kr/A00001696020.html",
+   "published": "2026-07-30 16:44",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "미국 연준은 기준금리 '매파적 동결', 한은 신현송 8월 기준금리 인상 ...",
+   "url": "https://www.businesspost.co.kr/BP?command=article_view&num=443572",
+   "published": "2026-07-30 16:44",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
   {
    "title": "‘등 돌린 개미’에 코스피 6000 탈환 실패…5593선 마감, 하이닉스 5.6%...",
    "url": "https://www.ddaily.co.kr/page/view/2026073016345978982",
@@ -189,8 +205,8 @@
    "watchlist_hits": []
   },
   {
-   "title": "마이크론, 8월 1,300달러 가능할까…55% 폭등 필요한 ‘험난한 목표’",
-   "url": "http://coinreaders.com/250385",
+   "title": "\"레버리지 ETF, 시장서 자연사시켜야\"…'ETF 아버지' 또 일침",
+   "url": "https://news.jtbc.co.kr/article/NB12310948?influxDiv=NAVER",
    "published": "2026-07-30 16:40",
    "topic": "반도체",
    "ticker_prices": [],
@@ -205,8 +221,8 @@
    "watchlist_hits": []
   },
   {
-   "title": "\"레버리지 ETF, 시장서 자연사시켜야\"…'ETF 아버지' 또 일침",
-   "url": "https://news.jtbc.co.kr/article/NB12310948?influxDiv=NAVER",
+   "title": "마이크론, 8월 1,300달러 가능할까…55% 폭등 필요한 ‘험난한 목표’",
+   "url": "http://coinreaders.com/250385",
    "published": "2026-07-30 16:40",
    "topic": "반도체",
    "ticker_prices": [],
@@ -280,14 +296,6 @@
    "title": "\"바닥 아니었네\"…'패닉셀'에 더 하락한 코스피·코스닥",
    "url": "https://www.nocutnews.co.kr/news/6556081?utm_source=naver&utm_medium=article&utm_campaign=20260730043323",
    "published": "2026-07-30 16:34",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "8300→5600, 코스피 '7월 잔혹사'...반등은 언제?",
-   "url": "https://www.mt.co.kr/stock/2026/07/30/2026073016173875211",
-   "published": "2026-07-30 16:33",
    "topic": "증시",
    "ticker_prices": [],
    "watchlist_hits": []
@@ -376,14 +384,6 @@
    "title": "코스피, 삼성전자 역대 최대 실적에도 5600선 내줘",
    "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=473024",
    "published": "2026-07-30 16:12",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "‘또 하락 마감’ 코스피…'6000피 ·700닥' 탈환 실패",
-   "url": "https://www.edaily.co.kr/news/newspath.asp?newsid=05510406645519768",
-   "published": "2026-07-30 16:08",
    "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
