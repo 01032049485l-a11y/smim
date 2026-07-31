@@ -3,14 +3,14 @@
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-0731",
  "issue_no": 15,
- "published_at": "2026-07-31T17:11:59+09:00",
+ "published_at": "2026-07-31T17:19:06+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdZoFP75Y6evsGAeuk3fJ'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdZonr3Ry9S9RBSM4K34x'}",
   "consecutive_failure_days": 6
  },
  "models": {
@@ -65,9 +65,9 @@
    {
     "label": "코스닥",
     "ticker": "KOSDAQ",
-    "value": 716.37,
-    "change": 71.59,
-    "change_pct": 11.1,
+    "value": 719.76,
+    "change": 74.98,
+    "change_pct": 11.63,
     "trend": "down",
     "trend_label": "하락세",
     "series": [
@@ -100,7 +100,7 @@
      705.85,
      662.68,
      644.78,
-     716.37
+     719.76
     ]
    },
    {
@@ -157,33 +157,113 @@
  "rejected": [],
  "newsroom": [
   {
-   "title": "코스피 17%대 폭등 '역대 최대 반등'···외국인 5조 매수에 반도체株 ...",
-   "url": "https://www.ezyeconomy.com/news/articleView.html?idxno=238234",
-   "published": "2026-07-31 17:10",
+   "title": "하루 만에 1,000포인트 뛴 코스피…역대 기록 줄줄이 갈아치웠다",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4428092",
+   "published": "2026-07-31 17:18",
    "topic": "증시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "'뜨거운 금요일' 코스피, 17% 넘게 폭등해 6500선 회복",
-   "url": "https://www.pointdaily.co.kr/news/articleView.html?idxno=313973",
-   "published": "2026-07-31 17:10",
+   "title": "'400조↓' ETF 순자산, 한달 새 130조 증발",
+   "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=853780",
+   "published": "2026-07-31 17:18",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "사흘 폭락 하루 만에 만회… 코스피 1000포인트 폭등 '새 역사'",
+   "url": "https://www.hankookilbo.com/news/article/A2026073110310002028?did=NA",
+   "published": "2026-07-31 17:16",
    "topic": "증시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "하루 만에 1000포인트·18% 폭등한 코스피…역대 최대 상승률·상승폭 신...",
-   "url": "https://www.ajunews.com/view/20260731165002980",
-   "published": "2026-07-31 17:10",
+   "title": "코스피 17.9% 급등...역대 최대 상승률·상승폭",
+   "url": "https://www.newsinside.kr/news/articleView.html?idxno=4883636",
+   "published": "2026-07-31 17:16",
    "topic": "증시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "급반등해 좋지만…'10%↓ 사흘만에 18%↑' 널뛰기에 어질어질(종합)",
-   "url": "https://www.yna.co.kr/view/AKR20260731082251008?input=1195m",
-   "published": "2026-07-31 17:10",
+   "title": "사상 최대 상승한 코스피, 18% 오른 6595 마감...외인 매수에 '반도체 동...",
+   "url": "http://www.opinionnews.co.kr/news/articleView.html?idxno=142417",
+   "published": "2026-07-31 17:16",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "어드반테스트 닛케이지수 비중 축소 유력… 9월말 매도 폭풍",
+   "url": "https://www.g-enews.com/view.php?ud=202607311713062629e7e8286d56_1",
+   "published": "2026-07-31 17:16",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "“레버리지 청산 끝났다, 韓 매력적인 구간”…JP모건이 꼽은 ‘반등장...",
+   "url": "https://www.sedaily.com/article/20074454?ref=naver",
+   "published": "2026-07-31 17:16",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[공동락의 금리산책] 韓·美 모두 '기준금리' 인상 반영 중",
+   "url": "https://weekly.hankooki.com/news/articleView.html?idxno=7176659",
+   "published": "2026-07-31 17:16",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "코스피, 사상 최대 상승률 17.9%·1000p 폭등... 불기둥 장세",
+   "url": "https://www.getnews.co.kr/news/articleView.html?idxno=876714",
+   "published": "2026-07-31 17:14",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[생생경제] CP 투자 손실, 증권사가 대신 물어야 할까",
+   "url": "http://www.srtimes.kr/news/articleView.html?idxno=208829",
+   "published": "2026-07-31 17:14",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "日금리 1% 동결...우에다 \"금리 인상 속도 높일수도\"",
+   "url": "https://www.hankyung.com/article/202607318442i",
+   "published": "2026-07-31 17:13",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "폭락장서 역대급 불기둥으로…코스피 상승률·상승폭 역대 1위[마감시황...",
+   "url": "https://www.ekn.kr/web/view.php?key=20260731026388401",
+   "published": "2026-07-31 17:12",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "딜리셔스, 수요예측 거쳐 공모가 7000원 확정",
+   "url": "https://www.newspim.com/news/view/20260731001349",
+   "published": "2026-07-31 17:12",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "코스피, 17.9% 폭등해 6,500선 탈환…역대 최대 상승률",
+   "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008684786&plink=ORI&cooper=NAVER",
+   "published": "2026-07-31 17:12",
    "topic": "증시",
    "ticker_prices": [],
    "watchlist_hits": []
@@ -197,8 +277,8 @@
    "watchlist_hits": []
   },
   {
-   "title": "SK하이닉스 '17년 만 상한가'·삼성전자 '26.8%↑'…역대 최고 상승률 기...",
-   "url": "https://www.youthdaily.co.kr/news/article.html?no=224297",
+   "title": "하루 만에 1000포인트·18% 폭등한 코스피…역대 최대 상승률·상승폭 신...",
+   "url": "https://www.ajunews.com/view/20260731165002980",
    "published": "2026-07-31 17:10",
    "topic": "반도체",
    "ticker_prices": [],
@@ -221,42 +301,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "코스피, 사상 최대 폭등에 6595선 마감…코스닥 급등",
-   "url": "https://www.kfenews.co.kr/news/articleView.html?idxno=661701",
+   "title": "[채권마감] 10년-3년 금리차 50bp 돌파 ‘4년4개월만 최대’",
+   "url": "https://www.etoday.co.kr/news/view/2609881",
    "published": "2026-07-31 17:08",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "코스피 하루 만에 1000포인트 폭등…상승폭·상승률 모두 역대 최대",
-   "url": "https://www.industrynews.co.kr/news/articleView.html?idxno=83944",
-   "published": "2026-07-31 17:08",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[올댓차이나] 中 증시, 추가 경기부양 기대에 반등 마감…창업판 3.06%↑",
-   "url": "https://www.newsis.com/view/NISX20260731_0003732116",
-   "published": "2026-07-31 17:08",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "마진콜로 강제청산 위기 '시추에이셔널', 막판까지 SK하이닉스 보유",
-   "url": "https://biz.sbs.co.kr/article_hub/20000325946?division=NAVER",
-   "published": "2026-07-31 17:08",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "레버리지 규제 첫날, 거래대금 3조원대로 '뚝'...정점 대비 4분의 1 수준",
-   "url": "http://www.fnnews.com/news/202607311654432284",
-   "published": "2026-07-31 17:08",
-   "topic": "반도체",
+   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -269,26 +317,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "[채권마감] 10년-3년 금리차 50bp 돌파 ‘4년4개월만 최대’",
-   "url": "https://www.etoday.co.kr/news/view/2609881",
-   "published": "2026-07-31 17:08",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "‘환율대책’ 레버리지ETF 도입, 국무·차관회의 이견조차 없었다",
-   "url": "https://www.joongang.co.kr/article/25449898",
-   "published": "2026-07-31 17:07",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "악몽의 7월 끝, 8월은 웃을까…팔란티어·샌디스크 실적까지 확인해야",
    "url": "https://www.mt.co.kr/stock/2026/07/31/2026073116493843008",
    "published": "2026-07-31 17:07",
-   "topic": "증시",
+   "topic": "바이오",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -317,16 +349,16 @@
    "watchlist_hits": []
   },
   {
-   "title": "[더밸류 브리핑] 오늘의 NH농협금융그룹 소식...NH농협금융·NH농협은행",
-   "url": "http://www.thevaluenews.co.kr/news/view.php?idx=200455",
+   "title": "美연준 9월 금리 인상 가능성 확대에···한은 8월 '백투백 인상설' 솔...",
+   "url": "https://www.seoulfn.com/news/articleView.html?idxno=634669",
    "published": "2026-07-31 17:00",
    "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "美연준 9월 금리 인상 가능성 확대에···한은 8월 '백투백 인상설' 솔...",
-   "url": "https://www.seoulfn.com/news/articleView.html?idxno=634669",
+   "title": "[더밸류 브리핑] 오늘의 NH농협금융그룹 소식...NH농협금융·NH농협은행",
+   "url": "http://www.thevaluenews.co.kr/news/view.php?idx=200455",
    "published": "2026-07-31 17:00",
    "topic": "금융",
    "ticker_prices": [],
@@ -381,34 +413,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "외국인 코스피 7조 매수…원화 6개월래 최강세",
-   "url": "https://www.joongangenews.com/news/articleView.html?idxno=537053",
-   "published": "2026-07-31 16:48",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "\"테슬라, 미중 경쟁 여파에 中 사업 매각 고려\"…머스크는 \"가짜 뉴스\"",
    "url": "https://www.ajunews.com/view/20260731155807846",
    "published": "2026-07-31 16:46",
    "topic": "자동차",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "충당금이 메운 순익…국민은행, 하반기 '이익의 질' 시험대",
-   "url": "http://www.srtimes.kr/news/articleView.html?idxno=208858",
-   "published": "2026-07-31 16:46",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "‘삼전닉스 불기둥’, 코스피 역대 최대 18% 폭등…JP모건 “레버리지 ...",
-   "url": "https://www.khan.co.kr/article/202607311643001",
-   "published": "2026-07-31 16:43",
-   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -421,25 +429,9 @@
    "watchlist_hits": []
   },
   {
-   "title": "한·일 외환당국 동반 개입설…원/달러 1420원대 6개월 만에 최저",
-   "url": "https://www.mt.co.kr/economy/2026/07/31/2026073116225851337",
-   "published": "2026-07-31 16:40",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "코스피 하루 만에 17.9% 폭등 ··AI 반도체 훈풍에 6590선 회복",
    "url": "https://www.smartbizn.com/news/articleView.html?idxno=150090",
    "published": "2026-07-31 16:34",
-   "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "코스피 '최고의 랠리', 하루 만에 1001p 폭등…외국인 8.8조 폭풍매수",
-   "url": "https://www.newsis.com/view/NISX20260731_0003731986",
-   "published": "2026-07-31 16:30",
    "topic": "바이오",
    "ticker_prices": [],
    "watchlist_hits": []
@@ -471,6 +463,14 @@
   {
    "title": "흑자 전환 성공한 한온시스템..2분기 매출 2.8조원·영업익 1037억원 기록",
    "url": "https://www.dailycar.co.kr/content/news.html?type=view&autoId=62163",
+   "published": "2026-07-31 15:30",
+   "topic": "자동차",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "한온시스템, 2분기 영업익 1000억원대 안착…전동화·원가 혁신으로 회...",
+   "url": "http://www.biztribune.co.kr/news/articleView.html?idxno=356814",
    "published": "2026-07-31 15:30",
    "topic": "자동차",
    "ticker_prices": [],
