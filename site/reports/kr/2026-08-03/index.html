@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Watchlist — SMIM</title>
+<title>2026-08-03 Daily Report — SMIM</title>
 <meta name="description" content="국내 증시 데이터·공시·뉴스를 종합 분석해 매 거래일 아침 발행하는 리서치 저널.">
 <meta property="og:site_name" content="SMIM">
-<meta property="og:title" content="Watchlist — SMIM">
+<meta property="og:title" content="2026-08-03 Daily Report — SMIM">
 <meta property="og:description" content="국내 증시 데이터·공시·뉴스를 종합 분석해 매 거래일 아침 발행하는 리서치 저널.">
 <link rel="alternate" type="application/rss+xml" title="SMIM" href="/feed.xml">
 <link rel="icon" href="/assets/mark.svg" type="image/svg+xml">
@@ -48,7 +48,7 @@
     <div class="clocks" id="clocks">
       <span data-clock="kr"><svg class="fico" viewBox="0 0 24 16" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="16" rx="2" fill="#fff"/><g fill="#000"><g transform="rotate(-57.4 4.5 3.2)"><rect x="1.8" y="1.4" width="5.4" height="0.8"/><rect x="1.8" y="2.8" width="5.4" height="0.8"/><rect x="1.8" y="4.2" width="5.4" height="0.8"/></g><g transform="rotate(57.4 19.5 3.2)"><rect x="16.8" y="1.4" width="2.05" height="0.8"/><rect x="20.15" y="1.4" width="2.05" height="0.8"/><rect x="16.8" y="2.8" width="5.4" height="0.8"/><rect x="16.8" y="4.2" width="2.05" height="0.8"/><rect x="20.15" y="4.2" width="2.05" height="0.8"/></g><g transform="rotate(57.4 4.5 12.8)"><rect x="1.8" y="11.0" width="5.4" height="0.8"/><rect x="1.8" y="12.4" width="2.05" height="0.8"/><rect x="5.15" y="12.4" width="2.05" height="0.8"/><rect x="1.8" y="13.8" width="5.4" height="0.8"/></g><g transform="rotate(-57.4 19.5 12.8)"><rect x="16.8" y="11.0" width="2.05" height="0.8"/><rect x="20.15" y="11.0" width="2.05" height="0.8"/><rect x="16.8" y="12.4" width="2.05" height="0.8"/><rect x="20.15" y="12.4" width="2.05" height="0.8"/><rect x="16.8" y="13.8" width="2.05" height="0.8"/><rect x="20.15" y="13.8" width="2.05" height="0.8"/></g></g><g transform="rotate(90 12 8)"><path d="M12 3.8a4.2 4.2 0 0 1 0 8.4 2.1 2.1 0 0 1 0-4.2 2.1 2.1 0 0 0 0-4.2z" fill="#0047a0"/><path d="M12 12.2a4.2 4.2 0 0 1 0-8.4 2.1 2.1 0 0 1 0 4.2 2.1 2.1 0 0 0 0 4.2z" fill="#cd2e3a"/></g></svg><b class="ct">--:--:--</b></span>
     </div>
-    <span class="tstamp" id="tstamp"> 종가 기준</span>
+    <span class="tstamp" id="tstamp">2026-08-03 종가 기준</span>
   </div>
 </div>
 
@@ -68,10 +68,10 @@
       </span>
     </a>
     <nav class="nav">
-      <a href="/">Report</a>
+      <a href="/" class=on>Report</a>
       <a href="/market/">Market</a>
       <a href="/newsroom/">Newsroom</a>
-      <a href="/watchlist/" class=on>Watchlist</a>
+      <a href="/watchlist/">Watchlist</a>
       <a href="/performance/">Track Record</a>
     </nav>
     <button class="burger" id="burger" aria-label="메뉴 열기">
@@ -88,10 +88,10 @@
     <button class="dr-x" id="drClose" aria-label="메뉴 닫기">&times;</button>
   </div>
   <nav class="dr-nav">
-    <a href="/"><b>Daily Report</b><span>오늘의 리포트</span><i>01</i></a>
+    <a href="/" class=on><b>Daily Report</b><span>오늘의 리포트</span><i>01</i></a>
     <a href="/market/"><b>Market</b><span>지수 · 업종 · 시장 폭</span><i>02</i></a>
     <a href="/newsroom/"><b>Newsroom</b><span>증시 뉴스 · 관련 종목</span><i>03</i></a>
-    <a href="/watchlist/" class=on><b>Watchlist</b><span>추적 중인 종목</span><i>04</i></a>
+    <a href="/watchlist/"><b>Watchlist</b><span>추적 중인 종목</span><i>04</i></a>
     <a href="/performance/"><b>Track Record</b><span>누적 성과 · 손실 포함</span><i>05</i></a>
     <a href="/archive/"><b>Archive</b><span>지난 리포트 전체</span><i>06</i></a>
     <a href="/methodology/"><b>Methodology</b><span>분석 방법론 · 한계</span><i>07</i></a>
@@ -107,41 +107,62 @@
   <main id="main">
 
 
-<section class="dateline">
-  <div class="dl-l">
-    <p class="eyebrow"><span class="rid">WATCHLIST · 2026-08-03</span></p>
-    <h1>Watchlist</h1>
-    <p class="lead">현재 추적 중인 종목과, 편입 이후의 실제 경과입니다. 최대 12종목을 유지합니다.</p>
+
+
+
+<div class="ai-fail" role="alert" style="margin:16px 0;padding:18px 20px;border:2px solid #cd2e3a;border-radius:12px;background:rgba(205,46,58,.08);line-height:1.55;">
+  <strong style="display:block;font-size:1.15rem;color:#cd2e3a;margin-bottom:6px;">
+    ⚠️ 오늘은 업데이트 없음 — AI 분석 실패 · 7일째 연속
+  </strong>
+  <span>
+    오늘 AI 분석이 1/1건 실패해 추천을 발행하지 못했습니다.
+    이건 <b>“추천할 종목이 없는 날”이 아니라 시스템 오류</b>입니다(AI 결제/크레딧 상태 확인 필요).
+    문제가 복구되면 자동으로 다시 발행됩니다.
+  </span>
+</div>
+
+<section class="hero">
+  
+  <div class="hero-art" aria-hidden="true"><svg class="spark" viewBox="0 0 640 260" preserveAspectRatio="none"><path d="M0.0,6.5 L22.1,2.0 L44.1,68.2 L66.2,48.8 L88.3,15.4 L110.3,53.1 L132.4,54.3 L154.5,48.4 L176.6,61.0 L198.6,108.6 L220.7,76.6 L242.8,79.3 L264.8,108.0 L286.9,137.8 L309.0,134.5 L331.0,121.1 L353.1,169.8 L375.2,166.2 L397.2,135.1 L419.3,168.8 L441.4,190.9 L463.4,174.1 L485.5,170.5 L507.6,148.7 L529.7,178.2 L551.7,173.5 L573.8,226.7 L595.9,252.9 L617.9,258.0 L640.0,185.2" fill="none" stroke="#1E4FB8" stroke-width="1.4"/></svg></div>
+  
+  
+  <div class="hero-pulse rise">
+    <span class="hp-l">코스피</span>
+    <b class="hp-v">6595.45</b>
+    <span class="hp-c">+17.91%</span>
+    <span class="hp-m">시장심리 · 위험선호</span>
   </div>
-  <dl class="dl-r">
-    <div><dt>추적 중</dt><dd>0 / 12</dd></div>
-    <div><dt>손익선</dt><dd class="rise">+5% ~ 20%</dd></div>
-    <div><dt>손절선</dt><dd class="fall">-5% ~ -10%</dd></div>
-  </dl>
-</section>
-
-<section class="block">
-  <div class="tblw">
-  <table class="tbl">
-    <thead><tr><th>종목</th><th>90일 추이</th><th>신호</th><th>판정</th><th class="r">편입가</th><th class="r">현재가</th><th class="r">수익률</th><th class="r">경과</th></tr></thead>
-    <tbody>
-    
-    </tbody>
-  </table>
+  
+  <div class="kick">
+    <span class="pulse"></span>
+    <span class="iss">ISSUE 15</span>
+    <span class="rid">SMIM-KR-2026-0803</span>
   </div>
-  <p class="empty">추적 중인 종목이 없습니다.</p>
+  <h1>Daily Report<span class="ko">오늘의 <span class="it">AI 추천</span> 0종목</span></h1>
+  <p class="lead">6개 종목을 정량 선별하고, 상승 논거와 반대 논거를 각각 세운 뒤 최종 판정했습니다. 근거 없이 이름만 던지지 않습니다.</p>
+  <div class="hstat">
+    <div class="hs"><b data-n="6">0</b><span>Scanned</span></div>
+    <div class="hs"><b data-n="0">0</b><span>New</span></div>
+    <div class="hs"><b data-n="0">0</b><span>Holdings</span></div>
+    <div class="hs"><b>0.0%</b><span>Win Rate</span></div>
+  </div>
 </section>
 
-<section class="block">
-  <h2 class="sec"><span>Exit Rules</span><em>편출 규칙</em></h2>
-  <ul class="rules">
-    <li><b>목표 도달</b><span>편입가 대비 +5% ~ 20% 도달 시 편출 — 종목별 목표치는 AI가 변동성을 보고 그 안에서 직접 정합니다</span></li>
-    <li><b>손절 도달</b><span>편입가 대비 -5% ~ -10% 하회 시 편출 — 마찬가지로 종목별로 AI가 정합니다</span></li>
-    <li><b>보유기간 만료</b><span>25거래일 경과 시 편출 (중기 시계 유지)</span></li>
-  </ul>
-  <p class="note-sm">편출은 SMIM의 추적 종료를 의미할 뿐, 매도 권유가 아닙니다. 모든 편출 결과는 <a href="/performance/">Track Record</a>에 자동 기록됩니다.</p>
-</section>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p class="backlink"><a href="/">← 최신 리포트</a></p>
 </main>
   <aside class="rail">
 <div class="rc">
@@ -150,10 +171,46 @@
   <div class="rstats">
     <div><b>5</b><span>마감</span></div>
     <div><b>0.0%</b><span>승률</span></div>
-    <div><b class="fall">-11.63%</b><span>평균</span></div>
+    <div><b class="fall">-11.63%</b><span>평균 수익률</span></div>
   </div>
-  <a class="rlink" href="/performance/">전체 기록 →</a>
+  <a class="rlink" href="/performance/">손실 사례 포함 전체 기록 →</a>
   
+</div>
+
+
+
+
+<div class="rc">
+  <h4>Newsroom</h4>
+  <ul class="rnews">
+    
+    <li><a href="https://www.tokenpost.kr/news/economy/383998" target="_blank" rel="noopener noreferrer">[국제금융 브리핑] 트럼프 대이란 공습 보류·호르무즈 피격 지속...달러...</a>
+      </li>
+    
+    <li><a href="https://www.smarttoday.co.kr/ko-kr/articles/109999" target="_blank" rel="noopener noreferrer">[ETF 리그테이블] 반도체 테마 ETF, 수익률 상위서 사라졌다</a>
+      </li>
+    
+    <li><a href="https://www.edaily.co.kr/news/newspath.asp?newsid=02089366645543712" target="_blank" rel="noopener noreferrer">대신증권, 코스피 목표치 9300으로 하향…‘1만시대’ 전망 접었다</a>
+      </li>
+    
+    <li><a href="http://www.mbn.co.kr/pages/news/newsView.php?news_seq_no=5209856" target="_blank" rel="noopener noreferrer">한 달 새 환율 125원 뚝 &#34;환전 많이 해요&#34;</a>
+      </li>
+    
+    <li><a href="http://www.opinionnews.co.kr/news/articleView.html?idxno=142463" target="_blank" rel="noopener noreferrer">[증시 포인트] 반등 추세 계속될 듯...단기 속도 조절 가능성은 열려 있...</a>
+      </li>
+    
+    <li><a href="https://biz.heraldcorp.com/article/10828524?ref=naver" target="_blank" rel="noopener noreferrer">차익실현 vs 美 훈풍…코스피, 2거래일 연속 상승세 이어갈까 [투자360]</a>
+      </li>
+    
+  </ul>
+  <a class="rlink" href="/newsroom/">뉴스룸 전체 →</a>
+</div>
+
+
+<div class="rc quiet">
+  <h4>Notice</h4>
+  <p>SMIM은 종목을 대신 매수해주지 않습니다. 여기 실린 모든 분석은 판단의 재료이며, 최종 결정과 그 결과는 투자자 본인의 몫입니다.</p>
+  <a class="rlink" href="/methodology/">분석 방법론 →</a>
 </div>
 </aside>
 </div>
