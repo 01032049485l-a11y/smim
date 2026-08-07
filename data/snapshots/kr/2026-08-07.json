@@ -3,14 +3,14 @@
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-0807",
  "issue_no": 20,
- "published_at": "2026-08-07T14:02:10+09:00",
+ "published_at": "2026-08-07T14:10:13+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdnoSD7fdESxv7BM12LtD'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cdnp3nqRWsQexbuXamK7d'}",
   "consecutive_failure_days": 11
  },
  "models": {
@@ -106,8 +106,8 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1418.81,
-    "change": -2.35,
+    "value": 1418.71,
+    "change": -2.45,
     "change_pct": -0.17,
     "trend": "flat",
     "trend_label": "보합권",
@@ -140,7 +140,7 @@
      1428.5,
      1428.43,
      1421.16,
-     1418.81
+     1418.71
     ]
    }
   ],
@@ -157,6 +157,62 @@
  "rejected": [],
  "newsroom": [
   {
+   "title": "괸리종목 지정 우려되는 '부실 상장사 ' 쏟아져…손실 회피 전략은?",
+   "url": "http://www.nongaek.com/news/articleView.html?idxno=96324",
+   "published": "2026-08-07 14:06",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "중동 불안, 국제유가 급등 속...일본증시 '장중 하락'",
+   "url": "http://www.choicenews.co.kr/news/articleView.html?idxno=169501",
+   "published": "2026-08-07 14:06",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "주식 망했냐고요?…요즘 제일 잘 나갑니다",
+   "url": "http://weekly.chosun.com/news/articleView.html?idxno=54132",
+   "published": "2026-08-07 14:05",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "황제주 '우후죽순' 늘자…카카오페이증권도 소수점 거래 합류",
+   "url": "https://biz.sbs.co.kr/article_hub/20000327285?division=NAVER",
+   "published": "2026-08-07 14:04",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "ETF 80조 증발…레버리지 광풍 꺾였다",
+   "url": "https://www.mstoday.co.kr/news/articleView.html?idxno=102263",
+   "published": "2026-08-07 14:04",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "24시간 열린 원화시장 한 달…환율 변동성은 줄었나",
+   "url": "https://www.straightnews.co.kr/news/articleView.html?idxno=308519",
+   "published": "2026-08-07 14:04",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "대형 반도체주 하락에 짓눌린 향방… 아이폰 테마 약세 뚜렷",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=475318",
+   "published": "2026-08-07 14:02",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
    "title": "[속보]코스피, 하락전환해 1% 안팎 하락…코스닥도 2%대 내림세",
    "url": "https://www.munhwa.com/article/11608046?ref=naver",
    "published": "2026-08-07 14:01",
@@ -165,7 +221,7 @@
    "watchlist_hits": []
   },
   {
-   "title": "외국인 팔았다 샀다…코스피 1%대 등락 혼조세",
+   "title": "\"외인 줍줍 후 바로 던져\" 6400선 찍고 주르륵...'장투'의 조건은",
    "url": "https://www.mt.co.kr/stock/2026/08/07/2026080710580182357",
    "published": "2026-08-07 14:01",
    "topic": "반도체",
@@ -224,23 +280,15 @@
    "title": "[경제돋보기] 요동치는 주식시장…2030세대 '빚투' 어쩌나",
    "url": "http://www.sisacast.kr/news/articleView.html?idxno=98563",
    "published": "2026-08-07 13:46",
-   "topic": "반도체",
+   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "코스피, 상승분 반납 후 1.34% 하락…반도체 약세에 '전강후약'",
+   "title": "SK하닉 4%↓, 삼전은 버티기…코스피 1.34%하락",
    "url": "https://www.edaily.co.kr/news/newspath.asp?newsid=05995846645545024",
    "published": "2026-08-07 13:45",
    "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[EBN 데이터센터] 반도체 대표주 혼조...삼성전자 방어에도 SK하이닉스·...",
-   "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1719557",
-   "published": "2026-08-07 13:42",
-   "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -265,22 +313,6 @@
    "url": "https://www.g-enews.com/view.php?ud=202608060020387585fda4f5ab74_1",
    "published": "2026-08-07 13:34",
    "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "글로벌 반도체 공룡 사로잡은 인텍플러스… 첨단 패키징 검사 장비 국산...",
-   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=475301",
-   "published": "2026-08-07 13:32",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "소프트뱅크, 오픈AI 담보 14조 대출 확보…'인텔 효과'에 실적 호조",
-   "url": "https://www.aitimes.com/news/articleView.html?idxno=213657",
-   "published": "2026-08-07 13:32",
-   "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -357,42 +389,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "한투금융, 비증권 계열사도 웃었다…실적에 힘 보탠 운용사·저축은행",
-   "url": "https://www.bloter.net/news/articleView.html?idxno=670348",
-   "published": "2026-08-07 12:48",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "한미 전문경영인 완전 정착했나?...GLP-1도 승승장구 홍보",
    "url": "https://www.medicaltimes.com/Main/News/NewsView.html?ID=1170056&ref=naverpc",
    "published": "2026-08-07 12:30",
    "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "코스피 반등에 '빚투' 다시 꿈틀…신용융자 하루 새 1조원 넘게 늘어",
-   "url": "https://www.sisajournal.com/news/articleView.html?idxno=382763",
-   "published": "2026-08-07 12:25",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "\"투자·투기 아닌 도박판\"…버핏, 美 증시 과열 경고 [프레스룸 경제라...",
-   "url": "http://www.mbn.co.kr/pages/news/newsView.php?news_seq_no=5210935",
-   "published": "2026-08-07 12:11",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[특징주] 금호타이어, 급락장서 외국인 러브콜 지속…장중 매수 상위 반...",
-   "url": "https://www.tokenpost.kr/news/economy/386578",
-   "published": "2026-08-07 12:08",
-   "topic": "증시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
