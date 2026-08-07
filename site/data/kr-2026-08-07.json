@@ -3,14 +3,14 @@
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-0807",
  "issue_no": 20,
- "published_at": "2026-08-07T13:40:50+09:00",
+ "published_at": "2026-08-07T13:45:49+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdnmotfY68wuhPknmHfXQ'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdnnBtD7UtMsQeVcgwTny'}",
   "consecutive_failure_days": 11
  },
  "models": {
@@ -106,8 +106,8 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1419.24,
-    "change": -1.92,
+    "value": 1419.14,
+    "change": -2.02,
     "change_pct": -0.14,
     "trend": "flat",
     "trend_label": "보합권",
@@ -140,7 +140,7 @@
      1428.5,
      1428.43,
      1421.16,
-     1419.24
+     1419.14
     ]
    }
   ],
@@ -156,6 +156,14 @@
  "exits": [],
  "rejected": [],
  "newsroom": [
+  {
+   "title": "[EBN 데이터센터] 반도체 대표주 혼조...삼성전자 방어에도 SK하이닉스·...",
+   "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1719557",
+   "published": "2026-08-07 13:42",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
   {
    "title": "글로벌 원자재 가격 차별화 여파… 비철금속주 희비 교차",
    "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=475308",
@@ -189,16 +197,16 @@
    "watchlist_hits": []
   },
   {
-   "title": "‘10조’ 레버리지 자금 이탈…코스닥 반등 신호탄 될까",
-   "url": "https://www.mk.co.kr/article/12120829",
+   "title": "소프트뱅크, 오픈AI 담보 14조 대출 확보…'인텔 효과'에 실적 호조",
+   "url": "https://www.aitimes.com/news/articleView.html?idxno=213657",
    "published": "2026-08-07 13:32",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "소프트뱅크, 오픈AI 담보 14조 대출 확보…'인텔 효과'에 실적 호조",
-   "url": "https://www.aitimes.com/news/articleView.html?idxno=213657",
+   "title": "‘10조’ 레버리지 자금 이탈…코스닥 반등 신호탄 될까",
+   "url": "https://www.mk.co.kr/article/12120829",
    "published": "2026-08-07 13:32",
    "topic": "반도체",
    "ticker_prices": [],
@@ -221,16 +229,16 @@
    "watchlist_hits": []
   },
   {
-   "title": "글로벌 AI 칩 모멘텀 속 양극화… 뉴로모픽 밸류체인 차별화",
-   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=475300",
+   "title": "고려아연, 영업이익 2조4500억원보다 중요한 '10조5000억원'… 美 제련소...",
+   "url": "https://www.s-journal.co.kr/news/articleView.html?idxno=42900",
    "published": "2026-08-07 13:20",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "고려아연, 영업이익 2조4500억원보다 중요한 '10조5000억원'… 美 제련소...",
-   "url": "https://www.s-journal.co.kr/news/articleView.html?idxno=42900",
+   "title": "글로벌 AI 칩 모멘텀 속 양극화… 뉴로모픽 밸류체인 차별화",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=475300",
    "published": "2026-08-07 13:20",
    "topic": "반도체",
    "ticker_prices": [],
@@ -256,14 +264,6 @@
    "title": "비트코인 채굴주, AI 계약 약발 떨어졌나...주가 상승률 24%→10% 급랭",
    "url": "http://coinreaders.com/251653",
    "published": "2026-08-07 13:14",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[서울데이터랩]코스피 거래상위 종목 혼조…혜인 26% 급등, 한화솔루션...",
-   "url": "https://www.seoul.co.kr/news/economy/securities/2026/08/07/20260807500113?wlog_tag3=naver",
-   "published": "2026-08-07 13:13",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
