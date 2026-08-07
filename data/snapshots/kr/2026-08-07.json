@@ -2,15 +2,15 @@
  "date": "2026-08-07",
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-0807",
- "issue_no": 19,
- "published_at": "2026-08-07T13:36:11+09:00",
+ "issue_no": 20,
+ "published_at": "2026-08-07T13:40:50+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdnmTKUT6JmSqWHEFYW7J'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdnmotfY68wuhPknmHfXQ'}",
   "consecutive_failure_days": 11
  },
  "models": {
@@ -106,8 +106,8 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1419.23,
-    "change": -1.93,
+    "value": 1419.24,
+    "change": -1.92,
     "change_pct": -0.14,
     "trend": "flat",
     "trend_label": "보합권",
@@ -140,7 +140,7 @@
      1428.5,
      1428.43,
      1421.16,
-     1419.23
+     1419.24
     ]
    }
   ],
@@ -156,6 +156,22 @@
  "exits": [],
  "rejected": [],
  "newsroom": [
+  {
+   "title": "글로벌 원자재 가격 차별화 여파… 비철금속주 희비 교차",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=475308",
+   "published": "2026-08-07 13:36",
+   "topic": "2차전지",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "중동발 유가 급등 원·달러 환율 1420원대 등락",
+   "url": "https://www.newsclaim.co.kr/news/articleView.html?idxno=3071445",
+   "published": "2026-08-07 13:36",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
   {
    "title": "월가, AI 일변도 벗어나 헬스케어에 ‘눈길’",
    "url": "https://www.g-enews.com/view.php?ud=202608060020387585fda4f5ab74_1",
@@ -173,16 +189,16 @@
    "watchlist_hits": []
   },
   {
-   "title": "소프트뱅크, 오픈AI 담보 14조 대출 확보…'인텔 효과'에 실적 호조",
-   "url": "https://www.aitimes.com/news/articleView.html?idxno=213657",
+   "title": "‘10조’ 레버리지 자금 이탈…코스닥 반등 신호탄 될까",
+   "url": "https://www.mk.co.kr/article/12120829",
    "published": "2026-08-07 13:32",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "‘10조’ 레버리지 자금 이탈…코스닥 반등 신호탄 될까",
-   "url": "https://www.mk.co.kr/article/12120829",
+   "title": "소프트뱅크, 오픈AI 담보 14조 대출 확보…'인텔 효과'에 실적 호조",
+   "url": "https://www.aitimes.com/news/articleView.html?idxno=213657",
    "published": "2026-08-07 13:32",
    "topic": "반도체",
    "ticker_prices": [],
@@ -205,16 +221,16 @@
    "watchlist_hits": []
   },
   {
-   "title": "고려아연, 영업이익 2조4500억원보다 중요한 '10조5000억원'… 美 제련소...",
-   "url": "https://www.s-journal.co.kr/news/articleView.html?idxno=42900",
+   "title": "글로벌 AI 칩 모멘텀 속 양극화… 뉴로모픽 밸류체인 차별화",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=475300",
    "published": "2026-08-07 13:20",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "글로벌 AI 칩 모멘텀 속 양극화… 뉴로모픽 밸류체인 차별화",
-   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=475300",
+   "title": "고려아연, 영업이익 2조4500억원보다 중요한 '10조5000억원'… 美 제련소...",
+   "url": "https://www.s-journal.co.kr/news/articleView.html?idxno=42900",
    "published": "2026-08-07 13:20",
    "topic": "반도체",
    "ticker_prices": [],
@@ -457,22 +473,6 @@
    "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4429127",
    "published": "2026-08-07 10:58",
    "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[특징주] 2차전지주 동반 강세…배터리3사 일제히 상승",
-   "url": "https://www.newspim.com/news/view/20260807000384",
-   "published": "2026-08-07 10:52",
-   "topic": "2차전지",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[특징주] LG에너지솔루션, 스페이스X 반등에 동반 강세…공급망 기대 재...",
-   "url": "https://www.tokenpost.kr/news/economy/386549",
-   "published": "2026-08-07 10:48",
-   "topic": "2차전지",
    "ticker_prices": [],
    "watchlist_hits": []
   }
