@@ -3,14 +3,14 @@
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-0807",
  "issue_no": 20,
- "published_at": "2026-08-07T13:45:49+09:00",
+ "published_at": "2026-08-07T14:02:10+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdnnBtD7UtMsQeVcgwTny'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdnoSD7fdESxv7BM12LtD'}",
   "consecutive_failure_days": 11
  },
  "models": {
@@ -106,9 +106,9 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1419.14,
-    "change": -2.02,
-    "change_pct": -0.14,
+    "value": 1418.81,
+    "change": -2.35,
+    "change_pct": -0.17,
     "trend": "flat",
     "trend_label": "보합권",
     "series": [
@@ -140,7 +140,7 @@
      1428.5,
      1428.43,
      1421.16,
-     1419.14
+     1418.81
     ]
    }
   ],
@@ -156,6 +156,86 @@
  "exits": [],
  "rejected": [],
  "newsroom": [
+  {
+   "title": "[속보]코스피, 하락전환해 1% 안팎 하락…코스닥도 2%대 내림세",
+   "url": "https://www.munhwa.com/article/11608046?ref=naver",
+   "published": "2026-08-07 14:01",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "외국인 팔았다 샀다…코스피 1%대 등락 혼조세",
+   "url": "https://www.mt.co.kr/stock/2026/08/07/2026080710580182357",
+   "published": "2026-08-07 14:01",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "키움증권, 화성코스메틱 인수금융 주선…한투PE·에코프로 컨소시엄 지...",
+   "url": "http://www.press9.kr/news/articleView.html?idxno=80791",
+   "published": "2026-08-07 13:58",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "“삼전 버티는데 하이닉스는…” 코스피 6200 사수 안간힘 속 코스닥도...",
+   "url": "https://www.sedaily.com/article/20076912?ref=naver",
+   "published": "2026-08-07 13:56",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "1300원 복귀 신호탄?…美·日 환율 공조에 춤추는 원화",
+   "url": "https://www.mk.co.kr/article/12120843",
+   "published": "2026-08-07 13:56",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "“레버리지 ETF 규제 후 거래대금 90% 줄었다”…반도체·해외 상품으로...",
+   "url": "https://www.ddaily.co.kr/page/view/2026080713361809942",
+   "published": "2026-08-07 13:51",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "메모리 1조달러 시대 눈앞…삼성·SK 질주",
+   "url": "https://www.mstoday.co.kr/news/articleView.html?idxno=102260",
+   "published": "2026-08-07 13:48",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "\"브라질, 또다시 금리인하…정책방향은 매파적\"<신한투자證>",
+   "url": "https://www.news2day.co.kr/article/20260807500152",
+   "published": "2026-08-07 13:48",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[경제돋보기] 요동치는 주식시장…2030세대 '빚투' 어쩌나",
+   "url": "http://www.sisacast.kr/news/articleView.html?idxno=98563",
+   "published": "2026-08-07 13:46",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "코스피, 상승분 반납 후 1.34% 하락…반도체 약세에 '전강후약'",
+   "url": "https://www.edaily.co.kr/news/newspath.asp?newsid=05995846645545024",
+   "published": "2026-08-07 13:45",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
   {
    "title": "[EBN 데이터센터] 반도체 대표주 혼조...삼성전자 방어에도 SK하이닉스·...",
    "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1719557",
@@ -208,7 +288,7 @@
    "title": "‘10조’ 레버리지 자금 이탈…코스닥 반등 신호탄 될까",
    "url": "https://www.mk.co.kr/article/12120829",
    "published": "2026-08-07 13:32",
-   "topic": "반도체",
+   "topic": "바이오",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -229,42 +309,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "고려아연, 영업이익 2조4500억원보다 중요한 '10조5000억원'… 美 제련소...",
-   "url": "https://www.s-journal.co.kr/news/articleView.html?idxno=42900",
-   "published": "2026-08-07 13:20",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "글로벌 AI 칩 모멘텀 속 양극화… 뉴로모픽 밸류체인 차별화",
-   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=475300",
-   "published": "2026-08-07 13:20",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "상승 출발한 코스피·코스닥, 하락 전환…SK하이닉스 5%대 약세",
    "url": "https://www.etoday.co.kr/news/view/2612155",
    "published": "2026-08-07 13:16",
    "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "스피어 폭등 속 우주항공 테마 혼조세… 중소형 부품주 차익 매물",
-   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=475299",
-   "published": "2026-08-07 13:14",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "비트코인 채굴주, AI 계약 약발 떨어졌나...주가 상승률 24%→10% 급랭",
-   "url": "http://coinreaders.com/251653",
-   "published": "2026-08-07 13:14",
-   "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -317,30 +365,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "[더벨][인사이드 헤지펀드] 브이아이운용, 타임스퀘어 오피스 엑시트 '...",
-   "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202608051109392960108827",
-   "published": "2026-08-07 12:42",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "국고채 금리 일제히 상승…과도한 금리 하락 되돌림에 채권시장 약세",
-   "url": "https://www.polinews.co.kr/news/articleView.html?idxno=739468",
-   "published": "2026-08-07 12:40",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[금융계 동향] 우리은행·삼성증권·NH농협은행",
-   "url": "http://www.iminju.net/news/articleView.html?idxno=167768",
-   "published": "2026-08-07 12:38",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "한미 전문경영인 완전 정착했나?...GLP-1도 승승장구 홍보",
    "url": "https://www.medicaltimes.com/Main/News/NewsView.html?ID=1170056&ref=naverpc",
    "published": "2026-08-07 12:30",
@@ -373,49 +397,9 @@
    "watchlist_hits": []
   },
   {
-   "title": "장중, 코스닥 랠리 '끝'?...반도체 장비주 '급락'",
-   "url": "http://www.choicenews.co.kr/news/articleView.html?idxno=169499",
-   "published": "2026-08-07 12:04",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "美증시 숨고르기…코스피·코스닥 약세",
-   "url": "https://www.mstoday.co.kr/news/articleView.html?idxno=102262",
-   "published": "2026-08-07 12:04",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "코스닥, 엿새 만에 하락 전환 800선 아래로…코스피 6200선",
-   "url": "https://www.nocutnews.co.kr/news/6559762?utm_source=naver&utm_medium=article&utm_campaign=20260807120203",
-   "published": "2026-08-07 12:03",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "한미그룹, 경영권 분쟁 재점화 정면 대응 \"혁신 성과창출 중\"",
    "url": "https://www.monews.co.kr/news/articleView.html?idxno=413103",
    "published": "2026-08-07 12:02",
-   "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[경제소식] NH농협은행, 'NH모두트래블리적금' 조기 완판",
-   "url": "http://www.4th.kr/news/articleView.html?idxno=2115969",
-   "published": "2026-08-07 11:58",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "한미그룹 \"전문경영인 체제 성과 본격화\"…양사 시너지로 성장 가속",
-   "url": "https://www.kpanews.co.kr/news/articleView.html?idxno=539980",
-   "published": "2026-08-07 11:40",
    "topic": "바이오",
    "ticker_prices": [],
    "watchlist_hits": []
@@ -473,6 +457,22 @@
    "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4429127",
    "published": "2026-08-07 10:58",
    "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[특징주] 2차전지주 동반 강세…배터리3사 일제히 상승",
+   "url": "https://www.newspim.com/news/view/20260807000384",
+   "published": "2026-08-07 10:52",
+   "topic": "2차전지",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[특징주] LG에너지솔루션, 스페이스X 반등에 동반 강세…공급망 기대 재...",
+   "url": "https://www.tokenpost.kr/news/economy/386549",
+   "published": "2026-08-07 10:48",
+   "topic": "2차전지",
    "ticker_prices": [],
    "watchlist_hits": []
   }
