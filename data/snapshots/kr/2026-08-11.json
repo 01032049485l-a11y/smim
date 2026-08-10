@@ -3,14 +3,14 @@
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-0811",
  "issue_no": 22,
- "published_at": "2026-08-11T06:47:31+09:00",
+ "published_at": "2026-08-11T07:11:15+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CduoXXe4JUpf3cimFtEnP'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CduqLW2kLyzZ9uXTsJcYG'}",
   "consecutive_failure_days": 13
  },
  "models": {
@@ -158,73 +158,169 @@
  "rejected": [],
  "newsroom": [
   {
-   "title": "[EBN 데이터센터] 미 증시, 반도체 약세에 일제히 하락 마감...필라델피...",
-   "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1719847",
-   "published": "2026-08-11 06:44",
+   "title": "뉴욕증시, 미국과 이란간 협상교착 등 영향 하락⋯애플 1%대, 엔비디아 ...",
+   "url": "http://www.econonews.co.kr/news/articleView.html?idxno=442629",
+   "published": "2026-08-11 07:10",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "미국 뉴욕증시, 미·이란 협상 불확실성에 숨 고르기…다우존스·S&P500·...",
-   "url": "https://www.lecturernews.com/news/articleView.html?idxno=208231",
-   "published": "2026-08-11 06:42",
+   "title": "[증시전략] 인텔, 150억달러 유상증자 추진…AI 수요 급증 대응",
+   "url": "https://biz.sbs.co.kr/article_hub/20000327820?division=NAVER",
+   "published": "2026-08-11 07:09",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "SK하이닉스 담보대출 5배 넘게 급증…40대 이하 ‘빚투’도 늘었다",
+   "url": "http://mbnmoney.mbn.co.kr/news/view?news_no=MM1005898241",
+   "published": "2026-08-11 07:08",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "상무 이상만 1000명 넘는 삼성전자…임원 자사주 매도 급증한 이유는",
-   "url": "https://www.mk.co.kr/article/12123622",
-   "published": "2026-08-11 06:42",
+   "title": "[오늘 일본은] 日 7월 기업 파산 1028건…13년 만에 7월 기준 최고 수준",
+   "url": "https://www.pointe.co.kr/news/articleView.html?idxno=83036",
+   "published": "2026-08-11 07:06",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "미·이란 호르무즈 협상 난항…유가 급등에 뉴욕증시 일제히 내림세",
+   "url": "https://www.ziksir.com/news/articleView.html?idxno=142727",
+   "published": "2026-08-11 07:04",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "뉴욕증시, \"출구전략 어디로?\" 미·이란 협상 의구심에 약보합",
-   "url": "https://www.globale.co.kr/news/articleView.html?idxno=39802",
-   "published": "2026-08-11 06:40",
+   "title": "유럽증시, 미국과 이란 협상 관망세속 보합 혼조세⋯독일 강보합, 프랑...",
+   "url": "http://www.econonews.co.kr/news/articleView.html?idxno=442627",
+   "published": "2026-08-11 07:04",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "7주 연속 마이너스 코스피, '솟아날 구멍'은",
+   "url": "https://www.dailian.co.kr/news/view/1676821/?sc=Naver",
+   "published": "2026-08-11 07:02",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[Invest]\"변동성 진정되면 진행하자\"…7월 폭락장에 멈춘 IPO 시계",
+   "url": "https://www.investchosun.com/site/data/html_dir/2026/08/10/2026081080175.html",
+   "published": "2026-08-11 07:02",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "美·이란 협상 의구심에 투심 위축…유가 5% 급등 [글로벌 머니플로우]",
+   "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202608110407&t=NN",
+   "published": "2026-08-11 07:02",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "[국내주식]SK하이닉스 오르자 빚도 불었다…담보대출 1년새 438% 폭증",
-   "url": "https://www.namdonews.com/news/articleView.html?idxno=919646",
-   "published": "2026-08-11 06:38",
+   "title": "미래적금·성장펀드, 청년 목돈 만들기 효과 물음표… 서학개미 6월 다...",
+   "url": "https://www.segye.com/newsView/20260810521223?OutUrl=naver",
+   "published": "2026-08-11 07:02",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "호르무즈 재개방 ‘안갯속’에 최고치 랠리 멈춘 뉴욕증시…약보합세 ...",
-   "url": "https://biz.heraldcorp.com/article/10836624?ref=naver",
-   "published": "2026-08-11 06:36",
+   "title": "미-이란 호르무즈 협상 교착… 뉴욕증시 일제히 하락-[글로벌 마감 시황...",
+   "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202608110396&t=NN",
+   "published": "2026-08-11 07:02",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "주가 11배 뛰자 벌어진 일… SK하이닉스에 몰린 '빚투'",
-   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=476062",
-   "published": "2026-08-11 06:34",
-   "topic": "반도체",
+   "title": "[더벨]롯데리츠 공모채 수요예측 생략, 세일즈 마무리 수순",
+   "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202608071659138080106064",
+   "published": "2026-08-11 07:02",
+   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "SK하이닉스 담보대출 1년 새 5배…40대 비중도 두 배 뛰었다",
-   "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1719846",
-   "published": "2026-08-11 06:32",
-   "topic": "반도체",
+   "title": "신한라이프 잠실 MICE 참전론 대두, 왜?",
+   "url": "https://news.dealsitetv.com/articles/174391",
+   "published": "2026-08-11 07:02",
+   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "시중엔 돈 넘치는데 기업은 팍팍…회사채·유증까지 막힌 '돈맥경화'",
-   "url": "https://www.mt.co.kr/stock/2026/08/11/2026081021370124511",
-   "published": "2026-08-11 06:30",
+   "title": "뉴욕증시, 이란 불안·반도체 약세에 하락…CPI 앞두고 관망",
+   "url": "https://www.news2day.co.kr/article/20260811500022",
+   "published": "2026-08-11 07:02",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[더벨][변곡점에 선 가비아] 공개매수대금 80% 차입, 배당·CAPEX 균형찾기...",
+   "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202608061322517280101763",
+   "published": "2026-08-11 07:02",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[더벨][발행사분석] 삼양패키징, 2년만에 공모채 복귀…언더금리 가능할...",
+   "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202608062343135040102582",
+   "published": "2026-08-11 07:02",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[초임 은행장 리더십] 이환주號 KB국민, '성장동력 확보' 집중",
+   "url": "https://news.dealsitetv.com/articles/174234",
+   "published": "2026-08-11 07:02",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "청개구리 개미군단…코스닥 급등에 레버리지 팔고 인버스 산다",
+   "url": "https://www.newsis.com/view/NISX20260810_0003743202",
+   "published": "2026-08-11 07:00",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[리스트] 국내 합성전략 30선",
+   "url": "https://www.itooza.com/common/iview.php?no=2026081014415804476",
+   "published": "2026-08-11 07:00",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "\"매력적 재진입 기회\" 라더니 정작 '팔자'…'어떤걸 믿어?' 혼돈의 개미",
+   "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202608110385&t=NN",
+   "published": "2026-08-11 06:50",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "삼전닉스 문턱 높이자 美 3배로…개미, SOXL 4.4조 '레버리지 원정'",
+   "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1719849",
+   "published": "2026-08-11 06:48",
    "topic": "증시",
    "ticker_prices": [],
    "watchlist_hits": []
@@ -246,50 +342,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "5년물 가뭄 속 코코본드 ‘완판’…금융지주 자본확충 수요에 발행 지속...",
-   "url": "https://www.sedaily.com/article/20077659?ref=naver",
-   "published": "2026-08-11 06:15",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "멈춰도 흔들린 증시⋯30년된 안전장치의 경고 [올해 77번 멈춘 증시, 녹...",
-   "url": "https://www.etoday.co.kr/news/view/2612784",
-   "published": "2026-08-11 06:12",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[다시 뛰는 우리금융] ②임종룡의 종합금융그룹 승부수....보험 품고 '원...",
-   "url": "https://www.techm.kr/news/articleView.html?idxno=154156",
-   "published": "2026-08-11 06:06",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "아찔한 ‘롤러코스피’… 서학개미, 두 달 만에 국장 떠나",
-   "url": "https://www.segye.com/newsView/20260810518325?OutUrl=naver",
-   "published": "2026-08-11 06:05",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "다시 뛰는 코스닥…\"바이오 최대 수혜\"",
    "url": "https://news.mtn.co.kr/news-detail/2026081012524035648",
    "published": "2026-08-11 06:04",
    "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "환율 1400원대서 ‘숨고르기’…1300원대 갈까",
-   "url": "https://www.kukinews.com/article/view/kuk202608100150",
-   "published": "2026-08-11 06:02",
-   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -302,58 +358,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "상장 막힌 카카오엔터에… 앵커PE, 4000억 인수금융 차환 ‘난항’",
-   "url": "https://biz.chosun.com/stock/market_trend/2026/08/11/KXZ3ZKOOS5HHHDEHQFAHMUDH54/?utm_source=naver&utm_medium=original&utm_campaign=biz",
-   "published": "2026-08-11 06:01",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "'일시 정지' 치중한 한국 vs '핀셋 제어' 우선 가동하는 해외 [올해 77번...",
-   "url": "https://www.etoday.co.kr/news/view/2612923",
-   "published": "2026-08-11 06:00",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "손실 커진 개미 '레버리지 중독증'…미국장 '3배 ETF'로 몰려갔다",
-   "url": "https://www.news1.kr/finance/general-stock/6254783",
-   "published": "2026-08-11 06:00",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "90 넘던 공포지수 '진정'…'빚투' 반등 속 저가 매수세 유입",
-   "url": "https://www.ziksir.com/news/articleView.html?idxno=142662",
-   "published": "2026-08-11 06:00",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[윤동열의 시대유감 특별판 ①] 달러 벌어도 원화는 왜 약해졌나…\"돈의...",
-   "url": "https://www.newspim.com/news/view/20260810001309",
-   "published": "2026-08-11 06:00",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[다시 뛰는 우리금융] ①증권 이어 보험까지…잘 나가는 우리금융, 종합...",
-   "url": "https://www.techm.kr/news/articleView.html?idxno=154142",
-   "published": "2026-08-11 06:00",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "금융권, '은행+비은행' 성장 공식 확산…수협은행 '종합금융그룹' 참여...",
-   "url": "https://www.lcnews.co.kr/news/articleView.html?idxno=206313",
-   "published": "2026-08-11 06:00",
-   "topic": "금융",
+   "title": "환율 1400원대서 ‘숨고르기’…1300원대 갈까",
+   "url": "https://www.kukinews.com/article/view/kuk202608100150",
+   "published": "2026-08-11 06:02",
+   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -374,10 +382,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "[박근종 칼럼] 일자리 증가 폭 반토막에 청년·고령층 '마통' 연체 급증...",
-   "url": "https://www.mhns.co.kr/news/articleView.html?idxno=756103",
-   "published": "2026-08-11 05:36",
-   "topic": "증시",
+   "title": "[윤동열의 시대유감 특별판 ①] 달러 벌어도 원화는 왜 약해졌나…\"돈의...",
+   "url": "https://www.newspim.com/news/view/20260810001309",
+   "published": "2026-08-11 06:00",
+   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -385,14 +393,6 @@
    "title": "美 고용 충격, 연준 9월 금리 동결론 무게 속 내부 진통 격화",
    "url": "https://www.g-enews.com/view.php?ud=202608101601311384fbbec65dfb_1",
    "published": "2026-08-11 03:46",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[MT시평/김성재]재정 우위와 금리 발작 가능성",
-   "url": "https://www.mt.co.kr/opinion/2026/08/11/2026081008452736992",
-   "published": "2026-08-11 02:00",
    "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
