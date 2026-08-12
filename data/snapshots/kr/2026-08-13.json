@@ -2,15 +2,15 @@
  "date": "2026-08-13",
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-0813",
- "issue_no": 23,
- "published_at": "2026-08-13T05:56:48+09:00",
+ "issue_no": 24,
+ "published_at": "2026-08-13T06:16:02+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdyXH2EkPKbqAB3CRuVRr'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdyYk3jA6BnBUC4syJaji'}",
   "consecutive_failure_days": 15
  },
  "models": {
@@ -106,9 +106,9 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1417.9,
-    "change": 5.72,
-    "change_pct": 0.41,
+    "value": 1416.5,
+    "change": 4.32,
+    "change_pct": 0.31,
     "trend": "flat",
     "trend_label": "보합권",
     "series": [
@@ -141,7 +141,7 @@
      1407.0,
      1417.31,
      1412.18,
-     1417.9
+     1416.5
     ]
    }
   ],
@@ -158,26 +158,186 @@
  "rejected": [],
  "newsroom": [
   {
+   "title": "뉴욕 증시, 무난한 CPI에 보합...‘AI 인프라 호실적’ 반도체주 강세 [...",
+   "url": "https://www.sedaily.com/article/20078792?ref=naver",
+   "published": "2026-08-13 06:14",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "미국 뉴욕증시, 물가 둔화에 금리 부담 완화…다우존스 하락, S&P500·나스...",
+   "url": "https://www.lecturernews.com/news/articleView.html?idxno=208375",
+   "published": "2026-08-13 06:14",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[미국 특징주] 세레브라스, 가이던스 상향에도 시간외 14% 급락",
+   "url": "https://www.newspim.com/news/view/20260813000028",
+   "published": "2026-08-13 06:11",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "9월 금리동결론 힘 받았지만…인플레 우려 못 떨친 시장[뉴욕마감]",
+   "url": "https://www.mt.co.kr/world/2026/08/13/2026081306074954763",
+   "published": "2026-08-13 06:11",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "AI 수혜주 바뀌나… 반도체 휘청일 때, 보안·SW ETF 선전",
+   "url": "https://it.chosun.com/news/articleView.html?idxno=2023092167969",
+   "published": "2026-08-13 06:10",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[美증시] 혼조 속 나스닥·S&P500 상승…반도체주·스페이스X 주도",
+   "url": "https://www.mediapen.com/news/view/1116060",
+   "published": "2026-08-13 06:10",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "'車금융 20년' 김기덕, JB우리캐피탈 그룹 이익 40% 이끌었다 [인물 포커...",
+   "url": "https://www.ngetnews.com/news/articleView.html?idxno=552378",
+   "published": "2026-08-13 06:10",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "한은 부총재 “원달러 환율, 4분기로 갈수록 낮아질 것…경상흑자 효과...",
+   "url": "https://view.asiae.co.kr/article/2026081214304102450",
+   "published": "2026-08-13 06:10",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "AI가 이끈 뉴욕증시…S&P500·나스닥 상승 마감",
+   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=84897",
+   "published": "2026-08-13 06:06",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "세레브라스, 가이던스 상향에도 시간외 14%↓…HW 매출 부진 발목",
+   "url": "https://www.edaily.co.kr/news/newspath.asp?newsid=02542006645546992",
+   "published": "2026-08-13 06:04",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "세레브라스, AI 수요 폭증에 매출 전망 상향…주가는 14% 급락",
+   "url": "https://www.news1.kr/world/international-economy/6257438",
+   "published": "2026-08-13 06:03",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "미국 7월 소비자 물가 상승세 둔화...금리 동결 기대감 상승",
+   "url": "https://www.ytn.co.kr/_ln/0104_202608130603382908",
+   "published": "2026-08-13 06:03",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "166조 팔던 외국인 수급 저점 통과 기대 ↑… 코스피 반등 열쇠 쥐나",
+   "url": "https://www.etoday.co.kr/news/view/2613833",
+   "published": "2026-08-13 06:02",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "블록버스터 특허 줄줄이 만료…글로벌 제약사 ‘신약 쇼핑’ 경쟁",
+   "url": "https://www.kukinews.com/article/view/kuk202608120128",
+   "published": "2026-08-13 06:02",
+   "topic": "바이오",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "주가 급락에 유상증자 반토막…바이오, 시설투자·R&D '비상'",
+   "url": "https://www.dailypharm.com/user/news/341341?REFERER=NP",
+   "published": "2026-08-13 06:02",
+   "topic": "바이오",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "美 CPI 예상 부합...달러 '절상' vs 유로·파운드·엔 '절하'",
+   "url": "http://www.choicenews.co.kr/news/articleView.html?idxno=169750",
+   "published": "2026-08-13 06:02",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "지긋지긋한 하락장 끝 보인다...\"다만 폭발적 랠리는 어려워\"",
+   "url": "http://www.fnnews.com/news/202608121656111212",
+   "published": "2026-08-13 06:01",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "널뛰는 증시 장세에 깃발 내린 개미들···'단타' 버리고 '인컴' 탔다",
+   "url": "https://www.ziksir.com/news/articleView.html?idxno=142934",
+   "published": "2026-08-13 06:00",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[오늘의 이슈] 기준금리 올렸는데, 대출은 잡혔나",
+   "url": "http://www.newskr.kr/news/articleView.html?idxno=105588",
+   "published": "2026-08-13 06:00",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[유증+] 엘앤씨바이오, '대주주 블록딜' 청약 흥행 암초되나…주주들 '...",
+   "url": "https://www.greened.kr/news/articleView.html?idxno=347538",
+   "published": "2026-08-13 06:00",
+   "topic": "바이오",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "뛰는 증권사, 잠자던 은행 앞섰다…미래·한투 '예적금'시장' 넘봐",
+   "url": "https://www.news1.kr/finance/general-stock/6257333",
+   "published": "2026-08-13 06:00",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "‘전문가에게 맡긴 돈’ 1000조 넘었다…증시 호황에 184조 ‘껑충’",
+   "url": "https://m.skyedaily.com/news_view.html?ID=309713",
+   "published": "2026-08-13 06:00",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
    "title": "[N2 모닝 경제 브리핑-8월 13일] 美 증시, CPI 둔화에 안도…S&P500·나스...",
    "url": "https://www.news2day.co.kr/article/20260812500084",
    "published": "2026-08-13 05:56",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[뉴욕증시] S&P500·나스닥 반등 속 다우지수만 약보합…스페이스X, 9.7%...",
-   "url": "http://www.fnnews.com/news/202608130542333555",
-   "published": "2026-08-13 05:47",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[속보] \"기준금리 인상 명분 약해졌다\" 시장 '안도'…S&P500 0.3%↑",
-   "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202608130189&t=NN",
-   "published": "2026-08-13 05:45",
-   "topic": "반도체",
+   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -190,64 +350,16 @@
    "watchlist_hits": []
   },
   {
-   "title": "美 AI 반도체주 강세…코어위브 19%·SK하이닉스 9% 급등",
-   "url": "https://www.news1.kr/world/international-economy/6257437",
-   "published": "2026-08-13 05:43",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "CPI 안도+AI 실적 훈풍…나스닥100 한달來 최고[월스트리트in]",
-   "url": "https://www.edaily.co.kr/news/newspath.asp?newsid=02309126645546992",
-   "published": "2026-08-13 05:42",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "9% 급등 스페이스X의 귀환…마이크론 강세, 삼전ㆍSK하닉 오늘도 달리나...",
-   "url": "https://www.dt.co.kr/article/12078024?ref=naver",
-   "published": "2026-08-13 05:39",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "나스닥 0.54%↑…CPI 안도·AI 투자 기대에 반등 성공[뉴욕마감]",
-   "url": "https://www.news1.kr/world/international-economy/6257436",
-   "published": "2026-08-13 05:32",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "비은행 주택대출 150조 육박…부동산 쏠림 심화",
-   "url": "https://www.sedaily.com/article/20078762?ref=naver",
-   "published": "2026-08-13 05:31",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "기지개 킨 ‘삼전닉스’…주주환원 카드에 관심 집중",
-   "url": "https://www.dt.co.kr/article/12078016?ref=naver",
-   "published": "2026-08-13 05:30",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "동전주·시총 미달 36곳에 ‘상폐 경고장’… ‘1000원 미만=부실’ 낙인...",
-   "url": "https://www.seoul.co.kr/news/economy/securities/2026/08/13/20260813029003?wlog_tag3=naver",
+   "title": "미래에셋증권 2분기 순익 1.9조… 신한 잡고 KB금융만 남았다",
+   "url": "https://www.seoul.co.kr/news/economy/securities/2026/08/13/20260813031003?wlog_tag3=naver",
    "published": "2026-08-13 05:04",
    "topic": "증시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "미래에셋증권 2분기 순익 1.9조… 신한 잡고 KB금융만 남았다",
-   "url": "https://www.seoul.co.kr/news/economy/securities/2026/08/13/20260813031003?wlog_tag3=naver",
+   "title": "동전주·시총 미달 36곳에 ‘상폐 경고장’… ‘1000원 미만=부실’ 낙인...",
+   "url": "https://www.seoul.co.kr/news/economy/securities/2026/08/13/20260813029003?wlog_tag3=naver",
    "published": "2026-08-13 05:04",
    "topic": "증시",
    "ticker_prices": [],
@@ -270,14 +382,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "경기 살아나고 물가·집값 부담…한은, 연내 추가 금리인상 무게",
-   "url": "https://www.sidae.com/article/2026081214145011391",
-   "published": "2026-08-13 05:00",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "베선트·다카이치 충돌, 엔화 공조 흔든다",
    "url": "https://www.g-enews.com/view.php?ud=2026081218030912379a1f309431_1",
    "published": "2026-08-13 05:00",
@@ -286,10 +390,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "하나금융, 인천 기업에 3500억 규모 지원",
-   "url": "https://www.donga.com/news/Society/article/all/20260813/134467450/2",
-   "published": "2026-08-13 04:32",
-   "topic": "금융",
+   "title": "경기 살아나고 물가·집값 부담…한은, 연내 추가 금리인상 무게",
+   "url": "https://www.sidae.com/article/2026081214145011391",
+   "published": "2026-08-13 05:00",
+   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -310,66 +414,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "13일자로 30개 신규 관리종목 지정...'동전주' 등 부실기업 퇴출 가속화",
-   "url": "https://www.financialpost.co.kr/news/articleView.html?idxno=270235",
-   "published": "2026-08-13 03:54",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "美, 국채 30년물 금리 5.25% 돌파… 재정 적자·실질금리 리셋 경고",
    "url": "https://www.g-enews.com/view.php?ud=202608121624402507fbbec65dfb_1",
    "published": "2026-08-13 03:26",
    "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "부실기업 퇴출 본격화… 30개 종목에 ‘1차 경고장’",
-   "url": "https://www.kmib.co.kr/article/view.asp?arcid=9000002708&cp=nv",
-   "published": "2026-08-13 02:07",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "코스닥, 부실기업 정리 가속화... 시장 체질개선 기대감 고조",
-   "url": "https://www.tokenpost.kr/news/market/389522",
-   "published": "2026-08-13 02:00",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "수십년 그대로 교육교부금·농특세 바꿔야[딥포인트/배성민]",
-   "url": "https://www.mt.co.kr/opinion/2026/08/13/2026081115111420436",
-   "published": "2026-08-13 02:00",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "코스닥 라이징스타, 18개 혁신 기업 발굴…성장 지원 강화",
-   "url": "https://www.tokenpost.kr/news/market/389520",
-   "published": "2026-08-13 01:40",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "한은까지 금에 베팅했다고?…4400달러 뚫은 금값, 연말까지 5000달러 찍나",
-   "url": "https://www.segye.com/newsView/20260813500681?OutUrl=naver",
-   "published": "2026-08-13 01:20",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "한국 국고채 금리, 미국 물가 지표 발표 앞두고 혼조세",
-   "url": "https://www.tokenpost.kr/news/economy/389515",
-   "published": "2026-08-13 01:10",
-   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -385,22 +433,6 @@
    "title": "미국증시, CPI 둔화에 금리 부담 완화…엔비디아·SK하이닉스 ADR 강세",
    "url": "https://www.topstarnews.net/news/articleView.html?idxno=16162041",
    "published": "2026-08-12 22:46",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "달러지수 전장 대비 0.035% 상승해 99.848",
-   "url": "https://www.tokenpost.kr/news/market/389420",
-   "published": "2026-08-12 22:44",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "미 달러화 강보합…美·이란 합의 기대 후퇴 속 CPI 대기",
-   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4429853",
-   "published": "2026-08-12 22:32",
    "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
@@ -430,30 +462,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "“300조 주주환원? 됐습니다” ‘삼전닉스’ 3조 던진 개미들…반년만에...",
-   "url": "https://www.seoul.co.kr/news/economy/securities/2026/08/12/20260812500198?wlog_tag3=naver",
-   "published": "2026-08-12 19:14",
-   "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "펄어비스 25만주·동구바이오 5만주 등… 코스닥 68개사, 13일 자사주 매...",
-   "url": "https://www.newstnt.com/news/articleView.html?idxno=713785",
-   "published": "2026-08-12 18:54",
-   "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "제약동전주 줄줄이 관리종목…CMG·샤페론·노을 등 포함",
-   "url": "https://www.medicaltimes.com/Main/News/NewsView.html?ID=1170142&ref=naverpc",
-   "published": "2026-08-12 18:26",
-   "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "캐즘은 끝나간다는데…2차전지 업계 ‘CB 상환 청구서’ 긴장 모드",
    "url": "https://ilyo.co.kr/?ac=article_view&entry_id=512247",
    "published": "2026-08-12 18:12",
@@ -465,14 +473,6 @@
    "title": "\"우리도 AI 수혜주\"…배터리3사, ESS 덕 실적·주가 호조",
    "url": "https://www.kpinews.kr/newsView/1065599250950998",
    "published": "2026-08-12 17:28",
-   "topic": "자동차",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "기업은행, 폴란드·베트남 법인 세우는 이유... 해외 네트워크 새판 짜...",
-   "url": "https://www.pressman.kr/news/articleView.html?idxno=103136",
-   "published": "2026-08-12 17:16",
    "topic": "자동차",
    "ticker_prices": [],
    "watchlist_hits": []
