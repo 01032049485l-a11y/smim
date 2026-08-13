@@ -3,14 +3,14 @@
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-0814",
  "issue_no": 25,
- "published_at": "2026-08-14T06:52:35+09:00",
+ "published_at": "2026-08-14T07:22:12+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ce1VLd572xQ7xKevPzxLH'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ce1XbdvrFsADgYuJz1Qqc'}",
   "consecutive_failure_days": 16
  },
  "models": {
@@ -106,8 +106,8 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1418.17,
-    "change": 1.71,
+    "value": 1418.14,
+    "change": 1.68,
     "change_pct": 0.12,
     "trend": "flat",
     "trend_label": "보합권",
@@ -141,7 +141,7 @@
      1417.31,
      1412.18,
      1416.46,
-     1418.17
+     1418.14
     ]
    }
   ],
@@ -158,18 +158,146 @@
  "rejected": [],
  "newsroom": [
   {
-   "title": "미국發 반도체 랠리에…삼성그룹 시총 2000조 탈환 [코주부]",
-   "url": "https://www.sedaily.com/article/20079131?ref=naver",
-   "published": "2026-08-14 06:50",
+   "title": "[증시키워드] LG 구광모, 美서 젠슨 황 만난다⋯‘모건스탠리 효과’에...",
+   "url": "https://www.etoday.co.kr/news/view/2614441",
+   "published": "2026-08-14 07:20",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "뉴욕증시, 미국 금리인상 후퇴 전망 등 영향 상승⋯샌디스크 13%대, SK하...",
-   "url": "http://www.econonews.co.kr/news/articleView.html?idxno=442807",
-   "published": "2026-08-14 06:50",
+   "title": "SK하이닉스 주가 2배 뛴다? 월가가 제시한 파격 목표가",
+   "url": "http://coinreaders.com/252755",
+   "published": "2026-08-14 07:20",
    "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[뉴욕환시] 달러 약보합…PPI 안도 vs 예멘 후티發 중동 리스크",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4430090",
+   "published": "2026-08-14 07:20",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "7월 PPI 둔화에 금리인상 우려 완화...S&P500 '사상 최고'-[글로벌 마감...",
+   "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202608140155&t=NN",
+   "published": "2026-08-14 07:18",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "AI 수요 호조 속 개별 종목 차별화…샌디스크 급등 vs 시스코 급락-[美증...",
+   "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202608140149&t=NN",
+   "published": "2026-08-14 07:18",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "S&P 500, 빅테크·반도체주 강세 속 최고치 경신 [ 美증시 특징주 ]",
+   "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202608140167&t=NN",
+   "published": "2026-08-14 07:17",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "물가·유가 꺾이자…S&P500 사상 최고 찍었다 [뉴욕증시 브리핑]",
+   "url": "https://www.hankyung.com/article/2026081405616",
+   "published": "2026-08-14 07:17",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "샌디스크, 잉여현금 100% 주주환원 정책으로 쓴다-[굿모닝 글로벌 이슈...",
+   "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202608140200&t=NN",
+   "published": "2026-08-14 07:16",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "美증시 S&P500 '상승'...마이크론·테슬라·메타·워크데이 '활짝'",
+   "url": "http://www.choicenews.co.kr/news/articleView.html?idxno=169851",
+   "published": "2026-08-14 07:16",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "삼성전기 12%대 급등…모건스탠리 '톱픽' 교체, AI 데이터센터가 바꾼 부...",
+   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=598153",
+   "published": "2026-08-14 07:06",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "폭락 장세 벗어난 지금은 주식시장에 머물러야 할 때",
+   "url": "https://weekly.donga.com/3/all/11/6346111/1",
+   "published": "2026-08-14 07:02",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[더벨][IB 풍향계] 채권 투자 속도조절 SK하이닉스, 은행 예금 타진",
+   "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202608121426431760106938",
+   "published": "2026-08-14 07:02",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "대형사 브로커리지 수익 4조 돌파…NH투자증권, 증가율 최고",
+   "url": "https://www.ceoscoredaily.com/page/view/2026081314062444123",
+   "published": "2026-08-14 07:00",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "한투, '12년 표류' KDB생명 품는다...한화·흥국 제치고 우협 선정",
+   "url": "http://www.fins.co.kr/news/articleView.html?idxno=109624",
+   "published": "2026-08-14 07:00",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[뉴욕증시] 물가 둔화에 기술주 랠리··\"거품 아닌 실적 붐\" 메모리주 ...",
+   "url": "https://www.seoulfn.com/news/articleView.html?idxno=635654",
+   "published": "2026-08-14 06:58",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "제프리스 \"美 10년물 TIPS, 증시에 닥칠 어려움 시사\"",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4430086",
+   "published": "2026-08-14 06:56",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "“외국인 185조 원 팔아치웠는데”…코스피, 열흘 새 23% 오른 이유는? ...",
+   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8636905&ref=A",
+   "published": "2026-08-14 06:53",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "레버리지 규제 통했나…'공포지수' 10일 만에 36% 급락",
+   "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1720368",
+   "published": "2026-08-14 06:52",
+   "topic": "증시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -182,71 +310,15 @@
    "watchlist_hits": []
   },
   {
-   "title": "뉴욕증시, 물가 부담 완화·유가 하락에 상승⋯S&P500 사상 최고치 경신",
-   "url": "http://www.inews24.com/view/1994934",
-   "published": "2026-08-14 06:47",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "뉴욕증시 3대 지수 일제 상승…나스닥 0.81%↑",
-   "url": "https://www.bntnews.co.kr/article/view/bnt202608140006",
-   "published": "2026-08-14 06:46",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "SK하이닉스 5.92% 급등 159만3000원…외국인 1조 담았다",
-   "url": "https://www.bntnews.co.kr/article/view/bnt202608140005",
-   "published": "2026-08-14 06:44",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "유가 하락에 도매물가도 완화...S&P500 최고치 또 경신 [데일리국제금융...",
-   "url": "https://www.sedaily.com/article/20079308?ref=naver",
-   "published": "2026-08-14 06:43",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "삼성전자 목표주가 최고 65만원…환원 100조 넘나",
-   "url": "https://www.bntnews.co.kr/article/view/bnt202608140004",
-   "published": "2026-08-14 06:42",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "'황제주' SK하이닉스 쪼개질까…주가 가를 진짜 카드는 3분기 환원책",
-   "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1720366",
-   "published": "2026-08-14 06:40",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "삼성·KB 선점한 '삼전닉스+채권' ETF… 미래·한투 '맞불'",
-   "url": "https://it.chosun.com/news/articleView.html?idxno=2023092168117",
-   "published": "2026-08-14 06:40",
+   "title": "뉴욕증시, 미국 금리인상 후퇴 전망 등 영향 상승⋯샌디스크 13%대, SK하...",
+   "url": "http://www.econonews.co.kr/news/articleView.html?idxno=442807",
+   "published": "2026-08-14 06:50",
    "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "인플레 우려 누그러지자 뉴욕증시 상승…나스닥도 2만6803선 돌파",
-   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=477251",
-   "published": "2026-08-14 06:38",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "브릿지바이오 잔혹사 뒤로한 이정규 전 대표, 1년 만에 바이오 전으로",
+   "title": "브릿지바이오 잔혹사 뒤로한 이정규 전 대표, 1년 만에 바이오 전면으로",
    "url": "http://www.docdocdoc.co.kr/news/articleView.html?idxno=3041773",
    "published": "2026-08-14 06:36",
    "topic": "바이오",
@@ -257,7 +329,7 @@
    "title": "한은도 3550억 담았다…금 ETF 7%·금광주는 19% '질주'",
    "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1720362",
    "published": "2026-08-14 06:34",
-   "topic": "금융",
+   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -282,14 +354,6 @@
    "url": "https://www.etoday.co.kr/news/view/2614431",
    "published": "2026-08-14 06:18",
    "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[N2 모닝 경제 브리핑-8월 14일] 美 증시, 물가 안정에 3대 지수 상승…...",
-   "url": "https://www.news2day.co.kr/article/20260814500007",
-   "published": "2026-08-14 06:06",
-   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -329,7 +393,7 @@
    "title": "\"선행지수 꺾이면 코스피도 같이 꺾인다\"",
    "url": "https://magazine.hankyung.com/money/article/202607203251c",
    "published": "2026-08-14 06:02",
-   "topic": "금융",
+   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -338,14 +402,6 @@
    "url": "https://biz.chosun.com/stock/stock_general/2026/08/14/K6AGY33YIBAJNE54CWODBXOJAM/?utm_source=naver&utm_medium=original&utm_campaign=biz",
    "published": "2026-08-14 06:01",
    "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "'빅쇼트' 버리의 경고…\"비정상적 신용 구조가 등장했다\" [Fed 워치]",
-   "url": "https://www.hankyung.com/article/202608140475i",
-   "published": "2026-08-14 06:01",
-   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -374,14 +430,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "개미 '실탄' 바닥…코스피 향방, 외국인 수급에 달렸다",
-   "url": "https://www.ziksir.com/news/articleView.html?idxno=143069",
-   "published": "2026-08-14 06:00",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "코스피 6800선 회복… 나흘 연속 올랐다",
    "url": "https://www.seoul.co.kr/news/economy/securities/2026/08/14/20260814031004?wlog_tag3=naver",
    "published": "2026-08-14 05:05",
@@ -406,26 +454,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "코스피 강세장 복귀했지만…\"이번엔 천천히 오른다\"",
-   "url": "https://www.newspim.com/news/view/20260813001397",
-   "published": "2026-08-14 02:56",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "사노피가 점찍은 큐라클, 파이프라인 MT-101·CU01 기술이전 정조준",
    "url": "https://www.pharmnews.com/news/articleView.html?idxno=305601",
    "published": "2026-08-14 01:58",
    "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "원화가치 한달새 9.4% 급등… 변동성 더 커지면 기업들 불안",
-   "url": "https://www.donga.com/news/Economy/article/all/20260813/134475059/2",
-   "published": "2026-08-14 00:31",
-   "topic": "증시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -438,42 +470,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "‘국장 탈출’ 성급했나…국내 증시 시총 6000조원 회복",
-   "url": "https://www.munhwa.com/article/11609446?ref=naver",
-   "published": "2026-08-13 23:36",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "인제니아테라퓨틱스, 18일 코스닥 입성...임상 성과 주목",
    "url": "http://www.fnnews.com/news/202608132030293631",
    "published": "2026-08-13 20:40",
    "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[주식마감] 반도체 강세 속 원팩 상한가... 금호전기·이브이첨단소재 ...",
-   "url": "https://www.ggilbo.com/news/articleView.html?idxno=1175455",
-   "published": "2026-08-13 19:40",
-   "topic": "2차전지",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "'1세대 코스닥상장사' 뉴인텍, '퇴출 위기' 직면",
-   "url": "https://www.sisaweek.com/news/articleView.html?idxno=237283",
-   "published": "2026-08-13 17:54",
-   "topic": "자동차",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "이노메트리, 자사주 소각 결정… 추가 취득·소각 등 주주가치 제고 지...",
-   "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202608130599&t=NN",
-   "published": "2026-08-13 17:08",
-   "topic": "2차전지",
    "ticker_prices": [],
    "watchlist_hits": []
   }
