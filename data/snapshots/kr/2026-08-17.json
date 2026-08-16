@@ -3,14 +3,14 @@
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-0817",
  "issue_no": 26,
- "published_at": "2026-08-17T06:25:37+09:00",
+ "published_at": "2026-08-17T06:50:40+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ce78i6fhADDqoLFgB1ZFp'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ce7Acu1oq1KKhyrqcU7Xm'}",
   "consecutive_failure_days": 17
  },
  "models": {
@@ -158,6 +158,54 @@
  "rejected": [],
  "newsroom": [
   {
+   "title": "금리 인상 공포에도 안 닫힌 지갑…'카드소비'에 한은 셈법 복잡",
+   "url": "https://www.news1.kr/economy/trend/6260699",
+   "published": "2026-08-17 06:45",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "4조7000억원 채권 발행, 회사채 수요예측 재개",
+   "url": "https://www.tokenpost.kr/news/cryptocurrency/391783",
+   "published": "2026-08-17 06:42",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[뉴욕 주간전망] FOMC 회의록 등 주목...유가 흐름도 관건",
+   "url": "http://www.opinionnews.co.kr/news/articleView.html?idxno=143131",
+   "published": "2026-08-17 06:40",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "'금 지금 사둘까'...개미들, 4개월만에 순매수 전환",
+   "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202608170044&t=NN",
+   "published": "2026-08-17 06:38",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "AI 수요 회복 기대감에… 반도체 추가상승 전망 [주간증시전망]",
+   "url": "https://it.chosun.com/news/articleView.html?idxno=2023092168166",
+   "published": "2026-08-17 06:30",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "개인, 금시장서 1330억원 순매수 전환했다",
+   "url": "https://www.tokenpost.kr/news/cryptocurrency/391778",
+   "published": "2026-08-17 06:30",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
    "title": "코스피 변동성 3.6%, 전년보다 두 배 넘었다",
    "url": "https://www.tokenpost.kr/news/market/391776",
    "published": "2026-08-17 06:20",
@@ -214,14 +262,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "[박혜린 기자의 내돈내굴] AI는 사람보다 투자 잘할까, 슬기로운 투자생...",
-   "url": "https://www.businesspost.co.kr/BP?command=article_view&num=444846",
-   "published": "2026-08-17 06:02",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "\"주식으로 한 방 크게 벌겠다는 마음 경계해야…지금은 차곡차곡 분할 ...",
    "url": "http://www.jbsori.com/news/articleView.html?idxno=17747",
    "published": "2026-08-17 06:02",
@@ -246,16 +286,16 @@
    "watchlist_hits": []
   },
   {
-   "title": "금리 부담 덜고 '칠천피' 회복…엔비디아 실적·잭슨홀까지 저점 다지기",
-   "url": "https://www.news1.kr/finance/market-exr/6260029",
+   "title": "8월 '삼전닉스' 쏠림 완화…2차전지·코스닥 ETF 40%대 '질주'",
+   "url": "https://www.news1.kr/finance/general-stock/6260450",
    "published": "2026-08-17 06:00",
    "topic": "증시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "8월 '삼전닉스' 쏠림 완화…2차전지·코스닥 ETF 40%대 '질주'",
-   "url": "https://www.news1.kr/finance/general-stock/6260450",
+   "title": "금리 부담 덜고 '칠천피' 회복…엔비디아 실적·잭슨홀까지 저점 다지기",
+   "url": "https://www.news1.kr/finance/market-exr/6260029",
    "published": "2026-08-17 06:00",
    "topic": "증시",
    "ticker_prices": [],
@@ -265,15 +305,7 @@
    "title": "올해 중 최저치 찍은 원·달러 환율…더 떨어질까",
    "url": "https://www.newsis.com/view/NISX20260814_0003749956",
    "published": "2026-08-17 06:00",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "\"이제 다시 금 사야 하나\"…금값 한 달 만에 11% 반등",
-   "url": "https://www.news1.kr/finance/general-stock/6260648",
-   "published": "2026-08-17 06:00",
-   "topic": "금융",
+   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -289,7 +321,7 @@
    "title": "환율 더 내린다에 베팅한 기업들…5대 은행 달러대출 한 달 새 13억달러...",
    "url": "https://www.dt.co.kr/article/12078442?ref=naver",
    "published": "2026-08-17 05:40",
-   "topic": "금융",
+   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -298,22 +330,6 @@
    "url": "https://www.dt.co.kr/article/12078449?ref=naver",
    "published": "2026-08-17 05:26",
    "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "코스피, 한 주 내내 오름세...\"이번 주도 상승 기대\"",
-   "url": "https://www.ytn.co.kr/_ln/0102_202608170517328509",
-   "published": "2026-08-17 05:17",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[모닝 뉴스브리핑] 토큰화 금 48억달러대 外",
-   "url": "https://www.tokenpost.kr/news/briefing/391759",
-   "published": "2026-08-17 05:06",
-   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -338,14 +354,6 @@
    "url": "https://www.news2day.co.kr/article/20260814500004",
    "published": "2026-08-17 04:42",
    "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "글로벌 MMF, 7.9조弗 돌파… 증시 방어와 AI 대출 대이동",
-   "url": "https://www.g-enews.com/view.php?ud=202608161755557331fbbec65dfb_1",
-   "published": "2026-08-17 03:56",
-   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -466,14 +474,6 @@
    "url": "https://www.munhwa.com/article/11609762?ref=naver",
    "published": "2026-08-15 17:24",
    "topic": "자동차",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "30억달러 핵심광물 투자에 ETF 재조명",
-   "url": "https://www.tokenpost.kr/news/market/391373",
-   "published": "2026-08-15 15:54",
-   "topic": "2차전지",
    "ticker_prices": [],
    "watchlist_hits": []
   }
