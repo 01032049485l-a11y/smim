@@ -3,14 +3,14 @@
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-0817",
  "issue_no": 26,
- "published_at": "2026-08-17T06:50:40+09:00",
+ "published_at": "2026-08-17T07:19:54+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ce7Acu1oq1KKhyrqcU7Xm'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ce7CrCKhnQY5p5eaeqJ9D'}",
   "consecutive_failure_days": 17
  },
  "models": {
@@ -158,6 +158,70 @@
  "rejected": [],
  "newsroom": [
   {
+   "title": "[여의도 물어보살③] '돈 없는 개미 빠져라'…레버리지 보완책 효과는",
+   "url": "https://www.dailian.co.kr/news/view/1678679/?sc=Naver",
+   "published": "2026-08-17 07:08",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "'먹는 약 다음은 적응증'...노보 vs 릴리, 차세대 파이프라인 살펴보니",
+   "url": "https://www.edaily.co.kr/news/newspath.asp?newsid=01098806645548304",
+   "published": "2026-08-17 07:08",
+   "topic": "바이오",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "솔리다임 IPO설 '모락'…SK하닉 주주에 득일까, 실일까",
+   "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202608170047&t=NN",
+   "published": "2026-08-17 07:04",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "BAT, 15억弗 규모 달러채 발행...기존 채무 차환 목적",
+   "url": "https://www.theguru.co.kr/news/article.html?no=105721",
+   "published": "2026-08-17 07:02",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "“월 50억씩 벌다 반년 만에 65억 손실” 코스피 ETF에서 새 길 찾은 황...",
+   "url": "https://weekly.donga.com/3/all/11/6347545/1",
+   "published": "2026-08-17 07:01",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "물가 낮춘다던 AI, 올해는 거꾸로 밀어올린다…최대 0.4%p 계산 나왔다",
+   "url": "https://www.newsis.com/view/NISX20260817_0003751159",
+   "published": "2026-08-17 07:00",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "153조원 빅파마 나오나… AZ·BMS 합병설에 韓제약바이오에 불똥튀나",
+   "url": "https://it.chosun.com/news/articleView.html?idxno=2023092168161",
+   "published": "2026-08-17 07:00",
+   "topic": "바이오",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "8월 17일 출근길 팟캐스트 미 장기 국채금리 5.25%…비트코인 6만3051달러...",
+   "url": "https://www.tokenpost.kr/news/insights/391766",
+   "published": "2026-08-17 07:00",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
    "title": "금리 인상 공포에도 안 닫힌 지갑…'카드소비'에 한은 셈법 복잡",
    "url": "https://www.news1.kr/economy/trend/6260699",
    "published": "2026-08-17 06:45",
@@ -241,30 +305,6 @@
    "title": "키옥시아로 재미 본 일학개미 “다음은 여기다”…줍줍한 종목은",
    "url": "https://www.mk.co.kr/article/12129178",
    "published": "2026-08-17 06:09",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "FOMC 의사록에 쏠린 눈…코스피, 7000선 안착 시도",
-   "url": "https://news.mtn.co.kr/news-detail/2026081623090673543",
-   "published": "2026-08-17 06:04",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "은행원 급여 전년比 13%↑…삼성전자보다 많아 [한강로 경제브리핑]",
-   "url": "https://www.segye.com/newsView/20260816512560?OutUrl=naver",
-   "published": "2026-08-17 06:03",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "\"주식으로 한 방 크게 벌겠다는 마음 경계해야…지금은 차곡차곡 분할 ...",
-   "url": "http://www.jbsori.com/news/articleView.html?idxno=17747",
-   "published": "2026-08-17 06:02",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
@@ -374,14 +414,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "레버리지 예탁금 규제 후 변동성 3개월前 수준으로",
-   "url": "https://www.donga.com/news/Economy/article/all/20260816/134486459/2",
-   "published": "2026-08-17 01:43",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "주가 5년새 36만→3만원대…‘폐렴 백신’ 승부수 띄운 SK바사",
    "url": "https://www.joongang.co.kr/article/25453759",
    "published": "2026-08-17 00:01",
@@ -438,41 +470,9 @@
    "watchlist_hits": []
   },
   {
-   "title": "[특징주] HLB, 반기 '457억 적자 축소'…275억 '파생상품 평가손실'",
-   "url": "https://www.newstnt.com/news/articleView.html?idxno=714102",
-   "published": "2026-08-16 13:50",
-   "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "삼전닉스서 빠진 돈 어디로?…활짝 웃은 ‘바이오·뷰티’",
-   "url": "https://www.mk.co.kr/article/12128891",
-   "published": "2026-08-16 11:20",
-   "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "테슬라도 엔비디아도 아니다…서학개미 1300억 쏟아부은 순매수 1위 '이...",
    "url": "https://www.wikitree.co.kr/articles/1152756",
    "published": "2026-08-16 11:04",
-   "topic": "자동차",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "미래에셋증권, 8월 둘째주 일진전기 등 16종목 매수 추천",
-   "url": "https://www.bigtanews.co.kr/article/view/big202608150007",
-   "published": "2026-08-15 18:56",
-   "topic": "2차전지",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "‘연비좋은 GV80’…현대차, 제네시스 하이브리드 기대감에 6% 강세",
-   "url": "https://www.munhwa.com/article/11609762?ref=naver",
-   "published": "2026-08-15 17:24",
    "topic": "자동차",
    "ticker_prices": [],
    "watchlist_hits": []
