@@ -3,14 +3,14 @@
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-0819",
  "issue_no": 28,
- "published_at": "2026-08-19T07:22:21+09:00",
+ "published_at": "2026-08-19T07:53:52+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CeAzetaRQBuHHiBdXju3L'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CeB34G2tGBqtTChkcVidg'}",
   "consecutive_failure_days": 19
  },
  "models": {
@@ -106,9 +106,9 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1412.22,
-    "change": -2.51,
-    "change_pct": -0.18,
+    "value": 1412.3,
+    "change": -2.43,
+    "change_pct": -0.17,
     "trend": "flat",
     "trend_label": "보합권",
     "series": [
@@ -141,10 +141,16 @@
      1416.85,
      1415.37,
      1414.73,
-     1412.22
+     1412.3
     ]
    }
-  ]
+  ],
+  "up": 561,
+  "down": 1927,
+  "flat": 225,
+  "up_ratio": 20.7,
+  "mood": "위험회피",
+  "sectors": []
  },
  "new_entries": [],
  "holdings": [],
@@ -157,18 +163,130 @@
  ],
  "newsroom": [
   {
-   "title": "원·달러 환율 숨고르기…\"1300원대 재진입 시도\" [클릭e종목]",
-   "url": "https://view.asiae.co.kr/article/2026081817295418007",
-   "published": "2026-08-19 07:20",
+   "title": "뉴욕증시, 3거래일 연속 하락…미 국채금리 급등 “우려 커졌다” [투자...",
+   "url": "https://biz.heraldcorp.com/article/10844663?ref=naver",
+   "published": "2026-08-19 07:50",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "뉴욕증시 3대 지수 일제히 하락…중동 불안·국채 금리 급등 '직격탄'",
+   "url": "https://www.jnilbo.com/news/articleView.html?idxno=90000057710",
+   "published": "2026-08-19 07:49",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "美 증시 S&P500 '위축'...광통신주 등 AI인프라주 '뚝'",
+   "url": "http://www.choicenews.co.kr/news/articleView.html?idxno=170036",
+   "published": "2026-08-19 07:48",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[일본 특징주] 소프트뱅크, 1조엔 규모 리테일 회사채 발행...AI 투자금 ...",
+   "url": "https://www.newspim.com/news/view/20260819000034",
+   "published": "2026-08-19 07:48",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[데일리 머니마켓] 나스닥 1.3% 하락",
+   "url": "https://www.bigtanews.co.kr/article/view/big202608190002",
+   "published": "2026-08-19 07:46",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[3분증시] 뉴욕증시, 글로벌 국채금리 급등에 3일째 하락",
+   "url": "http://www.yonhapnewstv.co.kr/news/MYH202608190743592mm",
+   "published": "2026-08-19 07:44",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "전통제약사 담은 해외 큰손들…유한·종근당 투자포인트는",
+   "url": "https://www.mt.co.kr/thebio/2026/08/19/2026081814542360904",
+   "published": "2026-08-19 07:43",
+   "topic": "바이오",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "하닉 9% 마이크론 6% 급락…경기방어주로 환승",
+   "url": "https://www.koreareport.co.kr/news/articleView.html?idxno=52228",
+   "published": "2026-08-19 07:40",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "뉴욕증시, 중동불안·미 국채금리 급등에 하락…나스닥 1.3%↓",
+   "url": "https://www.tfmedia.co.kr/news/article.html?no=206556",
+   "published": "2026-08-19 07:40",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[실전재테크]\"결국 답은 주주환원에 있다\"…변동성 장세 뚫는 투자법은",
+   "url": "https://view.asiae.co.kr/article/2026081814003046042",
+   "published": "2026-08-19 07:36",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "장기금리 5% 시대 굳어지나…월가 “초저금리 끝, 정상화 과정”(종합)",
+   "url": "https://www.edaily.co.kr/news/newspath.asp?newsid=02492806645548960",
+   "published": "2026-08-19 07:35",
    "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "[마켓 브리핑] 美국채 수익률 19년 만에 최대…기술주들 일제히 약세",
-   "url": "https://biz.sbs.co.kr/article_hub/20000329358?division=NAVER",
-   "published": "2026-08-19 07:16",
-   "topic": "반도체",
+   "title": "[마켓 프리뷰] 코스피 6거래일 만에 하락…주요국 국채 금리 급등",
+   "url": "https://biz.sbs.co.kr/article_hub/20000329359?division=NAVER",
+   "published": "2026-08-19 07:30",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[넥스트-샷] \"어디까지 가, 반도체\"···FOMC 의사록 긴장감 속 대기",
+   "url": "https://www.womaneconomy.co.kr/news/articleView.html?idxno=257448",
+   "published": "2026-08-19 07:30",
+   "topic": "바이오",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[모빌리티핫이슈] 자율주행 기술 끝판왕은?…바퀴 달린 스마트폰 'SDV' 경...",
+   "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=693734",
+   "published": "2026-08-19 07:30",
+   "topic": "자동차",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "美 40조달러 부채에 日 재정우려까지…글로벌 장기채 금리 급등",
+   "url": "https://www.tfmedia.co.kr/news/article.html?no=206555",
+   "published": "2026-08-19 07:22",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "원·달러 환율 숨고르기…\"1300원대 재진입 시도\" [클릭e종목]",
+   "url": "https://view.asiae.co.kr/article/2026081817295418007",
+   "published": "2026-08-19 07:20",
+   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -185,54 +303,6 @@
    "url": "https://biz.sbs.co.kr/article_hub/20000329353?division=NAVER",
    "published": "2026-08-19 07:12",
    "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "국채금리 '불안 증폭'...뉴욕증시 '하락', 나스닥·AI주 '뚝'",
-   "url": "http://www.choicenews.co.kr/news/articleView.html?idxno=170033",
-   "published": "2026-08-19 07:12",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "중동 전운·금리 발작에 기술주 '와르르'…나스닥 1.33% '급락'",
-   "url": "https://www.ziksir.com/news/articleView.html?idxno=143522",
-   "published": "2026-08-19 07:12",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "美증시, AI주 약세에 하락…나스닥 1.33%↓",
-   "url": "https://www.dailian.co.kr/news/view/1679602/?sc=Naver",
-   "published": "2026-08-19 07:11",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[동북아 정세 브리핑] 개혁세대 퇴장과 중국의 다음 선택…대만 압박·...",
-   "url": "http://kor.theasian.asia/archives/413421",
-   "published": "2026-08-19 07:10",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "뉴욕증시, 유가·금리 ‘쌍끌이 압박’에 하락…나스닥 1.33%↓ [종합]",
-   "url": "https://www.etoday.co.kr/news/view/2615686",
-   "published": "2026-08-19 07:10",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[거버넌스워치] 케이씨 2세 고상걸 강력한 오너십의 비결 ‘몰아주기 증...",
-   "url": "https://news.bizwatch.co.kr/article/governance/2026/08/15/0003",
-   "published": "2026-08-19 07:10",
-   "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -255,30 +325,6 @@
   {
    "title": "[더벨]KB금융 신종자본증권 4000억 조달…흥행 여부 주목",
    "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202608141523057000108189",
-   "published": "2026-08-19 07:02",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[더벨][발행사분석] 대신증권, 공모채 발행으로 차입구조 장기화",
-   "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202608141458173840101819",
-   "published": "2026-08-19 07:02",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[Invest]\"한쪽선 돈 넣고 한쪽선 과징금\"…정책은행까지 때리는 공정위...",
-   "url": "https://www.investchosun.com/site/data/html_dir/2026/08/18/2026081880123.html",
-   "published": "2026-08-19 07:02",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[Invest]수도권 집값 자극 예고한 삼전닉스 성과급…부동산 안정대책 '사...",
-   "url": "https://www.investchosun.com/site/data/html_dir/2026/08/18/2026081880124.html",
    "published": "2026-08-19 07:02",
    "topic": "금융",
    "ticker_prices": [],
@@ -381,14 +427,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "주식 제친 금값의 귀환, 월가가 5150달러 베팅한 내막",
-   "url": "https://www.g-enews.com/view.php?ud=202608181708326686fbbec65dfb_1",
-   "published": "2026-08-19 03:06",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "블룸버그가 꼽은 하반기 아시아 10대 주목주",
    "url": "https://www.g-enews.com/view.php?ud=2026081822021787349a1f309431_1",
    "published": "2026-08-19 03:02",
@@ -401,14 +439,6 @@
    "url": "https://www.g-enews.com/view.php?ud=2026081823074233089a1f309431_1",
    "published": "2026-08-19 03:00",
    "topic": "자동차",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "“데이터센터 전력 문제가 AI 경쟁서 핵심… 전력 인프라에 주목하라”",
-   "url": "https://www.kmib.co.kr/article/view.asp?arcid=9000004136&cp=nv",
-   "published": "2026-08-19 00:11",
-   "topic": "증시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -445,33 +475,9 @@
    "watchlist_hits": []
   },
   {
-   "title": "삼천당제약 가격 흔들",
-   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=599116",
-   "published": "2026-08-19 00:00",
-   "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[데스크의 눈] 관치금융이 빚어낸 레버리지 참사",
-   "url": "https://www.segye.com/newsView/20260818519199?OutUrl=naver",
-   "published": "2026-08-18 23:02",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "주가 8% 급락시킨 ‘그 차’…페라리 루체, 무려 567억원에 팔린 이유",
    "url": "https://biz.heraldcorp.com/article/10844344?ref=naver",
    "published": "2026-08-18 22:31",
-   "topic": "자동차",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "소비자 대신 AI가 장을 본다면, 상인은 어디서 팔까… 알리페이의 답",
-   "url": "https://platum.kr/archives/292729",
-   "published": "2026-08-18 20:52",
    "topic": "자동차",
    "ticker_prices": [],
    "watchlist_hits": []
