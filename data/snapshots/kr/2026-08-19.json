@@ -2,15 +2,15 @@
  "date": "2026-08-19",
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-0819",
- "issue_no": 27,
- "published_at": "2026-08-19T05:33:51+09:00",
+ "issue_no": 28,
+ "published_at": "2026-08-19T05:51:39+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CeArP3GBXjUkHudJ49SDu'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CeAsjjMsBEeGMHyLDXgph'}",
   "consecutive_failure_days": 19
  },
  "models": {
@@ -106,9 +106,9 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1412.55,
-    "change": -2.18,
-    "change_pct": -0.15,
+    "value": 1413.05,
+    "change": -1.68,
+    "change_pct": -0.12,
     "trend": "flat",
     "trend_label": "보합권",
     "series": [
@@ -141,7 +141,7 @@
      1416.85,
      1415.37,
      1414.73,
-     1412.55
+     1413.05
     ]
    }
   ],
@@ -163,33 +163,65 @@
  ],
  "newsroom": [
   {
-   "title": "미국증시 반도체주 '출렁'...AMD · 엔비디아 · 마이크론 '급랭', 왜?",
-   "url": "http://www.choicenews.co.kr/news/articleView.html?idxno=170032",
-   "published": "2026-08-19 05:32",
+   "title": "[뉴욕증시 마감시황] 뉴욕증시, 장기금리 급등에 급락…'반도체 쇼크' 한...",
+   "url": "https://www.moneystorm.kr/news/articleView.html?idxno=5797",
+   "published": "2026-08-19 05:49",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "삼전닉스 레버리지 ETF 거래 89% 증발…‘2배 배율’까지 손보나",
-   "url": "https://www.kmib.co.kr/article/view.asp?arcid=9000004208&cp=nv",
-   "published": "2026-08-19 05:32",
+   "title": "미국 반도체 지수 5% 급락…장기금리 상승에 SK하닉 ADR 9%↓",
+   "url": "https://www.news1.kr/world/international-economy/6262462",
+   "published": "2026-08-19 05:45",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "[美증시] 이란발 국채금리 급등·인플레 우려에 3대 지수 하락…반도체...",
-   "url": "https://www.mediapen.com/news/view/1117223",
-   "published": "2026-08-19 05:30",
+   "title": "뉴욕증시, 중동 정세·美국채금리 급등에 하락…반도체가 낙폭 키워",
+   "url": "https://www.ddaily.co.kr/page/view/2026081905420783414",
+   "published": "2026-08-19 05:43",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "18일 나스닥 1.33% 하락, 반도체지수 4.98% 급락",
-   "url": "https://www.tokenpost.kr/news/market/392779",
-   "published": "2026-08-19 05:30",
+   "title": "미 국채 30년물 19년 만에 최고…나스닥 1.33% 급락",
+   "url": "https://www.kbmaeil.com/article/20260819500003",
+   "published": "2026-08-19 05:42",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[뉴욕증시] 국채 금리 '발작' 속 반도체주 와르르...3대 지수 하락",
+   "url": "https://www.g-enews.com/view.php?ud=202608190532322078e250e8e188_1",
+   "published": "2026-08-19 05:38",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "나스닥 1.33% 하락…유가·장기금리 상승에 도미노 매도 압박[뉴욕마감...",
+   "url": "https://www.news1.kr/world/international-economy/6262460",
+   "published": "2026-08-19 05:36",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "\"GPU 이어 '인듐인화물' 대란\"… AI 데이터센터 초고속 광통신 필수재 '...",
+   "url": "https://www.g-enews.com/view.php?ud=2026081817313694650c8c1c064d_1",
+   "published": "2026-08-19 05:36",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "장기금리 고공행진에 반도체 털썩…나스닥 1.3%↓[월스트리트in]",
+   "url": "https://www.edaily.co.kr/news/newspath.asp?newsid=01954886645548960",
+   "published": "2026-08-19 05:36",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
@@ -203,42 +235,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "[C레벨 보수의 비밀] ①‘보수킹’ 이원진 75억…삼성 임원 보수 들여다...",
-   "url": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202608180905413450258",
-   "published": "2026-08-19 05:20",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "타이어값 26달러 더 들지만 179달러 아낀다…CA 새 기준 도입",
    "url": "https://www.radiokorea.com/news/article.php?uid=501896",
    "published": "2026-08-19 05:20",
    "topic": "자동차",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[속보]국채금리 상승·반도체 약세에 뉴욕증시 하락 …나스닥 1.33% ↓",
-   "url": "https://news.mtn.co.kr/news-detail/2026081905095792761",
-   "published": "2026-08-19 05:14",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[속보]장기금리 부담에 나스닥 1.3% 하락…반도체 5%대↓",
-   "url": "https://www.edaily.co.kr/news/newspath.asp?newsid=01751526645548960",
-   "published": "2026-08-19 05:10",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[美증시] 잘나가던 AI인프라주 '와르르'…세레브라스·코어위브·코히런...",
-   "url": "https://www.mediapen.com/news/view/1117222",
-   "published": "2026-08-19 05:06",
-   "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
