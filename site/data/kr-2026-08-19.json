@@ -3,14 +3,14 @@
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-0819",
  "issue_no": 28,
- "published_at": "2026-08-19T06:29:51+09:00",
+ "published_at": "2026-08-19T06:52:50+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CeAvegerSH3DCMTDxFEN5'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CeAxQLheT4WCnQviGZSDs'}",
   "consecutive_failure_days": 19
  },
  "models": {
@@ -106,8 +106,8 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1412.37,
-    "change": -2.36,
+    "value": 1412.29,
+    "change": -2.44,
     "change_pct": -0.17,
     "trend": "flat",
     "trend_label": "보합권",
@@ -141,7 +141,7 @@
      1416.85,
      1415.37,
      1414.73,
-     1412.37
+     1412.29
     ]
    }
   ],
@@ -163,58 +163,82 @@
  ],
  "newsroom": [
   {
-   "title": "뉴욕증시, 국채금리 19년만 최고치에 급락…나스닥 1.33%↓",
-   "url": "https://www.bntnews.co.kr/article/view/bnt202608190006",
-   "published": "2026-08-19 06:28",
+   "title": "대기업 고액연봉자 보수 36%가 '주식'…SK·두산에 63% 몰렸다",
+   "url": "http://www.newsian.co.kr/news/articleView.html?idxno=93891",
+   "published": "2026-08-19 06:50",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "[美증시 특징주] 반도체 급락에 우량 소프트웨어주 주목…어도비·인튜...",
-   "url": "https://www.mediapen.com/news/view/1117227",
-   "published": "2026-08-19 06:26",
+   "title": "뉴욕증시, 중동 불안·국채금리 급등에 3일 연속 하락···나스닥 1.33%↓",
+   "url": "https://www.globale.co.kr/news/articleView.html?idxno=39928",
+   "published": "2026-08-19 06:50",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "반도체주에 무슨 일이…마이크론 7%·SK하이닉스 ADR 9% 폭락",
-   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=478411",
-   "published": "2026-08-19 06:26",
+   "title": "중동發 불안에 유가 상승·글로벌 국채금리 급등에… 뉴욕증시, 일제히...",
+   "url": "https://biz.chosun.com/international/international_economy/2026/08/19/COM2FHYEXRDZLODCR3N5F6LZKM/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+   "published": "2026-08-19 06:50",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "대기업 고액연봉자 보수 36%가 주식보상…SK·두산 63%",
-   "url": "http://www.yonhapnewstv.co.kr/news/AKR20260819062533toF",
-   "published": "2026-08-19 06:26",
+   "title": "고금리 직격탄 맞은 AI주…SK하이닉스 ADR 9% 급락·나스닥 1.3%↓",
+   "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1720797",
+   "published": "2026-08-19 06:48",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "[Lab C:] 1.7조 적자 딛고 흑자 약속 지킨 삼성SDI 최주선 사장",
-   "url": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202608181454240580364",
-   "published": "2026-08-19 06:22",
+   "title": "중동 불안에 美 국채금리 급등…나스닥 1.3% 하락",
+   "url": "https://www.chosun.com/economy/int_economy/2026/08/19/JYYOR7T2QZAYHBXEXPEY4Y7VC4/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
+   "published": "2026-08-19 06:48",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "뉴욕증시, 중동불안·미 국채금리 급등에 하락…나스닥 1.3%↓(종합)",
-   "url": "https://www.yna.co.kr/view/AKR20260819006051072?input=1195m",
-   "published": "2026-08-19 06:19",
+   "title": "뉴욕증시 일제히 하락…중동 불안·국채금리 급등에 기술주 '휘청' [뉴욕...",
+   "url": "https://news.mtn.co.kr/news-detail/2026081906392474096",
+   "published": "2026-08-19 06:44",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "[미국시황]뉴욕증시 왜 떨어졌나…유가·금리·중동 '3중 악재' 덮쳤다",
-   "url": "https://www.namdonews.com/news/articleView.html?idxno=920403",
-   "published": "2026-08-19 06:18",
+   "title": "질주하던 마이크론·샌디스크·WDC 급제동…AI 호황 랠리 시험대",
+   "url": "https://www.g-enews.com/view.php?ud=202608190638032731e250e8e188_1",
+   "published": "2026-08-19 06:42",
    "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "대기업 고액연봉자 보수 중 36%는 주식보상…SK·두산이 63%",
+   "url": "http://mbnmoney.mbn.co.kr/news/view?news_no=MM1005903396",
+   "published": "2026-08-19 06:42",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "뉴욕발 '반도체 쇼크'…코스피 또 흔들리나",
+   "url": "https://www.the-today.com/news/articleView.html?idxno=88620",
+   "published": "2026-08-19 06:34",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "미국증시, 장기금리·유가 부담에 반도체주 급락…나스닥 1.33%↓ 마감",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16166949",
+   "published": "2026-08-19 06:34",
+   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -222,7 +246,7 @@
    "title": "[N2 모닝 경제 브리핑-8월 19일] 美 증시, 장기금리 급등에 하락…반도체...",
    "url": "https://www.news2day.co.kr/article/20260818500072",
    "published": "2026-08-19 06:18",
-   "topic": "반도체",
+   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -243,16 +267,16 @@
    "watchlist_hits": []
   },
   {
-   "title": "메트로신문 8월 19일자 한줄뉴스",
-   "url": "http://www.metroseoul.co.kr/article/20260818500567",
+   "title": "기업 비중 최하위…한국 지속가능채권, 이대로 괜찮나",
+   "url": "https://www.kmib.co.kr/article/view.asp?arcid=9000004210&cp=nv",
    "published": "2026-08-19 06:02",
    "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "기업 비중 최하위…한국 지속가능채권, 이대로 괜찮나",
-   "url": "https://www.kmib.co.kr/article/view.asp?arcid=9000004210&cp=nv",
+   "title": "메트로신문 8월 19일자 한줄뉴스",
+   "url": "http://www.metroseoul.co.kr/article/20260818500567",
    "published": "2026-08-19 06:02",
    "topic": "금융",
    "ticker_prices": [],
@@ -379,16 +403,16 @@
    "watchlist_hits": []
   },
   {
-   "title": "[더페어 돋보기] 외국인·기관 동반 매도 폭탄…주요 업종 수급 기반 완...",
-   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=85397",
+   "title": "[심층분석] 장중 7200선 무너진 코스피…시총 상위주·핵심 업종 동반 약...",
+   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=85395",
    "published": "2026-08-19 00:02",
    "topic": "바이오",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "[심층분석] 장중 7200선 무너진 코스피…시총 상위주·핵심 업종 동반 약...",
-   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=85395",
+   "title": "[더페어 돋보기] 외국인·기관 동반 매도 폭탄…주요 업종 수급 기반 완...",
+   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=85397",
    "published": "2026-08-19 00:02",
    "topic": "바이오",
    "ticker_prices": [],
@@ -403,16 +427,16 @@
    "watchlist_hits": []
   },
   {
-   "title": "삼천당제약 가격 흔들",
-   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=599116",
+   "title": "\"SK하이닉스 시총 역전이 과열 신호…코스피 회복엔 시간 필요\"",
+   "url": "https://www.newsis.com/view/NISX20260818_0003752934",
    "published": "2026-08-19 00:00",
    "topic": "바이오",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "\"SK하이닉스 시총 역전이 과열 신호…코스피 회복엔 시간 필요\"",
-   "url": "https://www.newsis.com/view/NISX20260818_0003752934",
+   "title": "삼천당제약 가격 흔들",
+   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=599116",
    "published": "2026-08-19 00:00",
    "topic": "바이오",
    "ticker_prices": [],
@@ -443,14 +467,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "AI주 약세 뉴욕증시 하락 출발…나스닥 1.2%↓·채권금리 상승 부담",
-   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=85408",
-   "published": "2026-08-18 22:46",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "주가 8% 급락시킨 ‘그 차’…페라리 루체, 무려 567억원에 팔린 이유",
    "url": "https://biz.heraldcorp.com/article/10844344?ref=naver",
    "published": "2026-08-18 22:31",
@@ -459,25 +475,9 @@
    "watchlist_hits": []
   },
   {
-   "title": "남아공 9월 연료값 인상 압력, 유가에 달렸다",
-   "url": "https://www.tokenpost.kr/news/cryptocurrency/392533",
-   "published": "2026-08-18 21:46",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "인위적 주가 부양이 부른 '시장의 비극'",
    "url": "http://www.gnmaeil.com/news/articleView.html?idxno=592991",
    "published": "2026-08-18 21:34",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[증시 오늘] 코스닥 3.52% 급락",
-   "url": "https://www.bigtanews.co.kr/article/view/big202608180028",
-   "published": "2026-08-18 21:22",
    "topic": "증시",
    "ticker_prices": [],
    "watchlist_hits": []
