@@ -3,14 +3,14 @@
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-0819",
  "issue_no": 28,
- "published_at": "2026-08-19T06:52:50+09:00",
+ "published_at": "2026-08-19T07:22:21+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CeAxQLheT4WCnQviGZSDs'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CeAzetaRQBuHHiBdXju3L'}",
   "consecutive_failure_days": 19
  },
  "models": {
@@ -106,9 +106,9 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1412.29,
-    "change": -2.44,
-    "change_pct": -0.17,
+    "value": 1412.22,
+    "change": -2.51,
+    "change_pct": -0.18,
     "trend": "flat",
     "trend_label": "보합권",
     "series": [
@@ -141,16 +141,10 @@
      1416.85,
      1415.37,
      1414.73,
-     1412.29
+     1412.22
     ]
    }
-  ],
-  "up": 561,
-  "down": 1927,
-  "flat": 225,
-  "up_ratio": 20.7,
-  "mood": "위험회피",
-  "sectors": []
+  ]
  },
  "new_entries": [],
  "holdings": [],
@@ -163,66 +157,146 @@
  ],
  "newsroom": [
   {
-   "title": "대기업 고액연봉자 보수 36%가 '주식'…SK·두산에 63% 몰렸다",
-   "url": "http://www.newsian.co.kr/news/articleView.html?idxno=93891",
-   "published": "2026-08-19 06:50",
+   "title": "원·달러 환율 숨고르기…\"1300원대 재진입 시도\" [클릭e종목]",
+   "url": "https://view.asiae.co.kr/article/2026081817295418007",
+   "published": "2026-08-19 07:20",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[마켓 브리핑] 美국채 수익률 19년 만에 최대…기술주들 일제히 약세",
+   "url": "https://biz.sbs.co.kr/article_hub/20000329358?division=NAVER",
+   "published": "2026-08-19 07:16",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "뉴욕증시, 중동 불안·국채금리 급등에 3일 연속 하락···나스닥 1.33%↓",
-   "url": "https://www.globale.co.kr/news/articleView.html?idxno=39928",
-   "published": "2026-08-19 06:50",
+   "title": "美 국채 금리 급등 여파로 일제 하락…나스닥 1.3%↓ [뉴욕증시 브리핑...",
+   "url": "https://www.hankyung.com/article/2026081983666",
+   "published": "2026-08-19 07:14",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[증시전략] 美 30년물 금리, 19년 만에 '최고'…시장 파장은?",
+   "url": "https://biz.sbs.co.kr/article_hub/20000329353?division=NAVER",
+   "published": "2026-08-19 07:12",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "국채금리 '불안 증폭'...뉴욕증시 '하락', 나스닥·AI주 '뚝'",
+   "url": "http://www.choicenews.co.kr/news/articleView.html?idxno=170033",
+   "published": "2026-08-19 07:12",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "중동發 불안에 유가 상승·글로벌 국채금리 급등에… 뉴욕증시, 일제히...",
-   "url": "https://biz.chosun.com/international/international_economy/2026/08/19/COM2FHYEXRDZLODCR3N5F6LZKM/?utm_source=naver&utm_medium=original&utm_campaign=biz",
-   "published": "2026-08-19 06:50",
+   "title": "중동 전운·금리 발작에 기술주 '와르르'…나스닥 1.33% '급락'",
+   "url": "https://www.ziksir.com/news/articleView.html?idxno=143522",
+   "published": "2026-08-19 07:12",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "고금리 직격탄 맞은 AI주…SK하이닉스 ADR 9% 급락·나스닥 1.3%↓",
-   "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1720797",
-   "published": "2026-08-19 06:48",
+   "title": "美증시, AI주 약세에 하락…나스닥 1.33%↓",
+   "url": "https://www.dailian.co.kr/news/view/1679602/?sc=Naver",
+   "published": "2026-08-19 07:11",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "중동 불안에 美 국채금리 급등…나스닥 1.3% 하락",
-   "url": "https://www.chosun.com/economy/int_economy/2026/08/19/JYYOR7T2QZAYHBXEXPEY4Y7VC4/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
-   "published": "2026-08-19 06:48",
+   "title": "[동북아 정세 브리핑] 개혁세대 퇴장과 중국의 다음 선택…대만 압박·...",
+   "url": "http://kor.theasian.asia/archives/413421",
+   "published": "2026-08-19 07:10",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "뉴욕증시 일제히 하락…중동 불안·국채금리 급등에 기술주 '휘청' [뉴욕...",
-   "url": "https://news.mtn.co.kr/news-detail/2026081906392474096",
-   "published": "2026-08-19 06:44",
+   "title": "뉴욕증시, 유가·금리 ‘쌍끌이 압박’에 하락…나스닥 1.33%↓ [종합]",
+   "url": "https://www.etoday.co.kr/news/view/2615686",
+   "published": "2026-08-19 07:10",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "질주하던 마이크론·샌디스크·WDC 급제동…AI 호황 랠리 시험대",
-   "url": "https://www.g-enews.com/view.php?ud=202608190638032731e250e8e188_1",
-   "published": "2026-08-19 06:42",
+   "title": "[거버넌스워치] 케이씨 2세 고상걸 강력한 오너십의 비결 ‘몰아주기 증...",
+   "url": "https://news.bizwatch.co.kr/article/governance/2026/08/15/0003",
+   "published": "2026-08-19 07:10",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "대기업 고액연봉자 보수 중 36%는 주식보상…SK·두산이 63%",
-   "url": "http://mbnmoney.mbn.co.kr/news/view?news_no=MM1005903396",
-   "published": "2026-08-19 06:42",
-   "topic": "반도체",
+   "title": "[통장잔GO] 연금 치트키?…변동장 안전벨트는 ‘반반 ETF’",
+   "url": "https://www.dailian.co.kr/news/view/1679467/?sc=Naver",
+   "published": "2026-08-19 07:06",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "왜 나스닥 급락했나? 제2 창신 메모리 악몽? | 유니트리 상장, 삼전닉스...",
+   "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202608190382&t=NN",
+   "published": "2026-08-19 07:04",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[더벨]KB금융 신종자본증권 4000억 조달…흥행 여부 주목",
+   "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202608141523057000108189",
+   "published": "2026-08-19 07:02",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[더벨][발행사분석] 대신증권, 공모채 발행으로 차입구조 장기화",
+   "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202608141458173840101819",
+   "published": "2026-08-19 07:02",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[Invest]\"한쪽선 돈 넣고 한쪽선 과징금\"…정책은행까지 때리는 공정위...",
+   "url": "https://www.investchosun.com/site/data/html_dir/2026/08/18/2026081880123.html",
+   "published": "2026-08-19 07:02",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[Invest]수도권 집값 자극 예고한 삼전닉스 성과급…부동산 안정대책 '사...",
+   "url": "https://www.investchosun.com/site/data/html_dir/2026/08/18/2026081880124.html",
+   "published": "2026-08-19 07:02",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "﻿7200 찍자 쏟아진 매도… 기관 1.2조 폭탄, 개미가 물량 받아내",
+   "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1720799",
+   "published": "2026-08-19 06:56",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[채권/외환] 美 국채금리 장중 급등 뒤 하락 전환…달러는 강보합",
+   "url": "https://www.newspim.com/news/view/20260819000028",
+   "published": "2026-08-19 06:56",
+   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -243,22 +317,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "[N2 모닝 경제 브리핑-8월 19일] 美 증시, 장기금리 급등에 하락…반도체...",
-   "url": "https://www.news2day.co.kr/article/20260818500072",
-   "published": "2026-08-19 06:18",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "금 값 뛰자 날개 다는 '금 ETF'...한 달 수익률 5%, 1년 수익률은 30% 넘어",
-   "url": "http://www.consumernews.co.kr/news/articleView.html?idxno=761685",
-   "published": "2026-08-19 06:10",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "코스피 7000선 복귀 시도…급락 종목 10곳 중 6곳 가격 회복",
    "url": "https://www.etoday.co.kr/news/view/2615600",
    "published": "2026-08-19 06:02",
@@ -267,34 +325,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "기업 비중 최하위…한국 지속가능채권, 이대로 괜찮나",
-   "url": "https://www.kmib.co.kr/article/view.asp?arcid=9000004210&cp=nv",
-   "published": "2026-08-19 06:02",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "메트로신문 8월 19일자 한줄뉴스",
-   "url": "http://www.metroseoul.co.kr/article/20260818500567",
-   "published": "2026-08-19 06:02",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "\"불장에 10조 대박\" 증권사, 그들만의 돈잔치 NO...사회 기여 나선다",
-   "url": "https://www.mt.co.kr/stock/2026/08/19/2026081818114368240",
-   "published": "2026-08-19 06:00",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "외국인 귀환 이어질까…닷새간 삼전·닉스 8.3조 폭풍매수",
    "url": "https://www.newsis.com/view/NISX20260818_0003753202",
    "published": "2026-08-19 06:00",
-   "topic": "금융",
+   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -339,26 +373,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "“월 2000만원꼴 받았다”…주담대 이자 뛸 때 금융지주 급여 1억 넘었다...",
-   "url": "https://www.segye.com/newsView/20260819502276?OutUrl=naver",
-   "published": "2026-08-19 05:02",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "외국인 매수세 멈추자… 달리던 코스피, 5일만에 급제동",
    "url": "https://www.mt.co.kr/stock/2026/08/19/2026081819563548311",
    "published": "2026-08-19 04:00",
    "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "머니투데이 오프라인 헤드라인-19일",
-   "url": "https://www.mt.co.kr/politics/2026/08/19/2026081821570892043",
-   "published": "2026-08-19 04:00",
-   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -383,14 +401,6 @@
    "url": "https://www.g-enews.com/view.php?ud=2026081823074233089a1f309431_1",
    "published": "2026-08-19 03:00",
    "topic": "자동차",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "환율 하락을 보는 양면적 시각[MT시평/오건영]",
-   "url": "https://www.mt.co.kr/opinion/2026/08/19/2026081716584419602",
-   "published": "2026-08-19 02:00",
-   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -443,22 +453,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "미 달러화 강보합…파운드 약세 속 美 국채금리 상승",
-   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4430624",
-   "published": "2026-08-18 23:24",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "미국증시 장초반, 장기금리·유가 부담에 기술주 약세…엔비디아·반도...",
-   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16166514",
-   "published": "2026-08-18 23:10",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "[데스크의 눈] 관치금융이 빚어낸 레버리지 참사",
    "url": "https://www.segye.com/newsView/20260818519199?OutUrl=naver",
    "published": "2026-08-18 23:02",
@@ -475,10 +469,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "인위적 주가 부양이 부른 '시장의 비극'",
-   "url": "http://www.gnmaeil.com/news/articleView.html?idxno=592991",
-   "published": "2026-08-18 21:34",
-   "topic": "증시",
+   "title": "소비자 대신 AI가 장을 본다면, 상인은 어디서 팔까… 알리페이의 답",
+   "url": "https://platum.kr/archives/292729",
+   "published": "2026-08-18 20:52",
+   "topic": "자동차",
    "ticker_prices": [],
    "watchlist_hits": []
   }
