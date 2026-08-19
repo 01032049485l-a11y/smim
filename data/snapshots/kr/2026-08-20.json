@@ -2,15 +2,15 @@
  "date": "2026-08-20",
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-0820",
- "issue_no": 28,
- "published_at": "2026-08-20T05:37:55+09:00",
+ "issue_no": 29,
+ "published_at": "2026-08-20T05:55:52+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CeCkVuBm1gza5nJWUrP99'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CeCmsLHppoC6JrXZ6Bte1'}",
   "consecutive_failure_days": 20
  },
  "models": {
@@ -106,9 +106,9 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1388.5,
-    "change": -25.08,
-    "change_pct": -1.77,
+    "value": 1387.86,
+    "change": -25.72,
+    "change_pct": -1.82,
     "trend": "down",
     "trend_label": "하락세",
     "series": [
@@ -141,7 +141,7 @@
      1415.37,
      1414.73,
      1413.58,
-     1388.5
+     1387.86
     ]
    }
   ],
@@ -162,6 +162,70 @@
   }
  ],
  "newsroom": [
+  {
+   "title": "[N2 모닝 경제 브리핑-8월 20일] 美 증시, 국채금리 진정에 3대 지수 반등...",
+   "url": "https://www.news2day.co.kr/article/20260819500329",
+   "published": "2026-08-20 05:54",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[美증시 특징주] 모더나 효과에 바이오주 폭발…머크 12%, 바이오엔텍 2...",
+   "url": "https://www.mediapen.com/news/view/1117526",
+   "published": "2026-08-20 05:52",
+   "topic": "바이오",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "현대차·기아 5년전 투자한 美기업 6배 '대박'…뭘 만들길래",
+   "url": "https://www.mt.co.kr/industry/2026/08/20/2026081915144274218",
+   "published": "2026-08-20 05:50",
+   "topic": "자동차",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "필라델피아반도체지수 2%, 마이크론 0.4%↓...반도체주, 이틀 째 조정받...",
+   "url": "http://www.beyondpost.co.kr/view.php?ud=202608200539356412aaae0046f_30",
+   "published": "2026-08-20 05:48",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[오늘의 이슈]연준 매파 확산...금리인상 이어질까",
+   "url": "http://www.newskr.kr/news/articleView.html?idxno=105720",
+   "published": "2026-08-20 05:48",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "모더나 177% 폭등…머크와 개발한 '맞춤형 암 백신' 임상 3상 성공",
+   "url": "https://www.news1.kr/world/international-economy/6263713",
+   "published": "2026-08-20 05:45",
+   "topic": "바이오",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "베선트가 급한 불 껐다…장기금리↓ 美증시↑[월스트리트in]",
+   "url": "https://www.edaily.co.kr/news/newspath.asp?newsid=01974566645549288",
+   "published": "2026-08-20 05:41",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "미국증시 반도체주?..마벨 '급등', SK하이닉스 '상승', 메모리주 '뚝'",
+   "url": "http://www.choicenews.co.kr/news/articleView.html?idxno=170129",
+   "published": "2026-08-20 05:38",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
   {
    "title": "뉴욕증시, 美재무부 장기국채 바이백 확대에 반등…모더나 177% 폭등",
    "url": "https://www.news1.kr/world/international-economy/6263712",
@@ -187,33 +251,9 @@
    "watchlist_hits": []
   },
   {
-   "title": "[뉴욕증시 마감시황] 재무부 바이백에 장기금리 급락…미 증시 상승, 나...",
-   "url": "https://www.moneystorm.kr/news/articleView.html?idxno=5830",
-   "published": "2026-08-20 05:30",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "\"290층 구조대 갑니다\"....순현금 2배 불린 SK하닉, 화끈한 주주환원",
    "url": "https://www.mt.co.kr/stock/2026/08/20/2026081918452174148",
    "published": "2026-08-20 05:30",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[뉴욕증시]재무부 바이백 전격 확대…일제히 소폭 상승 마감",
-   "url": "https://view.asiae.co.kr/article/2026082004593607222",
-   "published": "2026-08-20 05:28",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[뉴욕증시] 미 재무부 시장 개입 속 나흘 만에 반등…테슬라, 4.2% 급등",
-   "url": "http://www.fnnews.com/news/202608200518070929",
-   "published": "2026-08-20 05:23",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
@@ -223,14 +263,6 @@
    "url": "https://www.edaily.co.kr/news/newspath.asp?newsid=01741686645549288",
    "published": "2026-08-20 05:23",
    "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[뉴욕증시-1보] 美 재무부 '기습 바이백'에 안도…강세 마감",
-   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4430856",
-   "published": "2026-08-20 05:16",
-   "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -331,14 +363,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "AI IPO 자금 50% 넘어, 골드만삭스 창구 재개 언급",
-   "url": "https://www.tokenpost.kr/news/market/393612",
-   "published": "2026-08-20 02:28",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "환율 1천300원대로 '뚝'…11개월 만에 최저",
    "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008712598&plink=ORI&cooper=NAVER",
    "published": "2026-08-20 00:29",
@@ -366,14 +390,6 @@
    "title": "미 달러화 약세…유로·파운드 강세 속 美 국채 금리 진정",
    "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4430846",
    "published": "2026-08-19 23:16",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "브렌트유 92달러 돌파, 미 선물 장전 혼조",
-   "url": "https://www.tokenpost.kr/news/cryptocurrency/393460",
-   "published": "2026-08-19 23:08",
    "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
@@ -446,22 +462,6 @@
    "title": "에이프릴바이오 “룬드벡, APB-A1 개발 중단 아니다”",
    "url": "https://www.hankyung.com/article/202608190405i",
    "published": "2026-08-19 17:55",
-   "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "코스피 5.8% 급락해 6471선 마감…외국인·기관 '매물 폭탄'",
-   "url": "https://www.goodkyung.com/news/articleView.html?idxno=290426",
-   "published": "2026-08-19 17:28",
-   "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "글로벌 국채금리 상승에…코스피, 5.8% 급락 마감",
-   "url": "http://mbnmoney.mbn.co.kr/news/view?news_no=MM1005904074",
-   "published": "2026-08-19 17:26",
    "topic": "바이오",
    "ticker_prices": [],
    "watchlist_hits": []
