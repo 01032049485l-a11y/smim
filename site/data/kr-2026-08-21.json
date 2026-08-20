@@ -3,14 +3,14 @@
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-0821",
  "issue_no": 30,
- "published_at": "2026-08-21T06:57:11+09:00",
+ "published_at": "2026-08-21T07:25:55+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CeEkMR3dP2UUanQXP9E3s'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CeEnYWYZYKiFmUMRrEdrd'}",
   "consecutive_failure_days": 21
  },
  "models": {
@@ -106,9 +106,9 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1393.74,
-    "change": 4.34,
-    "change_pct": 0.31,
+    "value": 1394.02,
+    "change": 4.62,
+    "change_pct": 0.33,
     "trend": "down",
     "trend_label": "하락세",
     "series": [
@@ -141,7 +141,7 @@
      1414.73,
      1413.58,
      1389.4,
-     1393.74
+     1394.02
     ]
    }
   ],
@@ -163,18 +163,154 @@
  ],
  "newsroom": [
   {
-   "title": "뉴욕증시,'바이백 약발' 하루뿐…美 금리·유가 뛰자 다우 704P 급락",
-   "url": "https://www.the-today.com/news/articleView.html?idxno=88712",
-   "published": "2026-08-21 06:52",
+   "title": "특집/한국 경제의 실상과 허상",
+   "url": "https://monthly.chosun.com/news/articleView.html?idxno=71143",
+   "published": "2026-08-21 07:24",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "뉴욕증시, 미국 국채금리 재상승 등 영향 하락⋯월마트 9%대 급락-모더나...",
+   "url": "http://www.econonews.co.kr/news/articleView.html?idxno=443116",
+   "published": "2026-08-21 07:24",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "연체율은 올라가고 외국인은 주식 팔고",
+   "url": "https://www.straightnews.co.kr/news/articleView.html?idxno=309378",
+   "published": "2026-08-21 07:22",
    "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "뉴욕증시, 국채금리 상승·월마트 실적 부진에 3대 지수 하락",
-   "url": "http://www.newsian.co.kr/news/articleView.html?idxno=94002",
-   "published": "2026-08-21 06:48",
+   "title": "0.56% 은행 연체율, 물가·외국인 자금도 공개",
+   "url": "https://www.tokenpost.kr/news/cryptocurrency/394492",
+   "published": "2026-08-21 07:16",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[브라질증시] 美 금리·대선 불안에도 브라질 증시 강보합…페트로브라...",
+   "url": "https://www.newspim.com/news/view/20260821000029",
+   "published": "2026-08-21 07:15",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[마켓 브리핑] 시장, 국채 바이백 임시방편 우려…채권 자경단 출연",
+   "url": "https://biz.sbs.co.kr/article_hub/20000329904?division=NAVER",
+   "published": "2026-08-21 07:14",
    "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "TSMC, 76% 폭등한 ASML보다 더 매력적인 이유",
+   "url": "https://www.g-enews.com/view.php?ud=20260821071040101fbbec65dfb_1",
+   "published": "2026-08-21 07:14",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "SK하이닉스, 40조 '통 큰 베팅'…곳간 줄어도 재무여력 충분",
+   "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1721116",
+   "published": "2026-08-21 07:12",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[증시전략] 美 국가부채 40조달러 첫 돌파…'재정 안정' 방안은?",
+   "url": "https://biz.sbs.co.kr/article_hub/20000329901?division=NAVER",
+   "published": "2026-08-21 07:10",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "저축은행 예보료 인상안에 '긴장'…수익성 부담 커지나",
+   "url": "https://www.dailian.co.kr/news/view/1680425/?sc=Naver",
+   "published": "2026-08-21 07:08",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[채권/외환] 美 국채금리 다시 상승·달러 반등…재무부 '바이백 약발' ...",
+   "url": "https://www.newspim.com/news/view/20260821000027",
+   "published": "2026-08-21 07:08",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[초점] 재계, '주주환원 슈퍼사이클' 진입…수백조 실탄, 기업가치 재평...",
+   "url": "http://www.newsian.co.kr/news/articleView.html?idxno=94004",
+   "published": "2026-08-21 07:04",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "“잉여현금 100% 환원”… 샌디스크가 불붙인 주주환원 경쟁",
+   "url": "https://weekly.donga.com/3/all/11/6354871/1",
+   "published": "2026-08-21 07:02",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "투심 돌아오나, 실적·개발 성과 입증된 바이오 신라젠·바이오니아·비...",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=02440326645549616&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "published": "2026-08-21 07:02",
+   "topic": "바이오",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[Invest]완성차 이어 로봇까지…현대차 죄어오는 '차이나 쇼크'",
+   "url": "https://www.investchosun.com/site/data/html_dir/2026/08/20/2026082080100.html",
+   "published": "2026-08-21 07:02",
+   "topic": "자동차",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[Invest]인수금융 거래 줄자 문턱 낮추는 금융사…락앤락도 재등판",
+   "url": "https://www.investchosun.com/site/data/html_dir/2026/08/20/2026082080124.html",
+   "published": "2026-08-21 07:02",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[더벨][Korean Paper] 중진공 10년만에 한국물 복귀…실수요로 최저 스프...",
+   "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202608191347593960103474",
+   "published": "2026-08-21 07:02",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[Who Is ?] 이병철 다올금융그룹 회장",
+   "url": "https://www.businesspost.co.kr/BP?command=article_view&num=444913",
+   "published": "2026-08-21 07:00",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "'원금 보장' ELB의 함정부터 9440억 최태원 재산분할까지 [머니카운터 방...",
+   "url": "https://news.ifm.kr/news/articleView.html?idxno=477609",
+   "published": "2026-08-21 07:00",
+   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -187,58 +323,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "35억달러 브로드컴 AI 금융, 리스 구조로 확장",
-   "url": "https://www.tokenpost.kr/news/cryptocurrency/394484",
-   "published": "2026-08-21 06:44",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "뉴욕증시, 국채금리 상승·월마트 실적 부진에 동반 하락 마감",
-   "url": "https://biz.chosun.com/international/international_economy/2026/08/21/KCWCO3KCZJCQ3IOESYGZL2OMFM/?utm_source=naver&utm_medium=original&utm_campaign=biz",
-   "published": "2026-08-21 06:42",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "마이크론 4%, SK하이닉스 ADR 4.4%↑...반도체주, 국채금리 상승에도 상...",
-   "url": "http://www.beyondpost.co.kr/view.php?ud=2026082106323490892aaae0046f_30",
-   "published": "2026-08-21 06:42",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "美 나스닥100 '하락'...마이크론·MSTR·루멘텀 '활짝' vs CRWD '뚝'",
-   "url": "http://www.choicenews.co.kr/news/articleView.html?idxno=170195",
-   "published": "2026-08-21 06:42",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "한투운용 'ACE 고배당주Plus커버드콜액티브', 개인순매수 1000억원 넘어",
-   "url": "http://www.bizwnews.com/news/articleView.html?idxno=143821",
-   "published": "2026-08-21 06:42",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "'금리·유가·소비' 3중 부담…美 잭슨홀 앞두고 국내 증시도 긴장",
    "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1721115",
    "published": "2026-08-21 06:40",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "내놓으면 완판… 미래·한투·NH, IMA 수익률 전쟁",
-   "url": "https://it.chosun.com/news/articleView.html?idxno=2023092168548",
-   "published": "2026-08-21 06:40",
-   "topic": "금융",
+   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -251,22 +339,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "40조 풀자 '170만닉스' 회복…\"그럼 우리는?\" 삼전 개미 들썩 [종목+]",
-   "url": "https://www.hankyung.com/article/2026082026646",
-   "published": "2026-08-21 06:31",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[외신헤드라인] 비트코인, 美규제완화법 기대감에 7만달러 돌파",
-   "url": "https://biz.sbs.co.kr/article_hub/20000329898?division=NAVER",
-   "published": "2026-08-21 06:28",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "달러지수 99.96 전망, 씨티 약달러로 선회",
    "url": "https://www.tokenpost.kr/news/cryptocurrency/394474",
    "published": "2026-08-21 06:24",
@@ -275,26 +347,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "[N2 모닝 경제 브리핑-8월 21] 美 증시, 국채금리 반등·월마트 급락에 ...",
-   "url": "https://www.news2day.co.kr/article/20260820500148",
-   "published": "2026-08-21 06:12",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "금리상승에 증권사 채권평가익 적자로… 3분기 실적 '먹구름'",
    "url": "https://it.chosun.com/news/articleView.html?idxno=2023092168527",
    "published": "2026-08-21 06:10",
    "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "자산운용사 추천 하반기 유망 ETF는?",
-   "url": "https://news.mtn.co.kr/news-detail/2026082010091096709",
-   "published": "2026-08-21 06:06",
-   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -323,50 +379,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "고금리·가계빚 2000조 시대...한은, ‘연속 인상’ 쐐기 박나",
-   "url": "https://www.kukinews.com/article/view/kuk202608200119",
-   "published": "2026-08-21 06:02",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "“쌀 때 모으자”…달러예금 755억달러로 급증",
-   "url": "https://www.kukinews.com/article/view/kuk202608200221",
-   "published": "2026-08-21 06:02",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "아마존·알파벳 던진 드러켄밀러… 다음 타깃은 바이오",
-   "url": "https://magazine.hankyung.com/money/article/202607131512c",
-   "published": "2026-08-21 06:02",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "[바이오e종목] 에이프릴바이오 핵심 자산 삐끗에 주가 20% 급락…경영권...",
    "url": "https://biz.chosun.com/science-chosun/bio/2026/08/21/UQL5EQITG5EFNLTHXDIEVDTMTI/?utm_source=naver&utm_medium=original&utm_campaign=biz",
    "published": "2026-08-21 06:01",
    "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "지난달 외국인 주식 순매도 31조원 육박..7개월째 '팔자' 기조",
-   "url": "http://www.fnnews.com/news/202608201410039109",
-   "published": "2026-08-21 06:00",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "코스피 짓누른 美 금리 꺾였다…'안도 랠리' 이어질까",
-   "url": "https://www.newspim.com/news/view/20260820001200",
-   "published": "2026-08-21 06:00",
-   "topic": "증시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -387,6 +403,22 @@
    "watchlist_hits": []
   },
   {
+   "title": "코스피 짓누른 美 금리 꺾였다…'안도 랠리' 이어질까",
+   "url": "https://www.newspim.com/news/view/20260820001200",
+   "published": "2026-08-21 06:00",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "지난달 외국인 주식 순매도 31조원 육박..7개월째 '팔자' 기조",
+   "url": "http://www.fnnews.com/news/202608201410039109",
+   "published": "2026-08-21 06:00",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
    "title": "고환율 부담 줄었지만…유가·폭염에 하반기 물가 '긴장'",
    "url": "https://www.newsis.com/view/NISX20260820_0003756675",
    "published": "2026-08-21 06:00",
@@ -399,14 +431,6 @@
    "url": "https://www.g-enews.com/view.php?ud=202608201847567726fbbec65dfb_1",
    "published": "2026-08-21 05:06",
    "topic": "자동차",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[N2 포커스] 주식 수탁수수료 9조 시대…전체 미래에셋·국내 KB·해외 토...",
-   "url": "https://www.news2day.co.kr/article/20260821500012",
-   "published": "2026-08-21 04:42",
-   "topic": "증시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -455,30 +479,6 @@
    "url": "https://www.joongang.co.kr/article/25454966",
    "published": "2026-08-21 00:02",
    "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "미국증시, 유가·장기금리 상승에 기술주 약세…SK하이닉스 ADR 4%대↑",
-   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16168953",
-   "published": "2026-08-20 22:46",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "서부텍사스산원유 2.8% 올라 87.62달러",
-   "url": "https://www.tokenpost.kr/news/cryptocurrency/394421",
-   "published": "2026-08-20 22:38",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "mRNA 3상 성공한 모더나·머크… 맞춤형 항암치료 본궤도",
-   "url": "http://www.fnnews.com/news/202608202128586609",
-   "published": "2026-08-20 21:31",
-   "topic": "바이오",
    "ticker_prices": [],
    "watchlist_hits": []
   }
