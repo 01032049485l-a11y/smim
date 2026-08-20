@@ -2,15 +2,15 @@
  "date": "2026-08-21",
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-0821",
- "issue_no": 29,
- "published_at": "2026-08-21T05:38:52+09:00",
+ "issue_no": 30,
+ "published_at": "2026-08-21T05:58:25+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CeEeP4GaPoX4zkXRojaW7'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CeEfsVewk14AnUBt6UuPq'}",
   "consecutive_failure_days": 21
  },
  "models": {
@@ -106,9 +106,9 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1393.66,
-    "change": 4.26,
-    "change_pct": 0.31,
+    "value": 1393.91,
+    "change": 4.51,
+    "change_pct": 0.32,
     "trend": "down",
     "trend_label": "하락세",
     "series": [
@@ -141,7 +141,7 @@
      1414.73,
      1413.58,
      1389.4,
-     1393.66
+     1393.91
     ]
    }
   ],
@@ -162,6 +162,46 @@
   }
  ],
  "newsroom": [
+  {
+   "title": "국채금리 뛰자 ‘짧게’…단기채 ETF로 피신",
+   "url": "https://www.etoday.co.kr/news/view/2616470",
+   "published": "2026-08-21 05:56",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "“韓 증시 변동성이 전체 금융시장 흔들어” 블룸버그의 경고",
+   "url": "https://www.sedaily.com/article/20081526?ref=naver",
+   "published": "2026-08-21 05:50",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[美증시] 국채금리 안정책 실패·월마트 쇼크에 3대 지수 하락…메모리...",
+   "url": "https://www.mediapen.com/news/view/1117867",
+   "published": "2026-08-21 05:46",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "\"탈달러·중동 오일머니 잡는다\"… 中, 홍콩서 최초 '5년물 국채 선물' ...",
+   "url": "https://www.g-enews.com/view.php?ud=2026082016540970440c8c1c064d_1",
+   "published": "2026-08-21 05:46",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "삼성전자, SK하이닉스 이어 ‘초특급 주주환원’ 카드 꺼내나",
+   "url": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202608201059116990658",
+   "published": "2026-08-21 05:40",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
   {
    "title": "영업익 5배 뛴 어피닛…IPO 몸값 가를 '대출 성장 질'[IPO 엑스레이]",
    "url": "https://www.etoday.co.kr/news/view/2616487",
@@ -227,14 +267,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "[글로벌 비즈 브리핑] 비트코인 '깜짝 폭등'…10만 달러 파격 전망까지...",
-   "url": "https://biz.sbs.co.kr/article_hub/20000329886?division=NAVER",
-   "published": "2026-08-21 04:44",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "[N2 포커스] 주식 수탁수수료 9조 시대…전체 미래에셋·국내 KB·해외 토...",
    "url": "https://www.news2day.co.kr/article/20260821500012",
    "published": "2026-08-21 04:42",
@@ -247,14 +279,6 @@
    "url": "https://www.hankookilbo.com/news/article/A2026081906390000000?did=NA",
    "published": "2026-08-21 04:40",
    "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "뉴욕증시 장중...월마트·모더나 '추락' vs 마이크론·SKHY '활짝'",
-   "url": "http://www.choicenews.co.kr/news/articleView.html?idxno=170190",
-   "published": "2026-08-21 04:36",
-   "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -307,14 +331,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "서클, 9월16일 아크 메인넷 출범…블랙록·비자·마스터카드가 창립 검...",
-   "url": "https://www.wikitree.co.kr/articles/1153761",
-   "published": "2026-08-21 01:14",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "두산에너빌리티 주춤, '코스피 날았는데'",
    "url": "https://www.cbci.co.kr/news/articleView.html?idxno=599722",
    "published": "2026-08-21 00:16",
@@ -342,15 +358,7 @@
    "title": "‘이틀연속’ 환율 1300원대…‘두번연속’ 금리인상 부담 더나",
    "url": "https://www.joongang.co.kr/article/25454966",
    "published": "2026-08-21 00:02",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "신한은행, 중저신용 고객 위한 '슈퍼SOL중금리대출' 출시 外",
-   "url": "https://www.rcast.co.kr/news/articleView.html?idxno=31483",
-   "published": "2026-08-20 23:00",
-   "topic": "금융",
+   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -471,14 +479,6 @@
    "url": "http://www.dailypop.kr/news/articleView.html?idxno=101754",
    "published": "2026-08-20 18:16",
    "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[거래소 기관] 삼성전자·삼성전자우 고려아연 쓸어 담았다...삼성전기...",
-   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=479097",
-   "published": "2026-08-20 16:12",
-   "topic": "2차전지",
    "ticker_prices": [],
    "watchlist_hits": []
   }
