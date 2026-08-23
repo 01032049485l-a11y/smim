@@ -2,15 +2,15 @@
  "date": "2026-08-24",
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-0824",
- "issue_no": 30,
- "published_at": "2026-08-24T05:33:09+09:00",
+ "issue_no": 31,
+ "published_at": "2026-08-24T05:50:49+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CeLKNWZQDX8tRB3rEtXdk'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CeLLifQdkFutDB9m46WhT'}",
   "consecutive_failure_days": 22
  },
  "models": {
@@ -163,6 +163,14 @@
  ],
  "newsroom": [
   {
+   "title": "美 제재 맞선 中 AI·반도체 기업들, '역대급 지분 보상'으로 인재 묶어...",
+   "url": "https://www.g-enews.com/view.php?ud=2026082316252959950c8c1c064d_1",
+   "published": "2026-08-24 05:46",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
    "title": "말 줄인 연준, 잭슨홀서 ‘베선트 풋’엔 입 열까 [트럼프 스톡커]",
    "url": "https://www.sedaily.com/article/20082255?ref=naver",
    "published": "2026-08-24 05:31",
@@ -219,16 +227,16 @@
    "watchlist_hits": []
   },
   {
-   "title": "“200조 푼다더니 반토막?”…삼성 ‘역대급 110조’에도 시간외서 던진...",
-   "url": "https://www.segye.com/newsView/20260824500631?OutUrl=naver",
+   "title": "삼성전자ㆍSK하이닉스, 최대 150조 주주환원⋯‘주가 리레이팅’ 시험대...",
+   "url": "https://www.etoday.co.kr/news/view/2617061",
    "published": "2026-08-24 05:02",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "삼성전자ㆍSK하이닉스, 최대 150조 주주환원⋯‘주가 리레이팅’ 시험대...",
-   "url": "https://www.etoday.co.kr/news/view/2617061",
+   "title": "“200조 푼다더니 반토막?”…삼성 ‘역대급 110조’에도 시간외서 던진...",
+   "url": "https://www.segye.com/newsView/20260824500631?OutUrl=naver",
    "published": "2026-08-24 05:02",
    "topic": "반도체",
    "ticker_prices": [],
@@ -255,14 +263,6 @@
    "url": "https://www.news2day.co.kr/article/20260822500019",
    "published": "2026-08-24 04:34",
    "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "엔비디아 목표가 345달러… 차세대 루빈이 가를 AI 거품론",
-   "url": "https://www.g-enews.com/view.php?ud=202608231802135510fbbec65dfb_1",
-   "published": "2026-08-24 04:26",
-   "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -411,16 +411,16 @@
    "watchlist_hits": []
   },
   {
-   "title": "\"모더나 효과에 K바이오 재조명 기대\"",
-   "url": "https://www.mk.co.kr/article/12134161",
+   "title": "[미국 주식 돋보기] 맞춤형 암백신 현실로…머크 목표주가 줄상향",
+   "url": "https://www.mk.co.kr/article/12134163",
    "published": "2026-08-23 17:31",
    "topic": "바이오",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "[미국 주식 돋보기] 맞춤형 암백신 현실로…머크 목표주가 줄상향",
-   "url": "https://www.mk.co.kr/article/12134163",
+   "title": "\"모더나 효과에 K바이오 재조명 기대\"",
+   "url": "https://www.mk.co.kr/article/12134161",
    "published": "2026-08-23 17:31",
    "topic": "바이오",
    "ticker_prices": [],
