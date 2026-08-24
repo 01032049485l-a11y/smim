@@ -2,15 +2,15 @@
  "date": "2026-08-25",
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-0825",
- "issue_no": 31,
- "published_at": "2026-08-25T05:41:03+09:00",
+ "issue_no": 32,
+ "published_at": "2026-08-25T06:00:29+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CeNDnNnKDy3KS8noJuYtT'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CeNFGHk6iRv9sJtqhuJJX'}",
   "consecutive_failure_days": 23
  },
  "models": {
@@ -106,9 +106,9 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1382.58,
-    "change": -2.4,
-    "change_pct": -0.17,
+    "value": 1383.16,
+    "change": -1.82,
+    "change_pct": -0.13,
     "trend": "down",
     "trend_label": "하락세",
     "series": [
@@ -141,7 +141,7 @@
      1389.4,
      1390.79,
      1384.98,
-     1382.58
+     1383.16
     ]
    }
   ],
@@ -157,6 +157,62 @@
  "exits": [],
  "rejected": [],
  "newsroom": [
+  {
+   "title": "미국 반도체주 하락…한국 ETF 2.6% ↓",
+   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8644929&ref=A",
+   "published": "2026-08-25 05:54",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "美, 1300조 '비상금 통장' 꺼내나…국채금리 하락에도 반도체주 약세",
+   "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202608250172&t=NN",
+   "published": "2026-08-25 05:54",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "뉴욕 증시 반도체주 ‘털썩’…삼전닉스 또 불안불안",
+   "url": "https://www.dt.co.kr/article/12079951?ref=naver",
+   "published": "2026-08-25 05:52",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[美증시] 반도체 털썩 나스닥 조정, 카드주 급등 다우는 상승",
+   "url": "https://www.mediapen.com/news/view/1118583",
+   "published": "2026-08-25 05:48",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[N2 모닝 경제 브리핑-8월 25일] 美 증시, 국채금리 하락에도 AI주 매도…...",
+   "url": "https://www.news2day.co.kr/article/20260824500058",
+   "published": "2026-08-25 05:48",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[뉴욕증시] 유가·국채금리 하락에도 반도체 투매…나스닥·S&P 500↓",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4431560",
+   "published": "2026-08-25 05:44",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "마벨 테크놀리지(MRVL), 실적 발표 앞 주가 '흔들'...AI 기대 너무 컸나",
+   "url": "http://coinreaders.com/254563",
+   "published": "2026-08-25 05:42",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
   {
    "title": "\"CXMT 이어 또 잭팟\"… 中 낸드 1위 YMTC 모회사, '역대급 상장' 돌입",
    "url": "https://www.g-enews.com/view.php?ud=2026082418030739310c8c1c064d_1",
@@ -190,50 +246,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "67% 손실 AI펀드, 레버리지 청산 압박 드러냈다",
-   "url": "https://www.tokenpost.kr/news/cryptocurrency/396926",
-   "published": "2026-08-25 05:30",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "110조 푸는 삼전 vs 40조 태우는 SK하닉…주주환원 차이에 엇갈린 주가 ...",
-   "url": "https://www.dt.co.kr/article/12079938?ref=naver",
-   "published": "2026-08-25 05:30",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "국채금리 하락에도 반도체株↓…뉴욕증시 혼조[월스트리트in]",
-   "url": "https://www.edaily.co.kr/News/Read?newsId=01856486645550928&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-   "published": "2026-08-25 05:28",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[美증시 특징주] 반도체에 질린 투심 금융주로 이동…카드주 급등",
-   "url": "https://www.mediapen.com/news/view/1118581",
-   "published": "2026-08-25 05:22",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "이복현 “단일종목 레버리지, 증시 호황 아닌 침체기에 허용했어야\"",
    "url": "https://www.edaily.co.kr/News/Read?newsId=01826966645550928&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
    "published": "2026-08-25 05:22",
    "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "뉴욕증시, 반도체주 약세에 혼조 마감… 나스닥 0.76% 하락",
-   "url": "https://biz.chosun.com/international/international_economy/2026/08/25/MABQKZ2ZANAYTHCLUVLPW3IIXU/?utm_source=naver&utm_medium=original&utm_campaign=biz",
-   "published": "2026-08-25 05:21",
-   "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -294,16 +310,16 @@
    "watchlist_hits": []
   },
   {
-   "title": "정상혁 신한은행장, 인천시금고 PT 직접 나설까…3연임 최대 변수 '금고...",
-   "url": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5054364",
+   "title": "환율 11개월만에 1300원대로…\"원화 약세 요인, 상당 부분 해소\"",
+   "url": "https://www.sidae.com/article/2026082416065437063",
    "published": "2026-08-25 05:00",
    "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "환율 11개월만에 1300원대로…\"원화 약세 요인, 상당 부분 해소\"",
-   "url": "https://www.sidae.com/article/2026082416065437063",
+   "title": "정상혁 신한은행장, 인천시금고 PT 직접 나설까…3연임 최대 변수 '금고...",
+   "url": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5054364",
    "published": "2026-08-25 05:00",
    "topic": "금융",
    "ticker_prices": [],
@@ -313,14 +329,6 @@
    "title": "[글로벌 비즈 브리핑] 베센트 국채전략, 트럼프 가상자산 정책과 한배?...",
    "url": "https://biz.sbs.co.kr/article_hub/20000330496?division=NAVER",
    "published": "2026-08-25 04:43",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[요동치는 韓증시③] 김학균 신영증권 센터장 \"변동성 맞히려 말고, 견...",
-   "url": "https://www.news2day.co.kr/article/20260825500002",
-   "published": "2026-08-25 04:32",
    "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
@@ -422,16 +430,16 @@
    "watchlist_hits": []
   },
   {
-   "title": "[클로즈업] \"선물 털어내자 현물도 무너졌다\"…외인 선물 매도와 코스피...",
-   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=85985",
+   "title": "[더페어 돋보기] 대형주 수급 이탈이 쏘아 올린 코스닥…하반기 순환매...",
+   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=85961",
    "published": "2026-08-25 00:00",
    "topic": "증시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "[더페어 돋보기] 대형주 수급 이탈이 쏘아 올린 코스닥…하반기 순환매...",
-   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=85961",
+   "title": "[클로즈업] \"선물 털어내자 현물도 무너졌다\"…외인 선물 매도와 코스피...",
+   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=85985",
    "published": "2026-08-25 00:00",
    "topic": "증시",
    "ticker_prices": [],
@@ -465,14 +473,6 @@
    "title": "[아주경제 오늘의 뉴스 종합] 제주서 또다른 실종자 시신 발견…22일부...",
    "url": "https://www.ajunews.com/view/20260824212505613",
    "published": "2026-08-24 21:40",
-   "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "한미약품 3조 5000억 잭팟…비만치료 새 패러다임",
-   "url": "https://www.dailymedi.com/news/news_view.php?wr_id=939756",
-   "published": "2026-08-24 21:20",
    "topic": "바이오",
    "ticker_prices": [],
    "watchlist_hits": []
