@@ -2,15 +2,15 @@
  "date": "2026-08-26",
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-0826",
- "issue_no": 32,
- "published_at": "2026-08-26T05:38:53+09:00",
+ "issue_no": 33,
+ "published_at": "2026-08-26T05:57:27+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CeQ7RgGFmVH2TPQgHw9Np'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CeQ8qp75Xk9pj8XZeJuVq'}",
   "consecutive_failure_days": 24
  },
  "models": {
@@ -106,9 +106,9 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1383.38,
-    "change": 2.62,
-    "change_pct": 0.19,
+    "value": 1381.58,
+    "change": 0.82,
+    "change_pct": 0.06,
     "trend": "down",
     "trend_label": "하락세",
     "series": [
@@ -141,7 +141,7 @@
      1390.79,
      1384.98,
      1380.76,
-     1383.38
+     1381.58
     ]
    }
   ],
@@ -157,6 +157,62 @@
  "exits": [],
  "rejected": [],
  "newsroom": [
+  {
+   "title": "[N2 모닝 경제 브리핑-8월 26일] 美 증시, 엔비디아 실적 앞두고 3대 지...",
+   "url": "https://www.news2day.co.kr/article/20260825500036",
+   "published": "2026-08-26 05:54",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "유가·채권금리 하락에 美 증시 상승...미·이란 재휴전? [월가월부]",
+   "url": "https://www.mk.co.kr/article/12136313",
+   "published": "2026-08-26 05:52",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "세일즈포스·크라우드스트라이크, AI 실적 시험대 오른다",
+   "url": "https://www.tokenpost.kr/news/market/397737",
+   "published": "2026-08-26 05:50",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "국채금리·유가↓·반도체주↑…\"사상 최대 실적 전망\" 시선 쏠렸다",
+   "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202608260174&t=NN",
+   "published": "2026-08-26 05:48",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[금/유가] 대이란 제재 불구 유가 3% 넘게 '뚝'…금값은 랠리 후 '숨 고...",
+   "url": "https://www.newspim.com/news/view/20260826000025",
+   "published": "2026-08-26 05:45",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[美증시] 국채금리·유가 하락에 3대지수 동반 상승…반도체·제약주 주...",
+   "url": "https://www.mediapen.com/news/view/1118835",
+   "published": "2026-08-26 05:42",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[뉴욕마감]엔비디아 등 기술주 반등에 상승…나스닥 0.66%↑",
+   "url": "https://www.news1.kr/world/usa-canada/6269432",
+   "published": "2026-08-26 05:38",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
   {
    "title": "엔비디아 실적 대기 속 반도체주 강세, 뉴욕증시 3대 지수 동반 상승",
    "url": "https://www.ddaily.co.kr/page/view/2026082605355601291",
@@ -177,47 +233,7 @@
    "title": "뉴욕증시, 유가·금리 하락에 반등…나스닥 0.66%↑",
    "url": "https://www.kbmaeil.com/article/20260826500007",
    "published": "2026-08-26 05:34",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[뉴욕증시]국채금리 하락·반도체주 강세에 3대 지수 일제히 상승",
-   "url": "https://www.g-enews.com/view.php?ud=202608260531031440e250e8e188_1",
-   "published": "2026-08-26 05:34",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[뉴욕증시] 美·이란 긴장 완화 기대감에 강세…엔비디아 8일만에↑",
-   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4431760",
-   "published": "2026-08-26 05:30",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[뉴욕증시] 국채 수익률 하락 지속에 반등…반도체 상승 전환",
-   "url": "https://www.fnnews.com/news/202608260525548635",
-   "published": "2026-08-26 05:30",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "뉴욕증시, 유가·금리 하락에 3대 지수 상승…엔비디아 실적 촉각",
-   "url": "https://www.newspim.com/news/view/20260826000024",
-   "published": "2026-08-26 05:27",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "반도체주 반등에 국채금리는 하락… 뉴욕증시 일제히 상승",
-   "url": "https://www.kmib.co.kr/article/view.asp?arcid=9000006253&cp=nv",
-   "published": "2026-08-26 05:27",
-   "topic": "반도체",
+   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -314,14 +330,6 @@
    "url": "https://www.mt.co.kr/future/2026/08/26/2026082415351445838",
    "published": "2026-08-26 04:00",
    "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "미국 은행 2분기 순익 901억달러로 늘었다",
-   "url": "https://www.tokenpost.kr/news/economy/397703",
-   "published": "2026-08-26 03:54",
-   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -466,14 +474,6 @@
    "url": "https://www.hankyung.com/article/2026082520961",
    "published": "2026-08-25 19:00",
    "topic": "2차전지",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[더나은미래 경제브리핑] 국세청, ‘황제 사택’ 50개 업체 세무조사......",
-   "url": "https://futurechosun.com/?p=158556",
-   "published": "2026-08-25 18:20",
-   "topic": "바이오",
    "ticker_prices": [],
    "watchlist_hits": []
   }
