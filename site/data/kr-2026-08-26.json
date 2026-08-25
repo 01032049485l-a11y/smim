@@ -3,14 +3,14 @@
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-0826",
  "issue_no": 33,
- "published_at": "2026-08-26T06:57:01+09:00",
+ "published_at": "2026-08-26T07:25:14+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CeQDPGgKhnSnh5MUcMbUg'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CeQFY5mUFxySeUkFBQVpe'}",
   "consecutive_failure_days": 24
  },
  "models": {
@@ -106,9 +106,9 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1382.21,
-    "change": 1.45,
-    "change_pct": 0.11,
+    "value": 1382.46,
+    "change": 1.7,
+    "change_pct": 0.12,
     "trend": "down",
     "trend_label": "하락세",
     "series": [
@@ -141,7 +141,7 @@
      1390.79,
      1384.98,
      1380.76,
-     1382.21
+     1382.46
     ]
    }
   ],
@@ -158,42 +158,218 @@
  "rejected": [],
  "newsroom": [
   {
-   "title": "뉴욕증시, 국채금리 하락 등 영향 상승⋯엔비디아 2%대, MS 1%대 상승-AMD...",
-   "url": "http://www.econonews.co.kr/news/articleView.html?idxno=443328",
-   "published": "2026-08-26 06:56",
+   "title": "[은행 생존전략①] 증시로 떠나는 돈 잡아라…은행권 예·적금 '유치전'",
+   "url": "http://www.newsian.co.kr/news/articleView.html?idxno=94205",
+   "published": "2026-08-26 07:24",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "\"마벨테크놀러지 실적, AI 트레이딩에 아드레날린 주사\"",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4431767",
+   "published": "2026-08-26 07:22",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "코스닥 새내기株 잇단 ‘첫날 급락’…지수보다 최대 9배 빠졌다",
-   "url": "http://www.metroseoul.co.kr/article/20260826500003",
-   "published": "2026-08-26 06:52",
+   "title": "[리스트] MVP 상위 20선...라이온켐텍, 마녀공장 등 - 26일",
+   "url": "https://www.itooza.com/common/iview.php?no=2026082607153708716",
+   "published": "2026-08-26 07:22",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "미국증시 다우 '연일 상승'..머크·엔비디아·GS '뛰고', 나이키 '뚝'",
-   "url": "http://www.choicenews.co.kr/news/articleView.html?idxno=170444",
-   "published": "2026-08-26 06:50",
+   "title": "[채권/외환] 미 국채 수익률·달러 동반 하락…유가 급락·베선트 '바이...",
+   "url": "https://www.newspim.com/news/view/20260826000030",
+   "published": "2026-08-26 07:21",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "기아, 6년 연속 무분규 눈앞… 기본급 10만원·성과금 400%+1270만원",
+   "url": "http://www.newsroad.co.kr/news/articleView.html?idxno=63369",
+   "published": "2026-08-26 07:20",
+   "topic": "자동차",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "‘엔비디아 반등’에 뉴욕증시 웃었다…나스닥 0.66%↑",
+   "url": "https://www.dt.co.kr/article/12080224?ref=naver",
+   "published": "2026-08-26 07:18",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "[글로벌증시] 뉴욕증시, 일제히 상승…국채금리 하락·반도체 상승",
-   "url": "http://www.yonhapnewstv.co.kr/news/MYH20260826064626OfP",
-   "published": "2026-08-26 06:47",
+   "title": "유가·금리 하락에 3대지수 상승마감…반도체주 강세 [뉴욕증시 브리핑...",
+   "url": "https://www.hankyung.com/article/2026082626966",
+   "published": "2026-08-26 07:17",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "美 금리·유가 동반 진정…코스피, 7000선 다시 노린다",
-   "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1721669",
-   "published": "2026-08-26 06:46",
+   "title": "[코스피 1만의 조건] 단종레로 증시에 재뿌린 정부…주주환원 및 상법 ...",
+   "url": "https://dealsite.co.kr/articles/167433",
+   "published": "2026-08-26 07:16",
    "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[마켓 브리핑] 엔비디아 실적 발표 D-1…반도체주들 다시 강세",
+   "url": "https://biz.sbs.co.kr/article_hub/20000330751?division=NAVER",
+   "published": "2026-08-26 07:15",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "투기 아닌 실수요가 엔저 주도…日정부 개입 효과 ‘한계’",
+   "url": "https://www.hankyung.com/article/202608262692i",
+   "published": "2026-08-26 07:13",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[코스피·코스닥지수] 대동·드림시큐리티 계열사 투자 확대…금감원, ...",
+   "url": "https://www.lecturernews.com/news/articleView.html?idxno=209365",
+   "published": "2026-08-26 07:12",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "美 증시, 유가·국채금리 하락에 동반 상승",
+   "url": "https://www.dailian.co.kr/news/view/1682347/?sc=Naver",
+   "published": "2026-08-26 07:10",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[V차트] 아이마켓코리아, 2Q 호실적...삼성향 매출 확대",
+   "url": "https://www.itooza.com/common/iview.php?no=2026082510595000819",
+   "published": "2026-08-26 07:10",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "신종 차환해도 기본자본 빠진다…교보생명 '자본관리 숙제'",
+   "url": "https://www.dailian.co.kr/news/view/1682196/?sc=Naver",
+   "published": "2026-08-26 07:10",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "“제4인뱅 개인사업자 여신 비중 50% 이상으로 정해야…자본력 개선도 ...",
+   "url": "https://biz.heraldcorp.com/article/10852047?ref=naver",
+   "published": "2026-08-26 07:09",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[증시전략] 엔비디아, 내일 실적 발표 대기…매출 약 두 배↑ 전망",
+   "url": "https://biz.sbs.co.kr/article_hub/20000330740?division=NAVER",
+   "published": "2026-08-26 07:08",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[코스피 1만의 조건] 삼전닉스 시총 1조弗 뚫었지만…MSCI는 코스피 외면",
+   "url": "https://dealsite.co.kr/articles/167430",
+   "published": "2026-08-26 07:06",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "미국증시, 유가·국채금리 하락에 3대지수 동반 상승…엔비디아 2.17%↑",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16173485",
+   "published": "2026-08-26 07:06",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "하락장 돌파 나선 레메디…‘수출·캐파’ 확장 초점",
+   "url": "https://dealsite.co.kr/articles/167715",
+   "published": "2026-08-26 07:02",
+   "topic": "2차전지",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[Invest]삼성전자 자사주 소각 미발표에...슬금슬금 피어 오르는 '음모론...",
+   "url": "https://www.investchosun.com/site/data/html_dir/2026/08/25/2026082580188.html",
+   "published": "2026-08-26 07:02",
+   "topic": "바이오",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[더벨][Korean Paper] 한투증권, 달러채 발행 미뤘다…가격 눈높이 부담",
+   "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202608240828364500104029",
+   "published": "2026-08-26 07:02",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[더벨]'스플릿 해소' 대신에프앤아이, 최대 3000억 공모채 발행",
+   "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202608241559396520106233",
+   "published": "2026-08-26 07:02",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[초임 은행장 리더십] 하나銀 '2년 단임' 관행, 이호성 깨부술까",
+   "url": "https://news.dealsitetv.com/articles/175035",
+   "published": "2026-08-26 07:02",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "美 증시 일제히 상승…유가·국채금리 하락에 기술주 반등-[글로벌 마감...",
+   "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202608260255&t=NN",
+   "published": "2026-08-26 07:02",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "'금'으로 피신하는 투자자들…코스피 회전율은 0.55%로 뚝",
+   "url": "https://www.newspim.com/news/view/20260825001030",
+   "published": "2026-08-26 07:00",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[은행 PB의 포트폴리오②] 이유진 KB국민은행 PB팀장 “주식 줄이고 예금...",
+   "url": "https://www.news2day.co.kr/article/20260825500110",
+   "published": "2026-08-26 07:00",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "“손절도 못하고 미치겠어요”…코스피 7천, 이번 주 3대 변수가 가른다...",
+   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8646118&ref=A",
+   "published": "2026-08-26 06:53",
+   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -206,38 +382,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "뉴욕증시, 반도체 반등에 3대지수 상승…엔비디아 실적 앞두고 관망세",
-   "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1721668",
-   "published": "2026-08-26 06:42",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[뉴욕증시 마감] 美 국채금리 이틀째 하락에 기술주 강세…3대 지수 상...",
-   "url": "https://www.ajunews.com/view/20260826063106227",
-   "published": "2026-08-26 06:40",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "뉴욕증시 다우 0.30%·나스닥 0.66%↑…엔비디아 8일 만에 반등",
-   "url": "https://www.bntnews.co.kr/article/view/bnt202608260010",
-   "published": "2026-08-26 06:40",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "증권사 사내유보금 35兆 역대 최대… 주가는 전업종 중 꼴찌",
-   "url": "https://it.chosun.com/news/articleView.html?idxno=2023092168798",
-   "published": "2026-08-26 06:20",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "[美증시] 암 백신 모더나 14% 또 폭등…머크·화이자도 동반 상승",
    "url": "https://www.mediapen.com/news/view/1118837",
    "published": "2026-08-26 06:12",
@@ -246,26 +390,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "“죽다 겨우 살아났는데”…개미들 27·28일 주식창만 봐야하는 이유",
-   "url": "https://www.mk.co.kr/article/12136319",
-   "published": "2026-08-26 06:11",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "코로나19 재유행 조짐…테마주도 들썩",
    "url": "https://news.mtn.co.kr/news-detail/2026082517254881955",
    "published": "2026-08-26 06:10",
    "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[소비자가 뽑은 참 좋은 브랜드-KB국민은행] 그룹 시너지 살린 특화 상품...",
-   "url": "http://www.consumernews.co.kr/news/articleView.html?idxno=762230",
-   "published": "2026-08-26 06:10",
-   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -313,31 +441,7 @@
    "title": "환율은 내렸지만 밥상물가는? 하반기 자산 관리법",
    "url": "https://www.ccreview.co.kr/news/articleView.html?idxno=355830",
    "published": "2026-08-26 06:00",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "금리 인상 전망에 떠오르는 금융주…“고금리서 방어력 높아”",
-   "url": "https://www.khan.co.kr/article/202608260600141",
-   "published": "2026-08-26 06:00",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[허정수칼럼] KDB생명 인수의 후불 청구서",
-   "url": "https://www.bloter.net/news/articleView.html?idxno=671785",
-   "published": "2026-08-26 06:00",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[커지는 IMA①] 예적금보다 높은 수익률…한투·미래·NH證 '3사3색' 경쟁",
-   "url": "https://www.greened.kr/news/articleView.html?idxno=348384",
-   "published": "2026-08-26 05:57",
-   "topic": "금융",
+   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -358,14 +462,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "머니투데이 오프라인 헤드라인-26일",
-   "url": "https://www.mt.co.kr/economy/2026/08/26/2026082520052951662",
-   "published": "2026-08-26 04:30",
-   "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "\"이러다 배탈난다\"…벤처투자 역대 최대라는데 더 어려워진 '엑시트'",
    "url": "https://www.mt.co.kr/future/2026/08/26/2026082414240487341",
    "published": "2026-08-26 04:10",
@@ -378,102 +474,6 @@
    "url": "https://www.mt.co.kr/stock/2026/08/26/2026082519572535192",
    "published": "2026-08-26 04:03",
    "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[창간 12주년 기획]K-바이오, 조 단위 기술수출 행진...'동전주 퇴출' 규...",
-   "url": "https://www.getnews.co.kr/news/articleView.html?idxno=878839",
-   "published": "2026-08-26 04:02",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "올해 코스닥 상장사 80% 마이너스…벤처투자 '상장=대박' 옛말",
-   "url": "https://www.mt.co.kr/future/2026/08/26/2026082415351445838",
-   "published": "2026-08-26 04:00",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "이란戰 고유가에 전기차 질주…미국만 뒤처졌다",
-   "url": "https://www.g-enews.com/view.php?ud=2026082517255879759a1f309431_1",
-   "published": "2026-08-26 02:02",
-   "topic": "자동차",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "엔비디아 실적·워시 연설, 코스피 향방 가를 듯",
-   "url": "https://www.chosun.com/economy/stock-finance/2026/08/26/47CNVRV4ZVHHBFTSK6PWOBYOB4/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
-   "published": "2026-08-26 00:36",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "美 반도체주 찬바람 버틴 코스피, 0.7% 상승 마감",
-   "url": "https://www.donga.com/news/Economy/article/all/20260825/134542376/2",
-   "published": "2026-08-26 00:33",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "내일 금통위… 기준금리 연속 인상할까",
-   "url": "https://www.chosun.com/economy/economy_general/2026/08/26/L5T6WCCDW5G4FCT2423MVIBA6U/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
-   "published": "2026-08-26 00:32",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[2026년 정기국회 무엇을 준비하나]민생 살리기 최우선…노동·에너지분...",
-   "url": "https://www.ksilbo.co.kr/news/articleView.html?idxno=1065423",
-   "published": "2026-08-26 00:02",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[증시 오늘] 코스피 소폭 상승 6742",
-   "url": "https://www.bigtanews.co.kr/article/view/big202608250019",
-   "published": "2026-08-25 23:18",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "WTI 2.99% 하락, 배럴당 83.16달러 기록",
-   "url": "https://www.tokenpost.kr/news/economy/397534",
-   "published": "2026-08-25 22:56",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[이원호의 경제톡] 40조달러 빚 수렁에서 헤매는 미국",
-   "url": "https://www.bigtanews.co.kr/article/view/big202608250018",
-   "published": "2026-08-25 22:50",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[더벨]SKIET, 물적분할 7년만에 다시 SK이노 '품으로'",
-   "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202608251821386880103583",
-   "published": "2026-08-25 19:02",
-   "topic": "2차전지",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "SK이노, 물적분할 7년 만에 자회사 SKIET '흡수 합병'",
-   "url": "https://www.hankyung.com/article/2026082520961",
-   "published": "2026-08-25 19:00",
-   "topic": "2차전지",
    "ticker_prices": [],
    "watchlist_hits": []
   }
