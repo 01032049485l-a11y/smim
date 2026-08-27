@@ -3,14 +3,14 @@
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-0827",
  "issue_no": 34,
- "published_at": "2026-08-27T09:35:30+09:00",
+ "published_at": "2026-08-27T10:02:20+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CeSKH9ML42qLvzG51snjQ'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CeSMKnGstoFTcFPSn6k3b'}",
   "consecutive_failure_days": 25
  },
  "models": {
@@ -106,9 +106,9 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1379.48,
-    "change": -2.01,
-    "change_pct": -0.15,
+    "value": 1377.68,
+    "change": -3.81,
+    "change_pct": -0.28,
     "trend": "flat",
     "trend_label": "보합권",
     "series": [
@@ -140,7 +140,7 @@
      1384.98,
      1380.76,
      1381.49,
-     1379.48
+     1377.68
     ]
    }
   ],
@@ -157,58 +157,226 @@
  "rejected": [],
  "newsroom": [
   {
-   "title": "[이 시각 시황] 코스피 7천피 도전…엔비디아발 AI·반도체 훈풍 확산",
-   "url": "https://biz.sbs.co.kr/article_hub/20000331036?division=NAVER",
-   "published": "2026-08-27 09:34",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "BofA \"반도체주 조정은 매수 기회…엔비디아·마이크론 주목\"",
-   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4432040",
-   "published": "2026-08-27 09:34",
+   "title": "현대차, 5년간 신차 100종 쏟아낸다…2030년 글로벌 생산 127만대 확대",
+   "url": "https://www.sedaily.com/article/20083841?ref=naver",
+   "published": "2026-08-27 10:01",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "엔비디아發 훈풍에 코스피 반등 지속…7000선 회복 코앞",
-   "url": "https://www.newsis.com/view/NISX20260827_0003764674",
-   "published": "2026-08-27 09:33",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "엔비디아 '어닝 서프라이즈' 훈풍…삼전·닉스 장 초반 급등",
-   "url": "https://www.jnilbo.com/news/articleView.html?idxno=90000059978",
-   "published": "2026-08-27 09:33",
+   "title": "“주주환원 열풍에도 주가는 안올라”…‘돈 풀기’보다 이익 중요했다",
+   "url": "https://www.sedaily.com/article/20083835?ref=naver",
+   "published": "2026-08-27 10:01",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "코스피, 장초반 2%대 올라 6960선...반도체·전력기기 강세",
-   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=480939",
-   "published": "2026-08-27 09:32",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[국내증시 개장시황] 국내 증시 상승세, 삼성전자와 SK하이닉스 주도",
-   "url": "https://www.tokenpost.kr/news/market/398612",
-   "published": "2026-08-27 09:32",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "엔비디아, 2분기 매출 962억달러…다음 분기 '1000억달러' 돌파하나",
-   "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=851676",
-   "published": "2026-08-27 09:32",
+   "title": "영풍·MBK, 최윤범 의결권 5% 막는다…‘허위 공시’ 가처분 신청",
+   "url": "https://www.sedaily.com/article/20083838?ref=naver",
+   "published": "2026-08-27 10:01",
    "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "연 5% 이자에 배달·주유·레저 쿠폰까지…카뱅, ‘26주적금’ 출시",
+   "url": "https://www.hankyung.com/article/202608275993i",
+   "published": "2026-08-27 10:01",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[속보]‘금리 3%’ 시대 열렸다…한은, 기준금리 0.25%p 인상",
+   "url": "https://www.munhwa.com/article/11612417?ref=naver",
+   "published": "2026-08-27 10:01",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "서진시스템, 악재 충분히 반영…반등 조건 충족",
+   "url": "https://www.mt.co.kr/stock/2026/08/27/2026082709103820626",
+   "published": "2026-08-27 10:00",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "기가레인 주가, 급등세... 무슨 회사길래?",
+   "url": "https://www.ggilbo.com/news/articleView.html?idxno=1177847",
+   "published": "2026-08-27 10:00",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "엔비디아 ‘깜짝 실적’에 삼성전자·SK하이닉스 강세…반도체 투심 모...",
+   "url": "https://biz.heraldcorp.com/article/10853747?ref=naver",
+   "published": "2026-08-27 10:00",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "반도체 성장 호조에 물가 선제대응…한은 이례적 연속 금리인상",
+   "url": "https://www.yna.co.kr/view/AKR20260827022600002?input=1195m",
+   "published": "2026-08-27 09:59",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "코스피, 엔비디아 실적 호조에 2.15% 상승 출발",
+   "url": "https://www.etnews.com/20260827000075",
+   "published": "2026-08-27 09:58",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "상반기엔 '따따블'이었는데…다시 고개 든 '공모주 잔혹사'",
+   "url": "https://www.g-enews.com/view.php?ud=202608270952408697153ddfb15a_1",
+   "published": "2026-08-27 09:58",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "HBM값 급등에 엔비디아도 못 버텼다…마진 71%까지 하락, 그래도 내년 매...",
+   "url": "https://www.joongangenews.com/news/articleView.html?idxno=543136",
+   "published": "2026-08-27 09:58",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "삼전닉스, 엔비디아 호실적에 주가 '강세'…반도체 투자심리 개선",
+   "url": "https://www.cstimes.com/news/articleView.html?idxno=718240",
+   "published": "2026-08-27 09:58",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "한은, 기준 금리 3%로 연속 인상…물가 잡기 '선제 대응'",
+   "url": "https://www.slist.kr/news/articleView.html?idxno=761716",
+   "published": "2026-08-27 09:58",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[개장시황] \"엔비디아 실적 서프라이즈\"…코스피, 2%대 상승 출발",
+   "url": "https://www.joongangenews.com/news/articleView.html?idxno=543137",
+   "published": "2026-08-27 09:56",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "엔비디아 훈풍에 반도체주 '들썩'…코스피 장중 7000선 '바짝'",
+   "url": "https://www.hidomin.com/news/articleView.html?idxno=718779",
+   "published": "2026-08-27 09:56",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "파인디앤씨 주가, 급등세... 무슨 회사길래?",
+   "url": "https://www.ggilbo.com/news/articleView.html?idxno=1177845",
+   "published": "2026-08-27 09:56",
+   "topic": "2차전지",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "기준금리 결국 3% 찍었다…한은, 두 달 연속 인상",
+   "url": "https://www.imaeil.com/page/view/2026082709523623169",
+   "published": "2026-08-27 09:56",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "기준금리 3%로 '백투백' 인상…1년9개월 만에 3%대",
+   "url": "https://www.mediapen.com/news/view/1119197",
+   "published": "2026-08-27 09:56",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "한은, 기준금리 3% 두 달 연속 인상…성장률 2.6→3.3%",
+   "url": "https://www.mt.co.kr/economy/2026/08/27/2026082709050770978",
+   "published": "2026-08-27 09:55",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "성장·물가에 무게 둔 한은…기준금리 3.00%로 두 달 연속 인상",
+   "url": "http://www.inews24.com/view/1998813",
+   "published": "2026-08-27 09:55",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "엔화, 美 장기금리 상승에 1달러=159엔대 전반 하락 출발",
+   "url": "https://www.newsis.com/view/NISX20260827_0003764746",
+   "published": "2026-08-27 09:55",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "코스피 장 초반 1%대 상승세…오름폭은 줄어",
+   "url": "https://www.mediapen.com/news/view/1119209",
+   "published": "2026-08-27 09:54",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "한은 기준금리 3.00%로…'백투백 인상' 물가·집값에 긴축 고삐",
+   "url": "http://www.4th.kr/news/articleView.html?idxno=2116916",
+   "published": "2026-08-27 09:54",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "코스피, 장초반 상승세에 6900선 회복",
+   "url": "https://biz.sbs.co.kr/article_hub/20000331061?division=NAVER",
+   "published": "2026-08-27 09:52",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "코스피, 엔비디아 호실적에 2%대 상승…6,900선 회복",
+   "url": "https://www.slist.kr/news/articleView.html?idxno=761711",
+   "published": "2026-08-27 09:52",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "한은, 기준금리 3%로 연속 인상…물가 우려에 긴축 속도(종합)",
+   "url": "https://www.yna.co.kr/view/AKR20260827045900002?input=1195m",
+   "published": "2026-08-27 09:52",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "엔비디아發 호조에 코스피, 7000선 '바짝'…삼전닉스 강세",
+   "url": "https://news.tf.co.kr/read/economy/2358503.htm",
+   "published": "2026-08-27 09:48",
+   "topic": "증시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -221,114 +389,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "침묵 속 금통위 시작…'3% 기준금리 결정' 주목[금통위 스케치]",
-   "url": "https://www.edaily.co.kr/News/Read?newsId=02938886645551584&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-   "published": "2026-08-27 09:32",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "코스피, 장초반 2%대 상승해 7천피 탈환시도(종합)",
-   "url": "https://www.yna.co.kr/view/AKR20260827033651008?input=1195m",
-   "published": "2026-08-27 09:30",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "심텍 주가, 웃음꽃 활짝... 왜?",
-   "url": "https://www.ggilbo.com/news/articleView.html?idxno=1177830",
-   "published": "2026-08-27 09:30",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[EBN 데이터센터] 코스피, 엔비디아發 훈풍에 7000선 근접",
-   "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1721877",
-   "published": "2026-08-27 09:30",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "환율, 1380원대서 소폭 상승…美 물가·내수 견조에 달러 강세",
-   "url": "https://www.ajunews.com/view/20260827092357160",
-   "published": "2026-08-27 09:30",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "\"AI 수요 계속\" 엔비디아 실적 발표에 기판주 '방긋'… 심텍, 5%대↑",
-   "url": "https://www.mt.co.kr/stock/2026/08/27/2026082709125712651",
-   "published": "2026-08-27 09:29",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "코스피, 엔비디아 호실적에 반도체주 강세 출발···7000선 회복 시도",
-   "url": "https://www.seoulfn.com/news/articleView.html?idxno=636560",
-   "published": "2026-08-27 09:29",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "금통위 앞둔 관망세에…달러·원 1380원 초반 소폭 하락",
-   "url": "https://www.news1.kr/finance/market-exr/6270940",
-   "published": "2026-08-27 09:29",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "코스피, 반도체 수요 재확인에 상승 출발…7000선 재진입 시도",
-   "url": "https://www.g-enews.com/view.php?ud=202608270921114684923c501012_1",
-   "published": "2026-08-27 09:28",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "금시세(금값)",
-   "url": "https://www.bntnews.co.kr/article/view/bnt202608270032",
-   "published": "2026-08-27 09:28",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "삼성SDI 주가, 웃음꽃... 이유는?",
    "url": "https://www.ggilbo.com/news/articleView.html?idxno=1177829",
    "published": "2026-08-27 09:26",
    "topic": "2차전지",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "장초반...아시아증시 '혼조', 코스피 & 삼전닉스는 '급등'",
-   "url": "http://www.choicenews.co.kr/news/articleView.html?idxno=170528",
-   "published": "2026-08-27 09:26",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[이로운넷 주간 증시 전망] 증시 경보기 금(金)의 귀환",
-   "url": "https://www.eroun.net/news/articleView.html?idxno=88488",
-   "published": "2026-08-27 09:26",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "원·달러 환율, 1.1원 내린 1383.7원",
-   "url": "https://biz.chosun.com/policy/policy_sub/2026/08/27/X2ELJNI3L5BRBG5EPUH3VSHC7U/?utm_source=naver&utm_medium=original&utm_campaign=biz",
-   "published": "2026-08-27 09:25",
-   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -349,14 +413,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "신현송 '미소 띤 표정'…한은, 3년7개월 만 기준금리 '연속 인상' 주목",
-   "url": "https://www.news1.kr/economy/trend/6270918",
-   "published": "2026-08-27 09:18",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "현대차, 수익성 개선 자신감 'UP'…\"중장기 성장성 유효\"-NH투자증권",
    "url": "http://www.press9.kr/news/articleView.html?idxno=81714",
    "published": "2026-08-27 09:16",
@@ -365,58 +421,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "“은행 주담대 금리, 중기대출 추월…기업대출 금리도 오를 것” <한화...",
-   "url": "https://www.news2day.co.kr/article/20260827500024",
-   "published": "2026-08-27 09:16",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "한은 금통위, 오늘 기준금리 결정…‘연속 인상’이냐 ‘속도 조절’이...",
-   "url": "https://sateconomy.co.kr/news/view/1065571788885442",
-   "published": "2026-08-27 09:16",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[금통위 스케치] '백투백'이냐 숨고르기냐…금리 결정 앞두고 팽팽한 긴...",
-   "url": "https://www.ajunews.com/view/20260827083315921",
-   "published": "2026-08-27 09:16",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "\"가을 증시, 반도체보다 경기 봐야…9월 박스권 전망\"<IBK투자證>",
-   "url": "https://www.news2day.co.kr/article/20260827500023",
-   "published": "2026-08-27 09:10",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "금리 넘어 생활 혜택으로…카카오뱅크, 제휴 적금 확대",
-   "url": "http://www.srtimes.kr/news/articleView.html?idxno=210958",
-   "published": "2026-08-27 09:08",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "스페이스X가 우주 AI데이터센터와 로켓베이스 건설 계획으로 호평 : 문제...",
    "url": "https://www.huffingtonpost.kr/article/259880",
    "published": "2026-08-27 09:06",
    "topic": "자동차",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "엔비디아 실적 발표...'반도체 투톱' 주가 영향은?",
-   "url": "https://www.ytn.co.kr/_ln/0102_202608270905473427",
-   "published": "2026-08-27 09:05",
-   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -465,14 +473,6 @@
    "url": "https://biz.sbs.co.kr/article_hub/20000331035?division=NAVER",
    "published": "2026-08-27 08:27",
    "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "현대차, 판매 555만대·이익률 9% 자신했지만…증권가 \"신사업 아쉬워\"",
-   "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=851670",
-   "published": "2026-08-27 08:24",
-   "topic": "자동차",
    "ticker_prices": [],
    "watchlist_hits": []
   }
