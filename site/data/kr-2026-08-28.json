@@ -2,15 +2,15 @@
  "date": "2026-08-28",
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-0828",
- "issue_no": 34,
- "published_at": "2026-08-28T13:21:40+09:00",
+ "issue_no": 35,
+ "published_at": "2026-08-28T13:26:42+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CeUWLKmmRejYTw3zgkcUt'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CeUWibuVShLmCbFrFo9VP'}",
   "consecutive_failure_days": 26
  },
  "models": {
@@ -106,11 +106,11 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1376.88,
-    "change": -6.61,
-    "change_pct": -0.48,
-    "trend": "down",
-    "trend_label": "하락세",
+    "value": 1377.27,
+    "change": -6.22,
+    "change_pct": -0.45,
+    "trend": "flat",
+    "trend_label": "보합권",
     "series": [
      1475.01,
      1479.72,
@@ -140,7 +140,7 @@
      1380.76,
      1381.49,
      1383.49,
-     1376.88
+     1377.27
     ]
    }
   ],
@@ -156,6 +156,22 @@
  "exits": [],
  "rejected": [],
  "newsroom": [
+  {
+   "title": "[외환] 네고 우위에 1년 만 저점 경신…2.70원↓",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4432401",
+   "published": "2026-08-28 13:26",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "저축은행 상반기 순익 7658억원… 2분기 연속 흑자",
+   "url": "https://it.chosun.com/news/articleView.html?idxno=2023092169043",
+   "published": "2026-08-28 13:22",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
   {
    "title": "\"SKT, SK호라이즌·SK하이퍼 시너지..AIDC 성장 본격화\"",
    "url": "http://www.4th.kr/news/articleView.html?idxno=2117049",
@@ -229,16 +245,16 @@
    "watchlist_hits": []
   },
   {
-   "title": "1만2063주 장내매수, 아나패스 대표 지분 14.90%",
-   "url": "https://www.tokenpost.kr/news/market/399510",
+   "title": "[食전食후] 코스피, 외국인 매도에 1%대 하락…삼성전자·SK하이닉스 약...",
+   "url": "https://www.ajunews.com/view/20260828124810784",
    "published": "2026-08-28 12:50",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "[食전食후] 코스피, 외국인 매도에 1%대 하락…삼성전자·SK하이닉스 약...",
-   "url": "https://www.ajunews.com/view/20260828124810784",
+   "title": "1만2063주 장내매수, 아나패스 대표 지분 14.90%",
+   "url": "https://www.tokenpost.kr/news/market/399510",
    "published": "2026-08-28 12:50",
    "topic": "반도체",
    "ticker_prices": [],
@@ -293,22 +309,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "국채금리 잡으려는 베선트, 인플레 잡으려는 워시…美재무·연준 '엇박...",
-   "url": "https://www.newsis.com/view/NISX20260828_0003766580",
-   "published": "2026-08-28 11:56",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[금융실적] 저축은행, 상반기 7658억 순익…실적·건전성 동반 개선",
-   "url": "http://www.bizwnews.com/news/articleView.html?idxno=144576",
-   "published": "2026-08-28 11:54",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "46조 법인세 약발 끝나는 9월 … 1300원대 환율, 첫 방향타는 '워시 잭슨...",
    "url": "https://biz.newdaily.co.kr/site/data/html/2026/08/28/2026082800115.html",
    "published": "2026-08-28 11:54",
@@ -349,16 +349,16 @@
    "watchlist_hits": []
   },
   {
-   "title": "[한창헌의 단상] '호미'로 잡는 통화정책의 타이밍",
-   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4432383",
+   "title": "가계빚 2000조인데 기준금리 3.5%도 열렸다 … '영끌·빚투' 상환 한계 내...",
+   "url": "https://biz.newdaily.co.kr/site/data/html/2026/08/28/2026082800111.html",
    "published": "2026-08-28 11:26",
    "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "가계빚 2000조인데 기준금리 3.5%도 열렸다 … '영끌·빚투' 상환 한계 내...",
-   "url": "https://biz.newdaily.co.kr/site/data/html/2026/08/28/2026082800111.html",
+   "title": "[한창헌의 단상] '호미'로 잡는 통화정책의 타이밍",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4432383",
    "published": "2026-08-28 11:26",
    "topic": "환율·거시",
    "ticker_prices": [],
@@ -385,14 +385,6 @@
    "url": "https://www.mt.co.kr/stock/2026/08/28/2026082811071230848",
    "published": "2026-08-28 11:19",
    "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[사설] 한은의 연속 금리 인상, 정부도 ‘가래’로 막는 일 없어야",
-   "url": "https://biz.heraldcorp.com/article/10855310?ref=naver",
-   "published": "2026-08-28 11:19",
-   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -473,6 +465,14 @@
    "url": "https://www.imaeil.com/page/view/2026082810080101942",
    "published": "2026-08-28 10:17",
    "topic": "자동차",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "엔비디아 호실적…최대 수혜는 '반도체·전력기기'",
+   "url": "https://view.asiae.co.kr/article/2026082810103844501",
+   "published": "2026-08-28 10:16",
+   "topic": "2차전지",
    "ticker_prices": [],
    "watchlist_hits": []
   }
