@@ -2,15 +2,15 @@
  "date": "2026-09-02",
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-0902",
- "issue_no": 37,
- "published_at": "2026-09-02T07:32:58+09:00",
+ "issue_no": 38,
+ "published_at": "2026-09-02T07:45:10+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CedWnenGu2vLwE7hDBiRu'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CedXibnCSSWmh5qARPkrP'}",
   "consecutive_failure_days": 29
  },
  "models": {
@@ -106,9 +106,9 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1374.73,
-    "change": 8.11,
-    "change_pct": 0.59,
+    "value": 1374.8,
+    "change": 8.18,
+    "change_pct": 0.6,
     "trend": "flat",
     "trend_label": "보합권",
     "series": [
@@ -141,7 +141,7 @@
      1380.45,
      1377.11,
      1366.62,
-     1374.73
+     1374.8
     ]
    }
   ],
@@ -157,6 +157,78 @@
  "exits": [],
  "rejected": [],
  "newsroom": [
+  {
+   "title": "전세계 국채금리 연쇄급등에 각국 빚부담 가중…가계·기업까지 파장",
+   "url": "https://www.tfmedia.co.kr/news/article.html?no=206918",
+   "published": "2026-09-02 07:44",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "국제유가 부담에 뉴욕증시 하락…나스닥 1%↓",
+   "url": "http://www.smedaily.co.kr/news/articleView.html?idxno=362525",
+   "published": "2026-09-02 07:42",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "미 국채금리 파동, 반도체 사이클에 찬물 끼얹나[AI칩 인사이드]",
+   "url": "https://news.mtn.co.kr/news-detail/2026090206063577405",
+   "published": "2026-09-02 07:40",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[뉴욕증시] 미·이란 충돌 여파에 시장 '흔들'…반도체주 타격",
+   "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008733244&plink=ORI&cooper=NAVER",
+   "published": "2026-09-02 07:40",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "채권시장 약세 지속…30년물 입찰 부진에 초장기물 수요 회복 안돼",
+   "url": "http://mbnmoney.mbn.co.kr/news/view?news_no=MM1005913277",
+   "published": "2026-09-02 07:40",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[마켓 프리뷰] 코스피, 연이틀 강보합 마감…기타법인 자사주 매입 방어",
+   "url": "https://biz.sbs.co.kr/article_hub/20000332189?division=NAVER",
+   "published": "2026-09-02 07:38",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "하나금융지주, 환율 하락에 실적·주주환원 ‘레벨업’-신한",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=02512486645576184&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "published": "2026-09-02 07:38",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "미·이란 무력 충돌 격화에 유가·금리 급등…뉴욕증시 일제히 하락",
+   "url": "https://www.ziksir.com/news/articleView.html?idxno=145043",
+   "published": "2026-09-02 07:34",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "35억달러 미디어텍 채권, 엔비디아가 사들였다",
+   "url": "https://www.tokenpost.kr/news/ai/401722",
+   "published": "2026-09-02 07:32",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
   {
    "title": "[키-리포트] 신한 \"하나금융지주, 은행업종 최선호주…목표가↑\"",
    "url": "http://www.newsdream.kr/news/articleView.html?idxno=117290",
@@ -190,14 +262,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "한물 간 줄 알았는데… 일본 시계株 200% 급등 비결 [왕개미연구소]",
-   "url": "https://www.chosun.com/economy/economy_general/2026/09/02/ZJXNA4YSSZDP5PX3OUB5F7U2DM/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
-   "published": "2026-09-02 07:28",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "[채권/외환] 미·이란 충돌에 美 국채금리 급등…10년물 20개월 최고, 달...",
    "url": "https://www.newspim.com/news/view/20260902000058",
    "published": "2026-09-02 07:27",
@@ -206,16 +270,16 @@
    "watchlist_hits": []
   },
   {
-   "title": "뉴욕증시, 중동교전ㆍ유가 급등ㆍ채권 매도세에 하락⋯나스닥 1%↓[종합...",
-   "url": "https://www.etoday.co.kr/news/view/2620742",
+   "title": "日 30년 만에 3%·美 10년물 4.8% 육박…글로벌 국채금리 '도미노' 급등",
+   "url": "http://www.newsian.co.kr/news/articleView.html?idxno=94623",
    "published": "2026-09-02 07:26",
-   "topic": "반도체",
+   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "日 30년 만에 3%·美 10년물 4.8% 육박…글로벌 국채금리 '도미노' 급등",
-   "url": "http://www.newsian.co.kr/news/articleView.html?idxno=94623",
+   "title": "뉴욕증시, 중동교전ㆍ유가 급등ㆍ채권 매도세에 하락⋯나스닥 1%↓[종합...",
+   "url": "https://www.etoday.co.kr/news/view/2620742",
    "published": "2026-09-02 07:26",
    "topic": "금융",
    "ticker_prices": [],
@@ -230,22 +294,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "뉴욕증시, 미·이란 교전 재개에 하락 다우 0.8%·나스닥 1.03%↓...국제유...",
-   "url": "https://www.public25.com/news/articleView.html?idxno=53853",
-   "published": "2026-09-02 07:22",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "뉴욕증시 9월 첫날 하락…나스닥 1.03%↓",
-   "url": "https://www.vegannews.co.kr/news/article.html?no=385665",
-   "published": "2026-09-02 07:22",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "[뉴욕환시] 달러 상승…美·이란 연쇄 보복전에 유가 급등",
    "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4432980",
    "published": "2026-09-02 07:22",
@@ -254,18 +302,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "[마켓 브리핑] 전 세계적 국채 매도세 확대…유가 상승에 인플레 우려",
-   "url": "https://biz.sbs.co.kr/article_hub/20000332188?division=NAVER",
-   "published": "2026-09-02 07:19",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "미국증시, 중동 긴장에 유가·금리 급등…나스닥 1%↓ 엔비디아·반도체...",
    "url": "https://www.topstarnews.net/news/articleView.html?idxno=16179958",
    "published": "2026-09-02 07:10",
-   "topic": "반도체",
+   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -274,14 +314,6 @@
    "url": "https://biz.sbs.co.kr/article_hub/20000332186?division=NAVER",
    "published": "2026-09-02 07:09",
    "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[오늘의 이슈]물가 3%대 복귀, 미 금리도 갈림길",
-   "url": "http://www.newskr.kr/news/articleView.html?idxno=106039",
-   "published": "2026-09-02 07:06",
-   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -302,34 +334,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "잘나가던 증권업계 셈법 복잡…채권운용·조달비용 '변수'",
-   "url": "https://www.newsway.co.kr/news/view?ud=2026090110561410245",
-   "published": "2026-09-02 07:02",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "[김형석의 프리Zoom] 리보세라닙의 시간, HLB의 딜레마",
    "url": "https://www.bloter.net/news/articleView.html?idxno=672042",
    "published": "2026-09-02 07:00",
    "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[Who Is ?] 신현송 한국은행 총재",
-   "url": "https://www.businesspost.co.kr/BP?command=article_view&num=445247",
-   "published": "2026-09-02 07:00",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "국채 사줄 사람 만드는 미국…다음 불안은 크레딧 시장[클릭e시장]",
-   "url": "https://view.asiae.co.kr/article/2026090122390424519",
-   "published": "2026-09-02 07:00",
-   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -433,14 +441,6 @@
    "title": "SK하이닉스·삼성전자에 거래대금 8.6조 몰렸다",
    "url": "http://www.kjdaily.com/article.php?aid=1788274801685682227",
    "published": "2026-09-02 00:02",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "‘따따상’ 축포도 이젠 옛말…얼어붙은 IPO 시장 [투자360]",
-   "url": "https://biz.heraldcorp.com/article/10859045?ref=naver",
-   "published": "2026-09-01 22:41",
    "topic": "증시",
    "ticker_prices": [],
    "watchlist_hits": []
