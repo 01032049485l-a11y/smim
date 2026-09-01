@@ -3,14 +3,14 @@
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-0901",
  "issue_no": 37,
- "published_at": "2026-09-01T09:29:39+09:00",
+ "published_at": "2026-09-01T09:47:12+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CebmsqLehQUFpLViXKFbE'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CeboDU3uWMSvE6kawqjdh'}",
   "consecutive_failure_days": 28
  },
  "models": {
@@ -106,12 +106,13 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1364.4,
-    "change": -12.71,
-    "change_pct": -0.92,
+    "value": 1370.08,
+    "change": -10.37,
+    "change_pct": -0.75,
     "trend": "down",
     "trend_label": "하락세",
     "series": [
+     1479.72,
      1475.63,
      1474.04,
      1458.01,
@@ -139,8 +140,7 @@
      1381.49,
      1383.49,
      1380.45,
-     1377.11,
-     1364.4
+     1370.08
     ]
    }
   ],
@@ -157,26 +157,138 @@
  "rejected": [],
  "newsroom": [
   {
-   "title": "코스피 6700선 하락 출발···美·이란 충돌에 유가·금리 '껑충'",
-   "url": "https://www.ezyeconomy.com/news/articleView.html?idxno=239197",
-   "published": "2026-09-01 09:28",
+   "title": "코스피, 중동 리스크에 6700선 하락 출발…코스닥 동반 약세",
+   "url": "http://www.inews24.com/view/2000402",
+   "published": "2026-09-01 09:45",
    "topic": "증시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "삼성 KODEX, 하반기 신규 상장 ETF 개인 순매수 92.2% 독식",
-   "url": "http://www.newsdream.kr/news/articleView.html?idxno=117237",
-   "published": "2026-09-01 09:28",
+   "title": "코스피, 중동 긴장 재고조에 6,780대 약세…코스닥 1%대↓(종합)",
+   "url": "https://www.yna.co.kr/view/AKR20260901053100008?input=1195m",
+   "published": "2026-09-01 09:43",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "“금리가 변수” 코스피 오를까",
+   "url": "https://magazine.hankyung.com/business/article/202609015389b",
+   "published": "2026-09-01 09:43",
+   "topic": "바이오",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "“금리 오를 때는 이런 주식 사라”…증권가가 꼽은 ‘고금리에도 잘 버...",
+   "url": "https://www.sedaily.com/article/20085599?ref=naver",
+   "published": "2026-09-01 09:42",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "유가 & JGB 금리 '상승' 속...한국·일본·호주증시 '하락 출발'",
-   "url": "http://www.choicenews.co.kr/news/articleView.html?idxno=170777",
-   "published": "2026-09-01 09:28",
+   "title": "코스피, 외국인·기관 동반 매도에 6780선 후퇴…반도체 약세",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=482476",
+   "published": "2026-09-01 09:40",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[위클리오늘] 코스피 6700선 하락 출발···유가 2%대 급등",
+   "url": "http://www.weeklytoday.com/news/articleView.html?idxno=792393",
+   "published": "2026-09-01 09:40",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "코스피, 소폭 하락하며 6,700선에서 출발‥코스닥도 하락",
+   "url": "https://imnews.imbc.com/news/2026/econo/article/6848743_36932.html",
+   "published": "2026-09-01 09:40",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "양극재 이어 CNT까지… LG화학, 배터리 핵심 소재 체질 개선 성과 빛났다",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=482477",
+   "published": "2026-09-01 09:40",
    "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "코스피, 외인 이탈에 6700대로 하락… 코스닥도 약세",
+   "url": "https://news.mtn.co.kr/news-detail/2026090109365666921",
+   "published": "2026-09-01 09:38",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "美 금리·유가 상승 부담…삼전 1%대↓·SK하닉 보합권[핫종목]",
+   "url": "https://www.news1.kr/finance/market-exr/6275672",
+   "published": "2026-09-01 09:38",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[특징주] 한울반도체, AI 검사장비 '정확도 98%' 달성 소식에 장 초반 상...",
+   "url": "https://www.widedaily.com/news/articleView.html?idxno=300361",
+   "published": "2026-09-01 09:38",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[이 시각 시황] 9월 증시 ‘먹구름’…외국인·기관 동반 매도",
+   "url": "https://biz.sbs.co.kr/article_hub/20000331901?division=NAVER",
+   "published": "2026-09-01 09:37",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "유가·장기금리 부담에 코스피 0.5%대 약세 … 삼전 ↓ 닉스 ↑",
+   "url": "https://biz.newdaily.co.kr/site/data/html/2026/09/01/2026090100075.html",
+   "published": "2026-09-01 09:36",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "코스피, 중동 긴장 재고조에 6700선으로 밀려...반도체주 약세",
+   "url": "https://www.greened.kr/news/articleView.html?idxno=348894",
+   "published": "2026-09-01 09:35",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "TPG 품에 안긴 롯데렌탈, 달러채 데뷔전 나선다…한국물 시장서 시험대",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4432789",
+   "published": "2026-09-01 09:34",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "국제유가 상승 속 코스피 하락 출발 6700선…코스닥 약보합",
+   "url": "https://www.nocutnews.co.kr/news/6571055?utm_source=naver&utm_medium=article&utm_campaign=20260901092915",
+   "published": "2026-09-01 09:30",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "삼성바이오로직스, '폴리펩타이드그룹 인수 작업' 착수...2.7조 공개 매수",
+   "url": "https://www.moneystorm.kr/news/articleView.html?idxno=6111",
+   "published": "2026-09-01 09:29",
+   "topic": "바이오",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -189,26 +301,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "코스피, 美 금리·유가 부담에 1%대 약세…6800선 아래로",
-   "url": "https://www.g-enews.com/view.php?ud=202609010919592324923c501012_1",
-   "published": "2026-09-01 09:26",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "'증시 개장 시황은?'",
-   "url": "https://www.newspim.com/news/view/20260901000234",
-   "published": "2026-09-01 09:26",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "코스피, 외인·기관 매도에 1% 가까이 하락…6750선 후퇴",
-   "url": "https://news.tf.co.kr/read/economy/2360177.htm",
-   "published": "2026-09-01 09:22",
-   "topic": "증시",
+   "title": "유가 & JGB 금리 '상승' 속...한국·일본·호주증시 '하락 출발'",
+   "url": "http://www.choicenews.co.kr/news/articleView.html?idxno=170777",
+   "published": "2026-09-01 09:28",
+   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -216,7 +312,7 @@
    "title": "커지는 한·미 '통화긴축' 우려…증권가가 주목한 금리 방어주는?",
    "url": "https://www.g-enews.com/view.php?ud=202609010919545712153ddfb15a_1",
    "published": "2026-09-01 09:22",
-   "topic": "반도체",
+   "topic": "바이오",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -225,70 +321,6 @@
    "url": "https://www.bntnews.co.kr/article/view/bnt202609010057",
    "published": "2026-09-01 09:22",
    "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "신한운용 'SOL 200타겟위클리커버드콜 ETF' 8월 분배금 168원",
-   "url": "https://www.newspim.com/news/view/20260901000192",
-   "published": "2026-09-01 09:21",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[개장시황]코스피, 하락 출발해 6,700대로…삼성전자·SK하이닉스 약세",
-   "url": "https://www.namdonews.com/news/articleView.html?idxno=921854",
-   "published": "2026-09-01 09:20",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "“부르는 게 값” MLCC·기판 쌍끌이 호황…삼성전기 목표가 ‘200만원’...",
-   "url": "https://www.mk.co.kr/article/12140949",
-   "published": "2026-09-01 09:20",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "코스피 톱10, ‘조방원’ 밀려나고 반도체 싹쓸이",
-   "url": "https://www.chosun.com/economy/money/2026/09/01/HFV7LUZYNBAJHMFRMPUABTEHQE/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
-   "published": "2026-09-01 09:20",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "중동 긴장·워시 매파 발언에…3대 지수 일제히 하락 [뉴욕증시]",
-   "url": "https://www.mk.co.kr/article/12140948",
-   "published": "2026-09-01 09:19",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[개장 시황] 코스피, 하락 출…미·이란 교전 재개로 유가 급등",
-   "url": "http://www.fieldnews.kr/news/articleView.html?idxno=31173",
-   "published": "2026-09-01 09:18",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "국내 증시 하락 출발",
-   "url": "https://www.newsis.com/view/NISI20260901_0021417932",
-   "published": "2026-09-01 09:17",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "코스피, 금리·유가 부담에 6700선 약세…삼전·SK하닉↓",
-   "url": "https://www.dt.co.kr/article/12081312?ref=naver",
-   "published": "2026-09-01 09:17",
-   "topic": "증시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -309,14 +341,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "키움증권 \"한은 10월 건너뛰고 11월 금리 인상, 내년 최종금리 3.5% 예상...",
-   "url": "https://www.businesspost.co.kr/BP?command=article_view&num=446050",
-   "published": "2026-09-01 09:08",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "[속보] HLB그룹주, 9월 첫 장 초반부터 '껑충'…HLB제약 18%대 급등",
    "url": "https://www.cbci.co.kr/news/articleView.html?idxno=602724",
    "published": "2026-09-01 09:06",
@@ -328,15 +352,7 @@
    "title": "은행주, 韓 두달 연속 금리 인상, 美 연준 ‘매파적’ 기조에 강세",
    "url": "https://www.chosun.com/economy/money/2026/09/01/LROISAI325DCLA4DLVQJORDCHI/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
    "published": "2026-09-01 09:04",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "10월로 밀린 관가 '운명의 날'…시중은행도 '눈치보기'",
-   "url": "https://dealsite.co.kr/articles/168023",
-   "published": "2026-09-01 09:02",
-   "topic": "금융",
+   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -389,30 +405,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "[오늘의 이슈] 세제개편안, 오늘 국무회의서 확정된다",
-   "url": "http://www.newskr.kr/news/articleView.html?idxno=105991",
-   "published": "2026-09-01 08:44",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[AI MY 증시전망] 코스피, 美 증시 약세에도 반도체 훈풍…전약후강 전...",
-   "url": "https://www.newspim.com/news/view/20260901000082",
-   "published": "2026-09-01 08:43",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[외환] 매파 워시 되돌림에 1,360원 후반대",
-   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4432758",
-   "published": "2026-09-01 08:36",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "[기업이슈] SK온, 美 ESS 대규모 수주에…2차전지 관련주 강세",
    "url": "https://biz.sbs.co.kr/article_hub/20000331899?division=NAVER",
    "published": "2026-09-01 08:28",
@@ -425,14 +417,6 @@
    "url": "https://www.newsquest.co.kr/news/articleView.html?idxno=272620",
    "published": "2026-09-01 08:16",
    "topic": "2차전지",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[초개인화 의료 시대] ⑩ 정밀 의료 '삽과 곡괭이' 장비 원톱 다나허",
-   "url": "https://www.newspim.com/news/view/20260831000605",
-   "published": "2026-09-01 08:01",
-   "topic": "바이오",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -472,6 +456,22 @@
    "title": "[뉴욕증시] '미-이란 교전 재개'에 하락…8월 전체로는 상승",
    "url": "https://www.fnnews.com/news/202609010528256643",
    "published": "2026-09-01 05:32",
+   "topic": "자동차",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "솔라루프 사업 접은 테슬라…주가엔 득 될까",
+   "url": "https://www.g-enews.com/view.php?ud=2026083118261934479a1f309431_1",
+   "published": "2026-09-01 03:02",
+   "topic": "자동차",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[주식마감] 뚜렷한 호재 없이 코스닥 상한가 종목 '속출'... 강동씨앤엘...",
+   "url": "https://www.ggilbo.com/news/articleView.html?idxno=1178719",
+   "published": "2026-08-31 19:40",
    "topic": "자동차",
    "ticker_prices": [],
    "watchlist_hits": []
