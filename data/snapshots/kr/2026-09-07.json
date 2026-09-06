@@ -2,15 +2,15 @@
  "date": "2026-09-07",
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-0907",
- "issue_no": 40,
- "published_at": "2026-09-07T07:05:47+09:00",
+ "issue_no": 41,
+ "published_at": "2026-09-07T07:15:02+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cenwm1we61toaVJcFGGk2'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CenxTvtg3mirABmztR1TM'}",
   "consecutive_failure_days": 32
  },
  "models": {
