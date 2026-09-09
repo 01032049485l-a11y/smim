@@ -3,14 +3,14 @@
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-0909",
  "issue_no": 43,
- "published_at": "2026-09-09T08:50:56+09:00",
+ "published_at": "2026-09-09T09:28:31+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CersPuwwa67NJfDb65LHt'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CervG7oCs8k8NaQPxxYBX'}",
   "consecutive_failure_days": 34
  },
  "models": {
@@ -106,13 +106,12 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1340.1,
-    "change": -3.47,
-    "change_pct": -0.26,
+    "value": 1340.18,
+    "change": -3.39,
+    "change_pct": -0.25,
     "trend": "down",
     "trend_label": "하락세",
     "series": [
-     1442.28,
      1420.6,
      1435.7,
      1428.5,
@@ -141,7 +140,7 @@
      1355.41,
      1345.06,
      1343.57,
-     1340.1
+     1340.18
     ]
    }
   ]
@@ -152,10 +151,226 @@
  "rejected": [],
  "newsroom": [
   {
-   "title": "AWS, 퀄컴과 최대 600억달러 'AI 칩 동맹'… 엔비디아 빈틈 노린다",
-   "url": "https://www.financialpost.co.kr/news/articleView.html?idxno=274629",
-   "published": "2026-09-09 08:50",
+   "title": "[서울데이터랩] 코스닥, 장 초반 1.71% 올라 825.77…반도체·장비주 강세",
+   "url": "https://www.seoul.co.kr/news/economy/securities/2026/09/09/20260909500040?wlog_tag3=naver",
+   "published": "2026-09-09 09:27",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[서울데이터랩]코스피, 장초반 7000선 회복 시도…반도체 강세에 7009.45까...",
+   "url": "https://www.seoul.co.kr/news/economy/2026/09/09/20260909500038?wlog_tag3=naver",
+   "published": "2026-09-09 09:27",
    "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "퀄컴·아마존, 80조원 AI칩 동맹…스마트폰 넘어 데이터센터 공략",
+   "url": "https://biz.heraldcorp.com/article/10867194?ref=naver",
+   "published": "2026-09-09 09:27",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "한양증권, 우량채권 4종 특판···최고 연 4.8% 수익률",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=02988086645578480&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "published": "2026-09-09 09:27",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "코스피, 국제유가 급등에도 6990선 상승 출발",
+   "url": "https://www.smartbizn.com/news/articleView.html?idxno=153396",
+   "published": "2026-09-09 09:26",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "코스피, 1%대 상승 속 7000 공방전...개인·기타법인 순매수",
+   "url": "http://www.opinionnews.co.kr/news/articleView.html?idxno=144173",
+   "published": "2026-09-09 09:26",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[오늘 금시세] 금 한돈 70만7663원…하루 새 9225원 하락",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16187435",
+   "published": "2026-09-09 09:26",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "코스피, 중동 정세 불안에도 7000선 회복…미국發 반도체 훈풍에 강보합",
+   "url": "https://news.tf.co.kr/read/economy/2363630.htm",
+   "published": "2026-09-09 09:25",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "코스피, 美 반도체주 강세에 상승 출발…'7천피' 안착 시도(종합)",
+   "url": "https://www.yna.co.kr/view/AKR20260909039551008?input=1195m",
+   "published": "2026-09-09 09:24",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "美 증시 약세에도 코스피 상승 출발…7000선 안착 시도[개장시황]",
+   "url": "https://www.newsway.co.kr/news/view?ud=2026090909190845073",
+   "published": "2026-09-09 09:24",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "코스피, 장 초반 7000선 재탈환…코스닥 1%대 상승",
+   "url": "http://www.newskr.kr/news/articleView.html?idxno=106216",
+   "published": "2026-09-09 09:24",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[뉴욕 마켓 브리핑](9일)",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4434029",
+   "published": "2026-09-09 09:24",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "하나증권 \"'메가프로젝트' 전력수요에 원전 확충 필요성 커져, 관심주 두...",
+   "url": "https://www.businesspost.co.kr/BP?command=article_view&num=446724",
+   "published": "2026-09-09 09:24",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "장초반..OIL '급등', 코스피·N225·AXJO '혼조', 엔화 '절상'",
+   "url": "http://www.choicenews.co.kr/news/articleView.html?idxno=171092",
+   "published": "2026-09-09 09:24",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "코스피, 장 초반 상승 출발…7000선 재탈환",
+   "url": "http://www.newstomato.com/ReadNews.aspx?no=1313040&inflow=N",
+   "published": "2026-09-09 09:22",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "퇴직연금에 국채 담는다…은행권 장기 고객 유치전 본격화",
+   "url": "https://www.news2day.co.kr/article/20260909500075",
+   "published": "2026-09-09 09:22",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "비트코인 7.8만달러 하락…\"기관 숏커버링에 반등 여력\"[코인브리핑]",
+   "url": "https://www.news1.kr/finance/blockchain-fintech/6284458",
+   "published": "2026-09-09 09:22",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[굿모닝! 금융지식] 증권사 실적, 코스피만 보면 안 된다…돈 버는 구조...",
+   "url": "https://www.goodkyung.com/news/articleView.html?idxno=291162",
+   "published": "2026-09-09 09:22",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "미·중동 악재 뚫은 '반도체 훈풍'…코스피 7,000선 안착 시도",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4434028",
+   "published": "2026-09-09 09:22",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "\"회사채 발행기업은 빚 줄이는데…공공기관은 늘려\"<하나證>",
+   "url": "https://www.news2day.co.kr/article/20260909500077",
+   "published": "2026-09-09 09:22",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "엔화 환율 급락에 불거진 ‘엔 캐리 청산’ 우려…증권가 “2024년 같은...",
+   "url": "https://www.chosun.com/economy/money/2026/09/09/S3JML3POD5DNHK336QXXWTI6GE/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
+   "published": "2026-09-09 09:21",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "코스피 지수, 장 초반 7000선 재돌파…삼전·SK하닉 강세",
+   "url": "https://www.etoday.co.kr/news/view/2623419",
+   "published": "2026-09-09 09:20",
+   "topic": "바이오",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[오늘 금시세]유가 뛰자 금값은 '뚝'…국내 금 1.55% 하락",
+   "url": "https://www.namdonews.com/news/articleView.html?idxno=922774",
+   "published": "2026-09-09 09:20",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[모닝 리포트] \"동아쏘시오홀딩스, 동아제약 합병으로 주주환원 여력 확...",
+   "url": "https://www.newspim.com/news/view/20260909000103",
+   "published": "2026-09-09 09:11",
+   "topic": "바이오",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "금시세(금값)",
+   "url": "https://www.bntnews.co.kr/article/view/bnt202609090048",
+   "published": "2026-09-09 09:10",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "달러-원 1개월물 NDF 1,339.60원, 5.65원 하락",
+   "url": "https://www.tokenpost.kr/news/economy/404677",
+   "published": "2026-09-09 09:10",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "장중 1,336.90원까지 내린 달러·원, 엔화 강세",
+   "url": "https://www.tokenpost.kr/news/economy/404671",
+   "published": "2026-09-09 09:04",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[AI MY 증시전망] 코스피, 유가·금리 부담에 약세 전망",
+   "url": "https://www.newspim.com/news/view/20260909000095",
+   "published": "2026-09-09 09:04",
+   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -164,30 +379,6 @@
    "url": "https://new.dailypharm.com/user/news/342287?REFERER=NP",
    "published": "2026-09-09 08:50",
    "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "엔비디아 후퇴할 때…유가 급등장 속 살아남은 '이 주식'",
-   "url": "https://www.wikitree.co.kr/articles/1158226",
-   "published": "2026-09-09 08:48",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "한양증권, 리테일 채권 4종 특판…\"최고 연 4.8% 수익률\"",
-   "url": "http://www.newsdream.kr/news/articleView.html?idxno=117738",
-   "published": "2026-09-09 08:46",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[모닝 리포트] \"코스피 7000선 재도전, 중동·CPI 경계에 숨 고르기\"",
-   "url": "https://www.newspim.com/news/view/20260909000082",
-   "published": "2026-09-09 08:45",
-   "topic": "증시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -203,7 +394,7 @@
    "title": "NDF, 1339.40/ 1,339.80원…5.65원↓",
    "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4434005",
    "published": "2026-09-09 08:44",
-   "topic": "금융",
+   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -216,129 +407,9 @@
    "watchlist_hits": []
   },
   {
-   "title": "한양증권, 우량채권 4종 특판...최고 연 4.8% 수익률",
-   "url": "https://www.smarttoday.co.kr/ko-kr/articles/111349",
-   "published": "2026-09-09 08:42",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "[어제장 오늘장] 7천피의 벽 높았다…장 막판 '와르르', 오늘은 반등할...",
    "url": "https://biz.sbs.co.kr/article_hub/20000333544?division=NAVER",
    "published": "2026-09-09 08:41",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[마켓 프리뷰] 중동발 긴장에 뉴욕증시 하락…코스피 7000선 돌파 주목",
-   "url": "https://www.ajunews.com/view/20260909083527191",
-   "published": "2026-09-09 08:40",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "삼성전자 오너일가 주식가치 첫 100조 돌파…이재용 47조 '1위'",
-   "url": "http://www.inews24.com/view/2003500",
-   "published": "2026-09-09 08:39",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "노바티스, 펠라카르센 임상 결과 부진에 14% 하락 [뉴욕증시 무버]",
-   "url": "https://www.etoday.co.kr/news/view/2623362",
-   "published": "2026-09-09 08:38",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "‘오늘은 뚫을까’ 유가 100달러 육박에도 美반도체는 훈풍…‘칠천피...",
-   "url": "https://biz.heraldcorp.com/article/10867063?ref=naver",
-   "published": "2026-09-09 08:38",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "하이닉스 프리마켓 1%대 상승… 코스피, 7000선 안착 재도전 [이런국장 ...",
-   "url": "https://www.sedaily.com/article/20088715?ref=naver",
-   "published": "2026-09-09 08:36",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[국제금융 브리핑] 베센트 국채 바이백 확대론에 브렌트유 97.92달러...중...",
-   "url": "https://www.tokenpost.kr/news/economy/404645",
-   "published": "2026-09-09 08:34",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[외환] 엔화 강세 지속에 1,340원 초반대 마감",
-   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4434002",
-   "published": "2026-09-09 08:32",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[티슈진發 코오롱 재무변동성]⑤티슈진 주가하락, 담보로 번졌다…이웅...",
-   "url": "http://www.press9.kr/news/articleView.html?idxno=82396",
-   "published": "2026-09-09 08:30",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "주도주 장세 당분간 어려워...\"실적주 트레이딩·반도체 중장기 투자 유...",
-   "url": "http://www.joseilbo.com/news/news_read.php?uid=575322&class=53&grp=",
-   "published": "2026-09-09 08:21",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[오늘의 투자전략 ]美 중동 불안에 흔들…코스피 7000선 공방 전망",
-   "url": "https://www.etoday.co.kr/news/view/2623360",
-   "published": "2026-09-09 08:20",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[굿모닝 마켓] 국제유가 연일 상승세…배럴당 100달러 부근 터치",
-   "url": "https://biz.sbs.co.kr/article_hub/20000333542?division=NAVER",
-   "published": "2026-09-09 08:20",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[박정식의 국내 주식시황] 반도체 섹터 긍정적 투심 유지 될 모습으로 ...",
-   "url": "https://www.newsquest.co.kr/news/articleView.html?idxno=300517",
-   "published": "2026-09-09 08:18",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[뉴욕마켓워치] 결국 하르그섬까지 공격당했다…주식·채권·달러↓",
-   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4433992",
-   "published": "2026-09-09 08:18",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "국제유가 반등 VS 반도체 수급…환율 1340원대서 눈치보기[외환브리핑]",
-   "url": "https://www.edaily.co.kr/News/Read?newsId=02751926645578480&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-   "published": "2026-09-09 08:14",
    "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
@@ -348,30 +419,6 @@
    "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4433987",
    "published": "2026-09-09 08:02",
    "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[애프터마켓 리뷰] 미 원전 건설 기대에 한전기술 등 원전주 급등",
-   "url": "https://biz.sbs.co.kr/article_hub/20000333522?division=NAVER",
-   "published": "2026-09-09 07:52",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[마켓 프리뷰] 뒷심 부족했던 코스피, 금리·유가에 막판 하락 전환",
-   "url": "https://biz.sbs.co.kr/article_hub/20000333519?division=NAVER",
-   "published": "2026-09-09 07:28",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[KFT 모닝 브리프] 2026.09.09 — 오늘 꼭 알아야 할 국내외 경제·시장 ...",
-   "url": "https://www.fntimes.com/html/view.php?ud=202609090705006156141825007d_18",
-   "published": "2026-09-09 07:20",
-   "topic": "증시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -387,14 +434,6 @@
    "title": "[뉴욕증시] 중동발 유가 급등에 인플레 우려…3대 지수 일제히 하락, 다...",
    "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1723509",
    "published": "2026-09-09 07:02",
-   "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "美 정부, 양자컴 3사에 3억 달러 투자 및 지분 확보…관련주 일제히 급...",
-   "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202609090218&t=NN",
-   "published": "2026-09-09 06:55",
    "topic": "바이오",
    "ticker_prices": [],
    "watchlist_hits": []
@@ -428,46 +467,6 @@
    "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=485098",
    "published": "2026-09-08 16:38",
    "topic": "2차전지",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[거래소 기관] 삼성전자에 몰린 뭉칫돈…두산에너빌리티·현대건설도 샀...",
-   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=485076",
-   "published": "2026-09-08 16:06",
-   "topic": "2차전지",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "글로벌 셀 제조사 러브콜…이노메트리, X-ray 검사장비 수주 모멘텀 탄...",
-   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=485033",
-   "published": "2026-09-08 15:00",
-   "topic": "2차전지",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "'원화 강세'에 발길 돌린 외국인, 반도체 다음 타깃은?",
-   "url": "https://www.g-enews.com/view.php?ud=202609081413517985153ddfb15a_1",
-   "published": "2026-09-08 14:16",
-   "topic": "2차전지",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "'EV 캐즘' 넘은 2차전지, ESS 날개 달고 증시 주도주 복귀 시동",
-   "url": "https://www.widedaily.com/news/articleView.html?idxno=300747",
-   "published": "2026-09-08 11:34",
-   "topic": "2차전지",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[단독] 고량주 만들던 中 우량예, 전고체배터리 핵심 소재 만든다",
-   "url": "https://www.theguru.co.kr/news/article.html?no=106787",
-   "published": "2026-09-08 11:08",
-   "topic": "자동차",
    "ticker_prices": [],
    "watchlist_hits": []
   }
