@@ -2,15 +2,15 @@
  "date": "2026-09-17",
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-0917",
- "issue_no": 48,
- "published_at": "2026-09-17T07:51:51+09:00",
+ "issue_no": 49,
+ "published_at": "2026-09-17T08:11:10+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf7wMte2qTA2AmW8JdWhU'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf7xqMVRtHQPf6SGnSoj8'}",
   "consecutive_failure_days": 40
  },
  "models": {
@@ -106,9 +106,9 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1377.22,
-    "change": 13.65,
-    "change_pct": 1.0,
+    "value": 1377.31,
+    "change": 13.74,
+    "change_pct": 1.01,
     "trend": "up",
     "trend_label": "상승세",
     "series": [
@@ -141,7 +141,7 @@
      1344.64,
      1345.61,
      1363.57,
-     1377.22
+     1377.31
     ]
    }
   ],
@@ -163,42 +163,178 @@
  ],
  "newsroom": [
   {
-   "title": "\"인플레 너무 높고 너무 오래됐다\"...워시 매파발언에 뉴욕증시 하락…...",
-   "url": "http://www.newsroad.co.kr/news/articleView.html?idxno=64473",
-   "published": "2026-09-17 07:50",
+   "title": "[증시전망대] \"매파 워시 쇼크\" 여진 속 코스피, 변동성 확대 불가피",
+   "url": "http://www.newsroad.co.kr/news/articleView.html?idxno=64481",
+   "published": "2026-09-17 08:10",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "[3분증시] 뉴욕증시, 美 금리 인상·추가 긴축 우려에 하락",
-   "url": "http://www.yonhapnewstv.co.kr/news/MYH20260917074921hJq",
-   "published": "2026-09-17 07:50",
+   "title": "3년2개월 만에 금리 올린 연준…뉴욕증시 일제히 하락[투자360]",
+   "url": "https://biz.heraldcorp.com/article/10876276?ref=naver",
+   "published": "2026-09-17 08:09",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "[미국 뉴욕증시] 연준 기준금리 인상·워시 매파 발언에 다우존스·S&P50...",
-   "url": "https://www.lecturernews.com/news/articleView.html?idxno=210710",
-   "published": "2026-09-17 07:50",
+   "title": "연준이 다시 밀어올린 달러… 원/달러, 1380원선 넘본다",
+   "url": "http://www.the-biz.co.kr/news/articleView.html?idxno=727991",
+   "published": "2026-09-17 08:08",
    "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "교보생명, 보험 넘어 금융·디지털로 외연 확장",
-   "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=865738",
-   "published": "2026-09-17 07:50",
+   "title": "연준 3년2개월 만에 금리 인상…한은도 긴축 동참할까",
+   "url": "https://www.pointe.co.kr/news/articleView.html?idxno=84858",
+   "published": "2026-09-17 08:08",
    "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "AI '감속론'에 中 A주 기술주 촉각, \"AI 투자 종목 선별이 관건\"",
-   "url": "https://www.newspim.com/news/view/20260917000051",
-   "published": "2026-09-17 07:49",
+   "title": "美 3년 만에 금리 올려 '긴축'···한은 11월 금리 인상 압력",
+   "url": "https://www.newsfreezone.co.kr/news/articleView.html?idxno=709782",
+   "published": "2026-09-17 08:08",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "'연준 금리인상' 뉴욕증시 상승…다우 1%↓",
+   "url": "http://www.smedaily.co.kr/news/articleView.html?idxno=363353",
+   "published": "2026-09-17 08:06",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "연준 금리 인상에 뉴욕증시 하락…다우 1.2%↓",
+   "url": "https://www.econovill.com/news/articleView.html?idxno=751058",
+   "published": "2026-09-17 08:06",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "美금리 인상 확정…한은도 '11월 추가 인상'에 무게",
+   "url": "https://www.sisajournal.com/news/articleView.html?idxno=387502",
+   "published": "2026-09-17 08:06",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[마켓뷰] 코스피, 美 매파적 금리인상에 변동성 확대 전망",
+   "url": "https://www.yna.co.kr/view/AKR20260917025000008?input=1195m",
+   "published": "2026-09-17 08:05",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[증시키워드] SK하이닉스, 인텔과 메모리 생산 검토⋯삼성전자 ITC 조사...",
+   "url": "https://www.etoday.co.kr/news/view/2626512",
+   "published": "2026-09-17 08:04",
    "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[속보] 삼전 0.39%·닉스 0.57%↓ … 美 연준 금리인상에 프리마켓서 '주...",
+   "url": "https://biz.newdaily.co.kr/site/data/html/2026/09/17/2026091700039.html",
+   "published": "2026-09-17 08:04",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[V차트] KB금융, 3Q 호실적 전망...주주환원 여력 확대",
+   "url": "https://www.itooza.com/common/iview.php?no=2026091513185699581",
+   "published": "2026-09-17 08:04",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "워시發'금리 인상 뉴노멀'에 즉각 화답...美대형은행 일제히 우대금리 ...",
+   "url": "https://www.financialpost.co.kr/news/articleView.html?idxno=276063",
+   "published": "2026-09-17 08:04",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "“LG디스플레이, 환율·수요 부담…3분기 수익성 체질은 개선” 목표가...",
+   "url": "https://www.mk.co.kr/article/12154979",
+   "published": "2026-09-17 08:03",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "연준 3년 만에 금리 인상... 워시 매파 발언에 다우 1.21%↓ [뉴욕증시]",
+   "url": "https://www.m-i.kr/news/articleView.html?idxno=1415109",
+   "published": "2026-09-17 08:02",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "美금리 올라도 코스피는 9% 뛰었다…“인상보다 이익 체력 봐야”",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=02551846645581104&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "published": "2026-09-17 08:02",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "시장금리 상승에 발행어음 금리도 ‘껑충’...증권업계, 발행어음 특판...",
+   "url": "https://www.youthdaily.co.kr/news/article.html?no=227172",
+   "published": "2026-09-17 08:00",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "미국 긴축 전환에 한국은행도 연내 추가 기준금리 인상 가능성…11월 유...",
+   "url": "https://www.lecturernews.com/news/articleView.html?idxno=210713",
+   "published": "2026-09-17 08:00",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "'매파 본색' 워시… 연준, 백악관 압박 뚫고 3년 만에 첫 금리 인상",
+   "url": "http://www.newsroad.co.kr/news/articleView.html?idxno=64474",
+   "published": "2026-09-17 08:00",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "美 연준 3년 만에 긴축 전환…한은, 연내 추가 금리인상 압박",
+   "url": "https://www.newsis.com/view/NISX20260917_0003792938",
+   "published": "2026-09-17 08:00",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "8조원 ‘빅딜’ 발표 전 주식 샀다…에이비엘바이오, 대표 가족까지 조...",
+   "url": "https://www.geconomy.co.kr/news/article.html?no=323770",
+   "published": "2026-09-17 07:58",
+   "topic": "바이오",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[애프터마켓 리뷰] 비나텍, 블룸에너지 내 독점 지위 '확고'",
+   "url": "https://biz.sbs.co.kr/article_hub/20000335138?division=NAVER",
+   "published": "2026-09-17 07:51",
+   "topic": "증시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -211,110 +347,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "원·달러 환율, 1376.47원…달러 강세에 상승 압력 지속 전망",
-   "url": "http://www.joseilbo.com/news/news_read.php?uid=575851&class=18&grp=",
-   "published": "2026-09-17 07:48",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "LG디스플레이, 3분기 흑자전환에도 기대치 하회…목표가 29%↓-대신",
-   "url": "https://www.edaily.co.kr/News/Read?newsId=02515766645581104&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-   "published": "2026-09-17 07:47",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "LG디스플레이, 환율 하락·수요 둔화 부담…목표가↓",
-   "url": "https://www.mt.co.kr/stock/2026/09/17/2026091707434821029",
-   "published": "2026-09-17 07:46",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "삼성전자, 25만원 넘었지만···증권가 목표가는 27만~60만원 '극과 극...",
-   "url": "https://www.smartbizn.com/news/articleView.html?idxno=154097",
-   "published": "2026-09-17 07:46",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "미국 연준 금리 인상에 한국은행의 선택은? 경제와 부동산 시장의 운명...",
-   "url": "https://www.gokorea.kr/news/articleView.html?idxno=878716",
-   "published": "2026-09-17 07:46",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "연준, 3년 만에 기준금리 인상…\"인플레이션 너무 높고 너무 오래 지속...",
-   "url": "http://www.newsroad.co.kr/news/articleView.html?idxno=64472",
-   "published": "2026-09-17 07:46",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "미 연준, 3년 2개월 만에 금리 인상…연내 추가 인상 시사",
-   "url": "https://www.econovill.com/news/articleView.html?idxno=751054",
-   "published": "2026-09-17 07:44",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "연준, 0.25%P 금리 인상에 美 가계 이자 부담 20억 달러 늘어",
-   "url": "https://www.g-enews.com/view.php?ud=20260917063850724fda4f5ab74_1",
-   "published": "2026-09-17 07:44",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "한미 금리차 다시 1%P…美 긴축에 한은 추가 인상 압력",
-   "url": "https://www.kbmaeil.com/article/20260917500011",
-   "published": "2026-09-17 07:42",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[뉴욕증시] 워시 의장의 '매파적' 발언…얼어붙은 시장",
-   "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008757229&plink=ORI&cooper=NAVER",
-   "published": "2026-09-17 07:40",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[뉴욕환시] 달러 7주만에 최고…매파 워시에 DXY '100' 돌파",
-   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4435288",
-   "published": "2026-09-17 07:40",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "美, 3년2개월 만에 기준금리 0.25%p 인상…연내 추가 인상도 예고",
-   "url": "http://weekly.chosun.com/news/articleView.html?idxno=55335",
-   "published": "2026-09-17 07:40",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "소프트뱅크 1조엔 채권 완판… 日 개인 사채시장 절반 독식",
-   "url": "https://www.g-enews.com/view.php?ud=202609170733167971e7e8286d56_1",
-   "published": "2026-09-17 07:34",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "지투지바이오·이뮨온시아 날고, ‘내부자거래 의혹’ 에이비엘바이오...",
    "url": "https://www.edaily.co.kr/News/Read?newsId=02489526645581104&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
    "published": "2026-09-17 07:32",
@@ -323,26 +355,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "美 연준, 기습 금리인상…국채 5% 뚫리자 뉴욕증시 '휘청'",
-   "url": "https://www.ziksir.com/news/articleView.html?idxno=146730",
-   "published": "2026-09-17 07:32",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "[마켓 프리뷰] 반도체주 저가 매수에 코스피 상승…기관 매수에 '방긋'",
    "url": "https://biz.sbs.co.kr/article_hub/20000335135?division=NAVER",
    "published": "2026-09-17 07:30",
    "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "Fed, 3년여 만에 금리 인상…뉴욕증시 하락·美 10년물 5% 재돌파(종합2...",
-   "url": "https://view.asiae.co.kr/article/2026091707261756408",
-   "published": "2026-09-17 07:26",
-   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -411,14 +427,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "코스닥 시총 상위 10곳 중 7곳이었는데…바이오 기업, 이제 한 곳만 남았...",
-   "url": "https://www.mk.co.kr/article/12154897",
-   "published": "2026-09-17 04:52",
-   "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "CATL 주가 5월 고점 대비 35% 하락…리오토·샤오미, 공급처 분산 가속",
    "url": "https://www.g-enews.com/view.php?ud=2026091620534226572bd56fbc3c_1",
    "published": "2026-09-17 03:30",
@@ -443,22 +451,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "[증시 오늘] 닷새 만에 6700선 회복",
-   "url": "https://www.bigtanews.co.kr/article/view/big202609160022",
-   "published": "2026-09-16 23:46",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[주요공시] 비에이치아이, 셀트리온, 원텍, 원텍, IPARK현대산업개발, 한...",
-   "url": "https://www.kdpress.co.kr/news/articleView.html?idxno=208677",
-   "published": "2026-09-16 23:40",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "국채금리가 발목잡는 AI 주가…야데니도 주가 전망 낮췄다 [박신영의 개...",
    "url": "https://www.hankyung.com/article/202609169675i",
    "published": "2026-09-16 23:30",
@@ -478,6 +470,14 @@
    "title": "강영권 전 에디슨모터스 회장 '100억 대출·투자 사기' 무죄 확정",
    "url": "https://www.dailian.co.kr/news/view/1691360/?sc=Naver",
    "published": "2026-09-16 19:40",
+   "topic": "자동차",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "강영권 전 에디슨모터스 회장, 100억 편취 혐의 무죄 확정",
+   "url": "https://www.newsis.com/view/NISX20260916_0003792540",
+   "published": "2026-09-16 16:53",
    "topic": "자동차",
    "ticker_prices": [],
    "watchlist_hits": []
