@@ -2,15 +2,15 @@
  "date": "2026-09-18",
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-0918",
- "issue_no": 49,
- "published_at": "2026-09-18T07:49:03+09:00",
+ "issue_no": 50,
+ "published_at": "2026-09-18T08:00:03+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf9pxU46RZoEhhh6z65iv'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf9qo8bRiaabBXmzkqYjs'}",
   "consecutive_failure_days": 41
  },
  "models": {
@@ -106,9 +106,9 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1380.05,
-    "change": 3.45,
-    "change_pct": 0.25,
+    "value": 1376.6,
+    "change": 13.03,
+    "change_pct": 0.96,
     "trend": "up",
     "trend_label": "상승세",
     "series": [
@@ -140,8 +140,7 @@
      1344.64,
      1345.61,
      1363.57,
-     1376.6,
-     1380.05
+     1376.6
     ]
    }
   ],
@@ -157,6 +156,110 @@
  "exits": [],
  "rejected": [],
  "newsroom": [
+  {
+   "title": "'자율교섭' 차버린 노조…'제 논 물대기' 투쟁에 삼성바이오로직스 경쟁...",
+   "url": "https://www.theguru.co.kr/news/article.html?no=107263",
+   "published": "2026-09-18 07:58",
+   "topic": "바이오",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[아주증시포커스] 에어프레미아 몸값 줄다리기…VIG·타이어뱅크 수천억...",
+   "url": "https://www.ajunews.com/view/20260918075553691",
+   "published": "2026-09-18 07:58",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "외국인, 지난달 코스피 1조9000억원 순매수...올해 처음 국내 주식 ‘사...",
+   "url": "https://www.chosun.com/economy/stock-finance/2026/09/18/YR7WKC5TPBHXVOO6ZAT4GH3RPM/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
+   "published": "2026-09-18 07:57",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "\"금리 상승 수혜는 옛말\"…보험주엔 '양날의 검'",
+   "url": "http://www.ftoday.co.kr/news/articleView.html?idxno=365694",
+   "published": "2026-09-18 07:56",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[현대차증권 재무체력]③ 수익원 바뀌어도 흔들린 이익 안정성",
+   "url": "https://www.bloter.net/news/articleView.html?idxno=673866",
+   "published": "2026-09-18 07:55",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "뉴욕증시, 금리인상 충격 털고 하루 만에 반등…나스닥 1.7%↑",
+   "url": "https://www.tjb.co.kr/news05/bodo/view/id/103787",
+   "published": "2026-09-18 07:54",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "삼성전기, AI 부품 3.3조 수주 '잭팟'···증권가 목표가 300만원 유지",
+   "url": "https://www.smartbizn.com/news/articleView.html?idxno=154227",
+   "published": "2026-09-18 07:54",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "한솔케미칼, 과산화수소·프리커서 성장 본격화…목표가↓-현대차",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=02542006645581432&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "published": "2026-09-18 07:54",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[애프터마켓 리뷰] 스페이스X, 우주선 시험 비행 소식에 관련주 급등",
+   "url": "https://biz.sbs.co.kr/article_hub/20000335427?division=NAVER",
+   "published": "2026-09-18 07:53",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[비즈 나우] 편가르는 AI 속도조절…옅어진 충격파",
+   "url": "https://biz.sbs.co.kr/article_hub/20000335426?division=NAVER",
+   "published": "2026-09-18 07:53",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "노바티스, 루게릭병 신약 임상 중단…K바이오 반사이익 제한돼",
+   "url": "https://www.g-enews.com/view.php?ud=202609170833402132fda4f5ab74_1",
+   "published": "2026-09-18 07:52",
+   "topic": "바이오",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "금리인상 소화한 뉴욕증시 상승…나스닥 1.7%↑",
+   "url": "http://www.smedaily.co.kr/news/articleView.html?idxno=363440",
+   "published": "2026-09-18 07:50",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "미국증시 다우지수 '상승'..엔비디아·빅테크주 '활짝', CRM '뚝'",
+   "url": "http://www.choicenews.co.kr/news/articleView.html?idxno=171454",
+   "published": "2026-09-18 07:50",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
   {
    "title": "월가, 하루 만에 '안도 랠리'···국채금리·유가 동반 하락에 나스닥 ...",
    "url": "https://www.smartbizn.com/news/articleView.html?idxno=154226",
@@ -198,22 +301,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "[3분증시] 뉴욕증시, 금리인상 불확실성 해소에 반등",
-   "url": "http://www.yonhapnewstv.co.kr/news/MYH20260918073933zAx",
-   "published": "2026-09-18 07:40",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "젠슨 황 \"내년 2배 판다\"…반도체주 급등",
-   "url": "https://www.koreareport.co.kr/news/articleView.html?idxno=53041",
-   "published": "2026-09-18 07:38",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "李 오늘 기자회견, 경향 \"마지막 기회…공소취소 논란 끝내고 부동산·...",
    "url": "https://www.mediatoday.co.kr/news/articleView.html?idxno=337188",
    "published": "2026-09-18 07:35",
@@ -225,7 +312,7 @@
    "title": "뉴욕증시, 유가·금리 하락에 힘입어 일제히 상승했다",
    "url": "https://www.insight.co.kr/news/574092",
    "published": "2026-09-18 07:34",
-   "topic": "반도체",
+   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -238,34 +325,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "\"SK하이닉스 美 ADR과 괴리율 40%…국장 신뢰 부족, 결국 메꿔질 것\"",
-   "url": "https://www.newsis.com/view/NISX20260917_0003793646",
-   "published": "2026-09-18 07:33",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "미국 뉴욕증시, 연준 금리인상 충격 딛고 반등…다우존스·S&P500·나스닥...",
-   "url": "https://www.lecturernews.com/news/articleView.html?idxno=210780",
-   "published": "2026-09-18 07:32",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[브라질증시] 복지 확대에 1% 넘게 출렁인 브라질 증시… 발레 강세에 0...",
-   "url": "https://www.newspim.com/news/view/20260918000028",
-   "published": "2026-09-18 07:32",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "‘금리 쇼크’ 하루 만에 털었다…뉴욕증시, 일제히 반등",
-   "url": "http://www.joseilbo.com/news/news_read.php?uid=575934&class=53&grp=",
-   "published": "2026-09-18 07:31",
-   "topic": "반도체",
+   "title": "[마켓 프리뷰] 코스피 '매파 연준'에도 약보합…글로벌 금리 인상 촉각",
+   "url": "https://biz.sbs.co.kr/article_hub/20000335424?division=NAVER",
+   "published": "2026-09-18 07:30",
+   "topic": "증시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -278,18 +341,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "[마켓 프리뷰] 코스피 '매파 연준'에도 약보합…글로벌 금리 인상 촉각",
-   "url": "https://biz.sbs.co.kr/article_hub/20000335424?division=NAVER",
-   "published": "2026-09-18 07:30",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "[넥스트-샷] 금리 인상 충격은 하루짜리?···유가 꺾이자 나스닥 1.7% ...",
    "url": "https://www.womaneconomy.co.kr/news/articleView.html?idxno=258862",
    "published": "2026-09-18 07:30",
-   "topic": "금융",
+   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -306,14 +361,6 @@
    "url": "https://www.ytn.co.kr/_ln/0102_202609180721164173",
    "published": "2026-09-18 07:21",
    "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[마켓 브리핑] 하루 만에 분위기 반전…연준 '인플레와 전쟁' 선포",
-   "url": "https://biz.sbs.co.kr/article_hub/20000335423?division=NAVER",
-   "published": "2026-09-18 07:16",
-   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -390,14 +437,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "ETF, 결국은 ‘국밥’으로…‘도파민’ 삼전닉스 지고 지수 추종으로 몰...",
-   "url": "https://www.mk.co.kr/article/12156025",
-   "published": "2026-09-18 06:21",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "[N2 모닝 경제 브리핑-9월 18일] 美 증시, ‘금리·유가’ 진정에 급반등...",
    "url": "https://www.news2day.co.kr/article/20260917500191",
    "published": "2026-09-18 06:12",
@@ -410,14 +449,6 @@
    "url": "https://magazine.hankyung.com/business/article/202609106366b",
    "published": "2026-09-18 06:07",
    "topic": "자동차",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "외국인 국내 주식 8개월 만에 ‘사자’…채권은 4.7조 순회수",
-   "url": "http://www.metroseoul.co.kr/article/20260917500512",
-   "published": "2026-09-18 06:02",
-   "topic": "증시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -438,41 +469,9 @@
    "watchlist_hits": []
   },
   {
-   "title": "[공시] 9월 18일, 코스닥 상장사 64개 종목 자사주 매수 신청",
-   "url": "https://www.newstnt.com/news/articleView.html?idxno=719035",
-   "published": "2026-09-17 20:50",
-   "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[삼성바이오 파업㊥] 존림 대표, 3년간 212억 받는 동안…불붙은 '성과급...",
-   "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=854125",
-   "published": "2026-09-17 18:20",
-   "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "알멕 삼아알미늄 주가 불기둥… 비철금속주에 뭉칫돈 유입",
    "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=488088",
    "published": "2026-09-17 15:24",
-   "topic": "자동차",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "현대모비스 38만1000원 약세…장중 38만7500원 찍고 반락",
-   "url": "https://www.job-post.co.kr/news/articleView.html?idxno=228043",
-   "published": "2026-09-17 15:18",
-   "topic": "자동차",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "LG이노텍 50만7000원 약세…장중 52만8000원 찍고 1%대 하락",
-   "url": "https://www.job-post.co.kr/news/articleView.html?idxno=228034",
-   "published": "2026-09-17 15:10",
    "topic": "자동차",
    "ticker_prices": [],
    "watchlist_hits": []
