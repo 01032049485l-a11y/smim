@@ -2,15 +2,15 @@
  "date": "2026-09-21",
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-0921",
- "issue_no": 50,
- "published_at": "2026-09-21T07:23:05+09:00",
+ "issue_no": 51,
+ "published_at": "2026-09-21T07:38:32+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfFUQJqm5H7dCh5ExT2m9'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfFVagEXApSSzCtNU2Eap'}",
   "consecutive_failure_days": 42
  },
  "models": {
@@ -158,34 +158,106 @@
  "rejected": [],
  "newsroom": [
   {
-   "title": "비트코인 8만 달러 돌파에 관련주 급등…철강주는 실적 우려에 약세-[美...",
-   "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202609210015&t=NN",
-   "published": "2026-09-21 07:09",
+   "title": "상상인證 \"대한항공, 우호적 매크로에 실적 턴어라운드…목표가 4만원\"",
+   "url": "https://www.etoday.co.kr/news/view/2627691",
+   "published": "2026-09-21 07:34",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "금리 상승에도 반도체 연이틀 강세 [굿모닝 글로벌이슈]",
-   "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202609210019&t=NN",
-   "published": "2026-09-21 07:08",
+   "title": "5% 벽 뚫은 美 국채금리가 던진 질문…호황의 질주인가 신뢰의 균열인가",
+   "url": "https://www.g-enews.com/view.php?ud=2026092107191745fbbec65dfb_1",
+   "published": "2026-09-21 07:34",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "11년 만에 백악관 찾는 시진핑…외교가 AI 기술주 흔들까 [마켓무버의 국...",
+   "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202609210029&t=NN",
+   "published": "2026-09-21 07:33",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "AI 품귀 타고 영업익 89조 찍은 삼성전자…골드만 '49만원' 베팅",
-   "url": "https://www.g-enews.com/view.php?ud=202609210656395048fbbec65dfb_1",
-   "published": "2026-09-21 07:08",
+   "title": "'증시 버팀목' 삼전닉스 자사주 매입, 이르면 내달 중순 끝날 듯",
+   "url": "https://www.getnews.co.kr/news/articleView.html?idxno=881347",
+   "published": "2026-09-21 07:30",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "비상! 연준 금리인상 이후 ‘역구축 효과’ 발생!! | 10월 공포! 달러빚...",
-   "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202609210026&t=NN",
-   "published": "2026-09-21 07:07",
+   "title": "[넥스트-샷] 반도체 날고 유가는 내렸는데···월가 퇴근하자 다시 '쾅...",
+   "url": "https://www.womaneconomy.co.kr/news/articleView.html?idxno=258930",
+   "published": "2026-09-21 07:30",
    "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "“한국은 큰돈 넣을 수 있는 시장임을 증명해야” 김영익·마경환·홍춘...",
+   "url": "https://economist.co.kr/article/view/ecn202609160029",
+   "published": "2026-09-21 07:30",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "​​​​​​​ 美 긴축 재개에 은행채 5% 가시권…주담대 8%도 위협",
+   "url": "https://www.newswhoplus.com/news/articleView.html?idxno=70114",
+   "published": "2026-09-21 07:30",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[더벨]막 오른 3조 브룩필드 데이터센터 투자 유치, 대형 은행 총출동",
+   "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202609171503266480108968",
+   "published": "2026-09-21 07:28",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "\"AI 속도 조절 일축한 트럼프 부자, 반도체·데이터센터 거액 투자\"",
+   "url": "https://www.ytn.co.kr/_ln/0104_202609210727060468",
+   "published": "2026-09-21 07:27",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[마켓 프리뷰] '글로벌 긴축' 속 메모리 부족 우려…반도체주 강세",
+   "url": "https://biz.sbs.co.kr/article_hub/20000335778?division=NAVER",
+   "published": "2026-09-21 07:26",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "트럼프 일가의 ‘AI 베팅’…반도체·데이터센터 거액투자",
+   "url": "https://www.dt.co.kr/article/12085032?ref=naver",
+   "published": "2026-09-21 07:26",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[KFT 모닝 브리프] 2026.09.21 — 오늘 꼭 알아야 할 국내외 경제뉴스",
+   "url": "https://www.fntimes.com/html/view.php?ud=202609210704129764141825007d_18",
+   "published": "2026-09-21 07:24",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "삼성전자·SK하이닉스, 수십조 자사주 매입···밸류업 판도 더 커진다",
+   "url": "https://www.smartbizn.com/news/articleView.html?idxno=154386",
+   "published": "2026-09-21 07:24",
+   "topic": "증시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -193,7 +265,7 @@
    "title": "뉴욕증시 혼조세…美국채금리 부담에도 반도체주 강세-[글로벌 마감 시...",
    "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202609210021&t=NN",
    "published": "2026-09-21 07:07",
-   "topic": "반도체",
+   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -214,22 +286,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "[더벨][코스닥 상장사 매물 분석] 생존 급한 앤씨앤, 결국 경영권 매각...",
-   "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202609181049500200104149",
-   "published": "2026-09-21 07:02",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[Who Is ?] 강이구 코오롱모빌리티그룹 및 코오롱베니트 대표이사",
-   "url": "https://www.businesspost.co.kr/BP?command=article_view&num=447514",
-   "published": "2026-09-21 07:02",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "[더벨][에어레인 줌인] 대체연료 선박 안전규제 강화, 사업확대 기회",
    "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202609170634155380105967",
    "published": "2026-09-21 07:02",
@@ -246,22 +302,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "[더벨]한양증권, 리스크 프리미엄 안고 첫 공모채…절반의 성공",
-   "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202609171446449040106779",
-   "published": "2026-09-21 07:02",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[더벨]토스플레이스, 첫 신종자본증권 조달…모회사 지원 '눈길'",
-   "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202609170141570480102510",
-   "published": "2026-09-21 07:02",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "[Invest]증자로 몸집 키운 우리투자증권…성과 압박에 일찌감치 ‘인사...",
    "url": "https://www.investchosun.com/site/data/html_dir/2026/09/18/2026091880173.html",
    "published": "2026-09-21 07:02",
@@ -272,22 +312,6 @@
   {
    "title": "[KB금융 새 사령탑 이재근②] ‘준비된 CEO’ 증명한 3년···국민은행 ...",
    "url": "https://www.fntimes.com/html/view.php?ud=202609202201422645b4a7c6999c_18",
-   "published": "2026-09-21 07:02",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[KB금융 새 사령탑 이재근③] 은행 CEO에서 그룹 수장으로···국내 1등 ...",
-   "url": "https://www.fntimes.com/html/view.php?ud=202609202245275614b4a7c6999c_18",
-   "published": "2026-09-21 07:02",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[KB금융 새 사령탑 이재근①] 재무통에서 ‘야전사령관’으로···CEO 역...",
-   "url": "https://www.fntimes.com/html/view.php?ud=202609202153482378b4a7c6999c_18",
    "published": "2026-09-21 07:02",
    "topic": "금융",
    "ticker_prices": [],
@@ -342,14 +366,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "애프터마켓 첫주 성적표…넥스트레이드 1조 '증발'·거래소는 77% '급감...",
-   "url": "https://www.etoday.co.kr/news/view/2627529",
-   "published": "2026-09-21 06:02",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "메트로신문 9월21일자 한줄뉴스",
    "url": "http://www.metroseoul.co.kr/article/20260920500286",
    "published": "2026-09-21 06:02",
@@ -361,15 +377,7 @@
    "title": "“한국을 사세요”…글로벌 머니 앞에 선 ‘코리아 프리미엄’",
    "url": "https://economist.co.kr/article/view/ecn202609140049",
    "published": "2026-09-21 06:01",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[미리보는 증시재료] 美 마이크론 실적…연휴 기간 코스피 '휴장'",
-   "url": "https://www.newspim.com/news/view/20260918000845",
-   "published": "2026-09-21 06:00",
-   "topic": "증시",
+   "topic": "자동차",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -378,38 +386,6 @@
    "url": "https://www.hitnews.co.kr/news/articleView.html?idxno=79272",
    "published": "2026-09-21 06:00",
    "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "유가 100달러·환율 7일째 상승…다시 고개 든 '3고', 물가도 압박",
-   "url": "https://www.news1.kr/economy/trend/6295723",
-   "published": "2026-09-21 06:00",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[이번주 관전포인트]추석 연휴에 미·중 회담…주식 시장 촉",
-   "url": "http://www.newskr.kr/news/articleView.html?idxno=106525",
-   "published": "2026-09-21 06:00",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "158엔 뚫리자 칼 뺀 일본… 레이트 체크로 실탄 쏜다",
-   "url": "https://www.g-enews.com/view.php?ud=20260921031507534e7e8286d56_1",
-   "published": "2026-09-21 05:06",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "호미로 될까…금리 인상, 3연속이냐 3번째냐",
-   "url": "https://www.nocutnews.co.kr/news/6580987?utm_source=naver&utm_medium=article&utm_campaign=20260921064917",
-   "published": "2026-09-21 05:01",
-   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -473,6 +449,30 @@
    "title": "자율주행 경쟁서 살아남기 위한 현대차그룹이 해야 하는 선택은[주末머...",
    "url": "https://view.asiae.co.kr/article/2026091715410631044",
    "published": "2026-09-20 16:12",
+   "topic": "자동차",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "현대차, '디 올 뉴 투싼' 최초 공개...위기탈출 도움될까",
+   "url": "http://www.choicenews.co.kr/news/articleView.html?idxno=171533",
+   "published": "2026-09-20 14:32",
+   "topic": "자동차",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[ZD브리핑] 미중 정상회담·김범수 항소심 결심…추석 앞 산업·IT 이슈는",
+   "url": "https://zdnet.co.kr/view/?no=20260920130102",
+   "published": "2026-09-20 13:16",
+   "topic": "자동차",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "트럼프 지원 축소에도 美 전기차, 2030년 신차 38% 전망",
+   "url": "https://www.g-enews.com/view.php?ud=2026091919372236409a1f309431_1",
+   "published": "2026-09-20 04:02",
    "topic": "자동차",
    "ticker_prices": [],
    "watchlist_hits": []
