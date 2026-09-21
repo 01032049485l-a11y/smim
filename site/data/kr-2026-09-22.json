@@ -3,14 +3,14 @@
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-0922",
  "issue_no": 52,
- "published_at": "2026-09-22T08:29:52+09:00",
+ "published_at": "2026-09-22T08:57:43+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfHTJbQPT4NXy57X6YCPo'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfHVRpPAbV5R6a9UZGtty'}",
   "consecutive_failure_days": 43
  },
  "models": {
@@ -104,8 +104,8 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1374.06,
-    "change": -10.8,
+    "value": 1374.05,
+    "change": -10.81,
     "change_pct": -0.78,
     "trend": "up",
     "trend_label": "상승세",
@@ -139,7 +139,7 @@
      1376.6,
      1379.53,
      1384.86,
-     1374.06
+     1374.05
     ]
    }
   ],
@@ -161,18 +161,122 @@
  ],
  "newsroom": [
   {
-   "title": "삼성전자, AMD 1조달러에 다시 부각된 'HBM4+DDR5' 동맹",
-   "url": "http://sateconomy.co.kr/news/view/1065569198541112",
-   "published": "2026-09-22 08:28",
+   "title": "AMD, 시총 '1조달러 클럽' 입성…AI칩 타고 엔비디아 추격 속도",
+   "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=702241",
+   "published": "2026-09-22 08:54",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "한 달 새 74% 뛰었다…SFA반도체, 삼전 업고 '불기둥' [종목+]",
-   "url": "https://www.hankyung.com/article/2026092296626",
-   "published": "2026-09-22 08:28",
+   "title": "[모닝 리포트] \"금리·유가 부담 완화…AI 랠리에 상승 전망\"",
+   "url": "https://www.newspim.com/news/view/20260922000071",
+   "published": "2026-09-22 08:52",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "뉴욕증시, AI 관련주 급등·유가 하락에 3대 지수 일제히 상승",
+   "url": "https://www.sentv.co.kr/article/view/sentv202609220009",
+   "published": "2026-09-22 08:52",
    "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "기술주·비트코인 랠리 재개되나...AI 낙관론 부활·유가하락·美中 정상...",
+   "url": "https://www.livebiz.today/news/articleView.html?idxno=205047",
+   "published": "2026-09-22 08:52",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "비트코인, 8개월 만에 8만5000달러 돌파…1월 말 이후 처음",
+   "url": "https://www.sentv.co.kr/article/view/sentv202609220023",
+   "published": "2026-09-22 08:52",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[AI MY 증시전망] 코스피, 美 반도체 훈풍에 상승 전망…7000선 안착 시도",
+   "url": "https://www.newspim.com/news/view/20260922000067",
+   "published": "2026-09-22 08:51",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "현대오토에버, 그룹 AI 전환 수혜…새만금 데이터센터 '주목'",
+   "url": "http://www.newsprime.co.kr/news/article.html?no=748647",
+   "published": "2026-09-22 08:50",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "SG \"AI 투자 다음 수혜주는 사이버보안\"…이익 성장·밸류에이션 매력",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4436018",
+   "published": "2026-09-22 08:50",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "인텔, AI 투자 우려 완화에 12% 급등",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4436017",
+   "published": "2026-09-22 08:50",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "뉴욕증시, AI 수요 지속 기대에 상승⋯나스닥, 사상 최고치 [글로벌마켓...",
+   "url": "https://www.etoday.co.kr/news/view/2628308",
+   "published": "2026-09-22 08:48",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[글로벌 온체인 금융 빅뱅①] 달러 패권 시즌2…美 '혁신 면제'로 24시간...",
+   "url": "https://www.goodkyung.com/news/articleView.html?idxno=291605",
+   "published": "2026-09-22 08:44",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "은행 대기업대출 연체율 5년 만에 최고…중소법인·자영업자도 1년 전보...",
+   "url": "https://www.raonnews.com/news/article.html?no=61325",
+   "published": "2026-09-22 08:44",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "“이란전, 베트남전 닮아간다”…증시 흔들 ‘장기 고유가’ 경고",
+   "url": "https://biz.chosun.com/stock/stock_general/2026/09/22/YOMUNIAN5FDJRK3RBJCMEBBSCQ/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+   "published": "2026-09-22 08:39",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[모닝 리포트] \"매파적 연준에 달러 강세, 추가 금리인상 경계 지속\"",
+   "url": "https://www.newspim.com/news/view/20260922000148",
+   "published": "2026-09-22 08:38",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[모닝 리포트] \"신한베트남은행,이제는 수익성 확보가 관건\"",
+   "url": "https://www.newspim.com/news/view/20260922000128",
+   "published": "2026-09-22 08:35",
+   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -181,46 +285,6 @@
    "url": "https://biz.sbs.co.kr/article_hub/20000336102?division=NAVER",
    "published": "2026-09-22 08:27",
    "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "AMD, 시총 1조달러 첫 돌파...삼성전자·삼성전기 공급망 '주목'",
-   "url": "http://www.newsian.co.kr/news/articleView.html?idxno=95799",
-   "published": "2026-09-22 08:24",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "\"메타발 美 AI주 랠리 효과\"…프리마켓서 반도체주 강세",
-   "url": "https://www.news1.kr/finance/market-exr/6298224",
-   "published": "2026-09-22 08:24",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[뉴욕마켓워치] 뉴욕으로 오는 미국과 이란 대통령…주식·달러↑채권 ...",
-   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4436005",
-   "published": "2026-09-22 08:24",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "삼성전자, 반도체 업사이클 추가 확장…목표가 56만원",
-   "url": "https://www.fnnews.com/news/202609220757522703",
-   "published": "2026-09-22 08:23",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "美 반도체주 급등에 삼전·닉스 프리마켓서 '들썩'…SK하닉 190만원 상회",
-   "url": "https://www.newsis.com/view/NISX20260922_0003799417",
-   "published": "2026-09-22 08:23",
-   "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -244,7 +308,7 @@
    "title": "중동 긴장 완화에 원화 '숨통'… 원/달러 환율, 수출 네고에 하락 전망",
    "url": "http://www.the-biz.co.kr/news/articleView.html?idxno=728223",
    "published": "2026-09-22 08:20",
-   "topic": "금융",
+   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -257,15 +321,7 @@
    "watchlist_hits": []
   },
   {
-   "title": "[마켓 프리뷰] 美 AI주 급등에 나스닥 신고가…코스피, 7000선 안착 주목",
-   "url": "https://www.ajunews.com/view/20260922081314706",
-   "published": "2026-09-22 08:18",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[박정식의 국내 주식시황] 인공지능(AI) 견조한 인프라 투자 기대감에 ...",
+   "title": "[박정식의 국내 주식시황] AI·반도체 훈풍에 코스피 7000 안착…7200선 ...",
    "url": "https://www.newsquest.co.kr/news/articleView.html?idxno=301404",
    "published": "2026-09-22 08:16",
    "topic": "증시",
@@ -276,15 +332,7 @@
    "title": "“빅맥도 케첩도 안 먹는다”…주가 폭락·S&P100 퇴출 [흔들리는 제국...",
    "url": "https://magazine.hankyung.com/business/article/202609179845b",
    "published": "2026-09-22 08:11",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[오늘 일본은] 태풍 25호 日 수도권에 폭우…2명 사망·4명 실종, 산사태...",
-   "url": "https://www.pointe.co.kr/news/articleView.html?idxno=85048",
-   "published": "2026-09-22 08:10",
-   "topic": "증시",
+   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -297,18 +345,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "주식·채권·대체투자 모두 AI로…분산투자 착시 [마켓프리즘]",
-   "url": "http://www.joseilbo.com/news/news_read.php?uid=576166&class=18&grp=",
-   "published": "2026-09-22 08:08",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "\"베트남전쟁 닮은 이란전쟁\"…보험·은행업종 선호도↑",
-   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4435999",
-   "published": "2026-09-22 08:06",
-   "topic": "금융",
+   "title": "[오늘 일본은] 태풍 25호 日 수도권에 폭우…2명 사망·4명 실종, 산사태...",
+   "url": "https://www.pointe.co.kr/news/articleView.html?idxno=85048",
+   "published": "2026-09-22 08:10",
+   "topic": "증시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -348,55 +388,7 @@
    "title": "\"美 금리·유가 변수에\"...추석 연휴 이후 국내 금융시장 ‘갭 출발’ 주...",
    "url": "https://www.youthdaily.co.kr/news/article.html?no=227404",
    "published": "2026-09-22 08:00",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "\"속 빈 강정\"된 시중은행 전환 …iM금융지주, 점유율 하락 속 출자여력...",
-   "url": "https://www.youthdaily.co.kr/news/article.html?no=227388",
-   "published": "2026-09-22 08:00",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "원·달러 환율, 1374.44원…달러, 매파 연준 인사 발언에 상승",
-   "url": "http://www.joseilbo.com/news/news_read.php?uid=576162&class=18&grp=",
-   "published": "2026-09-22 07:56",
    "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "개인투자자, 고금리에 채권 '폭풍 매수'···월가·증권가 시선은 왜 갈...",
-   "url": "https://www.smartbizn.com/news/articleView.html?idxno=154563",
-   "published": "2026-09-22 07:50",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[채권/외환] 美 10년물 5% 아래로… 2년물은 2년여 최고, 달러화는 강세",
-   "url": "https://www.newspim.com/news/view/20260922000026",
-   "published": "2026-09-22 07:38",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[KFT 모닝 브리프] 2026.09.22 — 오늘 꼭 알아야 할 국내외 경제뉴스",
-   "url": "https://www.fntimes.com/html/view.php?ud=202609220714294731141825007d_18",
-   "published": "2026-09-22 07:28",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[마켓 프리뷰] 추석 앞두고 관망심리 이겨낸 코스피…'7천피' 재탈환",
-   "url": "https://biz.sbs.co.kr/article_hub/20000336080?division=NAVER",
-   "published": "2026-09-22 07:28",
-   "topic": "증시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -476,6 +468,14 @@
    "title": "[올댓차이나] 홍콩 증시, 정책 기대 약품주 등 강세로 상승 마감… H주 ...",
    "url": "https://www.newsis.com/view/NISX20260921_0003799137",
    "published": "2026-09-21 18:52",
+   "topic": "바이오",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[오늘의 주목주] '반도체주 강세' 삼성전자우 주가 6%대 올라, 코스피 기...",
+   "url": "https://www.businesspost.co.kr/BP?command=article_view&num=447752",
+   "published": "2026-09-21 18:04",
    "topic": "바이오",
    "ticker_prices": [],
    "watchlist_hits": []
