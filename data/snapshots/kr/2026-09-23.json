@@ -2,15 +2,15 @@
  "date": "2026-09-23",
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-0923",
- "issue_no": 52,
- "published_at": "2026-09-23T07:53:33+09:00",
+ "issue_no": 53,
+ "published_at": "2026-09-23T08:10:16+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfKJLvUNJAW1wRS9KGppd'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfKKcsAkRYnrYrsyJrfD5'}",
   "consecutive_failure_days": 44
  },
  "models": {
@@ -102,9 +102,9 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1355.39,
-    "change": -18.29,
-    "change_pct": -1.33,
+    "value": 1355.12,
+    "change": -18.56,
+    "change_pct": -1.35,
     "trend": "flat",
     "trend_label": "보합권",
     "series": [
@@ -137,7 +137,7 @@
      1379.53,
      1384.86,
      1373.68,
-     1355.39
+     1355.12
     ]
    }
   ],
@@ -154,10 +154,90 @@
  "rejected": [],
  "newsroom": [
   {
-   "title": "[미국 특징주] 램버스, 반도체주 강세 속 22일 8.54% 상승",
-   "url": "https://www.tokenpost.kr/news/market/412462",
-   "published": "2026-09-23 07:52",
+   "title": "태양광, 美국가안보 전략자산으로 격상…\"연말 정책 시행 전 매수 기회...",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=02555126645583072&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "published": "2026-09-23 08:09",
    "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "소비심리 반등했지만…가계 금리 상승 전망 2년 11개월 만에 최고",
+   "url": "https://www.raonnews.com/news/article.html?no=61359",
+   "published": "2026-09-23 08:08",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[오늘의 투자전략] “코스피, 상승 출발 후 종목 장세 전망”⋯美 필라...",
+   "url": "https://www.etoday.co.kr/news/view/2628849",
+   "published": "2026-09-23 08:06",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "美 반도체 랠리에 삼전·닉스 프리마켓서 2~3%↑",
+   "url": "https://www.newsis.com/view/NISX20260923_0003801268",
+   "published": "2026-09-23 08:05",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "나스닥 또 사상 최고치…美 증시 혼조 속 반도체주 강세[뉴스새벽배송]",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=02538726645583072&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "published": "2026-09-23 08:04",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "뉴욕증시, 반도체주 강세에 나스닥 신기록",
+   "url": "http://www.issuenbiz.com/news/articleView.html?idxno=80053",
+   "published": "2026-09-23 08:04",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "미국·이란 주시하며 뉴욕 증시 혼조 마감...유가는 하락",
+   "url": "https://www.ytn.co.kr/_ln/0104_202609230804306800",
+   "published": "2026-09-23 08:04",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[속보] 삼전닉스 프리장 2~3% 상승 … 美·이란 협상에 국제유가 하락",
+   "url": "https://biz.newdaily.co.kr/site/data/html/2026/09/23/2026092300030.html",
+   "published": "2026-09-23 08:02",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "美 현지 주목에 스카이랩스 ‘上’…오름테라퓨틱은 연속 하락[바이오 ...",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=02525606645583072&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "published": "2026-09-23 08:02",
+   "topic": "바이오",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "\"삼성전자, 목표가 63만원으로 상향…조정은 매수 기회\"-유안타",
+   "url": "https://www.mt.co.kr/stock/2026/09/23/2026092307573213337",
+   "published": "2026-09-23 08:00",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "9월 소비심리 2.1p↑…“소득여건 개선 기대”",
+   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8670102&ref=A",
+   "published": "2026-09-23 07:54",
+   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -178,58 +258,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "유가 닷새째 하락했지만 美·이란 불확실성…나스닥만 사상 최고",
-   "url": "https://www.chosun.com/economy/int_economy/2026/09/23/RORLBQOQKBD2BG7RPO3HOT35OY/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
-   "published": "2026-09-23 07:50",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "\"금리 계속 오른다\" 35개월 만에 최고…소비심리는 한 달 만에 반등",
    "url": "https://www.dailian.co.kr/news/view/1693856/?sc=Naver",
    "published": "2026-09-23 07:48",
    "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[오늘의 증시]美 반도체 랠리에 코스피 나흘 연속 상승 전망",
-   "url": "https://www.newsis.com/view/NISX20260923_0003801207",
-   "published": "2026-09-23 07:47",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "삼성전기 AI 제품 확대에 수익성 개선 전망…목표가 220만원 ↑-메리츠",
-   "url": "https://www.edaily.co.kr/News/Read?newsId=02502646645583072&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-   "published": "2026-09-23 07:45",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[3분증시] 뉴욕증시, 미·이란 대면 협상 속 혼조 마감",
-   "url": "http://www.yonhapnewstv.co.kr/news/MYH20260923074330lmI",
-   "published": "2026-09-23 07:44",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "메타 덕에 반도체주 기세…사우디 복구에 유가 하락",
-   "url": "https://www.koreareport.co.kr/news/articleView.html?idxno=53193",
-   "published": "2026-09-23 07:44",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[이주의 관.종]'전자'가 견인하는 두산…AI 사이클 탑승",
-   "url": "https://view.asiae.co.kr/article/2026092211273703837",
-   "published": "2026-09-23 07:43",
-   "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -338,42 +370,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "[김용남의 글로벌 부동산] 일본 기준금리 1.25%… 중소형빌딩 얼마에 사...",
-   "url": "https://www.newspim.com/news/view/20260922000330",
-   "published": "2026-09-23 07:00",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[뉴욕증시] 혼조, 나스닥 최고치···'뮤즈'의 기대와 공포, 반도체↑·...",
-   "url": "https://www.seoulfn.com/news/articleView.html?idxno=638595",
-   "published": "2026-09-23 06:57",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "미·이란 대화 재개에 나스닥 이틀 연속 사상 최고-[글로벌 마감 시황]",
-   "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202609230009&t=NN",
-   "published": "2026-09-23 06:57",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "[증시전략] 美-이란 유엔서 3시간 회담…트럼프 \"매우 잘 됐다\"",
    "url": "https://biz.sbs.co.kr/article_hub/20000336371?division=NAVER",
    "published": "2026-09-23 06:53",
    "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[DCM] 금리 오르자 짧아진 기업 빚…커지는 차환 리스크",
-   "url": "https://www.fntimes.com/html/view.php?ud=202609171622441431141825007d_18",
-   "published": "2026-09-23 06:52",
-   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
