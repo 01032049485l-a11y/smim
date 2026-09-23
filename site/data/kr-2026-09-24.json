@@ -2,15 +2,15 @@
  "date": "2026-09-24",
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-0924",
- "issue_no": 53,
- "published_at": "2026-09-24T07:54:17+09:00",
+ "issue_no": 54,
+ "published_at": "2026-09-24T08:04:20+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfMCD7obKY3d5jFPjoALT'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfMCyXY5EdDKS9Tb6qPTL'}",
   "consecutive_failure_days": 45
  },
  "models": {
@@ -102,9 +102,9 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1365.25,
-    "change": 14.89,
-    "change_pct": 1.1,
+    "value": 1365.66,
+    "change": 15.3,
+    "change_pct": 1.13,
     "trend": "flat",
     "trend_label": "보합권",
     "series": [
@@ -137,7 +137,7 @@
      1384.86,
      1373.68,
      1350.36,
-     1365.25
+     1365.66
     ]
    }
   ],
@@ -153,6 +153,62 @@
  "exits": [],
  "rejected": [],
  "newsroom": [
+  {
+   "title": "추석 주식시장…증시 휴장·개장 일정은",
+   "url": "https://www.bntnews.co.kr/article/view/bnt202609240035",
+   "published": "2026-09-24 08:00",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "中유니트리 거품 논란에 문턱 높아진 IPO…'매출 뻥튀기' 논란도",
+   "url": "https://www.news1.kr/world/northeast-asia/6300508",
+   "published": "2026-09-24 08:00",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "'국장'은 쉬어도 '미장'은 열린다…추석 전후 챙겨볼 ETF는",
+   "url": "https://www.yna.co.kr/view/AKR20260923167100008?input=1195m",
+   "published": "2026-09-24 08:00",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "다시 '구천피' 갈 수 있나…증권가 \"빅이벤트 후 랠리 기대\"[추석 이후 ...",
+   "url": "https://www.newsis.com/view/NISX20260923_0003802530",
+   "published": "2026-09-24 08:00",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "코스피 7000 재진입, 체감경기는 왜 다른가",
+   "url": "https://www.the-pr.co.kr/news/articleView.html?idxno=62731",
+   "published": "2026-09-24 08:00",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "추석 연휴 금융거래 ‘공백’...대출·카드대금 28일로 '순연'",
+   "url": "https://www.youthdaily.co.kr/news/article.html?no=227514",
+   "published": "2026-09-24 08:00",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[국내 증시] 한국 주식시장 24일~25일 휴장한다 왜?…재개일은",
+   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=609450",
+   "published": "2026-09-24 07:56",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
   {
    "title": "불 붙은 은행권 '예금금리' 경쟁 3%후반에 두달만에 60조 몰려",
    "url": "http://www.smedaily.co.kr/news/articleView.html?idxno=363732",
@@ -242,14 +298,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "[주간 코스닥 기관] ISC·브이엠·파두 사고 실리콘투·SFA반도체 팔았다",
-   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=490119",
-   "published": "2026-09-24 07:04",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "“국장 닷새 쉴 동안 내 돈은 안 쉰다”…추석 연휴 서학개미가 주목할...",
    "url": "https://www.mk.co.kr/article/12160780",
    "published": "2026-09-24 07:03",
@@ -274,14 +322,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "[더벨][Korean Paper] 석유공사, 최대 규모 글로벌본드 발행 성공",
-   "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202609220841403400103125",
-   "published": "2026-09-24 07:02",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "나는 쉬어도 내 돈은 안 쉰다...연휴 美증시 이벤트",
    "url": "https://www.edaily.co.kr/News/Read?newsId=01718726645583400&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
    "published": "2026-09-24 07:02",
@@ -294,30 +334,6 @@
    "url": "http://www.segyebiz.com/newsView/20260923509435?OutUrl=naver",
    "published": "2026-09-24 07:02",
    "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "아이 명절 용돈, 통장에만 넣어두세요?…주식 증여로 굴리는 법",
-   "url": "https://economist.co.kr/article/view/ecn202609230061",
-   "published": "2026-09-24 07:01",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[주간 코스닥 외국인] 반도체株 쓸어담았다…심텍·SFA반도체·하나마이...",
-   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=490118",
-   "published": "2026-09-24 07:00",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[주식 고수] 윤석모 삼성증권 센터장 \"불마켓은 죽지 않는다…추측보다...",
-   "url": "https://www.newspim.com/news/view/20260922000924",
-   "published": "2026-09-24 07:00",
-   "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -346,16 +362,16 @@
    "watchlist_hits": []
   },
   {
-   "title": "퇴근 후에도 '삼전·닉스'…밤 8시까지 주식하는 개미들",
-   "url": "https://www.ajunews.com/view/20260923224701574",
+   "title": "코스피 7000인데 개미는 울었다…27년 만에 최악의 투자 성적",
+   "url": "https://www.ajunews.com/view/20260923223427570",
    "published": "2026-09-24 06:02",
    "topic": "증시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "코스피 7000인데 개미는 울었다…27년 만에 최악의 투자 성적",
-   "url": "https://www.ajunews.com/view/20260923223427570",
+   "title": "퇴근 후에도 '삼전·닉스'…밤 8시까지 주식하는 개미들",
+   "url": "https://www.ajunews.com/view/20260923224701574",
    "published": "2026-09-24 06:02",
    "topic": "증시",
    "ticker_prices": [],
@@ -390,22 +406,6 @@
    "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=490070",
    "published": "2026-09-24 00:10",
    "topic": "자동차",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "美 장기금리 5%에도 증시 버틸까…원화 강세 땐 환율 1200원대 가능성",
-   "url": "https://www.edaily.co.kr/News/Read?newsId=05457926645583072&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-   "published": "2026-09-23 23:01",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "연휴에 국장 안 열려도 걱정 없다…미국 증시 연휴 내내 정상 개장",
-   "url": "https://www.wikitree.co.kr/articles/1161056",
-   "published": "2026-09-23 22:30",
-   "topic": "증시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
