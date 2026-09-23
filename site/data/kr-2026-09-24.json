@@ -3,14 +3,14 @@
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-0924",
  "issue_no": 54,
- "published_at": "2026-09-24T08:30:38+09:00",
+ "published_at": "2026-09-24T08:56:02+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfMEyqLsTAUVu2JL7vTHX'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfMGvBkaZ8GsY4Cz1D5Vw'}",
   "consecutive_failure_days": 45
  },
  "models": {
@@ -102,9 +102,9 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1365.05,
-    "change": 14.69,
-    "change_pct": 1.09,
+    "value": 1364.89,
+    "change": 14.53,
+    "change_pct": 1.08,
     "trend": "flat",
     "trend_label": "보합권",
     "series": [
@@ -137,7 +137,7 @@
      1384.86,
      1373.68,
      1350.36,
-     1365.05
+     1364.89
     ]
    }
   ],
@@ -153,6 +153,54 @@
  "exits": [],
  "rejected": [],
  "newsroom": [
+  {
+   "title": "[뉴욕마켓워치] '악재 쓰나미' 美 국채시장…주식ㆍ채권↓달러↑",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4436384",
+   "published": "2026-09-24 08:52",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "국내 증시 추석 연휴 나흘간 멈춘다…해외주식 데스크는 '24시간'",
+   "url": "http://www.newsian.co.kr/news/articleView.html?idxno=95954",
+   "published": "2026-09-24 08:40",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "셀리드·블루엠텍, 경영권 매각 소식에 들썩…인벤테라 상승[바이오 맥...",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=01794166645583400&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "published": "2026-09-24 08:38",
+   "topic": "바이오",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[온체인 주식선물] 삼성전자, 정규장 종가보다 2.24% 할인",
+   "url": "https://www.tokenpost.kr/news/insights/413171",
+   "published": "2026-09-24 08:32",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[불장이 바꾼 증시 풍경②] 코스피 최고치에도 '1조 클럽' 축소…반도체...",
+   "url": "http://www.srtimes.kr/news/articleView.html?idxno=213233",
+   "published": "2026-09-24 08:30",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "\"美 단일종목ETF는 전체 0.21% 불과, 상품 제조·설계 더 신중해야\"",
+   "url": "https://www.mt.co.kr/stock/2026/09/24/2026092309245569145",
+   "published": "2026-09-24 08:30",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
   {
    "title": "추석 앞두고 ‘올빼미 공시’ 91건…\"매각 무산·상폐 우려”",
    "url": "https://www.sentv.co.kr/article/view/sentv202609240002",
@@ -186,7 +234,7 @@
    "watchlist_hits": []
   },
   {
-   "title": "[추석 없는 미국주식(중)]M7?, 우주·보안·양자도 있다",
+   "title": "[추석 없는 미국주식(중)] M7이 전부?…우주·보안·양자도 있다",
    "url": "https://www.straightnews.co.kr/news/articleView.html?idxno=311874",
    "published": "2026-09-24 08:06",
    "topic": "반도체",
@@ -210,8 +258,8 @@
    "watchlist_hits": []
   },
   {
-   "title": "코스피 7000 재진입, 체감경기는 왜 다른가",
-   "url": "https://www.the-pr.co.kr/news/articleView.html?idxno=62731",
+   "title": "'국장'은 쉬어도 '미장'은 열린다…추석 전후 챙겨볼 ETF는",
+   "url": "https://www.yna.co.kr/view/AKR20260923167100008?input=1195m",
    "published": "2026-09-24 08:00",
    "topic": "반도체",
    "ticker_prices": [],
@@ -220,14 +268,6 @@
   {
    "title": "中유니트리 거품 논란에 문턱 높아진 IPO…'매출 뻥튀기' 논란도",
    "url": "https://www.news1.kr/world/northeast-asia/6300508",
-   "published": "2026-09-24 08:00",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "'국장'은 쉬어도 '미장'은 열린다…추석 전후 챙겨볼 ETF는",
-   "url": "https://www.yna.co.kr/view/AKR20260923167100008?input=1195m",
    "published": "2026-09-24 08:00",
    "topic": "반도체",
    "ticker_prices": [],
@@ -285,7 +325,7 @@
    "title": "추석 연휴 돌입 韓 증시...美·中 정상회담 결과에 쏠린 눈",
    "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=702692",
    "published": "2026-09-24 07:30",
-   "topic": "반도체",
+   "topic": "바이오",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -322,14 +362,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "미국증시, 금리·유가 급등에 동반 하락…AI 랠리 제동·반도체 약세",
-   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16210598",
-   "published": "2026-09-24 07:02",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "비보존, ‘어나프라’ 이어 경구용 신약 개발...진통제 파이프라인 확대",
    "url": "https://www.news2day.co.kr/article/20260923500270",
    "published": "2026-09-24 07:02",
@@ -338,18 +370,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "[더벨][Korean Paper] 석유공사, 최대 규모 글로벌본드 발행 성공",
-   "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202609220841403400103125",
-   "published": "2026-09-24 07:02",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "한은 추가 인상 언제…10월 금통위 앞두고 환율·물가 변수",
    "url": "http://www.segyebiz.com/newsView/20260923509435?OutUrl=naver",
    "published": "2026-09-24 07:02",
-   "topic": "금융",
+   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -374,14 +398,6 @@
    "url": "https://news.dealsitetv.com/articles/176333",
    "published": "2026-09-24 06:08",
    "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "퇴근 후에도 '삼전·닉스'…밤 8시까지 주식하는 개미들",
-   "url": "https://www.ajunews.com/view/20260923224701574",
-   "published": "2026-09-24 06:02",
-   "topic": "증시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -434,14 +450,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "상폐 강화하면서 퇴로도 열었다…코스닥 ‘퇴출 기준’ 고심[메이드 인...",
-   "url": "https://www.kukinews.com/article/view/kuk202609230160",
-   "published": "2026-09-23 15:58",
-   "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "[월가 톡톡] 포브스 '영앤리치'에 AI 창업자 대거 포진",
    "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4436329",
    "published": "2026-09-23 15:36",
@@ -461,14 +469,6 @@
    "title": "로보틱스 전동화 핵심 승부수… HT로보틱스, 배터리팩·모듈 수주 확대...",
    "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=490039",
    "published": "2026-09-23 14:30",
-   "topic": "2차전지",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "AI 전력난에 ESS 수요 급증…삼기에너지솔루션즈 등 소재·부품주 강세",
-   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=490011",
-   "published": "2026-09-23 13:54",
    "topic": "2차전지",
    "ticker_prices": [],
    "watchlist_hits": []
