@@ -3,14 +3,14 @@
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-0923",
  "issue_no": 53,
- "published_at": "2026-09-23T08:47:55+09:00",
+ "published_at": "2026-09-23T09:00:51+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfKNVLxiF6j7AVe19C5vt'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfKPUYQseuDsPr6cyU6C9'}",
   "consecutive_failure_days": 44
  },
  "models": {
@@ -102,13 +102,12 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1352.86,
-    "change": -20.82,
-    "change_pct": -1.52,
+    "value": 1351.78,
+    "change": -21.9,
+    "change_pct": -1.59,
     "trend": "flat",
     "trend_label": "보합권",
     "series": [
-     1416.46,
      1416.85,
      1415.37,
      1414.73,
@@ -137,15 +136,15 @@
      1379.53,
      1384.86,
      1373.68,
-     1352.86
+     1351.78
     ]
    }
   ],
-  "up": 995,
-  "down": 1429,
-  "flat": 288,
-  "up_ratio": 36.7,
-  "mood": "위험회피",
+  "up": 0,
+  "down": 0,
+  "flat": 0,
+  "up_ratio": 0.0,
+  "mood": "혼조",
   "sectors": []
  },
  "new_entries": [],
@@ -154,58 +153,114 @@
  "rejected": [],
  "newsroom": [
   {
-   "title": "SK증권 “티로보틱스, 3Q 6개 분기 만에 흑전…휴머노이드 사업도 본격...",
-   "url": "https://www.etoday.co.kr/news/view/2628887",
-   "published": "2026-09-23 08:46",
+   "title": "\"추석 변동성에 흔들리지 말아야\"…3분기 반도체 실적 변수",
+   "url": "https://weekly.hankooki.com/news/articleView.html?idxno=7185597",
+   "published": "2026-09-23 09:00",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "유안타증권 \"삼성전자, 사이클 장기화 주목.. 목표가 63만원 상향\"",
+   "url": "https://www.g-enews.com/view.php?ud=20260923083834220344093b5d4e_1",
+   "published": "2026-09-23 09:00",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "[오늘 일본은] 태풍 25호 피해 확산…7명 사망·5명 실종, 주택 500채 이...",
-   "url": "https://www.pointe.co.kr/news/articleView.html?idxno=85108",
-   "published": "2026-09-23 08:46",
+   "title": "티로보틱스, 진공로봇·AMR 성장세…산업형 휴머노이드 내년 공급 전망",
+   "url": "http://www.thevaluenews.co.kr/news/view.php?idx=201845",
+   "published": "2026-09-23 09:00",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "반도체주 훈풍에 삼성전자·SK하이닉스 강세…코스피 상승 기대",
-   "url": "https://www.ziksir.com/news/articleView.html?idxno=147368",
-   "published": "2026-09-23 08:44",
+   "title": "TD코웬 \"미·중 정상회담 앞두고 자동차주 매도세 과도\"",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4436244",
+   "published": "2026-09-23 09:00",
+   "topic": "자동차",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "소득 개선 기대에 소비심리 한 달 만에 반등",
+   "url": "https://www.mediapen.com/news/view/1125563",
+   "published": "2026-09-23 08:58",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "뉴욕증시, AI 열풍에 나스닥 이틀 연속 사상 최고",
+   "url": "https://www.newstopkorea.com/news/articleView.html?idxno=47820",
+   "published": "2026-09-23 08:56",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "메리츠證 \"삼성전기, 가파른 이익 성장…목표가 220만원\"",
-   "url": "https://www.newsis.com/view/NISX20260923_0003801376",
-   "published": "2026-09-23 08:44",
+   "title": "[해외시황] 뉴욕증시, 미·이란 협상 주시 속 '혼조'…나스닥 '최고치 재...",
+   "url": "http://www.newsprime.co.kr/news/article.html?no=748826",
+   "published": "2026-09-23 08:56",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "美-이란 유엔총회 행보 주시한 뉴욕증시…3대 지수 혼조세 마감",
-   "url": "https://www.sentv.co.kr/article/view/sentv202609230008",
-   "published": "2026-09-23 08:40",
+   "title": "뉴욕증시, 반도체 강세에도 혼조 마감…나스닥 또 최고치",
+   "url": "https://biz.sbs.co.kr/article_hub/20000336408?division=NAVER",
+   "published": "2026-09-23 08:55",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "유안타증권 \"삼성전자, 메모리 업사이클 장기화 매력적\"",
-   "url": "https://www.financialpost.co.kr/news/articleView.html?idxno=277161",
-   "published": "2026-09-23 08:40",
+   "title": "메리츠證 \"삼성전기, 원·달러 환율 하락에도 업황 좋아…목표주가 220만...",
+   "url": "https://www.ajunews.com/view/20260923084759895",
+   "published": "2026-09-23 08:52",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "AI 서버 타고 실적 눈높이 '쑥'…삼성전기, CPU까지 수혜[애널리스트의...",
-   "url": "https://www.newsway.co.kr/news/view?ud=2026092308204567423",
-   "published": "2026-09-23 08:38",
+   "title": "[뉴욕 브리핑] 유엔서 美-이란 회담…나스닥 또 사상 최고",
+   "url": "https://news.dealsitetv.com/articles/176313",
+   "published": "2026-09-23 08:52",
    "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "금리인상 전망 높은데 기대인플레이션 제자리···소비심리는 반등",
+   "url": "https://www.newsfreezone.co.kr/news/articleView.html?idxno=710870",
+   "published": "2026-09-23 08:52",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "산업은행, 폭스콘 유로엔채 주관까지…글로벌 DCM 역량 두각",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4436238",
+   "published": "2026-09-23 08:50",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "美·유럽·日 다 금리 올렸다…AI 투자는 버티고 소비만 흔들린다",
+   "url": "https://www.thepowernews.co.kr/view.php?ud=202609221041557220de3f0aa1be_7",
+   "published": "2026-09-23 08:50",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "나스닥 또 역사적 최고가 터졌는데…내 종목만 파란불 켜진 진짜 '이유...",
+   "url": "https://www.wikitree.co.kr/articles/1161529",
+   "published": "2026-09-23 08:50",
+   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -230,14 +285,6 @@
    "url": "https://www.ajunews.com/view/20260922165517893",
    "published": "2026-09-23 08:38",
    "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "\"삼성전기, 에이전트AI 확산으로 수요 부각…목표가 220만원으로↑\"",
-   "url": "https://www.mt.co.kr/stock/2026/09/23/2026092308340493610",
-   "published": "2026-09-23 08:36",
-   "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -274,34 +321,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "[국제금융리포트] 이란 협상 기대에 유가 2주 만에 최저…美 국채금리는...",
-   "url": "https://www.ajunews.com/view/20260923082107781",
-   "published": "2026-09-23 08:32",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[국제금융 브리핑] 트럼프, 중간선거 이후 이란 합의 가능성 언급...브렌...",
-   "url": "https://www.tokenpost.kr/news/economy/412490",
-   "published": "2026-09-23 08:32",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "[다시, 예금]4% 예금 돌아올까…특판예금은 4% 근접",
    "url": "https://news.bizwatch.co.kr/article/finance/2026/09/21/0035",
    "published": "2026-09-23 08:30",
    "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "수출 호조에 소득 기대↑…9월 소비심리 반등",
-   "url": "https://www.youthdaily.co.kr/news/article.html?no=227535",
-   "published": "2026-09-23 08:30",
-   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -318,14 +341,6 @@
    "url": "https://www.autodaily.co.kr/news/articleView.html?idxno=600665",
    "published": "2026-09-23 08:26",
    "topic": "자동차",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[넥스트-샷] 트럼프는 강경 발언, 유가는 하락···중동보다 AI에 꽂힌...",
-   "url": "https://www.womaneconomy.co.kr/news/articleView.html?idxno=258991",
-   "published": "2026-09-23 08:26",
-   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -362,30 +377,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "원·달러 환율, 1356.5원…달러, 강보합권 등락 전망",
-   "url": "http://www.joseilbo.com/news/news_read.php?uid=576260&class=18&grp=",
-   "published": "2026-09-23 08:15",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "추석·분기말 네고 몰린다… 원/달러 환율, 1350원대 초중반 하락 전망",
-   "url": "http://www.the-biz.co.kr/news/articleView.html?idxno=728324",
-   "published": "2026-09-23 08:14",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "뉴욕금값, 0.2% 하락⋯연준 추가 긴축 전망 속 약세",
-   "url": "https://www.etoday.co.kr/news/view/2628857",
-   "published": "2026-09-23 08:14",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "美 현지 주목에 스카이랩스 ‘上’…오름테라퓨틱은 연속 하락[바이오 ...",
    "url": "https://www.edaily.co.kr/News/Read?newsId=02525606645583072&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
    "published": "2026-09-23 08:02",
@@ -412,14 +403,6 @@
   {
    "title": "[KFT 모닝 브리프] 2026.09.23 — 오늘 꼭 알아야 할 국내외 경제뉴스",
    "url": "https://www.fntimes.com/html/view.php?ud=202609230712135499141825007d_18",
-   "published": "2026-09-23 07:20",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "'파업 기로' KB증권 노조 “임단협 불모 삼은 성과급 개편…임원진 보상...",
-   "url": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202609221602409960217",
    "published": "2026-09-23 07:20",
    "topic": "증시",
    "ticker_prices": [],
@@ -470,6 +453,22 @@
    "url": "https://www.chosun.com/international/international_general/2026/09/23/RNI7HPAYNVBVJGBUNRKJU345QA/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
    "published": "2026-09-23 00:46",
    "topic": "자동차",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[공시] 9월 23일, 코스닥 상장사 58개 종목 자사주 매매 신청",
+   "url": "https://www.newstnt.com/news/articleView.html?idxno=719850",
+   "published": "2026-09-22 21:28",
+   "topic": "바이오",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "“시총 작아도 관심을”...여의도서 꼽은 중소형주 10선",
+   "url": "https://www.mk.co.kr/article/12156533",
+   "published": "2026-09-22 21:01",
+   "topic": "바이오",
    "ticker_prices": [],
    "watchlist_hits": []
   }
