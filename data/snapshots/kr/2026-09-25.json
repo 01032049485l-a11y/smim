@@ -3,14 +3,14 @@
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-0925",
  "issue_no": 55,
- "published_at": "2026-09-25T08:19:05+09:00",
+ "published_at": "2026-09-25T08:50:00+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfP7uewt7pz6mGfj4JeEi'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfPAGT3LGmGELQrggV66b'}",
   "consecutive_failure_days": 46
  },
  "models": {
@@ -102,9 +102,9 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1367.74,
-    "change": 5.24,
-    "change_pct": 0.38,
+    "value": 1367.6,
+    "change": 5.1,
+    "change_pct": 0.37,
     "trend": "flat",
     "trend_label": "보합권",
     "series": [
@@ -137,7 +137,7 @@
      1373.68,
      1350.36,
      1362.5,
-     1367.74
+     1367.6
     ]
    }
   ],
@@ -154,7 +154,63 @@
  "rejected": [],
  "newsroom": [
   {
-   "title": "[추석 없는 미국주식(하)]돈 몰린 美 ETF, 실제 수익은?",
+   "title": "HLB 주가 보합…HLB이노베이션·제약은 상승, 연휴 이후 그룹주 향방은...",
+   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=609690",
+   "published": "2026-09-25 08:36",
+   "topic": "바이오",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "보금자리론, 5년 전 비교해보니…\"금리 1.35%p 늘고, 대출액 7천만원↑\"",
+   "url": "https://www.mediapen.com/news/view/1125963",
+   "published": "2026-09-25 08:36",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[온체인 주식선물] 삼성전자, 정규장 종가보다 4.81% 할인",
+   "url": "https://www.tokenpost.kr/news/insights/413831",
+   "published": "2026-09-25 08:32",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[국제금융 브리핑] 미국 30년물 국채금리 5.50% 터치...2004년 이후 최고",
+   "url": "https://www.tokenpost.kr/news/economy/413832",
+   "published": "2026-09-25 08:32",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[뉴욕마켓워치] 美 30년물 금리, 결국 5.5%도 뚫었다…달러↑채권↓주식...",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4436455",
+   "published": "2026-09-25 08:26",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[뉴욕증시] 국채금리 급등 vs 호르무즈 개방 기대 '혼조'···메타 4%↑·...",
+   "url": "https://www.seoulfn.com/news/articleView.html?idxno=638714",
+   "published": "2026-09-25 08:26",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "금리 인상 사이클, 금융株에 항상 유리할까?[주末머니]",
+   "url": "https://view.asiae.co.kr/article/2026091804304138218",
+   "published": "2026-09-25 08:13",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[추석 없는 미국주식(하)] 돈 몰린 美 ETF, 실제 수익률은?",
    "url": "https://www.straightnews.co.kr/news/articleView.html?idxno=311939",
    "published": "2026-09-25 08:06",
    "topic": "반도체",
@@ -162,16 +218,16 @@
    "watchlist_hits": []
   },
   {
-   "title": "삼성전자우, 본주 두 배 속도로 뛴다…배당·소각 기대",
-   "url": "https://www.sedaily.com/article/20094792?ref=naver",
+   "title": "저PBR 명단 공개 임박…車부품사 ‘밸류업’ 시계 빨라진다",
+   "url": "https://dealsite.co.kr/articles/169587",
    "published": "2026-09-25 08:02",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "저PBR 명단 공개 임박…車부품사 ‘밸류업’ 시계 빨라진다",
-   "url": "https://dealsite.co.kr/articles/169587",
+   "title": "삼성전자우, 본주 두 배 속도로 뛴다…배당·소각 기대",
+   "url": "https://www.sedaily.com/article/20094792?ref=naver",
    "published": "2026-09-25 08:02",
    "topic": "반도체",
    "ticker_prices": [],
@@ -202,16 +258,16 @@
    "watchlist_hits": []
   },
   {
-   "title": "\"자금유치에서 자금운영 경쟁으로\"...메리츠증권 가세한 발행어음 \"9파전...",
-   "url": "https://www.youthdaily.co.kr/news/article.html?no=227594",
+   "title": "[뱅커스토리] 조윤환 NH농협은행 부장 \"퇴직연금, 수익률 다음은 '연금'...",
+   "url": "https://www.newspim.com/news/view/20260923000536",
    "published": "2026-09-25 08:00",
    "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "[뱅커스토리] 조윤환 NH농협은행 부장 \"퇴직연금, 수익률 다음은 '연금'...",
-   "url": "https://www.newspim.com/news/view/20260923000536",
+   "title": "\"자금유치에서 자금운영 경쟁으로\"...메리츠증권 가세한 발행어음 \"9파전...",
+   "url": "https://www.youthdaily.co.kr/news/article.html?no=227594",
    "published": "2026-09-25 08:00",
    "topic": "금융",
    "ticker_prices": [],
@@ -226,42 +282,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "뉴욕증시, 미 국채금리 급등 속 혼조 마감...다우존스 0.3%↓",
-   "url": "https://www.womennews.co.kr/news/articleView.html?idxno=282605",
-   "published": "2026-09-25 07:49",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "[오늘 금시세] 금 1돈 국제환산 70만4449원…국제 금값 약세",
    "url": "https://www.topstarnews.net/news/articleView.html?idxno=16212186",
    "published": "2026-09-25 07:44",
    "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "268조원 다시 미국으로…서학개미, 국채 ETF·반도체 3배에 동시에 베팅",
-   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=490257",
-   "published": "2026-09-25 07:32",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "AI 수요 확장에 폭발 직전이라는데...\"장기금리 주춤, 삼전닉스 또 간다...",
-   "url": "https://www.fnnews.com/news/202609231737116589",
-   "published": "2026-09-25 07:30",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "뉴욕증시, 고유가·국채금리 급등에 혼조⋯다우 0.31%↓",
-   "url": "https://www.etoday.co.kr/news/view/2629342",
-   "published": "2026-09-25 07:18",
-   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -294,14 +318,6 @@
    "url": "https://www.mt.co.kr/politics/2026/09/25/2026092213425548096",
    "published": "2026-09-25 07:00",
    "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "\"추석 상여금 어디에 둘까\"…긴 휴장 앞두고 '파킹형 상품' 각광",
-   "url": "https://www.newsis.com/view/NISX20260923_0003801771",
-   "published": "2026-09-25 07:00",
-   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -410,14 +426,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "160엔 턱밑 찬 엔화… 日 개입 한계에 美 결단 촉각",
-   "url": "https://www.g-enews.com/view.php?ud=202609241642479117e7e8286d56_1",
-   "published": "2026-09-24 16:44",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "배당주냐 성장주냐…현금 넘치는 기아가 맞닥뜨린 선택은?",
    "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=490169",
    "published": "2026-09-24 14:08",
@@ -462,14 +470,6 @@
    "url": "https://www.theguru.co.kr/news/article.html?no=107459",
    "published": "2026-09-24 07:42",
    "topic": "자동차",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "추석 연휴 돌입 韓 증시...美·中 정상회담 결과에 쏠린 눈",
-   "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=702692",
-   "published": "2026-09-24 07:30",
-   "topic": "바이오",
    "ticker_prices": [],
    "watchlist_hits": []
   }
