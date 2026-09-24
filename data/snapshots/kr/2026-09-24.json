@@ -3,14 +3,14 @@
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-0924",
  "issue_no": 54,
- "published_at": "2026-09-24T09:15:21+09:00",
+ "published_at": "2026-09-24T09:46:01+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfMJPbfcutb98F1VxmfHh'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfMLjFGpcaWoMWwc4HHWv'}",
   "consecutive_failure_days": 45
  },
  "models": {
@@ -102,9 +102,9 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1366.63,
-    "change": 16.27,
-    "change_pct": 1.2,
+    "value": 1372.08,
+    "change": 21.72,
+    "change_pct": 1.61,
     "trend": "flat",
     "trend_label": "보합권",
     "series": [
@@ -136,7 +136,7 @@
      1384.86,
      1373.68,
      1350.36,
-     1366.63
+     1372.08
     ]
    }
   ],
@@ -152,6 +152,54 @@
  "exits": [],
  "rejected": [],
  "newsroom": [
+  {
+   "title": "출시 열흘 만에 챗GPT 제치고 美 1위… 메타 'AI 비서', AI 회의론 뒤집...",
+   "url": "https://www.thepublic.kr/news/articleView.html?idxno=319861",
+   "published": "2026-09-24 09:44",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[추석 이후 증시] 조수홍 센터장 \"점진적인 상승 우위, AI인프라 비중 확...",
+   "url": "http://www.paxetv.com/news/articleView.html?idxno=282722",
+   "published": "2026-09-24 09:38",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[국내증시 개장시황] 코스피 하락, 코스닥 상승 속 혼조세",
+   "url": "https://www.tokenpost.kr/news/market/413193",
+   "published": "2026-09-24 09:32",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "이억원, 추석 연휴도 업무 모드…환율·레버리지 ETF 국감 대비",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4436390",
+   "published": "2026-09-24 09:22",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[기업家] 알테오젠 ㅣ 키트루다SC 유럽 외연 확장…日 승인에 노바티스...",
+   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=609502",
+   "published": "2026-09-24 09:20",
+   "topic": "바이오",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[브라질증시 美 국채금리·유가 상승에 위험회피 확산되며 하락...헤알 ...",
+   "url": "https://www.newspim.com/news/view/20260924000032",
+   "published": "2026-09-24 09:19",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
   {
    "title": "“30만전자 가나?” 추석 끝나면 주식 오른다던데…22번 중 15번 통했다...",
    "url": "https://www.sedaily.com/article/20094794?ref=naver",
@@ -201,14 +249,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "수익률 1위 '하나로 TDF' 김석환 NH운용 부장 \"AI 랠리 숨고르기 … 中 추...",
-   "url": "https://biz.newdaily.co.kr/site/data/html/2026/09/23/2026092300116.html",
-   "published": "2026-09-24 09:00",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "“추석에도 미국장은 열립니다”…서학개미가 챙겨야 할 ‘이것’",
    "url": "https://economist.co.kr/article/view/ecn202609220055",
    "published": "2026-09-24 09:00",
@@ -244,7 +284,7 @@
    "title": "추석 이후 증시 향방 가를 외국인 자금…코스피 9000선 재도전할까",
    "url": "https://thetracker.co.kr/View.aspx?No=4240852",
    "published": "2026-09-24 08:57",
-   "topic": "반도체",
+   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -273,26 +313,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "[온체인 주식선물] 삼성전자, 정규장 종가보다 2.24% 할인",
-   "url": "https://www.tokenpost.kr/news/insights/413171",
-   "published": "2026-09-24 08:32",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "[불장이 바꾼 증시 풍경②] 코스피 최고치에도 '1조 클럽' 축소…반도체...",
    "url": "http://www.srtimes.kr/news/articleView.html?idxno=213233",
    "published": "2026-09-24 08:30",
    "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "\"개인투자 거의 없어\"...2.2경원 미국 ETF시장, 단종레는 '0.21%'",
-   "url": "https://www.mt.co.kr/stock/2026/09/24/2026092309245569145",
-   "published": "2026-09-24 08:30",
-   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -329,22 +353,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "다시 '구천피' 갈 수 있나…증권가 \"빅이벤트 후 랠리 기대\"[추석 이후 ...",
-   "url": "https://www.newsis.com/view/NISX20260923_0003802530",
-   "published": "2026-09-24 08:00",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[국내 증시] 한국 주식시장 24일~25일 휴장한다 왜?…재개일은",
-   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=609450",
-   "published": "2026-09-24 07:56",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "[기자수첩] 美 금리 폭격에 아시아 통화 ‘울상’...각국 고민은 계속",
    "url": "https://www.g-enews.com/view.php?ud=202609221032243300e7e8286d56_1",
    "published": "2026-09-24 07:44",
@@ -365,14 +373,6 @@
    "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=702692",
    "published": "2026-09-24 07:30",
    "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "미 국채 10년물 5.1% 돌파…뉴욕증시 하락·나스닥 1.13%↓",
-   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=88976",
-   "published": "2026-09-24 07:18",
-   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -425,14 +425,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "반도체 훈풍, 코스피 '상승'...한화솔루션 & 삼전닉스 '활짝'",
-   "url": "http://www.choicenews.co.kr/news/articleView.html?idxno=171675",
-   "published": "2026-09-23 16:26",
-   "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "[월가 톡톡] 포브스 '영앤리치'에 AI 창업자 대거 포진",
    "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4436329",
    "published": "2026-09-23 15:36",
@@ -468,6 +460,14 @@
    "title": "삼성증권 \"현대차, 원화 강세·파업에 실적 둔화…목표가 60만→50만원\"",
    "url": "https://www.thepowernews.co.kr/view.php?ud=202609231343051011de3f0aa1be_7",
    "published": "2026-09-23 13:46",
+   "topic": "자동차",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "현대차는 자율주행, 기아는 로봇…신사업 투자 역할분담 주목-삼성증권",
+   "url": "http://www.press9.kr/news/articleView.html?idxno=83263",
+   "published": "2026-09-23 13:32",
    "topic": "자동차",
    "ticker_prices": [],
    "watchlist_hits": []
