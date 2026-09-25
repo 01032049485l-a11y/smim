@@ -3,14 +3,14 @@
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-0925",
  "issue_no": 55,
- "published_at": "2026-09-25T09:17:55+09:00",
+ "published_at": "2026-09-25T09:43:13+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfPCPuHLK9o9DNmp6LiST'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfPEKpbvRPtbqWxmJ7gqN'}",
   "consecutive_failure_days": 46
  },
  "models": {
@@ -100,9 +100,9 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1368.65,
-    "change": 6.15,
-    "change_pct": 0.45,
+    "value": 1367.53,
+    "change": 5.03,
+    "change_pct": 0.37,
     "trend": "flat",
     "trend_label": "보합권",
     "series": [
@@ -134,7 +134,7 @@
      1373.68,
      1350.36,
      1362.5,
-     1368.65
+     1367.53
     ]
    }
   ],
@@ -150,6 +150,54 @@
  "exits": [],
  "rejected": [],
  "newsroom": [
+  {
+   "title": "세균끼리 신호 주고받아 덧셈…‘살아있는 회로’ 개발",
+   "url": "https://www.chosun.com/economy/science/2026/09/25/KWMJHN5BZREZ3DBIYOEZ23LL5I/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
+   "published": "2026-09-25 09:38",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[국내증시 개장시황] 코스닥 2% 급등, 주요 종목 혼조세",
+   "url": "https://www.tokenpost.kr/news/market/413856",
+   "published": "2026-09-25 09:32",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "삼성 반도체 직원 '6억원 성과급' 예고이달 말 산정 방식·지급 기준 공...",
+   "url": "https://www.autodaily.co.kr/news/articleView.html?idxno=600704",
+   "published": "2026-09-25 09:30",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "삼성전자 반도체 슈퍼사이클 다시 오나…\"지금은 공급보다 수요 볼 때\"",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=490268",
+   "published": "2026-09-25 09:24",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "\"익숙하지 않은 영역\"…美국채 30년물 금리 2004년來 최고",
+   "url": "https://www.joongangenews.com/news/articleView.html?idxno=550535",
+   "published": "2026-09-25 09:22",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "RNA 신약 커지자 에스티팜도 뜬다…올리고 수주 확대 주목",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=490267",
+   "published": "2026-09-25 09:20",
+   "topic": "바이오",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
   {
    "title": "미국채 금리 20년래 최고 수준에…글로벌 국채 금리 상승세 확산",
    "url": "https://www.ajunews.com/view/20260925075931678",
@@ -255,31 +303,15 @@
    "watchlist_hits": []
   },
   {
-   "title": "[뉴욕증시] 국채금리 급등 vs 호르무즈 개방 기대 '혼조'···메타 4%↑·...",
-   "url": "https://www.seoulfn.com/news/articleView.html?idxno=638714",
-   "published": "2026-09-25 08:26",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "[뉴욕마켓워치] 美 30년물 금리, 결국 5.5%도 뚫었다…달러↑채권↓주식...",
    "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4436455",
    "published": "2026-09-25 08:26",
-   "topic": "반도체",
+   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "[추석 없는 미국주식(하)] 돈 몰린 美 ETF, 실제 수익률은?",
-   "url": "https://www.straightnews.co.kr/news/articleView.html?idxno=311939",
-   "published": "2026-09-25 08:06",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "코스닥 중소형株 매력 커질까[추석 이후 증시는②]",
+   "title": "코스닥 중소형株 매력 커질까[추석 이후 내 돈은②]",
    "url": "https://www.newsis.com/view/NISX20260923_0003802079",
    "published": "2026-09-25 08:00",
    "topic": "증시",
@@ -359,14 +391,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "'사팔사팔'로 손실본 개미들…1주씩 차곡차곡 '주식 모으기' 늘었다",
-   "url": "https://www.news1.kr/finance/general-stock/6300802",
-   "published": "2026-09-25 06:00",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "증권사, 추석 명절 재테크족 겨냥한 특판 열풍",
    "url": "https://www.pointdaily.co.kr/news/articleView.html?idxno=319973",
    "published": "2026-09-25 06:00",
@@ -375,9 +399,9 @@
    "watchlist_hits": []
   },
   {
-   "title": "추석 앞두고 '올빼미 공시' 91건…경영권 매각 무산·상폐 우려 쏟아졌...",
-   "url": "https://www.polinews.co.kr/news/articleView.html?idxno=744065",
-   "published": "2026-09-25 01:48",
+   "title": "'사팔사팔'로 손실본 개미들…1주씩 차곡차곡 '주식 모으기' 늘었다",
+   "url": "https://www.news1.kr/finance/general-stock/6300802",
+   "published": "2026-09-25 06:00",
    "topic": "증시",
    "ticker_prices": [],
    "watchlist_hits": []
@@ -443,30 +467,6 @@
    "url": "https://www.thepublic.kr/news/articleView.html?idxno=319971",
    "published": "2026-09-24 09:50",
    "topic": "2차전지",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[기업家] 알테오젠 ㅣ 키트루다SC 유럽 외연 확장…日 승인에 노바티스...",
-   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=609502",
-   "published": "2026-09-24 09:20",
-   "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "셀리드·블루엠텍, 경영권 매각 소식에 들썩…인벤테라 상승[바이오 맥...",
-   "url": "https://www.edaily.co.kr/News/Read?newsId=01794166645583400&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-   "published": "2026-09-24 08:38",
-   "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[국경 없는 인재 전쟁] 볼보는 왜 폭스바겐 '스코다 수장'을 영입했나…...",
-   "url": "https://www.theguru.co.kr/news/article.html?no=107459",
-   "published": "2026-09-24 07:42",
-   "topic": "자동차",
    "ticker_prices": [],
    "watchlist_hits": []
   }
