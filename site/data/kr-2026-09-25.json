@@ -3,14 +3,14 @@
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-0925",
  "issue_no": 55,
- "published_at": "2026-09-25T08:59:54+09:00",
+ "published_at": "2026-09-25T09:17:55+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfPB2CDq9em7uodFXfc56'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfPCPuHLK9o9DNmp6LiST'}",
   "consecutive_failure_days": 46
  },
  "models": {
@@ -30,7 +30,6 @@
     "trend": "down",
     "trend_label": "하락세",
     "series": [
-     6299.66,
      6345.53,
      6579.04,
      6813.34,
@@ -69,7 +68,6 @@
     "trend": "down",
     "trend_label": "하락세",
     "series": [
-     854.47,
      857.84,
      858.91,
      861.37,
@@ -102,13 +100,12 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1367.69,
-    "change": 5.19,
-    "change_pct": 0.38,
+    "value": 1368.65,
+    "change": 6.15,
+    "change_pct": 0.45,
     "trend": "flat",
     "trend_label": "보합권",
     "series": [
-     1415.37,
      1414.73,
      1413.58,
      1389.4,
@@ -137,7 +134,7 @@
      1373.68,
      1350.36,
      1362.5,
-     1367.69
+     1368.65
     ]
    }
   ],
@@ -153,6 +150,78 @@
  "exits": [],
  "rejected": [],
  "newsroom": [
+  {
+   "title": "미국채 금리 20년래 최고 수준에…글로벌 국채 금리 상승세 확산",
+   "url": "https://www.ajunews.com/view/20260925075931678",
+   "published": "2026-09-25 09:14",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[추석 이후 증시] 장문수 센터장 \"10월까진 투심 부진, 코스피 연말 8400...",
+   "url": "http://www.paxetv.com/news/articleView.html?idxno=282723",
+   "published": "2026-09-25 09:12",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "삼성전자 오르자 삼성그룹주 들썩…삼성전기·삼성생명도 상승",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=490265",
+   "published": "2026-09-25 09:12",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "‘뮤즈’로 분위기 바꾼 메타, AI 에이전트 열풍, CPU까지 번졌다",
+   "url": "https://www.seoul.co.kr/news/economy/industry/2026/09/23/20260923500301?wlog_tag3=naver",
+   "published": "2026-09-25 09:01",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "주식은 무섭고 예금은 아쉽다면…‘쉬는 돈’ 어디 둘까",
+   "url": "https://www.mk.co.kr/article/12159189",
+   "published": "2026-09-25 09:01",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[A 금융체크] 상호금융, 굳건한 지역금융 버팀목...금융 사각지대 메운...",
+   "url": "https://www.asiaa.co.kr/news/articleView.html?idxno=263768",
+   "published": "2026-09-25 09:00",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "시총 급감한 폴크스바겐, 유로스톡스50 퇴출…독일車 위기 현실로",
+   "url": "https://www.thepublic.kr/news/articleView.html?idxno=319893",
+   "published": "2026-09-25 08:58",
+   "topic": "자동차",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "삼성증권, 발행어음 특판 이틀 반 만에 완판…1000억원 소진",
+   "url": "https://www.thepublic.kr/news/articleView.html?idxno=319967",
+   "published": "2026-09-25 08:58",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "'6억 성과급' 삼성 반도체의 클라스…300만원짜리 의자에 앉아 일한다",
+   "url": "https://www.etnews.com/20260925000004",
+   "published": "2026-09-25 08:54",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
   {
    "title": "HLB 주가 보합…HLB이노베이션·제약은 상승, 연휴 이후 그룹주 향방은...",
    "url": "https://www.cbci.co.kr/news/articleView.html?idxno=609690",
@@ -186,14 +255,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "[뉴욕마켓워치] 美 30년물 금리, 결국 5.5%도 뚫었다…달러↑채권↓주식...",
-   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4436455",
-   "published": "2026-09-25 08:26",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "[뉴욕증시] 국채금리 급등 vs 호르무즈 개방 기대 '혼조'···메타 4%↑·...",
    "url": "https://www.seoulfn.com/news/articleView.html?idxno=638714",
    "published": "2026-09-25 08:26",
@@ -202,10 +263,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "금리 인상 사이클, 금융株에 항상 유리할까?[주末머니]",
-   "url": "https://view.asiae.co.kr/article/2026091804304138218",
-   "published": "2026-09-25 08:13",
-   "topic": "금융",
+   "title": "[뉴욕마켓워치] 美 30년물 금리, 결국 5.5%도 뚫었다…달러↑채권↓주식...",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4436455",
+   "published": "2026-09-25 08:26",
+   "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -218,66 +279,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "저PBR 명단 공개 임박…車부품사 ‘밸류업’ 시계 빨라진다",
-   "url": "https://dealsite.co.kr/articles/169587",
-   "published": "2026-09-25 08:02",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "삼성전자우, 본주 두 배 속도로 뛴다…배당·소각 기대",
-   "url": "https://www.sedaily.com/article/20094792?ref=naver",
-   "published": "2026-09-25 08:02",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[서울 청년 민심은 下] 멀어진 내 집 마련, 불안한 주식 투자…2030이 본...",
-   "url": "https://www.dailian.co.kr/news/view/1694415/?sc=Naver",
-   "published": "2026-09-25 08:01",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "코스닥 중소형株 매력 커질까[추석 이후 증시는②]",
    "url": "https://www.newsis.com/view/NISX20260923_0003802079",
    "published": "2026-09-25 08:00",
    "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "7000피 올라타기 겁난다…단기채 ETF에 뭉칫돈 [코주부]",
-   "url": "https://www.sedaily.com/article/20094844?ref=naver",
-   "published": "2026-09-25 08:00",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[뱅커스토리] 조윤환 NH농협은행 부장 \"퇴직연금, 수익률 다음은 '연금'...",
-   "url": "https://www.newspim.com/news/view/20260923000536",
-   "published": "2026-09-25 08:00",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "\"자금유치에서 자금운영 경쟁으로\"...메리츠증권 가세한 발행어음 \"9파전...",
-   "url": "https://www.youthdaily.co.kr/news/article.html?no=227594",
-   "published": "2026-09-25 08:00",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "회사채부터 해외 ABS까지…카드사 '돈줄' 총동원",
-   "url": "https://www.ntoday.co.kr/news/articleView.html?idxno=129641",
-   "published": "2026-09-25 07:50",
-   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -398,14 +403,6 @@
    "url": "https://www.tokenpost.kr/news/breaking/413498",
    "published": "2026-09-24 20:40",
    "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[탐사경] 레버리지 막았더니 해외로…'큰손' 된 한국 개미의 멈추지 않...",
-   "url": "https://www.moneystorm.kr/news/articleView.html?idxno=6765",
-   "published": "2026-09-24 19:23",
-   "topic": "증시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
