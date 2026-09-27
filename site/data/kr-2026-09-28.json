@@ -3,14 +3,14 @@
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-0928",
  "issue_no": 56,
- "published_at": "2026-09-28T08:43:55+09:00",
+ "published_at": "2026-09-28T08:56:47+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfUqEGAF6MwYBEqn89fyu'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfUrD9bCKVNc4Yw7XFKWo'}",
   "consecutive_failure_days": 47
  },
  "models": {
@@ -96,9 +96,9 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1355.05,
-    "change": -12.31,
-    "change_pct": -0.9,
+    "value": 1354.98,
+    "change": -12.38,
+    "change_pct": -0.91,
     "trend": "down",
     "trend_label": "하락세",
     "series": [
@@ -131,7 +131,7 @@
      1350.36,
      1362.5,
      1367.36,
-     1355.05
+     1354.98
     ]
    }
   ],
@@ -148,6 +148,62 @@
  "rejected": [],
  "newsroom": [
   {
+   "title": "하나證 “미중 정상회담은 해법 아닌 유예…10월 증시는 실적이 관건”",
+   "url": "https://biz.chosun.com/stock/stock_general/2026/09/28/CGI2DBFD7ZEBLIJIT7YB56SABE/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+   "published": "2026-09-28 08:53",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[박정식의 국내 주식시황] 연휴 뒤엔 달라질까…박스권 증시, 반도체가...",
+   "url": "https://www.newsquest.co.kr/news/articleView.html?idxno=301578",
+   "published": "2026-09-28 08:50",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "미래에셋증권, 채권 브랜드평판 9월 빅데이터 1위..한국투자증권 2위",
+   "url": "https://www.thebigdata.co.kr/view.php?ud=20260928081012903d0a8833aad_23",
+   "published": "2026-09-28 08:46",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "HLB, 美 FDA 벽 넘었다...상한가 직행",
+   "url": "https://www.smarttoday.co.kr/ko-kr/articles/111988",
+   "published": "2026-09-28 08:44",
+   "topic": "바이오",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "美 10년물 금리 2007년 이후 최고… 그런데 뉴욕증시는 왜 버티나",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=490605",
+   "published": "2026-09-28 08:44",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[AI MY 증시전망] 코스피, 美 기술주 훈풍에 7000선 공방…장기금리는 변...",
+   "url": "https://www.newspim.com/news/view/20260928000071",
+   "published": "2026-09-28 08:43",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[모닝 리포트] \"LG화학, 배터리·첨단소재 회복 유효\"",
+   "url": "https://www.newspim.com/news/view/20260928000069",
+   "published": "2026-09-28 08:43",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
    "title": "“서진시스템, 글로벌 AI 인프라 축 담당…목표가 7만원 상향”-SK",
    "url": "https://www.edaily.co.kr/News/Read?newsId=02135286645584712&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
    "published": "2026-09-28 08:43",
@@ -156,7 +212,7 @@
    "watchlist_hits": []
   },
   {
-   "title": "“지금이 주식 살 골든타임…반도체 소부장 주목”",
+   "title": "\"이러다 반등 놓칠라\"…지금이 골든타임, 반도체 소부장 주목",
    "url": "https://www.edaily.co.kr/News/Read?newsId=02122166645584712&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
    "published": "2026-09-28 08:40",
    "topic": "증시",
@@ -220,14 +276,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "[모닝 리포트] \"씨엠티엑스, TSMC 2나노 뚫었다…생산능력 80% 확대\"",
-   "url": "https://www.newspim.com/news/view/20260928000036",
-   "published": "2026-09-28 08:33",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "[증시전망대] 코스피, 연휴 후 7천선 방어전…반도체 훈풍 이어갈까",
    "url": "http://www.newsroad.co.kr/news/articleView.html?idxno=64936",
    "published": "2026-09-28 08:32",
@@ -236,33 +284,9 @@
    "watchlist_hits": []
   },
   {
-   "title": "[오늘의 신문] 대미투자 확정 지연·서울 전셋값 상승…DMZ 폭발 조사와...",
-   "url": "http://kor.theasian.asia/archives/416807",
-   "published": "2026-09-28 08:32",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "[국제금융 브리핑] 트럼프, 이란 '7일 계획' 거절...10월 금리인상 확률...",
    "url": "https://www.tokenpost.kr/news/economy/414848",
    "published": "2026-09-28 08:32",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[더벨][Rating Watch] 롯데렌탈, 미뤄진 외화 조달 성패 관심…등급 방어...",
-   "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202609221412208720106173",
-   "published": "2026-09-28 08:32",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "주담대 금리 2년 8개월 만에 최고치 찍나…다음 주 8월 대출금리 성적표...",
-   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=610059",
-   "published": "2026-09-28 08:30",
    "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
@@ -272,14 +296,6 @@
    "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4436602",
    "published": "2026-09-28 08:26",
    "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "“추석도 지났고, 내 주식은 어디로 가나?”…美 물가·마이크론 실적에...",
-   "url": "https://www.mk.co.kr/article/12162236",
-   "published": "2026-09-28 08:24",
-   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -336,22 +352,6 @@
    "url": "https://www.hankyung.com/article/2026092881626",
    "published": "2026-09-28 08:04",
    "topic": "자동차",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[오늘의 투자전략] 금리 불안 vs 반도체 실적…코스피 7000선 공방",
-   "url": "https://www.etoday.co.kr/news/view/2629638",
-   "published": "2026-09-28 07:56",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[애프터마켓 리뷰] 쓰리빌리언, ‘한국형 ARPA-H’ 과제 선정",
-   "url": "https://biz.sbs.co.kr/article_hub/20000336897?division=NAVER",
-   "published": "2026-09-28 07:55",
-   "topic": "증시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -428,14 +428,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "[채용 원픽] 동구바이오제약, 개발·품질관리·제제연구(~10/5)",
-   "url": "https://www.hitnews.co.kr/news/articleView.html?idxno=79413",
-   "published": "2026-09-28 06:00",
-   "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "스페이스X 열풍에 밀린 테슬라…주가 1년 12.5%↓",
    "url": "https://www.g-enews.com/view.php?ud=2026092720193063539a1f309431_1",
    "published": "2026-09-28 03:00",
@@ -463,6 +455,14 @@
    "title": "황화리튬부터 전해질까지…전고체 배터리 핵심 소재주 다시 햇볕",
    "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=490503",
    "published": "2026-09-27 15:36",
+   "topic": "2차전지",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "대성하이텍·코세스 뛰었는데… 2차전지 장비株 엇갈린 이유 보니",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=490494",
+   "published": "2026-09-27 15:06",
    "topic": "2차전지",
    "ticker_prices": [],
    "watchlist_hits": []
