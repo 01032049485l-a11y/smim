@@ -3,14 +3,14 @@
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-1002",
  "issue_no": 59,
- "published_at": "2026-10-02T10:04:38+09:00",
+ "published_at": "2026-10-02T10:18:19+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfcWcu4hmwWVQCBNf2FDj'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfcXfSH6PgtxBVKQ1CXcK'}",
   "consecutive_failure_days": 50
  },
  "models": {
@@ -92,9 +92,9 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1363.48,
-    "change": 6.64,
-    "change_pct": 0.49,
+    "value": 1362.68,
+    "change": 5.84,
+    "change_pct": 0.43,
     "trend": "flat",
     "trend_label": "보합권",
     "series": [
@@ -126,7 +126,7 @@
      1359.56,
      1350.5,
      1356.84,
-     1363.48
+     1362.68
     ]
    }
   ]
@@ -136,6 +136,102 @@
  "exits": [],
  "rejected": [],
  "newsroom": [
+  {
+   "title": "코스피 6,900선 등락…코스닥 900선 회복",
+   "url": "http://www.yonhapnewstv.co.kr/news/MYH20261002101646PHc",
+   "published": "2026-10-02 10:17",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[마켓펄스] 美 9월 고용보고서 앞두고 눈치보기 장세...개인·외인·기관...",
+   "url": "https://www.ntoday.co.kr/news/articleView.html?idxno=129791",
+   "published": "2026-10-02 10:16",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "메모리반도체 공급 과잉 가능성에 월스트리트 증권가 회의적, 주가 반등...",
+   "url": "https://www.businesspost.co.kr/BP?command=article_view&num=448501",
+   "published": "2026-10-02 10:16",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "엔화, 美 조기 금리인상 관측 후퇴에 1달러=157엔대 후반 상승 출발",
+   "url": "https://www.newsis.com/view/NISX20261002_0003812129",
+   "published": "2026-10-02 10:16",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[인사이트 뉴스] 물가 2.9%인데 한은은 왜 긴장하나…근원물가, 부동산...",
+   "url": "https://www.moneystorm.kr/news/articleView.html?idxno=7000",
+   "published": "2026-10-02 10:15",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "제주반도체 주가, 10월 2일 장중 92,800원 5.22% 상승",
+   "url": "https://www.joongangenews.com/news/articleView.html?idxno=552254",
+   "published": "2026-10-02 10:12",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[증시 오늘(2일) 주요 특징주] 코스피 7,000선 고지 목전…2차전지·소재...",
+   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=89653",
+   "published": "2026-10-02 10:08",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "한미반도체 주가, 10월 2일 장중 279,500원 4.10% 상승",
+   "url": "https://www.joongangenews.com/news/articleView.html?idxno=552244",
+   "published": "2026-10-02 10:08",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "코스닥 두 달 만에 장중 900선 돌파...​반도체·광통신주 강세",
+   "url": "https://www.wolyo.co.kr/news/articleView.html?idxno=318574",
+   "published": "2026-10-02 10:06",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "HBM 점유율 격차 1년 새 49%→17%…삼전·닉스 승부는 HBM4로",
+   "url": "https://www.koreareport.co.kr/news/articleView.html?idxno=53378",
+   "published": "2026-10-02 10:04",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "\"이 ETF 샀으면 3배\"… 반도체 웃고 바이오·K팝 울었다",
+   "url": "https://biz.newdaily.co.kr/site/data/html/2026/10/02/2026100200059.html",
+   "published": "2026-10-02 10:04",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "코스피, 국제유가 급등·외인 매도에 하락...6940선",
+   "url": "https://www.greened.kr/news/articleView.html?idxno=351290",
+   "published": "2026-10-02 10:03",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
   {
    "title": "5대 은행 정기적금 2년 만에 최대 폭 증가… 수신 경쟁 '후끈'",
    "url": "https://www.financialpost.co.kr/news/articleView.html?idxno=278485",
@@ -185,50 +281,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "마이크론 실적 뒤 증권가, 반도체 장밋빛 전망 쏟아냈다…“내년이 더 ...",
-   "url": "https://www.munhwa.com/article/11621033?ref=naver",
-   "published": "2026-10-02 09:59",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "S&P500 선물, 고용보고서 대기 속 상승…美 국채금리↑",
-   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4437537",
-   "published": "2026-10-02 09:58",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "원·달러 환율, 1360원대 초반 등락",
-   "url": "https://www.ziksir.com/news/articleView.html?idxno=148161",
-   "published": "2026-10-02 09:58",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "日증시, 차익실현·중동 불안에 하락 출발…닛케이 0.93%↓",
-   "url": "https://www.newsis.com/view/NISX20261002_0003811993",
-   "published": "2026-10-02 09:58",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "'금융'이 막히면 AI도, 메모리도 멈춘다",
    "url": "http://www.newsfc.co.kr/news/articleView.html?idxno=81504",
    "published": "2026-10-02 09:58",
    "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "인텔 주가, 120.00 USD 0.19% 하락 마감",
-   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16233688",
-   "published": "2026-10-02 09:54",
-   "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -244,7 +300,7 @@
    "title": "美 9월 고용 대기 '경계심리'⋯코스피 '6980선' 강보합",
    "url": "http://www.inews24.com/view/2011275",
    "published": "2026-10-02 09:53",
-   "topic": "증시",
+   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -252,15 +308,7 @@
    "title": "[개장] 코스피, 美 반등에도 보합… 고용지표 앞두고 '관망'",
    "url": "https://it.chosun.com/news/articleView.html?idxno=2023092171283",
    "published": "2026-10-02 09:52",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[신윤우의 외환분석] 거스르기 어려운 강달러 바람",
-   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4437535",
-   "published": "2026-10-02 09:52",
-   "topic": "환율·거시",
+   "topic": "바이오",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -273,18 +321,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "코스피, 미 고용지표 경계에 약보합…코스닥 900선 공방",
-   "url": "http://www.newstomato.com/ReadNews.aspx?no=1315519&inflow=N",
-   "published": "2026-10-02 09:50",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "코스피, 하락 출발 뒤 강보합…코스닥은 900선 회복 [fn오전시황]",
-   "url": "https://www.fnnews.com/news/202610020943558349",
-   "published": "2026-10-02 09:48",
-   "topic": "증시",
+   "title": "[신윤우의 외환분석] 거스르기 어려운 강달러 바람",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4437535",
+   "published": "2026-10-02 09:52",
+   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -292,7 +332,7 @@
    "title": "코스피, 하락 출발 뒤 상승 전환…6980선 등락",
    "url": "http://www.newsian.co.kr/news/articleView.html?idxno=96418",
    "published": "2026-10-02 09:48",
-   "topic": "증시",
+   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -401,30 +441,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "탈모 인구 1,000만 시대… 파이프라인 보유 제약·바이오주 주목을",
-   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=492127",
-   "published": "2026-10-02 09:20",
-   "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "엔화 개입, 무엇이 과장됐나…일본 경제 파멸론이 놓치고 있는 것들",
-   "url": "https://www.hani.co.kr/arti/economy/economy_general/1280568.html",
-   "published": "2026-10-02 09:02",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "물가가 끌고 환율이 미는 기준금리…올해 마지막 금통위 주목",
-   "url": "https://www.ekn.kr/web/view.php?key=20261002023191446",
-   "published": "2026-10-02 08:56",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "테슬라, 오늘 밤 3분기 전기차 인도량 발표…전년비 7~9% 감소 예상",
    "url": "https://www.mt.co.kr/world/2026/10/02/2026100207543660805",
    "published": "2026-10-02 08:17",
@@ -437,22 +453,6 @@
    "url": "https://view.asiae.co.kr/article/2026100114592373612",
    "published": "2026-10-02 07:53",
    "topic": "2차전지",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "BYD 중국 내 판매 22% 급감…전기차 3사 주가 반토막, 수익성이 새 기준",
-   "url": "https://www.g-enews.com/view.php?ud=2026100206563541012bd56fbc3c_1",
-   "published": "2026-10-02 07:04",
-   "topic": "자동차",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "사우디 시어, 루시드와 프리미엄 전기차 경쟁",
-   "url": "https://www.g-enews.com/view.php?ud=2026100122032399369a1f309431_1",
-   "published": "2026-10-02 05:00",
-   "topic": "자동차",
    "ticker_prices": [],
    "watchlist_hits": []
   }
