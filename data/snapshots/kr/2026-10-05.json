@@ -2,15 +2,15 @@
  "date": "2026-10-05",
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-1005",
- "issue_no": 59,
- "published_at": "2026-10-05T08:00:51+09:00",
+ "issue_no": 60,
+ "published_at": "2026-10-05T08:30:08+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cfi2cCTSh1iV954vQ96Uh'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cfi4qggvR7AnZpUVu93qW'}",
   "consecutive_failure_days": 51
  },
  "models": {
@@ -140,6 +140,54 @@
  "rejected": [],
  "newsroom": [
   {
+   "title": "AI·반도체 쏠림에 제약주 ‘찬바람’...코스닥 제약 한 달 새 10% 급락",
+   "url": "https://www.m-economynews.com/news/article.html?no=71340",
+   "published": "2026-10-05 08:26",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "삼성전기, 범용 MLCC 줄이고 고부가 제품 확대…수익성 개선",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=492629",
+   "published": "2026-10-05 08:22",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "LG이노텍, 2026년 EPS 23.6% 하향…그래도 중장기 비중확대",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=492628",
+   "published": "2026-10-05 08:18",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "삼성전자 자사주 매입 막바지…내주 '수급 공백' 첫 시험대",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4437739",
+   "published": "2026-10-05 08:12",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "담서원, 오리온 주식 담보로 346억 대출…3세 승계 앞두고 왜 지금",
+   "url": "https://www.peoplewatch.co.kr/article/view/ppw202610050003",
+   "published": "2026-10-05 08:12",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "“공포? 그런거 몰라요”…7월 폭락장에 베팅한 ‘간 큰 개미들’ 얼마...",
+   "url": "https://www.mk.co.kr/article/12168265",
+   "published": "2026-10-05 08:07",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
    "title": "[2026 국감-은행] 은행권 잇단 정보유출…'보안·내부통제' 막판 쟁점",
    "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=855482",
    "published": "2026-10-05 08:00",
@@ -196,14 +244,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "[영상] 국장 갈까, 미장 갈까…조홍래 “그렇게 투자하면 안됩니다”",
-   "url": "https://www.kmib.co.kr/article/view.asp?arcid=9000019832&cp=nv",
-   "published": "2026-10-05 07:12",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "[속보] 10월 5일 주식시장 '휴장'... 6일부터 거래 재개",
    "url": "https://www.ggilbo.com/news/articleView.html?idxno=1184915",
    "published": "2026-10-05 07:10",
@@ -228,14 +268,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "엔비디아(NVDA), 사상 최고가 돌파...월가 목표가 '515달러'까지 상승",
-   "url": "http://coinreaders.com/261526",
-   "published": "2026-10-05 07:02",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "증시 상폐기준 유예에 교육기업들 한숨 돌렸지만...\"주가 부양 어렵네\"",
    "url": "https://www.mt.co.kr/policy/2026/10/05/2026100211143857460",
    "published": "2026-10-05 07:00",
@@ -255,7 +287,7 @@
    "title": "코스닥서 '이 업종' 죽쒔다...악재 겹쳐 연초 대비 30% '폭락'",
    "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202610050004&t=NN",
    "published": "2026-10-05 06:40",
-   "topic": "증시",
+   "topic": "바이오",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -271,7 +303,7 @@
    "title": "코스닥 지난달 최악 수익률은 제약…금리·반도체 쏠림에 직격탄",
    "url": "https://www.yna.co.kr/view/AKR20261003033300008?input=1195m",
    "published": "2026-10-05 06:20",
-   "topic": "증시",
+   "topic": "바이오",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -284,25 +316,9 @@
    "watchlist_hits": []
   },
   {
-   "title": "역대 미국 중간선거 전후 코스피 향방 어땠나?",
-   "url": "https://news.mtn.co.kr/news-detail/2026100215361169799",
-   "published": "2026-10-05 06:06",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "앤트로픽·릴리가 지목한 '이 회사'…AI신약붐에 주가 7배",
    "url": "https://www.mt.co.kr/stock/2026/10/04/2026100416350670564",
    "published": "2026-10-04 19:30",
-   "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "부진의 늪 빠진 바이오주…성장성 입증이 반등 조건",
-   "url": "https://www.fnnews.com/news/202610041832140280",
-   "published": "2026-10-04 18:34",
    "topic": "바이오",
    "ticker_prices": [],
    "watchlist_hits": []
@@ -439,22 +455,6 @@
    "title": "반도체 130% 질주…자동차·철강은 제자리 [2026 증시 지형도]",
    "url": "https://www.etoday.co.kr/news/view/2632154",
    "published": "2026-10-04 06:00",
-   "topic": "자동차",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "테슬라, 3분기 인도량 전망치 상회…전기차 판매 회복세",
-   "url": "https://www.bloter.net/news/articleView.html?idxno=675004",
-   "published": "2026-10-03 15:00",
-   "topic": "자동차",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "테슬라, 3분기 인도량 예상치 상회…주가 5% ↑",
-   "url": "https://zdnet.co.kr/view/?no=20261003084458",
-   "published": "2026-10-03 12:00",
    "topic": "자동차",
    "ticker_prices": [],
    "watchlist_hits": []
