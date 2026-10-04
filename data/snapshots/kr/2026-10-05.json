@@ -3,14 +3,14 @@
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-1005",
  "issue_no": 60,
- "published_at": "2026-10-05T08:30:08+09:00",
+ "published_at": "2026-10-05T08:54:20+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cfi4qggvR7AnZpUVu93qW'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cfi6gnEH9mjKv4AmTPTLs'}",
   "consecutive_failure_days": 51
  },
  "models": {
@@ -88,9 +88,9 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1342.89,
-    "change": -17.7,
-    "change_pct": -1.3,
+    "value": 1343.0,
+    "change": -17.59,
+    "change_pct": -1.29,
     "trend": "flat",
     "trend_label": "보합권",
     "series": [
@@ -123,7 +123,7 @@
      1350.5,
      1356.84,
      1360.59,
-     1342.89
+     1343.0
     ]
    }
   ],
@@ -139,6 +139,38 @@
  "exits": [],
  "rejected": [],
  "newsroom": [
+  {
+   "title": "[온체인 주식선물] 현대차, 정규장 종가보다 1.48% 웃돈",
+   "url": "https://www.tokenpost.kr/news/insights/418235",
+   "published": "2026-10-05 08:32",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "마이크론도 샀다…‘HBM 불량’ 잡는 쎄크, 삼성·SK 문 두드린다",
+   "url": "https://economist.co.kr/article/view/ecn202609220062",
+   "published": "2026-10-05 08:31",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "美국채 금리 뛰는데 엔비디아는 신고가…‘AI 버팀목’ 언제까지",
+   "url": "https://www.kbmaeil.com/article/20261005500050",
+   "published": "2026-10-05 08:30",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[주식도락] '삼성전자 3분기는'…증권가 잇딴 '장밋빛 전망'",
+   "url": "http://www.newsdream.kr/news/articleView.html?idxno=119349",
+   "published": "2026-10-05 08:30",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
   {
    "title": "AI·반도체 쏠림에 제약주 ‘찬바람’...코스닥 제약 한 달 새 10% 급락",
    "url": "https://www.m-economynews.com/news/article.html?no=71340",
@@ -204,26 +236,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "[분배형 ETF 돋보기] 배당-이자 극복한 옵션 커버드콜…SOL팔란티어 28% ...",
-   "url": "https://dealsite.co.kr/articles/169994",
-   "published": "2026-10-05 07:42",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "반도체로 돈 몰리자 제약주 ‘찬바람’…코스닥 제약 9월 10.51% 급락",
    "url": "https://www.kbmaeil.com/article/20261005500028",
    "published": "2026-10-05 07:40",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "코스닥 시총판 뒤집은 반도체 소부장…18조 ETF 리밸런싱, 수급 변수 될...",
-   "url": "https://www.newsway.co.kr/news/view?ud=2026100214322892194",
-   "published": "2026-10-05 07:32",
-   "topic": "반도체",
+   "topic": "바이오",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -388,16 +404,16 @@
    "watchlist_hits": []
   },
   {
-   "title": "연준 10월 금리 인상 기대 후퇴…달러-원 1345~1370원 전망",
-   "url": "https://www.econovill.com/news/articleView.html?idxno=752690",
+   "title": "금시세(금값) 주간 출렁",
+   "url": "http://www.kjdaily.com/article.php?aid=1791076640688198227",
    "published": "2026-10-04 10:20",
    "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "금시세(금값) 주간 출렁",
-   "url": "http://www.kjdaily.com/article.php?aid=1791076640688198227",
+   "title": "연준 10월 금리 인상 기대 후퇴…달러-원 1345~1370원 전망",
+   "url": "https://www.econovill.com/news/articleView.html?idxno=752690",
    "published": "2026-10-04 10:20",
    "topic": "환율·거시",
    "ticker_prices": [],
@@ -440,22 +456,6 @@
    "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=492535",
    "published": "2026-10-04 09:10",
    "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[증시전망] 삼성전자 '깜짝 실적' 나올까...코스피 7000선 안착 시험대",
-   "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=704963",
-   "published": "2026-10-04 08:18",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "반도체 130% 질주…자동차·철강은 제자리 [2026 증시 지형도]",
-   "url": "https://www.etoday.co.kr/news/view/2632154",
-   "published": "2026-10-04 06:00",
-   "topic": "자동차",
    "ticker_prices": [],
    "watchlist_hits": []
   }
