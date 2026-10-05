@@ -3,14 +3,14 @@
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-1005",
  "issue_no": 60,
- "published_at": "2026-10-05T09:08:11+09:00",
+ "published_at": "2026-10-05T09:27:13+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cfi7k1YumvD2NCf8Zioty'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cfi9CBJt1tGvTCCgMSLkN'}",
   "consecutive_failure_days": 51
  },
  "models": {
@@ -86,9 +86,9 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1342.56,
-    "change": -18.03,
-    "change_pct": -1.33,
+    "value": 1343.7,
+    "change": -16.89,
+    "change_pct": -1.24,
     "trend": "flat",
     "trend_label": "보합권",
     "series": [
@@ -121,7 +121,7 @@
      1350.5,
      1356.84,
      1360.59,
-     1342.56
+     1343.7
     ]
    }
   ],
@@ -138,18 +138,82 @@
  "rejected": [],
  "newsroom": [
   {
-   "title": "'트럼프 배당금' 뭇매…고금리·고유가 속 한국증시 '7천피' 안간힘",
-   "url": "http://www.breaknews.com/1240973",
-   "published": "2026-10-05 09:06",
+   "title": "연휴에 멈춘 내 주식··· 엔비디아·테슬라는 뛰었다, 6일 '삼전닉스'...",
+   "url": "https://www.greenpostkorea.co.kr/news/articleView.html?idxno=307595",
+   "published": "2026-10-05 09:24",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "우리은행, 그룹 거래 고객 우대 넓힌 연 9% 적금 선봬",
-   "url": "http://www.popcornnews.net/news/articleView.html?idxno=134897",
-   "published": "2026-10-05 09:06",
+   "title": "반도체 쏠림·고금리에 밀린 바이오…코스닥 제약 ‘최악의 한달’",
+   "url": "https://www.etoday.co.kr/news/view/2632408",
+   "published": "2026-10-05 09:22",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "美 고용 둔화에 아시아 증시 상승…브렌트유 103달러 돌파",
+   "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1726702",
+   "published": "2026-10-05 09:20",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "최고 연 9% 적금…우리은행 ‘다함께 적금2’, 신규 고객 우대 확대",
+   "url": "https://www.betanews.net/article/view/beta202610050003",
+   "published": "2026-10-05 09:18",
    "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "우리은행, '우리금융 다함께 적금2' 출시···최고 연 9%",
+   "url": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2476995",
+   "published": "2026-10-05 09:13",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "채권왕도 \"채권 사지 마라\" 경고하는 시대",
+   "url": "https://www.fortunekorea.co.kr/news/articleView.html?idxno=54293",
+   "published": "2026-10-05 09:10",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "우리은행, 최고 연 9% '우리금융 다함께 적금2' 출시",
+   "url": "http://www.ftoday.co.kr/news/articleView.html?idxno=366620",
+   "published": "2026-10-05 09:10",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "빌딩 거래량·거래액 감소···고가 빌딩 거래는 서울 쏠림",
+   "url": "https://www.sisajournal-e.com/news/articleView.html?idxno=424118",
+   "published": "2026-10-05 09:10",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "코스닥 900선 코앞…이주 코스닥 레버리지 16% 뛰어 수익률 싹쓸이[펀드...",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=01653126645609968&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "published": "2026-10-05 09:08",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "'트럼프 배당금' 뭇매…고금리·고유가 속 한국증시 '7천피' 안간힘",
+   "url": "http://www.breaknews.com/1240973",
+   "published": "2026-10-05 09:06",
+   "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -162,8 +226,8 @@
    "watchlist_hits": []
   },
   {
-   "title": "우리은행, 최고 연 9% 적금…거래·신규 우대 확대",
-   "url": "https://www.g-enews.com/view.php?ud=202610021729315092cd0bfacc1c_1",
+   "title": "우리은행, 그룹 거래 고객 우대 넓힌 연 9% 적금 선봬",
+   "url": "http://www.popcornnews.net/news/articleView.html?idxno=134897",
    "published": "2026-10-05 09:06",
    "topic": "금융",
    "ticker_prices": [],
@@ -194,66 +258,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "우리은행, 최고 연 9.0% '우리금융 다함께 적금2' 출시",
-   "url": "http://www.newsian.co.kr/news/articleView.html?idxno=96516",
-   "published": "2026-10-05 09:02",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "무니 피델리티 아태 회장 “美 AI 모델, 韓 AI 인프라, 中 AI 서비스에 강...",
-   "url": "https://www.chosun.com/economy/money/2026/10/05/AZMAUQFAING43PJOT4YJWPHCVE/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
-   "published": "2026-10-05 09:01",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "우리은행, 최고 연 9% 적금 출시",
-   "url": "http://www.joseilbo.com/news/news_read.php?uid=576832&class=51&grp=",
-   "published": "2026-10-05 09:01",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "“최고 연 9% 금리”…우리은행, ‘다함께 적금2’ 출시",
-   "url": "https://www.ddaily.co.kr/page/view/2026100309110343498",
-   "published": "2026-10-05 09:01",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "환율 다시 오르나...IBK證 “연말 1400원 전망”",
-   "url": "https://www.mk.co.kr/article/12167269",
-   "published": "2026-10-05 09:01",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "박스권에 갖힌 코스피 향방은...美국채 금리·삼성전자 실적 '변수'",
+   "title": "박스권에 갇힌 코스피 향방은...美국채 금리·삼성전자 실적 '변수'",
    "url": "https://daily.hankooki.com/news/articleView.html?idxno=1411844",
    "published": "2026-10-05 09:00",
    "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "삼성전기, 3분기 커지는 '어닝 서프라이즈' 기대감...\"환율 악재도 뚫는...",
-   "url": "http://www.opinionnews.co.kr/news/articleView.html?idxno=145226",
-   "published": "2026-10-05 09:00",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "우리은행, 최고 연 9% '우리금융 다함께 적금2' 출시",
-   "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=704956",
-   "published": "2026-10-05 09:00",
-   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -262,22 +270,6 @@
    "url": "https://www.lecturernews.com/news/articleView.html?idxno=211549",
    "published": "2026-10-05 08:58",
    "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "SNT모티브, 자사주 270만주 소각…2027년 실적 확대 본격화",
-   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=492634",
-   "published": "2026-10-05 08:56",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[긴급진단] 메모리 반도체 주가 돌연 폭락 \"도시바 HDD 쇼크\"... 뉴욕증시...",
-   "url": "https://www.g-enews.com/view.php?ud=20261005084926781906806b77b_1",
-   "published": "2026-10-05 08:54",
-   "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -325,15 +317,7 @@
    "title": "코스닥 수익률 꼴찌는 제약·바이오",
    "url": "http://www.smedaily.co.kr/news/articleView.html?idxno=364154",
    "published": "2026-10-05 07:22",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[속보] 10월 5일 주식시장 '휴장'... 6일부터 거래 재개",
-   "url": "https://www.ggilbo.com/news/articleView.html?idxno=1184915",
-   "published": "2026-10-05 07:10",
-   "topic": "증시",
+   "topic": "바이오",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -365,14 +349,6 @@
    "title": "HLB가 던지는 메시지 \"특정 신약 좌절이 R&D 역량 상실 아니다\"",
    "url": "https://www.hitnews.co.kr/news/articleView.html?idxno=79614",
    "published": "2026-10-05 06:10",
-   "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "앤트로픽·릴리가 지목한 '이 회사'…AI신약붐에 주가 7배",
-   "url": "https://www.mt.co.kr/stock/2026/10/04/2026100416350670564",
-   "published": "2026-10-04 19:30",
    "topic": "바이오",
    "ticker_prices": [],
    "watchlist_hits": []
@@ -454,6 +430,30 @@
    "url": "http://www.kjdaily.com/article.php?aid=1791076640688198227",
    "published": "2026-10-04 10:20",
    "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "철강은 회복세인데 연결 실적은 주춤…POSCO홀딩스 반전 열쇠는?",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=492541",
+   "published": "2026-10-04 09:36",
+   "topic": "2차전지",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "현대모비스, 램프사업 분할·매각…\"사업 효율화에 투자여력 확보\"",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=492540",
+   "published": "2026-10-04 09:32",
+   "topic": "자동차",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "월가 비웃은 테슬라, 어닝 서프라이즈 폭발",
+   "url": "https://www.jnilbo.com/news/articleView.html?idxno=90000070767",
+   "published": "2026-10-04 09:29",
+   "topic": "자동차",
    "ticker_prices": [],
    "watchlist_hits": []
   }
