@@ -3,14 +3,14 @@
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-1009",
  "issue_no": 62,
- "published_at": "2026-10-09T10:24:00+09:00",
+ "published_at": "2026-10-09T10:45:53+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cfqnkxgru7Nj4wfRaBq5j'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfqpRmfYdWC7mSQwumkry'}",
   "consecutive_failure_days": 53
  },
  "models": {
@@ -82,9 +82,9 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1342.07,
-    "change": 2.99,
-    "change_pct": 0.22,
+    "value": 1341.76,
+    "change": 2.68,
+    "change_pct": 0.2,
     "trend": "down",
     "trend_label": "하락세",
     "series": [
@@ -116,7 +116,7 @@
      1343.75,
      1339.74,
      1339.08,
-     1342.07
+     1341.76
     ]
    }
   ],
@@ -132,6 +132,46 @@
  "exits": [],
  "rejected": [],
  "newsroom": [
+  {
+   "title": "교보증권 \"삼성바이오로직스, 환율 하락에도 3분기 성장세…수주 재개 ...",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=493987",
+   "published": "2026-10-09 10:38",
+   "topic": "바이오",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "하나금융, 은행 이어 증권까지…외화 조달 '외환명가' 굳히기",
+   "url": "https://www.ntoday.co.kr/news/articleView.html?idxno=129936",
+   "published": "2026-10-09 10:36",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[마켓펄스] 금리 부담에 유가까지 급등...뉴욕증시 혼조, 기술주 '휘청'",
+   "url": "https://www.ntoday.co.kr/news/articleView.html?idxno=129957",
+   "published": "2026-10-09 10:36",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "삼성전자 영업익 100조원 시대…진짜 수혜주는 따로 있다",
+   "url": "https://www.dailian.co.kr/news/view/1699414/?sc=Naver",
+   "published": "2026-10-09 10:30",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[기업家] 두산그룹 ⑧ㅣ AI 반도체 소재·가스터빈·휴머노이드…미래 ...",
+   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=613825",
+   "published": "2026-10-09 10:28",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
   {
    "title": "세계는 'K열풍'인데…관련주 성적표는 '극과 극'",
    "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202610090019&t=NN",
@@ -189,7 +229,7 @@
    "watchlist_hits": []
   },
   {
-   "title": "\"스타십 개발보다 어렵다\"…머스크, 반도체 '수율의 벽' 도전 [강경주의...",
+   "title": "\"돈 쏟아부어도 30년 걸린다\"…머스크가 뛰어든 '극한 사업' [강경주의 ...",
    "url": "https://www.hankyung.com/article/2026100821906",
    "published": "2026-10-09 10:01",
    "topic": "반도체",
@@ -237,18 +277,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "日증시, 美 반도체 급락 여파에 하락 출발 후 낙폭 확대",
-   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4438475",
-   "published": "2026-10-09 09:34",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "[국제금융 브리핑] 연준 인사 추가 금리 인상 시사...미 10년물 5bp 하락...",
    "url": "https://www.tokenpost.kr/news/economy/420237",
    "published": "2026-10-09 09:32",
-   "topic": "반도체",
+   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -341,14 +373,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "美 10년물 급등에 빛바랜 금 ETF…3개월간 10% 안팎 하락",
-   "url": "https://www.newsis.com/view/NISX20261008_0003819544",
-   "published": "2026-10-09 09:00",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "10월 9일 한글날 주식시장·은행 쉬나요?",
    "url": "https://www.bntnews.co.kr/article/view/bnt202610090100",
    "published": "2026-10-09 08:50",
@@ -425,30 +449,6 @@
    "url": "https://dealsite.co.kr/articles/170302",
    "published": "2026-10-09 07:02",
    "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "삼전닉스 약세일 때 소부장은 강세… 이유는 중국",
-   "url": "https://weekly.donga.com/3/all/11/6411628/1",
-   "published": "2026-10-09 07:02",
-   "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "삼성바이오, 3Q 영업익 3%대 감소 전망…\"수주 회복세는 기대\"",
-   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4438455",
-   "published": "2026-10-09 07:02",
-   "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "연준과 재무부가 키운 불확실성 속 채권 투자 생존법",
-   "url": "https://shindonga.donga.com/3/all/13/6411685/1",
-   "published": "2026-10-09 07:01",
-   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   }
