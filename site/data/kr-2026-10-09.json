@@ -3,14 +3,14 @@
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-1009",
  "issue_no": 62,
- "published_at": "2026-10-09T10:06:38+09:00",
+ "published_at": "2026-10-09T10:24:00+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfqmSBnWpTtCeGjQUvpyS'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cfqnkxgru7Nj4wfRaBq5j'}",
   "consecutive_failure_days": 53
  },
  "models": {
@@ -82,9 +82,9 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1344.54,
-    "change": 5.46,
-    "change_pct": 0.41,
+    "value": 1342.07,
+    "change": 2.99,
+    "change_pct": 0.22,
     "trend": "down",
     "trend_label": "하락세",
     "series": [
@@ -116,7 +116,7 @@
      1343.75,
      1339.74,
      1339.08,
-     1344.54
+     1342.07
     ]
    }
   ],
@@ -133,10 +133,42 @@
  "rejected": [],
  "newsroom": [
   {
+   "title": "세계는 'K열풍'인데…관련주 성적표는 '극과 극'",
+   "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202610090019&t=NN",
+   "published": "2026-10-09 10:14",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "금시세(금값) 상승",
+   "url": "http://www.kjdaily.com/article.php?aid=1791508264688647227",
+   "published": "2026-10-09 10:12",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "한국투자증권, 최고 연 5% 특판 발행어음 선착순 판매… 이달 말까지",
+   "url": "https://www.thepublic.kr/news/articleView.html?idxno=321550",
+   "published": "2026-10-09 10:08",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
    "title": "중국 반도체 장비, 3분기 수입 증가가 말해주는 것 [돈 되는 해외 주식...",
    "url": "https://magazine.hankyung.com/business/article/202610080504b",
    "published": "2026-10-09 10:05",
    "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "\"美 국채금리, 4분기 고점 찍고 떨어진다...10년물 최고 5.5% 전망\"[주末...",
+   "url": "https://view.asiae.co.kr/article/2026100809312092429",
+   "published": "2026-10-09 10:05",
+   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -224,7 +256,7 @@
    "title": "삼성전자·SK하이닉스 쉬어가자 2차전지 급등… ESS가 불붙였다",
    "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=493967",
    "published": "2026-10-09 09:30",
-   "topic": "반도체",
+   "topic": "2차전지",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -232,7 +264,7 @@
    "title": "반도체 주춤하자 2차전지 ETF ‘질주’…이달 수익률 최고 20%",
    "url": "https://www.busan.com/view/busan/view.php?code=2026100909163783830",
    "published": "2026-10-09 09:27",
-   "topic": "반도체",
+   "topic": "2차전지",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -301,16 +333,16 @@
    "watchlist_hits": []
   },
   {
-   "title": "美 10년물 급등에 빛바랜 금 ETF…3개월간 10% 안팎 하락",
-   "url": "https://www.newsis.com/view/NISX20261008_0003819544",
+   "title": "新리딩뱅크 경쟁, 신한·국민 쟁탈전…하나은행도 있다",
+   "url": "https://www.sisaon.co.kr/news/articleView.html?idxno=205018",
    "published": "2026-10-09 09:00",
    "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "新리딩뱅크 경쟁, 신한·국민 쟁탈전…하나은행도 있다",
-   "url": "https://www.sisaon.co.kr/news/articleView.html?idxno=205018",
+   "title": "美 10년물 급등에 빛바랜 금 ETF…3개월간 10% 안팎 하락",
+   "url": "https://www.newsis.com/view/NISX20261008_0003819544",
    "published": "2026-10-09 09:00",
    "topic": "금융",
    "ticker_prices": [],
@@ -321,14 +353,6 @@
    "url": "https://www.bntnews.co.kr/article/view/bnt202610090100",
    "published": "2026-10-09 08:50",
    "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[외환] 커스터디·중동 긴장에 상승…트럼프 \"이란 공격 없다\"에도 1,340...",
-   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4438467",
-   "published": "2026-10-09 08:28",
-   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -381,14 +405,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "[뉴욕마켓워치] 되살아난 AI 의구심에 반도체주 급락…채권↑달러↓",
-   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4438459",
-   "published": "2026-10-09 07:44",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "반도체 힘 빠졌는데 2차전지 '완충'...ETF 수익률 상위권 '싹쓸이'",
    "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202610090006&t=NN",
    "published": "2026-10-09 07:34",
@@ -401,6 +417,14 @@
    "url": "https://www.yna.co.kr/view/AKR20261008167300008?input=1195m",
    "published": "2026-10-09 07:05",
    "topic": "2차전지",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "상폐 위기 넘긴 프롬바이오…'신시장 개척·R&D' 승부수",
+   "url": "https://dealsite.co.kr/articles/170302",
+   "published": "2026-10-09 07:02",
+   "topic": "바이오",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -421,33 +445,9 @@
    "watchlist_hits": []
   },
   {
-   "title": "상폐 위기 넘긴 프롬바이오…'신시장 개척·R&D' 승부수",
-   "url": "https://dealsite.co.kr/articles/170302",
-   "published": "2026-10-09 07:02",
-   "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "연준과 재무부가 키운 불확실성 속 채권 투자 생존법",
    "url": "https://shindonga.donga.com/3/all/13/6411685/1",
    "published": "2026-10-09 07:01",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[주간 거래소 기관] SK스퀘어 삼성SDI SK이노베이션 LG에너지솔루션 LG이...",
-   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=493928",
-   "published": "2026-10-09 06:52",
-   "topic": "자동차",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "미국증시 나스닥 1.25% 하락…유가 급등에 AI 수익성 우려, 반도체주 급...",
-   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16242203",
-   "published": "2026-10-09 06:50",
    "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
