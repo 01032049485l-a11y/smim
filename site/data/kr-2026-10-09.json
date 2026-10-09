@@ -3,14 +3,14 @@
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-1009",
  "issue_no": 62,
- "published_at": "2026-10-09T10:45:53+09:00",
+ "published_at": "2026-10-09T11:27:34+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfqpRmfYdWC7mSQwumkry'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cfqsc9bHnpw8FNyLcnyVP'}",
   "consecutive_failure_days": 53
  },
  "models": {
@@ -82,9 +82,9 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1341.76,
-    "change": 2.68,
-    "change_pct": 0.2,
+    "value": 1342.26,
+    "change": 3.18,
+    "change_pct": 0.24,
     "trend": "down",
     "trend_label": "하락세",
     "series": [
@@ -116,7 +116,7 @@
      1343.75,
      1339.74,
      1339.08,
-     1341.76
+     1342.26
     ]
    }
   ],
@@ -132,6 +132,142 @@
  "exits": [],
  "rejected": [],
  "newsroom": [
+  {
+   "title": "오픈AI, 연간 매출 추정치 27조 하향…빅테크 주가 일제히 요동",
+   "url": "https://www.aitimes.com/news/articleView.html?idxno=216098",
+   "published": "2026-10-09 11:20",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "하나증권 \"신한지주, 부동산 매각익에도 3분기 순익 감소 전망…증권 부...",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=493992",
+   "published": "2026-10-09 11:18",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "금리 뛰는데 은행주 왜 빠졌나…4분기엔 반전?",
+   "url": "https://www.mk.co.kr/article/12172234",
+   "published": "2026-10-09 11:16",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "“AI 거품 터질 때 가까워졌다”…월가 전설 달리오의 경고",
+   "url": "https://www.chosun.com/economy/money/2026/10/09/ONS54DO6SJCRZL2PX3XUBEXFYM/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
+   "published": "2026-10-09 11:15",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[금값시세] 금시세 18k",
+   "url": "https://www.gametoc.co.kr/news/articleView.html?idxno=112085",
+   "published": "2026-10-09 11:12",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "한글날 쉬는 사이 美반도체 급락…SOXL 10%↓, 월요일 '삼전·하닉' 또 시...",
+   "url": "https://www.greened.kr/news/articleView.html?idxno=351751",
+   "published": "2026-10-09 11:08",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "실적보다 수급이 먼저였다..코스피 6600선으로 밀린 이유",
+   "url": "https://kpenews.com/View.aspx?No=4257571",
+   "published": "2026-10-09 11:04",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "뉴욕증시, AI 기술주 약세·국제유가 급등에 혼조...나스닥 1.25% 하락",
+   "url": "https://www.m-economynews.com/news/article.html?no=71502",
+   "published": "2026-10-09 11:04",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "신약대신 화장품·빵집…기준강화에 부작용 속출['상폐룰' 제약사 항변...",
+   "url": "https://www.newsis.com/view/NISX20261008_0003818964",
+   "published": "2026-10-09 11:01",
+   "topic": "바이오",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[기업家] SK하이닉스 ③ㅣ AI 반도체 넘어 우주·친환경까지…미래 성장...",
+   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=613831",
+   "published": "2026-10-09 11:00",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "\"성과급 최소 30억, 서민 탈출한 듯\"…삼성전자 '사내부부' 직원 글",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=01849926645611280&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "published": "2026-10-09 11:00",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[오늘 일본은] 日 해킹 비상…중고서점 북오프 회원정보 최대 643만 건 유...",
+   "url": "https://www.pointe.co.kr/news/articleView.html?idxno=85827",
+   "published": "2026-10-09 10:58",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "예상보다 27조 원 낮은 오픈AI 연매출...AI 낙관론에 '찬물'",
+   "url": "https://www.ikbc.co.kr/article/view/kbc202610090030",
+   "published": "2026-10-09 10:57",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "반도체 주춤한 사이 '2차 전지 ETF' 수익률 급등...'인버스' 개미 낭패",
+   "url": "https://www.mediapen.com/news/view/1128965",
+   "published": "2026-10-09 10:56",
+   "topic": "2차전지",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[금융zip] 하나은행, 급여 멤버십 서비스 '달달하나컴퍼니' 리뉴얼 오픈...",
+   "url": "https://www.getnews.co.kr/news/articleView.html?idxno=883102",
+   "published": "2026-10-09 10:56",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "LG전자, 3분기 영업익 7818억원…실적 부진보다 사업 방향성 주목",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=493989",
+   "published": "2026-10-09 10:48",
+   "topic": "자동차",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[이슈국감] 최은석 의원, 토스 온투업 진출 '무임승차' 지적",
+   "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=871416",
+   "published": "2026-10-09 10:48",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
   {
    "title": "교보증권 \"삼성바이오로직스, 환율 하락에도 3분기 성장세…수주 재개 ...",
    "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=493987",
@@ -157,34 +293,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "삼성전자 영업익 100조원 시대…진짜 수혜주는 따로 있다",
-   "url": "https://www.dailian.co.kr/news/view/1699414/?sc=Naver",
-   "published": "2026-10-09 10:30",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[기업家] 두산그룹 ⑧ㅣ AI 반도체 소재·가스터빈·휴머노이드…미래 ...",
-   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=613825",
-   "published": "2026-10-09 10:28",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "세계는 'K열풍'인데…관련주 성적표는 '극과 극'",
-   "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202610090019&t=NN",
-   "published": "2026-10-09 10:14",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "금시세(금값) 상승",
    "url": "http://www.kjdaily.com/article.php?aid=1791508264688647227",
    "published": "2026-10-09 10:12",
-   "topic": "반도체",
+   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -197,25 +309,9 @@
    "watchlist_hits": []
   },
   {
-   "title": "중국 반도체 장비, 3분기 수입 증가가 말해주는 것 [돈 되는 해외 주식...",
-   "url": "https://magazine.hankyung.com/business/article/202610080504b",
-   "published": "2026-10-09 10:05",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "\"美 국채금리, 4분기 고점 찍고 떨어진다...10년물 최고 5.5% 전망\"[주末...",
    "url": "https://view.asiae.co.kr/article/2026100809312092429",
    "published": "2026-10-09 10:05",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "\"글로벌 크레디트 부담 지속…AI 조달·佛 재정불안\"",
-   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4438476",
-   "published": "2026-10-09 10:04",
    "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
@@ -225,30 +321,6 @@
    "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=493973",
    "published": "2026-10-09 10:02",
    "topic": "자동차",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "\"돈 쏟아부어도 30년 걸린다\"…머스크가 뛰어든 '극한 사업' [강경주의 ...",
-   "url": "https://www.hankyung.com/article/2026100821906",
-   "published": "2026-10-09 10:01",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "AI낙관론에 '찬물'…예상보다 27조원 낮은 오픈AI 연매출에 충격",
-   "url": "https://www.tfmedia.co.kr/news/article.html?no=207857",
-   "published": "2026-10-09 09:56",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "증권사 발행어음 금리 경쟁 불붙어… 연 5%대 특판 잇따라",
-   "url": "https://it.chosun.com/news/articleView.html?idxno=2023092171727",
-   "published": "2026-10-09 09:56",
-   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -265,14 +337,6 @@
    "url": "http://okfashion.co.kr/detail.php?number=64217&thread=62r04",
    "published": "2026-10-09 09:54",
    "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "삼성전기, 장세 약세속 하락 면치 못했나…새주 흐름 '이목'",
-   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=613637",
-   "published": "2026-10-09 09:46",
-   "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -317,14 +381,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "[해외시황] 뉴욕증시, AI 성장 우려·중동 긴장에 '혼조'…나스닥 1.25%↓",
-   "url": "http://www.newsprime.co.kr/news/article.html?no=750430",
-   "published": "2026-10-09 09:20",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "K뷰티는 날고 K콘텐츠는 추락…올해 증시에서 희비 가른 이유 보니",
    "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=493962",
    "published": "2026-10-09 09:14",
@@ -360,15 +416,7 @@
    "title": "[따로노는 원화·韓국채①] 强달러에도 원화 선방…엔-원 18년9개월來 최...",
    "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4438469",
    "published": "2026-10-09 09:02",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "新리딩뱅크 경쟁, 신한·국민 쟁탈전…하나은행도 있다",
-   "url": "https://www.sisaon.co.kr/news/articleView.html?idxno=205018",
-   "published": "2026-10-09 09:00",
-   "topic": "금융",
+   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -401,54 +449,6 @@
    "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=493942",
    "published": "2026-10-09 08:00",
    "topic": "자동차",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[채권/외환] 美 국채금리, 30년물 입찰 호조에 하락…달러 약세·유로 반...",
-   "url": "https://www.newspim.com/news/view/20261009000028",
-   "published": "2026-10-09 07:56",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[국내 증시] 한국 주식 9일장 휴장한다 이유는…거래 재개 일정 언제?",
-   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=613470",
-   "published": "2026-10-09 07:50",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "2차전지 ETF, 수익률 ‘싹쓸이’…‘인버스’ 개미 낭패",
-   "url": "https://www.dt.co.kr/article/12088176?ref=naver",
-   "published": "2026-10-09 07:49",
-   "topic": "2차전지",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "반도체 힘 빠졌는데 2차전지 '완충'...ETF 수익률 상위권 '싹쓸이'",
-   "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202610090006&t=NN",
-   "published": "2026-10-09 07:34",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "반도체 주춤한 사이 2차전지 '급속충전'…관련 ETF 수익률 상위권",
-   "url": "https://www.yna.co.kr/view/AKR20261008167300008?input=1195m",
-   "published": "2026-10-09 07:05",
-   "topic": "2차전지",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "상폐 위기 넘긴 프롬바이오…'신시장 개척·R&D' 승부수",
-   "url": "https://dealsite.co.kr/articles/170302",
-   "published": "2026-10-09 07:02",
-   "topic": "바이오",
    "ticker_prices": [],
    "watchlist_hits": []
   }
