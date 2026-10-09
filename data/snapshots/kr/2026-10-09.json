@@ -2,15 +2,15 @@
  "date": "2026-10-09",
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-1009",
- "issue_no": 61,
- "published_at": "2026-10-09T09:16:06+09:00",
+ "issue_no": 62,
+ "published_at": "2026-10-09T09:34:21+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfqhaePAycacExGW5sQvy'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfqiyNp4gksc54ArWk1M3'}",
   "consecutive_failure_days": 53
  },
  "models": {
@@ -82,9 +82,9 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1342.74,
-    "change": 3.66,
-    "change_pct": 0.27,
+    "value": 1343.51,
+    "change": 4.43,
+    "change_pct": 0.33,
     "trend": "down",
     "trend_label": "하락세",
     "series": [
@@ -116,7 +116,7 @@
      1343.75,
      1339.74,
      1339.08,
-     1342.74
+     1343.51
     ]
    }
   ],
@@ -133,6 +133,70 @@
  "rejected": [],
  "newsroom": [
   {
+   "title": "[국제금융 브리핑] 연준 인사 추가 금리 인상 시사...미 10년물 5bp 하락...",
+   "url": "https://www.tokenpost.kr/news/economy/420237",
+   "published": "2026-10-09 09:32",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "삼성전자·SK하이닉스 쉬어가자 2차전지 급등… ESS가 불붙였다",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=493967",
+   "published": "2026-10-09 09:30",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "반도체 주춤하자 2차전지 ETF ‘질주’…이달 수익률 최고 20%",
+   "url": "https://www.busan.com/view/busan/view.php?code=2026100909163783830",
+   "published": "2026-10-09 09:27",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "대두값 1300센트 육박…호르무즈 봉쇄가 밥상물가 흔든다",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=493966",
+   "published": "2026-10-09 09:26",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "오픈AI 매출 기대치 밑돌자 AI주 '흔들' … 나스닥 1.25% 하락",
+   "url": "https://biz.newdaily.co.kr/site/data/html/2026/10/09/2026100900031.html",
+   "published": "2026-10-09 09:24",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "K뷰티는 나는데 K콘텐츠는 바닥…한류 열풍 속에 주가는 엇갈리는 이유",
+   "url": "https://www.kbmaeil.com/article/20261009500052",
+   "published": "2026-10-09 09:22",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[마켓 뷰] 코스피 고점 찍은 다음 날 무슨 일이…삼전 28%·하이닉스 42%...",
+   "url": "https://www.moneystorm.kr/news/articleView.html?idxno=7142",
+   "published": "2026-10-09 09:21",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[해외시황] 뉴욕증시, AI 성장 우려·중동 긴장에 '혼조'…나스닥 1.25%↓",
+   "url": "http://www.newsprime.co.kr/news/article.html?no=750430",
+   "published": "2026-10-09 09:20",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
    "title": "K뷰티는 날고 K콘텐츠는 추락…올해 증시에서 희비 가른 이유 보니",
    "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=493962",
    "published": "2026-10-09 09:14",
@@ -141,26 +205,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "국제유가 급등·기술주 약세 뉴욕증시 혼조…나스닥 1.3% 하락",
-   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=90187",
-   "published": "2026-10-09 09:14",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "“ETF 수익률 10개 중 8개가 2차전지” ESS·AI데이터센터 호재 효과 [투...",
    "url": "https://biz.heraldcorp.com/article/10897668?ref=naver",
    "published": "2026-10-09 09:13",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[올댓차이나] TSMC 3분기 매출 62.8조원·50.9%↑…AI 수요에 사상 최고",
-   "url": "https://www.newsis.com/view/NISX20261009_0003820077",
-   "published": "2026-10-09 09:12",
-   "topic": "반도체",
+   "topic": "2차전지",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -181,22 +229,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "인공지능 주식 부진 속 뉴욕 증시 혼조, 국제 유가 상승이 미친 영향은",
-   "url": "https://www.gokorea.kr/news/articleView.html?idxno=880903",
-   "published": "2026-10-09 09:08",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "오픈AI 매출 실망, AI 산업에 드리운 그림자",
-   "url": "https://www.gokorea.kr/news/articleView.html?idxno=880900",
-   "published": "2026-10-09 09:08",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "[따로노는 원화·韓국채①] 强달러에도 원화 선방…엔-원 18년9개월來 최...",
    "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4438469",
    "published": "2026-10-09 09:02",
@@ -205,24 +237,16 @@
    "watchlist_hits": []
   },
   {
-   "title": "美증시 ETF에 한 달 새 2조 유입…S&P500, 환율이 수익률 갈랐다 [마켓시...",
-   "url": "https://www.sedaily.com/article/20099630?ref=naver",
-   "published": "2026-10-09 09:01",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "新리딩뱅크 경쟁, 신한·국민 쟁탈전…하나은행도 있다",
-   "url": "https://www.sisaon.co.kr/news/articleView.html?idxno=205018",
+   "title": "美 10년물 급등에 빛바랜 금 ETF…3개월간 10% 안팎 하락",
+   "url": "https://www.newsis.com/view/NISX20261008_0003819544",
    "published": "2026-10-09 09:00",
    "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "美 10년물 급등에 빛바랜 금 ETF…3개월간 10% 안팎 하락",
-   "url": "https://www.newsis.com/view/NISX20261008_0003819544",
+   "title": "新리딩뱅크 경쟁, 신한·국민 쟁탈전…하나은행도 있다",
+   "url": "https://www.sisaon.co.kr/news/articleView.html?idxno=205018",
    "published": "2026-10-09 09:00",
    "topic": "금융",
    "ticker_prices": [],
@@ -341,16 +365,16 @@
    "watchlist_hits": []
   },
   {
-   "title": "삼전닉스 약세일 때 소부장은 강세… 이유는 중국",
-   "url": "https://weekly.donga.com/3/all/11/6411628/1",
+   "title": "상폐 위기 넘긴 프롬바이오…'신시장 개척·R&D' 승부수",
+   "url": "https://dealsite.co.kr/articles/170302",
    "published": "2026-10-09 07:02",
-   "topic": "증시",
+   "topic": "바이오",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "상폐 위기 넘긴 프롬바이오…'신시장 개척·R&D' 승부수",
-   "url": "https://dealsite.co.kr/articles/170302",
+   "title": "삼전닉스 약세일 때 소부장은 강세… 이유는 중국",
+   "url": "https://weekly.donga.com/3/all/11/6411628/1",
    "published": "2026-10-09 07:02",
    "topic": "바이오",
    "ticker_prices": [],
@@ -361,14 +385,6 @@
    "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4438455",
    "published": "2026-10-09 07:02",
    "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "AI주 팔고 방어주 샀다…뉴욕증시 혼조, 나스닥 1.25%↓",
-   "url": "https://www.kbmaeil.com/article/20261009500006",
-   "published": "2026-10-09 07:02",
-   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -433,22 +449,6 @@
    "url": "https://www.dailian.co.kr/news/view/1699590/?sc=Naver",
    "published": "2026-10-09 06:01",
    "topic": "2차전지",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "주주 반발에도 '강행?'...'신의 한 수' 나올까 [B급기자의 B급리포트]",
-   "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202610080122&t=NN",
-   "published": "2026-10-09 06:00",
-   "topic": "2차전지",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[원화 강세 시대 ETF 투자 전략⑥] 환차손 줄이고 배당 챙기고…신한운...",
-   "url": "https://www.news2day.co.kr/article/20261007500310",
-   "published": "2026-10-09 04:34",
-   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   }
