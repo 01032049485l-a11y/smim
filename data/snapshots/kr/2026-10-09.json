@@ -3,14 +3,14 @@
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-1009",
  "issue_no": 62,
- "published_at": "2026-10-09T09:34:21+09:00",
+ "published_at": "2026-10-09T10:06:38+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfqiyNp4gksc54ArWk1M3'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfqmSBnWpTtCeGjQUvpyS'}",
   "consecutive_failure_days": 53
  },
  "models": {
@@ -82,9 +82,9 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1343.51,
-    "change": 4.43,
-    "change_pct": 0.33,
+    "value": 1344.54,
+    "change": 5.46,
+    "change_pct": 0.41,
     "trend": "down",
     "trend_label": "하락세",
     "series": [
@@ -116,7 +116,7 @@
      1343.75,
      1339.74,
      1339.08,
-     1343.51
+     1344.54
     ]
    }
   ],
@@ -132,6 +132,86 @@
  "exits": [],
  "rejected": [],
  "newsroom": [
+  {
+   "title": "중국 반도체 장비, 3분기 수입 증가가 말해주는 것 [돈 되는 해외 주식...",
+   "url": "https://magazine.hankyung.com/business/article/202610080504b",
+   "published": "2026-10-09 10:05",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "\"글로벌 크레디트 부담 지속…AI 조달·佛 재정불안\"",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4438476",
+   "published": "2026-10-09 10:04",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "실적 부진 깊을수록 반등 강도 커질까…현대차 목표주가 67만원",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=493973",
+   "published": "2026-10-09 10:02",
+   "topic": "자동차",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "\"스타십 개발보다 어렵다\"…머스크, 반도체 '수율의 벽' 도전 [강경주의...",
+   "url": "https://www.hankyung.com/article/2026100821906",
+   "published": "2026-10-09 10:01",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "AI낙관론에 '찬물'…예상보다 27조원 낮은 오픈AI 연매출에 충격",
+   "url": "https://www.tfmedia.co.kr/news/article.html?no=207857",
+   "published": "2026-10-09 09:56",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "증권사 발행어음 금리 경쟁 불붙어… 연 5%대 특판 잇따라",
+   "url": "https://it.chosun.com/news/articleView.html?idxno=2023092171727",
+   "published": "2026-10-09 09:56",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "오늘(9일) 금시세 상승…순금 1돈 금값 78만7000원",
+   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=90199",
+   "published": "2026-10-09 09:56",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "패션·섬유·화학·뷰티주, 코스피 급락에 동반 약세",
+   "url": "http://okfashion.co.kr/detail.php?number=64217&thread=62r04",
+   "published": "2026-10-09 09:54",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "삼성전기, 장세 약세속 하락 면치 못했나…새주 흐름 '이목'",
+   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=613637",
+   "published": "2026-10-09 09:46",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "日증시, 美 반도체 급락 여파에 하락 출발 후 낙폭 확대",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4438475",
+   "published": "2026-10-09 09:34",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
   {
    "title": "[국제금융 브리핑] 연준 인사 추가 금리 인상 시사...미 10년물 5bp 하락...",
    "url": "https://www.tokenpost.kr/news/economy/420237",
@@ -165,14 +245,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "오픈AI 매출 기대치 밑돌자 AI주 '흔들' … 나스닥 1.25% 하락",
-   "url": "https://biz.newdaily.co.kr/site/data/html/2026/10/09/2026100900031.html",
-   "published": "2026-10-09 09:24",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "K뷰티는 나는데 K콘텐츠는 바닥…한류 열풍 속에 주가는 엇갈리는 이유",
    "url": "https://www.kbmaeil.com/article/20261009500052",
    "published": "2026-10-09 09:22",
@@ -181,18 +253,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "[마켓 뷰] 코스피 고점 찍은 다음 날 무슨 일이…삼전 28%·하이닉스 42%...",
-   "url": "https://www.moneystorm.kr/news/articleView.html?idxno=7142",
-   "published": "2026-10-09 09:21",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "[해외시황] 뉴욕증시, AI 성장 우려·중동 긴장에 '혼조'…나스닥 1.25%↓",
    "url": "http://www.newsprime.co.kr/news/article.html?no=750430",
    "published": "2026-10-09 09:20",
-   "topic": "반도체",
+   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -269,7 +333,7 @@
    "watchlist_hits": []
   },
   {
-   "title": "흑사병 공포에 진단·항생제株 ‘들썩’…펩트론은 ‘추락’[바이오맥...",
+   "title": "\"21세기 흑사병 번지나\" 공포에 사면 큰일…진단株 알고보니[바이오맥짚...",
    "url": "https://www.edaily.co.kr/News/Read?newsId=01692486645611280&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
    "published": "2026-10-09 08:02",
    "topic": "바이오",
@@ -333,42 +397,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "삼성전자 역대급 실적에 차익실현 매물…코스피 6600선까지 하락",
-   "url": "https://www.fnnews.com/news/202610082215402483",
-   "published": "2026-10-09 07:30",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "뉴욕증시, AI 기술주 약세 속 혼조 마감…나스닥 1.25%↓",
-   "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008790144&plink=ORI&cooper=NAVER",
-   "published": "2026-10-09 07:30",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "\"환율 단기 상·하방 압력 상존…달러 강세에 반등 가능성 有\"",
-   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4438457",
-   "published": "2026-10-09 07:18",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "반도체 주춤한 사이 2차전지 '급속충전'…관련 ETF 수익률 상위권",
    "url": "https://www.yna.co.kr/view/AKR20261008167300008?input=1195m",
    "published": "2026-10-09 07:05",
    "topic": "2차전지",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "상폐 위기 넘긴 프롬바이오…'신시장 개척·R&D' 승부수",
-   "url": "https://dealsite.co.kr/articles/170302",
-   "published": "2026-10-09 07:02",
-   "topic": "바이오",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -383,6 +415,14 @@
   {
    "title": "삼성바이오, 3Q 영업익 3%대 감소 전망…\"수주 회복세는 기대\"",
    "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4438455",
+   "published": "2026-10-09 07:02",
+   "topic": "바이오",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "상폐 위기 넘긴 프롬바이오…'신시장 개척·R&D' 승부수",
+   "url": "https://dealsite.co.kr/articles/170302",
    "published": "2026-10-09 07:02",
    "topic": "바이오",
    "ticker_prices": [],
@@ -409,46 +449,6 @@
    "url": "https://www.topstarnews.net/news/articleView.html?idxno=16242203",
    "published": "2026-10-09 06:50",
    "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[주간 거래소 외국인] 이수페타시스·삼성SDI 담고 SK하이닉스 3조원 넘...",
-   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=493927",
-   "published": "2026-10-09 06:48",
-   "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[주간 코스닥 기관] 리노공업·에코프로비엠 순매수…주성엔지니어링은...",
-   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=493926",
-   "published": "2026-10-09 06:42",
-   "topic": "2차전지",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "美증시, 유가 급등에 AI 반도체까지 휘청…나스닥 1.3% 하락",
-   "url": "https://www.dailian.co.kr/news/view/1699700/?sc=Naver",
-   "published": "2026-10-09 06:39",
-   "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[주간 코스닥 외국인] 주성엔지니어링·이오테크닉스 담았다…리노공업...",
-   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=493925",
-   "published": "2026-10-09 06:38",
-   "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "\"삼전은 웃고 2차전지는 운다?\"…3분기 실적 성적표 보니",
-   "url": "https://www.dailian.co.kr/news/view/1699590/?sc=Naver",
-   "published": "2026-10-09 06:01",
-   "topic": "2차전지",
    "ticker_prices": [],
    "watchlist_hits": []
   }
