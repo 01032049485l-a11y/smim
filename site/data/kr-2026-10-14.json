@@ -2,15 +2,15 @@
  "date": "2026-10-14",
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-1014",
- "issue_no": 63,
- "published_at": "2026-10-14T08:42:52+09:00",
+ "issue_no": 64,
+ "published_at": "2026-10-14T08:49:16+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cg186G4v2VjVwUE1JDdbj'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cg18aao5HQYAtH9yF6zgo'}",
   "consecutive_failure_days": 55
  },
  "models": {
@@ -102,9 +102,9 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1341.61,
-    "change": 7.48,
-    "change_pct": 0.56,
+    "value": 1339.99,
+    "change": 5.86,
+    "change_pct": 0.44,
     "trend": "flat",
     "trend_label": "보합권",
     "series": [
@@ -137,7 +137,7 @@
      1342.99,
      1340.84,
      1334.13,
-     1341.61
+     1339.99
     ]
    }
   ],
@@ -154,16 +154,72 @@
  "rejected": [],
  "newsroom": [
   {
-   "title": "\"코스피 닷새간 13.8% 급락 이례적…추격 매도보다 중기 회복에 무게\"",
-   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4439099",
-   "published": "2026-10-14 08:42",
+   "title": "뉴욕증시, 기대 밑돈 美 은행 실적·반도체 약세에 일제히 하락",
+   "url": "https://www.sentv.co.kr/article/view/sentv202610140022",
+   "published": "2026-10-14 08:48",
    "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "뉴욕증시, 中 반도체 추격에 흔들렸다...은행 실적도 투심 못 살려",
+   "url": "https://www.newstopkorea.com/news/articleView.html?idxno=48158",
+   "published": "2026-10-14 08:48",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "뉴욕증시, 반도체주 약세·은행 실적 혼조에 일제히 하락…다우 0.35%↓...",
+   "url": "https://news.mtn.co.kr/news-detail/2026101406413347659",
+   "published": "2026-10-14 08:48",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "뉴욕증시 3대 지수 동반 하락, 은행 실적 부담·반도체주 약세",
+   "url": "https://www.mediafine.co.kr/news/articleView.html?idxno=92515",
+   "published": "2026-10-14 08:48",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "룰라 성공의 역설...가난 벗어난 농민·노동자, 자신을 끌어내릴 세력이...",
+   "url": "https://www.eroun.net/news/articleView.html?idxno=92218",
+   "published": "2026-10-14 08:46",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "AI 투자 부담 우려에…필리 반도체지수 5거래일 연속 하락",
+   "url": "https://www.sentv.co.kr/article/view/sentv202610140023",
+   "published": "2026-10-14 08:46",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "마이크론·JNJ 울고 '이곳' 웃었다…미국증시 승자는?",
+   "url": "https://www.wikitree.co.kr/articles/1166002",
+   "published": "2026-10-14 08:46",
+   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
    "title": "삼성SDI, 美 ESS 성장 '본격화'…전기차 부진 속 실적 개선 기대",
    "url": "http://www.newsprime.co.kr/news/article.html?no=750834",
+   "published": "2026-10-14 08:42",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "\"코스피 닷새간 13.8% 급락 이례적…추격 매도보다 중기 회복에 무게\"",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4439099",
    "published": "2026-10-14 08:42",
    "topic": "반도체",
    "ticker_prices": [],
@@ -182,46 +238,6 @@
    "url": "https://biz.sbs.co.kr/article_hub/20000339803?division=NAVER",
    "published": "2026-10-14 08:38",
    "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "최고에서 최하위로 추락한 코스피, 메모리 편중의 덫에 걸리다",
-   "url": "https://www.g-enews.com/view.php?ud=202610140831581514fbbec65dfb_1",
-   "published": "2026-10-14 08:38",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "HL만도, 비용 부담에 목표가 하향…신사업 성장성은 유효[애널리스트의...",
-   "url": "https://www.newsway.co.kr/news/view?ud=2026101408273339531",
-   "published": "2026-10-14 08:38",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "반도체주 약세·중동 불안에 환율 상승 압력…1340원대 중반 등락 전망",
-   "url": "http://www.issuenbiz.com/news/articleView.html?idxno=80575",
-   "published": "2026-10-14 08:38",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[전화연결] 중국의 D램 도전장…한국 반도체 위협하나?",
-   "url": "https://biz.sbs.co.kr/article_hub/20000339804?division=NAVER",
-   "published": "2026-10-14 08:38",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[프리마켓] 삼성전자·SK하이닉스 2% 안팎 반등 시도…미 반도체주 급락...",
-   "url": "https://www.moneystorm.kr/news/articleView.html?idxno=7241",
-   "published": "2026-10-14 08:35",
-   "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -298,30 +314,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "SK증권·다올투자증권·iM증권, PF 부실 부담에 실적·자본여력 시험대",
-   "url": "http://www.srtimes.kr/news/articleView.html?idxno=214527",
-   "published": "2026-10-14 08:30",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "中 반도체 추격·은행 실적 실망에 뉴욕증시 하락... 나스닥 0.15%↓ [뉴...",
-   "url": "https://www.m-i.kr/news/articleView.html?idxno=2005564",
-   "published": "2026-10-14 08:30",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[해외시황] 뉴욕증시, 은행 실적 실망감·반도체株 약세에 '하락'…나스...",
-   "url": "http://www.newsprime.co.kr/news/article.html?no=750832",
-   "published": "2026-10-14 08:30",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "[모닝 리포트] \"한온시스템, 3분기 영업익 20%↑…원가절감에 이익률 4%...",
    "url": "https://www.newspim.com/news/view/20261014000153",
    "published": "2026-10-14 08:27",
@@ -334,14 +326,6 @@
    "url": "http://www.newsroad.co.kr/news/articleView.html?idxno=65722",
    "published": "2026-10-14 08:26",
    "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "금리 상승에 월가 은행 실적 희비…JP모건 기대 밑돌고 골드만 선방",
-   "url": "https://www.dt.co.kr/article/12088941?ref=naver",
-   "published": "2026-10-14 08:25",
-   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -469,6 +453,22 @@
    "title": "삼성바이오 노사갈등 반년째…3주 총파업까지 간 평행선",
    "url": "http://www.joseilbo.com/news/news_read.php?uid=577327&class=17&grp=",
    "published": "2026-10-14 07:02",
+   "topic": "바이오",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[Who Is ?] 유재권 삼천리 대표이사 부회장",
+   "url": "https://www.businesspost.co.kr/BP?command=article_view&num=449111",
+   "published": "2026-10-14 07:02",
+   "topic": "자동차",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[N2 뷰] 탈모 강조한 로킷헬스케어, 주가 방어용 가성비 기획 의구심",
+   "url": "https://www.news2day.co.kr/article/20261013500233",
+   "published": "2026-10-14 06:52",
    "topic": "바이오",
    "ticker_prices": [],
    "watchlist_hits": []
