@@ -3,14 +3,14 @@
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-1016",
  "issue_no": 66,
- "published_at": "2026-10-16T08:37:17+09:00",
+ "published_at": "2026-10-16T08:48:55+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cg4uHNyhHZQqCwvwN1vki'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cg4vAsBWMGxBFCggZtUzq'}",
   "consecutive_failure_days": 57
  },
  "models": {
@@ -106,9 +106,9 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1340.32,
-    "change": 0.97,
-    "change_pct": 0.07,
+    "value": 1340.05,
+    "change": 0.7,
+    "change_pct": 0.05,
     "trend": "flat",
     "trend_label": "보합권",
     "series": [
@@ -141,7 +141,7 @@
      1334.13,
      1340.31,
      1339.35,
-     1340.32
+     1340.05
     ]
    }
   ],
@@ -158,26 +158,74 @@
  "rejected": [],
  "newsroom": [
   {
-   "title": "뉴욕증시, AI 투자 우려에도 반등...WTI 6거래일째 상승",
-   "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=873383",
-   "published": "2026-10-16 08:36",
+   "title": "AI 주가 급락에 빛바랜 '어닝 서프라이즈'...TSMC·ASML 실적, 기술주 투...",
+   "url": "https://www.livebiz.today/news/articleView.html?idxno=205647",
+   "published": "2026-10-16 08:48",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "피에스케이홀딩스, 'TSMC부터 美 파운드리까지' 첨단 패키징 증설 '수혜...",
-   "url": "http://www.newsprime.co.kr/news/article.html?no=751198",
-   "published": "2026-10-16 08:36",
+   "title": "뉴욕증시, 美국채금리 하락에 3대 지수 일제히 상승 마감",
+   "url": "https://www.sentv.co.kr/article/view/sentv202610160015",
+   "published": "2026-10-16 08:48",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "나스닥 반등, 코스피 톱텐 프리마켓 동반상승...삼전닉스 4% ↑",
-   "url": "http://www.opinionnews.co.kr/news/articleView.html?idxno=145743",
-   "published": "2026-10-16 08:36",
+   "title": "뉴욕증시, 국채금리 하락에도 기술주 약세…다우는 1.08%↑",
+   "url": "https://www.newstopkorea.com/news/articleView.html?idxno=48224",
+   "published": "2026-10-16 08:46",
    "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "\"하닉 291층, 구조대 오겠니?\"...AI '슈퍼 부메랑', 대형주 웬만하면 다...",
+   "url": "https://www.fnnews.com/news/202610160819491067",
+   "published": "2026-10-16 08:46",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[산업썰전] 삼성·SK하이닉스 주가 급락…해외선 이미 '호남 반도체 800...",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=495792",
+   "published": "2026-10-16 08:46",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "“금융위기 때만큼 싸다…삼전닉스 비중 확대 적기” [오늘 나온 보고서...",
+   "url": "https://www.mk.co.kr/article/12177436",
+   "published": "2026-10-16 08:44",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[마켓무버] 뉴욕증시 3대 지수 반등…물가 쇼크에도 국채금리 하락",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=02689606645613576&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "published": "2026-10-16 08:44",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[오늘의 신문] 현대차, 인도 푸네 스마트공장 준공...아시아 증시 급락...",
+   "url": "http://kor.theasian.asia/archives/418598",
+   "published": "2026-10-16 08:44",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[외환] 美 PPI 상승·금리 급락 소화하며 1,340원 초반대",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4439544",
+   "published": "2026-10-16 08:42",
+   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -185,15 +233,7 @@
    "title": "[모닝 리포트] 달러/원 환율 1340원 하회 시도…달러 약세·수출 네고에...",
    "url": "https://www.newspim.com/news/view/20261016000083",
    "published": "2026-10-16 08:35",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "삼전·닉스 프리장서 3% 이상 반등…\"주가 조정, 펀더멘털보다 수급 탓...",
-   "url": "https://www.newsway.co.kr/news/view?ud=2026101608250881653",
-   "published": "2026-10-16 08:34",
-   "topic": "반도체",
+   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -201,23 +241,7 @@
    "title": "[국제금융 브리핑] 미국 9월 생산자물가 6.3% 급등...AI 부채 우려에 국...",
    "url": "https://www.tokenpost.kr/news/economy/423130",
    "published": "2026-10-16 08:34",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "\"삼전 7만원·하닉 20만원\"…진행자도 충격받은 영상 화제",
-   "url": "https://www.mt.co.kr/society/2026/10/16/2026101607351636216",
-   "published": "2026-10-16 08:33",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[온체인 주식선물] SK하이닉스, 정규장 종가보다 4.92% 웃돈",
-   "url": "https://www.tokenpost.kr/news/insights/423129",
-   "published": "2026-10-16 08:32",
-   "topic": "반도체",
+   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -254,7 +278,15 @@
    "watchlist_hits": []
   },
   {
-   "title": "[박정식의 국내 주식시황] 검은 목요일 패닉 장세에 따른 과도한 급락으...",
+   "title": "“어제 폭락에 개미들 패닉인데”…코스피 야간선물 3.9% 급등, 반등 신...",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=02653526645613576&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "published": "2026-10-16 08:22",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[박정식의 국내 주식시황] 미 금리 급락에 숨통 트인 증시…폭락 뒤 낙...",
    "url": "https://www.newsquest.co.kr/news/articleView.html?idxno=302788",
    "published": "2026-10-16 08:22",
    "topic": "증시",
@@ -278,22 +310,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "“어제 폭락에 개미들 패닉인데”…코스피 야간선물 3.9% 급등, 반등 신...",
-   "url": "https://www.edaily.co.kr/News/Read?newsId=02653526645613576&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-   "published": "2026-10-16 08:22",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[기업이슈] 삼전닉스 급락에 코스피 '털썩'…7% 내려 5,500대",
-   "url": "https://biz.sbs.co.kr/article_hub/20000340324?division=NAVER",
-   "published": "2026-10-16 08:19",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "[더벨]이랜드 부동산 품는 베인캐피탈, 물류센터 투자 전략 가동",
    "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202610141516282480109526",
    "published": "2026-10-16 08:18",
@@ -304,22 +320,6 @@
   {
    "title": "코스피 급락 보는 외부 시선···AI 자금조달·중국 메모리·수급 공백...",
    "url": "https://www.newsfreezone.co.kr/news/articleView.html?idxno=714196",
-   "published": "2026-10-16 08:18",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "코스피 7%대 폭락 후 반등 가능할까…야간선물 3.9% 급등",
-   "url": "https://www.financialpost.co.kr/news/articleView.html?idxno=280763",
-   "published": "2026-10-16 08:18",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[뉴욕마켓워치] 시장이 온통 AI 눈치만 본다…주식·채권↑달러↓",
-   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4439538",
    "published": "2026-10-16 08:18",
    "topic": "환율·거시",
    "ticker_prices": [],
