@@ -2,15 +2,15 @@
  "date": "2026-10-19",
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-1019",
- "issue_no": 66,
- "published_at": "2026-10-19T07:23:29+09:00",
+ "issue_no": 67,
+ "published_at": "2026-10-19T07:32:27+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CgAV5jSu7UWrHjpcPSjEB'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CgAVmPopNLhBSUstPS8n1'}",
   "consecutive_failure_days": 58
  },
  "models": {
@@ -154,6 +154,62 @@
  "rejected": [],
  "newsroom": [
   {
+   "title": "저축은행 PF 후유증 여전…토지대출 연체율 35%",
+   "url": "https://economist.co.kr/article/view/ecn202610140044",
+   "published": "2026-10-19 07:31",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "\"두산, 전자사업 고부가 제품 확대에 수익성↑…목표가↑\"-대신",
+   "url": "https://www.hankyung.com/article/2026101993206",
+   "published": "2026-10-19 07:30",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[넥스트-샷] '빌린 돈' 걱정에···나스닥 2% '뚝', 2008년 이후 가장 긴...",
+   "url": "https://www.womaneconomy.co.kr/news/articleView.html?idxno=259868",
+   "published": "2026-10-19 07:30",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "소방관의 눈물, “이래도 재정 빨대인가요”: 슬로우레터 10월19일.",
+   "url": "https://slownews.kr/168082",
+   "published": "2026-10-19 07:30",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[마켓 프리뷰] 7거래일 하락 후 겨우 상승 반전…\"추세 전환은 아직\"",
+   "url": "https://biz.sbs.co.kr/article_hub/20000340659?division=NAVER",
+   "published": "2026-10-19 07:27",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[스타트 경제] 국민연금도 물린 폭락장, 100일 만에 182조 손실...리밸런...",
+   "url": "https://www.ytn.co.kr/_ln/0102_202610190724131672",
+   "published": "2026-10-19 07:24",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "국민연금 주식 100일 새 182조 증발…삼전닉스 131조 물렸다",
+   "url": "https://www.hankyung.com/article/2026101993047",
+   "published": "2026-10-19 07:24",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
    "title": "\"삼전닉스 또 떨어지나\"…'딥시크 악재'에도 증권가는 \"비중 늘려라\"",
    "url": "https://www.fnnews.com/news/202610190659135307",
    "published": "2026-10-19 07:22",
@@ -170,14 +226,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "D램값 오르는데 반도체주는 급락…금리·원가 부담에 커진 AI 투자 공포",
-   "url": "https://www.fnnews.com/news/202610190716184038",
-   "published": "2026-10-19 07:21",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "[KFT 모닝 브리프] 2026.10.19 — 오늘 꼭 알아야 할 국내외 경제뉴스",
    "url": "https://www.fntimes.com/html/view.php?ud=202610190709433854141825007d_18",
    "published": "2026-10-19 07:20",
@@ -186,42 +234,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "증시 오늘 '핫이슈'…\"국채금리 '하락'이 시작됐다, K-증시 피난처는?\"",
-   "url": "http://mbnmoney.mbn.co.kr/news/view?news_no=MM1005941669",
-   "published": "2026-10-19 07:20",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "“두산, 전자사업 성장 탄력에 수익성 쑥”…목표가↑",
-   "url": "https://www.mk.co.kr/article/12179155",
-   "published": "2026-10-19 07:15",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[서학개미 브리핑] 국내 증시 '흔들'…美주식 투자자 매수 자금 증가",
-   "url": "https://biz.sbs.co.kr/article_hub/20000340658?division=NAVER",
-   "published": "2026-10-19 07:14",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "코스피 전망, 美 반도체 8일째 급락…외국인 수급 시험대",
    "url": "https://www.topstarnews.net/news/articleView.html?idxno=16250872",
    "published": "2026-10-19 07:12",
    "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[마켓 브리핑] 뉴욕증시, 코어위브 충격 '휘청'…재무 부담 우려 확대",
-   "url": "https://biz.sbs.co.kr/article_hub/20000340657?division=NAVER",
-   "published": "2026-10-19 07:12",
-   "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -317,7 +333,7 @@
    "title": "10월 동결 후 11월 인상…국채 발행 5조~10조 더 줄일 듯 [Pick코노미]",
    "url": "https://www.sedaily.com/article/20103064?ref=naver",
    "published": "2026-10-19 06:31",
-   "topic": "금융",
+   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -342,14 +358,6 @@
    "url": "https://www.segye.com/newsView/20261018513167?OutUrl=naver",
    "published": "2026-10-19 06:02",
    "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[미리보는 증시재료] 삼성물산·삼성SDS 실적…메타·IBM 등 AI 투자 지속...",
-   "url": "https://www.newspim.com/news/view/20261016000407",
-   "published": "2026-10-19 06:00",
-   "topic": "증시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -461,14 +469,6 @@
    "title": "현대모비스, 로봇 한 대에 액추에이터 40개…2028년 생산능력 확대 추진",
    "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=496224",
    "published": "2026-10-18 15:30",
-   "topic": "자동차",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "iM증권 \"HL만도, 중국·인도 성장으로 부진 만회…휴머노이드 수주가 관...",
-   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=496222",
-   "published": "2026-10-18 15:16",
    "topic": "자동차",
    "ticker_prices": [],
    "watchlist_hits": []
