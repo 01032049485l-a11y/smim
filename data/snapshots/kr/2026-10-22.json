@@ -1,0 +1,500 @@
+{
+ "date": "2026-10-22",
+ "market_group": "KR",
+ "report_id": "SMIM-KR-2026-1022",
+ "issue_no": 69,
+ "published_at": "2026-10-22T08:11:00+09:00",
+ "status": "ai_failure",
+ "status_detail": {
+  "ai_attempts": 1,
+  "ai_failures": 1,
+  "ai_fail_rate": 1.0,
+  "ai_error_kind": "billing",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CgGE8dvsfqae24bSjDhy7'}",
+  "consecutive_failure_days": 61
+ },
+ "models": {
+  "bull": "claude-haiku-4-5-20251001",
+  "bear": "claude-haiku-4-5-20251001",
+  "judge": "claude-sonnet-5",
+  "news": "claude-haiku-4-5-20251001"
+ },
+ "market": {
+  "indices": [
+   {
+    "label": "코스피",
+    "ticker": "KOSPI",
+    "value": 5735.66,
+    "change": 182.92,
+    "change_pct": 3.29,
+    "trend": "down",
+    "trend_label": "하락세",
+    "series": [
+     6995.39,
+     6954.52,
+     7051.64,
+     7033.92,
+     6909.91,
+     6684.37,
+     6627.26,
+     6717.97,
+     6715.41,
+     6894.23,
+     7007.72,
+     7017.91,
+     7080.92,
+     6889.74,
+     6870.81,
+     6838.04,
+     6971.35,
+     7003.74,
+     6941.39,
+     6803.9,
+     6625.93,
+     6384.24,
+     6035.35,
+     6008.81,
+     5554.22,
+     5668.05,
+     5768.01,
+     5552.74,
+     5735.66
+    ]
+   },
+   {
+    "label": "코스닥",
+    "ticker": "KOSDAQ",
+    "value": 792.76,
+    "change": 10.79,
+    "change_pct": 1.38,
+    "trend": "down",
+    "trend_label": "하락세",
+    "series": [
+     822.19,
+     811.88,
+     830.37,
+     836.92,
+     820.64,
+     806.79,
+     812.41,
+     815.98,
+     822.18,
+     827.12,
+     836.27,
+     834.38,
+     844.48,
+     846.58,
+     849.8,
+     855.91,
+     894.29,
+     893.29,
+     919.92,
+     898.43,
+     892.27,
+     849.19,
+     837.03,
+     823.88,
+     760.82,
+     794.78,
+     808.89,
+     781.97,
+     792.76
+    ]
+   },
+   {
+    "label": "원/달러",
+    "ticker": "USDKRW",
+    "value": 1326.33,
+    "change": 2.39,
+    "change_pct": 0.18,
+    "trend": "flat",
+    "trend_label": "보합권",
+    "series": [
+     1348.17,
+     1344.64,
+     1345.61,
+     1363.57,
+     1376.6,
+     1379.53,
+     1384.86,
+     1373.68,
+     1350.36,
+     1362.5,
+     1367.36,
+     1354.51,
+     1359.56,
+     1350.5,
+     1356.84,
+     1360.59,
+     1342.56,
+     1343.75,
+     1339.74,
+     1339.08,
+     1342.99,
+     1340.84,
+     1334.13,
+     1340.31,
+     1339.35,
+     1340.95,
+     1333.43,
+     1330.0,
+     1323.94,
+     1326.33
+    ]
+   }
+  ],
+  "up": 1180,
+  "down": 1267,
+  "flat": 265,
+  "up_ratio": 43.5,
+  "mood": "혼조",
+  "sectors": []
+ },
+ "new_entries": [],
+ "holdings": [],
+ "exits": [],
+ "rejected": [],
+ "newsroom": [
+  {
+   "title": "NH證 \"LS ELECTRIC, 3분기 깜짝 실적…북미·데이터센터 성장 지속\"",
+   "url": "http://www.popcornnews.net/news/articleView.html?idxno=136857",
+   "published": "2026-10-22 08:10",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "\"삼성바이오로직스, 美록빌·5공장 매출 기여로 외형 성장 지속”-다올",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=02725686645615544&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "published": "2026-10-22 08:10",
+   "topic": "바이오",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "“삼성전자·SK하이닉스 바닥 확인…11~12월 W자 반등”",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=02722406645615544&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "published": "2026-10-22 08:08",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "뉴욕증시, 스페이스X 실적에 기술주 상승…나스닥 1%↑",
+   "url": "http://www.issuenbiz.com/news/articleView.html?idxno=80844",
+   "published": "2026-10-22 08:06",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "우주로 확장하는 머스크 제국…韓반도체 셈법 복잡해진다",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4440458",
+   "published": "2026-10-22 08:04",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[증시전망대] AI 훈풍에 5,700선 뚫은 코스피…\"이제부터는 변동성 장세...",
+   "url": "http://www.newsroad.co.kr/news/articleView.html?idxno=66209",
+   "published": "2026-10-22 08:04",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[더벨][대신증권 종투사의 길] IPO 체급 확대, 대형사 틈바구니 속 질적...",
+   "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202610161609134600101476",
+   "published": "2026-10-22 08:02",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[오늘의 투자전략] \"차익실현 소화 속 변동성 장세...비반도체 업종으로...",
+   "url": "https://www.etoday.co.kr/news/view/2638637",
+   "published": "2026-10-22 08:02",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "원·달러 환율, 1326.0원…달러, 美 국채금리 반등에도 보합",
+   "url": "http://www.joseilbo.com/news/news_read.php?uid=577903&class=18&grp=",
+   "published": "2026-10-22 08:02",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "금통위, 기준금리 동결 전망 우세속에...11월 추가 인상론 '불변'",
+   "url": "https://www.youthdaily.co.kr/news/article.html?no=228645",
+   "published": "2026-10-22 08:02",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[뉴욕환시] 달러 이틀째↓…'美 걸프 대사관 직원 철수' 보도에 장중 출...",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4440457",
+   "published": "2026-10-22 08:02",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[금리 리셋] ⑧ 코어위브 쇼크 속에 AI 회사채만 담는 ETF 등장 - ㊦",
+   "url": "https://www.newspim.com/news/view/20261021000746",
+   "published": "2026-10-22 08:01",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "4대 금융, 3분기도 5조원대 순익…'님' 떨어져도 환율에 웃는다",
+   "url": "https://news.bizwatch.co.kr/article/finance/2026/10/21/0037",
+   "published": "2026-10-22 08:00",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[더벨][thebell Forum | Capital Market Forum 2026] \"차입 단기화, 크레딧...",
+   "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202610201135162000102558",
+   "published": "2026-10-22 07:58",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[이슈체크] 한은, 금리 숨고르기?...3연속 인상보단 속도 조절 할 듯",
+   "url": "https://www.tfmedia.co.kr/news/article.html?no=208247",
+   "published": "2026-10-22 07:54",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "로드스터는 날았지만 전기차 매출은 '뒷걸음'...테슬라 3분기 실적 예상...",
+   "url": "https://www.livebiz.today/news/articleView.html?idxno=205810",
+   "published": "2026-10-22 07:52",
+   "topic": "자동차",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "日 금리 1.25%에도 엔저 지속…미·일 통화정책이 가른다",
+   "url": "https://www.cstimes.com/news/articleView.html?idxno=724778",
+   "published": "2026-10-22 07:52",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[주요공시] 삼성전자, 엘리스, 엠씨넥스, 서한, 에프앤가이드, 한국유니...",
+   "url": "https://www.kdpress.co.kr/news/articleView.html?idxno=209438",
+   "published": "2026-10-22 07:50",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[오늘의 증시]코스피, 어제 급등에 차익실현 부담…금통위·美 빅테크 실...",
+   "url": "https://www.newsis.com/view/NISX20261022_0003835928",
+   "published": "2026-10-22 07:43",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "테슬라, 3분기 매출 37조…시장 예상치 웃돌아",
+   "url": "https://www.khan.co.kr/article/202610220742001",
+   "published": "2026-10-22 07:42",
+   "topic": "자동차",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[채권/외환] 美 장기 국채 금리 하락·달러 약세…AI 투자 우려 속 연준...",
+   "url": "https://www.newspim.com/news/view/20261022000034",
+   "published": "2026-10-22 07:36",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[마켓 프리뷰] 코스피 '매수 사이드카' 발동…외인 반도체 투톱 순매수",
+   "url": "https://biz.sbs.co.kr/article_hub/20000341422?division=NAVER",
+   "published": "2026-10-22 07:32",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "한은 오늘 3.00% 동결 유력…관건은 '11월 추가 인상' 신호",
+   "url": "https://www.the-today.com/news/articleView.html?idxno=92183",
+   "published": "2026-10-22 07:32",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "메타 실적 발표 앞두고 AI 투자 불안, 뉴욕 증시 혼조세",
+   "url": "https://www.gokorea.kr/news/articleView.html?idxno=882332",
+   "published": "2026-10-22 07:30",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[KFT 모닝 브리프] 2026.10.22 — 오늘 꼭 알아야 할 국내외 경제뉴스",
+   "url": "https://www.fntimes.com/html/view.php?ud=202610220707347027141825007d_18",
+   "published": "2026-10-22 07:30",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "1010억 수혈받은 SK디앤디, 군포PFV에 375억 장기 대여…4800억 보증도 6...",
+   "url": "https://www.greened.kr/news/articleView.html?idxno=352690",
+   "published": "2026-10-22 07:27",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "한은 금리 '매파적 동결' 유력…7·8월 연속 인상 이어 '숨고르기'",
+   "url": "https://www.financialpost.co.kr/news/articleView.html?idxno=281824",
+   "published": "2026-10-22 07:26",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "테슬라, 연 투자 목표 250억→200억달러 낮춰...AI·로봇 전환 기대 이하...",
+   "url": "https://www.sedaily.com/article/20104595?ref=naver",
+   "published": "2026-10-22 07:21",
+   "topic": "자동차",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "미국증시 나스닥 1.05% 상승…스페이스X 실적에 AI주 반등, 엔비디아·테...",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16254395",
+   "published": "2026-10-22 07:20",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "테슬라, 3분기 순이익 44% 급감…매출 280억달러·시장 예상 웃돈 EPS",
+   "url": "https://www.slist.kr/news/articleView.html?idxno=775327",
+   "published": "2026-10-22 07:14",
+   "topic": "자동차",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "테슬라 '깜짝 실적' 3분기 37조원 매출...서비스 부문 '급증'",
+   "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202610220012&t=NN",
+   "published": "2026-10-22 07:11",
+   "topic": "자동차",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "테슬라, 영업이익 56% 급감… 시간외 주가 2% 하락",
+   "url": "https://it.chosun.com/news/articleView.html?idxno=2023092172523",
+   "published": "2026-10-22 07:08",
+   "topic": "자동차",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[프레스티지바이오 딜레마] CB에 발목 잡힌 로직스…'꽃놀이패' 쥔 옥타...",
+   "url": "https://dealsite.co.kr/articles/171027",
+   "published": "2026-10-22 07:04",
+   "topic": "바이오",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "테슬라, 3Q 매출 37.2조원…자율주행 FSD 구독 증가",
+   "url": "https://www.financialpost.co.kr/news/articleView.html?idxno=281823",
+   "published": "2026-10-22 07:04",
+   "topic": "자동차",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "인트론바이오, MTA에 주목…큐리옥스, 기술 유출·분쟁 가능성에 下[바...",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=02394406645615544&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "published": "2026-10-22 06:43",
+   "topic": "바이오",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[데일리 머니마켓] 스페이스X 호실적…나스닥 1.05%↑",
+   "url": "https://www.bigtanews.co.kr/article/view/big202610220001",
+   "published": "2026-10-22 06:36",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[김형석의 프리Zoom] HK이노엔, 케이캡 다음을 증명할 시간",
+   "url": "https://www.bloter.net/news/articleView.html?idxno=676153",
+   "published": "2026-10-22 06:30",
+   "topic": "바이오",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "SK그룹 CEO 경영 성적 희비…곽노정·정재헌·장용호 '웃고', 강영규·이...",
+   "url": "http://www.consumernews.co.kr/news/articleView.html?idxno=766305",
+   "published": "2026-10-22 06:10",
+   "topic": "바이오",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "韓 AI기업 ‘엘리스’에 널 뛴 韓·美 증시",
+   "url": "https://www.segye.com/newsView/20261021520256?OutUrl=naver",
+   "published": "2026-10-22 06:04",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "‘AI 투자 회의론’ 부각에도 반등한 코스피…리스크 해소할 ‘호재’ ...",
+   "url": "https://www.kukinews.com/article/view/kuk202610210196",
+   "published": "2026-10-22 06:02",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  }
+ ],
+ "ledger": {
+  "total": 5,
+  "win_rate": 0.0,
+  "avg_return": -11.63,
+  "median_return": -12.96,
+  "avg_days": 5,
+  "best": {
+   "name": "코웨이",
+   "return_pct": -6.2
+  },
+  "worst": {
+   "name": "뉴파워프라즈마",
+   "return_pct": -16.5
+  }
+ },
+ "universe_scanned": 6,
+ "ai_calls": 0,
+ "ai_usage": {
+  "by_model": {},
+  "estimated_cost_usd": 0.0
+ }
+}
