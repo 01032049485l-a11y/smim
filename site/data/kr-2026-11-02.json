@@ -2,15 +2,15 @@
  "date": "2026-11-02",
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-1102",
- "issue_no": 76,
- "published_at": "2026-11-02T08:30:42+09:00",
+ "issue_no": 77,
+ "published_at": "2026-11-02T08:47:46+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cgd5Xtm2Hso9MQ7HG3yEH'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cgd6qM8NaReDX4f6XRpV5'}",
   "consecutive_failure_days": 68
  },
  "models": {
@@ -102,9 +102,9 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1332.78,
-    "change": -5.2,
-    "change_pct": -0.39,
+    "value": 1331.88,
+    "change": -6.1,
+    "change_pct": -0.46,
     "trend": "flat",
     "trend_label": "보합권",
     "series": [
@@ -137,7 +137,7 @@
      1326.81,
      1340.34,
      1337.98,
-     1332.78
+     1331.88
     ]
    }
   ],
@@ -154,7 +154,151 @@
  "rejected": [],
  "newsroom": [
   {
-   "title": "[증시 전망]美 반도체주 급락…코스피 5700선 지킬까",
+   "title": "[조원경 칼럼] 정크 딱지 붙을지 모르는 1조 달러 기업… 앤트로픽 IPO의...",
+   "url": "http://www.the-biz.co.kr/news/articleView.html?idxno=730421",
+   "published": "2026-11-02 08:46",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "장동혁 \"李 대통령, 시정연설서 자화자찬하면 정권 종말 선언\"",
+   "url": "https://news.tf.co.kr/read/ptoday/2383448.htm",
+   "published": "2026-11-02 08:46",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "하나은행 인니, 경제 전망 세미나 개최…\"내년 인니 경제 5%대 성장\"",
+   "url": "https://www.theguru.co.kr/news/article.html?no=109100",
+   "published": "2026-11-02 08:46",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "SK하이닉스 350만 간다…KB證 “저평가 탈출 기대” [줍줍 리포트]",
+   "url": "https://www.sedaily.com/article/20108894?ref=naver",
+   "published": "2026-11-02 08:44",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[모닝 리포트] \"AI주 급락에 비중 축소보다 관망…코스피 5400~6000 전망\"",
+   "url": "https://www.newspim.com/news/view/20261102000061",
+   "published": "2026-11-02 08:44",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "한미약품, 올해 세 번째 기술이전 '성공'…신약개발 경쟁력 부각",
+   "url": "http://www.newsprime.co.kr/news/article.html?no=753182",
+   "published": "2026-11-02 08:44",
+   "topic": "바이오",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "윤건수 DSC인베 대표 “벤처 투자는 '시대의 아이콘' 찾는 일\"",
+   "url": "https://www.hankyung.com/article/202610305027r",
+   "published": "2026-11-02 08:43",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "\"반도체 자사주매입은 주가하락 완충 역할…관건은 외국인 수급\"",
+   "url": "https://www.yna.co.kr/view/AKR20261102023000008?input=1195m",
+   "published": "2026-11-02 08:43",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[손기호의 일본탐방] 1년도 안 됐는데 월세 인상 통보…오사카서 겪는 ...",
+   "url": "https://theviewers.co.kr/View.aspx?No=4289104",
+   "published": "2026-11-02 08:42",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "10월 30일 주식시장 주요공시",
+   "url": "https://www.catchnews.kr/news/articleView.html?idxno=130031",
+   "published": "2026-11-02 08:41",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[증시 전망] 코스피 5,600선 지킬까…미국 반도체 7.2% 급락, 삼성전자·...",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16265785",
+   "published": "2026-11-02 08:40",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "'검은 월요일' 우려에…삼성전자·SK하이닉스 프리마켓서 3%대 하락[특징...",
+   "url": "https://www.newsway.co.kr/news/view?ud=2026110208335510228",
+   "published": "2026-11-02 08:40",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[오늘의 금시세] 11월 2일 금값 3,877달러…1돈 62만9천원, 2027년 전망 4...",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16265786",
+   "published": "2026-11-02 08:40",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[모닝 리포트] \"한미약품, 기술이전 계약 5조원 돌파\"",
+   "url": "https://www.newspim.com/news/view/20261102000034",
+   "published": "2026-11-02 08:38",
+   "topic": "바이오",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[AI MY 증시전망] 코스피, 美 반도체주 급락에 약세 전망…저가매수 유...",
+   "url": "https://www.newspim.com/news/view/20261102000030",
+   "published": "2026-11-02 08:37",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "현대모비스, 분기 영업익 '1조원 시대' 눈앞…전동화·로봇 성장 기대",
+   "url": "http://www.newsprime.co.kr/news/article.html?no=753180",
+   "published": "2026-11-02 08:34",
+   "topic": "자동차",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[데스크 시선] 올해 19.6조 번 금융지주…금융소비자는 왜 더 팍팍할까",
+   "url": "https://www.the-today.com/news/articleView.html?idxno=92844",
+   "published": "2026-11-02 08:32",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "일본은행, 112년 걸릴 ETF 매각, 43년으로 단축…비트코인도 긴장?",
+   "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=711668",
+   "published": "2026-11-02 08:32",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[오늘 증시]美 반도체주 급락…코스피 5700선 지킬까",
    "url": "http://www.kjdaily.com/article.php?aid=1793575751690960276",
    "published": "2026-11-02 08:30",
    "topic": "증시",
@@ -186,50 +330,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "장동혁 \"李대통령, 국민 돼지 취급하면 시정연설이 정권 종말 선언 될 것...",
-   "url": "https://www.newsis.com/view/NISX20261102_0003850174",
-   "published": "2026-11-02 08:27",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "한국거래소, 저PBR 기업 151곳 첫 공개……현대제철·한화생명 등 포함",
    "url": "https://www.cstimes.com/news/articleView.html?idxno=726147",
    "published": "2026-11-02 08:26",
    "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "“삼전닉스 급락은 두번째 바닥…이달부터 W자 반등 전망”",
-   "url": "https://www.edaily.co.kr/News/Read?newsId=02095926645641784&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-   "published": "2026-11-02 08:26",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[굿모닝 마켓] 뉴욕증시 일제히 하락…나스닥 2.86% 급락",
-   "url": "https://biz.sbs.co.kr/article_hub/20000343524?division=NAVER",
-   "published": "2026-11-02 08:26",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[특징주] ‘인텔 쇼크’에 삼성전자·SK하이닉스 프리마켓서 3%대 급락",
-   "url": "https://biz.chosun.com/stock/stock_general/2026/11/02/22BGAJIN25FZXOWJDXXGRNMBKI/?utm_source=naver&utm_medium=original&utm_campaign=biz",
-   "published": "2026-11-02 08:25",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "장동혁 \"李대통령, 시정연설서 정책전환해야…자화자찬은 정권종말\"",
-   "url": "https://view.asiae.co.kr/article/2026110208242068034",
-   "published": "2026-11-02 08:24",
-   "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -298,14 +402,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "[마켓뷰] 코스피, '인텔 급락 등 美증시 삭풍' 이어받나",
-   "url": "https://www.yna.co.kr/view/AKR20261102015000008?input=1195m",
-   "published": "2026-11-02 08:05",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "“현대모비스, 첫 분기 영업익 1조 앞뒀는데 목표가는 뚝”…이유는?",
    "url": "https://www.mk.co.kr/article/12193072",
    "published": "2026-11-02 08:00",
@@ -330,18 +426,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "[새 산업분류 KRICS] 반도체·디스플레이가 코스피 절반 차지…배터리 ...",
-   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=621922",
-   "published": "2026-11-02 07:56",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "원·달러 환율, 1334.3원…달러, AI 투자 수익성 우려에 하락",
    "url": "http://www.joseilbo.com/news/news_read.php?uid=578630&class=18&grp=",
    "published": "2026-11-02 07:53",
-   "topic": "금융",
+   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -370,30 +458,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "[나연수의 투자칼럼] AI는 성장하는데 앤트로픽은 항공사가 될까요 — ...",
-   "url": "https://www.ilemonde.com/news/articleView.html?idxno=30916",
-   "published": "2026-11-02 07:40",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "하나증권 “은행주, 코스피 방향성에 좌우되는 현상 이어질 것..중장기...",
-   "url": "https://kpenews.com/View.aspx?No=4292553",
-   "published": "2026-11-02 07:40",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "韓 증시 어디로...증권가도 엇갈리는 내년 코스피 전망",
-   "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=711436",
-   "published": "2026-11-02 07:30",
-   "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "[KFT 모닝 브리프] 2026.11.02 — 오늘 꼭 알아야 할 국내외 경제뉴스",
    "url": "https://www.fntimes.com/html/view.php?ud=202611020707017191141825007d_18",
    "published": "2026-11-02 07:28",
@@ -402,73 +466,9 @@
    "watchlist_hits": []
   },
   {
-   "title": "휴이노, 예심 돌입… 바이오주 저평가 돌파구 될까",
-   "url": "https://www.edaily.co.kr/News/Read?newsId=01836806645641784&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-   "published": "2026-11-02 07:02",
-   "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "美 중간선거·AI 수익성 시험대…코스피, 반등 이어갈까 [주간 증시 전망...",
-   "url": "https://www.sedaily.com/article/20108754?ref=naver",
-   "published": "2026-11-02 07:00",
-   "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "토요타, 中 쇼크에도 2조엔 영업익…하이브리드가 살렸다",
    "url": "https://www.g-enews.com/view.php?ud=202611020425151967e7e8286d56_1",
    "published": "2026-11-02 06:10",
-   "topic": "자동차",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[논현광장-김한진의 시황읽기] 혼돈의 시대, 투자 원칙 되새기자",
-   "url": "https://www.etoday.co.kr/news/view/2642689",
-   "published": "2026-11-02 06:02",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[미리보는 증시재료] 美 중간선거·고용지표에 실적까지…코스피 반등 ...",
-   "url": "https://www.newspim.com/news/view/20261030001070",
-   "published": "2026-11-02 06:00",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[이번주 관전포인트] 물가·美고용 발표…이달 금리 인상 여부 갈린다",
-   "url": "http://www.newskr.kr/news/articleView.html?idxno=107609",
-   "published": "2026-11-02 06:00",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "\"전기차 셀만 팔아선 안 남는다\"… CATL, '배터리 교환·ESS'로 활로 모색",
-   "url": "https://www.g-enews.com/view.php?ud=2026110115551835550c8c1c064d_1",
-   "published": "2026-11-02 05:26",
-   "topic": "자동차",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "리비안 3분기 매출 38% 증가…R2 판매 1위, 연간 전망 상향",
-   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=92616",
-   "published": "2026-11-02 00:02",
-   "topic": "자동차",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "트럼프 패배 땐…'IRA·반도체'부터 '환율·금리'까지 흔든다",
-   "url": "http://www.newstomato.com/ReadNews.aspx?no=1318838&inflow=N",
-   "published": "2026-11-01 17:32",
    "topic": "자동차",
    "ticker_prices": [],
    "watchlist_hits": []
