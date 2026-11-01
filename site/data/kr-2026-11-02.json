@@ -1,0 +1,498 @@
+{
+ "date": "2026-11-02",
+ "market_group": "KR",
+ "report_id": "SMIM-KR-2026-1102",
+ "issue_no": 76,
+ "published_at": "2026-11-02T08:30:42+09:00",
+ "status": "ai_failure",
+ "status_detail": {
+  "ai_attempts": 1,
+  "ai_failures": 1,
+  "ai_fail_rate": 1.0,
+  "ai_error_kind": "billing",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cgd5Xtm2Hso9MQ7HG3yEH'}",
+  "consecutive_failure_days": 68
+ },
+ "models": {
+  "bull": "claude-haiku-4-5-20251001",
+  "bear": "claude-haiku-4-5-20251001",
+  "judge": "claude-sonnet-5",
+  "news": "claude-haiku-4-5-20251001"
+ },
+ "market": {
+  "indices": [
+   {
+    "label": "코스피",
+    "ticker": "KOSPI",
+    "value": 5730.74,
+    "change": -206.92,
+    "change_pct": -3.48,
+    "trend": "up",
+    "trend_label": "상승세",
+    "series": [
+     6715.41,
+     6894.23,
+     7007.72,
+     7017.91,
+     7080.92,
+     6889.74,
+     6870.81,
+     6838.04,
+     6971.35,
+     7003.74,
+     6941.39,
+     6803.9,
+     6625.93,
+     6384.24,
+     6035.35,
+     6008.81,
+     5554.22,
+     5668.05,
+     5768.01,
+     5552.74,
+     5735.66,
+     5533.77,
+     5550.3,
+     5469.47,
+     5638.34,
+     6012.44,
+     5937.66,
+     5730.74
+    ]
+   },
+   {
+    "label": "코스닥",
+    "ticker": "KOSDAQ",
+    "value": 724.38,
+    "change": -28.85,
+    "change_pct": -3.83,
+    "trend": "down",
+    "trend_label": "하락세",
+    "series": [
+     822.18,
+     827.12,
+     836.27,
+     834.38,
+     844.48,
+     846.58,
+     849.8,
+     855.91,
+     894.29,
+     893.29,
+     919.92,
+     898.43,
+     892.27,
+     849.19,
+     837.03,
+     823.88,
+     760.82,
+     794.78,
+     808.89,
+     781.97,
+     792.76,
+     764.1,
+     751.69,
+     727.21,
+     743.83,
+     771.28,
+     753.23,
+     724.38
+    ]
+   },
+   {
+    "label": "원/달러",
+    "ticker": "USDKRW",
+    "value": 1332.78,
+    "change": -5.2,
+    "change_pct": -0.39,
+    "trend": "flat",
+    "trend_label": "보합권",
+    "series": [
+     1373.68,
+     1350.36,
+     1362.5,
+     1367.36,
+     1354.51,
+     1359.56,
+     1350.5,
+     1356.84,
+     1360.59,
+     1342.56,
+     1343.75,
+     1339.74,
+     1339.08,
+     1342.99,
+     1340.84,
+     1334.13,
+     1340.31,
+     1339.35,
+     1340.95,
+     1333.43,
+     1330.0,
+     1323.94,
+     1325.59,
+     1325.99,
+     1321.76,
+     1324.77,
+     1326.81,
+     1340.34,
+     1337.98,
+     1332.78
+    ]
+   }
+  ],
+  "up": 535,
+  "down": 1990,
+  "flat": 192,
+  "up_ratio": 19.7,
+  "mood": "위험회피",
+  "sectors": []
+ },
+ "new_entries": [],
+ "holdings": [],
+ "exits": [],
+ "rejected": [],
+ "newsroom": [
+  {
+   "title": "[증시 전망]美 반도체주 급락…코스피 5700선 지킬까",
+   "url": "http://www.kjdaily.com/article.php?aid=1793575751690960276",
+   "published": "2026-11-02 08:30",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "기아 목표가 19만→15만원 하향…\"수익성 회복 보수적 접근\"",
+   "url": "https://www.fnnews.com/news/202611020823570306",
+   "published": "2026-11-02 08:30",
+   "topic": "자동차",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[어제장 오늘장] 10월 마지막 거래일 급락에 인텔 쇼크까지…11월 증시도...",
+   "url": "https://biz.sbs.co.kr/article_hub/20000343526?division=NAVER",
+   "published": "2026-11-02 08:28",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[공시셀렉트] 명신산업, 美 자회사 나스닥 상장 철회…모바일어플라이...",
+   "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=711457",
+   "published": "2026-11-02 08:28",
+   "topic": "바이오",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "장동혁 \"李대통령, 국민 돼지 취급하면 시정연설이 정권 종말 선언 될 것...",
+   "url": "https://www.newsis.com/view/NISX20261102_0003850174",
+   "published": "2026-11-02 08:27",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "한국거래소, 저PBR 기업 151곳 첫 공개……현대제철·한화생명 등 포함",
+   "url": "https://www.cstimes.com/news/articleView.html?idxno=726147",
+   "published": "2026-11-02 08:26",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "“삼전닉스 급락은 두번째 바닥…이달부터 W자 반등 전망”",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=02095926645641784&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "published": "2026-11-02 08:26",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[굿모닝 마켓] 뉴욕증시 일제히 하락…나스닥 2.86% 급락",
+   "url": "https://biz.sbs.co.kr/article_hub/20000343524?division=NAVER",
+   "published": "2026-11-02 08:26",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[특징주] ‘인텔 쇼크’에 삼성전자·SK하이닉스 프리마켓서 3%대 급락",
+   "url": "https://biz.chosun.com/stock/stock_general/2026/11/02/22BGAJIN25FZXOWJDXXGRNMBKI/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+   "published": "2026-11-02 08:25",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "장동혁 \"李대통령, 시정연설서 정책전환해야…자화자찬은 정권종말\"",
+   "url": "https://view.asiae.co.kr/article/2026110208242068034",
+   "published": "2026-11-02 08:24",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "인텔 28% 폭락…코스피, 11월 첫날도 ‘찬바람’",
+   "url": "https://www.kbmaeil.com/article/20261102500031",
+   "published": "2026-11-02 08:22",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "증시 바닥론 흔들려도…“아직 시장 떠날 때 아니다” [주식R]",
+   "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202611020021&t=NN",
+   "published": "2026-11-02 08:20",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "달러 약세에도 웃지 못하는 원화… 외인 이탈에 환율 1330원대 전망",
+   "url": "http://www.the-biz.co.kr/news/articleView.html?idxno=730419",
+   "published": "2026-11-02 08:20",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[박정식의 국내 주식시황] 美 빅테크 AI 투자 수익성 우려 속 저가 매수...",
+   "url": "https://www.newsquest.co.kr/news/articleView.html?idxno=303905",
+   "published": "2026-11-02 08:18",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[더벨]굿리치 재인수에 보험사 7곳 참여, LP 명단 윤곽",
+   "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202610290943382880106521",
+   "published": "2026-11-02 08:18",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[오늘의 투자전략] 美 AI주 급락 여진, 코스피 5400~6000 예상…저가 매...",
+   "url": "https://www.etoday.co.kr/news/view/2642741",
+   "published": "2026-11-02 08:10",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "'코스피 8300이냐 9000이냐' 공통 전제는 셋",
+   "url": "https://www.newsfreezone.co.kr/news/articleView.html?idxno=717038",
+   "published": "2026-11-02 08:08",
+   "topic": "바이오",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[국제금융 브리핑] 이란, 미국 추가 도발에 광범위 보복 경고...12월 금리...",
+   "url": "https://www.tokenpost.kr/news/economy/431041",
+   "published": "2026-11-02 08:08",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[마켓뷰] 코스피, '인텔 급락 등 美증시 삭풍' 이어받나",
+   "url": "https://www.yna.co.kr/view/AKR20261102015000008?input=1195m",
+   "published": "2026-11-02 08:05",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "“현대모비스, 첫 분기 영업익 1조 앞뒀는데 목표가는 뚝”…이유는?",
+   "url": "https://www.mk.co.kr/article/12193072",
+   "published": "2026-11-02 08:00",
+   "topic": "자동차",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "내 퇴직금, 어떻게 달라지나…기금형 퇴직연금이 뭐죠?[금알못]",
+   "url": "https://www.newsis.com/view/NISX20261030_0003848952",
+   "published": "2026-11-02 08:00",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[오늘의 증시]'인텔 쇼크'에 다시 커진 AI 의구심…코스피, 위기감 고조",
+   "url": "https://www.newsis.com/view/NISX20261102_0003850117",
+   "published": "2026-11-02 07:57",
+   "topic": "바이오",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[새 산업분류 KRICS] 반도체·디스플레이가 코스피 절반 차지…배터리 ...",
+   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=621922",
+   "published": "2026-11-02 07:56",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "원·달러 환율, 1334.3원…달러, AI 투자 수익성 우려에 하락",
+   "url": "http://www.joseilbo.com/news/news_read.php?uid=578630&class=18&grp=",
+   "published": "2026-11-02 07:53",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "한독·동화약품 등 저PBR 제약·바이오 13곳…주가 재평가 관심",
+   "url": "https://www.medicopharma.co.kr/news/articleView.html?idxno=70135",
+   "published": "2026-11-02 07:46",
+   "topic": "바이오",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "“韓 5대 강국 진입할 것…한 번도 경험 못한 ‘다른 장면’ 온다” [개...",
+   "url": "https://magazine.hankyung.com/business/article/202610292010b",
+   "published": "2026-11-02 07:43",
+   "topic": "자동차",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "“이재명은 외롭다”, 폭주하는 X는 대통령이 고립돼 있다는 증거: 슬로...",
+   "url": "https://slownews.kr/168855",
+   "published": "2026-11-02 07:40",
+   "topic": "자동차",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[나연수의 투자칼럼] AI는 성장하는데 앤트로픽은 항공사가 될까요 — ...",
+   "url": "https://www.ilemonde.com/news/articleView.html?idxno=30916",
+   "published": "2026-11-02 07:40",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "하나증권 “은행주, 코스피 방향성에 좌우되는 현상 이어질 것..중장기...",
+   "url": "https://kpenews.com/View.aspx?No=4292553",
+   "published": "2026-11-02 07:40",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "韓 증시 어디로...증권가도 엇갈리는 내년 코스피 전망",
+   "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=711436",
+   "published": "2026-11-02 07:30",
+   "topic": "바이오",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[KFT 모닝 브리프] 2026.11.02 — 오늘 꼭 알아야 할 국내외 경제뉴스",
+   "url": "https://www.fntimes.com/html/view.php?ud=202611020707017191141825007d_18",
+   "published": "2026-11-02 07:28",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "휴이노, 예심 돌입… 바이오주 저평가 돌파구 될까",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=01836806645641784&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "published": "2026-11-02 07:02",
+   "topic": "바이오",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "美 중간선거·AI 수익성 시험대…코스피, 반등 이어갈까 [주간 증시 전망...",
+   "url": "https://www.sedaily.com/article/20108754?ref=naver",
+   "published": "2026-11-02 07:00",
+   "topic": "바이오",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "토요타, 中 쇼크에도 2조엔 영업익…하이브리드가 살렸다",
+   "url": "https://www.g-enews.com/view.php?ud=202611020425151967e7e8286d56_1",
+   "published": "2026-11-02 06:10",
+   "topic": "자동차",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[논현광장-김한진의 시황읽기] 혼돈의 시대, 투자 원칙 되새기자",
+   "url": "https://www.etoday.co.kr/news/view/2642689",
+   "published": "2026-11-02 06:02",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[미리보는 증시재료] 美 중간선거·고용지표에 실적까지…코스피 반등 ...",
+   "url": "https://www.newspim.com/news/view/20261030001070",
+   "published": "2026-11-02 06:00",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[이번주 관전포인트] 물가·美고용 발표…이달 금리 인상 여부 갈린다",
+   "url": "http://www.newskr.kr/news/articleView.html?idxno=107609",
+   "published": "2026-11-02 06:00",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "\"전기차 셀만 팔아선 안 남는다\"… CATL, '배터리 교환·ESS'로 활로 모색",
+   "url": "https://www.g-enews.com/view.php?ud=2026110115551835550c8c1c064d_1",
+   "published": "2026-11-02 05:26",
+   "topic": "자동차",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "리비안 3분기 매출 38% 증가…R2 판매 1위, 연간 전망 상향",
+   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=92616",
+   "published": "2026-11-02 00:02",
+   "topic": "자동차",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "트럼프 패배 땐…'IRA·반도체'부터 '환율·금리'까지 흔든다",
+   "url": "http://www.newstomato.com/ReadNews.aspx?no=1318838&inflow=N",
+   "published": "2026-11-01 17:32",
+   "topic": "자동차",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  }
+ ],
+ "ledger": {
+  "total": 5,
+  "win_rate": 0.0,
+  "avg_return": -11.63,
+  "median_return": -12.96,
+  "avg_days": 5,
+  "best": {
+   "name": "코웨이",
+   "return_pct": -6.2
+  },
+  "worst": {
+   "name": "뉴파워프라즈마",
+   "return_pct": -16.5
+  }
+ },
+ "universe_scanned": 6,
+ "ai_calls": 0,
+ "ai_usage": {
+  "by_model": {},
+  "estimated_cost_usd": 0.0
+ }
+}
