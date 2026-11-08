@@ -2,15 +2,15 @@
  "date": "2026-11-09",
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-1109",
- "issue_no": 77,
- "published_at": "2026-11-09T08:37:59+09:00",
+ "issue_no": 78,
+ "published_at": "2026-11-09T08:55:13+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CgrLkTfpDcffSq2qhRFWG'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CgrN4irybNx5VgnhBrZFu'}",
   "consecutive_failure_days": 69
  },
  "models": {
@@ -102,9 +102,9 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1363.08,
-    "change": 6.74,
-    "change_pct": 0.5,
+    "value": 1361.94,
+    "change": 5.6,
+    "change_pct": 0.41,
     "trend": "up",
     "trend_label": "상승세",
     "series": [
@@ -137,7 +137,7 @@
      1342.9,
      1340.07,
      1356.34,
-     1363.08
+     1361.94
     ]
    }
   ],
@@ -154,18 +154,106 @@
  "rejected": [],
  "newsroom": [
   {
-   "title": "인천 송도 바이오기업 주가 '급락장 속' 상승세...외인 팔고 기관 사고",
-   "url": "https://www.joongboo.com/news/articleView.html?idxno=363741861",
-   "published": "2026-11-09 08:36",
+   "title": "[미르의 머니무브]주식시장에 52조원 몰렸는데…월가 큰손들은 왜 현금...",
+   "url": "https://www.mediapen.com/news/view/1136086",
+   "published": "2026-11-09 08:54",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "나이스평가정보 “제이케이시냅스, 반도체·RFID 소재 사업 확대…올해...",
-   "url": "https://www.etoday.co.kr/news/view/2645551",
-   "published": "2026-11-09 08:36",
+   "title": "[원자재 시황] 미 고용 호조에 금·코인 하락",
+   "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1730857",
+   "published": "2026-11-09 08:52",
    "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "코스피 5000선이 바닥?…한국투자證 “V자 반등보다 횡보 가능성”",
+   "url": "https://biz.chosun.com/stock/stock_general/2026/11/09/NEQH6575TBEOTDXFXM2MEPMGGU/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+   "published": "2026-11-09 08:52",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "젠슨 황, 불륜 인정에 엔비디아 이사회 독립 조사…中 스파이 의혹 일파...",
+   "url": "http://www.newsroad.co.kr/news/articleView.html?idxno=67326",
+   "published": "2026-11-09 08:52",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "코스피 10% 넘게 폭락했는데…통신3사·네카오는 급등",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4443683",
+   "published": "2026-11-09 08:52",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[공시셀렉트] 코미코, 운영자금 차입 보증 1년 연장…라온텍은 고객사 ...",
+   "url": "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=713455",
+   "published": "2026-11-09 08:52",
+   "topic": "바이오",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "NH증권 \"증시 급락에도 한은 피벗 기대는 시기상조…이달 인상\"",
+   "url": "https://www.yna.co.kr/view/AKR20261109022900008?input=1195m",
+   "published": "2026-11-09 08:51",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "기가비스, 글로벌 패키지기판 증설 '직수혜'…\"미세회로 검사 글로벌 점...",
+   "url": "http://www.newsprime.co.kr/news/article.html?no=754081",
+   "published": "2026-11-09 08:50",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "삼성전자 ‘급락 후 상승’ 비율로 따져보니…“반등의 전환점” [줍줍...",
+   "url": "https://www.sedaily.com/article/20111738?ref=naver",
+   "published": "2026-11-09 08:48",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "약세장 진입한 日 닛케이주가...\"연내 5만엔 전망도\"",
+   "url": "https://www.newspim.com/news/view/20261109000143",
+   "published": "2026-11-09 08:48",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "삼전닉스, 폭락 후 반등 조짐…프리마켓서 2% 안팎 상승",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4443677",
+   "published": "2026-11-09 08:42",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[주간환율전망] 美 '블루쓰나미' 여진···1300원대 중반 '안개속 장세...",
+   "url": "https://www.seoulfn.com/news/articleView.html?idxno=642205",
+   "published": "2026-11-09 08:41",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[모닝 리포트] \"코스피, 지난주 급락분 만회 시도…반도체·IT 저가매수...",
+   "url": "https://www.newspim.com/news/view/20261109000049",
+   "published": "2026-11-09 08:36",
+   "topic": "금융",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -186,24 +274,8 @@
    "watchlist_hits": []
   },
   {
-   "title": "삼전닉스 1%대 상승…폭락 후 저가매수 기대 [마켓시그널]",
-   "url": "https://www.sedaily.com/article/20111733?ref=naver",
-   "published": "2026-11-09 08:34",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "iM證 \"블루웨이브발 AI 투자 공포 과도…속도 문제일 뿐\"",
-   "url": "https://www.newsis.com/view/NISX20261109_0003859701",
-   "published": "2026-11-09 08:33",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[오늘의 투자전략] 코스피, 역대급 급락 후 반등 시도 전망⋯“낙폭과대...",
-   "url": "https://www.etoday.co.kr/news/view/2645548",
+   "title": "[어제장 오늘장] 서킷브레이커 발동·5천피 턱걸이…증시 언제쯤 빛 볼...",
+   "url": "https://biz.sbs.co.kr/article_hub/20000345016?division=NAVER",
    "published": "2026-11-09 08:32",
    "topic": "증시",
    "ticker_prices": [],
@@ -218,18 +290,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "[어제장 오늘장] 서킷브레이커 발동·5천피 턱걸이…증시 언제쯤 빛 볼...",
-   "url": "https://biz.sbs.co.kr/article_hub/20000345016?division=NAVER",
+   "title": "[오늘의 투자전략] 코스피, 역대급 급락 후 반등 시도 전망⋯“낙폭과대...",
+   "url": "https://www.etoday.co.kr/news/view/2645548",
    "published": "2026-11-09 08:32",
    "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[증시 포인트] 반등 시도 전망...관망보단 매수 대응 유효",
-   "url": "http://www.opinionnews.co.kr/news/articleView.html?idxno=146813",
-   "published": "2026-11-09 08:32",
-   "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -237,15 +301,7 @@
    "title": "[국제금융 브리핑] 백악관·민주당 데이터센터 정책 충돌...S&P500 주간 2...",
    "url": "https://www.tokenpost.kr/news/economy/434890",
    "published": "2026-11-09 08:32",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "해성디에스, AI 데이터센터 수혜에 리드프레임 '1900억원 돌파'…\"분기 ...",
-   "url": "http://www.newsprime.co.kr/news/article.html?no=754076",
-   "published": "2026-11-09 08:32",
-   "topic": "반도체",
+   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -306,14 +362,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "美 고용 '서프라이즈'에 강달러… 원/달러 환율, 1360원대 중반대 전망",
-   "url": "http://www.the-biz.co.kr/news/articleView.html?idxno=730930",
-   "published": "2026-11-09 08:12",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "AI 불안에 중동 리스크까지…환율 1360원대 상승 압력[외환브리핑]",
    "url": "https://www.edaily.co.kr/News/Read?newsId=02099206645644080&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
    "published": "2026-11-09 08:12",
@@ -330,22 +378,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "[더벨][Korean Corporate Global IR 2026] 동서발전, LNG·수소 전환 속도…...",
-   "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202611050959161360106631",
-   "published": "2026-11-09 07:52",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[더벨][Korean Corporate Global IR 2026] 3년만에 다시 찾은 홍콩, 한국물...",
-   "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202611051535376880101040",
-   "published": "2026-11-09 07:52",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "[더벨][Korean Corporate Global IR 2026] 미국 금리 추가 인상에 무게…중...",
    "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202611051555595320105624",
    "published": "2026-11-09 07:52",
@@ -357,7 +389,7 @@
    "title": "[KFT 모닝 브리프] 2026.11.09 — 오늘 꼭 알아야 할 국내외 경제뉴스",
    "url": "https://www.fntimes.com/html/view.php?ud=202611090713024286141825007d_18",
    "published": "2026-11-09 07:28",
-   "topic": "금융",
+   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -410,22 +442,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "[이번주 관전포인트] 뉴욕발 급락 코스피, 미 물가에 반등 달렸다",
-   "url": "http://www.newskr.kr/news/articleView.html?idxno=107795",
-   "published": "2026-11-09 05:40",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "'블루웨이브' 덮친 증시 K바이오만 '빨간 물결'",
-   "url": "https://www.mt.co.kr/thebio/2026/11/09/2026110819355824229",
-   "published": "2026-11-09 03:00",
-   "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "【박란희의 TalkTalk】민주당의 승리, 불안한 2027년",
    "url": "https://www.impacton.net/news/articleView.html?idxno=30575",
    "published": "2026-11-09 01:40",
@@ -453,22 +469,6 @@
    "title": "“고점서 60% 빠졌는데 당연히 사야죠”...삼전닉스 지금 매수하라는 노...",
    "url": "https://www.mk.co.kr/article/12201921",
    "published": "2026-11-08 18:05",
-   "topic": "자동차",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "\"고점에서 50~60% 빠진 삼전닉스…2차 사이클 고려하면 매수 타이밍\"",
-   "url": "https://www.mk.co.kr/article/12201763",
-   "published": "2026-11-08 16:48",
-   "topic": "자동차",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "트럼프 관세 제동 걸릴까…현대차·기아 주가 반등에도 기대·현실 엇갈...",
-   "url": "https://bizhankook.com/articles/hyundai-kia-stock-trump-tariffs.html",
-   "published": "2026-11-08 15:38",
    "topic": "자동차",
    "ticker_prices": [],
    "watchlist_hits": []
