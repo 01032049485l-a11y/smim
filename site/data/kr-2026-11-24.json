@@ -3,14 +3,14 @@
  "market_group": "KR",
  "report_id": "SMIM-KR-2026-1124",
  "issue_no": 80,
- "published_at": "2026-11-24T14:12:45+09:00",
+ "published_at": "2026-11-24T14:30:04+09:00",
  "status": "ai_failure",
  "status_detail": {
   "ai_attempts": 1,
   "ai_failures": 1,
   "ai_fail_rate": 1.0,
   "ai_error_kind": "billing",
-  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChMBQpm5J14r4ZRUNKzeK'}",
+  "ai_last_error": "Anthropic 호출 실패: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChMCjRFbq19kJnwNjUNDR'}",
   "consecutive_failure_days": 71
  },
  "models": {
@@ -106,9 +106,9 @@
    {
     "label": "원/달러",
     "ticker": "USDKRW",
-    "value": 1341.95,
-    "change": -2.36,
-    "change_pct": -0.18,
+    "value": 1342.61,
+    "change": -1.7,
+    "change_pct": -0.13,
     "trend": "flat",
     "trend_label": "보합권",
     "series": [
@@ -141,7 +141,7 @@
      1330.4,
      1334.79,
      1344.31,
-     1341.95
+     1342.61
     ]
    }
   ],
@@ -158,42 +158,170 @@
  "rejected": [],
  "newsroom": [
   {
-   "title": "‘젠슨 황 귀환’에 한·일·대만 증시 ‘불기둥’",
-   "url": "https://www.ichannela.com/news/main/news_detailPage.do?publishId=000000561410",
-   "published": "2026-11-24 14:11",
+   "title": "원익IPS 10.21% 급등…반도체 장비 투자 기대 반영",
+   "url": "https://www.job-post.co.kr/news/articleView.html?idxno=240610",
+   "published": "2026-11-24 14:28",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "[정책리뷰] 이재명 정부, \"성장의 과실 국민에게\" 민생 안정·양극화 해...",
-   "url": "http://www.financialreview.co.kr/news/articleView.html?idxno=46556",
-   "published": "2026-11-24 14:10",
+   "title": "금리 인상 여파 시작도 전에 또 올리나…취약계층 공포 확산",
+   "url": "http://www.newstomato.com/ReadNews.aspx?no=1321633&inflow=N",
+   "published": "2026-11-24 14:28",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "제주반도체 상승폭 6.53%…5만2200원에서 거래",
-   "url": "https://www.job-post.co.kr/news/articleView.html?idxno=240582",
-   "published": "2026-11-24 14:10",
+   "title": "젠슨황 복귀에 삼전닉스 주가 껑충…완연한 회복은 아직",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4446271",
+   "published": "2026-11-24 14:28",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "증시 급락에 놀란 대만···‘국안기금’ 두 배 확대 검토",
-   "url": "https://www.khan.co.kr/article/202611241410001",
-   "published": "2026-11-24 14:10",
+   "title": "골드만삭스 너마저…삼전·닉스 목표가 '미끄럼틀'",
+   "url": "https://www.g-enews.com/view.php?ud=202611241423103684153ddfb15a_1",
+   "published": "2026-11-24 14:28",
    "topic": "반도체",
    "ticker_prices": [],
    "watchlist_hits": []
   },
   {
-   "title": "KB국민은행, K-방산 수출 지원 나선다… 협력사에 2200억원 금융 지원",
-   "url": "https://www.s-journal.co.kr/news/articleView.html?idxno=45585",
-   "published": "2026-11-24 14:10",
+   "title": "\"금융위기 때보다 아찔한 증시\"…하루가 멀다 하고 급등락",
+   "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202611240116&t=NN",
+   "published": "2026-11-24 14:26",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "\"그가 나스닥을, 시장을 구했다\" 크레이머",
+   "url": "https://biz.sbs.co.kr/article_hub/20000348528?division=NAVER",
+   "published": "2026-11-24 14:26",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "퇴직연금부터 앱테크·소상공인 지원까지...케이뱅크, 고객 접점 확대 ...",
+   "url": "https://www.techm.kr/news/articleView.html?idxno=157741",
+   "published": "2026-11-24 14:26",
    "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "무려 200조 육박…젠슨황 부부 가족자산 관리법 베일 벗었다",
+   "url": "https://www.yna.co.kr/view/AKR20261124106400009?input=1195m",
+   "published": "2026-11-24 14:25",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[일본 특징주] 키옥시아, 젠슨 황 복귀 소식에 주가 10% 급등",
+   "url": "https://www.newspim.com/news/view/20261124000991",
+   "published": "2026-11-24 14:24",
+   "topic": "반도체",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[더밸류 브리핑] 오늘의 KB국민은행 소식...퇴직연금 수수료 인하·K-방...",
+   "url": "http://www.thevaluenews.co.kr/news/view.php?idx=203574",
+   "published": "2026-11-24 14:24",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "달러당 6헤알 다시 넘본다…브라질 국채 '버티기'가 어려운 이유 [마켓...",
+   "url": "http://www.joseilbo.com/news/news_read.php?uid=580329&class=53&grp=",
+   "published": "2026-11-24 14:23",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "현대차·LG에너지솔루션·에코프로 '방긋'… 폐배터리 시장 다시 불꽃랠...",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=507502",
+   "published": "2026-11-24 14:22",
+   "topic": "자동차",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "불법공매도 합동TF 가동…'주가 하락 영향 큰' 공매도 계좌 추적",
+   "url": "https://www.raonnews.com/news/article.html?no=63029",
+   "published": "2026-11-24 14:20",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "한은 금리 인상 신호·삼성전자 30조 배당…원·달러 환율에 엇갈린 압...",
+   "url": "http://www.metroseoul.co.kr/article/20261124500307",
+   "published": "2026-11-24 14:20",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "최재원 \"토큰화 24시간 거래 능사 아냐…AI 확산도 금융불안정 확대\"",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=03152086645649000&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "published": "2026-11-24 14:18",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "iM뱅크, '텐텐통장' 출시 후 계좌 수 3배·잔액 5배 증가",
+   "url": "http://www.ttlnews.com/news/articleView.html?idxno=3165751",
+   "published": "2026-11-24 14:16",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "[주목! e금융] 신한·하나·IBK기업·KB국민·케이뱅크...\"수수료 낮추고...",
+   "url": "http://www.kdfnews.com/news/articleView.html?idxno=191346",
+   "published": "2026-11-24 14:16",
+   "topic": "금융",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "골드만삭스 \"한국, 내년 3.2% 성장 전망…기준금리 상단 3.5%\"",
+   "url": "https://biz.sbs.co.kr/article_hub/20000348520?division=NAVER",
+   "published": "2026-11-24 14:16",
+   "topic": "환율·거시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "“경차 타는데 외제차급 손실”…젠슨 황 복귀에도 웃지못한 ‘최고층...",
+   "url": "https://www.donga.com/news/Economy/article/all/20261124/135080562/1",
+   "published": "2026-11-24 14:15",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "젠슨황 복귀에 코스피 5천선 안착…7%대 급등",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4446266",
+   "published": "2026-11-24 14:14",
+   "topic": "증시",
+   "ticker_prices": [],
+   "watchlist_hits": []
+  },
+  {
+   "title": "골드만삭스 \"韓 내년 3.2% 성장\"…반도체 호황에도 내수 온기 제한",
+   "url": "https://www.ajunews.com/view/20261124133756060",
+   "published": "2026-11-24 14:14",
+   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -209,23 +337,7 @@
    "title": "포스코퓨처엠·에코프로 급등…리튬 가격 반등 기대가 배터리주 깨웠나",
    "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=507497",
    "published": "2026-11-24 14:08",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "젠슨 황 귀환에 韓 재계 '안도'…삼성·SK·현대차 AI 동맹 다시 속도",
-   "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=886614",
-   "published": "2026-11-24 14:08",
-   "topic": "반도체",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "젠슨 황 엔비디아 CEO 복귀…재계 \"투자 동력 우려 해소, 협업 속도\"",
-   "url": "https://www.news1.kr/industry/general-industry/6364166",
-   "published": "2026-11-24 14:06",
-   "topic": "반도체",
+   "topic": "자동차",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -254,14 +366,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "젠슨황 복귀에 반도체주 급등…코스피·코스닥 매수 사이드카",
-   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8721015&ref=A",
-   "published": "2026-11-24 14:00",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "'널뛰기 장세'에 올해만 사이드카 101번 발동…2002년 이후 최대",
    "url": "https://www.yna.co.kr/view/AKR20261124096600008?input=1195m",
    "published": "2026-11-24 14:00",
@@ -270,10 +374,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "저축은행 부실 정리에 27조원…OK·웰컴은 자산 18조원대로 성장, 금융권...",
-   "url": "https://www.greened.kr/news/articleView.html?idxno=355364",
-   "published": "2026-11-24 13:59",
-   "topic": "금융",
+   "title": "젠슨황 복귀에 반도체주 급등…코스피·코스닥 매수 사이드카",
+   "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8721015&ref=A",
+   "published": "2026-11-24 14:00",
+   "topic": "증시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -286,22 +390,6 @@
    "watchlist_hits": []
   },
   {
-   "title": "젠슨 황 돌아오자 주가 12% 급등…전날 16억 매수한 SK하닉 사장 '눈길'",
-   "url": "https://www.imaeil.com/page/view/2026112413331423996",
-   "published": "2026-11-24 13:55",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "채권시장 참여자 54% \"11월 기준금리 인상 예상\"",
-   "url": "https://biz.sbs.co.kr/article_hub/20000348514?division=NAVER",
-   "published": "2026-11-24 13:55",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "채권시장 참여자 54% \"금통위 기준금리 인상 전망\"",
    "url": "https://www.dailian.co.kr/news/view/1719015/?sc=Naver",
    "published": "2026-11-24 13:55",
@@ -310,49 +398,9 @@
    "watchlist_hits": []
   },
   {
-   "title": "엔비디아·삼성전자 '훈풍'?...현대무벡스 등 로봇주 '장중 껑충'",
-   "url": "http://www.choicenews.co.kr/news/articleView.html?idxno=173467",
-   "published": "2026-11-24 13:54",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "젠슨 황 복귀에 아시아 반도체주 급등 … 닛케이 4%·대만 9% 상승",
-   "url": "https://www.newdaily.co.kr/site/data/html/2026/11/24/2026112450218.html",
-   "published": "2026-11-24 13:52",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "LS·대한전선·대원전선 등 주가 동반 강세…전선주 상승세 '뚜렷'",
-   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=630245",
-   "published": "2026-11-24 13:50",
-   "topic": "증시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "원화 강세에도 출렁이는 환율…달러는 예금에",
-   "url": "https://www.sidae.com/article/2026112413253834775",
-   "published": "2026-11-24 13:50",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "[금융톡톡] 경남은행 발달장애인 금융교육·JB금융 실무형 AI 교육·iM뱅...",
-   "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=904222",
-   "published": "2026-11-24 13:50",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "채권시장 전문가 54% \"11월 금통위 기준금리 인상\"···투자심리 위축",
-   "url": "https://www.seoulfn.com/news/articleView.html?idxno=643754",
-   "published": "2026-11-24 13:50",
+   "title": "채권시장 참여자 54% \"11월 기준금리 인상 예상\"",
+   "url": "https://biz.sbs.co.kr/article_hub/20000348514?division=NAVER",
+   "published": "2026-11-24 13:55",
    "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
@@ -366,50 +414,10 @@
    "watchlist_hits": []
   },
   {
-   "title": "기술주 폭락에 갈 곳 잃은 투자자들…필수소비재株 급부상",
-   "url": "https://www.imaeil.com/page/view/2026112400424246611",
-   "published": "2026-11-24 13:43",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "이틀 연속 '매도 사이드카'…'검은 월요일' 코스피 3.31% 하락 마감",
-   "url": "http://www.jeonmin.co.kr/news/articleView.html?idxno=450980",
-   "published": "2026-11-24 13:38",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "증권사 3분기 실적 급감, 4분기 전망은",
-   "url": "https://www.ekoreanews.co.kr/news/articleView.html?idxno=89350",
-   "published": "2026-11-24 13:34",
-   "topic": "금융",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "채권시장 참여자 54% \"11월 금통위 기준금리 인상 전망\"",
-   "url": "https://www.ajunews.com/view/20261124132738023",
-   "published": "2026-11-24 13:34",
-   "topic": "환율·거시",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
    "title": "[시장 따라잡기] 고점대비 반토막 난 '삼전닉스'…반등 탄력 붙나?",
    "url": "https://biz.sbs.co.kr/article_hub/20000348408?division=NAVER",
    "published": "2026-11-24 13:31",
    "topic": "바이오",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "골드만삭스 \"내년 말 원·달러 환율 1280원…원화 강세 본격화\"",
-   "url": "https://www.etoday.co.kr/news/view/2652184",
-   "published": "2026-11-24 13:30",
-   "topic": "환율·거시",
    "ticker_prices": [],
    "watchlist_hits": []
   },
@@ -465,14 +473,6 @@
    "title": "자동차 산업 미래 경쟁력 이번주 분수령…자동차업계 촉각",
    "url": "https://www.yna.co.kr/view/AKR20261124070200003?input=1195m",
    "published": "2026-11-24 10:45",
-   "topic": "자동차",
-   "ticker_prices": [],
-   "watchlist_hits": []
-  },
-  {
-   "title": "다올투자증권 “현대차, 환율·전기차 시장 점유율 불확실성 커…적정주...",
-   "url": "https://www.ekn.kr/web/view.php?key=20261124024333801",
-   "published": "2026-11-24 10:36",
    "topic": "자동차",
    "ticker_prices": [],
    "watchlist_hits": []
